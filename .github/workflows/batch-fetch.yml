@@ -1,0 +1,80 @@
+name: batch-fetch
+
+# 云端批处理：抓取 + 许可校验 + 数值质检 + 提交，全部在 runner 上完成，
+# 本地磁盘不碰图片。目标站清单是仓库内的可替换输入文件（不写死数量）。
+#
+# 触发示例（API）：
+#   POST /repos/ooep/JR-images/actions/workflows/batch-fetch.yml/dispatches
+#   {"ref":"main","inputs":{"batch_index":"0","batch_size":"500",
+#    "stations_path":"data/stations_stamp1089.json"}}
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_index:
+        description: '批次序号（0 起）'
+        required: true
+        type: string
+      batch_size:
+        description: '每批站数'
+        required: false
+        default: '500'
+        type: string
+      stations_path:
+        description: '目标站清单（仓库内路径，可替换）'
+        required: false
+        default: 'data/stations_stamp1089.json'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install --quiet pillow numpy requests
+
+      - name: Fetch batch
+        run: |
+          python scripts/batch_fetch.py \
+            --stations "${{ inputs.stations_path }}" \
+            --batch-index "${{ inputs.batch_index }}" \
+            --batch-size "${{ inputs.batch_size }}" \
+            --workdir .
+
+      - name: Verify batch
+        run: python scripts/verify_local.py --workdir . || true
+
+      - name: Commit & push (retry on conflict, never force)
+        run: |
+          git config user.name "jrimages-bot"
+          git config user.email "ooep@users.noreply.github.com"
+          git add stations licenses index.json state.json PROGRESS.md batch_stats_*.json || true
+          if git diff --cached --quiet; then
+            echo "nothing to commit"; exit 0
+          fi
+          git commit -m "batch ${{ inputs.batch_index }}: JR station photos (list=${{ inputs.stations_path }}, size=${{ inputs.batch_size }})"
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "push conflict, rebase & retry ($i)"; git pull --rebase origin main
+          done
+          echo "push failed after retries"; exit 1
+
+      - name: Upload stats artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: batch-${{ inputs.batch_index }}-stats
+          path: |
+            batch_stats_*.json
+            state.json
+          if-no-files-found: ignore
