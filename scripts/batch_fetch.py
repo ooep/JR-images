@@ -781,14 +781,29 @@ def main():
 
     # 已落盘图登记表（补丁 1）：title / 归一化后的 sha256 → slug，供后续候选跳过重复
     used = {'title': {}, 'sha': {}}
-    for slug, e in (state.get('entries') or {}).items():
-        if e.get('status') not in ('done', 'review'):
-            continue
+
+    def register(slug, e):
+        if not e:
+            return
         if e.get('sha256'):
             used['sha'].setdefault(e['sha256'], slug)
-        t = e.get('source_title') or title_from_page(e.get('source_page'))
+        t = e.get('source_title') or title_from_page(
+            e.get('source') or e.get('page_url') or e.get('source_page'))
         if t:
             used['title'].setdefault(t, slug)
+
+    for slug, e in (state.get('entries') or {}).items():
+        if e.get('status') in ('done', 'review'):
+            register(slug, e)
+    # state 只覆盖新批次；legacy 站只在 index.json 里，一并登记避免和历史图撞车
+    idx_seed = os.path.join(args.workdir, 'index.json')
+    if os.path.exists(idx_seed):
+        try:
+            with open(idx_seed, encoding='utf-8') as f:
+                for slug, e in (json.load(f).get('stations') or {}).items():
+                    register(slug, e)
+        except Exception:  # noqa: BLE001
+            pass
 
     def record(st, entry, en_label, stage):
         """写 state / index / stats（正常批次与 dead 重试共用一套口径）。"""
