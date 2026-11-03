@@ -85,17 +85,25 @@ jobs:
               if git push origin HEAD:main; then return 0; fi
               echo "push failed ($n), fetch+rebase & retry"
               git fetch origin main
+              # dead 重试恢复的站会覆盖已跟踪旧图 → 产生 unstaged changes，
+              # 直接 rebase 会被拒（batch 3 曾因此断链）；先 stash 已跟踪改动，rebase 后恢复。
+              git stash push -m rebase-shield >/dev/null 2>&1 || true
               if ! git rebase origin/main; then
                 git rebase --abort || true
+                git stash pop || true
                 return 1
               fi
+              git stash pop || true
             done
             return 1
           }
 
           # 先推元数据（状态与进度、dead 清单），失败也能靠 state.json 续跑
+          # （set -e 下必须显式兜住，否则元数据推送一失败整个步骤就中止）
           git add index.json state.json PROGRESS.md batch_stats_*.json data/dead_stations.json 2>/dev/null || true
-          push_commit "batch ${{ inputs.batch_index }}: metadata (list=${{ inputs.stations_path }})"
+          if ! push_commit "batch ${{ inputs.batch_index }}: metadata (list=${{ inputs.stations_path }})"; then
+            echo "metadata push failed; continuing (state.json 续跑兜底)"
+          fi
 
           # 图片与许可按 PUSH_CHUNK 站一组提交，避免单次 push 过大
           i=0; g=0

@@ -20,6 +20,7 @@
       --batch-index 0 --batch-size 500 --workdir . [--probe]
 """
 import argparse
+import concurrent.futures
 import datetime
 import hashlib
 import io
@@ -35,17 +36,23 @@ import numpy
 import requests
 from PIL import Image
 
-UA = 'JR-images-bot/1.0 (https://github.com/ooep/JR-images; station photo archive; contact: github.com/ooep)'
+UA = ('JR-images-bot/1.0 (https://github.com/ooep/JR-images; '
+      'contact: https://github.com/ooep/JR-images/issues)')
 API = 'https://commons.wikimedia.org/w/api.php'
 WIKIDATA = 'https://www.wikidata.org/w/api.php'
-MIN_INTERVAL = 1.05          # 每域名最小请求间隔（秒）
-MAX_CONCURRENT_PER_DOMAIN = 2
+MIN_INTERVAL = 1.05          # 每域名最小请求间隔（秒）。Wikimedia API:Etiquette 要求
+                             # Action API 串行请求；无文档支持不得调低
+MAXLAG = 5                   # API:Etiquette/Robot policy 推荐的 maxlag 值
+# 并发口径（依 Wikimedia 文档）：Action API（commons/wikidata）严格串行=1；
+# 下载层 upload.wikimedia.org 为静态文件主机、独立限流域，允许 2 并发
+DOMAIN_CONCURRENCY = {'upload.wikimedia.org': 2}
+DEFAULT_CONCURRENCY = 1
 MIN_SIDE = 1600              # 原图长边下限（px）
 MAX_LONG = 1800              # 落盘长边上限（px）：实测 1800/q85 在 1280 显示宽下 PSNR≈44dB，
                              # 观感与 2048/q88 无差别，单站体积约降 30%
 JPEG_Q = 85                  # 归一化 JPEG 质量
 DEAD_MIN_SIDE = 1280         # dead 站重试放宽后的原图长边下限（落盘条目标记 below_spec）
-DEAD_RETRY = 10              # 每批最多重试多少 dead 站
+DEAD_RETRY = 25              # 每批最多重试多少 dead 站（86 张重复图清欠，10→25 提速）
 DEAD_MAX_ATTEMPTS = 3        # 累计尝试次数达到该值即标 final_dead，不再进重试池
 DEAD_PATH = 'data/dead_stations.json'
 MAX_BYTES = 25 * 1024 * 1024  # 单文件上限 25MB（超限直接选次优，不压缩抵赖）
@@ -83,18 +90,27 @@ def now_iso():
 
 
 class DomainLimiter:
-    """每域名：并发 ≤2 且相邻请求间隔 ≥ MIN_INTERVAL。"""
+    """每域名：并发上限（API 域严格串行=1）且相邻请求间隔 ≥ MIN_INTERVAL。"""
 
     def __init__(self):
         self._lock = threading.Lock()
         self._last = {}
         self._sem = {}
+        self.degraded = False
+
+    def degrade(self):
+        """熔断降级：全部域名并发降到 1（间隔不变），直到本运行结束。"""
+        with self._lock:
+            self.degraded = True
+            self._sem = {}
 
     def acquire(self, domain):
         with self._lock:
             if domain not in self._sem:
-                self._sem[domain] = threading.BoundedSemaphore(MAX_CONCURRENT_PER_DOMAIN)
-                self._last[domain] = 0.0
+                n = 1 if self.degraded else DOMAIN_CONCURRENCY.get(
+                    domain, DEFAULT_CONCURRENCY)
+                self._sem[domain] = threading.BoundedSemaphore(n)
+                self._last.setdefault(domain, 0.0)
             sem = self._sem[domain]
         sem.acquire()
         with self._lock:
@@ -103,10 +119,9 @@ class DomainLimiter:
             time.sleep(wait)
         with self._lock:
             self._last[domain] = time.time()
+        return sem
 
-    def release(self, domain):
-        with self._lock:
-            sem = self._sem[domain]
+    def release(self, sem):
         sem.release()
 
 
@@ -114,35 +129,64 @@ LIMITER = DomainLimiter()
 SESSION = requests.Session()
 SESSION.headers['User-Agent'] = UA
 
+RATE = {'events': 0}
+
+
+def rate_event(kind, url):
+    """熔断：命中 429/403/maxlag 立即降级（全串行的并发 1 + 1.05s 间隔）并计数；
+    同一运行内累计 ≥2 次 → 直接中止本批（保护配额，链由看守按同因规则处置）。"""
+    RATE['events'] += 1
+    LIMITER.degrade()
+    print('RATE_LIMIT_EVENT #%d kind=%s url=%s -> degraded: concurrency=1, '
+          'interval=%.2fs' % (RATE['events'], kind, url[:120], MIN_INTERVAL),
+          flush=True)
+    if RATE['events'] >= 2:
+        raise SystemExit('rate limit events >= 2 in this run; '
+                         'stopping batch to protect quota')
+
 
 def http_get(url, params=None, domain=None, tries=4, timeout=60, stream=False):
     domain = domain or re.sub(r'^https?://([^/]+)/.*$', r'\1', url + '/')
     last = None
     for i in range(tries):
-        LIMITER.acquire(domain)
+        sem = LIMITER.acquire(domain)
         try:
             r = SESSION.get(url, params=params, timeout=timeout, stream=stream)
             if r.status_code == 429:
                 retry_after = int(r.headers.get('Retry-After', '5') or 5)
                 r.close()
-                time.sleep(min(retry_after, 30) * (i + 1))
+                rate_event('429(retry_after=%d)' % retry_after, url)
+                time.sleep(min(retry_after, 60) * (i + 1))
                 continue
+            if r.status_code == 403:
+                rate_event('403', url)
             r.raise_for_status()
             return r
+        except SystemExit:
+            raise
         except Exception as e:  # noqa: BLE001 - 网络重试
             last = e
             time.sleep(2 * (i + 1))
         finally:
-            LIMITER.release(domain)
+            LIMITER.release(sem)
     raise RuntimeError('GET failed after retries: %s (%s)' % (url, last))
 
 
 def api_json(url, params, domain=None):
     params = dict(params)
     params['format'] = 'json'
-    r = http_get(url, params=params, domain=domain)
-    with r:
-        return r.json()
+    params.setdefault('maxlag', str(MAXLAG))
+    for _ in range(5):
+        r = http_get(url, params=params, domain=domain)
+        with r:
+            d = r.json()
+        err = d.get('error') or {}
+        if err.get('code') == 'maxlag':
+            rate_event('maxlag(lag=%s)' % err.get('lag'), url)
+            time.sleep(min(int(err.get('lag') or MAXLAG), 30))
+            continue
+        return d
+    raise RuntimeError('maxlag persisted after retries: %s' % url)
 
 
 # ---------------------------------------------------------------- Commons 候选
@@ -154,12 +198,36 @@ def category_files(cat_title):
     return [m['title'] for m in d.get('query', {}).get('categorymembers', [])]
 
 
+def category_files_info(cat_title):
+    """categorymembers + imageinfo 合并为一次请求（省一次 API 往返）。"""
+    d = api_json(API, {'action': 'query', 'generator': 'categorymembers',
+                       'gcmtitle': cat_title, 'gcmtype': 'file', 'gcmlimit': '100',
+                       'prop': 'imageinfo',
+                       'iiprop': 'url|size|mime|extmetadata'})
+    out = {}
+    for p in d.get('query', {}).get('pages', {}).values():
+        out[p['title']] = (p.get('imageinfo') or [None])[0]
+    return out
+
+
 def search_files(query, limit=30):
     d = api_json(API, {'action': 'query', 'generator': 'search', 'gsrsearch': query,
                        'gsrnamespace': '6', 'gsrlimit': str(limit),
                        'prop': 'info'})
     pages = d.get('query', {}).get('pages', {})
     return [p['title'] for p in pages.values()]
+
+
+def search_files_info(query, limit=30):
+    """search + imageinfo 合并为一次请求（省一次 API 往返）。"""
+    d = api_json(API, {'action': 'query', 'generator': 'search', 'gsrsearch': query,
+                       'gsrnamespace': '6', 'gsrlimit': str(limit),
+                       'prop': 'imageinfo',
+                       'iiprop': 'url|size|mime|extmetadata'})
+    out = {}
+    for p in d.get('query', {}).get('pages', {}).values():
+        out[p['title']] = (p.get('imageinfo') or [None])[0]
+    return out
 
 
 def wikidata_category(name):
@@ -362,18 +430,21 @@ def image_score(m):
 
 
 def gather_candidates(st, relaxed=False):
-    """返回 (candidates:[{title, from_category, cat}], en_label_or_None)。
+    """返回 (candidates:[{title, from_category, cat}], en_label_or_None, infos:{title: imageinfo})。
+    候选查询用 generator+imageinfo 合并请求，infos 已预取，后续通常无需二次 imageinfo。
     relaxed=True（dead 站重试）：追加英文/罗马字站名检索与「駅前/駅舎」检索，放宽候选池。"""
     name = (st.get('name') or '').strip()
     key = name[:-1] if name.endswith('駅') else name
     en = (st.get('name_en') or '').strip()
-    titles, seen, en_label = [], set(), None
+    titles, seen, en_label, infos = [], set(), None, {}
 
-    def add(ts, from_category, cat=None):
-        for t in ts:
+    def add_info(mapping, from_category, cat=None):
+        for t, info in (mapping or {}).items():
             if t not in seen:
                 seen.add(t)
                 titles.append((t, from_category, cat))
+            if info:
+                infos.setdefault(t, info)
 
     cat_guesses = ['Category:%s駅' % key]
     if en:
@@ -381,21 +452,21 @@ def gather_candidates(st, relaxed=False):
     cat_guesses += ['Category:%s Station' % key, 'Category:%s' % key]
     for cat in cat_guesses:
         try:
-            add(category_files(cat), True, cat)
+            add_info(category_files_info(cat), True, cat)
         except Exception:  # noqa: BLE001
             pass
         if len(titles) >= 8:
             break
     if len(titles) < 8:
         try:
-            add(search_files('%s駅' % key), False)
+            add_info(search_files_info('%s駅' % key), False)
         except Exception:  # noqa: BLE001
             pass
     if relaxed and len(titles) < 16:
         queries = [q for q in (en and '%s Station' % en, en, '%s駅前' % key, '%s駅舎' % key) if q]
         for q in queries:
             try:
-                add(search_files(q), False)
+                add_info(search_files_info(q), False)
             except Exception:  # noqa: BLE001
                 pass
             if len(titles) >= 24:
@@ -404,16 +475,16 @@ def gather_candidates(st, relaxed=False):
         cat, en_label = wikidata_category(name)
         if cat:
             try:
-                add(category_files(cat), True, cat)
+                add_info(category_files_info(cat), True, cat)
             except Exception:  # noqa: BLE001
                 pass
         elif relaxed and key:
             try:
-                add(search_files(key), False)
+                add_info(search_files_info(key), False)
             except Exception:  # noqa: BLE001
                 pass
     return [{'title': t, 'from_category': fc, 'cat': cat}
-            for t, fc, cat in titles], en_label
+            for t, fc, cat in titles], en_label, infos
 
 
 def rank_bonus(title, cat):
@@ -449,11 +520,14 @@ def process_station(st, args, tmpdir, relaxed=False, used=None):
     slug = st['slug']
     name = st.get('name') or ''
     min_side = DEAD_MIN_SIDE if relaxed else MIN_SIDE
-    cands, en_label = gather_candidates(st, relaxed)
+    cands, en_label, prefetched = gather_candidates(st, relaxed)
     if not cands:
         return {'status': 'missing', 'reasons': ['no_candidates']}, None
 
-    infos = imageinfo_batch([c['title'] for c in cands])
+    infos = dict(prefetched)
+    missing = [c['title'] for c in cands if not infos.get(c['title'])]
+    if missing:
+        infos.update(imageinfo_batch(missing))
     merged = []
     for c in cands:
         info = infos.get(c['title'])
@@ -759,6 +833,7 @@ def main():
     print('[batch %d] list=%s canonical_total=%d batch=%d (%s)' % (
         args.batch_index, args.stations, len(stations), len(batch),
         '%s..%s' % (batch[0]['slug'], batch[-1]['slug']) if batch else '-'))
+    print('User-Agent: %s' % UA)
 
     state_path = args.state or os.path.join(args.workdir, 'state.json')
     state = load_state(state_path)
@@ -812,6 +887,7 @@ def main():
         entry['ts'] = now_iso()
         entry['attempts'] = state['entries'].get(slug, {}).get('attempts', 0) + 1
         state['entries'][slug] = entry
+        state['rate_limit_events'] = RATE['events']
         save_state(state_path, state)
         stats[status if status in stats else 'failed'] += 1
         for k, v in (entry.get('reject_dist') or {}).items():
@@ -874,24 +950,44 @@ def main():
             save_dead(dead_path, dead)
             sys.stdout.flush()
 
-    for i, st in enumerate(batch):
+    rec_lock = threading.Lock()
+    counters = {'n': 0}
+
+    def worker(st):
         slug = st['slug']
         prev = state['entries'].get(slug, {})
         if prev.get('status') in ('done', 'review') and not args.probe:
-            stats['skipped_resume'] += 1
-            continue
-        stats['attempted'] += 1
+            with rec_lock:
+                stats['skipped_resume'] += 1
+                counters['n'] += 1
+            return
+        with rec_lock:
+            stats['attempted'] += 1
         try:
             entry, en_label = process_station(st, args, tmpdir, used=used)
         except Exception as e:  # noqa: BLE001
-            entry, en_label = {'status': 'failed', 'reasons': ['exception:%s' % str(e)[:120]]}, None
-        record(st, entry, en_label, 'fetch')
-        if (i + 1) % 10 == 0:
-            elapsed = time.time() - t0
-            print('[%d/%d] done=%d review=%d missing=%d failed=%d skip=%d %.1fs/station' % (
-                i + 1, len(batch), stats['done'], stats['review'], stats['missing'],
-                stats['failed'], stats['skipped_resume'], elapsed / (i + 1)))
-            sys.stdout.flush()
+            entry, en_label = {'status': 'failed',
+                               'reasons': ['exception:%s' % str(e)[:120]]}, None
+        with rec_lock:
+            record(st, entry, en_label, 'fetch')
+            counters['n'] += 1
+            if counters['n'] % 10 == 0:
+                elapsed = time.time() - t0
+                print('[%d/%d] done=%d review=%d missing=%d failed=%d skip=%d '
+                      '%.1fs/station' % (
+                          counters['n'], len(batch), stats['done'], stats['review'],
+                          stats['missing'], stats['failed'], stats['skipped_resume'],
+                          elapsed / counters['n']))
+                sys.stdout.flush()
+
+    if args.probe:
+        for st in batch:
+            worker(st)
+    else:
+        # 站级 2 并发：下载传输/CPU 质检与他站的 Commons 请求间隔互相重叠；
+        # 域名限速不变（并发 ≤2、≥MIN_INTERVAL 间隔），不额外增加封禁风险
+        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as ex:
+            list(ex.map(worker, batch))
 
     if not args.probe and index_updates:
         merge_index(os.path.join(args.workdir, 'index.json'), index_updates, args.stations)
@@ -901,6 +997,7 @@ def main():
         save_dead(dead_path, dead)
     stats['dead_cumulative'] = len(dead['stations'])
     stats['dead_final'] = sum(1 for r in dead['stations'].values() if r.get('final_dead'))
+    stats['rate_limit_events'] = RATE['events']
 
     elapsed = time.time() - t0
     stats['elapsed_sec'] = round(elapsed)
@@ -944,11 +1041,12 @@ def main():
             try:
                 with open(smry, 'a', encoding='utf-8') as f:
                     f.write('- dead: new=%d cumulative=%d retried=%d recovered=%d final=%d '
-                            '(done=%d review=%d duplicate_sha256=%d)\n' % (
+                            '(done=%d review=%d duplicate_sha256=%d rate_limit_events=%d)\n' % (
                                 stats['dead_new'], stats['dead_cumulative'],
                                 stats['dead_retried'], stats['dead_recovered'],
                                 stats['dead_final'], stats['done'], stats['review'],
-                                stats['reject_dist'].get('duplicate_sha256', 0)))
+                                stats['reject_dist'].get('duplicate_sha256', 0),
+                                stats['rate_limit_events']))
             except Exception:  # noqa: BLE001
                 pass
 

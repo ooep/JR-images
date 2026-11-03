@@ -32,7 +32,10 @@ def upsert_dead(path, entries):
     dead.setdefault('stations', {})
     for slug, rec in entries.items():
         prev = dead['stations'].get(slug, {})
-        rec['attempts'] = prev.get('attempts', 0) + 1
+        # 重复图问题每批都会被全量复检；若因此累加 attempts，重试池会在
+        # 轮到自己之前就把它们标成 final_dead。只有真实重试才计数。
+        keep = rec.pop('_keep_attempts', False)
+        rec['attempts'] = prev.get('attempts', 0) + (0 if keep else 1)
         rec['final_dead'] = rec['attempts'] >= 3
         rec['first_seen'] = prev.get('first_seen') or now_iso()
         rec['last_attempt'] = now_iso()
@@ -111,6 +114,9 @@ def main():
                 'stage': 'verify', 'reasons': [], 'source_page': e.get('source'),
             })
             rec['reasons'].append(reason)
+        for rec in entries.values():
+            rec['_keep_attempts'] = all(
+                r.startswith('duplicate_sha256_with') for r in rec['reasons'])
         dead_upserted = len(entries)
         dead = upsert_dead(args.dead_list, entries)
         print('dead list updated: +%d verify_failed, cumulative=%d (%s)'
