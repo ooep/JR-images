@@ -1,0 +1,147 @@
+{
+ "attempted": 500,
+ "done": 390,
+ "review": 105,
+ "missing": 15,
+ "failed": 0,
+ "skipped_resume": 0,
+ "bytes": 209538600,
+ "reject_dist": {
+  "resolution_low": 1888,
+  "mime_unsupported": 85,
+  "oversize_gt_25mb": 129,
+  "low_color(map/text?)": 206,
+  "no_author_metadata": 177,
+  "license_unclear": 61,
+  "hard_excluded": 693,
+  "white_screenshot": 1,
+  "blurry(lap=34<45)": 1
+ },
+ "dead": [
+  {
+   "slug": "st00051",
+   "name": "大和新庄",
+   "reasons": {
+    "resolution_low": 7,
+    "oversize_gt_25mb": 2,
+    "mime_unsupported": 2
+   }
+  },
+  {
+   "slug": "st00182",
+   "name": "横川一丁目",
+   "reasons": {
+    "resolution_low": 3,
+    "low_color(map/text?)": 1
+   }
+  },
+  {
+   "slug": "st00317",
+   "name": "升形",
+   "reasons": {
+    "resolution_low": 3,
+    "low_color(map/text?)": 1
+   }
+  },
+  {
+   "slug": "st00377",
+   "name": "郡元・南",
+   "reasons": {
+    "oversize_gt_25mb": 19,
+    "mime_unsupported": 11
+   }
+  },
+  {
+   "slug": "st00380",
+   "name": "純心学園前",
+   "reasons": {
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st01351",
+   "name": "熊本駅前",
+   "reasons": [
+    "no_candidates"
+   ]
+  },
+  {
+   "slug": "st01374",
+   "name": "国府",
+   "reasons": [
+    "no_candidates"
+   ]
+  },
+  {
+   "slug": "st01411",
+   "name": "湖遊館新駅",
+   "reasons": {
+    "oversize_gt_25mb": 8,
+    "resolution_low": 4,
+    "mime_unsupported": 17,
+    "low_color(map/text?)": 1
+   }
+  },
+  {
+   "slug": "st01414",
+   "name": "高ノ宮",
+   "reasons": {
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st01416",
+   "name": "朝日ケ丘",
+   "reasons": [
+    "no_candidates"
+   ]
+  },
+  {
+   "slug": "st01474",
+   "name": "泉",
+   "reasons": {
+    "resolution_low": 10,
+    "oversize_gt_25mb": 4,
+    "mime_unsupported": 1
+   }
+  },
+  {
+   "slug": "st01475",
+   "name": "泉",
+   "reasons": {
+    "resolution_low": 10,
+    "oversize_gt_25mb": 4,
+    "mime_unsupported": 1
+   }
+  },
+  {
+   "slug": "st01659",
+   "name": "杉塘",
+   "reasons": {
+    "resolution_low": 2
+   }
+  },
+  {
+   "slug": "st01792",
+   "name": "松ケ崎",
+   "reasons": [
+    "no_candidates"
+   ]
+  },
+  {
+   "slug": "st01793",
+   "name": "松ケ崎",
+   "reasons": [
+    "no_candidates"
+   ]
+  }
+ ],
+ "dead_retried": 10,
+ "dead_recovered": 5,
+ "dead_new": 15,
+ "dead_cumulative": 112,
+ "dead_final": 0,
+ "elapsed_sec": 4191,
+ "batch_index": 4,
+ "generated_at": "2026-11-03T15:52:15Z"
+}
