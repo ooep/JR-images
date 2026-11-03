@@ -21,6 +21,11 @@ on:
         required: false
         default: 'data/stations_all.json'
         type: string
+      retry_only:
+        description: '仅跑 dead 站重试（true=跳过本批抓取，且不派发下一批）'
+        required: false
+        default: 'false'
+        type: string
 
 permissions:
   contents: write
@@ -47,15 +52,24 @@ jobs:
         run: pip install --quiet pillow numpy requests
 
       - name: Fetch batch
+        env:
+          RETRY_ONLY: ${{ inputs.retry_only }}
         run: |
+          extra=""
+          if [ "$RETRY_ONLY" = "true" ]; then extra="--dead-only"; fi
           python scripts/batch_fetch.py \
             --stations "${{ inputs.stations_path }}" \
             --batch-index "${{ inputs.batch_index }}" \
             --batch-size "${{ inputs.batch_size }}" \
-            --workdir .
+            --workdir . $extra
 
       - name: Verify batch
-        run: python scripts/verify_local.py --workdir . || true
+        id: verify
+        # 质检问题不中断链条：失败项写入 data/dead_stations.json（stage=verify），
+        # 步骤在 UI 标红但 continue-on-error 让后续 commit/dispatch 照常执行。
+        continue-on-error: true
+        run: |
+          python scripts/verify_local.py --workdir . --dead-list data/dead_stations.json
 
       - name: Commit & push in chunks (never force)
         run: |
@@ -79,8 +93,8 @@ jobs:
             return 1
           }
 
-          # 先推元数据（状态与进度），失败也能靠 state.json 续跑
-          git add index.json state.json PROGRESS.md batch_stats_*.json 2>/dev/null || true
+          # 先推元数据（状态与进度、dead 清单），失败也能靠 state.json 续跑
+          git add index.json state.json PROGRESS.md batch_stats_*.json data/dead_stations.json 2>/dev/null || true
           push_commit "batch ${{ inputs.batch_index }}: metadata (list=${{ inputs.stations_path }})"
 
           # 图片与许可按 PUSH_CHUNK 站一组提交，避免单次 push 过大
@@ -105,7 +119,7 @@ jobs:
           fi
 
       - name: Dispatch next batch
-        if: success()
+        if: success() && inputs.retry_only != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           STATIONS_PATH: ${{ inputs.stations_path }}

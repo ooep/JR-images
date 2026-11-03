@@ -6,7 +6,8 @@
   1. 在 Wikimedia Commons 找候选（站分类 → 日文站名搜索 → Wikidata P373 分类兜底）；
   2. 许可硬过滤：只收 CC0 / CC BY * / CC BY-SA * / Public domain（含 No restrictions），
      其余（NC/ND/GFDL/不明/缺失）一律拒收并记原因；CC BY* 必须带作者，否则拒收；
-  3. 规格硬过滤：原图长边 ≥1600px、文件 ≤25MB、mime ∈ jpeg/png/webp（不放大、不压缩抵赖）；
+  3. 规格硬过滤：原图长边 ≥1600px（dead 重试放宽到 1280px 并标记 below_spec）、
+     文件 ≤25MB、mime ∈ jpeg/png/webp（不放大、不压缩抵赖）；
   4. 下载原图到临时目录 → 数值质检（Pillow+numpy：拉普拉斯方差/色彩丰富度/纯白占比/
      边缘密度/天空占比 + 文件名与来源关键词）→ 选最优一张；
   5. 落盘 stations/<slug>/photo.<ext>（原始字节，不重压缩）+ licenses/<slug>.txt，
@@ -39,8 +40,12 @@ WIKIDATA = 'https://www.wikidata.org/w/api.php'
 MIN_INTERVAL = 1.05          # 每域名最小请求间隔（秒）
 MAX_CONCURRENT_PER_DOMAIN = 2
 MIN_SIDE = 1600              # 原图长边下限（px）
-MAX_LONG = 2048              # 落盘长边上限（px）：原图动辄 5000+px/6MB，压到 2048 保画质也保体积
-JPEG_Q = 88                  # 归一化 JPEG 质量
+MAX_LONG = 1800              # 落盘长边上限（px）：实测 1800/q85 在 1280 显示宽下 PSNR≈44dB，
+                             # 观感与 2048/q88 无差别，单站体积约降 30%
+JPEG_Q = 85                  # 归一化 JPEG 质量
+DEAD_MIN_SIDE = 1280         # dead 站重试放宽后的原图长边下限（落盘条目标记 below_spec）
+DEAD_RETRY = 10              # 每批最多重试多少 dead 站
+DEAD_PATH = 'data/dead_stations.json'
 MAX_BYTES = 25 * 1024 * 1024  # 单文件上限 25MB（超限直接选次优，不压缩抵赖）
 OK_MIME = {'image/jpeg': '.jpg', 'image/png': '.png', 'image/webp': '.webp'}
 
@@ -255,23 +260,23 @@ def analyze_pixels(data):
 
 
 def normalize_image(data, max_long=MAX_LONG, quality=JPEG_Q):
-    """长边超过 max_long 时等比缩到 max_long 并存为 JPEG；否则保留原始字节。
-    不做无谓重编码（未超限就原样存），也不为绕开 25MB 上限而压缩——超限候选在下载前已剔除。"""
+    """统一归一化：长边缩到 max_long（不足则不放大）后一律转存 JPEG(q=quality)。
+    统一重编码才能锁定单站体积上限；原图 ≤max_long 的也不再原样保留（PNG/超大 JPEG 会破坏体积口径）。"""
     im = Image.open(io.BytesIO(data))
     im.load()
     w, h = im.size
-    if max(w, h) <= max_long:
-        return data, max(w, h), {'encoded': False, 'long': max(w, h)}
-    scale = max_long / float(max(w, h))
-    nw, nh = max(1, int(round(w * scale))), max(1, int(round(h * scale)))
+    w0, h0 = w, h
     if im.mode not in ('RGB', 'L'):
         im = im.convert('RGB')
-    im = im.resize((nw, nh), Image.LANCZOS)
+    if max(w, h) > max_long:
+        scale = max_long / float(max(w, h))
+        w, h = max(1, int(round(w * scale))), max(1, int(round(h * scale)))
+        im = im.resize((w, h), Image.LANCZOS)
     out = io.BytesIO()
     im.save(out, 'JPEG', quality=quality, optimize=True, progressive=True)
-    return out.getvalue(), max(nw, nh), {
-        'encoded': True, 'long': max(nw, nh),
-        'original_width': w, 'original_height': h}
+    return out.getvalue(), (w, h), {
+        'encoded': True, 'long': max(w, h), 'quality': quality,
+        'original_width': w0, 'original_height': h0}
 
 
 def quality_verdict(m, title, from_category):
@@ -305,8 +310,9 @@ def quality_verdict(m, title, from_category):
 # ---------------------------------------------------------------- 单站流水线
 
 
-def gather_candidates(st):
-    """返回 (candidates:[{title, from_category}], en_label_or_None)。"""
+def gather_candidates(st, relaxed=False):
+    """返回 (candidates:[{title, from_category}], en_label_or_None)。
+    relaxed=True（dead 站重试）：追加英文/罗马字站名检索与「駅前/駅舎」检索，放宽候选池。"""
     name = (st.get('name') or '').strip()
     key = name[:-1] if name.endswith('駅') else name
     en = (st.get('name_en') or '').strip()
@@ -334,11 +340,25 @@ def gather_candidates(st):
             add(search_files('%s駅' % key), False)
         except Exception:  # noqa: BLE001
             pass
+    if relaxed and len(titles) < 16:
+        queries = [q for q in (en and '%s Station' % en, en, '%s駅前' % key, '%s駅舎' % key) if q]
+        for q in queries:
+            try:
+                add(search_files(q), False)
+            except Exception:  # noqa: BLE001
+                pass
+            if len(titles) >= 24:
+                break
     if not titles:
         cat, en_label = wikidata_category(name)
         if cat:
             try:
                 add(category_files(cat), True)
+            except Exception:  # noqa: BLE001
+                pass
+        elif relaxed and key:
+            try:
+                add(search_files(key), False)
             except Exception:  # noqa: BLE001
                 pass
     return [{'title': t, 'from_category': fc} for t, fc in titles], en_label
@@ -357,11 +377,13 @@ def score_candidate(info, title, from_category):
     return s
 
 
-def process_station(st, args, tmpdir):
-    """返回该站结果 dict（含 status/file/metrics/reasons 等）。"""
+def process_station(st, args, tmpdir, relaxed=False):
+    """返回该站结果 dict（含 status/file/metrics/reasons 等）。
+    relaxed=True：dead 站重试，原图分辨率下限放宽到 DEAD_MIN_SIDE，命中条目标 below_spec。"""
     slug = st['slug']
     name = st.get('name') or ''
-    cands, en_label = gather_candidates(st)
+    min_side = DEAD_MIN_SIDE if relaxed else MIN_SIDE
+    cands, en_label = gather_candidates(st, relaxed)
     if not cands:
         return {'status': 'missing', 'reasons': ['no_candidates']}, None
 
@@ -382,7 +404,7 @@ def process_station(st, args, tmpdir):
             reject_dist[reason] = reject_dist.get(reason, 0) + 1
             continue
         w, h = info.get('width') or 0, info.get('height') or 0
-        if max(w, h) < MIN_SIDE:
+        if max(w, h) < min_side:
             reject_dist['resolution_low'] = reject_dist.get('resolution_low', 0) + 1
             continue
         if (info.get('size') or 0) > MAX_BYTES:
@@ -426,7 +448,7 @@ def process_station(st, args, tmpdir):
             continue
         if m['width'] != c['info'].get('width') or m['height'] != c['info'].get('height'):
             m['width'], m['height'] = c['info'].get('width'), c['info'].get('height')
-        if max(m['width'] or 0, m['height'] or 0) < MIN_SIDE:
+        if max(m['width'] or 0, m['height'] or 0) < min_side:
             reject_dist['resolution_low'] = reject_dist.get('resolution_low', 0) + 1
             continue
         verdict, reasons = quality_verdict(m, c['title'], c['from_category'])
@@ -445,15 +467,14 @@ def process_station(st, args, tmpdir):
     if best is None:
         return {'status': 'missing', 'reasons': reject_dist}, None
 
-    # 落盘：超长边归一化到 MAX_LONG（JPEG），未超限则保留原始字节
+    # 落盘：统一归一到 MAX_LONG / JPEG_Q（不足 max_long 不放大，但仍重编码以锁定体积口径）
     raw = best['_data']
-    data, long_side, norm = normalize_image(raw, MAX_LONG, JPEG_Q)
-    ext = '.jpg' if norm['encoded'] else OK_MIME[best['info']['mime']]
-    if norm['encoded']:
-        best_metrics = dict(best_metrics)
-        scale = MAX_LONG / float(max(best_metrics['width'], best_metrics['height']))
-        best_metrics['width'] = int(round(best_metrics['width'] * scale))
-        best_metrics['height'] = int(round(best_metrics['height'] * scale))
+    data, (nw, nh), norm = normalize_image(raw, MAX_LONG, JPEG_Q)
+    long_side = max(nw, nh)
+    below_spec = long_side < MIN_SIDE
+    ext = '.jpg'
+    best_metrics = dict(best_metrics)
+    best_metrics['width'], best_metrics['height'] = nw, nh
     photo_dir = os.path.join(args.workdir, 'stations', slug)
     os.makedirs(photo_dir, exist_ok=True)
     photo_path = os.path.join(photo_dir, 'photo' + ext)
@@ -480,9 +501,9 @@ def process_station(st, args, tmpdir):
     ) % (name, slug, rel_file, sha, page_url, best['info'].get('url'),
          best['author'] or '(unknown)', best['lic'], best['lic_url'] or '(none)',
          now_iso(),
-         ('downscaled to long side %d (JPEG q%d) from %dx%d' % (
-             long_side, JPEG_Q, norm.get('original_width', 0), norm.get('original_height', 0)))
-         if norm['encoded'] else 'original bytes (long side %d)' % long_side,
+         'normalized to long side %d (JPEG q%d) from %dx%d%s' % (
+             long_side, JPEG_Q, norm.get('original_width', 0), norm.get('original_height', 0),
+             ' [below_spec retry]' if below_spec else ''),
          best['author'] or '(unknown)', best['title'], best['lic'],
          best['lic_url'] or '(none)')
     lic_dir = os.path.join(args.workdir, 'licenses')
@@ -491,6 +512,9 @@ def process_station(st, args, tmpdir):
         f.write(lic_txt)
 
     status = 'done' if not best_reasons else 'review'
+    if below_spec:
+        best_reasons = list(best_reasons) + ['below_spec(long=%d,%s retry)' % (long_side, 'dead')]
+        status = 'review'
     entry = {
         'status': status,
         'file': rel_file,
@@ -499,6 +523,7 @@ def process_station(st, args, tmpdir):
         'width': best_metrics['width'],
         'height': best_metrics['height'],
         'normalized': norm,
+        'below_spec': below_spec,
         'source_title': best['title'],
         'source_page': page_url,
         'author': best['author'],
@@ -554,6 +579,42 @@ def append_progress(path, block):
         f.write(block + '\n')
 
 
+def load_dead(path):
+    if os.path.exists(path):
+        with open(path, encoding='utf-8') as f:
+            return json.load(f)
+    return {'schema': 1, 'stations': {}}
+
+
+def save_dead(path, dead):
+    os.makedirs(os.path.dirname(path) or '.', exist_ok=True)
+    dead['updated_at'] = now_iso()
+    dead['count'] = len(dead['stations'])
+    tmp = path + '.tmp'
+    with open(tmp, 'w', encoding='utf-8') as f:
+        json.dump(dead, f, ensure_ascii=False, indent=1, sort_keys=True)
+    os.replace(tmp, path)
+
+
+def dead_upsert(dead, st, entry, stage):
+    """把失败站写进 dead 清单（站 / 原因 / 来源 URL / 尝试次数），保留首次发现时间。"""
+    slug = st['slug']
+    prev = dead['stations'].get(slug, {})
+    dead['stations'][slug] = {
+        'slug': slug,
+        'name': st.get('name'),
+        'name_en': st.get('name_en'),
+        'stage': stage,
+        'reasons': entry.get('reasons') or entry.get('reject_dist') or {},
+        'reject_dist': entry.get('reject_dist') or {},
+        'source_page': entry.get('source_page'),
+        'below_spec': bool(entry.get('below_spec')),
+        'attempts': prev.get('attempts', 0) + 1,
+        'first_seen': prev.get('first_seen') or now_iso(),
+        'last_attempt': now_iso(),
+    }
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--stations', required=True, help='make_station_list.py 生成的清单 JSON')
@@ -564,6 +625,12 @@ def main():
     ap.add_argument('--max-download', type=int, default=5, help='每站最多下载验证的候选数')
     ap.add_argument('--probe', action='store_true', help='只选候选不下载（本地冒烟用）')
     ap.add_argument('--limit', type=int, default=0, help='本批最多处理多少站（0=全部）')
+    ap.add_argument('--dead-list', default=None,
+                    help='dead 清单路径（默认 <workdir>/data/dead_stations.json）')
+    ap.add_argument('--retry-dead', type=int, default=DEAD_RETRY,
+                    help='每批开始前最多重试多少 dead 站（0=关闭）')
+    ap.add_argument('--dead-only', action='store_true',
+                    help='只跑 dead 重试：跳过本批抓取、不改 state.batch_index')
     args = ap.parse_args()
 
     with open(args.stations, encoding='utf-8') as f:
@@ -574,40 +641,39 @@ def main():
     batch = stations[lo:lo + args.batch_size]
     if args.limit:
         batch = batch[:args.limit]
+    if args.dead_only:
+        batch = []
     print('[batch %d] list=%s canonical_total=%d batch=%d (%s)' % (
         args.batch_index, args.stations, len(stations), len(batch),
         '%s..%s' % (batch[0]['slug'], batch[-1]['slug']) if batch else '-'))
 
     state_path = args.state or os.path.join(args.workdir, 'state.json')
     state = load_state(state_path)
-    state.update({'stations_path': args.stations, 'batch_index': args.batch_index,
-                  'batch_size': args.batch_size})
+    if not args.dead_only:
+        state.update({'stations_path': args.stations, 'batch_index': args.batch_index,
+                      'batch_size': args.batch_size})
+
+    dead_path = args.dead_list or os.path.join(args.workdir, DEAD_PATH)
+    dead = load_dead(dead_path)
 
     tmpdir = os.path.join(args.workdir, '.tmp_fetch')
     os.makedirs(tmpdir, exist_ok=True)
 
     stats = {'attempted': 0, 'done': 0, 'review': 0, 'missing': 0, 'failed': 0,
-             'skipped_resume': 0, 'bytes': 0, 'reject_dist': {}, 'dead': []}
+             'skipped_resume': 0, 'bytes': 0, 'reject_dist': {}, 'dead': [],
+             'dead_retried': 0, 'dead_recovered': 0, 'dead_new': 0, 'dead_cumulative': 0}
     index_updates = {}
     t0 = time.time()
+    by_slug = {s['slug']: s for s in stations}
 
-    for i, st in enumerate(batch):
+    def record(st, entry, en_label, stage):
+        """写 state / index / stats（正常批次与 dead 重试共用一套口径）。"""
         slug = st['slug']
-        prev = state['entries'].get(slug, {})
-        if prev.get('status') in ('done', 'review') and not args.probe:
-            stats['skipped_resume'] += 1
-            continue
-        stats['attempted'] += 1
-        try:
-            entry, en_label = process_station(st, args, tmpdir)
-        except Exception as e:  # noqa: BLE001
-            entry, en_label = {'status': 'failed', 'reasons': ['exception:%s' % str(e)[:120]]}, None
+        status = entry['status']
         entry['ts'] = now_iso()
-        entry['attempts'] = prev.get('attempts', 0) + 1
+        entry['attempts'] = state['entries'].get(slug, {}).get('attempts', 0) + 1
         state['entries'][slug] = entry
         save_state(state_path, state)
-
-        status = entry['status']
         stats[status if status in stats else 'failed'] += 1
         for k, v in (entry.get('reject_dist') or {}).items():
             stats['reject_dist'][k] = stats['reject_dist'].get(k, 0) + v
@@ -626,11 +692,53 @@ def main():
                 'license_url': entry['license_url'], 'author': entry['author'],
                 'page_url': entry['source_page'],
                 'retrieved_at': entry['ts'], 'metrics': entry.get('metrics'),
+                'below_spec': entry.get('below_spec', False),
                 'review_reasons': entry.get('reasons') or [],
             }
-        elif status == 'missing':
-            stats['dead'].append({'slug': slug, 'name': st['name'],
-                                  'reasons': entry.get('reasons')})
+        elif status in ('missing', 'failed'):
+            dead_upsert(dead, st, entry, stage)
+            if status == 'missing':
+                stats['dead'].append({'slug': slug, 'name': st['name'],
+                                      'reasons': entry.get('reasons')})
+        return status
+
+    # ---- dead 站重试（放宽候选池，每批有上限，结果直接进本批 index/state）
+    if not args.probe and args.retry_dead > 0 and dead['stations']:
+        items = sorted(dead['stations'].values(),
+                       key=lambda x: (x.get('attempts', 0), x.get('slug', '')))
+        for rec in items[:args.retry_dead]:
+            st = by_slug.get(rec['slug']) or {'slug': rec['slug'], 'name': rec.get('name'),
+                                              'name_en': rec.get('name_en')}
+            stats['dead_retried'] += 1
+            try:
+                entry, en_label = process_station(st, args, tmpdir, relaxed=True)
+            except Exception as e:  # noqa: BLE001
+                entry, en_label = {'status': 'failed',
+                                   'reasons': ['exception:%s' % str(e)[:120]]}, None
+            status = record(st, entry, en_label, 'retry')
+            if status in ('done', 'review'):
+                dead['stations'].pop(rec['slug'], None)
+                stats['dead_recovered'] += 1
+                print('[dead-retry] %s recovered (%s long=%s)' % (
+                    rec['slug'], entry['file'], entry.get('width')))
+            else:
+                print('[dead-retry] %s still dead (%s)' % (
+                    rec['slug'], entry.get('reasons')))
+            save_dead(dead_path, dead)
+            sys.stdout.flush()
+
+    for i, st in enumerate(batch):
+        slug = st['slug']
+        prev = state['entries'].get(slug, {})
+        if prev.get('status') in ('done', 'review') and not args.probe:
+            stats['skipped_resume'] += 1
+            continue
+        stats['attempted'] += 1
+        try:
+            entry, en_label = process_station(st, args, tmpdir)
+        except Exception as e:  # noqa: BLE001
+            entry, en_label = {'status': 'failed', 'reasons': ['exception:%s' % str(e)[:120]]}, None
+        record(st, entry, en_label, 'fetch')
         if (i + 1) % 10 == 0:
             elapsed = time.time() - t0
             print('[%d/%d] done=%d review=%d missing=%d failed=%d skip=%d %.1fs/station' % (
@@ -641,11 +749,17 @@ def main():
     if not args.probe and index_updates:
         merge_index(os.path.join(args.workdir, 'index.json'), index_updates, args.stations)
 
+    stats['dead_new'] = len(stats['dead'])
+    if not args.probe:
+        save_dead(dead_path, dead)
+    stats['dead_cumulative'] = len(dead['stations'])
+
     elapsed = time.time() - t0
     stats['elapsed_sec'] = round(elapsed)
     stats['batch_index'] = args.batch_index
     stats['generated_at'] = now_iso()
-    stats_path = os.path.join(args.workdir, 'batch_stats_%d.json' % args.batch_index)
+    stats_path = os.path.join(
+        args.workdir, 'batch_stats_%s.json' % ('dead' if args.dead_only else args.batch_index))
     with open(stats_path, 'w', encoding='utf-8') as f:
         json.dump(stats, f, ensure_ascii=False, indent=1)
 
@@ -655,18 +769,23 @@ def main():
     if os.path.exists(idx_path):
         with open(idx_path, encoding='utf-8') as f:
             idx_total = len(json.load(f).get('stations', {}))
+    title = ('## dead retry — ' + stats['generated_at']) if args.dead_only else \
+        ('## batch %d — %s' % (args.batch_index, stats['generated_at']))
     block = (
-        '\n## batch %d — %s\n'
+        '\n%s\n'
         '- list: `%s` (canonical %d)\n'
         '- attempted=%d done=%d review=%d missing=%d failed=%d skipped_resume=%d\n'
         '- bytes_this_batch=%d avg=%d\n'
+        '- dead: new=%d cumulative=%d retried=%d recovered=%d\n'
         '- reject_dist=%s\n'
         '- cumulative_indexed=%d/%d\n'
         '- elapsed=%ds\n'
-    ) % (args.batch_index, stats['generated_at'], args.stations, len(stations),
+    ) % (title, args.stations, len(stations),
          stats['attempted'], stats['done'], stats['review'], stats['missing'],
          stats['failed'], stats['skipped_resume'], stats['bytes'],
          stats['bytes'] // max(1, stats['done'] + stats['review']),
+         stats['dead_new'], stats['dead_cumulative'],
+         stats['dead_retried'], stats['dead_recovered'],
          json.dumps(stats['reject_dist'], ensure_ascii=False),
          idx_total, len(stations), stats['elapsed_sec'])
     if not args.probe:

@@ -1,0 +1,77 @@
+{
+ "count": 4,
+ "schema": 1,
+ "stations": {
+  "st02880": {
+   "attempts": 1,
+   "below_spec": false,
+   "first_seen": "2026-11-03T10:43:22Z",
+   "last_attempt": "2026-11-03T10:43:22Z",
+   "name": "川田",
+   "name_en": "Kawata",
+   "reasons": {},
+   "reject_dist": {},
+   "slug": "st02880",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st03573": {
+   "attempts": 1,
+   "below_spec": false,
+   "first_seen": "2026-11-03T10:43:22Z",
+   "last_attempt": "2026-11-03T10:43:22Z",
+   "name": "田原坂",
+   "name_en": "Tabaruzaka",
+   "reasons": {
+    "oversize_gt_25mb": 3,
+    "resolution_low": 9
+   },
+   "reject_dist": {
+    "oversize_gt_25mb": 3,
+    "resolution_low": 9
+   },
+   "slug": "st03573",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st03578": {
+   "attempts": 1,
+   "below_spec": false,
+   "first_seen": "2026-11-03T10:43:22Z",
+   "last_attempt": "2026-11-03T10:43:22Z",
+   "name": "平成",
+   "name_en": "Heisei",
+   "reasons": {
+    "low_color(map/text?)": 5,
+    "resolution_low": 4
+   },
+   "reject_dist": {
+    "low_color(map/text?)": 5,
+    "resolution_low": 4
+   },
+   "slug": "st03578",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st03625": {
+   "attempts": 1,
+   "below_spec": false,
+   "first_seen": "2026-11-03T10:43:22Z",
+   "last_attempt": "2026-11-03T10:43:22Z",
+   "name": "波野",
+   "name_en": "Namino",
+   "reasons": {
+    "low_color(map/text?)": 1,
+    "resolution_low": 5
+   },
+   "reject_dist": {
+    "low_color(map/text?)": 1,
+    "resolution_low": 5
+   },
+   "slug": "st03625",
+   "source_page": null,
+   "stage": "fetch"
+  }
+ },
+ "updated_at": "2026-11-03T10:43:22Z"
+}
