@@ -1,0 +1,120 @@
+{
+ "attempted": 500,
+ "done": 450,
+ "review": 42,
+ "missing": 12,
+ "failed": 0,
+ "skipped_resume": 0,
+ "bytes": 211184790,
+ "reject_dist": {
+  "resolution_low": 1424,
+  "mime_unsupported": 204,
+  "oversize_gt_25mb": 379,
+  "low_color(map/text?)": 64,
+  "no_author_metadata": 58,
+  "license_unclear": 30,
+  "license_forbidden": 5
+ },
+ "dead": [
+  {
+   "slug": "st03578",
+   "name": "平成",
+   "reasons": {
+    "resolution_low": 4,
+    "low_color(map/text?)": 5
+   }
+  },
+  {
+   "slug": "st00051",
+   "name": "大和新庄",
+   "reasons": {
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st00170",
+   "name": "皆実町六丁目",
+   "reasons": {
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st00182",
+   "name": "横川一丁目",
+   "reasons": {
+    "resolution_low": 1,
+    "low_color(map/text?)": 1
+   }
+  },
+  {
+   "slug": "st00317",
+   "name": "升形",
+   "reasons": {
+    "resolution_low": 4
+   }
+  },
+  {
+   "slug": "st00364",
+   "name": "水族館口",
+   "reasons": {
+    "resolution_low": 1,
+    "mime_unsupported": 1
+   }
+  },
+  {
+   "slug": "st00377",
+   "name": "郡元・南",
+   "reasons": {
+    "oversize_gt_25mb": 12,
+    "resolution_low": 7,
+    "mime_unsupported": 11
+   }
+  },
+  {
+   "slug": "st00380",
+   "name": "純心学園前",
+   "reasons": {
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st00449",
+   "name": "八千代町",
+   "reasons": {
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st00550",
+   "name": "鷹狩",
+   "reasons": {
+    "oversize_gt_25mb": 1,
+    "low_color(map/text?)": 1
+   }
+  },
+  {
+   "slug": "st00554",
+   "name": "山郷",
+   "reasons": {
+    "resolution_low": 2,
+    "oversize_gt_25mb": 2
+   }
+  },
+  {
+   "slug": "st00595",
+   "name": "中多久",
+   "reasons": {
+    "resolution_low": 2,
+    "oversize_gt_25mb": 1,
+    "low_color(map/text?)": 2
+   }
+  }
+ ],
+ "dead_retried": 4,
+ "dead_recovered": 3,
+ "dead_new": 12,
+ "dead_cumulative": 12,
+ "elapsed_sec": 3296,
+ "batch_index": 2,
+ "generated_at": "2026-11-03T12:32:53Z"
+}

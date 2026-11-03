@@ -22,3 +22,13 @@
 - cumulative_indexed=1488/8909
 - elapsed=3057s
 
+
+## batch 2 — 2026-11-03T12:32:53Z
+- list: `data/stations_all.json` (canonical 8909)
+- attempted=500 done=450 review=42 missing=12 failed=0 skipped_resume=0
+- bytes_this_batch=211184790 avg=429237
+- dead: new=12 cumulative=12 retried=4 recovered=3
+- reject_dist={"resolution_low": 1424, "mime_unsupported": 204, "oversize_gt_25mb": 379, "low_color(map/text?)": 64, "no_author_metadata": 58, "license_unclear": 30, "license_forbidden": 5}
+- cumulative_indexed=1980/8909
+- elapsed=3296s
+
