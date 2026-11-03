@@ -37,14 +37,20 @@
 
 两种源口径：
 
-- `--source stamp_scenes`：印章盘点口径（1,089 条记录 → 964 唯一站）。
+- `--source universe`：**全集口径（现行）**。输入全集对账产物 `universe.json`
+  （9,163 物理站，带 `ghost/has_stamp/in_planC` 标记）。剔除 254 个 ghost
+  （废站/停运），得 8,909 在运营物理站；主键 = `phys_id`，slug `st{phys_id:05d}`；
+  **清单顺序 = in_planC（C 组 966 站）优先，组内按 phys_id 升序**——
+  `batch_fetch.py` 按清单顺序执行，不再自行排序。
+  同名错配纠正（江北/朝倉/伊野/竹田 → JR 键）已由对账落在 `universe.json`
+  的 `has_stamp/in_planC` 标记上，清单直接继承。
+- `--source stamp_scenes`：印章盘点口径（1,089 条记录 → 964 唯一站，历史口径）。
   主键 = 站点数字 ID（1001–10096），slug `st{id:05d}`；同名站最小 ID 为主，
-  其余进 `same_as`（共享一张图 + sha256 去重）。
-- `--source station_map`：全站名表口径（8,928 站名）。无数字 ID，按站名排序
-  分配 900001+ 临时 ID（`st%06d`），**最终口径待全集对账后可整体替换**。
+  其余进 `same_as`（共享一张图 + sha256 去重）。该口径产物已迁移到 phys_id 主键。
+- `--source station_map`：全站名表口径（8,928 站名，未含物理聚类，仅备用）。
 
-`--geojson` 可选：从主站 `stations.geojson`（8,532 站）合并线路与客流，
-将来"核心站优先"口径可直接按 `riders` 排序切片。
+`--geojson` 可选：从主站 `stations.geojson`（8,532 站）合并线路与客流；
+`--i18n` 可选：从主站 `names_i18n.json`（8,062 站）补 `name_en`（Commons 分类检索用）。
 
 ## 3. 许可判定规则（硬纪律）
 

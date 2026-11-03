@@ -23,7 +23,7 @@ on:
       stations_path:
         description: '目标站清单（仓库内路径，可替换）'
         required: false
-        default: 'data/stations_stamp1089.json'
+        default: 'data/stations_all.json'
         type: string
 
 permissions:

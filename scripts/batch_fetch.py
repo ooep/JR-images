@@ -528,7 +528,8 @@ def main():
 
     with open(args.stations, encoding='utf-8') as f:
         doc = json.load(f)
-    stations = sorted(doc['stations'], key=lambda s: s['slug'])
+    # 清单顺序即执行顺序（排序责任在 make_station_list，如 C 优先）
+    stations = doc['stations']
     lo = args.batch_index * args.batch_size
     batch = stations[lo:lo + args.batch_size]
     if args.limit:

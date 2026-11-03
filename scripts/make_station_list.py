@@ -127,12 +127,61 @@ def enrich_geojson(stations, geojson_path):
     return hit
 
 
+def build_from_universe(raw):
+    """universe.json（全集对账产物）→ 目标清单。
+    剔除 ghost（废站/停运），主键 = phys_id，slug = st{phys_id:05d}；
+    顺序 = in_planC 优先（C 组），组内按 phys_id 升序。"""
+    stations_in = raw['stations']
+    out = []
+    skipped_ghost = 0
+    for s in stations_in:
+        if s.get('ghost'):
+            skipped_ghost += 1
+            continue
+        coord = s.get('coord') or [None, None]
+        out.append({
+            'id': s['phys_id'],
+            'slug': 'st%05d' % s['phys_id'],
+            'name': s['name'],
+            'name_key': (s.get('keys') or [s['name']])[0],
+            'name_en': None,
+            'lat': coord[1],
+            'lon': coord[0],
+            'pref': s.get('pref'),
+            'scene': None,
+            'lines': s.get('lines') or [],
+            'riders': s.get('riders'),
+            'same_as': [],
+            'keys': s.get('keys') or [],
+            'flags': {'has_stamp': bool(s.get('has_stamp')),
+                      'in_planC': bool(s.get('in_planC')),
+                      'ghost': False},
+        })
+    out.sort(key=lambda x: (not x['flags']['in_planC'], x['id']))
+    return out, len(stations_in), skipped_ghost
+
+
+def enrich_i18n(stations, i18n_path):
+    """names_i18n.json（主站多语站名）→ name_en。按 name_key 或裸名匹配。"""
+    ni = load_json(i18n_path).get('stations', {})
+    hit = 0
+    for s in stations:
+        rec = ni.get(s['name_key']) or ni.get(s['name'])
+        if rec and rec.get('en'):
+            s['name_en'] = rec['en']
+            hit += 1
+    return hit
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--source', required=True, choices=['stamp_scenes', 'station_map'])
-    ap.add_argument('--input', required=True, help='stamp_scenes.json 或 station_map.json')
+    ap.add_argument('--source', required=True,
+                    choices=['stamp_scenes', 'station_map', 'universe'])
+    ap.add_argument('--input', required=True,
+                    help='stamp_scenes.json / station_map.json / universe.json')
     ap.add_argument('--geojson', default=None, help='可选：stations.geojson 富化 lines/riders')
-    ap.add_argument('--tag', required=True, help='清单标签，如 stamp1089 / full8928')
+    ap.add_argument('--i18n', default=None, help='可选：names_i18n.json 富化 name_en')
+    ap.add_argument('--tag', required=True, help='清单标签，如 stamp1089 / all8909')
     ap.add_argument('--out', required=True)
     args = ap.parse_args()
 
@@ -141,14 +190,23 @@ def main():
         recs = raw if isinstance(raw, list) else raw.get('stations', [])
         stations, total = build_from_stamp_scenes(recs)
         policy = 'primary_key=numeric_station_id(1001-10096); same-name stations share one photo via same_as'
+        skipped_ghost = 0
+    elif args.source == 'universe':
+        stations, total, skipped_ghost = build_from_universe(raw)
+        policy = ('primary_key=phys_id; slug=st{phys_id:05d}; ghosts excluded; '
+                  'order=in_planC(C-core) first then phys_id asc')
     else:
         sm = raw.get('stations', raw) if isinstance(raw, dict) else raw
         stations, total = build_from_station_map(sm)
         policy = 'primary_key=temp_id_900001+(sorted by name); pending final reconciliation'
+        skipped_ghost = 0
 
     geo_hit = None
     if args.geojson:
         geo_hit = enrich_geojson(stations, args.geojson)
+    i18n_hit = None
+    if args.i18n:
+        i18n_hit = enrich_i18n(stations, args.i18n)
 
     doc = {
         'meta': {
@@ -158,15 +216,17 @@ def main():
             'generated_at': now_iso(),
             'total_records': total,
             'canonical': len(stations),
+            'ghosts_excluded': skipped_ghost,
             'policy': policy,
             'geojson_enriched': geo_hit,
+            'i18n_enriched': i18n_hit,
         },
         'stations': stations,
     }
     with open(args.out, 'w', encoding='utf-8') as f:
         json.dump(doc, f, ensure_ascii=False, indent=1)
-    print('wrote %s: canonical=%d total_records=%d geo_hit=%s' % (
-        args.out, len(stations), total, geo_hit))
+    print('wrote %s: canonical=%d total_records=%d ghosts_excluded=%d geo_hit=%s i18n_hit=%s' % (
+        args.out, len(stations), total, skipped_ghost, geo_hit, i18n_hit))
     return 0
 
 
