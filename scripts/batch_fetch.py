@@ -287,6 +287,7 @@ def gather_candidates(st):
     """返回 (candidates:[{title, from_category}], en_label_or_None)。"""
     name = (st.get('name') or '').strip()
     key = name[:-1] if name.endswith('駅') else name
+    en = (st.get('name_en') or '').strip()
     titles, seen, en_label = [], set(), None
 
     def add(ts, from_category):
@@ -295,7 +296,11 @@ def gather_candidates(st):
                 seen.add(t)
                 titles.append((t, from_category))
 
-    for cat in ('Category:%s駅' % key, 'Category:%s Station' % key, 'Category:%s' % key):
+    cat_guesses = ['Category:%s駅' % key]
+    if en:
+        cat_guesses.append('Category:%s Station' % en)
+    cat_guesses += ['Category:%s Station' % key, 'Category:%s' % key]
+    for cat in cat_guesses:
         try:
             add(category_files(cat), True)
         except Exception:  # noqa: BLE001
