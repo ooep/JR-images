@@ -1,12 +1,8 @@
 name: batch-fetch
 
-# 云端批处理：抓取 + 许可校验 + 数值质检 + 提交，全部在 runner 上完成，
-# 本地磁盘不碰图片。目标站清单是仓库内的可替换输入文件（不写死数量）。
-#
-# 触发示例（API）：
-#   POST /repos/ooep/JR-images/actions/workflows/batch-fetch.yml/dispatches
-#   {"ref":"main","inputs":{"batch_index":"0","batch_size":"500",
-#    "stations_path":"data/stations_stamp1089.json"}}
+# 云端批处理：抓取 + 许可校验 + 数值质检 + 分块提交，全部在 runner 上完成。
+# 单次 push 有实际上限（>2GB 会 HTTP 500），所以图片按 PUSH_CHUNK 站一组提交。
+# 每批成功后由本工作流自动 dispatch 下一批，链条不依赖外部轮询。
 
 on:
   workflow_dispatch:
@@ -28,11 +24,18 @@ on:
 
 permissions:
   contents: write
+  actions: write
+
+concurrency:
+  group: batch-fetch-chain
+  cancel-in-progress: false
 
 jobs:
   fetch:
     runs-on: ubuntu-latest
     timeout-minutes: 350
+    env:
+      PUSH_CHUNK: '100'
     steps:
       - uses: actions/checkout@v4
 
@@ -54,20 +57,89 @@ jobs:
       - name: Verify batch
         run: python scripts/verify_local.py --workdir . || true
 
-      - name: Commit & push (retry on conflict, never force)
+      - name: Commit & push in chunks (never force)
         run: |
+          set -e
           git config user.name "jrimages-bot"
           git config user.email "ooep@users.noreply.github.com"
-          git add stations licenses index.json state.json PROGRESS.md batch_stats_*.json || true
-          if git diff --cached --quiet; then
-            echo "nothing to commit"; exit 0
-          fi
-          git commit -m "batch ${{ inputs.batch_index }}: JR station photos (list=${{ inputs.stations_path }}, size=${{ inputs.batch_size }})"
-          for i in 1 2 3; do
-            if git push origin HEAD:main; then exit 0; fi
-            echo "push conflict, rebase & retry ($i)"; git pull --rebase origin main
+
+          push_commit () {
+            msg="$1"
+            if git diff --cached --quiet; then return 0; fi
+            git commit -m "$msg"
+            for n in 1 2 3 4; do
+              if git push origin HEAD:main; then return 0; fi
+              echo "push failed ($n), fetch+rebase & retry"
+              git fetch origin main
+              if ! git rebase origin/main; then
+                git rebase --abort || true
+                return 1
+              fi
+            done
+            return 1
+          }
+
+          # 先推元数据（状态与进度），失败也能靠 state.json 续跑
+          git add index.json state.json PROGRESS.md batch_stats_*.json 2>/dev/null || true
+          push_commit "batch ${{ inputs.batch_index }}: metadata (list=${{ inputs.stations_path }})"
+
+          # 图片与许可按 PUSH_CHUNK 站一组提交，避免单次 push 过大
+          i=0; g=0
+          for d in stations/*/; do
+            [ -d "$d" ] || continue
+            slug=$(basename "$d")
+            git add "stations/$slug" "licenses/$slug.txt" 2>/dev/null || true
+            i=$((i+1))
+            if [ $((i % PUSH_CHUNK)) -eq 0 ]; then
+              g=$((g+1))
+              git add index.json state.json PROGRESS.md 2>/dev/null || true
+              if ! push_commit "batch ${{ inputs.batch_index }}: images group $g (${i} stations)"; then
+                echo "chunk $g push failed"; exit 1
+              fi
+            fi
           done
-          echo "push failed after retries"; exit 1
+          g=$((g+1))
+          git add index.json state.json PROGRESS.md 2>/dev/null || true
+          if ! push_commit "batch ${{ inputs.batch_index }}: images group $g (tail)"; then
+            echo "tail push failed"; exit 1
+          fi
+
+      - name: Dispatch next batch
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STATIONS_PATH: ${{ inputs.stations_path }}
+          BATCH_INDEX: ${{ inputs.batch_index }}
+          BATCH_SIZE: ${{ inputs.batch_size }}
+        run: |
+          python3 - <<'PY' > /tmp/next.json
+          import json, os
+          path = os.environ['STATIONS_PATH']
+          n = len(json.load(open(path, encoding='utf-8'))['stations'])
+          size = int(os.environ['BATCH_SIZE'])
+          nxt = int(os.environ['BATCH_INDEX']) + 1
+          print(json.dumps({'total': n, 'next': nxt, 'start': nxt * size,
+                            'size': size, 'path': path}))
+          PY
+          TOTAL=$(python3 -c "import json;print(json.load(open('/tmp/next.json'))['total'])")
+          NEXT=$(python3 -c "import json;print(json.load(open('/tmp/next.json'))['next'])")
+          START=$(python3 -c "import json;print(json.load(open('/tmp/next.json'))['start'])")
+          if [ "$START" -ge "$TOTAL" ]; then
+            echo "all batches dispatched (total=$TOTAL)"; exit 0
+          fi
+          echo "dispatching batch $NEXT"
+          code=$(curl -sS -o /tmp/dispatch.out -w '%{http_code}' -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/batch-fetch.yml/dispatches" \
+            -d "{\"ref\":\"main\",\"inputs\":{\"batch_index\":\"$NEXT\",\"batch_size\":\"${{ inputs.batch_size }}\",\"stations_path\":\"${{ inputs.stations_path }}\"}}")
+          echo "dispatch HTTP $code"
+          cat /tmp/dispatch.out
+          [ "$code" = "204" ] || exit 1
+        env:
+          STATIONS_PATH: ${{ inputs.stations_path }}
+          BATCH_INDEX: ${{ inputs.batch_index }}
+          BATCH_SIZE: ${{ inputs.batch_size }}
 
       - name: Upload stats artifact
         if: always()

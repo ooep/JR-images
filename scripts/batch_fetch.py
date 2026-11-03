@@ -39,6 +39,8 @@ WIKIDATA = 'https://www.wikidata.org/w/api.php'
 MIN_INTERVAL = 1.05          # 每域名最小请求间隔（秒）
 MAX_CONCURRENT_PER_DOMAIN = 2
 MIN_SIDE = 1600              # 原图长边下限（px）
+MAX_LONG = 2048              # 落盘长边上限（px）：原图动辄 5000+px/6MB，压到 2048 保画质也保体积
+JPEG_Q = 88                  # 归一化 JPEG 质量
 MAX_BYTES = 25 * 1024 * 1024  # 单文件上限 25MB（超限直接选次优，不压缩抵赖）
 OK_MIME = {'image/jpeg': '.jpg', 'image/png': '.png', 'image/webp': '.webp'}
 
@@ -252,6 +254,26 @@ def analyze_pixels(data):
     }
 
 
+def normalize_image(data, max_long=MAX_LONG, quality=JPEG_Q):
+    """长边超过 max_long 时等比缩到 max_long 并存为 JPEG；否则保留原始字节。
+    不做无谓重编码（未超限就原样存），也不为绕开 25MB 上限而压缩——超限候选在下载前已剔除。"""
+    im = Image.open(io.BytesIO(data))
+    im.load()
+    w, h = im.size
+    if max(w, h) <= max_long:
+        return data, max(w, h), {'encoded': False, 'long': max(w, h)}
+    scale = max_long / float(max(w, h))
+    nw, nh = max(1, int(round(w * scale))), max(1, int(round(h * scale)))
+    if im.mode not in ('RGB', 'L'):
+        im = im.convert('RGB')
+    im = im.resize((nw, nh), Image.LANCZOS)
+    out = io.BytesIO()
+    im.save(out, 'JPEG', quality=quality, optimize=True, progressive=True)
+    return out.getvalue(), max(nw, nh), {
+        'encoded': True, 'long': max(nw, nh),
+        'original_width': w, 'original_height': h}
+
+
 def quality_verdict(m, title, from_category):
     """返回 (verdict, reasons)：verdict ∈ done/review/reject。
     车站本体判定：分类来源=主题证据；搜索来源要求文件名含车站关键词；
@@ -423,14 +445,21 @@ def process_station(st, args, tmpdir):
     if best is None:
         return {'status': 'missing', 'reasons': reject_dist}, None
 
-    # 落盘：原始字节，不重压缩
-    ext = OK_MIME[best['info']['mime']]
+    # 落盘：超长边归一化到 MAX_LONG（JPEG），未超限则保留原始字节
+    raw = best['_data']
+    data, long_side, norm = normalize_image(raw, MAX_LONG, JPEG_Q)
+    ext = '.jpg' if norm['encoded'] else OK_MIME[best['info']['mime']]
+    if norm['encoded']:
+        best_metrics = dict(best_metrics)
+        scale = MAX_LONG / float(max(best_metrics['width'], best_metrics['height']))
+        best_metrics['width'] = int(round(best_metrics['width'] * scale))
+        best_metrics['height'] = int(round(best_metrics['height'] * scale))
     photo_dir = os.path.join(args.workdir, 'stations', slug)
     os.makedirs(photo_dir, exist_ok=True)
     photo_path = os.path.join(photo_dir, 'photo' + ext)
     with open(photo_path, 'wb') as f:
-        f.write(best['_data'])
-    sha = hashlib.sha256(best['_data']).hexdigest()
+        f.write(data)
+    sha = hashlib.sha256(data).hexdigest()
     rel_file = 'stations/%s/photo%s' % (slug, ext)
 
     em = best['info'].get('extmetadata') or {}
@@ -446,10 +475,15 @@ def process_station(st, args, tmpdir):
         'license: %s\n'
         'license_url: %s\n'
         'retrieved_at: %s\n'
+        'normalized: %s\n'
         'attribution: %s / %s / %s / %s\n'
     ) % (name, slug, rel_file, sha, page_url, best['info'].get('url'),
          best['author'] or '(unknown)', best['lic'], best['lic_url'] or '(none)',
-         now_iso(), best['author'] or '(unknown)', best['title'], best['lic'],
+         now_iso(),
+         ('downscaled to long side %d (JPEG q%d) from %dx%d' % (
+             long_side, JPEG_Q, norm.get('original_width', 0), norm.get('original_height', 0)))
+         if norm['encoded'] else 'original bytes (long side %d)' % long_side,
+         best['author'] or '(unknown)', best['title'], best['lic'],
          best['lic_url'] or '(none)')
     lic_dir = os.path.join(args.workdir, 'licenses')
     os.makedirs(lic_dir, exist_ok=True)
@@ -461,9 +495,10 @@ def process_station(st, args, tmpdir):
         'status': status,
         'file': rel_file,
         'sha256': sha,
-        'bytes': len(best['_data']),
+        'bytes': len(data),
         'width': best_metrics['width'],
         'height': best_metrics['height'],
+        'normalized': norm,
         'source_title': best['title'],
         'source_page': page_url,
         'author': best['author'],
