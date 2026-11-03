@@ -1,0 +1,53 @@
+{
+ "attempted": 500,
+ "done": 485,
+ "review": 11,
+ "missing": 4,
+ "failed": 0,
+ "skipped_resume": 0,
+ "bytes": 283876635,
+ "reject_dist": {
+  "resolution_low": 1872,
+  "no_author_metadata": 104,
+  "oversize_gt_25mb": 117,
+  "license_unclear": 134,
+  "mime_unsupported": 71,
+  "low_color(map/text?)": 69,
+  "license_forbidden": 2,
+  "blurry(lap=38<45)": 1
+ },
+ "dead": [
+  {
+   "slug": "st02880",
+   "name": "川田",
+   "reasons": {}
+  },
+  {
+   "slug": "st03573",
+   "name": "田原坂",
+   "reasons": {
+    "resolution_low": 9,
+    "oversize_gt_25mb": 3
+   }
+  },
+  {
+   "slug": "st03578",
+   "name": "平成",
+   "reasons": {
+    "resolution_low": 4,
+    "low_color(map/text?)": 5
+   }
+  },
+  {
+   "slug": "st03625",
+   "name": "波野",
+   "reasons": {
+    "resolution_low": 5,
+    "low_color(map/text?)": 1
+   }
+  }
+ ],
+ "elapsed_sec": 3098,
+ "batch_index": 0,
+ "generated_at": "2026-11-03T10:43:22Z"
+}
