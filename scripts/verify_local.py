@@ -33,6 +33,7 @@ def upsert_dead(path, entries):
     for slug, rec in entries.items():
         prev = dead['stations'].get(slug, {})
         rec['attempts'] = prev.get('attempts', 0) + 1
+        rec['final_dead'] = rec['attempts'] >= 3
         rec['first_seen'] = prev.get('first_seen') or now_iso()
         rec['last_attempt'] = now_iso()
         dead['stations'][slug] = rec
