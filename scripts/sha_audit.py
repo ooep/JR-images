@@ -7,27 +7,84 @@
 import collections
 import glob
 import hashlib
+import io
 import json
 import os
 import statistics
+
+from PIL import Image
+
+NEAR_HAMMING = 6   # dHash 64bit 汉明距离 ≤6 视为同一张照片的不同编码
+
+
+def dhash64(data):
+    """差值感知哈希（9x8 → 64bit）。"""
+    im = Image.open(io.BytesIO(data)).convert('L').resize((9, 8), Image.LANCZOS)
+    px = list(im.getdata())
+    bits = 0
+    for row in range(8):
+        for col in range(8):
+            bits = (bits << 1) | (1 if px[row * 9 + col] < px[row * 9 + col + 1] else 0)
+    return bits
+
+
+def hamming(a, b):
+    return bin(a ^ b).count('1')
 
 
 def main():
     idx = json.load(open('index.json', encoding='utf-8'))
     files = sorted(glob.glob('stations/*/photo.jpg'))
     results = {}
+    dhashes = {}
     for f in files:
         slug = f.split('/')[1]
-        h = hashlib.sha256()
-        with open(f, 'rb') as fh:
-            for chunk in iter(lambda: fh.read(1 << 20), b''):
-                h.update(chunk)
-        results[slug] = (h.hexdigest(), os.path.getsize(f))
+        raw = open(f, 'rb').read()
+        results[slug] = (hashlib.sha256(raw).hexdigest(), len(raw))
+        try:
+            dhashes[slug] = dhash64(raw)
+        except Exception:  # noqa: BLE001 - 解码失败只记 sha
+            dhashes[slug] = None
 
     groups = collections.defaultdict(list)
     for slug, (sha, n) in results.items():
         groups[sha].append(slug)
-    dups = {k: v for k, v in groups.items() if len(v) > 1}
+
+    # same_as 同组豁免（共用站房的同站不同条目，允许同图）
+    idx_stations = idx.get('stations', {})
+
+    def linked(a, b):
+        ea, eb = idx_stations.get(a) or {}, idx_stations.get(b) or {}
+        return a in (eb.get('same_as') or []) or b in (ea.get('same_as') or [])
+
+    dups, dups_exempt = {}, {}
+    for k, v in groups.items():
+        if len(v) > 1:
+            if all(linked(v[0], x) for x in v[1:]):
+                dups_exempt[k] = v
+            else:
+                dups[k] = v
+
+    # 感知近重复：sha 不同但 dHash 汉明距离 ≤ NEAR_HAMMING（同一照片的不同编码）
+    slugs = sorted(results)
+    near_pairs, near_cross = [], []
+    for i in range(len(slugs)):
+        a = slugs[i]
+        da = dhashes.get(a)
+        if da is None:
+            continue
+        for j in range(i + 1, len(slugs)):
+            b = slugs[j]
+            db = dhashes.get(b)
+            if db is None or results[a][0] == results[b][0]:
+                continue  # sha 相同的已在 dup 组里统计
+            dist = hamming(da, db)
+            if dist <= NEAR_HAMMING:
+                pair = {'a': a, 'b': b, 'hamming': dist,
+                        'same_as_pair': linked(a, b)}
+                near_pairs.append(pair)
+                if not pair['same_as_pair']:
+                    near_cross.append(pair)
 
     mismatch_sha, mismatch_bytes = [], []
     for slug, (sha, n) in results.items():
@@ -45,6 +102,10 @@ def main():
         'duplicate_groups': len(dups),
         'duplicate_total_images': sum(len(v) for v in dups.values()),
         'redundant_images': sum(len(v) for v in dups.values()) - len(dups),
+        'exempt_same_as_groups': len(dups_exempt),
+        'near_dup_pairs': len(near_pairs),
+        'near_dup_cross_station': len(near_cross),
+        'near_dup_detail': near_pairs[:50],
         'max_duplicate_group': max((len(v) for v in dups.values()), default=0),
         'dup_detail': {k: v for k, v in sorted(
             dups.items(), key=lambda kv: -len(kv[1]))[:50]},
@@ -57,12 +118,19 @@ def main():
     }
     with open('sha_audit_report.json', 'w', encoding='utf-8') as f:
         json.dump(report, f, ensure_ascii=False, indent=1)
+    # dhash 映射（供回填 index，之后抓取时做感知去重预载）
+    with open('dhash_map.json', 'w', encoding='utf-8') as f:
+        json.dump({s: ('%016x' % dhashes[s]) if dhashes.get(s) is not None else None
+                   for s in sorted(results)}, f)
     line = ('sha_audit: images=%d unique_shas=%d dup_groups=%d dup_images=%d '
-            'redundant=%d max_group=%d sha_mismatch=%d bytes_mismatch=%d '
+            'redundant=%d exempt=%d near_dup_pairs=%d near_dup_cross=%d '
+            'max_group=%d sha_mismatch=%d bytes_mismatch=%d '
             'license_missing=%d avg=%d median=%d' % (
                 report['images_checked'], report['unique_shas'],
                 report['duplicate_groups'], report['duplicate_total_images'],
-                report['redundant_images'], report['max_duplicate_group'],
+                report['redundant_images'], report['exempt_same_as_groups'],
+                report['near_dup_pairs'], report['near_dup_cross_station'],
+                report['max_duplicate_group'],
                 len(mismatch_sha), len(mismatch_bytes), len(missing_lic),
                 report['avg_bytes'], report['median_bytes']))
     print(line)

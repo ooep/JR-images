@@ -89,7 +89,11 @@ def main():
         if max(e.get('width') or 0, e.get('height') or 0) < 1600 and not e.get('below_spec'):
             problems.append((slug, 'long_side_lt_1600'))
         if sha in seen_sha:
-            problems.append((slug, 'duplicate_sha256_with:%s' % seen_sha[sha]))
+            partner = seen_sha[sha]
+            # same_as 同组豁免（如 仙台JR/仙台市地下铁 共用站房，允许同图）
+            if slug not in ((stations.get(partner) or {}).get('same_as') or []) and \
+                    partner not in (e.get('same_as') or []):
+                problems.append((slug, 'duplicate_sha256_with:%s' % partner))
         else:
             seen_sha[sha] = slug
         lic = os.path.join(args.workdir, 'licenses', slug + '.txt')

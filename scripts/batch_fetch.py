@@ -55,6 +55,7 @@ DEAD_MIN_SIDE = 1280         # dead 站重试放宽后的原图长边下限（�
 DEAD_RETRY = 25              # 每批最多重试多少 dead 站（86 张重复图清欠，10→25 提速）
 DEAD_MAX_ATTEMPTS = 3        # 累计尝试次数达到该值即标 final_dead，不再进重试池
 DEAD_PATH = 'data/dead_stations.json'
+NEAR_HAMMING = 6               # dHash 64bit 汉明距离 ≤6 视为同一张照片的不同编码
 MAX_BYTES = 25 * 1024 * 1024  # 单文件上限 25MB（超限直接选次优，不压缩抵赖）
 OK_MIME = {'image/jpeg': '.jpg', 'image/png': '.png', 'image/webp': '.webp'}
 
@@ -130,10 +131,12 @@ SESSION = requests.Session()
 SESSION.headers['User-Agent'] = UA
 
 RATE = {'events': 0}
+MAXLAG_RETRIES = {'n': 0}          # maxlag 等待重试单独计数（不计入 dead）
+UPLOAD_ERR_STREAK = {}             # 下载层连续 4xx/5xx 计数（熔断用）
 
 
 def rate_event(kind, url):
-    """熔断：命中 429/403/maxlag 立即降级（全串行的并发 1 + 1.05s 间隔）并计数；
+    """熔断：命中 429/403/maxlag/下载层连续错误 → 立即降级（并发 1 + 1.05s 间隔）并计数；
     同一运行内累计 ≥2 次 → 直接中止本批（保护配额，链由看守按同因规则处置）。"""
     RATE['events'] += 1
     LIMITER.degrade()
@@ -143,6 +146,20 @@ def rate_event(kind, url):
     if RATE['events'] >= 2:
         raise SystemExit('rate limit events >= 2 in this run; '
                          'stopping batch to protect quota')
+
+
+def http_err_streak(domain, status, url):
+    """下载层熔断：upload.wikimedia.org 连续 3 次 4xx/5xx → 同 API 层熔断处置。"""
+    if domain != 'upload.wikimedia.org':
+        return
+    UPLOAD_ERR_STREAK[domain] = UPLOAD_ERR_STREAK.get(domain, 0) + 1
+    if UPLOAD_ERR_STREAK[domain] >= 3:
+        UPLOAD_ERR_STREAK[domain] = 0
+        rate_event('upload_http_%s_x3' % status, url)
+
+
+def http_ok(domain):
+    UPLOAD_ERR_STREAK.pop(domain, None)
 
 
 def http_get(url, params=None, domain=None, tries=4, timeout=60, stream=False):
@@ -160,6 +177,10 @@ def http_get(url, params=None, domain=None, tries=4, timeout=60, stream=False):
                 continue
             if r.status_code == 403:
                 rate_event('403', url)
+            if r.status_code >= 400:
+                http_err_streak(domain, r.status_code, url)
+            else:
+                http_ok(domain)
             r.raise_for_status()
             return r
         except SystemExit:
@@ -182,6 +203,7 @@ def api_json(url, params, domain=None):
             d = r.json()
         err = d.get('error') or {}
         if err.get('code') == 'maxlag':
+            MAXLAG_RETRIES['n'] += 1   # 单独计数：等待重试不进 dead
             rate_event('maxlag(lag=%s)' % err.get('lag'), url)
             time.sleep(min(int(err.get('lag') or MAXLAG), 30))
             continue
@@ -370,6 +392,21 @@ def normalize_image(data, max_long=MAX_LONG, quality=JPEG_Q):
     return out.getvalue(), (w, h), {
         'encoded': True, 'long': max(w, h), 'quality': quality,
         'original_width': w0, 'original_height': h0}
+
+
+def dhash64(data):
+    """差值感知哈希（9x8 → 64bit）：识别「同一张照片的不同编码」。"""
+    im = Image.open(io.BytesIO(data)).convert('L').resize((9, 8), Image.LANCZOS)
+    px = list(im.getdata())
+    bits = 0
+    for row in range(8):
+        for col in range(8):
+            bits = (bits << 1) | (1 if px[row * 9 + col] < px[row * 9 + col + 1] else 0)
+    return bits
+
+
+def hamming(a, b):
+    return bin(a ^ b).count('1')
 
 
 def quality_verdict(m, title, from_category):
@@ -587,6 +624,7 @@ def process_station(st, args, tmpdir, relaxed=False, used=None):
 
     # 逐张下载验证 + 数值质检 + 排序打分，择优（不再「关键词命中就收」）
     used_sha = (used or {}).get('sha') or {}
+    used_dhash = (used or {}).get('dhash') or {}
     scored, downloads = [], 0
     for c in kept[:args.max_download]:
         downloads += 1
@@ -627,9 +665,24 @@ def process_station(st, args, tmpdir, relaxed=False, used=None):
         if owner and owner != slug and owner not in same_as:
             reject_dist['duplicate_sha256'] = reject_dist.get('duplicate_sha256', 0) + 1
             continue  # 命中已用过的图 → 试下一候选，不落盘
+        # 感知近重复：同一照片不同编码（dHash 汉明 ≤ NEAR_HAMMING）同样跳过
+        try:
+            dh = dhash64(ndata)
+        except Exception:  # noqa: BLE001
+            dh = None
+        if dh is not None:
+            near_owner = None
+            for odh, oslug in used_dhash.items():
+                if oslug != slug and oslug not in same_as and hamming(odh, dh) <= NEAR_HAMMING:
+                    near_owner = oslug
+                    break
+            if near_owner:
+                reject_dist['near_duplicate'] = reject_dist.get('near_duplicate', 0) + 1
+                continue
         m2 = dict(m, width=nw, height=nh)
         total = round((c.get('bonus') or 0.0) + image_score(m2), 2)
         scored.append(dict(c, _data=ndata, _norm=norm, _metrics=m2, _sha=sha,
+                           _dhash=dh,
                            _verdict_reasons=reasons, _score=total))
         if verdict == 'done' and total >= GOOD_SCORE:
             break  # 已是高分实景照，不再继续下载
@@ -693,6 +746,7 @@ def process_station(st, args, tmpdir, relaxed=False, used=None):
         'status': status,
         'file': rel_file,
         'sha256': sha,
+        'dhash': ('%016x' % best['_dhash']) if best.get('_dhash') is not None else None,
         'bytes': len(data),
         'width': best_metrics['width'],
         'height': best_metrics['height'],
@@ -854,8 +908,8 @@ def main():
     t0 = time.time()
     by_slug = {s['slug']: s for s in stations}
 
-    # 已落盘图登记表（补丁 1）：title / 归一化后的 sha256 → slug，供后续候选跳过重复
-    used = {'title': {}, 'sha': {}}
+    # 已落盘图登记表（补丁 1）：title / 归一化后的 sha256 / dHash → slug，供后续候选跳过重复
+    used = {'title': {}, 'sha': {}, 'dhash': {}}
 
     def register(slug, e):
         if not e:
@@ -866,6 +920,11 @@ def main():
             e.get('source') or e.get('page_url') or e.get('source_page'))
         if t:
             used['title'].setdefault(t, slug)
+        if e.get('dhash'):
+            try:
+                used['dhash'].setdefault(int(e['dhash'], 16), slug)
+            except ValueError:
+                pass
 
     for slug, e in (state.get('entries') or {}).items():
         if e.get('status') in ('done', 'review'):
@@ -888,6 +947,7 @@ def main():
         entry['attempts'] = state['entries'].get(slug, {}).get('attempts', 0) + 1
         state['entries'][slug] = entry
         state['rate_limit_events'] = RATE['events']
+        state['maxlag_retries'] = MAXLAG_RETRIES['n']
         save_state(state_path, state)
         stats[status if status in stats else 'failed'] += 1
         for k, v in (entry.get('reject_dist') or {}).items():
@@ -895,6 +955,8 @@ def main():
         if status in ('done', 'review'):
             stats['bytes'] += entry['bytes']
             used['sha'].setdefault(entry['sha256'], slug)
+            if entry.get('dhash'):
+                used['dhash'].setdefault(int(entry['dhash'], 16), slug)
             if entry.get('source_title'):
                 used['title'].setdefault(entry['source_title'], slug)
             index_updates[slug] = {
@@ -906,6 +968,7 @@ def main():
                 'status': status, 'file': entry['file'],
                 'width': entry['width'], 'height': entry['height'],
                 'bytes': entry['bytes'], 'sha256': entry['sha256'],
+                'dhash': entry.get('dhash'),
                 'source': entry['source_page'], 'license': entry['license'],
                 'license_url': entry['license_url'], 'author': entry['author'],
                 'page_url': entry['source_page'],
@@ -998,6 +1061,9 @@ def main():
     stats['dead_cumulative'] = len(dead['stations'])
     stats['dead_final'] = sum(1 for r in dead['stations'].values() if r.get('final_dead'))
     stats['rate_limit_events'] = RATE['events']
+    stats['maxlag_retries'] = MAXLAG_RETRIES['n']
+    stats['near_dup_pairs'] = stats['reject_dist'].get('near_duplicate', 0)
+    stats['user_agent'] = UA
 
     elapsed = time.time() - t0
     stats['elapsed_sec'] = round(elapsed)

@@ -5,7 +5,7 @@
   "schema": 2,
   "stations_list": "data/stations_all.json",
   "total_indexed": 2956,
-  "updated_at": "2026-11-03T15:52:15Z"
+  "updated_at": "2026-11-03T15:56:53Z"
  },
  "stations": {
   "legacy_st00003": {
@@ -53548,7 +53548,9 @@
    "pref": "宮城県",
    "retrieved_at": "2026-11-03T10:08:25Z",
    "review_reasons": [],
-   "same_as": [],
+   "same_as": [
+    "st01145"
+   ],
    "scene": null,
    "sha256": "f27ce04343f330b181217f6de441f46e8454d60f3f9feefbdf133de7396539ac",
    "source": "https://commons.wikimedia.org/wiki/File:Sendai_Station_20230806.jpg",
@@ -53584,7 +53586,9 @@
    "pref": "宮城県",
    "retrieved_at": "2026-11-03T10:08:34Z",
    "review_reasons": [],
-   "same_as": [],
+   "same_as": [
+    "st01144"
+   ],
    "scene": null,
    "sha256": "f27ce04343f330b181217f6de441f46e8454d60f3f9feefbdf133de7396539ac",
    "source": "https://commons.wikimedia.org/wiki/File:Sendai_Station_20230806.jpg",
