@@ -203,9 +203,13 @@ def api_json(url, params, domain=None):
             d = r.json()
         err = d.get('error') or {}
         if err.get('code') == 'maxlag':
-            MAXLAG_RETRIES['n'] += 1   # 单独计数：等待重试不进 dead
-            rate_event('maxlag(lag=%s)' % err.get('lag'), url)
-            time.sleep(min(int(err.get('lag') or MAXLAG), 30))
+            # maxlag 是服务端复制延迟信号（非限流）：等待重试、保守降并发，
+            # 但不计入 rate_limit_events、不触发中止（教训：run #10 曾因此误杀整批）
+            MAXLAG_RETRIES['n'] += 1
+            LIMITER.degrade()
+            print('MAXLAG_WAIT #%d lag=%s url=%s' % (
+                MAXLAG_RETRIES['n'], err.get('lag'), url[:120]), flush=True)
+            time.sleep(min(int(float(err.get('lag') or MAXLAG)), 30))
             continue
         return d
     raise RuntimeError('maxlag persisted after retries: %s' % url)
