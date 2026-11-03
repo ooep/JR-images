@@ -1,0 +1,30 @@
+{
+ "generated_at": "2026-11-03T07:38:33Z",
+ "pilot_total": 500,
+ "processed": 500,
+ "images": 500,
+ "coverage": 1.0,
+ "license_compliance": 1.0,
+ "compliant_images": 500,
+ "shared_images": 0,
+ "bytes_total": 98526208,
+ "size_p50": 194872,
+ "size_p95": 303031,
+ "size_max": 409089,
+ "license_dist": {
+  "CC-BY-SA-4.0": 274,
+  "CC-BY-3.0": 46,
+  "CC0": 45,
+  "CC-BY-4.0": 43,
+  "CC-BY-SA-3.0": 34,
+  "CC-BY-SA-2.0": 21,
+  "Public domain": 17,
+  "CC-BY-2.0": 14,
+  "CC-BY-2.5": 6
+ },
+ "rejected_license_dist": {},
+ "fail_reasons": {},
+ "match_dist": {
+  "name": 500
+ }
+}
