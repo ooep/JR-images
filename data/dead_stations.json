@@ -1,7 +1,24 @@
 {
- "count": 111,
+ "count": 132,
  "schema": 1,
  "stations": {
+  "st00039": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "笠田",
+   "name_en": "Kaseda",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00038; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00038"
+   },
+   "reject_dist": {},
+   "slug": "st00039",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Nishi-kaseda-STA_Home.jpg",
+   "stage": "audit"
+  },
   "st00051": {
    "attempts": 2,
    "below_spec": false,
@@ -20,6 +37,23 @@
    "source_page": null,
    "stage": "retry"
   },
+  "st00056": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "桜井",
+   "name_en": "Sakurai",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00055; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00055"
+   },
+   "reject_dist": {},
+   "slug": "st00056",
+   "source_page": "https://commons.wikimedia.org/wiki/File:阪急桜井駅トイレ.jpg",
+   "stage": "audit"
+  },
   "st00057": {
    "attempts": 1,
    "final_dead": false,
@@ -34,6 +68,23 @@
    "slug": "st00057",
    "source_page": "https://commons.wikimedia.org/wiki/File:阪急桜井駅トイレ.jpg",
    "stage": "verify"
+  },
+  "st00068": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "福島",
+   "name_en": "Fukushima",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00069; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00069"
+   },
+   "reject_dist": {},
+   "slug": "st00068",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Fukushima_Station_west_exit_at_night.jpg",
+   "stage": "audit"
   },
   "st00071": {
    "attempts": 1,
@@ -64,6 +115,23 @@
    "slug": "st00075",
    "source_page": "https://commons.wikimedia.org/wiki/File:JR大正駅ホームのベンチにおける2優先座席_2016_(28983694644).jpg",
    "stage": "verify"
+  },
+  "st00082": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "田町",
+   "name_en": "Tamachi",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00083; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00083"
+   },
+   "reject_dist": {},
+   "slug": "st00082",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Tamachi_Station_Platform_1・2_(20210410).jpg",
+   "stage": "audit"
   },
   "st00112": {
    "attempts": 1,
@@ -139,6 +207,23 @@
    "slug": "st00132",
    "source_page": "https://commons.wikimedia.org/wiki/File:Hokutetsu_Inokuchi-STA_Platform.jpg",
    "stage": "verify"
+  },
+  "st00135": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "草津",
+   "name_en": "Kusatsu",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00136; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00136"
+   },
+   "reject_dist": {},
+   "slug": "st00135",
+   "source_page": "https://commons.wikimedia.org/wiki/File:NDL1309444_草津.jpg",
+   "stage": "audit"
   },
   "st00139": {
    "attempts": 1,
@@ -305,6 +390,23 @@
    "source_page": "https://commons.wikimedia.org/wiki/File:Matsuyama_City_Hall_Station_20251028_(2).jpg",
    "stage": "verify"
   },
+  "st00180": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "寺町",
+   "name_en": "Teramachi",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00012; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00012"
+   },
+   "reject_dist": {},
+   "slug": "st00180",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kintetsu_Oji_Station_2022-01-02.jpg",
+   "stage": "audit"
+  },
   "st00182": {
    "attempts": 2,
    "below_spec": false,
@@ -321,6 +423,23 @@
    "slug": "st00182",
    "source_page": null,
    "stage": "retry"
+  },
+  "st00183": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "横川駅",
+   "name_en": "Yokogawa",
+   "note": "perceptual near-dup (dHash hamming<=6) of st05332; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st05332"
+   },
+   "reject_dist": {},
+   "slug": "st00183",
+   "source_page": "https://commons.wikimedia.org/wiki/File:横川駅_-_panoramio_(8).jpg",
+   "stage": "audit"
   },
   "st00187": {
    "attempts": 1,
@@ -367,6 +486,40 @@
    "source_page": "https://commons.wikimedia.org/wiki/File:Tokyo-Metro_Inaricho-STA_Platform1-Gate.jpg",
    "stage": "verify"
   },
+  "st00193": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "広島駅",
+   "name_en": "Hiroshima",
+   "note": "perceptual near-dup (dHash hamming<=6) of st04348; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st04348"
+   },
+   "reject_dist": {},
+   "slug": "st00193",
+   "source_page": "https://commons.wikimedia.org/wiki/File:広島駅の歴史展で公表された広島シティネットワークのシンボル.jpg",
+   "stage": "audit"
+  },
+  "st00202": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "東酒田",
+   "name_en": null,
+   "note": "perceptual near-dup (dHash hamming<=6) of st00201; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00201"
+   },
+   "reject_dist": {},
+   "slug": "st00202",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Higashi-Sakata_Station_Platform,_Yamagata_Pref.jpg",
+   "stage": "audit"
+  },
   "st00227": {
    "attempts": 1,
    "final_dead": false,
@@ -381,6 +534,23 @@
    "slug": "st00227",
    "source_page": "https://commons.wikimedia.org/wiki/File:JR_Uetsu_Line_Hirabayashi_Station_East_Exit_Waiting_room.jpg",
    "stage": "verify"
+  },
+  "st00230": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "村上",
+   "name_en": "Murakami",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00229; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00229"
+   },
+   "reject_dist": {},
+   "slug": "st00230",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JRE_Murakami-STA_Platform1.jpg",
+   "stage": "audit"
   },
   "st00236": {
    "attempts": 1,
@@ -426,6 +596,23 @@
    "slug": "st00254",
    "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Oiwake_Station_building_in_Akita_City,_Akita_Pref.jpg",
    "stage": "verify"
+  },
+  "st00255": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "追分",
+   "name_en": "Oiwake",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00253; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00253"
+   },
+   "reject_dist": {},
+   "slug": "st00255",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Oiwake_Station_building_in_Akita_City,_Akita_Pref.jpg",
+   "stage": "audit"
   },
   "st00256": {
    "attempts": 1,
@@ -624,6 +811,23 @@
    "source_page": "https://commons.wikimedia.org/wiki/File:三条駅_-_panoramio.jpg",
    "stage": "verify"
   },
+  "st00334": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "加茂",
+   "name_en": "Kamo",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00335; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00335"
+   },
+   "reject_dist": {},
+   "slug": "st00334",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kiha_120-301_komt_aan_op_station_Kamo_(a),_-13_september_2024_11：33.jpg",
+   "stage": "audit"
+  },
   "st00336": {
    "attempts": 1,
    "final_dead": false,
@@ -668,6 +872,23 @@
    "slug": "st00354",
    "source_page": "https://commons.wikimedia.org/wiki/File:JP_日本_Japan_沖繩_OKINAWA_單軌電車_MonoRail_遊車河_tour_view_from_13_市立醫院前站_Naha_City_Hospital_Station_to_12_古島站_Furujima_Station_1038am_January_2025_01.jpg",
    "stage": "verify"
+  },
+  "st00356": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "都通",
+   "name_en": "Miyako-dōri",
+   "note": "perceptual near-dup (dHash hamming<=6) of st03187; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st03187"
+   },
+   "reject_dist": {},
+   "slug": "st00356",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Sugamo_Station_Southeast_Facade.jpg",
+   "stage": "audit"
   },
   "st00368": {
    "attempts": 1,
@@ -746,6 +967,23 @@
    "slug": "st00380",
    "source_page": null,
    "stage": "retry"
+  },
+  "st00383": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "神田",
+   "name_en": "Kanda",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00384; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00384"
+   },
+   "reject_dist": {},
+   "slug": "st00383",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kanda_Station_-_east_exit_-_Tokyo_-_Oct_10_2021_360_degree_panorama.jpeg",
+   "stage": "audit"
   },
   "st00385": {
    "attempts": 1,
@@ -882,6 +1120,40 @@
    "source_page": "https://commons.wikimedia.org/wiki/File:南海_貝塚駅_2025.jpg",
    "stage": "verify"
   },
+  "st00446": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "桜町",
+   "name_en": "Sakuramachi",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00447; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00447"
+   },
+   "reject_dist": {},
+   "slug": "st00446",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Central_Sakuramachi_Station_Platform,_Nagano_Pref.jpg",
+   "stage": "audit"
+  },
+  "st00453": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "浦上駅前",
+   "name_en": "Urakami Station",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00606; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00606"
+   },
+   "reject_dist": {},
+   "slug": "st00453",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Urakami-ekimae-STA_Platforms.jpg",
+   "stage": "audit"
+  },
   "st00458": {
    "attempts": 1,
    "final_dead": false,
@@ -987,6 +1259,23 @@
    "source_page": "https://commons.wikimedia.org/wiki/File:Hanshin_Sumiyoshi_Station_20200901.jpg",
    "stage": "verify"
   },
+  "st00473": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "石橋",
+   "name_en": "Ishibashi",
+   "note": "perceptual near-dup (dHash hamming<=6) of st08084; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st08084"
+   },
+   "reject_dist": {},
+   "slug": "st00473",
+   "source_page": "https://commons.wikimedia.org/wiki/File:石橋阪大前駅_(51982717160).jpg",
+   "stage": "audit"
+  },
   "st00474": {
    "attempts": 1,
    "final_dead": false,
@@ -1076,6 +1365,40 @@
    "slug": "st00536",
    "source_page": "https://commons.wikimedia.org/wiki/File:Ohara_Station_-_Chiba_-_Aug_10_2021_various_23_01_08_492000.jpeg",
    "stage": "verify"
+  },
+  "st00540": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "石井",
+   "name_en": "Ishii",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00541; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00541"
+   },
+   "reject_dist": {},
+   "slug": "st00540",
+   "source_page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1305366-Utagawa_Kunisada-東海道五十三次之内_亀山駅其二_石井兵助.jpg",
+   "stage": "audit"
+  },
+  "st00559": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "神戸",
+   "name_en": "Gōdo",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00558; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00558"
+   },
+   "reject_dist": {},
+   "slug": "st00559",
+   "source_page": "https://commons.wikimedia.org/wiki/File:神戸駅（ごうどえき）.jpg",
+   "stage": "audit"
   },
   "st00560": {
    "attempts": 1,
@@ -1167,6 +1490,23 @@
    "source_page": "https://commons.wikimedia.org/wiki/File:MR_Urada_sta_20241030.jpg",
    "stage": "verify"
   },
+  "st00577": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "福井",
+   "name_en": "Fukui",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00578; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00578"
+   },
+   "reject_dist": {},
+   "slug": "st00577",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Dinosaurs_outside_Echizen_Railway_platforms_at_Fukui_Station.jpg",
+   "stage": "audit"
+  },
   "st00581": {
    "attempts": 1,
    "final_dead": false,
@@ -1181,6 +1521,23 @@
    "slug": "st00581",
    "source_page": "https://commons.wikimedia.org/wiki/File:Kyujomae_station_kochi_03.jpg",
    "stage": "verify"
+  },
+  "st00592": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-03T23:35:41Z",
+   "name": "江北",
+   "name_en": "Kōhoku",
+   "note": "perceptual near-dup (dHash hamming<=6) of st00591; refetch a different photo",
+   "reasons": {
+    "near_duplicate_with": "st00591"
+   },
+   "reject_dist": {},
+   "slug": "st00592",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JRK_Kohoku_Station-north-entrance-20220924.jpg",
+   "stage": "audit"
   },
   "st00595": {
    "attempts": 1,
@@ -1727,5 +2084,5 @@
    "stage": "retry"
   }
  },
- "updated_at": "2026-11-03T15:56:53Z"
+ "updated_at": "2026-11-03T23:35:41Z"
 }
