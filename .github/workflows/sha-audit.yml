@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install deps
+        run: pip install --quiet pillow
+
       - name: Audit sha256
         run: python scripts/sha_audit.py
 
@@ -28,5 +31,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: sha-audit-report
-          path: sha_audit_report.json
+          path: |
+            sha_audit_report.json
+            dhash_map.json
           if-no-files-found: ignore
