@@ -136,10 +136,6 @@ jobs:
           echo "dispatch HTTP $code"
           cat /tmp/dispatch.out
           [ "$code" = "204" ] || exit 1
-        env:
-          STATIONS_PATH: ${{ inputs.stations_path }}
-          BATCH_INDEX: ${{ inputs.batch_index }}
-          BATCH_SIZE: ${{ inputs.batch_size }}
 
       - name: Upload stats artifact
         if: always()
