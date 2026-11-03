@@ -221,7 +221,11 @@ def git(*args):
         raise RuntimeError('git %s failed: %s' % (args[0], clean(r.stderr.decode()[:300])))
 
 def commit_push(msg):
-    git('add', 'manifest.json', 'img', 'reports')
+    paths = ['manifest.json']
+    for p in ('img', 'reports'):
+        if os.path.isdir(os.path.join(ROOT, p)):
+            paths.append(p)
+    git('add', *paths)
     r = subprocess.run(['git', 'diff', '--cached', '--quiet'], cwd=ROOT)
     if r.returncode == 0:
         log('  (no changes to commit)')
