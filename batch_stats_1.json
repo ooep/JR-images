@@ -1,0 +1,83 @@
+{
+ "attempted": 500,
+ "done": 482,
+ "review": 10,
+ "missing": 8,
+ "failed": 0,
+ "skipped_resume": 0,
+ "bytes": 293905211,
+ "reject_dist": {
+  "resolution_low": 1723,
+  "license_unclear": 69,
+  "no_author_metadata": 80,
+  "low_color(map/text?)": 93,
+  "oversize_gt_25mb": 159,
+  "mime_unsupported": 94,
+  "license_forbidden": 24,
+  "blurry(lap=43<45)": 1
+ },
+ "dead": [
+  {
+   "slug": "st04286",
+   "name": "音威子府",
+   "reasons": {
+    "no_author_metadata": 1
+   }
+  },
+  {
+   "slug": "st04642",
+   "name": "豊永",
+   "reasons": {
+    "no_author_metadata": 1,
+    "resolution_low": 2
+   }
+  },
+  {
+   "slug": "st05087",
+   "name": "伊勢八知",
+   "reasons": {
+    "resolution_low": 2,
+    "oversize_gt_25mb": 2
+   }
+  },
+  {
+   "slug": "st05977",
+   "name": "東開聞",
+   "reasons": {
+    "resolution_low": 2,
+    "low_color(map/text?)": 2
+   }
+  },
+  {
+   "slug": "st06696",
+   "name": "美濃川合",
+   "reasons": {
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st00014",
+   "name": "紀伊長田",
+   "reasons": {
+    "resolution_low": 1,
+    "oversize_gt_25mb": 1
+   }
+  },
+  {
+   "slug": "st00019",
+   "name": "紀伊小倉",
+   "reasons": {
+    "resolution_low": 1,
+    "oversize_gt_25mb": 4
+   }
+  },
+  {
+   "slug": "st00022",
+   "name": "田井ノ瀬",
+   "reasons": {}
+  }
+ ],
+ "elapsed_sec": 3057,
+ "batch_index": 1,
+ "generated_at": "2026-11-03T11:35:54Z"
+}
