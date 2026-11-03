@@ -1,0 +1,174 @@
+{
+ "attempted": 500,
+ "done": 396,
+ "review": 95,
+ "missing": 19,
+ "failed": 0,
+ "skipped_resume": 0,
+ "bytes": 206330586,
+ "reject_dist": {
+  "oversize_gt_25mb": 232,
+  "resolution_low": 1652,
+  "hard_excluded": 674,
+  "low_color(map/text?)": 185,
+  "mime_unsupported": 115,
+  "no_author_metadata": 72,
+  "license_unclear": 67,
+  "license_forbidden": 4,
+  "blurry(lap=42<45)": 1,
+  "blurry(lap=29<45)": 1
+ },
+ "dead": [
+  {
+   "slug": "st00639",
+   "name": "肥前長田",
+   "reasons": {
+    "resolution_low": 2
+   }
+  },
+  {
+   "slug": "st00715",
+   "name": "北方",
+   "reasons": {
+    "mime_unsupported": 4,
+    "resolution_low": 9
+   }
+  },
+  {
+   "slug": "st00716",
+   "name": "北方",
+   "reasons": {
+    "mime_unsupported": 4,
+    "resolution_low": 9
+   }
+  },
+  {
+   "slug": "st00822",
+   "name": "阿木",
+   "reasons": {
+    "resolution_low": 19
+   }
+  },
+  {
+   "slug": "st00824",
+   "name": "野志",
+   "reasons": {
+    "resolution_low": 2,
+    "oversize_gt_25mb": 10,
+    "mime_unsupported": 18
+   }
+  },
+  {
+   "slug": "st00949",
+   "name": "馬場崎町",
+   "reasons": {
+    "resolution_low": 2
+   }
+  },
+  {
+   "slug": "st00957",
+   "name": "和田浜",
+   "reasons": {
+    "resolution_low": 2
+   }
+  },
+  {
+   "slug": "st00980",
+   "name": "ふるさと公園",
+   "reasons": {
+    "resolution_low": 4,
+    "license_unclear": 1
+   }
+  },
+  {
+   "slug": "st00982",
+   "name": "弥五島",
+   "reasons": {
+    "resolution_low": 5,
+    "mime_unsupported": 1
+   }
+  },
+  {
+   "slug": "st00998",
+   "name": "上条",
+   "reasons": [
+    "no_candidates"
+   ]
+  },
+  {
+   "slug": "st00999",
+   "name": "上条",
+   "reasons": [
+    "no_candidates"
+   ]
+  },
+  {
+   "slug": "st01056",
+   "name": "豊岡",
+   "reasons": {
+    "hard_excluded": 1
+   }
+  },
+  {
+   "slug": "st01101",
+   "name": "神沢",
+   "reasons": [
+    "no_candidates"
+   ]
+  },
+  {
+   "slug": "st01168",
+   "name": "糒",
+   "reasons": {
+    "resolution_low": 3
+   }
+  },
+  {
+   "slug": "st01169",
+   "name": "田川市立病院",
+   "reasons": {
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st01170",
+   "name": "下伊田",
+   "reasons": {
+    "resolution_low": 1,
+    "oversize_gt_25mb": 1,
+    "low_color(map/text?)": 1
+   }
+  },
+  {
+   "slug": "st01174",
+   "name": "柿下温泉口",
+   "reasons": {
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st01179",
+   "name": "崎山",
+   "reasons": {
+    "resolution_low": 3,
+    "mime_unsupported": 2
+   }
+  },
+  {
+   "slug": "st01191",
+   "name": "糸田",
+   "reasons": {
+    "resolution_low": 2,
+    "oversize_gt_25mb": 1
+   }
+  }
+ ],
+ "dead_retried": 10,
+ "dead_recovered": 10,
+ "dead_new": 19,
+ "dead_cumulative": 107,
+ "dead_final": 0,
+ "elapsed_sec": 4204,
+ "batch_index": 3,
+ "generated_at": "2026-11-03T14:39:55Z"
+}

@@ -1,137 +1,7 @@
 {
- "count": 98,
+ "count": 107,
  "schema": 1,
  "stations": {
-  "st00003": {
-   "attempts": 1,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
-   "name": "高田",
-   "name_en": "Kōda",
-   "reasons": [
-    "duplicate_sha256_with:st00002"
-   ],
-   "slug": "st00003",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Takata_Station_Sign_(Amagi_Railway).jpg",
-   "stage": "verify"
-  },
-  "st00004": {
-   "attempts": 1,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
-   "name": "高田",
-   "name_en": "Kōda",
-   "reasons": [
-    "duplicate_sha256_with:st00002"
-   ],
-   "slug": "st00004",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Takata_Station_Sign_(Amagi_Railway).jpg",
-   "stage": "verify"
-  },
-  "st00005": {
-   "attempts": 1,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
-   "name": "高田",
-   "name_en": "Kōda",
-   "reasons": [
-    "duplicate_sha256_with:st00002"
-   ],
-   "slug": "st00005",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Takata_Station_Sign_(Amagi_Railway).jpg",
-   "stage": "verify"
-  },
-  "st00006": {
-   "attempts": 1,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
-   "name": "高田",
-   "name_en": "Kōda",
-   "reasons": [
-    "duplicate_sha256_with:st00002"
-   ],
-   "slug": "st00006",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Takata_Station_Sign_(Amagi_Railway).jpg",
-   "stage": "verify"
-  },
-  "st00007": {
-   "attempts": 1,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
-   "name": "高田",
-   "name_en": "Kōda",
-   "reasons": [
-    "duplicate_sha256_with:st00002"
-   ],
-   "slug": "st00007",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Takata_Station_Sign_(Amagi_Railway).jpg",
-   "stage": "verify"
-  },
-  "st00029": {
-   "attempts": 1,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
-   "name": "橋本",
-   "name_en": "Hashimoto",
-   "reasons": [
-    "duplicate_sha256_with:st00028"
-   ],
-   "slug": "st00029",
-   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Hashimoto_Station_-_Kanagawa_-_2020_Dec_13_-_various_12_08_22_307000.jpeg",
-   "stage": "verify"
-  },
-  "st00030": {
-   "attempts": 1,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
-   "name": "橋本",
-   "name_en": "Hashimoto",
-   "reasons": [
-    "duplicate_sha256_with:st00028"
-   ],
-   "slug": "st00030",
-   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Hashimoto_Station_-_Kanagawa_-_2020_Dec_13_-_various_12_08_22_307000.jpeg",
-   "stage": "verify"
-  },
-  "st00031": {
-   "attempts": 1,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
-   "name": "橋本",
-   "name_en": "Hashimoto",
-   "reasons": [
-    "duplicate_sha256_with:st00028"
-   ],
-   "slug": "st00031",
-   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Hashimoto_Station_-_Kanagawa_-_2020_Dec_13_-_various_12_08_22_307000.jpeg",
-   "stage": "verify"
-  },
-  "st00036": {
-   "attempts": 1,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
-   "name": "五条",
-   "name_en": "Gojō",
-   "reasons": [
-    "duplicate_sha256_with:st00035"
-   ],
-   "slug": "st00036",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Gojo_station_entrance1.jpg",
-   "stage": "verify"
-  },
-  "st00041": {
-   "attempts": 1,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
-   "name": "大谷",
-   "name_en": "Ōtani",
-   "reasons": [
-    "duplicate_sha256_with:st00040"
-   ],
-   "slug": "st00041",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Daegu-metropolitan-transit-corporation-117-Daegok-station-entrance-2-20161009-160534.jpg",
-   "stage": "verify"
-  },
   "st00051": {
    "attempts": 1,
    "below_spec": false,
@@ -148,9 +18,10 @@
    "stage": "fetch"
   },
   "st00057": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "桜井",
    "name_en": "Sakurai",
    "reasons": [
@@ -161,9 +32,10 @@
    "stage": "verify"
   },
   "st00071": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "野田",
    "name_en": "Noda",
    "reasons": [
@@ -174,9 +46,10 @@
    "stage": "verify"
   },
   "st00075": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "大正",
    "name_en": "Taishō",
    "reasons": [
@@ -187,9 +60,10 @@
    "stage": "verify"
   },
   "st00112": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "石津",
    "name_en": "Ishizu",
    "reasons": [
@@ -200,9 +74,10 @@
    "stage": "verify"
   },
   "st00122": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "宮内",
    "name_en": "Miyauchi",
    "reasons": [
@@ -213,9 +88,10 @@
    "stage": "verify"
   },
   "st00123": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "宮内",
    "name_en": "Miyauchi",
    "reasons": [
@@ -226,9 +102,10 @@
    "stage": "verify"
   },
   "st00125": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "広電廿日市",
    "name_en": "Hiroden-Hatsukaichi",
    "reasons": [
@@ -239,9 +116,10 @@
    "stage": "verify"
   },
   "st00132": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "井口",
    "name_en": "Inokuchi",
    "reasons": [
@@ -252,9 +130,10 @@
    "stage": "verify"
   },
   "st00139": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "高須",
    "name_en": "Takasu",
    "reasons": [
@@ -265,9 +144,10 @@
    "stage": "verify"
   },
   "st00145": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "観音町",
    "name_en": "Kannonmachi",
    "reasons": [
@@ -278,9 +158,10 @@
    "stage": "verify"
   },
   "st00149": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "土橋",
    "name_en": "Dobashi",
    "reasons": [
@@ -291,9 +172,10 @@
    "stage": "verify"
   },
   "st00150": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "土橋",
    "name_en": "Dobashi",
    "reasons": [
@@ -304,9 +186,10 @@
    "stage": "verify"
   },
   "st00159": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "市役所前",
    "name_en": "Matsuyama City Hall",
    "reasons": [
@@ -317,9 +200,10 @@
    "stage": "verify"
   },
   "st00160": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "市役所前",
    "name_en": "Matsuyama City Hall",
    "reasons": [
@@ -330,9 +214,10 @@
    "stage": "verify"
   },
   "st00161": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "市役所前",
    "name_en": "Matsuyama City Hall",
    "reasons": [
@@ -343,9 +228,10 @@
    "stage": "verify"
   },
   "st00162": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "市役所前",
    "name_en": "Matsuyama City Hall",
    "reasons": [
@@ -356,9 +242,10 @@
    "stage": "verify"
   },
   "st00163": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "市役所前",
    "name_en": "Matsuyama City Hall",
    "reasons": [
@@ -369,9 +256,10 @@
    "stage": "verify"
   },
   "st00164": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "市役所前",
    "name_en": "Matsuyama City Hall",
    "reasons": [
@@ -382,9 +270,10 @@
    "stage": "verify"
   },
   "st00165": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "市役所前",
    "name_en": "Matsuyama City Hall",
    "reasons": [
@@ -426,9 +315,10 @@
    "stage": "fetch"
   },
   "st00187": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "八丁堀",
    "name_en": "Hatchōbori",
    "reasons": [
@@ -439,9 +329,10 @@
    "stage": "verify"
   },
   "st00191": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "稲荷町",
    "name_en": "Inarichō",
    "reasons": [
@@ -452,9 +343,10 @@
    "stage": "verify"
   },
   "st00192": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "稲荷町",
    "name_en": "Inarichō",
    "reasons": [
@@ -465,9 +357,10 @@
    "stage": "verify"
   },
   "st00227": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "平林",
    "name_en": "Hirabayashi",
    "reasons": [
@@ -478,9 +371,10 @@
    "stage": "verify"
   },
   "st00236": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "月岡",
    "name_en": "Tsukioka",
    "reasons": [
@@ -491,9 +385,10 @@
    "stage": "verify"
   },
   "st00241": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "新屋",
    "name_en": "Araya",
    "reasons": [
@@ -504,9 +399,10 @@
    "stage": "verify"
   },
   "st00254": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "追分",
    "name_en": "Oiwake",
    "reasons": [
@@ -517,9 +413,10 @@
    "stage": "verify"
   },
   "st00256": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "追分",
    "name_en": "Oiwake",
    "reasons": [
@@ -530,9 +427,10 @@
    "stage": "verify"
   },
   "st00258": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "大久保",
    "name_en": "Ōkubo",
    "reasons": [
@@ -543,9 +441,10 @@
    "stage": "verify"
   },
   "st00259": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "大久保",
    "name_en": "Ōkubo",
    "reasons": [
@@ -556,9 +455,10 @@
    "stage": "verify"
   },
   "st00260": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "大久保",
    "name_en": "Ōkubo",
    "reasons": [
@@ -569,9 +469,10 @@
    "stage": "verify"
   },
   "st00298": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "今川",
    "name_en": "Imagawa",
    "reasons": [
@@ -582,9 +483,10 @@
    "stage": "verify"
   },
   "st00305": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "白山",
    "name_en": "Hakusan",
    "reasons": [
@@ -595,9 +497,10 @@
    "stage": "verify"
   },
   "st00306": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "白山",
    "name_en": "Hakusan",
    "reasons": [
@@ -608,9 +511,10 @@
    "stage": "verify"
   },
   "st00308": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "関屋",
    "name_en": "Sekiya",
    "reasons": [
@@ -621,9 +525,10 @@
    "stage": "verify"
   },
   "st00310": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "青山",
    "name_en": "Aoyama",
    "reasons": [
@@ -634,9 +539,10 @@
    "stage": "verify"
   },
   "st00311": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "青山",
    "name_en": "Aoyama",
    "reasons": [
@@ -662,9 +568,10 @@
    "stage": "fetch"
   },
   "st00330": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "三条",
    "name_en": "Sanjō",
    "reasons": [
@@ -675,9 +582,10 @@
    "stage": "verify"
   },
   "st00331": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "三条",
    "name_en": "Sanjō",
    "reasons": [
@@ -688,9 +596,10 @@
    "stage": "verify"
   },
   "st00336": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "加茂",
    "name_en": "Kamo",
    "reasons": [
@@ -701,9 +610,10 @@
    "stage": "verify"
   },
   "st00346": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "吉田",
    "name_en": "Yoshida",
    "reasons": [
@@ -714,9 +624,10 @@
    "stage": "verify"
   },
   "st00354": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "市立病院前",
    "name_en": "Naha City Hospital",
    "reasons": [
@@ -743,9 +654,10 @@
    "stage": "fetch"
   },
   "st00368": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "谷山",
    "name_en": "Taniyama",
    "reasons": [
@@ -756,9 +668,10 @@
    "stage": "verify"
   },
   "st00374": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "二軒茶屋",
    "name_en": "Nikenchaya",
    "reasons": [
@@ -786,9 +699,10 @@
    "stage": "fetch"
   },
   "st00379": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "中郡",
    "name_en": "Chūgun",
    "reasons": [
@@ -814,9 +728,10 @@
    "stage": "fetch"
   },
   "st00385": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "神田",
    "name_en": "Kanda",
    "reasons": [
@@ -827,9 +742,10 @@
    "stage": "verify"
   },
   "st00387": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "郡元",
    "name_en": "Kōrimoto",
    "reasons": [
@@ -840,9 +756,10 @@
    "stage": "verify"
   },
   "st00397": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "祇園",
    "name_en": "Gion",
    "reasons": [
@@ -853,9 +770,10 @@
    "stage": "verify"
   },
   "st00401": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "赤坂",
    "name_en": "Akasaka",
    "reasons": [
@@ -866,9 +784,10 @@
    "stage": "verify"
   },
   "st00402": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "赤坂",
    "name_en": "Akasaka",
    "reasons": [
@@ -879,9 +798,10 @@
    "stage": "verify"
   },
   "st00403": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "赤坂",
    "name_en": "Akasaka",
    "reasons": [
@@ -892,9 +812,10 @@
    "stage": "verify"
   },
   "st00408": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "藤崎",
    "name_en": "Fujisaki",
    "reasons": [
@@ -905,9 +826,10 @@
    "stage": "verify"
   },
   "st00419": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "呉服町",
    "name_en": "Gofukumachi",
    "reasons": [
@@ -918,9 +840,10 @@
    "stage": "verify"
   },
   "st00425": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "貝塚",
    "name_en": "Kaizuka",
    "reasons": [
@@ -946,9 +869,10 @@
    "stage": "fetch"
   },
   "st00458": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "大橋",
    "name_en": "Ōhashi",
    "reasons": [
@@ -959,9 +883,10 @@
    "stage": "verify"
   },
   "st00464": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "千歳町",
    "name_en": "Chitosechō",
    "reasons": [
@@ -972,9 +897,10 @@
    "stage": "verify"
   },
   "st00467": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
    "reasons": [
@@ -985,9 +911,10 @@
    "stage": "verify"
   },
   "st00468": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
    "reasons": [
@@ -998,9 +925,10 @@
    "stage": "verify"
   },
   "st00469": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
    "reasons": [
@@ -1011,9 +939,10 @@
    "stage": "verify"
   },
   "st00470": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
    "reasons": [
@@ -1024,9 +953,10 @@
    "stage": "verify"
   },
   "st00471": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
    "reasons": [
@@ -1037,9 +967,10 @@
    "stage": "verify"
   },
   "st00474": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "石橋",
    "name_en": "Ishibashi",
    "reasons": [
@@ -1050,9 +981,10 @@
    "stage": "verify"
   },
   "st00476": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "大浦海岸通",
    "name_en": "Ōura-kaigan-dōri",
    "reasons": [
@@ -1063,9 +995,10 @@
    "stage": "verify"
   },
   "st00493": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "高野",
    "name_en": "Kōya",
    "reasons": [
@@ -1076,9 +1009,10 @@
    "stage": "verify"
   },
   "st00514": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "古見",
    "name_en": "Komi",
    "reasons": [
@@ -1089,9 +1023,10 @@
    "stage": "verify"
   },
   "st00535": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "大原",
    "name_en": "Ōbara",
    "reasons": [
@@ -1102,9 +1037,10 @@
    "stage": "verify"
   },
   "st00536": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "大原",
    "name_en": "Ōbara",
    "reasons": [
@@ -1147,9 +1083,10 @@
    "stage": "fetch"
   },
   "st00560": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "神戸",
    "name_en": "Gōdo",
    "reasons": [
@@ -1160,9 +1097,10 @@
    "stage": "verify"
   },
   "st00569": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "常盤",
    "name_en": "Tokiwa",
    "reasons": [
@@ -1173,9 +1111,10 @@
    "stage": "verify"
   },
   "st00570": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "常盤",
    "name_en": "Tokiwa",
    "reasons": [
@@ -1186,9 +1125,10 @@
    "stage": "verify"
   },
   "st00572": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "栄",
    "name_en": "Sakae",
    "reasons": [
@@ -1199,9 +1139,10 @@
    "stage": "verify"
   },
   "st00573": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "栄",
    "name_en": "Sakae",
    "reasons": [
@@ -1212,9 +1153,10 @@
    "stage": "verify"
   },
   "st00576": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "浦田",
    "name_en": "Urada",
    "reasons": [
@@ -1225,9 +1167,10 @@
    "stage": "verify"
   },
   "st00581": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "球場前",
    "name_en": "Kyūjō-mae",
    "reasons": [
@@ -1255,9 +1198,10 @@
    "stage": "fetch"
   },
   "st00599": {
-   "attempts": 1,
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "久保田",
    "name_en": "Kubota",
    "reasons": [
@@ -1267,10 +1211,225 @@
    "source_page": "https://commons.wikimedia.org/wiki/File:Kubota_Station_20200819.jpg",
    "stage": "verify"
   },
-  "st01145": {
+  "st00639": {
    "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T13:35:24Z",
+   "last_attempt": "2026-11-03T13:35:24Z",
+   "name": "肥前長田",
+   "name_en": "Hizen-Nagata",
+   "reasons": {
+    "resolution_low": 2
+   },
+   "reject_dist": {},
+   "slug": "st00639",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st00715": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T13:43:46Z",
+   "last_attempt": "2026-11-03T13:43:46Z",
+   "name": "北方",
+   "name_en": "Kitagata",
+   "reasons": {
+    "mime_unsupported": 4,
+    "resolution_low": 9
+   },
+   "reject_dist": {},
+   "slug": "st00715",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st00716": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T13:43:51Z",
+   "last_attempt": "2026-11-03T13:43:51Z",
+   "name": "北方",
+   "name_en": "Kitagata",
+   "reasons": {
+    "mime_unsupported": 4,
+    "resolution_low": 9
+   },
+   "reject_dist": {},
+   "slug": "st00716",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st00822": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T13:52:28Z",
+   "last_attempt": "2026-11-03T13:52:28Z",
+   "name": "阿木",
+   "name_en": "Agi",
+   "reasons": {
+    "resolution_low": 19
+   },
+   "reject_dist": {},
+   "slug": "st00822",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st00824": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T13:52:36Z",
+   "last_attempt": "2026-11-03T13:52:36Z",
+   "name": "野志",
+   "name_en": "Noshi",
+   "reasons": {
+    "mime_unsupported": 18,
+    "oversize_gt_25mb": 10,
+    "resolution_low": 2
+   },
+   "reject_dist": {},
+   "slug": "st00824",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st00949": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:09:30Z",
+   "last_attempt": "2026-11-03T14:09:30Z",
+   "name": "馬場崎町",
+   "name_en": "Babasakichō",
+   "reasons": {
+    "resolution_low": 2
+   },
+   "reject_dist": {},
+   "slug": "st00949",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st00957": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:10:34Z",
+   "last_attempt": "2026-11-03T14:10:34Z",
+   "name": "和田浜",
+   "name_en": "Wadahama",
+   "reasons": {
+    "resolution_low": 2
+   },
+   "reject_dist": {},
+   "slug": "st00957",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st00980": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:12:54Z",
+   "last_attempt": "2026-11-03T14:12:54Z",
+   "name": "ふるさと公園",
+   "name_en": "Furusatokōen",
+   "reasons": {
+    "license_unclear": 1,
+    "resolution_low": 4
+   },
+   "reject_dist": {},
+   "slug": "st00980",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st00982": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:13:04Z",
+   "last_attempt": "2026-11-03T14:13:04Z",
+   "name": "弥五島",
+   "name_en": "Yagoshima",
+   "reasons": {
+    "mime_unsupported": 1,
+    "resolution_low": 5
+   },
+   "reject_dist": {},
+   "slug": "st00982",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st00998": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:15:07Z",
+   "last_attempt": "2026-11-03T14:15:07Z",
+   "name": "上条",
+   "name_en": "Kamijō",
+   "reasons": [
+    "no_candidates"
+   ],
+   "reject_dist": {},
+   "slug": "st00998",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st00999": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:15:13Z",
+   "last_attempt": "2026-11-03T14:15:13Z",
+   "name": "上条",
+   "name_en": "Kamijō",
+   "reasons": [
+    "no_candidates"
+   ],
+   "reject_dist": {},
+   "slug": "st00999",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st01056": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:22:08Z",
+   "last_attempt": "2026-11-03T14:22:08Z",
+   "name": "豊岡",
+   "name_en": "Toyooka",
+   "reasons": {
+    "hard_excluded": 1
+   },
+   "reject_dist": {},
+   "slug": "st01056",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st01101": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:28:15Z",
+   "last_attempt": "2026-11-03T14:28:15Z",
+   "name": "神沢",
+   "name_en": "Kamisawa",
+   "reasons": [
+    "no_candidates"
+   ],
+   "reject_dist": {},
+   "slug": "st01101",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st01145": {
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "仙台",
    "name_en": "Sendai",
    "reasons": [
@@ -1280,10 +1439,111 @@
    "source_page": "https://commons.wikimedia.org/wiki/File:Sendai_Station_20230806.jpg",
    "stage": "verify"
   },
-  "st01233": {
+  "st01168": {
    "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:36:15Z",
+   "last_attempt": "2026-11-03T14:36:15Z",
+   "name": "糒",
+   "name_en": "Hoshii",
+   "reasons": {
+    "resolution_low": 3
+   },
+   "reject_dist": {},
+   "slug": "st01168",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st01169": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:36:21Z",
+   "last_attempt": "2026-11-03T14:36:21Z",
+   "name": "田川市立病院",
+   "name_en": "Tagawa Municipal Hospital",
+   "reasons": {
+    "resolution_low": 1
+   },
+   "reject_dist": {},
+   "slug": "st01169",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st01170": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:36:28Z",
+   "last_attempt": "2026-11-03T14:36:28Z",
+   "name": "下伊田",
+   "name_en": "Shimo-Ita",
+   "reasons": {
+    "low_color(map/text?)": 1,
+    "oversize_gt_25mb": 1,
+    "resolution_low": 1
+   },
+   "reject_dist": {},
+   "slug": "st01170",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st01174": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:36:58Z",
+   "last_attempt": "2026-11-03T14:36:58Z",
+   "name": "柿下温泉口",
+   "name_en": "Kakishita-onsen-guchi",
+   "reasons": {
+    "resolution_low": 1
+   },
+   "reject_dist": {},
+   "slug": "st01174",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st01179": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:37:34Z",
+   "last_attempt": "2026-11-03T14:37:34Z",
+   "name": "崎山",
+   "name_en": "Sakiyama",
+   "reasons": {
+    "mime_unsupported": 2,
+    "resolution_low": 3
+   },
+   "reject_dist": {},
+   "slug": "st01179",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st01191": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-03T14:38:58Z",
+   "last_attempt": "2026-11-03T14:38:58Z",
+   "name": "糸田",
+   "name_en": "Itoda",
+   "reasons": {
+    "oversize_gt_25mb": 1,
+    "resolution_low": 2
+   },
+   "reject_dist": {},
+   "slug": "st01191",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st01233": {
+   "attempts": 2,
+   "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T12:32:53Z",
+   "last_attempt": "2026-11-03T14:39:56Z",
    "name": "郡山",
    "name_en": "Kōriyama",
    "reasons": [
@@ -1310,5 +1570,5 @@
    "stage": "retry"
   }
  },
- "updated_at": "2026-11-03T12:32:53Z"
+ "updated_at": "2026-11-03T14:39:56Z"
 }
