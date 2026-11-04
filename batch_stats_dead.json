@@ -1,208 +1,168 @@
 {
  "attempted": 0,
- "done": 6,
- "review": 2,
- "missing": 17,
+ "done": 7,
+ "review": 5,
+ "missing": 13,
  "failed": 0,
  "skipped_resume": 0,
- "bytes": 3111047,
+ "bytes": 4905120,
  "reject_dist": {
-  "hard_excluded": 6,
-  "resolution_low": 5,
-  "name_mismatch_review": 34,
-  "no_station_evidence": 66,
-  "geo_mismatch": 15,
-  "low_color(map/text?)": 8,
-  "wrong_station": 25,
-  "pref_mismatch": 3
+  "geo_mismatch": 72,
+  "no_station_evidence": 118,
+  "name_mismatch_review": 71,
+  "wrong_station": 61,
+  "pref_mismatch": 24,
+  "hard_excluded": 19,
+  "resolution_low": 13,
+  "low_color(map/text?)": 5
  },
  "dead": [
   {
-   "slug": "st07032",
-   "name": "築城",
+   "slug": "st00028",
+   "name": "橋本",
    "reasons": {
+    "geo_mismatch": 9,
+    "no_station_evidence": 13,
     "hard_excluded": 1,
+    "pref_mismatch": 3,
+    "name_mismatch_review": 1
+   }
+  },
+  {
+   "slug": "st00190",
+   "name": "稲荷町",
+   "reasons": {
+    "no_station_evidence": 10,
+    "pref_mismatch": 7,
+    "hard_excluded": 5,
+    "wrong_station": 1
+   }
+  },
+  {
+   "slug": "st00309",
+   "name": "青山",
+   "reasons": {
+    "geo_mismatch": 10,
+    "no_station_evidence": 10,
+    "name_mismatch_review": 8,
+    "pref_mismatch": 6,
+    "wrong_station": 1
+   }
+  },
+  {
+   "slug": "st00353",
+   "name": "市立病院前",
+   "reasons": {
+    "geo_mismatch": 26,
+    "no_station_evidence": 1,
+    "pref_mismatch": 2
+   }
+  },
+  {
+   "slug": "st00378",
+   "name": "中郡",
+   "reasons": {
+    "no_station_evidence": 10,
+    "pref_mismatch": 2,
+    "name_mismatch_review": 9,
+    "wrong_station": 14,
+    "geo_mismatch": 2
+   }
+  },
+  {
+   "slug": "st00457",
+   "name": "大橋",
+   "reasons": {
+    "geo_mismatch": 23,
+    "no_station_evidence": 6,
+    "name_mismatch_review": 2
+   }
+  },
+  {
+   "slug": "st00548",
+   "name": "河原",
+   "reasons": {
     "no_station_evidence": 12,
-    "name_mismatch_review": 11,
-    "wrong_station": 8,
-    "low_color(map/text?)": 2
+    "wrong_station": 13,
+    "geo_mismatch": 5,
+    "name_mismatch_review": 7
    }
   },
   {
-   "slug": "st07999",
-   "name": "甲立",
-   "reasons": {
-    "name_mismatch_review": 25,
-    "no_station_evidence": 26,
-    "geo_mismatch": 1,
-    "wrong_station": 2,
-    "resolution_low": 1
-   }
-  },
-  {
-   "slug": "st00330",
-   "name": "三条",
-   "reasons": {
-    "geo_mismatch": 7,
-    "no_station_evidence": 18,
-    "hard_excluded": 3,
-    "pref_mismatch": 1
-   }
-  },
-  {
-   "slug": "st00331",
-   "name": "三条",
+   "slug": "st00571",
+   "name": "栄",
    "reasons": {
     "no_station_evidence": 20,
-    "hard_excluded": 3,
-    "geo_mismatch": 5,
-    "pref_mismatch": 1
-   }
-  },
-  {
-   "slug": "st00334",
-   "name": "加茂",
-   "reasons": {
-    "no_station_evidence": 9,
+    "name_mismatch_review": 4,
     "geo_mismatch": 10,
-    "hard_excluded": 2,
-    "pref_mismatch": 7,
-    "resolution_low": 1
+    "hard_excluded": 1
    }
   },
   {
-   "slug": "st00336",
-   "name": "加茂",
+   "slug": "st00580",
+   "name": "球場前",
    "reasons": {
-    "no_station_evidence": 9,
-    "geo_mismatch": 11,
-    "hard_excluded": 2,
-    "pref_mismatch": 6,
-    "resolution_low": 1
+    "name_mismatch_review": 20,
+    "no_station_evidence": 25,
+    "geo_mismatch": 3,
+    "pref_mismatch": 1
    }
   },
   {
-   "slug": "st00346",
-   "name": "吉田",
+   "slug": "st01215",
+   "name": "木幡",
    "reasons": {
-    "no_station_evidence": 23,
-    "hard_excluded": 2,
-    "geo_mismatch": 6
-   }
-  },
-  {
-   "slug": "st00356",
-   "name": "都通",
-   "reasons": {
-    "name_mismatch_review": 21,
-    "no_station_evidence": 22,
-    "wrong_station": 2,
+    "no_station_evidence": 12,
+    "wrong_station": 7,
     "geo_mismatch": 1,
-    "pref_mismatch": 4
+    "name_mismatch_review": 9
    }
   },
   {
-   "slug": "st00374",
-   "name": "二軒茶屋",
+   "slug": "st01240",
+   "name": "島ケ原",
    "reasons": {
-    "no_station_evidence": 22
-   }
-  },
-  {
-   "slug": "st00383",
-   "name": "神田",
-   "reasons": {
-    "no_station_evidence": 14,
-    "pref_mismatch": 5,
-    "geo_mismatch": 9,
-    "hard_excluded": 1
-   }
-  },
-  {
-   "slug": "st00385",
-   "name": "神田",
-   "reasons": {
-    "no_station_evidence": 14,
-    "pref_mismatch": 5,
-    "geo_mismatch": 9,
-    "hard_excluded": 1
-   }
-  },
-  {
-   "slug": "st00387",
-   "name": "郡元",
-   "reasons": {
-    "name_mismatch_review": 6,
-    "no_station_evidence": 12,
-    "resolution_low": 1,
+    "no_station_evidence": 10,
+    "wrong_station": 1,
     "hard_excluded": 1,
-    "wrong_station": 6,
-    "geo_mismatch": 9
-   }
-  },
-  {
-   "slug": "st00397",
-   "name": "祇園",
-   "reasons": {
-    "no_station_evidence": 12,
-    "geo_mismatch": 15,
-    "pref_mismatch": 1,
-    "hard_excluded": 3
-   }
-  },
-  {
-   "slug": "st00401",
-   "name": "赤坂",
-   "reasons": {
-    "no_station_evidence": 21,
-    "hard_excluded": 1,
-    "geo_mismatch": 5,
-    "name_mismatch_review": 1,
-    "resolution_low": 1
-   }
-  },
-  {
-   "slug": "st00402",
-   "name": "赤坂",
-   "reasons": {
-    "no_station_evidence": 21,
-    "hard_excluded": 1,
-    "geo_mismatch": 5,
-    "pref_mismatch": 1
-   }
-  },
-  {
-   "slug": "st00403",
-   "name": "赤坂",
-   "reasons": {
-    "no_station_evidence": 21,
-    "hard_excluded": 1,
-    "geo_mismatch": 5,
-    "pref_mismatch": 1
-   }
-  },
-  {
-   "slug": "st00408",
-   "name": "藤崎",
-   "reasons": {
-    "geo_mismatch": 16,
-    "pref_mismatch": 3,
-    "no_station_evidence": 5,
-    "hard_excluded": 5,
     "name_mismatch_review": 1
+   }
+  },
+  {
+   "slug": "st00419",
+   "name": "呉服町",
+   "reasons": {
+    "geo_mismatch": 13,
+    "pref_mismatch": 5,
+    "no_station_evidence": 6,
+    "hard_excluded": 3,
+    "resolution_low": 2
+   }
+  },
+  {
+   "slug": "st00446",
+   "name": "桜町",
+   "reasons": {
+    "name_mismatch_review": 9,
+    "no_station_evidence": 12,
+    "wrong_station": 8,
+    "pref_mismatch": 2,
+    "geo_mismatch": 5,
+    "resolution_low": 1,
+    "hard_excluded": 1
    }
   }
  ],
  "dead_retried": 25,
- "dead_recovered": 8,
- "dead_new": 17,
- "dead_cumulative": 161,
+ "dead_recovered": 12,
+ "dead_new": 13,
+ "dead_cumulative": 170,
  "dead_final": 0,
  "rate_limit_events": 0,
  "maxlag_retries": 0,
  "near_dup_pairs": 0,
  "user_agent": "JR-images-bot/1.0 (https://github.com/ooep/JR-images; contact: https://github.com/ooep/JR-images/issues)",
- "elapsed_sec": 157,
+ "elapsed_sec": 154,
  "batch_index": 6,
- "generated_at": "2026-11-04T05:02:22Z"
+ "generated_at": "2026-11-04T05:09:24Z"
 }
