@@ -229,6 +229,31 @@ def has_location_marker(title):
     return False
 
 
+def wrong_station_hit(title, e, kanji, romaji_re):
+    """wrong_station：标题命中全站表中另一站的站名且不命中本站 → 硬拒。
+    防误杀约束与抓取端一致（站名语境/无 name_en 跳过/复合站名/通名/最长命中）。"""
+    if not title:
+        return False, None, None
+    slug = e.get('slug') or ''
+    name = (e.get('name') or '').strip()
+    en_own = (e.get('name_en') or '').strip()
+    loose = _norm_loose(title)
+    for t in name_tokens(e):
+        if t and _norm_loose(t) and _norm_loose(t) in loose:
+            return False, None, None
+    for _ln, nm, slugs in station_names_in_title(title, kanji, romaji_re):
+        if slug in slugs:
+            continue
+        if nm != name and nm in name:
+            continue
+        if not en_own and nm.isascii():
+            continue
+        if _norm_loose(nm) in _norm_loose(name):
+            continue
+        return True, nm, slugs
+    return False, None, None
+
+
 def main():
     idx = json.load(open('index.json', encoding='utf-8'))
     doc = json.load(open('data/stations_all.json', encoding='utf-8'))
@@ -236,7 +261,7 @@ def main():
     kanji, _romaji, romaji_re = build_name_index(stations)
     by_slug = {s['slug']: s for s in stations}
 
-    pref_hits, pref_review, name_hits, checked = [], [], [], 0
+    pref_hits, pref_review, name_hits, ws_hits, checked = [], [], [], [], 0
     for slug, e in sorted(idx.get('stations', {}).items()):
         if e.get('status') not in ('done', 'review'):
             continue
@@ -263,6 +288,16 @@ def main():
                                 'other_pref': pref_mismatch_hit(cat, full)[1],
                                 'title': title, 'cat': cat[:120],
                                 'source': e.get('source')})
+        hit_ws, hit_name, hit_slugs = wrong_station_hit(title, full, kanji, romaji_re)
+        if hit_ws:
+            hp = sorted({(by_slug.get(s2) or {}).get('pref') or '?'
+                         for s2 in (hit_slugs or [])})
+            ws_hits.append({'slug': slug, 'name': full.get('name'),
+                            'name_en': full.get('name_en'),
+                            'pref': full.get('pref'), 'hit': hit_name,
+                            'hit_prefs': hp, 'title': title,
+                            'source': e.get('source')})
+            continue  # 管道口径：硬拒后不再计后续判据
         if name_mismatch_hit(title + ' ' + cat, full):
             name_hits.append({'slug': slug, 'name': full.get('name'),
                               'name_en': full.get('name_en'),
@@ -272,16 +307,19 @@ def main():
         'checked': checked,
         'pref_mismatch_total': len(pref_hits),
         'pref_review_total': len(pref_review),
+        'wrong_station_total': len(ws_hits),
         'name_mismatch_total': len(name_hits),
         'pref_mismatch_detail': pref_hits[:50],
         'pref_review_detail': pref_review[:50],
+        'wrong_station_detail': ws_hits[:50],
         'name_mismatch_detail': name_hits[:50],
     }
     with open('rules_audit_report.json', 'w', encoding='utf-8') as f:
         json.dump(report, f, ensure_ascii=False, indent=1)
     line = ('rules_audit: checked=%d pref_mismatch=%d pref_review=%d '
-            'name_mismatch=%d' % (checked, len(pref_hits), len(pref_review),
-                                  len(name_hits)))
+            'wrong_station=%d name_mismatch=%d'
+            % (checked, len(pref_hits), len(pref_review), len(ws_hits),
+               len(name_hits)))
     print(line)
     smry = os.environ.get('GITHUB_STEP_SUMMARY')
     if smry:

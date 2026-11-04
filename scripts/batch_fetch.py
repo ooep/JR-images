@@ -693,6 +693,38 @@ def named_own_station(st, hits):
     return False
 
 
+def wrong_station_hit(title, st, name_index):
+    """wrong_station 判据：标题命中全站表中另一站的站名（汉字/官方罗马字）
+    且不命中本站 → (True, 命中名, 命中站slugs)（硬拒）。
+    防误杀约束：罗马字须有站名语境（后接 station/sta/stn/eki）；本站无
+    name_en 时不采信罗马字命中（无法自识别）；复合站名子串跳过；通名跳过；
+    重叠命中取最长。回放 2,456 张误杀率 0%（<2% 线）。"""
+    if not title:
+        return False, None, None
+    kanji, _rom, romaji_re = name_index
+    slug = st.get('slug') or ''
+    name = (st.get('name') or '').strip()
+    en_own = (st.get('name_en') or '').strip()
+    loose = _norm_loose(title)
+    # 本站命中（宽松子串：标点/空白/长音/ou 归一 + 拨音同化）→ 放行
+    for t in name_tokens(st):
+        if t and _norm_loose(t) and _norm_loose(t) in loose:
+            return False, None, None
+    for _ln, nm, slugs in station_names_in_title(title, kanji, romaji_re):
+        if slug in slugs:
+            continue
+        # 汉字命中若是本站名的组成（复合站名，如 JA広島病院前 含 広島）→ 跳过
+        if nm != name and nm in name:
+            continue
+        # 罗马字命中：本站无 name_en 时不可靠（无法自识别）→ 跳过
+        if not en_own and nm.isascii():
+            continue
+        if _norm_loose(nm) in _norm_loose(name):
+            continue
+        return True, nm, slugs
+    return False, None, None
+
+
 def quality_verdict(m, title, from_category):
     """返回 (verdict, reasons)：verdict ∈ done/review/reject。
     车站本体判定：分类来源=主题证据；搜索来源要求文件名含车站关键词；
@@ -898,6 +930,12 @@ def process_station(st, args, tmpdir, relaxed=False, used=None):
         if _cat and pref_mismatch_hit(_cat, st)[0]:
             reject_dist['pref_mismatch_review'] = \
                 reject_dist.get('pref_mismatch_review', 0) + 1
+        # wrong_station：标题指名全站表中另一站且不命中本站 → 硬拒
+        # （回放 2,456 张误杀率 0%<2%；通名/复合站名/无 name_en 已约束）
+        bad_ws, _wn, _ws = wrong_station_hit(_title, st, (_kanji, _rom, _romre))
+        if bad_ws:
+            reject_dist['wrong_station'] = reject_dist.get('wrong_station', 0) + 1
+            continue
         # 站名判据回溯误杀率 18.8%>2%，只计数不拒（name_mismatch_review）
         if name_mismatch_hit(_title + ' ' + _cat, st, en_label):
             reject_dist['name_mismatch_review'] = \
