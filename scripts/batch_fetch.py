@@ -583,6 +583,25 @@ def pref_mismatch_hit(text, st):
     return False, None
 
 
+def pref_evidence(text, st):
+    """标题/分类是否含本站县名（汉字或罗马字）。"""
+    own = (st.get('pref') or '').strip()
+    if not own or not text:
+        return False
+    for f in pref_forms(own):
+        if f and f in text:
+            return True
+    rom = PREF_ROMAJI.get(own)
+    return bool(rom and _romaji_boundary(text.lower(), rom.lower()))
+
+
+def line_evidence(text, st):
+    """标题/分类是否含本站线路名（汉字）。"""
+    if not text:
+        return False
+    return any(ln and ln in text for ln in (st.get('lines') or []))
+
+
 def name_tokens(st, en_label=None):
     """站名本体 + 常见变体（±駅 / 罗马字 / 英文 + Station / 去 JR 前缀 / 去括号注释）。"""
     toks = set()
@@ -962,6 +981,30 @@ def process_station(st, args, tmpdir, relaxed=False, used=None):
         if name_mismatch_hit(_title + ' ' + _cat, st, en_label):
             reject_dist['name_mismatch_review'] = \
                 reject_dist.get('name_mismatch_review', 0) + 1
+        # dead 重试收紧：必须能证明图属于本站，避免同名站/外县站/无关主体被当成恢复
+        if relaxed:
+            _all = _title + ' ' + _cat
+            _same = bool(name) and name in getattr(args, 'same_name_names', set())
+            _own_hit = False
+            _ctx = ('駅' in _title or 'Station' in _title or 'station' in _title or
+                    'STA' in _title or 'Sta.' in _title or
+                    'tramstop' in _title or 'tram stop' in _title or 'dentei' in _title)
+            if _ctx:
+                for _ln2, _nm2, _slugs2 in station_names_in_title(_title, _kanji, _romre):
+                    if slug in _slugs2 and len(_slugs2) == 1:
+                        _own_hit = True
+                        break
+                _en = _norm_loose(st.get('name_en') or '')
+                if _en and _en in _norm_loose(_title):
+                    _own_hit = True
+            if _same:
+                _evidence = pref_evidence(_all, st) or line_evidence(_all, st)
+            else:
+                _evidence = _own_hit or pref_evidence(_all, st) or line_evidence(_all, st)
+            if not _evidence:
+                reject_dist['no_station_evidence'] = \
+                    reject_dist.get('no_station_evidence', 0) + 1
+                continue
         ok, lic, lic_url, author, reason = license_verdict(info.get('extmetadata'))
         if not ok:
             reject_dist[reason] = reject_dist.get(reason, 0) + 1
