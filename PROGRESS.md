@@ -72,3 +72,13 @@
 - cumulative_indexed=3437/8909
 - elapsed=226s
 
+
+## dead retry — 2026-11-04T04:29:28Z
+- list: `data/stations_all.json` (canonical 8909)
+- attempted=0 done=10 review=14 missing=1 failed=0 skipped_resume=0
+- bytes_this_batch=10428256 avg=434510
+- dead: new=1 cumulative=208 retried=25 recovered=24
+- reject_dist={"name_mismatch_review": 147, "resolution_low": 45, "pref_mismatch": 48, "mime_unsupported": 14, "geo_mismatch": 147, "hard_excluded": 15, "low_color(map/text?)": 7, "oversize_gt_25mb": 34, "wrong_station": 74, "no_author_metadata": 6, "white_screenshot": 1, "license_unclear": 2}
+- cumulative_indexed=3437/8909
+- elapsed=268s
+

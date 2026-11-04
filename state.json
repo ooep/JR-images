@@ -461,43 +461,50 @@
    "attempts": 1
   },
   "st00067": {
-   "status": "review",
+   "status": "done",
    "file": "stations/st00067/photo.jpg",
-   "sha256": "154c5123039b4a817ef808a14525042f592031d692022a31a9bd0995661c49fc",
-   "bytes": 925433,
-   "width": 2048,
-   "height": 1536,
+   "sha256": "990222f1bb79702633fde18cef05a9ca44af13a8936829559973b198f30d8a40",
+   "dhash": "266741511959188f",
+   "bytes": 404710,
+   "width": 1800,
+   "height": 1350,
    "normalized": {
     "encoded": true,
-    "long": 2048,
-    "original_width": 3264,
-    "original_height": 2448
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4320,
+    "original_height": 3240
    },
-   "source_title": "File:梅田藍天大廈湖泊與樹.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:梅田藍天大廈湖泊與樹.jpg",
-   "author": "臺灣象象",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "below_spec": false,
+   "score": 7.29,
+   "source_title": "File:Osaka Station City 2024-06.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Osaka_Station_City_2024-06.jpg",
+   "author": "Mr.ちゅらさん",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
    "metrics": {
-    "width": 2048,
-    "height": 1536,
-    "lap_var": 3328.6,
-    "colorfulness": 20.3,
-    "white_frac": 0.161,
-    "edge_density": 0.1707,
-    "sky_frac": 0.601
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 717.7,
+    "colorfulness": 46.9,
+    "white_frac": 0.276,
+    "edge_density": 0.0444,
+    "sky_frac": 0.672,
+    "brightness": 147.1,
+    "dark_frac": 0.116,
+    "center_edge": 0.0687
    },
-   "reasons": [
-    "low_color"
-   ],
+   "reasons": [],
    "reject_dist": {
     "oversize_gt_25mb": 9,
     "mime_unsupported": 3,
-    "resolution_low": 1
+    "resolution_low": 1,
+    "low_color(map/text?)": 2
    },
-   "downloads": 1,
-   "ts": "2026-11-03T09:53:00Z",
-   "attempts": 1
+   "downloads": 5,
+   "ts": "2026-11-04T04:25:49Z",
+   "attempts": 2
   },
   "st00069": {
    "status": "done",
@@ -34757,40 +34764,53 @@
    "attempts": 1
   },
   "st00018": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00018/photo.jpg",
-   "sha256": "4acf3aaf083a0a7914cade3edbe3105a95a0a4aa039984ece1d886266e5451f6",
-   "bytes": 526449,
-   "width": 2048,
-   "height": 1365,
+   "sha256": "fa6752d417f277ae55a5d71d75157a9f9de090b8a8a6640b184abdbb27c615d4",
+   "dhash": "8060390f1cf4edc9",
+   "bytes": 519528,
+   "width": 1800,
+   "height": 1350,
    "normalized": {
     "encoded": true,
-    "long": 2048,
-    "original_width": 6000,
-    "original_height": 4000
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3264,
+    "original_height": 2448
    },
-   "source_title": "File:JR East Shimo-Funato Station BRT Track in Ofunato City, Iwate Pref.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Shimo-Funato_Station_BRT_Track_in_Ofunato_City,_Iwate_Pref.jpg",
-   "author": "Mister0124",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "below_spec": false,
+   "score": 7.47,
+   "source_title": "File:Funato Station (Wakayama) platform.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Funato_Station_(Wakayama)_platform.jpg",
+   "author": "Sashimiteishoku",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
    "metrics": {
-    "width": 2048,
-    "height": 1365,
-    "lap_var": 1173.2,
-    "colorfulness": 45.6,
-    "white_frac": 0.005,
-    "edge_density": 0.0757,
-    "sky_frac": 0.256
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1822.7,
+    "colorfulness": 20.9,
+    "white_frac": 0.002,
+    "edge_density": 0.1126,
+    "sky_frac": 0.763,
+    "brightness": 123.9,
+    "dark_frac": 0.061,
+    "center_edge": 0.1487
    },
-   "reasons": [],
+   "reasons": [
+    "low_color"
+   ],
    "reject_dist": {
+    "name_mismatch_review": 6,
     "resolution_low": 2,
-    "mime_unsupported": 1
+    "pref_mismatch": 14,
+    "mime_unsupported": 2,
+    "geo_mismatch": 6
    },
-   "downloads": 1,
-   "ts": "2026-11-03T11:33:57Z",
-   "attempts": 1
+   "downloads": 5,
+   "ts": "2026-11-04T04:25:15Z",
+   "attempts": 2
   },
   "st00019": {
    "status": "missing",
@@ -34953,80 +34973,96 @@
   "st00028": {
    "status": "done",
    "file": "stations/st00028/photo.jpg",
-   "sha256": "d45f0dff9674e456dcd19180f9e1923ed4719715c85acec076b4056b184b706c",
-   "bytes": 506092,
-   "width": 2048,
-   "height": 1800,
-   "normalized": {
-    "encoded": true,
-    "long": 2048,
-    "original_width": 4530,
-    "original_height": 3982
-   },
-   "source_title": "File:JR Hashimoto Station - Kanagawa - 2020 Dec 13 - various 12 08 22 307000.jpeg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Hashimoto_Station_-_Kanagawa_-_2020_Dec_13_-_various_12_08_22_307000.jpeg",
-   "author": "Nesnad",
-   "license": "CC BY 4.0",
-   "license_url": "https://creativecommons.org/licenses/by/4.0",
-   "metrics": {
-    "width": 2048,
-    "height": 1800,
-    "lap_var": 558.1,
-    "colorfulness": 25.2,
-    "white_frac": 0.031,
-    "edge_density": 0.0274,
-    "sky_frac": 0.43
-   },
-   "reasons": [],
-   "reject_dist": {
-    "resolution_low": 4
-   },
-   "downloads": 2,
-   "ts": "2026-11-03T11:34:42Z",
-   "attempts": 1
-  },
-  "st00029": {
-   "status": "done",
-   "file": "stations/st00029/photo.jpg",
-   "sha256": "cdedf0e610141bfb76cfbea14a29280dfd1f69e03156ae7d3f22259be737cc2d",
-   "bytes": 277420,
+   "sha256": "5d7bdf182245da6925464d596609fad693d32f2b78761e450026965a63c36968",
+   "dhash": "98864a236cecdebc",
+   "bytes": 328557,
    "width": 1800,
-   "height": 1012,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 3520,
-    "original_height": 1980
+    "original_width": 3072,
+    "original_height": 2304
    },
    "below_spec": false,
-   "score": 7.49,
-   "source_title": "File:橋本駅（福岡）ホーム.jpg",
+   "score": 6.65,
+   "source_title": "File:京王橋本駅構内.JPG",
    "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:橋本駅（福岡）ホーム.jpg",
-   "author": "そそそようつべ",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "source_page": "https://commons.wikimedia.org/wiki/File:京王橋本駅構内.JPG",
+   "author": "Own work",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
    "metrics": {
     "width": 1800,
-    "height": 1012,
-    "lap_var": 883.6,
-    "colorfulness": 30.5,
-    "white_frac": 0.031,
-    "edge_density": 0.054,
-    "sky_frac": 0.193,
-    "brightness": 121.8,
-    "dark_frac": 0.106,
-    "center_edge": 0.072
+    "height": 1350,
+    "lap_var": 159.7,
+    "colorfulness": 54.6,
+    "white_frac": 0.04,
+    "edge_density": 0.0171,
+    "sky_frac": 0.137,
+    "brightness": 101.1,
+    "dark_frac": 0.132,
+    "center_edge": 0.0195
+   },
+   "reasons": [],
+   "reject_dist": {
+    "geo_mismatch": 10,
+    "hard_excluded": 1,
+    "resolution_low": 3,
+    "pref_mismatch": 2,
+    "name_mismatch_review": 1
+   },
+   "downloads": 5,
+   "ts": "2026-11-04T04:25:25Z",
+   "attempts": 2
+  },
+  "st00029": {
+   "status": "done",
+   "file": "stations/st00029/photo.jpg",
+   "sha256": "6a227b30e999a85a480cdabb9199ed548ee382474d1745dfb38cb5c20837f95c",
+   "dhash": "f9595d2a4938f3e1",
+   "bytes": 390132,
+   "width": 1800,
+   "height": 1198,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4386,
+    "original_height": 2920
+   },
+   "below_spec": false,
+   "score": 6.95,
+   "source_title": "File:橋本駅 - panoramio.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:橋本駅_-_panoramio.jpg",
+   "author": "くろふね",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "metrics": {
+    "width": 1800,
+    "height": 1198,
+    "lap_var": 840.8,
+    "colorfulness": 33.1,
+    "white_frac": 0.003,
+    "edge_density": 0.0816,
+    "sky_frac": 0.591,
+    "brightness": 132.2,
+    "dark_frac": 0.051,
+    "center_edge": 0.0722
    },
    "reasons": [],
    "reject_dist": {
     "hard_excluded": 1,
-    "resolution_low": 4
+    "resolution_low": 4,
+    "pref_mismatch": 3,
+    "name_mismatch_review": 1,
+    "low_color(map/text?)": 1
    },
    "downloads": 5,
-   "ts": "2026-11-03T13:30:52Z",
-   "attempts": 2
+   "ts": "2026-11-04T04:25:36Z",
+   "attempts": 3
   },
   "st00030": {
    "status": "done",
@@ -36472,43 +36508,56 @@
    "attempts": 1
   },
   "st00079": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00079/photo.jpg",
-   "sha256": "6e313dcda24ebc87021c74a093d61ca4be8d68588328ea1691c3d63d8ba6f82d",
-   "bytes": 365566,
+   "sha256": "59f94f97a2d3b880329e1c15008bec8dd087f0f9accd9920240fcae1d1ecf027",
+   "dhash": "0205c16b42a98324",
+   "bytes": 476857,
    "width": 1800,
    "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 3904,
-    "original_height": 2928
+    "original_width": 2048,
+    "original_height": 1536
    },
    "below_spec": false,
-   "source_title": "File:One Fukuoka Bldg the East-3rd-b Exit of Tenjin Station Tenjin 1-chōme Chūō-ku Fukuoka 20250429.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:One_Fukuoka_Bldg_the_East-3rd-b_Exit_of_Tenjin_Station_Tenjin_1-chōme_Chūō-ku_Fukuoka_20250429.jpg",
-   "author": "Hirho",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "score": 6.82,
+   "source_title": "File:Okayama Electric Tramway Higashichuocho Tram Stop - panoramio.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Okayama_Electric_Tramway_Higashichuocho_Tram_Stop_-_panoramio.jpg",
+   "author": "DVMG",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
    "metrics": {
     "width": 1800,
     "height": 1350,
-    "lap_var": 608.3,
-    "colorfulness": 26.3,
-    "white_frac": 0.043,
-    "edge_density": 0.0422,
-    "sky_frac": 0.374
+    "lap_var": 1262.9,
+    "colorfulness": 34.0,
+    "white_frac": 0.061,
+    "edge_density": 0.0832,
+    "sky_frac": 0.414,
+    "brightness": 135.3,
+    "dark_frac": 0.103,
+    "center_edge": 0.0952
    },
-   "reasons": [],
+   "reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
    "reject_dist": {
-    "resolution_low": 5,
-    "oversize_gt_25mb": 7,
-    "mime_unsupported": 5
+    "name_mismatch_review": 13,
+    "resolution_low": 3,
+    "pref_mismatch": 3,
+    "wrong_station": 5,
+    "oversize_gt_25mb": 6,
+    "mime_unsupported": 3,
+    "geo_mismatch": 4,
+    "hard_excluded": 2
    },
-   "downloads": 1,
-   "ts": "2026-11-03T11:42:21Z",
-   "attempts": 1
+   "downloads": 4,
+   "ts": "2026-11-04T04:25:58Z",
+   "attempts": 2
   },
   "st00080": {
    "status": "done",
@@ -36634,40 +36683,50 @@
   "st00084": {
    "status": "done",
    "file": "stations/st00084/photo.jpg",
-   "sha256": "9332d18d0e437d7804d5de70eb596d90aa34c4e5655639b605d38773665ca75e",
-   "bytes": 224484,
+   "sha256": "8c0846ac5aa128250e74b7ca0a18fc0f387a5a4b59df517e7797203b9ea99b92",
+   "dhash": "3e783c3b33313372",
+   "bytes": 407752,
    "width": 1800,
-   "height": 719,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 10418,
-    "original_height": 4160
+    "original_width": 2592,
+    "original_height": 1944
    },
    "below_spec": false,
-   "source_title": "File:北海道道383号木古内停車場線・起点（木古内駅前、2019年5月撮影）.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:北海道道383号木古内停車場線・起点（木古内駅前、2019年5月撮影）.jpg",
-   "author": "BATACHAN",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "score": 7.08,
+   "source_title": "File:Himeji ekiminami Post office.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Himeji_ekiminami_Post_office.jpg",
+   "author": "Corpse Reviver",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
    "metrics": {
     "width": 1800,
-    "height": 719,
-    "lap_var": 1220.3,
-    "colorfulness": 50.9,
-    "white_frac": 0.016,
-    "edge_density": 0.0876,
-    "sky_frac": 0.027
+    "height": 1350,
+    "lap_var": 1224.6,
+    "colorfulness": 54.5,
+    "white_frac": 0.028,
+    "edge_density": 0.0685,
+    "sky_frac": 0.253,
+    "brightness": 117.6,
+    "dark_frac": 0.093,
+    "center_edge": 0.0995
    },
    "reasons": [],
    "reject_dist": {
-    "resolution_low": 9,
-    "oversize_gt_25mb": 3
+    "geo_mismatch": 5,
+    "resolution_low": 6,
+    "name_mismatch_review": 14,
+    "wrong_station": 4,
+    "oversize_gt_25mb": 3,
+    "pref_mismatch": 1
    },
-   "downloads": 1,
-   "ts": "2026-11-03T11:42:49Z",
-   "attempts": 1
+   "downloads": 5,
+   "ts": "2026-11-04T04:26:09Z",
+   "attempts": 2
   },
   "st00085": {
    "status": "done",
@@ -38245,39 +38304,47 @@
   "st00128": {
    "status": "review",
    "file": "stations/st00128/photo.jpg",
-   "sha256": "43b5b7cdd101779e218f06d5186fd3255a3c5a55a510b661326e79f4fc73e7aa",
-   "bytes": 458617,
+   "sha256": "d059b4d7376cf8801cfe4251605d9213f3ab4d151dc86f160355d8a1d8fe1159",
+   "dhash": "cc169f87e004e892",
+   "bytes": 527943,
    "width": 1800,
    "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 3890,
-    "original_height": 2918
+    "original_width": 3648,
+    "original_height": 2736
    },
    "below_spec": false,
-   "source_title": "File:Platform of Hiroden-Itsukaichi Station 2.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Platform_of_Hiroden-Itsukaichi_Station_2.jpg",
-   "author": "そらみみ",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "score": 6.24,
+   "source_title": "File:Saeki-kuyakusho-mae-station-2.JPG",
+   "source_cat": "Category:Saeki-kuyakusho-mae Station",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Saeki-kuyakusho-mae-station-2.JPG",
+   "author": "Taisyo",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
    "metrics": {
     "width": 1800,
     "height": 1350,
-    "lap_var": 1951.5,
-    "colorfulness": 21.1,
-    "white_frac": 0.043,
-    "edge_density": 0.0931,
-    "sky_frac": 0.454
+    "lap_var": 1600.9,
+    "colorfulness": 18.7,
+    "white_frac": 0.11,
+    "edge_density": 0.0939,
+    "sky_frac": 0.807,
+    "brightness": 127.2,
+    "dark_frac": 0.119,
+    "center_edge": 0.1106
    },
    "reasons": [
     "low_color"
    ],
-   "reject_dist": {},
-   "downloads": 3,
-   "ts": "2026-11-03T11:47:49Z",
-   "attempts": 1
+   "reject_dist": {
+    "wrong_station": 1
+   },
+   "downloads": 2,
+   "ts": "2026-11-04T04:26:19Z",
+   "attempts": 2
   },
   "st00129": {
    "status": "done",
@@ -38474,39 +38541,54 @@
    "attempts": 1
   },
   "st00134": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00134/photo.jpg",
-   "sha256": "f20e19d1339864fa1b0241f473bba8e4b12adae596fb72918ec6a5100db164e6",
-   "bytes": 351198,
+   "sha256": "97c5859dbe92992925452fce69f93cbbfdf5e51ae5c6ee11222cbbe0e2e2d072",
+   "dhash": "cb8d9fbf6f4c0c0c",
+   "bytes": 570407,
    "width": 1800,
    "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 2376,
-    "original_height": 1782
+    "original_width": 4032,
+    "original_height": 3024
    },
    "below_spec": false,
-   "source_title": "File:南草津駅 - panoramio - warabi hatogaya.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:南草津駅_-_panoramio_-_warabi_hatogaya.jpg",
-   "author": "warabi hatogaya",
-   "license": "CC BY 3.0",
-   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "score": 7.05,
+   "source_title": "File:Kusatsu-yu (Minami-Senju, Arakawa) 02.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kusatsu-yu_(Minami-Senju,_Arakawa)_02.jpg",
+   "author": "Higa4",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
    "metrics": {
     "width": 1800,
     "height": 1350,
-    "lap_var": 1232.4,
-    "colorfulness": 28.3,
-    "white_frac": 0.0,
-    "edge_density": 0.0706,
-    "sky_frac": 0.276
+    "lap_var": 2183.8,
+    "colorfulness": 40.7,
+    "white_frac": 0.003,
+    "edge_density": 0.132,
+    "sky_frac": 0.58,
+    "brightness": 133.3,
+    "dark_frac": 0.079,
+    "center_edge": 0.1161
    },
-   "reasons": [],
-   "reject_dist": {},
-   "downloads": 1,
-   "ts": "2026-11-03T11:48:29Z",
-   "attempts": 1
+   "reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "reject_dist": {
+    "wrong_station": 9,
+    "name_mismatch_review": 21,
+    "resolution_low": 1,
+    "hard_excluded": 1,
+    "no_author_metadata": 3,
+    "pref_mismatch": 3
+   },
+   "downloads": 5,
+   "ts": "2026-11-04T04:26:48Z",
+   "attempts": 2
   },
   "st00135": {
    "status": "done",
@@ -40621,39 +40703,49 @@
   "st00190": {
    "status": "done",
    "file": "stations/st00190/photo.jpg",
-   "sha256": "044b630714b9531d8fb6709c5fae3c7adfddf0c0c30eb34640d4d04f2db98fc8",
-   "bytes": 348404,
+   "sha256": "293d5e984209484312a510f7d926e8af870965fca2b9549e6becabf9b38d366c",
+   "dhash": "f8190d43879dbc7c",
+   "bytes": 393838,
    "width": 1800,
-   "height": 1200,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 5376,
-    "original_height": 3584
+    "original_width": 2816,
+    "original_height": 2112
    },
    "below_spec": false,
-   "source_title": "File:Tokyo-Metro Inaricho-STA Platform1-Gate.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Tokyo-Metro_Inaricho-STA_Platform1-Gate.jpg",
-   "author": "MaedaAkihiko",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "score": 6.61,
+   "source_title": "File:TokyoMetro-G17-Inaricho-station-platform.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:TokyoMetro-G17-Inaricho-station-platform.jpg",
+   "author": "LERK (talk · contribs)",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
    "metrics": {
     "width": 1800,
-    "height": 1200,
-    "lap_var": 901.8,
-    "colorfulness": 32.1,
-    "white_frac": 0.06,
-    "edge_density": 0.0609,
-    "sky_frac": 0.361
+    "height": 1350,
+    "lap_var": 683.7,
+    "colorfulness": 26.4,
+    "white_frac": 0.028,
+    "edge_density": 0.0461,
+    "sky_frac": 0.202,
+    "brightness": 100.5,
+    "dark_frac": 0.213,
+    "center_edge": 0.0523
    },
    "reasons": [],
    "reject_dist": {
-    "resolution_low": 5
+    "resolution_low": 4,
+    "pref_mismatch": 7,
+    "hard_excluded": 5,
+    "wrong_station": 1,
+    "white_screenshot": 1
    },
-   "downloads": 1,
-   "ts": "2026-11-03T11:54:20Z",
-   "attempts": 1
+   "downloads": 5,
+   "ts": "2026-11-04T04:26:55Z",
+   "attempts": 2
   },
   "st00191": {
    "status": "done",
@@ -44374,40 +44466,50 @@
   "st00297": {
    "status": "done",
    "file": "stations/st00297/photo.jpg",
-   "sha256": "ddb6b7b3146e3c12fcf4cc09117980d8c2e966783a138701f2be1ddeb758cb5a",
-   "bytes": 374421,
+   "sha256": "86450401118910a7e216178aeec0485cd71449931be0b1ed6dd4f8d1bceaf8d0",
+   "dhash": "27263a3a62662646",
+   "bytes": 361123,
    "width": 1800,
-   "height": 1197,
+   "height": 1351,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 5837,
-    "original_height": 3881
+    "original_width": 5328,
+    "original_height": 4000
    },
    "below_spec": false,
-   "source_title": "File:Fujimatsu Station 2021-06 ac (6).jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Fujimatsu_Station_2021-06_ac_(6).jpg",
-   "author": "Asturio Cantabrio",
+   "score": 8.84,
+   "source_title": "File:JR East Imagawa Station Platform 1 Waiting room.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Imagawa_Station_Platform_1_Waiting_room.jpg",
+   "author": "Mister0124",
    "license": "CC BY-SA 4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
    "metrics": {
     "width": 1800,
-    "height": 1197,
-    "lap_var": 876.6,
-    "colorfulness": 43.5,
-    "white_frac": 0.0,
-    "edge_density": 0.0682,
-    "sky_frac": 0.018
+    "height": 1351,
+    "lap_var": 542.7,
+    "colorfulness": 56.6,
+    "white_frac": 0.027,
+    "edge_density": 0.044,
+    "sky_frac": 0.401,
+    "brightness": 142.6,
+    "dark_frac": 0.019,
+    "center_edge": 0.0604
    },
    "reasons": [],
    "reject_dist": {
-    "resolution_low": 6,
-    "oversize_gt_25mb": 3
+    "name_mismatch_review": 6,
+    "wrong_station": 1,
+    "resolution_low": 1,
+    "pref_mismatch": 1,
+    "oversize_gt_25mb": 2,
+    "geo_mismatch": 6
    },
    "downloads": 1,
-   "ts": "2026-11-03T12:03:53Z",
-   "attempts": 1
+   "ts": "2026-11-04T04:27:03Z",
+   "attempts": 2
   },
   "st00298": {
    "status": "done",
@@ -44862,42 +44964,53 @@
    "attempts": 2
   },
   "st00309": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00309/photo.jpg",
-   "sha256": "c283e59b3f9f2418ce63f876d8cd38d6d0215e513fe4bf7fa0eb7a35e2db2597",
-   "bytes": 362477,
+   "sha256": "5b927db213ba2c8eb06ac99ea80880f145899f3f2b697ab5a4e12c83adc5e507",
+   "dhash": "19b3f2dda7b2b1b0",
+   "bytes": 519120,
    "width": 1800,
-   "height": 1200,
+   "height": 1206,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 6000,
-    "original_height": 4000
+    "original_width": 3904,
+    "original_height": 2616
    },
    "below_spec": false,
-   "source_title": "File:IGR Aoyama Station Aoyama North Gate, Iwate Pref.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:IGR_Aoyama_Station_Aoyama_North_Gate,_Iwate_Pref.jpg",
-   "author": "Mister0124",
+   "score": 6.38,
+   "source_title": "File:Tsing Shan Tsuen Stop 20210206.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Tsing_Shan_Tsuen_Stop_20210206.jpg",
+   "author": "Owennson",
    "license": "CC BY-SA 4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
    "metrics": {
     "width": 1800,
-    "height": 1200,
-    "lap_var": 815.4,
-    "colorfulness": 44.7,
-    "white_frac": 0.021,
-    "edge_density": 0.0616,
-    "sky_frac": 0.633
+    "height": 1206,
+    "lap_var": 1802.3,
+    "colorfulness": 42.5,
+    "white_frac": 0.02,
+    "edge_density": 0.125,
+    "sky_frac": 0.347,
+    "brightness": 102.4,
+    "dark_frac": 0.129,
+    "center_edge": 0.1692
    },
-   "reasons": [],
+   "reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
    "reject_dist": {
-    "resolution_low": 10,
-    "oversize_gt_25mb": 1
+    "geo_mismatch": 10,
+    "resolution_low": 5,
+    "name_mismatch_review": 8,
+    "pref_mismatch": 6,
+    "wrong_station": 1
    },
-   "downloads": 2,
-   "ts": "2026-11-03T12:05:20Z",
-   "attempts": 1
+   "downloads": 5,
+   "ts": "2026-11-04T04:27:13Z",
+   "attempts": 2
   },
   "st00310": {
    "status": "done",
@@ -46388,42 +46501,50 @@
    "attempts": 1
   },
   "st00353": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00353/photo.jpg",
-   "sha256": "2502c8b46f1d50ee7775a7dd15ba9d74f01d71f0d5c2de9d653147139a0b1ca2",
-   "bytes": 284629,
+   "sha256": "62ca618f8b9dff79b0a2f9287ab8dad180b3609cb81007a0049b40c2e4380028",
+   "dhash": "089a96d9b1a595c1",
+   "bytes": 442575,
    "width": 1800,
    "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 4000,
-    "original_height": 3000
+    "original_width": 4032,
+    "original_height": 3024
    },
    "below_spec": false,
-   "source_title": "File:JP 日本 Japan 沖繩 OKINAWA 單軌電車 MonoRail 遊車河 tour view from 13 市立醫院前站 Naha City Hospital Station to 12 古島站 Furujima Station 1038am January 2025 01.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:JP_日本_Japan_沖繩_OKINAWA_單軌電車_MonoRail_遊車河_tour_view_from_13_市立醫院前站_Naha_City_Hospital_Station_to_12_古島站_Furujima_Station_1038am_January_2025_01.jpg",
-   "author": "Naha Mama Pavilionz",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "score": 8.37,
+   "source_title": "File:Naha-City-Hospital-Station-Building.jpg",
+   "source_cat": "Category:Naha City Hospital Station",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Naha-City-Hospital-Station-Building.jpg",
+   "author": "Tokyo-Good",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
    "metrics": {
     "width": 1800,
     "height": 1350,
-    "lap_var": 766.3,
-    "colorfulness": 36.3,
-    "white_frac": 0.051,
-    "edge_density": 0.0427,
-    "sky_frac": 0.399
+    "lap_var": 2058.3,
+    "colorfulness": 18.4,
+    "white_frac": 0.015,
+    "edge_density": 0.093,
+    "sky_frac": 0.763,
+    "brightness": 132.0,
+    "dark_frac": 0.104,
+    "center_edge": 0.1534
    },
-   "reasons": [],
+   "reasons": [
+    "low_color"
+   ],
    "reject_dist": {
-    "resolution_low": 1,
-    "low_color(map/text?)": 1
+    "geo_mismatch": 27,
+    "pref_mismatch": 2
    },
-   "downloads": 3,
-   "ts": "2026-11-03T12:09:21Z",
-   "attempts": 1
+   "downloads": 1,
+   "ts": "2026-11-04T04:27:17Z",
+   "attempts": 2
   },
   "st00354": {
    "status": "done",
@@ -46853,41 +46974,52 @@
    "attempts": 2
   },
   "st00365": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00365/photo.jpg",
-   "sha256": "0a1a098c7c4eca11c82f82ae85e92e8bdec6fa6d7bf420bb10c8c7836b4686aa",
-   "bytes": 547853,
-   "width": 1800,
-   "height": 1350,
+   "sha256": "672fea0fc3ec31506ed6e273ae769c29659fad9861774f1c3982386a665ac93d",
+   "dhash": "cecfcec6737d7e36",
+   "bytes": 515207,
+   "width": 1536,
+   "height": 1152,
    "normalized": {
     "encoded": true,
-    "long": 1800,
+    "long": 1536,
     "quality": 85,
-    "original_width": 3953,
-    "original_height": 2965
+    "original_width": 1536,
+    "original_height": 1152
    },
-   "below_spec": false,
-   "source_title": "File:View in front of Kagoshima-Ekimae Station.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:View_in_front_of_Kagoshima-Ekimae_Station.jpg",
-   "author": "そらみみ",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "below_spec": true,
+   "score": 1.11,
+   "source_title": "File:Sakurajimasambashidori tramstop Kagoshima city transportation bureau.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Sakurajimasambashidori_tramstop_Kagoshima_city_transportation_bureau.jpg",
+   "author": "Tam0031",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
    "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 2268.9,
-    "colorfulness": 31.0,
-    "white_frac": 0.009,
-    "edge_density": 0.1227,
-    "sky_frac": 0.526
+    "width": 1536,
+    "height": 1152,
+    "lap_var": 2276.1,
+    "colorfulness": 44.5,
+    "white_frac": 0.015,
+    "edge_density": 0.1367,
+    "sky_frac": 0.171,
+    "brightness": 113.6,
+    "dark_frac": 0.1,
+    "center_edge": 0.1922
    },
-   "reasons": [],
+   "reasons": [
+    "subject_unverified(no_station_kw)",
+    "low_score(1.1<5.0)",
+    "below_spec(long=1536,dead retry)"
+   ],
    "reject_dist": {
-    "resolution_low": 1
+    "name_mismatch_review": 1,
+    "wrong_station": 1
    },
    "downloads": 1,
-   "ts": "2026-11-03T12:10:52Z",
-   "attempts": 1
+   "ts": "2026-11-04T04:27:26Z",
+   "attempts": 2
   },
   "st00366": {
    "status": "done",
@@ -47230,8 +47362,9 @@
   "st00375": {
    "status": "done",
    "file": "stations/st00375/photo.jpg",
-   "sha256": "c699866323be2af4a37b25dee8523c4e67681a0d8678a2d8ef704e93ec1b78f2",
-   "bytes": 636701,
+   "sha256": "1b512fd064244218a198f949cecf0ae8109f340defdc0a94e022ea6f2842750c",
+   "dhash": "d212333b8ddce6e6",
+   "bytes": 550577,
    "width": 1800,
    "height": 1350,
    "normalized": {
@@ -47242,27 +47375,34 @@
     "original_height": 2304
    },
    "below_spec": false,
-   "source_title": "File:Minami Kagoshima station-Platform.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Minami_Kagoshima_station-Platform.jpg",
+   "score": 7.03,
+   "source_title": "File:Minami Kagoshimaekimae-tramstop.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Minami_Kagoshimaekimae-tramstop.jpg",
    "author": "Rsa",
    "license": "CC BY-SA 3.0",
    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
    "metrics": {
     "width": 1800,
     "height": 1350,
-    "lap_var": 2389.6,
-    "colorfulness": 47.7,
-    "white_frac": 0.044,
-    "edge_density": 0.157,
-    "sky_frac": 0.441
+    "lap_var": 2257.5,
+    "colorfulness": 39.9,
+    "white_frac": 0.189,
+    "edge_density": 0.1181,
+    "sky_frac": 0.745,
+    "brightness": 138.0,
+    "dark_frac": 0.099,
+    "center_edge": 0.1622
    },
    "reasons": [],
    "reject_dist": {
-    "resolution_low": 2
+    "wrong_station": 4,
+    "name_mismatch_review": 1,
+    "resolution_low": 1
    },
-   "downloads": 2,
-   "ts": "2026-11-03T12:11:58Z",
-   "attempts": 1
+   "downloads": 1,
+   "ts": "2026-11-04T04:27:36Z",
+   "attempts": 2
   },
   "st00376": {
    "status": "done",
@@ -47313,43 +47453,57 @@
    "attempts": 2
   },
   "st00378": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00378/photo.jpg",
-   "sha256": "6df4e8d4d4f19440da9682724c19ce0ffc7fdf56069de173290dd201704fcc1c",
-   "bytes": 458294,
-   "width": 1800,
-   "height": 1200,
+   "sha256": "bba3837ad32fb757fe339388a32d3ac93308552fbffbf172dda43cd06563a0f9",
+   "dhash": "0f8859f4e4a592b9",
+   "bytes": 229615,
+   "width": 1280,
+   "height": 960,
    "normalized": {
     "encoded": true,
-    "long": 1800,
+    "long": 1280,
     "quality": 85,
-    "original_width": 6000,
-    "original_height": 4000
+    "original_width": 1280,
+    "original_height": 960
    },
-   "below_spec": false,
-   "source_title": "File:JR East Chūgun Station building, Yamagata Pref.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Chūgun_Station_building,_Yamagata_Pref.jpg",
-   "author": "Mister0124",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "below_spec": true,
+   "score": 1.51,
+   "source_title": "File:旧・朱鞠内駅跡.JPG",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:旧・朱鞠内駅跡.JPG",
+   "author": "Bergmann",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
    "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1777.7,
-    "colorfulness": 68.4,
-    "white_frac": 0.002,
-    "edge_density": 0.118,
-    "sky_frac": 0.016
+    "width": 1280,
+    "height": 960,
+    "lap_var": 607.9,
+    "colorfulness": 39.5,
+    "white_frac": 0.0,
+    "edge_density": 0.0458,
+    "sky_frac": 0.102,
+    "brightness": 122.3,
+    "dark_frac": 0.005,
+    "center_edge": 0.0506
    },
-   "reasons": [],
+   "reasons": [
+    "low_score(1.5<5.0)",
+    "below_spec(long=1280,dead retry)"
+   ],
    "reject_dist": {
-    "resolution_low": 4,
-    "oversize_gt_25mb": 9,
-    "mime_unsupported": 2
+    "resolution_low": 1,
+    "pref_mismatch": 3,
+    "name_mismatch_review": 9,
+    "wrong_station": 14,
+    "geo_mismatch": 2,
+    "oversize_gt_25mb": 6,
+    "mime_unsupported": 1,
+    "low_color(map/text?)": 1
    },
-   "downloads": 1,
-   "ts": "2026-11-03T12:12:22Z",
-   "attempts": 1
+   "downloads": 2,
+   "ts": "2026-11-04T04:27:46Z",
+   "attempts": 2
   },
   "st00379": {
    "status": "done",
@@ -47399,41 +47553,52 @@
    "attempts": 2
   },
   "st00381": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00381/photo.jpg",
-   "sha256": "feff8330edc6be6b4e54460e36794d8675697b3675ef1b92cbaa43b4e902ce57",
-   "bytes": 431246,
+   "sha256": "a471d913c37e33647482554a45e239a16c766cccfbc1ea01dd4ac94e680b4176",
+   "dhash": "b8a089187ceddd0f",
+   "bytes": 411247,
    "width": 1800,
-   "height": 1200,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 4962,
-    "original_height": 3308
+    "original_width": 2048,
+    "original_height": 1536
    },
    "below_spec": false,
-   "source_title": "File:Midoridai Station gate 2024.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Midoridai_Station_gate_2024.jpg",
-   "author": "Archiroid21",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "score": 6.36,
+   "source_title": "File:Shin-keisei N800 1st unit at Midoridai.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Shin-keisei_N800_1st_unit_at_Midoridai.jpg",
+   "author": "掬茶",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
    "metrics": {
     "width": 1800,
-    "height": 1200,
-    "lap_var": 1226.9,
-    "colorfulness": 42.4,
-    "white_frac": 0.056,
-    "edge_density": 0.0796,
-    "sky_frac": 0.276
+    "height": 1350,
+    "lap_var": 901.2,
+    "colorfulness": 47.9,
+    "white_frac": 0.011,
+    "edge_density": 0.0672,
+    "sky_frac": 0.181,
+    "brightness": 118.9,
+    "dark_frac": 0.235,
+    "center_edge": 0.0835
    },
-   "reasons": [],
+   "reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
    "reject_dist": {
-    "resolution_low": 5
+    "geo_mismatch": 2,
+    "wrong_station": 9,
+    "hard_excluded": 2,
+    "name_mismatch_review": 1
    },
-   "downloads": 1,
-   "ts": "2026-11-03T12:12:42Z",
-   "attempts": 1
+   "downloads": 2,
+   "ts": "2026-11-04T04:27:56Z",
+   "attempts": 2
   },
   "st00382": {
    "status": "done",
@@ -47547,43 +47712,55 @@
    "attempts": 1
   },
   "st00386": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00386/photo.jpg",
-   "sha256": "72bb9963cb1880ece4391f3aeea135abfc76ecbe11efe4a2e4e86844c60478ec",
-   "bytes": 563597,
+   "sha256": "c0d4e0d77ebda7fc463792c8ec0d3a9c256161fda2dacda7875a96d2b1dde8a9",
+   "dhash": "45c9f9e1ec5404a6",
+   "bytes": 480736,
    "width": 1800,
-   "height": 1350,
+   "height": 1200,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 2816,
-    "original_height": 2112
+    "original_width": 6000,
+    "original_height": 4000
    },
    "below_spec": false,
-   "source_title": "File:道の駅 つぐ高原グリーン・パーク.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:道の駅_つぐ高原グリーン・パーク.jpg",
-   "author": "おはぐろ蜻蛉",
-   "license": "Public domain",
-   "license_url": "",
+   "score": 7.2,
+   "source_title": "File:Korimoto dentei North at 2021.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Korimoto_dentei_North_at_2021.jpg",
+   "author": "Sakoppi",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
    "metrics": {
     "width": 1800,
-    "height": 1350,
-    "lap_var": 1380.9,
-    "colorfulness": 57.6,
-    "white_frac": 0.018,
-    "edge_density": 0.0785,
-    "sky_frac": 0.007
+    "height": 1200,
+    "lap_var": 1982.5,
+    "colorfulness": 49.4,
+    "white_frac": 0.008,
+    "edge_density": 0.125,
+    "sky_frac": 0.172,
+    "brightness": 130.3,
+    "dark_frac": 0.083,
+    "center_edge": 0.1664
    },
-   "reasons": [],
+   "reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
    "reject_dist": {
-    "resolution_low": 5,
-    "oversize_gt_25mb": 8,
-    "mime_unsupported": 2
+    "name_mismatch_review": 6,
+    "oversize_gt_25mb": 5,
+    "resolution_low": 3,
+    "hard_excluded": 1,
+    "wrong_station": 6,
+    "geo_mismatch": 9,
+    "mime_unsupported": 1
    },
-   "downloads": 1,
-   "ts": "2026-11-03T12:13:12Z",
-   "attempts": 1
+   "downloads": 5,
+   "ts": "2026-11-04T04:28:08Z",
+   "attempts": 2
   },
   "st00387": {
    "status": "done",
@@ -50016,39 +50193,48 @@
   "st00457": {
    "status": "done",
    "file": "stations/st00457/photo.jpg",
-   "sha256": "107e86fc20a862acbb9a0ca7a5194e4cd12942356a8830f60c39946844614ae8",
-   "bytes": 407204,
-   "width": 1200,
-   "height": 1800,
+   "sha256": "717245f9124fc5c7f1527edafb384160600bd3d09ba52543fc9db169433f5528",
+   "dhash": "fefce2f0fccbd47f",
+   "bytes": 347095,
+   "width": 1800,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 4096,
-    "original_height": 6144
+    "original_width": 4032,
+    "original_height": 3024
    },
    "below_spec": false,
-   "source_title": "File:NDL1311026 木曽六十九駅 京都三條大橋・奴蘭平.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:NDL1311026_木曽六十九駅_京都三條大橋・奴蘭平.jpg",
-   "author": "豊国",
-   "license": "Public domain",
-   "license_url": "",
+   "score": 9.16,
+   "source_title": "File:是政駅と是政大橋.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:是政駅と是政大橋.jpg",
+   "author": "Mikagekawase",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
    "metrics": {
-    "width": 1200,
-    "height": 1800,
-    "lap_var": 1250.1,
-    "colorfulness": 53.6,
-    "white_frac": 0.001,
-    "edge_density": 0.0824,
-    "sky_frac": 0.205
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1101.3,
+    "colorfulness": 32.0,
+    "white_frac": 0.321,
+    "edge_density": 0.0627,
+    "sky_frac": 0.966,
+    "brightness": 154.5,
+    "dark_frac": 0.086,
+    "center_edge": 0.1048
    },
    "reasons": [],
    "reject_dist": {
-    "resolution_low": 5
+    "geo_mismatch": 23,
+    "resolution_low": 4,
+    "name_mismatch_review": 2,
+    "pref_mismatch": 1
    },
    "downloads": 1,
-   "ts": "2026-11-03T12:20:22Z",
-   "attempts": 1
+   "ts": "2026-11-04T04:28:15Z",
+   "attempts": 2
   },
   "st00458": {
    "status": "done",
@@ -52516,40 +52702,48 @@
   "st00534": {
    "status": "done",
    "file": "stations/st00534/photo.jpg",
-   "sha256": "e8f4b143bb95fb5861482af6439464ecadd03d122c86bcf30e5d2c3f7e41781d",
-   "bytes": 101951,
+   "sha256": "3e4570b298fb3f6049fe80a9012ec28d46c9f68f4c72f57839e4991ef8710e26",
+   "dhash": "f0f9e7c860a4fbe0",
+   "bytes": 283215,
    "width": 1800,
-   "height": 293,
+   "height": 1276,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 10284,
-    "original_height": 1674
+    "original_width": 4161,
+    "original_height": 2949
    },
    "below_spec": false,
-   "source_title": "File:Ohara Station - Chiba - Aug 10 2021 various 23 01 08 492000.jpeg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Ohara_Station_-_Chiba_-_Aug_10_2021_various_23_01_08_492000.jpeg",
-   "author": "Nesnad",
-   "license": "CC BY 4.0",
-   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "score": 9.14,
+   "source_title": "File:JR East・Isumi Railway Ōhara Station building.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East・Isumi_Railway_Ōhara_Station_building.jpg",
+   "author": "Mister0124",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
    "metrics": {
     "width": 1800,
-    "height": 293,
-    "lap_var": 1303.7,
-    "colorfulness": 77.9,
-    "white_frac": 0.002,
-    "edge_density": 0.0798,
-    "sky_frac": 0.002
+    "height": 1276,
+    "lap_var": 428.5,
+    "colorfulness": 45.8,
+    "white_frac": 0.0,
+    "edge_density": 0.0282,
+    "sky_frac": 0.038,
+    "brightness": 113.5,
+    "dark_frac": 0.006,
+    "center_edge": 0.041
    },
    "reasons": [],
    "reject_dist": {
-    "no_author_metadata": 2,
-    "resolution_low": 3
+    "name_mismatch_review": 11,
+    "geo_mismatch": 12,
+    "pref_mismatch": 1,
+    "no_author_metadata": 2
    },
    "downloads": 1,
-   "ts": "2026-11-03T12:27:22Z",
-   "attempts": 1
+   "ts": "2026-11-04T04:28:22Z",
+   "attempts": 2
   },
   "st00535": {
    "status": "done",
@@ -52917,42 +53111,55 @@
    "attempts": 1
   },
   "st00548": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00548/photo.jpg",
-   "sha256": "05e8f87a0f3619cc6a586d60f31441b412c9272fba3cb2d1926c02b9d9b2b135",
-   "bytes": 333318,
+   "sha256": "fe7ba7ea3d91408b8807b53ebf9da375c6bec1da1bae390e1d3442b1059526eb",
+   "dhash": "98128dc68686b8b4",
+   "bytes": 457561,
    "width": 1800,
-   "height": 1350,
+   "height": 1466,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 4000,
-    "original_height": 3000
+    "original_width": 2801,
+    "original_height": 2281
    },
    "below_spec": false,
-   "source_title": "File:Iyo Railway Yokogawara Station.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Iyo_Railway_Yokogawara_Station.jpg",
-   "author": "がっさん",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "score": 9.57,
+   "source_title": "File:黒河風景 河套の平原面から一米に達し奈い底蝕－浅い流水である。河原には羊の群 厚和南方 (3806-039933-0).jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:黒河風景_河套の平原面から一米に達し奈い底蝕－浅い流水である。河原には羊の群_厚和南方_(3806-039933-0).jpg",
+   "author": "田中",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
    "metrics": {
     "width": 1800,
-    "height": 1350,
-    "lap_var": 584.2,
-    "colorfulness": 66.0,
-    "white_frac": 0.01,
-    "edge_density": 0.0365,
-    "sky_frac": 0.007
+    "height": 1466,
+    "lap_var": 1484.9,
+    "colorfulness": 21.1,
+    "white_frac": 0.003,
+    "edge_density": 0.0487,
+    "sky_frac": 0.957,
+    "brightness": 207.2,
+    "dark_frac": 0.02,
+    "center_edge": 0.0751
    },
-   "reasons": [],
+   "reasons": [
+    "low_color",
+    "subject_unverified(no_station_kw)"
+   ],
    "reject_dist": {
     "no_author_metadata": 1,
-    "resolution_low": 2
+    "wrong_station": 13,
+    "geo_mismatch": 5,
+    "name_mismatch_review": 7,
+    "resolution_low": 2,
+    "low_color(map/text?)": 1
    },
-   "downloads": 2,
-   "ts": "2026-11-03T12:28:27Z",
-   "attempts": 1
+   "downloads": 5,
+   "ts": "2026-11-04T04:28:32Z",
+   "attempts": 2
   },
   "st00549": {
    "status": "done",
@@ -53507,41 +53714,50 @@
   "st00571": {
    "status": "done",
    "file": "stations/st00571/photo.jpg",
-   "sha256": "e85dcb00afb0d054737051c2baee11f981ee186d00e4f28b94f5ee905a779b21",
-   "bytes": 373265,
+   "sha256": "fa9650c2e7fe7888a95aa84851a7a3da8a4829faf9842cb9bd1730e5f6a72635",
+   "dhash": "a0d48909060dcd2f",
+   "bytes": 460618,
    "width": 1800,
-   "height": 1200,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 6000,
-    "original_height": 4000
+    "original_width": 2000,
+    "original_height": 1500
    },
    "below_spec": false,
-   "source_title": "File:JR East Nakanosakae Station Platform, Miyagi Pref.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Nakanosakae_Station_Platform,_Miyagi_Pref.jpg",
-   "author": "Mister0124",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "score": 7.59,
+   "source_title": "File:Shintetsu Sakae Station platform.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Shintetsu_Sakae_Station_platform.jpg",
+   "author": "PekePON (talk)",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
    "metrics": {
     "width": 1800,
-    "height": 1200,
-    "lap_var": 1701.6,
-    "colorfulness": 67.3,
-    "white_frac": 0.0,
-    "edge_density": 0.0967,
-    "sky_frac": 0.003
+    "height": 1350,
+    "lap_var": 1411.7,
+    "colorfulness": 50.8,
+    "white_frac": 0.032,
+    "edge_density": 0.0871,
+    "sky_frac": 0.205,
+    "brightness": 129.0,
+    "dark_frac": 0.24,
+    "center_edge": 0.1173
    },
    "reasons": [],
    "reject_dist": {
     "mime_unsupported": 1,
-    "resolution_low": 9,
-    "license_unclear": 2
+    "resolution_low": 3,
+    "name_mismatch_review": 4,
+    "license_unclear": 2,
+    "geo_mismatch": 11,
+    "hard_excluded": 1
    },
-   "downloads": 1,
-   "ts": "2026-11-03T12:30:16Z",
-   "attempts": 1
+   "downloads": 5,
+   "ts": "2026-11-04T04:28:43Z",
+   "attempts": 2
   },
   "st00572": {
    "status": "done",
@@ -53811,42 +54027,52 @@
    "attempts": 1
   },
   "st00580": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00580/photo.jpg",
-   "sha256": "579362d50688be5eb1e4c5de828065abba07efcf9cee4f7cb1d3adfddca3115b",
-   "bytes": 415720,
+   "sha256": "147d34b9d8f60fe5f39c206a7f7dd5a1d8f34feb32de7da35c1faa29ef0b2a1b",
+   "dhash": "545b3a37793a17fe",
+   "bytes": 405777,
    "width": 1800,
-   "height": 1346,
+   "height": 1323,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 3561,
-    "original_height": 2663
+    "original_width": 4696,
+    "original_height": 3452
    },
    "below_spec": false,
-   "source_title": "File:Kyujomae station kochi 03.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Kyujomae_station_kochi_03.jpg",
-   "author": "Navian",
-   "license": "Public domain",
-   "license_url": "",
+   "score": 6.94,
+   "source_title": "File:MR MRT300 series 305 20221226.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:MR_MRT300_series_305_20221226.jpg",
+   "author": "Mitsuki-2368",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
    "metrics": {
     "width": 1800,
-    "height": 1346,
-    "lap_var": 1553.6,
-    "colorfulness": 35.0,
-    "white_frac": 0.056,
-    "edge_density": 0.0887,
-    "sky_frac": 0.727
+    "height": 1323,
+    "lap_var": 1015.3,
+    "colorfulness": 59.1,
+    "white_frac": 0.004,
+    "edge_density": 0.0749,
+    "sky_frac": 0.158,
+    "brightness": 117.3,
+    "dark_frac": 0.155,
+    "center_edge": 0.0756
    },
-   "reasons": [],
+   "reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
    "reject_dist": {
+    "name_mismatch_review": 20,
     "resolution_low": 1,
-    "no_author_metadata": 1
+    "geo_mismatch": 4,
+    "pref_mismatch": 1
    },
-   "downloads": 1,
-   "ts": "2026-11-03T12:31:13Z",
-   "attempts": 1
+   "downloads": 5,
+   "ts": "2026-11-04T04:28:54Z",
+   "attempts": 2
   },
   "st00581": {
    "status": "done",
@@ -53962,41 +54188,49 @@
   "st00585": {
    "status": "review",
    "file": "stations/st00585/photo.jpg",
-   "sha256": "581da3c1ffed09e74bbd55ce443cd41949acabe7ab47789b5d193a9000a85fe4",
-   "bytes": 475188,
+   "sha256": "0a8b4483f89483071a61ef14e8c4cae84a70e7f0b5bdee87fe79683294b9cd29",
+   "dhash": "3e18ce8ea37c6c3c",
+   "bytes": 527372,
    "width": 1800,
    "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 3996,
-    "original_height": 2997
+    "original_width": 2016,
+    "original_height": 1512
    },
    "below_spec": false,
-   "source_title": "File:Platform of Hizen-Hama Station 1.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Platform_of_Hizen-Hama_Station_1.jpg",
-   "author": "そらみみ",
+   "score": 7.88,
+   "source_title": "File:肥前七浦駅駅舎内.jpg",
+   "source_cat": "Category:Hizen-Nanaura Station",
+   "source_page": "https://commons.wikimedia.org/wiki/File:肥前七浦駅駅舎内.jpg",
+   "author": "Hamajiro",
    "license": "CC BY-SA 4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
    "metrics": {
     "width": 1800,
     "height": 1350,
-    "lap_var": 2068.7,
-    "colorfulness": 20.7,
+    "lap_var": 1572.6,
+    "colorfulness": 22.6,
     "white_frac": 0.008,
-    "edge_density": 0.1138,
-    "sky_frac": 0.962
+    "edge_density": 0.0883,
+    "sky_frac": 0.007,
+    "brightness": 105.1,
+    "dark_frac": 0.141,
+    "center_edge": 0.1222
    },
    "reasons": [
     "low_color"
    ],
    "reject_dist": {
-    "low_color(map/text?)": 1
+    "wrong_station": 3,
+    "name_mismatch_review": 1,
+    "mime_unsupported": 1
    },
    "downloads": 5,
-   "ts": "2026-11-03T12:31:45Z",
-   "attempts": 1
+   "ts": "2026-11-04T04:29:08Z",
+   "attempts": 2
   },
   "st00586": {
    "status": "done",
@@ -54308,41 +54542,13 @@
    "attempts": 1
   },
   "st00602": {
-   "status": "done",
-   "file": "stations/st00602/photo.jpg",
-   "sha256": "9db2a4cbb29ca26167f89126db0a8ae2ab2276250f3c0a36b0a889ee160d49cc",
-   "bytes": 465678,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3983,
-    "original_height": 2988
+   "status": "missing",
+   "reasons": {
+    "resolution_low": 1,
+    "wrong_station": 1
    },
-   "below_spec": false,
-   "source_title": "File:Platform of Hizen-Kashima Station 2.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Platform_of_Hizen-Kashima_Station_2.jpg",
-   "author": "そらみみ",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1319.2,
-    "colorfulness": 48.1,
-    "white_frac": 0.009,
-    "edge_density": 0.0835,
-    "sky_frac": 0.016
-   },
-   "reasons": [],
-   "reject_dist": {
-    "resolution_low": 1
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:32:53Z",
-   "attempts": 1
+   "ts": "2026-11-04T04:29:17Z",
+   "attempts": 2
   },
   "st00605": {
    "status": "done",
@@ -54431,50 +54637,55 @@
    "attempts": 1
   },
   "st00609": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00609/photo.jpg",
-   "sha256": "59c2dfafbc6acebcd1f32a420fbaabf3437ede00686231d8d44e62fde1656516",
-   "bytes": 590420,
+   "sha256": "0b04386b607bdb4d28495fc70bc46c9fa5fbec830f18fa4c5c8c58f1b3dfc090",
+   "dhash": "e1e1e6e2c38b9bb8",
+   "bytes": 416694,
    "width": 1800,
-   "height": 1200,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 6585,
-    "original_height": 4390
+    "original_width": 4096,
+    "original_height": 3072
    },
    "below_spec": false,
-   "score": 6.66,
-   "source_title": "File:Kimono Forest at night, Arashiyama Station, Arashiyama, Kyoto, Japan.jpg",
+   "score": 6.17,
+   "source_title": "File:Buji Metro Station,extension 202206.jpg",
    "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:Kimono_Forest_at_night,_Arashiyama_Station,_Arashiyama,_Kyoto,_Japan.jpg",
-   "author": "Yasumichi Morita (designer)\n\nBasile Morin (photographer)",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Buji_Metro_Station,extension_202206.jpg",
+   "author": "Lhzss8",
    "license": "CC BY-SA 4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
    "metrics": {
     "width": 1800,
-    "height": 1200,
-    "lap_var": 2040.2,
-    "colorfulness": 68.2,
-    "white_frac": 0.001,
-    "edge_density": 0.1386,
-    "sky_frac": 0.017,
-    "brightness": 87.9,
-    "dark_frac": 0.159,
-    "center_edge": 0.18
+    "height": 1350,
+    "lap_var": 666.0,
+    "colorfulness": 23.7,
+    "white_frac": 0.003,
+    "edge_density": 0.0716,
+    "sky_frac": 0.06,
+    "brightness": 109.5,
+    "dark_frac": 0.094,
+    "center_edge": 0.0834
    },
-   "reasons": [],
+   "reasons": [
+    "low_color"
+   ],
    "reject_dist": {
-    "resolution_low": 4,
     "hard_excluded": 1,
+    "geo_mismatch": 11,
+    "name_mismatch_review": 14,
     "oversize_gt_25mb": 3,
+    "wrong_station": 2,
     "mime_unsupported": 2,
-    "low_color(map/text?)": 1
+    "low_color(map/text?)": 2
    },
    "downloads": 5,
-   "ts": "2026-11-03T13:32:07Z",
-   "attempts": 1
+   "ts": "2026-11-04T04:29:28Z",
+   "attempts": 2
   },
   "st00610": {
    "status": "done",
@@ -118850,7 +119061,7 @@
  "stations_path": "data/stations_all.json",
  "batch_index": 5,
  "batch_size": 500,
- "updated_at": "2026-11-04T04:17:06Z",
+ "updated_at": "2026-11-04T04:29:28Z",
  "rate_limit_events": 0,
  "maxlag_retries": 0
 }

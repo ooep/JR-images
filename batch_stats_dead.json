@@ -1,46 +1,45 @@
 {
  "attempted": 0,
- "done": 18,
- "review": 6,
+ "done": 10,
+ "review": 14,
  "missing": 1,
  "failed": 0,
  "skipped_resume": 0,
- "bytes": 9207143,
+ "bytes": 10428256,
  "reject_dist": {
-  "name_mismatch_review": 75,
-  "hard_excluded": 30,
-  "license_unclear": 2,
-  "low_color(map/text?)": 10,
-  "wrong_station": 22,
-  "geo_mismatch": 111,
-  "pref_mismatch": 65,
-  "resolution_low": 77,
+  "name_mismatch_review": 147,
+  "resolution_low": 45,
+  "pref_mismatch": 48,
+  "mime_unsupported": 14,
+  "geo_mismatch": 147,
+  "hard_excluded": 15,
+  "low_color(map/text?)": 7,
+  "oversize_gt_25mb": 34,
+  "wrong_station": 74,
+  "no_author_metadata": 6,
   "white_screenshot": 1,
-  "oversize_gt_25mb": 10,
-  "mime_unsupported": 4,
-  "blurry(lap=40<45)": 1
+  "license_unclear": 2
  },
  "dead": [
   {
-   "slug": "st00170",
-   "name": "皆実町六丁目",
+   "slug": "st00602",
+   "name": "肥前竜王",
    "reasons": {
-    "name_mismatch_review": 1,
     "resolution_low": 1,
-    "geo_mismatch": 25
+    "wrong_station": 1
    }
   }
  ],
  "dead_retried": 25,
  "dead_recovered": 24,
  "dead_new": 1,
- "dead_cumulative": 125,
+ "dead_cumulative": 208,
  "dead_final": 0,
  "rate_limit_events": 0,
  "maxlag_retries": 0,
  "near_dup_pairs": 0,
  "user_agent": "JR-images-bot/1.0 (https://github.com/ooep/JR-images; contact: https://github.com/ooep/JR-images/issues)",
- "elapsed_sec": 226,
+ "elapsed_sec": 268,
  "batch_index": 6,
- "generated_at": "2026-11-04T04:17:07Z"
+ "generated_at": "2026-11-04T04:29:28Z"
 }
