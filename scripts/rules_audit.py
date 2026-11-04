@@ -6,6 +6,15 @@
 import collections
 import json
 import os
+from urllib.parse import unquote
+
+
+def title_from_source(url):
+    """旧批条目没存 source_title 时，从 Commons 文件页 URL 还原。"""
+    if not url or '/wiki/' not in url:
+        return ''
+    t = unquote(url.split('/wiki/', 1)[1]).replace('_', ' ')
+    return t if t.startswith('File:') else 'File:' + t
 
 PREFS = ['北海道', '青森県', '岩手県', '宮城県', '秋田県', '山形県', '福島県',
          '茨城県', '栃木県', '群馬県', '埼玉県', '千葉県', '東京都', '神奈川県',
@@ -99,17 +108,18 @@ def main():
         if not (e.get('file') or '').startswith('stations/'):
             continue
         checked += 1
-        text = (e.get('source_title') or '') + ' ' + (e.get('source_cat') or '')
+        title = e.get('source_title') or title_from_source(e.get('source'))
+        text = title + ' ' + (e.get('source_cat') or '')
         hit_p, other = pref_mismatch_hit(text, e)
         if hit_p:
             pref_hits.append({'slug': slug, 'name': e.get('name'),
                               'pref': e.get('pref'), 'other_pref': other,
-                              'title': e.get('source_title'),
+                              'title': title,
                               'source': e.get('source')})
         if name_mismatch_hit(text, e):
             name_hits.append({'slug': slug, 'name': e.get('name'),
                               'name_en': e.get('name_en'),
-                              'title': e.get('source_title'),
+                              'title': title,
                               'cat': e.get('source_cat'),
                               'source': e.get('source')})
     report = {
