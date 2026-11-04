@@ -1,5 +1,5 @@
 {
- "count": 161,
+ "count": 182,
  "schema": 1,
  "stations": {
   "st00051": {
@@ -2697,7 +2697,364 @@
    "slug": "st07999",
    "source_page": null,
    "stage": "retry"
+  },
+  "st00028": {
+   "slug": "st00028",
+   "name": "橋本",
+   "name_en": "Hashimoto",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:京王橋本駅構内.JPG",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00084": {
+   "slug": "st00084",
+   "name": "郵便局前",
+   "name_en": "Yūbinkyoku-mae",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:Himeji_ekiminami_Post_office.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00134": {
+   "slug": "st00134",
+   "name": "草津南",
+   "name_en": "Kusatsu-minami",
+   "stage": "audit",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kusatsu-yu_(Minami-Senju,_Arakawa)_02.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00190": {
+   "slug": "st00190",
+   "name": "稲荷町",
+   "name_en": "Inarichō",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:TokyoMetro-G17-Inaricho-station-platform.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00309": {
+   "slug": "st00309",
+   "name": "青山",
+   "name_en": "Aoyama",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:Tsing_Shan_Tsuen_Stop_20210206.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00353": {
+   "slug": "st00353",
+   "name": "市立病院前",
+   "name_en": "Naha City Hospital",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:Naha-City-Hospital-Station-Building.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00378": {
+   "slug": "st00378",
+   "name": "中郡",
+   "name_en": "Chūgun",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:旧・朱鞠内駅跡.JPG",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00381": {
+   "slug": "st00381",
+   "name": "工学部前",
+   "name_en": "Kōgakubu-mae",
+   "stage": "audit",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:Shin-keisei_N800_1st_unit_at_Midoridai.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00457": {
+   "slug": "st00457",
+   "name": "大橋",
+   "name_en": "Ōhashi",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:是政駅と是政大橋.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00534": {
+   "slug": "st00534",
+   "name": "大原",
+   "name_en": "Ōbara",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East・Isumi_Railway_Ōhara_Station_building.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00548": {
+   "slug": "st00548",
+   "name": "河原",
+   "name_en": "Kawahara",
+   "stage": "audit",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:黒河風景_河套の平原面から一米に達し奈い底蝕－浅い流水である。河原には羊の群_厚和南方_(3806-039933-0).jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00571": {
+   "slug": "st00571",
+   "name": "栄",
+   "name_en": "Sakae",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:Shintetsu_Sakae_Station_platform.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00580": {
+   "slug": "st00580",
+   "name": "球場前",
+   "name_en": "Kyūjō-mae",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:MR_MRT300_series_305_20221226.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00609": {
+   "slug": "st00609",
+   "name": "市布",
+   "name_en": "Ichinuno",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:Buji_Metro_Station,extension_202206.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st00713": {
+   "slug": "st00713",
+   "name": "永尾",
+   "name_en": "Nagao",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kotoden-Nagao-line-Nagao-station-building-20100805.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st01215": {
+   "slug": "st01215",
+   "name": "木幡",
+   "name_en": "Kobata",
+   "stage": "audit",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kyoto_Animation_head_office_20101010.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st01240": {
+   "slug": "st01240",
+   "name": "島ケ原",
+   "name_en": "Shimagahara",
+   "stage": "audit",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:Shimagahara_Ohashi_Bridge（Iga,_Mie）-03.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st01463": {
+   "slug": "st01463",
+   "name": "上本町",
+   "name_en": "Kamihonmachi",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:快速急行_三宮_行き_方向幕_上本町駅にて撮影.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st01757": {
+   "slug": "st01757",
+   "name": "朝熊",
+   "name_en": "Asama",
+   "stage": "audit",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:朝熊登山鉄道・楠部駅.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st03505": {
+   "slug": "st03505",
+   "name": "三次",
+   "name_en": "Miyoshi",
+   "stage": "audit",
+   "reasons": {
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:Iyo-Miyoshi_Station,_ekisha-2.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
+  },
+  "st03874": {
+   "slug": "st03874",
+   "name": "川内",
+   "name_en": "Kawauchi",
+   "stage": "audit",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "source_page": "https://commons.wikimedia.org/wiki/File:Sendai_(Kagoshima_Prefecture)_Station_at_sunset.jpg",
+   "below_spec": false,
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": null,
+   "note": "second pass: previous replacement mismatched"
   }
  },
- "updated_at": "2026-11-04T05:02:23Z"
+ "updated_at": "2026-11-04T05:04:51Z"
 }
