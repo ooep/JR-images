@@ -1,174 +1,138 @@
 {
  "attempted": 0,
  "done": 7,
- "review": 3,
- "missing": 15,
+ "review": 8,
+ "missing": 10,
  "failed": 0,
  "skipped_resume": 0,
- "bytes": 4072592,
+ "bytes": 6305701,
  "reject_dist": {
-  "no_station_evidence": 89,
-  "wrong_station": 39,
-  "hard_excluded": 12,
-  "pref_mismatch": 25,
-  "geo_mismatch": 43,
-  "name_mismatch_review": 34,
-  "resolution_low": 3,
-  "low_color(map/text?)": 2
+  "no_station_evidence": 180,
+  "pref_mismatch": 33,
+  "geo_mismatch": 31,
+  "name_mismatch_review": 104,
+  "hard_excluded": 24,
+  "wrong_station": 48,
+  "resolution_low": 21,
+  "low_color(map/text?)": 7
  },
  "dead": [
   {
-   "slug": "st01181",
-   "name": "東犀川三四郎",
-   "reasons": {
-    "resolution_low": 1,
-    "wrong_station": 2
-   }
-  },
-  {
-   "slug": "st01185",
-   "name": "今川河童",
-   "reasons": {
-    "resolution_low": 2,
-    "wrong_station": 7,
-    "geo_mismatch": 1
-   }
-  },
-  {
-   "slug": "st01206",
-   "name": "新田",
+   "slug": "st01459",
+   "name": "小泉町",
    "reasons": {
     "pref_mismatch": 2,
-    "no_station_evidence": 20,
-    "name_mismatch_review": 10,
-    "geo_mismatch": 4
+    "no_station_evidence": 17,
+    "name_mismatch_review": 16,
+    "wrong_station": 1,
+    "hard_excluded": 1,
+    "geo_mismatch": 2
    }
   },
   {
-   "slug": "st01214",
-   "name": "木幡",
+   "slug": "st01523",
+   "name": "霞ケ関",
    "reasons": {
-    "no_station_evidence": 9,
-    "wrong_station": 3,
-    "name_mismatch_review": 6,
-    "pref_mismatch": 4,
-    "geo_mismatch": 4
-   }
-  },
-  {
-   "slug": "st01241",
-   "name": "西木津",
-   "reasons": {
-    "no_station_evidence": 8,
-    "wrong_station": 2,
-    "geo_mismatch": 9,
-    "name_mismatch_review": 5
-   }
-  },
-  {
-   "slug": "st01249",
-   "name": "長尾",
-   "reasons": {
-    "geo_mismatch": 19,
-    "hard_excluded": 2,
     "no_station_evidence": 6,
+    "geo_mismatch": 12,
+    "name_mismatch_review": 5,
+    "pref_mismatch": 10,
+    "hard_excluded": 2
+   }
+  },
+  {
+   "slug": "st01552",
+   "name": "広野",
+   "reasons": {
+    "name_mismatch_review": 1,
+    "no_station_evidence": 9,
+    "geo_mismatch": 15,
+    "pref_mismatch": 1,
+    "wrong_station": 4
+   }
+  },
+  {
+   "slug": "st01628",
+   "name": "生田",
+   "reasons": {
+    "wrong_station": 1,
+    "pref_mismatch": 5,
+    "no_station_evidence": 9,
+    "hard_excluded": 2
+   }
+  },
+  {
+   "slug": "st01649",
+   "name": "黒川",
+   "reasons": {
+    "no_station_evidence": 17,
+    "name_mismatch_review": 9,
+    "geo_mismatch": 10
+   }
+  },
+  {
+   "slug": "st04017",
+   "name": "竹田",
+   "reasons": {
+    "name_mismatch_review": 10,
+    "no_station_evidence": 14,
+    "geo_mismatch": 13,
+    "hard_excluded": 2,
+    "low_color(map/text?)": 1
+   }
+  },
+  {
+   "slug": "st04875",
+   "name": "中津",
+   "reasons": {
+    "no_station_evidence": 4,
+    "hard_excluded": 7,
+    "pref_mismatch": 1,
+    "geo_mismatch": 17
+   }
+  },
+  {
+   "slug": "st05086",
+   "name": "伊勢鎌倉",
+   "reasons": {
+    "no_station_evidence": 34,
+    "name_mismatch_review": 33,
+    "wrong_station": 2,
     "pref_mismatch": 1
    }
   },
   {
-   "slug": "st01280",
-   "name": "柏原",
+   "slug": "st05277",
+   "name": "宇島",
    "reasons": {
-    "geo_mismatch": 6,
-    "no_station_evidence": 20,
-    "pref_mismatch": 1
+    "no_station_evidence": 22,
+    "resolution_low": 3,
+    "name_mismatch_review": 16,
+    "wrong_station": 12,
+    "hard_excluded": 2
    }
   },
   {
-   "slug": "st01282",
-   "name": "柏原",
+   "slug": "st05828",
+   "name": "高瀬",
    "reasons": {
-    "geo_mismatch": 6,
-    "no_station_evidence": 20,
-    "pref_mismatch": 1
-   }
-  },
-  {
-   "slug": "st01353",
-   "name": "河原町",
-   "reasons": {
-    "hard_excluded": 3,
-    "pref_mismatch": 13,
-    "no_station_evidence": 5,
-    "geo_mismatch": 8
-   }
-  },
-  {
-   "slug": "st01354",
-   "name": "河原町",
-   "reasons": {
-    "hard_excluded": 3,
-    "pref_mismatch": 13,
-    "no_station_evidence": 5,
-    "geo_mismatch": 8
-   }
-  },
-  {
-   "slug": "st01432",
-   "name": "県庁前",
-   "reasons": {
-    "pref_mismatch": 3,
-    "geo_mismatch": 20,
-    "no_station_evidence": 1
-   }
-  },
-  {
-   "slug": "st01433",
-   "name": "県庁前",
-   "reasons": {
-    "pref_mismatch": 3,
-    "geo_mismatch": 20,
-    "no_station_evidence": 1
-   }
-  },
-  {
-   "slug": "st01434",
-   "name": "県庁前",
-   "reasons": {
-    "pref_mismatch": 2,
-    "geo_mismatch": 21,
-    "no_station_evidence": 1
-   }
-  },
-  {
-   "slug": "st01435",
-   "name": "県庁前",
-   "reasons": {
-    "pref_mismatch": 2,
-    "geo_mismatch": 21,
-    "no_station_evidence": 1
-   }
-  },
-  {
-   "slug": "st01436",
-   "name": "県庁前",
-   "reasons": {
-    "pref_mismatch": 2,
-    "geo_mismatch": 21,
-    "no_station_evidence": 1
+    "pref_mismatch": 14,
+    "wrong_station": 2,
+    "name_mismatch_review": 7,
+    "no_station_evidence": 14
    }
   }
  ],
  "dead_retried": 25,
- "dead_recovered": 10,
- "dead_new": 15,
- "dead_cumulative": 184,
+ "dead_recovered": 15,
+ "dead_new": 10,
+ "dead_cumulative": 169,
  "dead_final": 0,
  "rate_limit_events": 0,
  "maxlag_retries": 0,
  "near_dup_pairs": 0,
  "user_agent": "JR-images-bot/1.0 (https://github.com/ooep/JR-images; contact: https://github.com/ooep/JR-images/issues)",
- "elapsed_sec": 167,
+ "elapsed_sec": 176,
  "batch_index": 6,
- "generated_at": "2026-11-04T04:47:47Z"
+ "generated_at": "2026-11-04T04:55:04Z"
 }
