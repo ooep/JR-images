@@ -470,7 +470,8 @@ PREF_ROMAJI = {'北海道': 'Hokkaido', '青森県': 'Aomori', '岩手県': 'Iwa
 
 
 def pref_forms(pref):
-    """県名本体 + 去后缀形（広島県→広島）+ 罗马字，全部小写可比。"""
+    """県名本体 + 去后缀形（広島県→広島），汉字形（子串比较用）。
+    罗马字形单独走词边界匹配（_romaji_boundary），不做子串比较。"""
     forms = set()
     if not pref:
         return forms
@@ -478,30 +479,77 @@ def pref_forms(pref):
     for suf in ('県', '府', '都'):
         if pref.endswith(suf):
             forms.add(pref[:-1])
-    rom = PREF_ROMAJI.get(pref)
-    if rom:
-        forms.add(rom.lower())
     return forms
 
 
 def _norm_romaji(s):
-    """去长音符并小写（Ōji→oji），供罗马字宽松比较。"""
+    """去长音符 + 小写 + ou→o（保留连字符/空格，供词边界匹配）。"""
     for a, b in (('ā', 'a'), ('ī', 'i'), ('ū', 'u'), ('ē', 'e'), ('ō', 'o'),
                  ('Ā', 'a'), ('Ī', 'i'), ('Ū', 'u'), ('Ē', 'e'), ('Ō', 'o')):
         s = s.replace(a, b)
-    return s.lower()
+    return s.lower().replace('ou', 'o')
+
+
+def _norm_loose(s):
+    """宽松形：小写去长音、去全部标点/空白、拨音同化 nm→mm，用于自识别子串比较。"""
+    s = _norm_romaji(s)
+    s = re.sub(r'[()\[\]/&.,:;\'"!\-]', '', s)
+    s = re.sub(r'\s+', '', s)
+    return s.replace('nm', 'mm')
+
+
+def _romaji_boundary(text_low, rom):
+    """罗马字词边界搜索；命中返回 (start,end)，否则 None。"""
+    m = re.search(r'(?<![a-z0-9])' + re.escape(rom) + r'(?![a-z0-9])', text_low)
+    return (m.start(), m.end()) if m else None
+
+
+def _next_word(text_low, end):
+    m = re.match(r'[^a-z]*([a-z]+)', text_low[end:])
+    return m.group(1) if m else ''
+
+
+LINE_NEXT_WORDS = {'main', 'line', 'lines'}
+STATION_NEXT_WORDS = {'station', 'sta', 'stn', 'eki'}
+GENERIC_KANJI = {'駅前', '市役所', 'ドーム前'}  # 通名站名，不作"指名另一站"证据
+GENERIC_ROMAJI = {'ekimae', 'city hall', 'dome-mae', 'dome mae'}
+LOC_WORDS = ('pref', 'prefecture', 'city', 'town', 'village')
+
+
+def has_location_marker(title):
+    """标题是否含显式位置标记（Pref/City/… 或 汉字县名）。
+    有标记时即使指名本站也不豁免（如 湯島←'Iwate Pref'：站名对但地点明确在外县）。"""
+    low = title.lower()
+    for w in LOC_WORDS:
+        if re.search(r'(?<![a-z])' + w + r'(?![a-z])', low):
+            return True
+    for p in PREFS:
+        forms = {p}
+        for suf in ('県', '府', '都'):
+            if p.endswith(suf):
+                forms.add(p[:-1])
+        if any(f in title for f in forms):
+            return True
+    return False
 
 
 def pref_mismatch_hit(text, st):
-    """县名判据：title/category 出现其他都道府县名且不含本站县名 → True（拒）。
-    豁免：站名本身含该县名（大阪的福島駅）；匹配串出自本站所属线路名（和歌山線）。"""
+    """县名判据：出现其他都道府县名且不含本站县名 → True（拒）。
+    汉字子串匹配；罗马字词边界匹配（防 chiba⊂tachibana / osaka⊂toyosaka 误判）；
+    豁免：站名本身含该县名（大阪的福島駅）；线路名（汉字在 lines 中 /
+    罗马字后接 main|line，如 Kagoshima Main Line）；方位词（大阪方面）。"""
     own = (st.get('pref') or '').strip()
     name = st.get('name') or ''
     lines = ' '.join(st.get('lines') or [])
     if not own or not text:
         return False, None
-    own_forms = pref_forms(own)
-    if any(f.lower() in text.lower() for f in own_forms if f):
+    low = text.lower()
+    # 本站县名在场（汉字子串 / 罗马字词边界）→ 放行
+    for f in pref_forms(own):
+        if f and f in text:
+            return False, None
+    rom_own = PREF_ROMAJI.get(own)
+    if rom_own and _romaji_boundary(low, rom_own.lower()):
         return False, None
     for p in PREFS:
         if p == own:
@@ -513,16 +561,30 @@ def pref_mismatch_hit(text, st):
         # 站名本身就是该县名（如 大阪的福島駅 / 奈良駅）→ 不视为"其他县"
         if any(f and f in name for f in kanji_forms):
             continue
-        for f in pref_forms(p):
-            if f and f.lower() in text.lower():
+        # 汉字形：子串；站名/本站线路名自带 → 豁免；后接 方面 = 方位词豁免
+        for f in kanji_forms:
+            if f and f in text:
                 if f in name or (lines and f in lines):
-                    continue  # 站名/本站线路名自带该县名（如 和歌山線）
+                    continue
+                i = text.find(f)
+                if text[i + len(f):i + len(f) + 2] == '方面':
+                    continue
+                return True, p
+        # 罗马字形：词边界；线路名（后接 main/line）豁免
+        rom = PREF_ROMAJI.get(p)
+        if rom:
+            span = _romaji_boundary(low, rom.lower())
+            if span:
+                if rom.lower() in _norm_romaji(name):
+                    continue
+                if _next_word(low, span[1]) in LINE_NEXT_WORDS:
+                    continue
                 return True, p
     return False, None
 
 
 def name_tokens(st, en_label=None):
-    """站名本体 + 常见变体（±駅 / 罗马字 / 英文 + Station / 去 JR 前缀）。"""
+    """站名本体 + 常见变体（±駅 / 罗马字 / 英文 + Station / 去 JR 前缀 / 去括号注释）。"""
     toks = set()
     name = (st.get('name') or '').strip()
     if name:
@@ -534,6 +596,7 @@ def name_tokens(st, en_label=None):
         t = (t or '').strip()
         if not t:
             continue
+        t = t.split('(')[0].strip()  # 去括号注释（Genbaku Dome-mae (Atomic Bomb Dome)）
         variants = {t}
         if t.upper().startswith('JR '):
             variants.add(t[3:])
@@ -544,12 +607,12 @@ def name_tokens(st, en_label=None):
 
 def name_mismatch_hit(text, st, en_label=None):
     """站名判据：title/category 未出现站名本体/官方罗马字/英文 → True（不选，待复核）。
-    罗马字比较去长音符（Ōji=Oji）。"""
+    宽松比较：去长音/标点/空白 + ou→o + 拨音同化（Ōji=Oji、Shinmachi=Shimmachi）。"""
     toks = name_tokens(st, en_label)
     if not toks or not text:
         return False
-    low = _norm_romaji(text)
-    return not any(_norm_romaji(t) in low for t in toks if t)
+    low = _norm_loose(text)
+    return not any(_norm_loose(t) in low for t in toks if t)
 
 
 def geo_mismatch(info, st, same_name_names):
@@ -563,6 +626,71 @@ def geo_mismatch(info, st, same_name_names):
     d = haversine_m(ilat, ilon, slat, slon)
     limit = GEO_LIMIT_SAMENAME_M if (st.get('name') in same_name_names) else GEO_LIMIT_M
     return d > limit, d
+
+
+def build_name_index(stations):
+    """全站名索引：汉字名/keys → slugs；官方罗马字（归一化，±JR 前缀）→ slugs；
+    另返回预编译罗马字边界正则表（按长度降序）。"""
+    kanji = collections.defaultdict(set)
+    romaji = collections.defaultdict(set)
+    for s in stations:
+        slug = s.get('slug')
+        nm = (s.get('name') or '').strip()
+        if nm:
+            kanji[nm].add(slug)
+        for k in (s.get('keys') or []):
+            k = (k or '').strip()
+            if k:
+                kanji[k].add(slug)
+        en = (s.get('name_en') or '').strip()
+        if en:
+            romaji[_norm_romaji(en)].add(slug)
+            if en.upper().startswith('JR '):
+                romaji[_norm_romaji(en[3:])].add(slug)
+    romaji_re = []
+    for rom, slugs in romaji.items():
+        if len(rom) < 3 or rom in GENERIC_ROMAJI:
+            continue
+        pat = re.compile(r'(?<![a-z0-9])' + re.escape(rom.replace('-', ' '))
+                         + r'(?![a-z0-9])')
+        romaji_re.append((len(rom), pat, rom, slugs))
+    romaji_re.sort(key=lambda x: -x[0])
+    return kanji, romaji, romaji_re
+
+
+def station_names_in_title(title, kanji, romaji_re):
+    """title 中出现的站名命中列表 [(长度, 站名, slugs)]：
+    汉字子串（≥2字，非通名）；罗马字词边界（预编译）+ 站名语境
+    （后接 station/sta/stn/eki）。重叠区间只保留最长命中
+    （防 kagoshima 吃掉 Minami Kagoshima）。"""
+    if not title:
+        return []
+    low = _norm_romaji(title).replace('-', ' ')  # 连字符=空格，对齐空格化模式
+    hits = []
+    for nm, slugs in kanji.items():
+        if len(nm) >= 2 and nm not in GENERIC_KANJI and nm in title:
+            hits.append((len(nm), nm, slugs, title.find(nm)))
+    for ln, pat, rom, slugs in romaji_re:
+        m = pat.search(low)
+        if m and _next_word(low, m.end()) in STATION_NEXT_WORDS:
+            hits.append((m.end() - m.start(), rom, slugs, m.start()))
+    hits.sort(key=lambda h: (-h[0], h[3]))
+    kept, taken = [], []
+    for ln, nm, slugs, start in hits:
+        if any(start < e and start + ln > s for s, e in taken):
+            continue
+        taken.append((start, start + ln))
+        kept.append((ln, nm, slugs))
+    return kept
+
+
+def named_own_station(st, hits):
+    """标题是否完整指名本站（命中站名=本站且站名唯一）→ 可用于县名豁免。"""
+    slug = st.get('slug') or ''
+    for _ln, _nm, slugs in hits:
+        if slug in slugs and len(slugs) == 1:
+            return True
+    return False
 
 
 def quality_verdict(m, title, from_category):
@@ -754,14 +882,24 @@ def process_station(st, args, tmpdir, relaxed=False, used=None):
         if bad_geo:
             reject_dist['geo_mismatch'] = reject_dist.get('geo_mismatch', 0) + 1
             continue
-        # 不依赖坐标的硬判据：县名（拒）；站名判据回溯误杀率 18.8%>2%，
-        # 暂只计数不拒（name_mismatch_review），待人工核对清单后再启用
-        _text = (c['title'] or '') + ' ' + (c.get('cat') or '')
-        bad_pref, _other = pref_mismatch_hit(_text, st)
+        # 不依赖坐标的硬判据。县名：只认标题证据硬拒（pref_mismatch），
+        # category 证据降为旁证（pref_mismatch_review，只计数不拒）。
+        # 豁免：标题完整指名本站（唯一站名）且无显式位置标记（如 美唄←石川啄木歌碑）。
+        _title = c['title'] or ''
+        _cat = c.get('cat') or ''
+        _kanji, _rom, _romre = getattr(args, 'name_index', ({}, {}, []))
+        bad_pref, _other = pref_mismatch_hit(_title, st)
+        if bad_pref and not has_location_marker(_title) and \
+                named_own_station(st, station_names_in_title(_title, _kanji, _romre)):
+            bad_pref = False
         if bad_pref:
             reject_dist['pref_mismatch'] = reject_dist.get('pref_mismatch', 0) + 1
             continue
-        if name_mismatch_hit(_text, st, en_label):
+        if _cat and pref_mismatch_hit(_cat, st)[0]:
+            reject_dist['pref_mismatch_review'] = \
+                reject_dist.get('pref_mismatch_review', 0) + 1
+        # 站名判据回溯误杀率 18.8%>2%，只计数不拒（name_mismatch_review）
+        if name_mismatch_hit(_title + ' ' + _cat, st, en_label):
             reject_dist['name_mismatch_review'] = \
                 reject_dist.get('name_mismatch_review', 0) + 1
         ok, lic, lic_url, author, reason = license_verdict(info.get('extmetadata'))
@@ -1061,6 +1199,8 @@ def main():
     # 同名站簇（全清单范围）：地理校验闸门对其使用更严阈值（10km）
     _nc = collections.Counter((s.get('name') or '').strip() for s in stations)
     args.same_name_names = {n for n, c in _nc.items() if c > 1 and n}
+    # 全站名索引（8,909 站）：县名判据"指名本站"豁免用
+    args.name_index = build_name_index(stations)
 
     state_path = args.state or os.path.join(args.workdir, 'state.json')
     state = load_state(state_path)
