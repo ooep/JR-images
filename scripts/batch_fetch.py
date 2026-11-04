@@ -998,9 +998,9 @@ def process_station(st, args, tmpdir, relaxed=False, used=None):
                 if _en and _en in _norm_loose(_title):
                     _own_hit = True
             if _same:
-                _evidence = pref_evidence(_all, st) or line_evidence(_all, st)
+                _evidence = _ctx and (pref_evidence(_all, st) or line_evidence(_all, st))
             else:
-                _evidence = _own_hit or pref_evidence(_all, st) or line_evidence(_all, st)
+                _evidence = _own_hit or (_ctx and (pref_evidence(_all, st) or line_evidence(_all, st)))
             if not _evidence:
                 reject_dist['no_station_evidence'] = \
                     reject_dist.get('no_station_evidence', 0) + 1
