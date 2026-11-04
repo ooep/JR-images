@@ -1,0 +1,180 @@
+{
+ "attempted": 500,
+ "done": 414,
+ "review": 92,
+ "missing": 19,
+ "failed": 0,
+ "skipped_resume": 0,
+ "bytes": 214726454,
+ "reject_dist": {
+  "geo_mismatch": 904,
+  "hard_excluded": 602,
+  "resolution_low": 1961,
+  "pref_mismatch": 457,
+  "name_mismatch_review": 1934,
+  "mime_unsupported": 109,
+  "license_unclear": 45,
+  "low_color(map/text?)": 168,
+  "oversize_gt_25mb": 158,
+  "no_author_metadata": 95,
+  "duplicate_sha256": 7
+ },
+ "dead": [
+  {
+   "slug": "st01804",
+   "name": "近鉄四日市",
+   "reasons": {
+    "pref_mismatch": 43,
+    "hard_excluded": 6
+   }
+  },
+  {
+   "slug": "st01836",
+   "name": "粟ケ崎",
+   "reasons": [
+    "no_candidates"
+   ]
+  },
+  {
+   "slug": "st01858",
+   "name": "富士見ケ丘",
+   "reasons": [
+    "no_candidates"
+   ]
+  },
+  {
+   "slug": "st01958",
+   "name": "ラクテンチ上",
+   "reasons": [
+    "no_candidates"
+   ]
+  },
+  {
+   "slug": "st02000",
+   "name": "鳳",
+   "reasons": {
+    "resolution_low": 13
+   }
+  },
+  {
+   "slug": "st02003",
+   "name": "法界院",
+   "reasons": {
+    "resolution_low": 1,
+    "low_color(map/text?)": 2
+   }
+  },
+  {
+   "slug": "st02042",
+   "name": "長谷野",
+   "reasons": {
+    "resolution_low": 3
+   }
+  },
+  {
+   "slug": "st02049",
+   "name": "朝日野",
+   "reasons": {
+    "resolution_low": 5,
+    "name_mismatch_review": 1,
+    "geo_mismatch": 1
+   }
+  },
+  {
+   "slug": "st02053",
+   "name": "水口松尾",
+   "reasons": {
+    "resolution_low": 2
+   }
+  },
+  {
+   "slug": "st02056",
+   "name": "水口城南",
+   "reasons": {
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st02077",
+   "name": "北越谷",
+   "reasons": {
+    "pref_mismatch": 27,
+    "hard_excluded": 2
+   }
+  },
+  {
+   "slug": "st02078",
+   "name": "越谷",
+   "reasons": {
+    "pref_mismatch": 27,
+    "hard_excluded": 1
+   }
+  },
+  {
+   "slug": "st02079",
+   "name": "新越谷",
+   "reasons": {
+    "pref_mismatch": 36,
+    "hard_excluded": 2
+   }
+  },
+  {
+   "slug": "st02109",
+   "name": "西川田",
+   "reasons": {
+    "resolution_low": 5,
+    "pref_mismatch": 4,
+    "low_color(map/text?)": 1
+   }
+  },
+  {
+   "slug": "st02117",
+   "name": "上今市",
+   "reasons": {
+    "pref_mismatch": 18
+   }
+  },
+  {
+   "slug": "st02136",
+   "name": "中目黒",
+   "reasons": {
+    "resolution_low": 8
+   }
+  },
+  {
+   "slug": "st02219",
+   "name": "西鉄二日市",
+   "reasons": {
+    "pref_mismatch": 24,
+    "hard_excluded": 6
+   }
+  },
+  {
+   "slug": "st02221",
+   "name": "上浦",
+   "reasons": {
+    "resolution_low": 1,
+    "geo_mismatch": 29
+   }
+  },
+  {
+   "slug": "st02225",
+   "name": "東甘木",
+   "reasons": {
+    "duplicate_all_used": 1
+   }
+  }
+ ],
+ "dead_retried": 25,
+ "dead_recovered": 25,
+ "dead_new": 19,
+ "dead_cumulative": 133,
+ "dead_final": 0,
+ "rate_limit_events": 0,
+ "maxlag_retries": 3,
+ "near_dup_pairs": 0,
+ "user_agent": "JR-images-bot/1.0 (https://github.com/ooep/JR-images; contact: https://github.com/ooep/JR-images/issues)",
+ "elapsed_sec": 2521,
+ "batch_index": 5,
+ "generated_at": "2026-11-04T01:09:45Z"
+}

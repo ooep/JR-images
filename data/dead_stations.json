@@ -1,41 +1,7 @@
 {
- "count": 139,
+ "count": 134,
  "schema": 1,
  "stations": {
-  "st00031": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T00:14:16Z",
-   "last_attempt": "2026-11-04T00:14:16Z",
-   "name": "橋本",
-   "name_en": "Hashimoto",
-   "note": "user-confirmed wrong image; refetch",
-   "reasons": {
-    "geo_mismatch": "橋本←神奈川橋本 342km"
-   },
-   "reject_dist": {},
-   "slug": "st00031",
-   "source_page": "https://commons.wikimedia.org/wiki/File:橋本駅_-_panoramio.jpg",
-   "stage": "audit"
-  },
-  "st00039": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-03T23:35:41Z",
-   "last_attempt": "2026-11-03T23:35:41Z",
-   "name": "笠田",
-   "name_en": "Kaseda",
-   "note": "perceptual near-dup (dHash hamming<=6) of st00038; refetch a different photo",
-   "reasons": {
-    "near_duplicate_with": "st00038"
-   },
-   "reject_dist": {},
-   "slug": "st00039",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Nishi-kaseda-STA_Home.jpg",
-   "stage": "audit"
-  },
   "st00051": {
    "attempts": 2,
    "below_spec": false,
@@ -53,359 +19,6 @@
    "slug": "st00051",
    "source_page": null,
    "stage": "retry"
-  },
-  "st00056": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-03T23:35:41Z",
-   "last_attempt": "2026-11-03T23:35:41Z",
-   "name": "桜井",
-   "name_en": "Sakurai",
-   "note": "perceptual near-dup (dHash hamming<=6) of st00055; refetch a different photo",
-   "reasons": {
-    "near_duplicate_with": "st00055"
-   },
-   "reject_dist": {},
-   "slug": "st00056",
-   "source_page": "https://commons.wikimedia.org/wiki/File:阪急桜井駅トイレ.jpg",
-   "stage": "audit"
-  },
-  "st00057": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "桜井",
-   "name_en": "Sakurai",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00056"
-   ],
-   "slug": "st00057",
-   "source_page": "https://commons.wikimedia.org/wiki/File:阪急桜井駅トイレ.jpg",
-   "stage": "verify"
-  },
-  "st00068": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-03T23:35:41Z",
-   "last_attempt": "2026-11-03T23:35:41Z",
-   "name": "福島",
-   "name_en": "Fukushima",
-   "note": "perceptual near-dup (dHash hamming<=6) of st00069; refetch a different photo",
-   "reasons": {
-    "near_duplicate_with": "st00069"
-   },
-   "reject_dist": {},
-   "slug": "st00068",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Fukushima_Station_west_exit_at_night.jpg",
-   "stage": "audit"
-  },
-  "st00071": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "野田",
-   "name_en": "Noda",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00070"
-   ],
-   "slug": "st00071",
-   "source_page": "https://commons.wikimedia.org/wiki/File:NDL1308969_野田.jpg",
-   "stage": "verify"
-  },
-  "st00075": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "大正",
-   "name_en": "Taishō",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00074"
-   ],
-   "slug": "st00075",
-   "source_page": "https://commons.wikimedia.org/wiki/File:JR大正駅ホームのベンチにおける2優先座席_2016_(28983694644).jpg",
-   "stage": "verify"
-  },
-  "st00082": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-03T23:35:41Z",
-   "last_attempt": "2026-11-03T23:35:41Z",
-   "name": "田町",
-   "name_en": "Tamachi",
-   "note": "perceptual near-dup (dHash hamming<=6) of st00083; refetch a different photo",
-   "reasons": {
-    "near_duplicate_with": "st00083"
-   },
-   "reject_dist": {},
-   "slug": "st00082",
-   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Tamachi_Station_Platform_1・2_(20210410).jpg",
-   "stage": "audit"
-  },
-  "st00112": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "石津",
-   "name_en": "Ishizu",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00111"
-   ],
-   "slug": "st00112",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Ishizu_Station_ac_(1).jpg",
-   "stage": "verify"
-  },
-  "st00122": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "宮内",
-   "name_en": "Miyauchi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00121"
-   ],
-   "slug": "st00122",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Miyauchi_Station,_Nagaoka_03.jpg",
-   "stage": "verify"
-  },
-  "st00123": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "宮内",
-   "name_en": "Miyauchi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00121"
-   ],
-   "slug": "st00123",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Miyauchi_Station,_Nagaoka_03.jpg",
-   "stage": "verify"
-  },
-  "st00125": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "広電廿日市",
-   "name_en": "Hiroden-Hatsukaichi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00116"
-   ],
-   "slug": "st00125",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Hiroden-miyajima-guchi-STA_Platform_A.jpg",
-   "stage": "verify"
-  },
-  "st00132": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "井口",
-   "name_en": "Inokuchi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00131"
-   ],
-   "slug": "st00132",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Hokutetsu_Inokuchi-STA_Platform.jpg",
-   "stage": "verify"
-  },
-  "st00135": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-03T23:35:41Z",
-   "last_attempt": "2026-11-03T23:35:41Z",
-   "name": "草津",
-   "name_en": "Kusatsu",
-   "note": "perceptual near-dup (dHash hamming<=6) of st00136; refetch a different photo",
-   "reasons": {
-    "near_duplicate_with": "st00136"
-   },
-   "reject_dist": {},
-   "slug": "st00135",
-   "source_page": "https://commons.wikimedia.org/wiki/File:NDL1309444_草津.jpg",
-   "stage": "audit"
-  },
-  "st00139": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "高須",
-   "name_en": "Takasu",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00138"
-   ],
-   "slug": "st00139",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Takasujinsha_station.jpg",
-   "stage": "verify"
-  },
-  "st00145": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "観音町",
-   "name_en": "Kannonmachi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00144"
-   ],
-   "slug": "st00145",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Kannonmachieki.jpg",
-   "stage": "verify"
-  },
-  "st00149": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "土橋",
-   "name_en": "Dobashi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00148"
-   ],
-   "slug": "st00149",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Westbound_platform_of_Tuqiao_Station_(20210826132621).jpg",
-   "stage": "verify"
-  },
-  "st00150": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "土橋",
-   "name_en": "Dobashi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00148"
-   ],
-   "slug": "st00150",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Westbound_platform_of_Tuqiao_Station_(20210826132621).jpg",
-   "stage": "verify"
-  },
-  "st00159": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "市役所前",
-   "name_en": "Matsuyama City Hall",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00158"
-   ],
-   "slug": "st00159",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Matsuyama_City_Hall_Station_20251028_(2).jpg",
-   "stage": "verify"
-  },
-  "st00160": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "市役所前",
-   "name_en": "Matsuyama City Hall",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00158"
-   ],
-   "slug": "st00160",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Matsuyama_City_Hall_Station_20251028_(2).jpg",
-   "stage": "verify"
-  },
-  "st00161": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "市役所前",
-   "name_en": "Matsuyama City Hall",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00158"
-   ],
-   "slug": "st00161",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Matsuyama_City_Hall_Station_20251028_(2).jpg",
-   "stage": "verify"
-  },
-  "st00162": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "市役所前",
-   "name_en": "Matsuyama City Hall",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00158"
-   ],
-   "slug": "st00162",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Matsuyama_City_Hall_Station_20251028_(2).jpg",
-   "stage": "verify"
-  },
-  "st00163": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "市役所前",
-   "name_en": "Matsuyama City Hall",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00158"
-   ],
-   "slug": "st00163",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Matsuyama_City_Hall_Station_20251028_(2).jpg",
-   "stage": "verify"
-  },
-  "st00164": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "市役所前",
-   "name_en": "Matsuyama City Hall",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00158"
-   ],
-   "slug": "st00164",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Matsuyama_City_Hall_Station_20251028_(2).jpg",
-   "stage": "verify"
-  },
-  "st00165": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
-   "name": "市役所前",
-   "name_en": "Matsuyama City Hall",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
-   "reasons": [
-    "duplicate_sha256_with:st00158"
-   ],
-   "slug": "st00165",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Matsuyama_City_Hall_Station_20251028_(2).jpg",
-   "stage": "verify"
   },
   "st00170": {
    "attempts": 1,
@@ -479,10 +92,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "八丁堀",
    "name_en": "Hatchōbori",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00186"
    ],
@@ -494,10 +106,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "稲荷町",
    "name_en": "Inarichō",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00190"
    ],
@@ -509,10 +120,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "稲荷町",
    "name_en": "Inarichō",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00190"
    ],
@@ -558,10 +168,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "平林",
    "name_en": "Hirabayashi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00226"
    ],
@@ -590,10 +199,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "月岡",
    "name_en": "Tsukioka",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00235"
    ],
@@ -605,10 +213,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "新屋",
    "name_en": "Araya",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00240"
    ],
@@ -620,10 +227,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "追分",
    "name_en": "Oiwake",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00253"
    ],
@@ -652,10 +258,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "追分",
    "name_en": "Oiwake",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00255"
    ],
@@ -667,10 +272,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "大久保",
    "name_en": "Ōkubo",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00257"
    ],
@@ -682,10 +286,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "大久保",
    "name_en": "Ōkubo",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00257"
    ],
@@ -697,10 +300,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "大久保",
    "name_en": "Ōkubo",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00257"
    ],
@@ -712,10 +314,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "今川",
    "name_en": "Imagawa",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00297"
    ],
@@ -727,10 +328,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "白山",
    "name_en": "Hakusan",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00304"
    ],
@@ -742,10 +342,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "白山",
    "name_en": "Hakusan",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00304"
    ],
@@ -757,10 +356,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "関屋",
    "name_en": "Sekiya",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00307"
    ],
@@ -772,10 +370,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "青山",
    "name_en": "Aoyama",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00309"
    ],
@@ -787,10 +384,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "青山",
    "name_en": "Aoyama",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00309"
    ],
@@ -819,10 +415,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "三条",
    "name_en": "Sanjō",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00329"
    ],
@@ -834,10 +429,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "三条",
    "name_en": "Sanjō",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00329"
    ],
@@ -866,10 +460,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "加茂",
    "name_en": "Kamo",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00334"
    ],
@@ -881,10 +474,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "吉田",
    "name_en": "Yoshida",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00345"
    ],
@@ -896,10 +488,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "市立病院前",
    "name_en": "Naha City Hospital",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00353"
    ],
@@ -928,10 +519,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "谷山",
    "name_en": "Taniyama",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00367"
    ],
@@ -943,10 +533,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "二軒茶屋",
    "name_en": "Nikenchaya",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00373"
    ],
@@ -975,10 +564,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "中郡",
    "name_en": "Chūgun",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00378"
    ],
@@ -1023,10 +611,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "神田",
    "name_en": "Kanda",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00383"
    ],
@@ -1038,10 +625,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "郡元",
    "name_en": "Kōrimoto",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00386"
    ],
@@ -1053,10 +639,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "祇園",
    "name_en": "Gion",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00396"
    ],
@@ -1068,10 +653,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "赤坂",
    "name_en": "Akasaka",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00400"
    ],
@@ -1083,10 +667,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "赤坂",
    "name_en": "Akasaka",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00400"
    ],
@@ -1098,10 +681,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "赤坂",
    "name_en": "Akasaka",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00400"
    ],
@@ -1113,10 +695,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "藤崎",
    "name_en": "Fujisaki",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00407"
    ],
@@ -1128,10 +709,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "呉服町",
    "name_en": "Gofukumachi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00418"
    ],
@@ -1143,10 +723,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "貝塚",
    "name_en": "Kaizuka",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00424"
    ],
@@ -1192,10 +771,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "大橋",
    "name_en": "Ōhashi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00457"
    ],
@@ -1207,10 +785,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "千歳町",
    "name_en": "Chitosechō",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00463"
    ],
@@ -1222,10 +799,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00466"
    ],
@@ -1237,10 +813,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00466"
    ],
@@ -1252,10 +827,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00466"
    ],
@@ -1267,10 +841,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00466"
    ],
@@ -1282,10 +855,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00466"
    ],
@@ -1314,10 +886,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "石橋",
    "name_en": "Ishibashi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00473"
    ],
@@ -1329,10 +900,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "大浦海岸通",
    "name_en": "Ōura-kaigan-dōri",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00177"
    ],
@@ -1344,10 +914,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "高野",
    "name_en": "Kōya",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00492"
    ],
@@ -1359,10 +928,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "古見",
    "name_en": "Komi",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00513"
    ],
@@ -1374,10 +942,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "大原",
    "name_en": "Ōbara",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00534"
    ],
@@ -1389,10 +956,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "大原",
    "name_en": "Ōbara",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00534"
    ],
@@ -1438,10 +1004,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "神戸",
    "name_en": "Gōdo",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00559"
    ],
@@ -1453,10 +1018,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "常盤",
    "name_en": "Tokiwa",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00568"
    ],
@@ -1468,10 +1032,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "常盤",
    "name_en": "Tokiwa",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00568"
    ],
@@ -1483,10 +1046,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "栄",
    "name_en": "Sakae",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00571"
    ],
@@ -1498,10 +1060,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "栄",
    "name_en": "Sakae",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00571"
    ],
@@ -1513,10 +1074,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "浦田",
    "name_en": "Urada",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00575"
    ],
@@ -1545,10 +1105,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "球場前",
    "name_en": "Kyūjō-mae",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00580"
    ],
@@ -1594,10 +1153,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "久保田",
    "name_en": "Kubota",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st00598"
    ],
@@ -1974,10 +1532,9 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-03T15:52:16Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
    "name": "郡山",
    "name_en": "Kōriyama",
-   "note": "attempts reset: old verify re-flagged duplicates every batch; patched verify only counts real retries",
    "reasons": [
     "duplicate_sha256_with:st01232"
    ],
@@ -2186,6 +1743,335 @@
    "source_page": null,
    "stage": "fetch"
   },
+  "st01804": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:32:17Z",
+   "last_attempt": "2026-11-04T00:32:17Z",
+   "name": "近鉄四日市",
+   "name_en": "Kintetsu-Yokkaichi",
+   "reasons": {
+    "hard_excluded": 6,
+    "pref_mismatch": 43
+   },
+   "reject_dist": {},
+   "slug": "st01804",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st01836": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:35:05Z",
+   "last_attempt": "2026-11-04T00:35:05Z",
+   "name": "粟ケ崎",
+   "name_en": null,
+   "reasons": [
+    "no_candidates"
+   ],
+   "reject_dist": {},
+   "slug": "st01836",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st01858": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:36:36Z",
+   "last_attempt": "2026-11-04T00:36:36Z",
+   "name": "富士見ケ丘",
+   "name_en": null,
+   "reasons": [
+    "no_candidates"
+   ],
+   "reject_dist": {},
+   "slug": "st01858",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st01948": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-04T01:09:46Z",
+   "last_attempt": "2026-11-04T01:09:46Z",
+   "name": "なんば",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st01947"
+   ],
+   "slug": "st01948",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Nankai_Namba_station_NK01_-_platforms_-_panoramic_view.jpg",
+   "stage": "verify"
+  },
+  "st01958": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:42:12Z",
+   "last_attempt": "2026-11-04T00:42:12Z",
+   "name": "ラクテンチ上",
+   "name_en": null,
+   "reasons": [
+    "no_candidates"
+   ],
+   "reject_dist": {},
+   "slug": "st01958",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02000": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:45:12Z",
+   "last_attempt": "2026-11-04T00:45:12Z",
+   "name": "鳳",
+   "name_en": "Ōtori",
+   "reasons": {
+    "resolution_low": 13
+   },
+   "reject_dist": {},
+   "slug": "st02000",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02003": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:45:21Z",
+   "last_attempt": "2026-11-04T00:45:21Z",
+   "name": "法界院",
+   "name_en": "Hōkaiin",
+   "reasons": {
+    "low_color(map/text?)": 2,
+    "resolution_low": 1
+   },
+   "reject_dist": {},
+   "slug": "st02003",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02042": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:48:25Z",
+   "last_attempt": "2026-11-04T00:48:25Z",
+   "name": "長谷野",
+   "name_en": "Nagatanino",
+   "reasons": {
+    "resolution_low": 3
+   },
+   "reject_dist": {},
+   "slug": "st02042",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02049": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:49:02Z",
+   "last_attempt": "2026-11-04T00:49:02Z",
+   "name": "朝日野",
+   "name_en": "Asahino",
+   "reasons": {
+    "geo_mismatch": 1,
+    "name_mismatch_review": 1,
+    "resolution_low": 5
+   },
+   "reject_dist": {},
+   "slug": "st02049",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02053": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:49:23Z",
+   "last_attempt": "2026-11-04T00:49:23Z",
+   "name": "水口松尾",
+   "name_en": "Minakuchi-Matsuo",
+   "reasons": {
+    "resolution_low": 2
+   },
+   "reject_dist": {},
+   "slug": "st02053",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02056": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:49:35Z",
+   "last_attempt": "2026-11-04T00:49:35Z",
+   "name": "水口城南",
+   "name_en": "Minakuchi-Jōnan",
+   "reasons": {
+    "resolution_low": 1
+   },
+   "reject_dist": {},
+   "slug": "st02056",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02077": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:51:01Z",
+   "last_attempt": "2026-11-04T00:51:01Z",
+   "name": "北越谷",
+   "name_en": "Kita-Koshigaya",
+   "reasons": {
+    "hard_excluded": 2,
+    "pref_mismatch": 27
+   },
+   "reject_dist": {},
+   "slug": "st02077",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02078": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:51:03Z",
+   "last_attempt": "2026-11-04T00:51:03Z",
+   "name": "越谷",
+   "name_en": "Koshigaya",
+   "reasons": {
+    "hard_excluded": 1,
+    "pref_mismatch": 27
+   },
+   "reject_dist": {},
+   "slug": "st02078",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02079": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:51:05Z",
+   "last_attempt": "2026-11-04T00:51:05Z",
+   "name": "新越谷",
+   "name_en": "Shin-Koshigaya",
+   "reasons": {
+    "hard_excluded": 2,
+    "pref_mismatch": 36
+   },
+   "reject_dist": {},
+   "slug": "st02079",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02109": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:53:12Z",
+   "last_attempt": "2026-11-04T00:53:12Z",
+   "name": "西川田",
+   "name_en": "Nishi-Kawada",
+   "reasons": {
+    "low_color(map/text?)": 1,
+    "pref_mismatch": 4,
+    "resolution_low": 5
+   },
+   "reject_dist": {},
+   "slug": "st02109",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02117": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:53:32Z",
+   "last_attempt": "2026-11-04T00:53:32Z",
+   "name": "上今市",
+   "name_en": "Kami-Imaichi",
+   "reasons": {
+    "pref_mismatch": 18
+   },
+   "reject_dist": {},
+   "slug": "st02117",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02136": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:54:43Z",
+   "last_attempt": "2026-11-04T00:54:43Z",
+   "name": "中目黒",
+   "name_en": "Naka-Meguro",
+   "reasons": {
+    "resolution_low": 8
+   },
+   "reject_dist": {},
+   "slug": "st02136",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02219": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T01:01:12Z",
+   "last_attempt": "2026-11-04T01:01:12Z",
+   "name": "西鉄二日市",
+   "name_en": "Nishitetsu-Futsukaichi",
+   "reasons": {
+    "hard_excluded": 6,
+    "pref_mismatch": 24
+   },
+   "reject_dist": {},
+   "slug": "st02219",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02221": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T01:01:24Z",
+   "last_attempt": "2026-11-04T01:01:24Z",
+   "name": "上浦",
+   "name_en": "Kamiura",
+   "reasons": {
+    "geo_mismatch": 29,
+    "resolution_low": 1
+   },
+   "reject_dist": {},
+   "slug": "st02221",
+   "source_page": null,
+   "stage": "fetch"
+  },
+  "st02225": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T01:01:46Z",
+   "last_attempt": "2026-11-04T01:01:46Z",
+   "name": "東甘木",
+   "name_en": "Higashi-Amagi",
+   "reasons": {
+    "duplicate_all_used": 1
+   },
+   "reject_dist": {},
+   "slug": "st02225",
+   "source_page": null,
+   "stage": "fetch"
+  },
   "st03578": {
    "attempts": 2,
    "below_spec": false,
@@ -2203,5 +2089,5 @@
    "stage": "retry"
   }
  },
- "updated_at": "2026-11-04T00:14:16Z"
+ "updated_at": "2026-11-04T01:09:46Z"
 }
