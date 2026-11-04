@@ -55,9 +55,17 @@ def pref_forms(pref):
     return forms
 
 
+def _norm_romaji(s):
+    for a, b in (('ā', 'a'), ('ī', 'i'), ('ū', 'u'), ('ē', 'e'), ('ō', 'o'),
+                 ('Ā', 'a'), ('Ī', 'i'), ('Ū', 'u'), ('Ē', 'e'), ('Ō', 'o')):
+        s = s.replace(a, b)
+    return s.lower()
+
+
 def pref_mismatch_hit(text, e):
     own = (e.get('pref') or '').strip()
     name = e.get('name') or ''
+    lines = ' '.join(e.get('lines') or [])
     if not own or not text:
         return False, None
     own_forms = pref_forms(own)
@@ -72,8 +80,11 @@ def pref_mismatch_hit(text, e):
                 kanji_forms.add(p[:-1])
         if any(f and f in name for f in kanji_forms):
             continue
-        if any(f.lower() in text.lower() for f in pref_forms(p) if f):
-            return True, p
+        for f in pref_forms(p):
+            if f and f.lower() in text.lower():
+                if f in name or (lines and f in lines):
+                    continue
+                return True, p
     return False, None
 
 
@@ -87,7 +98,11 @@ def name_tokens(e):
             toks.add(name[:-1])
     t = (e.get('name_en') or '').strip()
     if t:
-        toks.update({t, t + ' Station', t + ' station', t + '-station'})
+        variants = {t}
+        if t.upper().startswith('JR '):
+            variants.add(t[3:])
+        for v in list(variants):
+            toks.update({v, v + ' Station', v + ' station', v + '-station'})
     return toks
 
 
@@ -95,8 +110,8 @@ def name_mismatch_hit(text, e):
     toks = name_tokens(e)
     if not toks or not text:
         return False
-    low = text.lower()
-    return not any(t.lower() in low for t in toks if t)
+    low = _norm_romaji(text)
+    return not any(_norm_romaji(t) in low for t in toks if t)
 
 
 def main():

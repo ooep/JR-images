@@ -484,16 +484,24 @@ def pref_forms(pref):
     return forms
 
 
+def _norm_romaji(s):
+    """去长音符并小写（Ōji→oji），供罗马字宽松比较。"""
+    for a, b in (('ā', 'a'), ('ī', 'i'), ('ū', 'u'), ('ē', 'e'), ('ō', 'o'),
+                 ('Ā', 'a'), ('Ī', 'i'), ('Ū', 'u'), ('Ē', 'e'), ('Ō', 'o')):
+        s = s.replace(a, b)
+    return s.lower()
+
+
 def pref_mismatch_hit(text, st):
     """县名判据：title/category 出现其他都道府县名且不含本站县名 → True（拒）。
-    站名本身含该县名时不算"其他县"（如 大阪的福島駅 标题含 Fukushima）。"""
+    豁免：站名本身含该县名（大阪的福島駅）；匹配串出自本站所属线路名（和歌山線）。"""
     own = (st.get('pref') or '').strip()
     name = st.get('name') or ''
+    lines = ' '.join(st.get('lines') or [])
     if not own or not text:
         return False, None
     own_forms = pref_forms(own)
-    hit_own = any(f.lower() in text.lower() for f in own_forms if f)
-    if hit_own:
+    if any(f.lower() in text.lower() for f in own_forms if f):
         return False, None
     for p in PREFS:
         if p == own:
@@ -505,13 +513,16 @@ def pref_mismatch_hit(text, st):
         # 站名本身就是该县名（如 大阪的福島駅 / 奈良駅）→ 不视为"其他县"
         if any(f and f in name for f in kanji_forms):
             continue
-        if any(f.lower() in text.lower() for f in pref_forms(p) if f):
-            return True, p
+        for f in pref_forms(p):
+            if f and f.lower() in text.lower():
+                if f in name or (lines and f in lines):
+                    continue  # 站名/本站线路名自带该县名（如 和歌山線）
+                return True, p
     return False, None
 
 
 def name_tokens(st, en_label=None):
-    """站名本体 + 常见变体（±駅 / 罗马字 / 英文 + Station）。"""
+    """站名本体 + 常见变体（±駅 / 罗马字 / 英文 + Station / 去 JR 前缀）。"""
     toks = set()
     name = (st.get('name') or '').strip()
     if name:
@@ -521,21 +532,24 @@ def name_tokens(st, en_label=None):
             toks.add(name[:-1])
     for t in (st.get('name_en'), en_label):
         t = (t or '').strip()
-        if t:
-            toks.add(t)
-            toks.add(t + ' Station')
-            toks.add(t + ' station')
-            toks.add(t + '-station')
+        if not t:
+            continue
+        variants = {t}
+        if t.upper().startswith('JR '):
+            variants.add(t[3:])
+        for v in list(variants):
+            toks.update({v, v + ' Station', v + ' station', v + '-station'})
     return toks
 
 
 def name_mismatch_hit(text, st, en_label=None):
-    """站名判据：title/category 未出现站名本体/官方罗马字/英文 → True（不选，待复核）。"""
+    """站名判据：title/category 未出现站名本体/官方罗马字/英文 → True（不选，待复核）。
+    罗马字比较去长音符（Ōji=Oji）。"""
     toks = name_tokens(st, en_label)
     if not toks or not text:
         return False
-    low = text.lower()
-    return not any(t.lower() in low for t in toks if t)
+    low = _norm_romaji(text)
+    return not any(_norm_romaji(t) in low for t in toks if t)
 
 
 def geo_mismatch(info, st, same_name_names):
