@@ -1,22 +1,42 @@
 {
  "attempted": 0,
- "done": 7,
- "review": 5,
- "missing": 13,
+ "done": 3,
+ "review": 2,
+ "missing": 20,
  "failed": 0,
  "skipped_resume": 0,
- "bytes": 4905120,
+ "bytes": 2457288,
  "reject_dist": {
-  "geo_mismatch": 72,
-  "no_station_evidence": 118,
-  "name_mismatch_review": 71,
-  "wrong_station": 61,
-  "pref_mismatch": 24,
-  "hard_excluded": 19,
-  "resolution_low": 13,
-  "low_color(map/text?)": 5
+  "resolution_low": 2,
+  "no_station_evidence": 62,
+  "name_mismatch_review": 36,
+  "geo_mismatch": 42,
+  "wrong_station": 1,
+  "pref_mismatch": 2,
+  "hard_excluded": 3,
+  "low_color(map/text?)": 3
  },
  "dead": [
+  {
+   "slug": "st00040",
+   "name": "大谷",
+   "reasons": {
+    "hard_excluded": 6,
+    "name_mismatch_review": 9,
+    "no_station_evidence": 14,
+    "geo_mismatch": 8
+   }
+  },
+  {
+   "slug": "st00041",
+   "name": "大谷",
+   "reasons": {
+    "hard_excluded": 6,
+    "name_mismatch_review": 10,
+    "no_station_evidence": 15,
+    "geo_mismatch": 7
+   }
+  },
   {
    "slug": "st00028",
    "name": "橋本",
@@ -79,6 +99,118 @@
    }
   },
   {
+   "slug": "st00458",
+   "name": "大橋",
+   "reasons": {
+    "geo_mismatch": 23,
+    "no_station_evidence": 5,
+    "name_mismatch_review": 2,
+    "pref_mismatch": 1
+   }
+  },
+  {
+   "slug": "st00464",
+   "name": "千歳町",
+   "reasons": {
+    "no_station_evidence": 19,
+    "pref_mismatch": 4,
+    "geo_mismatch": 4,
+    "name_mismatch_review": 18
+   }
+  },
+  {
+   "slug": "st00467",
+   "name": "住吉",
+   "reasons": {
+    "no_station_evidence": 25,
+    "pref_mismatch": 2,
+    "name_mismatch_review": 1,
+    "hard_excluded": 3
+   }
+  },
+  {
+   "slug": "st00468",
+   "name": "住吉",
+   "reasons": {
+    "no_station_evidence": 5,
+    "geo_mismatch": 21,
+    "name_mismatch_review": 2,
+    "resolution_low": 1,
+    "hard_excluded": 3
+   }
+  },
+  {
+   "slug": "st00469",
+   "name": "住吉",
+   "reasons": {
+    "no_station_evidence": 4,
+    "geo_mismatch": 21,
+    "pref_mismatch": 2,
+    "name_mismatch_review": 1,
+    "hard_excluded": 3
+   }
+  },
+  {
+   "slug": "st00470",
+   "name": "住吉",
+   "reasons": {
+    "no_station_evidence": 25,
+    "pref_mismatch": 2,
+    "name_mismatch_review": 1,
+    "hard_excluded": 3
+   }
+  },
+  {
+   "slug": "st00473",
+   "name": "石橋",
+   "reasons": {
+    "no_station_evidence": 8,
+    "geo_mismatch": 17,
+    "hard_excluded": 5
+   }
+  },
+  {
+   "slug": "st00474",
+   "name": "石橋",
+   "reasons": {
+    "no_station_evidence": 8,
+    "geo_mismatch": 17,
+    "hard_excluded": 5
+   }
+  },
+  {
+   "slug": "st00514",
+   "name": "古見",
+   "reasons": {
+    "no_station_evidence": 24,
+    "name_mismatch_review": 4,
+    "geo_mismatch": 1,
+    "wrong_station": 3,
+    "pref_mismatch": 1
+   }
+  },
+  {
+   "slug": "st00535",
+   "name": "大原",
+   "reasons": {
+    "no_station_evidence": 16,
+    "name_mismatch_review": 10,
+    "geo_mismatch": 13,
+    "pref_mismatch": 1
+   }
+  },
+  {
+   "slug": "st00540",
+   "name": "石井",
+   "reasons": {
+    "no_station_evidence": 22,
+    "name_mismatch_review": 2,
+    "hard_excluded": 2,
+    "pref_mismatch": 2,
+    "geo_mismatch": 3
+   }
+  },
+  {
    "slug": "st00548",
    "name": "河原",
    "reasons": {
@@ -87,82 +219,18 @@
     "geo_mismatch": 5,
     "name_mismatch_review": 7
    }
-  },
-  {
-   "slug": "st00571",
-   "name": "栄",
-   "reasons": {
-    "no_station_evidence": 20,
-    "name_mismatch_review": 4,
-    "geo_mismatch": 10,
-    "hard_excluded": 1
-   }
-  },
-  {
-   "slug": "st00580",
-   "name": "球場前",
-   "reasons": {
-    "name_mismatch_review": 20,
-    "no_station_evidence": 25,
-    "geo_mismatch": 3,
-    "pref_mismatch": 1
-   }
-  },
-  {
-   "slug": "st01215",
-   "name": "木幡",
-   "reasons": {
-    "no_station_evidence": 12,
-    "wrong_station": 7,
-    "geo_mismatch": 1,
-    "name_mismatch_review": 9
-   }
-  },
-  {
-   "slug": "st01240",
-   "name": "島ケ原",
-   "reasons": {
-    "no_station_evidence": 10,
-    "wrong_station": 1,
-    "hard_excluded": 1,
-    "name_mismatch_review": 1
-   }
-  },
-  {
-   "slug": "st00419",
-   "name": "呉服町",
-   "reasons": {
-    "geo_mismatch": 13,
-    "pref_mismatch": 5,
-    "no_station_evidence": 6,
-    "hard_excluded": 3,
-    "resolution_low": 2
-   }
-  },
-  {
-   "slug": "st00446",
-   "name": "桜町",
-   "reasons": {
-    "name_mismatch_review": 9,
-    "no_station_evidence": 12,
-    "wrong_station": 8,
-    "pref_mismatch": 2,
-    "geo_mismatch": 5,
-    "resolution_low": 1,
-    "hard_excluded": 1
-   }
   }
  ],
  "dead_retried": 25,
- "dead_recovered": 12,
- "dead_new": 13,
- "dead_cumulative": 170,
+ "dead_recovered": 5,
+ "dead_new": 20,
+ "dead_cumulative": 168,
  "dead_final": 0,
  "rate_limit_events": 0,
  "maxlag_retries": 0,
  "near_dup_pairs": 0,
  "user_agent": "JR-images-bot/1.0 (https://github.com/ooep/JR-images; contact: https://github.com/ooep/JR-images/issues)",
- "elapsed_sec": 154,
- "batch_index": 6,
- "generated_at": "2026-11-04T05:09:24Z"
+ "elapsed_sec": 144,
+ "batch_index": 0,
+ "generated_at": "2026-11-04T16:47:02Z"
 }

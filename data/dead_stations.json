@@ -1,13 +1,13 @@
 {
- "count": 173,
+ "count": 168,
  "schema": 1,
  "stations": {
   "st00028": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T05:06:55Z",
+   "last_attempt": "2026-11-04T16:45:01Z",
    "name": "橋本",
    "name_en": "Hashimoto",
    "reasons": {
@@ -23,38 +23,42 @@
    "stage": "retry"
   },
   "st00040": {
-   "attempts": 0,
+   "attempts": 1,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T16:29:12Z",
-   "last_attempt": "2026-11-04T16:29:12Z",
+   "last_attempt": "2026-11-04T16:44:44Z",
    "name": "大谷",
    "name_en": "Ōtani",
-   "note": "确认错配: 图为韩国大邱都市铁道大谷站(用户确认), 非和歌山県大谷",
    "reasons": {
-    "wrong_station_confirmed": 1
+    "geo_mismatch": 8,
+    "hard_excluded": 6,
+    "name_mismatch_review": 9,
+    "no_station_evidence": 14
    },
    "reject_dist": {},
    "slug": "st00040",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Daegu-metropolitan-transit-corporation-117-Daegok-station-entrance-2-20161009-160534.jpg",
-   "stage": "manual"
+   "source_page": null,
+   "stage": "retry"
   },
   "st00041": {
-   "attempts": 0,
+   "attempts": 1,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T16:29:12Z",
-   "last_attempt": "2026-11-04T16:29:12Z",
+   "last_attempt": "2026-11-04T16:44:48Z",
    "name": "大谷",
    "name_en": "Ōtani",
-   "note": "确认错配: 图为韩国铁道(Korail)大谷站站台(用户确认), 非滋賀県大谷",
    "reasons": {
-    "wrong_station_confirmed": 1
+    "geo_mismatch": 7,
+    "hard_excluded": 6,
+    "name_mismatch_review": 10,
+    "no_station_evidence": 15
    },
    "reject_dist": {},
    "slug": "st00041",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Korail-K322-Daegok-station-platform-20191021-101626.jpg",
-   "stage": "manual"
+   "source_page": null,
+   "stage": "retry"
   },
   "st00051": {
    "attempts": 2,
@@ -110,11 +114,11 @@
    "stage": "retry"
   },
   "st00190": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T05:07:12Z",
+   "last_attempt": "2026-11-04T16:45:04Z",
    "name": "稲荷町",
    "name_en": "Inarichō",
    "reasons": {
@@ -129,11 +133,11 @@
    "stage": "retry"
   },
   "st00309": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T05:07:17Z",
+   "last_attempt": "2026-11-04T16:45:09Z",
    "name": "青山",
    "name_en": "Aoyama",
    "reasons": {
@@ -169,7 +173,7 @@
    "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "三条",
    "name_en": "Sanjō",
    "reasons": [
@@ -183,7 +187,7 @@
    "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "三条",
    "name_en": "Sanjō",
    "reasons": [
@@ -217,7 +221,7 @@
    "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "加茂",
    "name_en": "Kamo",
    "reasons": [
@@ -231,7 +235,7 @@
    "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "吉田",
    "name_en": "Yoshida",
    "reasons": [
@@ -242,11 +246,11 @@
    "stage": "verify"
   },
   "st00353": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T05:07:20Z",
+   "last_attempt": "2026-11-04T16:45:12Z",
    "name": "市立病院前",
    "name_en": "Naha City Hospital",
    "reasons": {
@@ -283,7 +287,7 @@
    "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "二軒茶屋",
    "name_en": "Nikenchaya",
    "reasons": [
@@ -311,11 +315,11 @@
    "stage": "retry"
   },
   "st00378": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T05:07:26Z",
+   "last_attempt": "2026-11-04T16:45:17Z",
    "name": "中郡",
    "name_en": "Chūgun",
    "reasons": {
@@ -369,7 +373,7 @@
    "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "神田",
    "name_en": "Kanda",
    "reasons": [
@@ -404,7 +408,7 @@
    "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "祇園",
    "name_en": "Gion",
    "reasons": [
@@ -418,7 +422,7 @@
    "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "赤坂",
    "name_en": "Akasaka",
    "reasons": [
@@ -432,7 +436,7 @@
    "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "赤坂",
    "name_en": "Akasaka",
    "reasons": [
@@ -446,7 +450,7 @@
    "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "赤坂",
    "name_en": "Akasaka",
    "reasons": [
@@ -460,7 +464,7 @@
    "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "藤崎",
    "name_en": "Fujisaki",
    "reasons": [
@@ -474,7 +478,7 @@
    "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "呉服町",
    "name_en": "Gofukumachi",
    "reasons": [
@@ -507,11 +511,11 @@
    "stage": "retry"
   },
   "st00457": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T05:07:40Z",
+   "last_attempt": "2026-11-04T16:45:23Z",
    "name": "大橋",
    "name_en": "Ōhashi",
    "reasons": {
@@ -525,24 +529,29 @@
    "stage": "retry"
   },
   "st00458": {
-   "attempts": 1,
+   "attempts": 2,
+   "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T04:17:08Z",
+   "last_attempt": "2026-11-04T16:45:27Z",
    "name": "大橋",
    "name_en": "Ōhashi",
-   "reasons": [
-    "duplicate_sha256_with:st00457"
-   ],
+   "reasons": {
+    "geo_mismatch": 23,
+    "name_mismatch_review": 2,
+    "no_station_evidence": 5,
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
    "slug": "st00458",
-   "source_page": "https://commons.wikimedia.org/wiki/File:NDL1311026_木曽六十九駅_京都三條大橋・奴蘭平.jpg",
-   "stage": "verify"
+   "source_page": null,
+   "stage": "retry"
   },
   "st00464": {
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "千歳町",
    "name_en": "Chitosechō",
    "reasons": [
@@ -553,10 +562,10 @@
    "stage": "verify"
   },
   "st00467": {
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
    "reasons": [
@@ -567,10 +576,10 @@
    "stage": "verify"
   },
   "st00468": {
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
    "reasons": [
@@ -581,10 +590,10 @@
    "stage": "verify"
   },
   "st00469": {
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
    "reasons": [
@@ -595,10 +604,10 @@
    "stage": "verify"
   },
   "st00470": {
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
    "reasons": [
@@ -608,42 +617,29 @@
    "source_page": "https://commons.wikimedia.org/wiki/File:Hanshin_Sumiyoshi_Station_20200901.jpg",
    "stage": "verify"
   },
-  "st00471": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
-   "name": "住吉",
-   "name_en": "Sumiyoshi",
-   "reasons": [
-    "duplicate_sha256_with:st00466"
-   ],
-   "slug": "st00471",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Hanshin_Sumiyoshi_Station_20200901.jpg",
-   "stage": "verify"
-  },
   "st00473": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-03T23:35:41Z",
-   "last_attempt": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-04T16:46:07Z",
    "name": "石橋",
    "name_en": "Ishibashi",
-   "note": "perceptual near-dup (dHash hamming<=6) of st08084; refetch a different photo",
    "reasons": {
-    "near_duplicate_with": "st08084"
+    "geo_mismatch": 17,
+    "hard_excluded": 5,
+    "no_station_evidence": 8
    },
    "reject_dist": {},
    "slug": "st00473",
-   "source_page": "https://commons.wikimedia.org/wiki/File:石橋阪大前駅_(51982717160).jpg",
-   "stage": "audit"
+   "source_page": null,
+   "stage": "retry"
   },
   "st00474": {
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "石橋",
    "name_en": "Ishibashi",
    "reasons": [
@@ -653,39 +649,11 @@
    "source_page": "https://commons.wikimedia.org/wiki/File:石橋阪大前駅_(51982717160).jpg",
    "stage": "verify"
   },
-  "st00476": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
-   "name": "大浦海岸通",
-   "name_en": "Ōura-kaigan-dōri",
-   "reasons": [
-    "duplicate_sha256_with:st00177"
-   ],
-   "slug": "st00476",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Oura_Kaigan-Dori_Station.JPG",
-   "stage": "verify"
-  },
-  "st00493": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
-   "name": "高野",
-   "name_en": "Kōya",
-   "reasons": [
-    "duplicate_sha256_with:st00492"
-   ],
-   "slug": "st00493",
-   "source_page": "https://commons.wikimedia.org/wiki/File:NDL1308967_高野.jpg",
-   "stage": "verify"
-  },
   "st00514": {
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "古見",
    "name_en": "Komi",
    "reasons": [
@@ -696,56 +664,50 @@
    "stage": "verify"
   },
   "st00535": {
-   "attempts": 1,
+   "attempts": 2,
+   "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T04:17:08Z",
+   "last_attempt": "2026-11-04T16:46:42Z",
    "name": "大原",
    "name_en": "Ōbara",
-   "reasons": [
-    "duplicate_sha256_with:st00534"
-   ],
+   "reasons": {
+    "geo_mismatch": 13,
+    "name_mismatch_review": 10,
+    "no_station_evidence": 16,
+    "pref_mismatch": 1
+   },
+   "reject_dist": {},
    "slug": "st00535",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Ohara_Station_-_Chiba_-_Aug_10_2021_various_23_01_08_492000.jpeg",
-   "stage": "verify"
-  },
-  "st00536": {
-   "attempts": 1,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
-   "name": "大原",
-   "name_en": "Ōbara",
-   "reasons": [
-    "duplicate_sha256_with:st00535"
-   ],
-   "slug": "st00536",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Ohara_Station_-_Chiba_-_Aug_10_2021_various_23_01_08_492000.jpeg",
-   "stage": "verify"
+   "source_page": null,
+   "stage": "retry"
   },
   "st00540": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-03T23:35:41Z",
-   "last_attempt": "2026-11-03T23:35:41Z",
+   "last_attempt": "2026-11-04T16:46:57Z",
    "name": "石井",
    "name_en": "Ishii",
-   "note": "perceptual near-dup (dHash hamming<=6) of st00541; refetch a different photo",
    "reasons": {
-    "near_duplicate_with": "st00541"
+    "geo_mismatch": 3,
+    "hard_excluded": 2,
+    "name_mismatch_review": 2,
+    "no_station_evidence": 22,
+    "pref_mismatch": 2
    },
    "reject_dist": {},
    "slug": "st00540",
-   "source_page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1305366-Utagawa_Kunisada-東海道五十三次之内_亀山駅其二_石井兵助.jpg",
-   "stage": "audit"
+   "source_page": null,
+   "stage": "retry"
   },
   "st00548": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T05:07:51Z",
+   "last_attempt": "2026-11-04T16:47:02Z",
    "name": "河原",
    "name_en": "Kawahara",
    "reasons": {
@@ -780,7 +742,7 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "神戸",
    "name_en": "Gōdo",
    "reasons": [
@@ -794,7 +756,7 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "常盤",
    "name_en": "Tokiwa",
    "reasons": [
@@ -808,7 +770,7 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "常盤",
    "name_en": "Tokiwa",
    "reasons": [
@@ -855,7 +817,7 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "栄",
    "name_en": "Sakae",
    "reasons": [
@@ -869,7 +831,7 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "浦田",
    "name_en": "Urada",
    "reasons": [
@@ -967,7 +929,7 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "久保田",
    "name_en": "Kubota",
    "reasons": [
@@ -1678,7 +1640,7 @@
    "attempts": 1,
    "final_dead": false,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T05:09:25Z",
+   "last_attempt": "2026-11-04T16:47:03Z",
    "name": "郡山",
    "name_en": "Kōriyama",
    "reasons": [
@@ -1885,23 +1847,6 @@
    "slug": "st01414",
    "source_page": null,
    "stage": "fetch"
-  },
-  "st01415": {
-   "attempts": 0,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T16:29:12Z",
-   "last_attempt": "2026-11-04T16:29:12Z",
-   "name": "長江",
-   "name_en": "Nagae",
-   "note": "确认错配: 图为上海地铁3号线长江南路站站房(用户确认), 非島根県長江",
-   "reasons": {
-    "wrong_station_confirmed": 1
-   },
-   "reject_dist": {},
-   "slug": "st01415",
-   "source_page": "https://commons.wikimedia.org/wiki/File:The_Line_3_Station_Building_of_South_Changjiang_Road_Station_in_Shanghai_2025.jpg",
-   "stage": "manual"
   },
   "st01416": {
    "attempts": 1,
@@ -2934,5 +2879,5 @@
    "stage": "retry"
   }
  },
- "updated_at": "2026-11-04T16:38:17Z"
+ "updated_at": "2026-11-04T16:47:03Z"
 }

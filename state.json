@@ -34973,8 +34973,8 @@
     "pref_mismatch": 3,
     "name_mismatch_review": 1
    },
-   "ts": "2026-11-04T05:06:55Z",
-   "attempts": 3
+   "ts": "2026-11-04T16:45:01Z",
+   "attempts": 4
   },
   "st00029": {
    "status": "done",
@@ -35391,85 +35391,26 @@
    "attempts": 2
   },
   "st00040": {
-   "status": "done",
-   "file": "stations/st00040/photo.jpg",
-   "sha256": "cee00093fb6a299980f488c8e3630397753c797b621a13b4f5b5d6a34bf35e22",
-   "bytes": 383471,
-   "width": 1012,
-   "height": 1800,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2250,
-    "original_height": 4000
+   "status": "missing",
+   "reasons": {
+    "hard_excluded": 6,
+    "name_mismatch_review": 9,
+    "no_station_evidence": 14,
+    "geo_mismatch": 8
    },
-   "below_spec": false,
-   "source_title": "File:Daegu-metropolitan-transit-corporation-117-Daegok-station-entrance-2-20161009-160534.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Daegu-metropolitan-transit-corporation-117-Daegok-station-entrance-2-20161009-160534.jpg",
-   "author": "LERK",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1012,
-    "height": 1800,
-    "lap_var": 2342.4,
-    "colorfulness": 85.3,
-    "white_frac": 0.024,
-    "edge_density": 0.1048,
-    "sky_frac": 0.023
-   },
-   "reasons": [],
-   "reject_dist": {
-    "resolution_low": 4,
-    "low_color(map/text?)": 1
-   },
-   "downloads": 4,
-   "ts": "2026-11-03T11:38:59Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:44:44Z",
+   "attempts": 2
   },
   "st00041": {
-   "status": "done",
-   "file": "stations/st00041/photo.jpg",
-   "sha256": "a84a9aabefd3f123804ede4abf9804f57479c85d4f983089822e9a111dc4e711",
-   "bytes": 406362,
-   "width": 1800,
-   "height": 1012,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4000,
-    "original_height": 2250
-   },
-   "below_spec": false,
-   "score": 9.29,
-   "source_title": "File:Korail-K322-Daegok-station-platform-20191021-101626.jpg",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:Korail-K322-Daegok-station-platform-20191021-101626.jpg",
-   "author": "LERK",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1012,
-    "lap_var": 2222.7,
-    "colorfulness": 60.7,
-    "white_frac": 0.167,
-    "edge_density": 0.1106,
-    "sky_frac": 0.326,
-    "brightness": 166.4,
-    "dark_frac": 0.031,
-    "center_edge": 0.155
-   },
-   "reasons": [],
-   "reject_dist": {
+   "status": "missing",
+   "reasons": {
     "hard_excluded": 6,
-    "resolution_low": 2
+    "name_mismatch_review": 10,
+    "no_station_evidence": 15,
+    "geo_mismatch": 7
    },
-   "downloads": 3,
-   "ts": "2026-11-03T13:31:35Z",
-   "attempts": 2
+   "ts": "2026-11-04T16:44:48Z",
+   "attempts": 3
   },
   "st00042": {
    "status": "done",
@@ -40665,8 +40606,8 @@
     "hard_excluded": 5,
     "wrong_station": 1
    },
-   "ts": "2026-11-04T05:07:12Z",
-   "attempts": 3
+   "ts": "2026-11-04T16:45:03Z",
+   "attempts": 4
   },
   "st00191": {
    "status": "done",
@@ -44893,8 +44834,8 @@
     "pref_mismatch": 6,
     "wrong_station": 1
    },
-   "ts": "2026-11-04T05:07:17Z",
-   "attempts": 3
+   "ts": "2026-11-04T16:45:09Z",
+   "attempts": 4
   },
   "st00310": {
    "status": "done",
@@ -46262,8 +46203,8 @@
     "no_station_evidence": 1,
     "pref_mismatch": 2
    },
-   "ts": "2026-11-04T05:07:20Z",
-   "attempts": 3
+   "ts": "2026-11-04T16:45:12Z",
+   "attempts": 4
   },
   "st00354": {
    "status": "done",
@@ -47137,8 +47078,8 @@
     "wrong_station": 14,
     "geo_mismatch": 2
    },
-   "ts": "2026-11-04T05:07:26Z",
-   "attempts": 3
+   "ts": "2026-11-04T16:45:17Z",
+   "attempts": 4
   },
   "st00379": {
    "status": "done",
@@ -49606,45 +49547,19 @@
     "no_station_evidence": 6,
     "name_mismatch_review": 2
    },
-   "ts": "2026-11-04T05:07:40Z",
-   "attempts": 3
+   "ts": "2026-11-04T16:45:22Z",
+   "attempts": 4
   },
   "st00458": {
-   "status": "done",
-   "file": "stations/st00458/photo.jpg",
-   "sha256": "107e86fc20a862acbb9a0ca7a5194e4cd12942356a8830f60c39946844614ae8",
-   "bytes": 407204,
-   "width": 1200,
-   "height": 1800,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4096,
-    "original_height": 6144
+   "status": "missing",
+   "reasons": {
+    "geo_mismatch": 23,
+    "no_station_evidence": 5,
+    "name_mismatch_review": 2,
+    "pref_mismatch": 1
    },
-   "below_spec": false,
-   "source_title": "File:NDL1311026 木曽六十九駅 京都三條大橋・奴蘭平.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:NDL1311026_木曽六十九駅_京都三條大橋・奴蘭平.jpg",
-   "author": "豊国",
-   "license": "Public domain",
-   "license_url": "",
-   "metrics": {
-    "width": 1200,
-    "height": 1800,
-    "lap_var": 1250.1,
-    "colorfulness": 53.6,
-    "white_frac": 0.001,
-    "edge_density": 0.0824,
-    "sky_frac": 0.205
-   },
-   "reasons": [],
-   "reject_dist": {
-    "resolution_low": 5
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:20:29Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:45:27Z",
+   "attempts": 2
   },
   "st00459": {
    "status": "done",
@@ -49835,41 +49750,15 @@
    "attempts": 1
   },
   "st00464": {
-   "status": "done",
-   "file": "stations/st00464/photo.jpg",
-   "sha256": "c0b23ab38e588572bdb460f12e18ae2770165490564d32ad6313bfe4d6c2e9cf",
-   "bytes": 480740,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3264,
-    "original_height": 2448
+   "status": "missing",
+   "reasons": {
+    "no_station_evidence": 19,
+    "pref_mismatch": 4,
+    "geo_mismatch": 4,
+    "name_mismatch_review": 18
    },
-   "below_spec": false,
-   "source_title": "File:Nagasaki Electric Tramway Chitosemachi Station.JPG",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Nagasaki_Electric_Tramway_Chitosemachi_Station.JPG",
-   "author": "hyolee2",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1247.8,
-    "colorfulness": 30.9,
-    "white_frac": 0.049,
-    "edge_density": 0.0788,
-    "sky_frac": 0.467
-   },
-   "reasons": [],
-   "reject_dist": {
-    "resolution_low": 2
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:21:04Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:45:35Z",
+   "attempts": 2
   },
   "st00465": {
    "status": "review",
@@ -49950,194 +49839,97 @@
    "attempts": 1
   },
   "st00467": {
-   "status": "done",
-   "file": "stations/st00467/photo.jpg",
-   "sha256": "35f85138e461b7ed327303b88503b67539ec906cffd65536421a6e0aebaf051d",
-   "bytes": 466272,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4651,
-    "original_height": 3101
+   "status": "missing",
+   "reasons": {
+    "no_station_evidence": 25,
+    "pref_mismatch": 2,
+    "name_mismatch_review": 1,
+    "hard_excluded": 3
    },
-   "below_spec": false,
-   "source_title": "File:Hanshin Sumiyoshi Station 20200901.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Hanshin_Sumiyoshi_Station_20200901.jpg",
-   "author": "KishujiRapid",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1827.5,
-    "colorfulness": 48.9,
-    "white_frac": 0.0,
-    "edge_density": 0.1174,
-    "sky_frac": 0.159
-   },
-   "reasons": [],
-   "reject_dist": {
-    "mime_unsupported": 1,
-    "resolution_low": 2
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:21:25Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:45:40Z",
+   "attempts": 2
   },
   "st00468": {
-   "status": "done",
-   "file": "stations/st00468/photo.jpg",
-   "sha256": "35f85138e461b7ed327303b88503b67539ec906cffd65536421a6e0aebaf051d",
-   "bytes": 466272,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4651,
-    "original_height": 3101
+   "status": "missing",
+   "reasons": {
+    "no_station_evidence": 5,
+    "geo_mismatch": 21,
+    "name_mismatch_review": 2,
+    "resolution_low": 1,
+    "hard_excluded": 3
    },
-   "below_spec": false,
-   "source_title": "File:Hanshin Sumiyoshi Station 20200901.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Hanshin_Sumiyoshi_Station_20200901.jpg",
-   "author": "KishujiRapid",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1827.5,
-    "colorfulness": 48.9,
-    "white_frac": 0.0,
-    "edge_density": 0.1174,
-    "sky_frac": 0.159
-   },
-   "reasons": [],
-   "reject_dist": {
-    "mime_unsupported": 1,
-    "resolution_low": 2
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:21:33Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:45:45Z",
+   "attempts": 2
   },
   "st00469": {
-   "status": "done",
-   "file": "stations/st00469/photo.jpg",
-   "sha256": "35f85138e461b7ed327303b88503b67539ec906cffd65536421a6e0aebaf051d",
-   "bytes": 466272,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4651,
-    "original_height": 3101
+   "status": "missing",
+   "reasons": {
+    "no_station_evidence": 4,
+    "geo_mismatch": 21,
+    "pref_mismatch": 2,
+    "name_mismatch_review": 1,
+    "hard_excluded": 3
    },
-   "below_spec": false,
-   "source_title": "File:Hanshin Sumiyoshi Station 20200901.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Hanshin_Sumiyoshi_Station_20200901.jpg",
-   "author": "KishujiRapid",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1827.5,
-    "colorfulness": 48.9,
-    "white_frac": 0.0,
-    "edge_density": 0.1174,
-    "sky_frac": 0.159
-   },
-   "reasons": [],
-   "reject_dist": {
-    "mime_unsupported": 1,
-    "resolution_low": 2
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:21:40Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:45:50Z",
+   "attempts": 2
   },
   "st00470": {
-   "status": "done",
-   "file": "stations/st00470/photo.jpg",
-   "sha256": "35f85138e461b7ed327303b88503b67539ec906cffd65536421a6e0aebaf051d",
-   "bytes": 466272,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4651,
-    "original_height": 3101
+   "status": "missing",
+   "reasons": {
+    "no_station_evidence": 25,
+    "pref_mismatch": 2,
+    "name_mismatch_review": 1,
+    "hard_excluded": 3
    },
-   "below_spec": false,
-   "source_title": "File:Hanshin Sumiyoshi Station 20200901.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Hanshin_Sumiyoshi_Station_20200901.jpg",
-   "author": "KishujiRapid",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1827.5,
-    "colorfulness": 48.9,
-    "white_frac": 0.0,
-    "edge_density": 0.1174,
-    "sky_frac": 0.159
-   },
-   "reasons": [],
-   "reject_dist": {
-    "mime_unsupported": 1,
-    "resolution_low": 2
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:21:47Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:45:56Z",
+   "attempts": 2
   },
   "st00471": {
    "status": "done",
    "file": "stations/st00471/photo.jpg",
-   "sha256": "35f85138e461b7ed327303b88503b67539ec906cffd65536421a6e0aebaf051d",
-   "bytes": 466272,
-   "width": 1800,
-   "height": 1200,
+   "sha256": "cc0f03ba1d1ffd92e449de81a223d73cc51c88415a89b0242fb436632f5484ba",
+   "dhash": "515342c379ae0307",
+   "bytes": 489481,
+   "width": 1600,
+   "height": 1067,
    "normalized": {
     "encoded": true,
-    "long": 1800,
+    "long": 1600,
     "quality": 85,
-    "original_width": 4651,
-    "original_height": 3101
+    "original_width": 1600,
+    "original_height": 1067
    },
    "below_spec": false,
-   "source_title": "File:Hanshin Sumiyoshi Station 20200901.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Hanshin_Sumiyoshi_Station_20200901.jpg",
-   "author": "KishujiRapid",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "score": 6.28,
+   "source_title": "File:三角線住吉駅20200920-IMG 9158.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:三角線住吉駅20200920-IMG_9158.jpg",
+   "author": "くろふね",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
    "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1827.5,
-    "colorfulness": 48.9,
-    "white_frac": 0.0,
-    "edge_density": 0.1174,
-    "sky_frac": 0.159
+    "width": 1600,
+    "height": 1067,
+    "lap_var": 3573.4,
+    "colorfulness": 43.3,
+    "white_frac": 0.219,
+    "edge_density": 0.1804,
+    "sky_frac": 0.897,
+    "brightness": 146.1,
+    "dark_frac": 0.185,
+    "center_edge": 0.1758
    },
    "reasons": [],
    "reject_dist": {
-    "mime_unsupported": 1,
-    "resolution_low": 2
+    "no_station_evidence": 3,
+    "geo_mismatch": 21,
+    "pref_mismatch": 2,
+    "name_mismatch_review": 1,
+    "hard_excluded": 3
    },
    "downloads": 1,
-   "ts": "2026-11-03T12:21:55Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:46:01Z",
+   "attempts": 2
   },
   "st00472": {
    "status": "done",
@@ -50177,80 +49969,24 @@
    "attempts": 1
   },
   "st00473": {
-   "status": "done",
-   "file": "stations/st00473/photo.jpg",
-   "sha256": "1b9645319e142b3a9ad2920cffff074bf3f457c1c34f55043e7a44e05e7463dc",
-   "bytes": 593384,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 8086,
-    "original_height": 5391
+   "status": "missing",
+   "reasons": {
+    "no_station_evidence": 8,
+    "geo_mismatch": 17,
+    "hard_excluded": 5
    },
-   "below_spec": false,
-   "source_title": "File:石橋阪大前駅 (51982717160).jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:石橋阪大前駅_(51982717160).jpg",
-   "author": "m-louis .® from Osaka, Japan",
-   "license": "CC BY-SA 2.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 4103.4,
-    "colorfulness": 31.0,
-    "white_frac": 0.072,
-    "edge_density": 0.1683,
-    "sky_frac": 0.506
-   },
-   "reasons": [],
-   "reject_dist": {
-    "mime_unsupported": 2,
-    "resolution_low": 5
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:22:07Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:46:07Z",
+   "attempts": 2
   },
   "st00474": {
-   "status": "done",
-   "file": "stations/st00474/photo.jpg",
-   "sha256": "1b9645319e142b3a9ad2920cffff074bf3f457c1c34f55043e7a44e05e7463dc",
-   "bytes": 593384,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 8086,
-    "original_height": 5391
+   "status": "missing",
+   "reasons": {
+    "no_station_evidence": 8,
+    "geo_mismatch": 17,
+    "hard_excluded": 5
    },
-   "below_spec": false,
-   "source_title": "File:石橋阪大前駅 (51982717160).jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:石橋阪大前駅_(51982717160).jpg",
-   "author": "m-louis .® from Osaka, Japan",
-   "license": "CC BY-SA 2.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 4103.4,
-    "colorfulness": 31.0,
-    "white_frac": 0.072,
-    "edge_density": 0.1683,
-    "sky_frac": 0.506
-   },
-   "reasons": [],
-   "reject_dist": {
-    "mime_unsupported": 2,
-    "resolution_low": 5
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:22:15Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:46:11Z",
+   "attempts": 2
   },
   "st00475": {
    "status": "done",
@@ -50290,41 +50026,52 @@
    "attempts": 1
   },
   "st00476": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00476/photo.jpg",
-   "sha256": "21c94d2a8f2fe1e4799c5d89cc0c03b18c30c3e525063fa013860cb7186a0285",
-   "bytes": 336247,
+   "sha256": "b184c05df054fed9b14958723bc2ab1f5040d43d8bb69a82fa3aa21296369c72",
+   "dhash": "4b3b892b65475927",
+   "bytes": 653934,
    "width": 1800,
-   "height": 1350,
+   "height": 1800,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 2816,
-    "original_height": 2112
+    "original_width": 2949,
+    "original_height": 2949
    },
    "below_spec": false,
-   "source_title": "File:Oura Kaigan-Dori Station.JPG",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Oura_Kaigan-Dori_Station.JPG",
-   "author": "おんさき at Japanese Wikipedia",
-   "license": "CC BY-SA 3.0",
-   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "score": 4.88,
+   "source_title": "File:Nagasaki Electric Railway Ourakaigan-Dori tram stop (38100642221).jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Nagasaki_Electric_Railway_Ourakaigan-Dori_tram_stop_(38100642221).jpg",
+   "author": "travel oriented from Manila, Philippines",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
    "metrics": {
     "width": 1800,
-    "height": 1350,
-    "lap_var": 1019.2,
-    "colorfulness": 45.7,
-    "white_frac": 0.036,
-    "edge_density": 0.056,
-    "sky_frac": 0.168
+    "height": 1800,
+    "lap_var": 1522.7,
+    "colorfulness": 46.7,
+    "white_frac": 0.008,
+    "edge_density": 0.1192,
+    "sky_frac": 0.512,
+    "brightness": 127.0,
+    "dark_frac": 0.132,
+    "center_edge": 0.1288
    },
-   "reasons": [],
+   "reasons": [
+    "subject_unverified(no_station_kw)",
+    "low_score(4.9<5.0)"
+   ],
    "reject_dist": {
-    "resolution_low": 1
+    "resolution_low": 1,
+    "no_station_evidence": 1,
+    "low_color(map/text?)": 1
    },
-   "downloads": 1,
-   "ts": "2026-11-03T12:22:27Z",
-   "attempts": 1
+   "downloads": 2,
+   "ts": "2026-11-04T16:46:23Z",
+   "attempts": 2
   },
   "st00477": {
    "status": "done",
@@ -50855,43 +50602,52 @@
    "attempts": 1
   },
   "st00493": {
-   "status": "done",
+   "status": "review",
    "file": "stations/st00493/photo.jpg",
-   "sha256": "8a93cbe4dfb8c71774814c5e059dadddc3c0899e5cb18ac9e75efaa7ad03eb7f",
-   "bytes": 403581,
-   "width": 1200,
-   "height": 1800,
+   "sha256": "55f38cd2e641029e98ac65001bb08be5d641a9fc88fa69e4d55524b47008e742",
+   "dhash": "d8d0c08e04640b1a",
+   "bytes": 320050,
+   "width": 1800,
+   "height": 900,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 4096,
-    "original_height": 6144
+    "original_width": 2000,
+    "original_height": 1000
    },
    "below_spec": false,
-   "source_title": "File:NDL1308967 高野.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:NDL1308967_高野.jpg",
-   "author": "国周",
-   "license": "Public domain",
-   "license_url": "",
+   "score": 6.79,
+   "source_title": "File:Tokyo Koya station2.jpg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Tokyo_Koya_station2.jpg",
+   "author": "PekePON (talk)",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
    "metrics": {
-    "width": 1200,
-    "height": 1800,
-    "lap_var": 1248.0,
-    "colorfulness": 59.3,
-    "white_frac": 0.0,
-    "edge_density": 0.0788,
-    "sky_frac": 0.311
+    "width": 1800,
+    "height": 900,
+    "lap_var": 2491.4,
+    "colorfulness": 22.8,
+    "white_frac": 0.008,
+    "edge_density": 0.1133,
+    "sky_frac": 0.869,
+    "brightness": 145.9,
+    "dark_frac": 0.085,
+    "center_edge": 0.1556
    },
-   "reasons": [],
+   "reasons": [
+    "low_color"
+   ],
    "reject_dist": {
-    "license_unclear": 1,
-    "no_author_metadata": 1,
-    "resolution_low": 5
+    "name_mismatch_review": 8,
+    "no_station_evidence": 22,
+    "geo_mismatch": 4,
+    "low_color(map/text?)": 2
    },
-   "downloads": 1,
-   "ts": "2026-11-03T12:23:57Z",
-   "attempts": 1
+   "downloads": 4,
+   "ts": "2026-11-04T16:46:31Z",
+   "attempts": 2
   },
   "st00495": {
    "status": "done",
@@ -51453,43 +51209,16 @@
    "attempts": 1
   },
   "st00514": {
-   "status": "done",
-   "file": "stations/st00514/photo.jpg",
-   "sha256": "be1d65f7091012bccbaa4c13724edb59b33607b8a8f4ffce2ae1adcc5a14ec95",
-   "bytes": 549715,
-   "width": 1800,
-   "height": 1553,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4490,
-    "original_height": 3874
+   "status": "missing",
+   "reasons": {
+    "no_station_evidence": 24,
+    "name_mismatch_review": 4,
+    "geo_mismatch": 1,
+    "wrong_station": 3,
+    "pref_mismatch": 1
    },
-   "below_spec": false,
-   "source_title": "File:Komi Station aug 14 2019 10 42 54 844000.jpeg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Komi_Station_aug_14_2019_10_42_54_844000.jpeg",
-   "author": "Nesnad",
-   "license": "CC BY 4.0",
-   "license_url": "https://creativecommons.org/licenses/by/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1553,
-    "lap_var": 1064.3,
-    "colorfulness": 52.8,
-    "white_frac": 0.013,
-    "edge_density": 0.0556,
-    "sky_frac": 0.273
-   },
-   "reasons": [],
-   "reject_dist": {
-    "oversize_gt_25mb": 3,
-    "resolution_low": 8,
-    "mime_unsupported": 4
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:25:37Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:46:36Z",
+   "attempts": 2
   },
   "st00515": {
    "status": "done",
@@ -52118,80 +51847,60 @@
    "attempts": 3
   },
   "st00535": {
-   "status": "done",
-   "file": "stations/st00535/photo.jpg",
-   "sha256": "e8f4b143bb95fb5861482af6439464ecadd03d122c86bcf30e5d2c3f7e41781d",
-   "bytes": 101951,
-   "width": 1800,
-   "height": 293,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 10284,
-    "original_height": 1674
+   "status": "missing",
+   "reasons": {
+    "no_station_evidence": 16,
+    "name_mismatch_review": 10,
+    "geo_mismatch": 13,
+    "pref_mismatch": 1
    },
-   "below_spec": false,
-   "source_title": "File:Ohara Station - Chiba - Aug 10 2021 various 23 01 08 492000.jpeg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Ohara_Station_-_Chiba_-_Aug_10_2021_various_23_01_08_492000.jpeg",
-   "author": "Nesnad",
-   "license": "CC BY 4.0",
-   "license_url": "https://creativecommons.org/licenses/by/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 293,
-    "lap_var": 1303.7,
-    "colorfulness": 77.9,
-    "white_frac": 0.002,
-    "edge_density": 0.0798,
-    "sky_frac": 0.002
-   },
-   "reasons": [],
-   "reject_dist": {
-    "no_author_metadata": 2,
-    "resolution_low": 3
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:27:29Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:46:42Z",
+   "attempts": 2
   },
   "st00536": {
    "status": "done",
    "file": "stations/st00536/photo.jpg",
-   "sha256": "e8f4b143bb95fb5861482af6439464ecadd03d122c86bcf30e5d2c3f7e41781d",
-   "bytes": 101951,
+   "sha256": "acf9748211b6c7cc5e2c14230bcd92ef04c1eedbe037a32b9963b42478de597e",
+   "dhash": "0f0f676ed0d33f7c",
+   "bytes": 485797,
    "width": 1800,
-   "height": 293,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 10284,
-    "original_height": 1674
+    "original_width": 4032,
+    "original_height": 3024
    },
    "below_spec": false,
-   "source_title": "File:Ohara Station - Chiba - Aug 10 2021 various 23 01 08 492000.jpeg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Ohara_Station_-_Chiba_-_Aug_10_2021_various_23_01_08_492000.jpeg",
+   "score": 8.09,
+   "source_title": "File:Ohara Station - Chiba - Aug 10 2021 various 23 01 40 949000.jpeg",
+   "source_cat": null,
+   "source_page": "https://commons.wikimedia.org/wiki/File:Ohara_Station_-_Chiba_-_Aug_10_2021_various_23_01_40_949000.jpeg",
    "author": "Nesnad",
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0",
    "metrics": {
     "width": 1800,
-    "height": 293,
-    "lap_var": 1303.7,
-    "colorfulness": 77.9,
-    "white_frac": 0.002,
-    "edge_density": 0.0798,
-    "sky_frac": 0.002
+    "height": 1350,
+    "lap_var": 1813.1,
+    "colorfulness": 74.8,
+    "white_frac": 0.004,
+    "edge_density": 0.093,
+    "sky_frac": 0.01,
+    "brightness": 133.4,
+    "dark_frac": 0.033,
+    "center_edge": 0.0802
    },
    "reasons": [],
    "reject_dist": {
-    "no_author_metadata": 2,
-    "resolution_low": 3
+    "no_station_evidence": 23,
+    "name_mismatch_review": 16,
+    "geo_mismatch": 1
    },
-   "downloads": 1,
-   "ts": "2026-11-03T12:27:36Z",
-   "attempts": 1
+   "downloads": 5,
+   "ts": "2026-11-04T16:46:52Z",
+   "attempts": 2
   },
   "st00539": {
    "status": "done",
@@ -52231,42 +51940,16 @@
    "attempts": 1
   },
   "st00540": {
-   "status": "done",
-   "file": "stations/st00540/photo.jpg",
-   "sha256": "47a3b8fe384cb6ebb0a3212e109209afd14cc0fcd3ff46cd8eb76c9efe2f5fed",
-   "bytes": 390274,
-   "width": 1200,
-   "height": 1800,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4096,
-    "original_height": 6144
+   "status": "missing",
+   "reasons": {
+    "no_station_evidence": 22,
+    "name_mismatch_review": 2,
+    "hard_excluded": 2,
+    "pref_mismatch": 2,
+    "geo_mismatch": 3
    },
-   "below_spec": false,
-   "source_title": "File:NDL-DC 1305366-Utagawa Kunisada-東海道五十三次之内 亀山駅其二 石井兵助.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:NDL-DC_1305366-Utagawa_Kunisada-東海道五十三次之内_亀山駅其二_石井兵助.jpg",
-   "author": "Utagawa Kunisada",
-   "license": "Public domain",
-   "license_url": "",
-   "metrics": {
-    "width": 1200,
-    "height": 1800,
-    "lap_var": 1352.8,
-    "colorfulness": 55.8,
-    "white_frac": 0.002,
-    "edge_density": 0.075,
-    "sky_frac": 0.223
-   },
-   "reasons": [],
-   "reject_dist": {
-    "resolution_low": 6,
-    "license_unclear": 1
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:27:47Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:46:57Z",
+   "attempts": 2
   },
   "st00542": {
    "status": "done",
@@ -52490,8 +52173,8 @@
     "geo_mismatch": 5,
     "name_mismatch_review": 7
    },
-   "ts": "2026-11-04T05:07:51Z",
-   "attempts": 3
+   "ts": "2026-11-04T16:47:02Z",
+   "attempts": 4
   },
   "st00549": {
    "status": "done",
@@ -81960,46 +81643,49 @@
   "st01415": {
    "status": "done",
    "file": "stations/st01415/photo.jpg",
-   "sha256": "86aa255c156ad6b683063eb5f44850895d363fe043e3185ae67d3b49c283b461",
-   "bytes": 533689,
+   "sha256": "4763fb019a241e8ec6827589ca5a397dde207e44af9042a34237504dd0909c75",
+   "dhash": "5b987b63e7c5e532",
+   "bytes": 508026,
    "width": 1800,
-   "height": 1350,
+   "height": 1468,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 5712,
-    "original_height": 4284
+    "original_width": 2223,
+    "original_height": 1813
    },
    "below_spec": false,
-   "score": 8.17,
-   "source_title": "File:The Line 3 Station Building of South Changjiang Road Station in Shanghai 2025.jpg",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:The_Line_3_Station_Building_of_South_Changjiang_Road_Station_in_Shanghai_2025.jpg",
-   "author": "Kmchang28",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "score": 8.51,
+   "source_title": "File:Nagae Station platform 2019 1 5.jpg",
+   "source_cat": "Category:Nagae Station",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Nagae_Station_platform_2019_1_5.jpg",
+   "author": "Nesnad",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
    "metrics": {
     "width": 1800,
-    "height": 1350,
-    "lap_var": 3151.9,
-    "colorfulness": 38.4,
-    "white_frac": 0.003,
-    "edge_density": 0.1358,
-    "sky_frac": 0.151,
-    "brightness": 110.4,
-    "dark_frac": 0.188,
-    "center_edge": 0.186
+    "height": 1468,
+    "lap_var": 2242.1,
+    "colorfulness": 31.6,
+    "white_frac": 0.023,
+    "edge_density": 0.1253,
+    "sky_frac": 0.943,
+    "brightness": 162.8,
+    "dark_frac": 0.029,
+    "center_edge": 0.1679
    },
    "reasons": [],
    "reject_dist": {
-    "resolution_low": 2,
-    "mime_unsupported": 9,
-    "oversize_gt_25mb": 1
+    "resolution_low": 1,
+    "no_station_evidence": 13,
+    "name_mismatch_review": 11,
+    "geo_mismatch": 16,
+    "wrong_station": 1
    },
    "downloads": 1,
-   "ts": "2026-11-03T15:11:11Z",
-   "attempts": 1
+   "ts": "2026-11-04T16:44:56Z",
+   "attempts": 2
   },
   "st01416": {
    "status": "missing",
@@ -117350,7 +117036,7 @@
  "stations_path": "data/stations_all.json",
  "batch_index": 5,
  "batch_size": 500,
- "updated_at": "2026-11-04T05:09:24Z",
+ "updated_at": "2026-11-04T16:47:02Z",
  "rate_limit_events": 0,
  "maxlag_retries": 0
 }
