@@ -1,5 +1,5 @@
 {
- "count": 134,
+ "count": 149,
  "schema": 1,
  "stations": {
   "st00051": {
@@ -2087,7 +2087,247 @@
    "slug": "st03578",
    "source_page": null,
    "stage": "retry"
+  },
+  "st01798": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "明星",
+   "name_en": "Myōjō",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st01798",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st01802": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "宮町",
+   "name_en": "Miyamachi",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st01802",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02021": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "平田",
+   "name_en": "Heita",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02021",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02036": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "彦根口",
+   "name_en": "Hikoneguchi",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02036",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02044": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "大学前",
+   "name_en": "Daigaku-mae",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02044",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02193": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "三潴",
+   "name_en": "Mizuma",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02193",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02201": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "古賀茶屋",
+   "name_en": "Koganchaya",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02201",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02227": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "西鉄渡瀬",
+   "name_en": "Nishitetsu-Wataze",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02227",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02229": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "江の浦",
+   "name_en": "Enoura",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02229",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02231": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "塩塚",
+   "name_en": "Shiotsuka",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02231",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02232": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "徳益",
+   "name_en": "Tokumasu",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02232",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02236": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "津古",
+   "name_en": "Tsuko",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02236",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02239": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "大保",
+   "name_en": "Ōho",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02239",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02242": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "西鉄平尾",
+   "name_en": "Nishitetsu-Hirao",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02242",
+   "source_page": null,
+   "stage": "retry"
+  },
+  "st02295": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": null,
+   "name": "名鉄一宮",
+   "name_en": "Meitetsu-Ichinomiya",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "slug": "st02295",
+   "source_page": null,
+   "stage": "retry"
   }
  },
- "updated_at": "2026-11-04T01:09:46Z"
+ "updated_at": "2026-11-04T02:27:36Z"
 }
