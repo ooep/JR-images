@@ -34,7 +34,10 @@
    "reasons": {
     "wrong_station_confirmed": 1
    },
-   "source_page": "https://commons.wikimedia.org/wiki/File:Daegu-metropolitan-transit-corporation-117-Daegok-station-entrance-2-20161009-160534.jpg"
+   "reject_dist": {},
+   "slug": "st00040",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Daegu-metropolitan-transit-corporation-117-Daegok-station-entrance-2-20161009-160534.jpg",
+   "stage": "manual"
   },
   "st00041": {
    "attempts": 0,
@@ -48,7 +51,10 @@
    "reasons": {
     "wrong_station_confirmed": 1
    },
-   "source_page": "https://commons.wikimedia.org/wiki/File:Korail-K322-Daegok-station-platform-20191021-101626.jpg"
+   "reject_dist": {},
+   "slug": "st00041",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Korail-K322-Daegok-station-platform-20191021-101626.jpg",
+   "stage": "manual"
   },
   "st00051": {
    "attempts": 2,
@@ -1892,7 +1898,10 @@
    "reasons": {
     "wrong_station_confirmed": 1
    },
-   "source_page": "https://commons.wikimedia.org/wiki/File:The_Line_3_Station_Building_of_South_Changjiang_Road_Station_in_Shanghai_2025.jpg"
+   "reject_dist": {},
+   "slug": "st01415",
+   "source_page": "https://commons.wikimedia.org/wiki/File:The_Line_3_Station_Building_of_South_Changjiang_Road_Station_in_Shanghai_2025.jpg",
+   "stage": "manual"
   },
   "st01416": {
    "attempts": 1,
@@ -2925,5 +2934,5 @@
    "stage": "retry"
   }
  },
- "updated_at": "2026-11-04T16:29:12Z"
+ "updated_at": "2026-11-04T16:38:17Z"
 }
