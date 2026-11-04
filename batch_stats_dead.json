@@ -1,138 +1,208 @@
 {
  "attempted": 0,
- "done": 7,
- "review": 8,
- "missing": 10,
+ "done": 6,
+ "review": 2,
+ "missing": 17,
  "failed": 0,
  "skipped_resume": 0,
- "bytes": 6305701,
+ "bytes": 3111047,
  "reject_dist": {
-  "no_station_evidence": 180,
-  "pref_mismatch": 33,
-  "geo_mismatch": 31,
-  "name_mismatch_review": 104,
-  "hard_excluded": 24,
-  "wrong_station": 48,
-  "resolution_low": 21,
-  "low_color(map/text?)": 7
+  "hard_excluded": 6,
+  "resolution_low": 5,
+  "name_mismatch_review": 34,
+  "no_station_evidence": 66,
+  "geo_mismatch": 15,
+  "low_color(map/text?)": 8,
+  "wrong_station": 25,
+  "pref_mismatch": 3
  },
  "dead": [
   {
-   "slug": "st01459",
-   "name": "小泉町",
+   "slug": "st07032",
+   "name": "築城",
    "reasons": {
-    "pref_mismatch": 2,
-    "no_station_evidence": 17,
-    "name_mismatch_review": 16,
-    "wrong_station": 1,
     "hard_excluded": 1,
-    "geo_mismatch": 2
+    "no_station_evidence": 12,
+    "name_mismatch_review": 11,
+    "wrong_station": 8,
+    "low_color(map/text?)": 2
    }
   },
   {
-   "slug": "st01523",
-   "name": "霞ケ関",
+   "slug": "st07999",
+   "name": "甲立",
    "reasons": {
-    "no_station_evidence": 6,
-    "geo_mismatch": 12,
-    "name_mismatch_review": 5,
-    "pref_mismatch": 10,
-    "hard_excluded": 2
-   }
-  },
-  {
-   "slug": "st01552",
-   "name": "広野",
-   "reasons": {
-    "name_mismatch_review": 1,
-    "no_station_evidence": 9,
-    "geo_mismatch": 15,
-    "pref_mismatch": 1,
-    "wrong_station": 4
-   }
-  },
-  {
-   "slug": "st01628",
-   "name": "生田",
-   "reasons": {
-    "wrong_station": 1,
-    "pref_mismatch": 5,
-    "no_station_evidence": 9,
-    "hard_excluded": 2
-   }
-  },
-  {
-   "slug": "st01649",
-   "name": "黒川",
-   "reasons": {
-    "no_station_evidence": 17,
-    "name_mismatch_review": 9,
-    "geo_mismatch": 10
-   }
-  },
-  {
-   "slug": "st04017",
-   "name": "竹田",
-   "reasons": {
-    "name_mismatch_review": 10,
-    "no_station_evidence": 14,
-    "geo_mismatch": 13,
-    "hard_excluded": 2,
-    "low_color(map/text?)": 1
-   }
-  },
-  {
-   "slug": "st04875",
-   "name": "中津",
-   "reasons": {
-    "no_station_evidence": 4,
-    "hard_excluded": 7,
-    "pref_mismatch": 1,
-    "geo_mismatch": 17
-   }
-  },
-  {
-   "slug": "st05086",
-   "name": "伊勢鎌倉",
-   "reasons": {
-    "no_station_evidence": 34,
-    "name_mismatch_review": 33,
+    "name_mismatch_review": 25,
+    "no_station_evidence": 26,
+    "geo_mismatch": 1,
     "wrong_station": 2,
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st00330",
+   "name": "三条",
+   "reasons": {
+    "geo_mismatch": 7,
+    "no_station_evidence": 18,
+    "hard_excluded": 3,
     "pref_mismatch": 1
    }
   },
   {
-   "slug": "st05277",
-   "name": "宇島",
+   "slug": "st00331",
+   "name": "三条",
    "reasons": {
-    "no_station_evidence": 22,
-    "resolution_low": 3,
-    "name_mismatch_review": 16,
-    "wrong_station": 12,
-    "hard_excluded": 2
+    "no_station_evidence": 20,
+    "hard_excluded": 3,
+    "geo_mismatch": 5,
+    "pref_mismatch": 1
    }
   },
   {
-   "slug": "st05828",
-   "name": "高瀬",
+   "slug": "st00334",
+   "name": "加茂",
    "reasons": {
-    "pref_mismatch": 14,
+    "no_station_evidence": 9,
+    "geo_mismatch": 10,
+    "hard_excluded": 2,
+    "pref_mismatch": 7,
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st00336",
+   "name": "加茂",
+   "reasons": {
+    "no_station_evidence": 9,
+    "geo_mismatch": 11,
+    "hard_excluded": 2,
+    "pref_mismatch": 6,
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st00346",
+   "name": "吉田",
+   "reasons": {
+    "no_station_evidence": 23,
+    "hard_excluded": 2,
+    "geo_mismatch": 6
+   }
+  },
+  {
+   "slug": "st00356",
+   "name": "都通",
+   "reasons": {
+    "name_mismatch_review": 21,
+    "no_station_evidence": 22,
     "wrong_station": 2,
-    "name_mismatch_review": 7,
-    "no_station_evidence": 14
+    "geo_mismatch": 1,
+    "pref_mismatch": 4
+   }
+  },
+  {
+   "slug": "st00374",
+   "name": "二軒茶屋",
+   "reasons": {
+    "no_station_evidence": 22
+   }
+  },
+  {
+   "slug": "st00383",
+   "name": "神田",
+   "reasons": {
+    "no_station_evidence": 14,
+    "pref_mismatch": 5,
+    "geo_mismatch": 9,
+    "hard_excluded": 1
+   }
+  },
+  {
+   "slug": "st00385",
+   "name": "神田",
+   "reasons": {
+    "no_station_evidence": 14,
+    "pref_mismatch": 5,
+    "geo_mismatch": 9,
+    "hard_excluded": 1
+   }
+  },
+  {
+   "slug": "st00387",
+   "name": "郡元",
+   "reasons": {
+    "name_mismatch_review": 6,
+    "no_station_evidence": 12,
+    "resolution_low": 1,
+    "hard_excluded": 1,
+    "wrong_station": 6,
+    "geo_mismatch": 9
+   }
+  },
+  {
+   "slug": "st00397",
+   "name": "祇園",
+   "reasons": {
+    "no_station_evidence": 12,
+    "geo_mismatch": 15,
+    "pref_mismatch": 1,
+    "hard_excluded": 3
+   }
+  },
+  {
+   "slug": "st00401",
+   "name": "赤坂",
+   "reasons": {
+    "no_station_evidence": 21,
+    "hard_excluded": 1,
+    "geo_mismatch": 5,
+    "name_mismatch_review": 1,
+    "resolution_low": 1
+   }
+  },
+  {
+   "slug": "st00402",
+   "name": "赤坂",
+   "reasons": {
+    "no_station_evidence": 21,
+    "hard_excluded": 1,
+    "geo_mismatch": 5,
+    "pref_mismatch": 1
+   }
+  },
+  {
+   "slug": "st00403",
+   "name": "赤坂",
+   "reasons": {
+    "no_station_evidence": 21,
+    "hard_excluded": 1,
+    "geo_mismatch": 5,
+    "pref_mismatch": 1
+   }
+  },
+  {
+   "slug": "st00408",
+   "name": "藤崎",
+   "reasons": {
+    "geo_mismatch": 16,
+    "pref_mismatch": 3,
+    "no_station_evidence": 5,
+    "hard_excluded": 5,
+    "name_mismatch_review": 1
    }
   }
  ],
  "dead_retried": 25,
- "dead_recovered": 15,
- "dead_new": 10,
- "dead_cumulative": 169,
+ "dead_recovered": 8,
+ "dead_new": 17,
+ "dead_cumulative": 161,
  "dead_final": 0,
  "rate_limit_events": 0,
  "maxlag_retries": 0,
  "near_dup_pairs": 0,
  "user_agent": "JR-images-bot/1.0 (https://github.com/ooep/JR-images; contact: https://github.com/ooep/JR-images/issues)",
- "elapsed_sec": 176,
+ "elapsed_sec": 157,
  "batch_index": 6,
- "generated_at": "2026-11-04T04:55:04Z"
+ "generated_at": "2026-11-04T05:02:22Z"
 }
