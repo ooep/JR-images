@@ -1,7 +1,24 @@
 {
- "count": 132,
+ "count": 139,
  "schema": 1,
  "stations": {
+  "st00031": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:14:16Z",
+   "last_attempt": "2026-11-04T00:14:16Z",
+   "name": "橋本",
+   "name_en": "Hashimoto",
+   "note": "user-confirmed wrong image; refetch",
+   "reasons": {
+    "geo_mismatch": "橋本←神奈川橋本 342km"
+   },
+   "reject_dist": {},
+   "slug": "st00031",
+   "source_page": "https://commons.wikimedia.org/wiki/File:橋本駅_-_panoramio.jpg",
+   "stage": "audit"
+  },
   "st00039": {
    "attempts": 1,
    "below_spec": false,
@@ -389,6 +406,23 @@
    "slug": "st00165",
    "source_page": "https://commons.wikimedia.org/wiki/File:Matsuyama_City_Hall_Station_20251028_(2).jpg",
    "stage": "verify"
+  },
+  "st00170": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:14:16Z",
+   "last_attempt": "2026-11-04T00:14:16Z",
+   "name": "皆実町六丁目",
+   "name_en": "Minamimachi 6-chōme",
+   "note": "user-confirmed wrong image; refetch",
+   "reasons": {
+    "geo_mismatch": "皆実町六丁目←名古屋便利店 418km"
+   },
+   "reject_dist": {},
+   "slug": "st00170",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Sunkus_Nagoya_Kamiiida_20170405.jpg",
+   "stage": "audit"
   },
   "st00180": {
    "attempts": 1,
@@ -1621,6 +1655,23 @@
    "source_page": null,
    "stage": "fetch"
   },
+  "st00792": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:14:16Z",
+   "last_attempt": "2026-11-04T00:14:16Z",
+   "name": "川端",
+   "name_en": "Kawabata",
+   "note": "user-confirmed wrong image; refetch",
+   "reasons": {
+    "geo_mismatch": "川端←中洲川端(福岡) 1440km"
+   },
+   "reject_dist": {},
+   "slug": "st00792",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Platform_of_Nakasu-Kawabata_Station_(Hakozaki_Line)_5.jpg",
+   "stage": "audit"
+  },
   "st00822": {
    "attempts": 1,
    "below_spec": false,
@@ -1670,6 +1721,23 @@
    "slug": "st00949",
    "source_page": null,
    "stage": "fetch"
+  },
+  "st00953": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:14:16Z",
+   "last_attempt": "2026-11-04T00:14:16Z",
+   "name": "高松町",
+   "name_en": "Takamatsuchō",
+   "note": "user-confirmed wrong image; refetch",
+   "reasons": {
+    "pref_mismatch": "高松町←香川県道図 pref_mismatch"
+   },
+   "reject_dist": {},
+   "slug": "st00953",
+   "source_page": "https://commons.wikimedia.org/wiki/File:香川県道Ｒ１５０－１.jpg",
+   "stage": "audit"
   },
   "st00957": {
    "attempts": 1,
@@ -1885,6 +1953,23 @@
    "source_page": null,
    "stage": "fetch"
   },
+  "st01209": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:14:16Z",
+   "last_attempt": "2026-11-04T00:14:16Z",
+   "name": "JR小倉",
+   "name_en": "JR Ogura",
+   "note": "user-confirmed wrong image; refetch",
+   "reasons": {
+    "geo_mismatch": "JR小倉←北九州小倉 464km"
+   },
+   "reject_dist": {},
+   "slug": "st01209",
+   "source_page": "https://commons.wikimedia.org/wiki/File:ＪＲ小倉駅とモノレール_-_panoramio.jpg",
+   "stage": "audit"
+  },
   "st01233": {
    "attempts": 1,
    "final_dead": false,
@@ -1983,6 +2068,23 @@
    "source_page": null,
    "stage": "fetch"
   },
+  "st01465": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:14:16Z",
+   "last_attempt": "2026-11-04T00:14:16Z",
+   "name": "中町",
+   "name_en": null,
+   "note": "user-confirmed wrong image; refetch",
+   "reasons": {
+    "geo_mismatch": "中町←門司站台 649km"
+   },
+   "reject_dist": {},
+   "slug": "st01465",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Platform_of_Moji_Station_2.JPG",
+   "stage": "audit"
+  },
   "st01474": {
    "attempts": 1,
    "below_spec": false,
@@ -2018,6 +2120,23 @@
    "slug": "st01475",
    "source_page": null,
    "stage": "fetch"
+  },
+  "st01648": {
+   "attempts": 1,
+   "below_spec": false,
+   "final_dead": false,
+   "first_seen": "2026-11-04T00:14:16Z",
+   "last_attempt": "2026-11-04T00:14:16Z",
+   "name": "黒川",
+   "name_en": "Kurogō",
+   "note": "user-confirmed wrong image; refetch",
+   "reasons": {
+    "geo_mismatch": "黒川←Sakhalin pokrovka 1643km"
+   },
+   "reject_dist": {},
+   "slug": "st01648",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Sakhalin_railway_pokrovka_station_1.jpg",
+   "stage": "audit"
   },
   "st01659": {
    "attempts": 1,
@@ -2084,5 +2203,5 @@
    "stage": "retry"
   }
  },
- "updated_at": "2026-11-03T23:35:41Z"
+ "updated_at": "2026-11-04T00:14:16Z"
 }

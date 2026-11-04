@@ -1,0 +1,32 @@
+name: rules-audit
+
+# 县名/站名判据回溯体检：对已推图片的 title/category 元数据应用两条判据，
+# 输出判掉总数与前 50 明细（供误杀率评估）。只读，不推 main。
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rules audit
+        run: python scripts/rules_audit.py
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rules-audit-report
+          path: rules_audit_report.json
+          if-no-files-found: ignore

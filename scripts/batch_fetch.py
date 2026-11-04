@@ -444,6 +444,99 @@ def haversine_m(la1, lo1, la2, lo2):
 GEO_LIMIT_M = 20000        # 图片坐标与站点坐标距离上限
 GEO_LIMIT_SAMENAME_M = 10000  # 同名站簇（跨县同名风险）取更严阈值
 
+PREFS = ['北海道', '青森県', '岩手県', '宮城県', '秋田県', '山形県', '福島県',
+         '茨城県', '栃木県', '群馬県', '埼玉県', '千葉県', '東京都', '神奈川県',
+         '新潟県', '富山県', '石川県', '福井県', '山梨県', '長野県', '岐阜県',
+         '静岡県', '愛知県', '三重県', '滋賀県', '京都府', '大阪府', '兵庫県',
+         '奈良県', '和歌山県', '鳥取県', '島根県', '岡山県', '広島県', '山口県',
+         '徳島県', '香川県', '愛媛県', '高知県', '福岡県', '佐賀県', '長崎県',
+         '熊本県', '大分県', '宮崎県', '鹿児島県', '沖縄県']
+PREF_ROMAJI = {'北海道': 'Hokkaido', '青森県': 'Aomori', '岩手県': 'Iwate',
+               '宮城県': 'Miyagi', '秋田県': 'Akita', '山形県': 'Yamagata',
+               '福島県': 'Fukushima', '茨城県': 'Ibaraki', '栃木県': 'Tochigi',
+               '群馬県': 'Gunma', '埼玉県': 'Saitama', '千葉県': 'Chiba',
+               '東京都': 'Tokyo', '神奈川県': 'Kanagawa', '新潟県': 'Niigata',
+               '富山県': 'Toyama', '石川県': 'Ishikawa', '福井県': 'Fukui',
+               '山梨県': 'Yamanashi', '長野県': 'Nagano', '岐阜県': 'Gifu',
+               '静岡県': 'Shizuoka', '愛知県': 'Aichi', '三重県': 'Mie',
+               '滋賀県': 'Shiga', '京都府': 'Kyoto', '大阪府': 'Osaka',
+               '兵庫県': 'Hyogo', '奈良県': 'Nara', '和歌山県': 'Wakayama',
+               '鳥取県': 'Tottori', '島根県': 'Shimane', '岡山県': 'Okayama',
+               '広島県': 'Hiroshima', '山口県': 'Yamaguchi', '徳島県': 'Tokushima',
+               '香川県': 'Kagawa', '愛媛県': 'Ehime', '高知県': 'Kochi',
+               '福岡県': 'Fukuoka', '佐賀県': 'Saga', '長崎県': 'Nagasaki',
+               '熊本県': 'Kumamoto', '大分県': 'Oita', '宮崎県': 'Miyazaki',
+               '鹿児島県': 'Kagoshima', '沖縄県': 'Okinawa'}
+
+
+def pref_forms(pref):
+    """県名本体 + 去后缀形（広島県→広島）+ 罗马字，全部小写可比。"""
+    forms = set()
+    if not pref:
+        return forms
+    forms.add(pref)
+    for suf in ('県', '府', '都'):
+        if pref.endswith(suf):
+            forms.add(pref[:-1])
+    rom = PREF_ROMAJI.get(pref)
+    if rom:
+        forms.add(rom.lower())
+    return forms
+
+
+def pref_mismatch_hit(text, st):
+    """县名判据：title/category 出现其他都道府县名且不含本站县名 → True（拒）。
+    站名本身含该县名时不算"其他县"（如 大阪的福島駅 标题含 Fukushima）。"""
+    own = (st.get('pref') or '').strip()
+    name = st.get('name') or ''
+    if not own or not text:
+        return False, None
+    own_forms = pref_forms(own)
+    hit_own = any(f.lower() in text.lower() for f in own_forms if f)
+    if hit_own:
+        return False, None
+    for p in PREFS:
+        if p == own:
+            continue
+        kanji_forms = {p}
+        for suf in ('県', '府', '都'):
+            if p.endswith(suf):
+                kanji_forms.add(p[:-1])
+        # 站名本身就是该县名（如 大阪的福島駅 / 奈良駅）→ 不视为"其他县"
+        if any(f and f in name for f in kanji_forms):
+            continue
+        if any(f.lower() in text.lower() for f in pref_forms(p) if f):
+            return True, p
+    return False, None
+
+
+def name_tokens(st, en_label=None):
+    """站名本体 + 常见变体（±駅 / 罗马字 / 英文 + Station）。"""
+    toks = set()
+    name = (st.get('name') or '').strip()
+    if name:
+        toks.add(name)
+        toks.add(name + '駅')
+        if name.endswith('駅'):
+            toks.add(name[:-1])
+    for t in (st.get('name_en'), en_label):
+        t = (t or '').strip()
+        if t:
+            toks.add(t)
+            toks.add(t + ' Station')
+            toks.add(t + ' station')
+            toks.add(t + '-station')
+    return toks
+
+
+def name_mismatch_hit(text, st, en_label=None):
+    """站名判据：title/category 未出现站名本体/官方罗马字/英文 → True（不选，待复核）。"""
+    toks = name_tokens(st, en_label)
+    if not toks or not text:
+        return False
+    low = text.lower()
+    return not any(t.lower() in low for t in toks if t)
+
 
 def geo_mismatch(info, st, same_name_names):
     """地理校验闸门：图片带坐标且与站点坐标超阈值 → 拒（防同名异站错配）。
@@ -646,6 +739,15 @@ def process_station(st, args, tmpdir, relaxed=False, used=None):
         bad_geo, _gd = geo_mismatch(info, st, getattr(args, 'same_name_names', set()))
         if bad_geo:
             reject_dist['geo_mismatch'] = reject_dist.get('geo_mismatch', 0) + 1
+            continue
+        # 不依赖坐标的硬判据：县名（拒）与站名（不选，待复核）
+        _text = (c['title'] or '') + ' ' + (c.get('cat') or '')
+        bad_pref, _other = pref_mismatch_hit(_text, st)
+        if bad_pref:
+            reject_dist['pref_mismatch'] = reject_dist.get('pref_mismatch', 0) + 1
+            continue
+        if name_mismatch_hit(_text, st, en_label):
+            reject_dist['name_mismatch'] = reject_dist.get('name_mismatch', 0) + 1
             continue
         ok, lic, lic_url, author, reason = license_verdict(info.get('extmetadata'))
         if not ok:
