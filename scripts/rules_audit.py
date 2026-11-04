@@ -229,9 +229,10 @@ def has_location_marker(title):
     return False
 
 
-def wrong_station_hit(title, e, kanji, romaji_re):
+def wrong_station_hit(title, cat, e, kanji, romaji_re, same_name_names):
     """wrong_station：标题命中全站表中另一站的站名且不命中本站 → 硬拒。
-    防误杀约束与抓取端一致（站名语境/无 name_en 跳过/复合站名/通名/最长命中）。"""
+    防误杀约束与抓取端一致（站名语境/无 name_en 跳过/复合站名/通名/最长命中/
+    EX1 前后缀简写豁免、EX2 汉字无语境豁免——均限站名唯一且 category 佐证本站）。"""
     if not title:
         return False, None, None
     slug = e.get('slug') or ''
@@ -241,6 +242,11 @@ def wrong_station_hit(title, e, kanji, romaji_re):
     for t in name_tokens(e):
         if t and _norm_loose(t) and _norm_loose(t) in loose:
             return False, None, None
+    own_unique = bool(name) and name not in same_name_names
+    cat_has_own = False
+    if cat:
+        catlow = _norm_loose(cat)
+        cat_has_own = any(_norm_loose(t) in catlow for t in name_tokens(e) if t)
     for _ln, nm, slugs in station_names_in_title(title, kanji, romaji_re):
         if slug in slugs:
             continue
@@ -250,6 +256,16 @@ def wrong_station_hit(title, e, kanji, romaji_re):
             continue
         if _norm_loose(nm) in _norm_loose(name):
             continue
+        if own_unique and cat_has_own:
+            if nm.isascii():
+                nmm = _norm_loose(nm)
+                own_rom = _norm_loose(en_own)
+                if nmm and own_rom and (own_rom.endswith(nmm) or own_rom.startswith(nmm)):
+                    continue
+            else:
+                i = title.find(nm)
+                if title[i + len(nm):i + len(nm) + 1] != '駅':
+                    continue
         return True, nm, slugs
     return False, None, None
 
@@ -260,6 +276,8 @@ def main():
     stations = doc['stations'] if isinstance(doc, dict) else doc
     kanji, _romaji, romaji_re = build_name_index(stations)
     by_slug = {s['slug']: s for s in stations}
+    _nc = collections.Counter((s.get('name') or '').strip() for s in stations)
+    same_name_names = {n for n, c in _nc.items() if c > 1 and n}
 
     pref_hits, pref_review, name_hits, ws_hits, checked = [], [], [], [], 0
     for slug, e in sorted(idx.get('stations', {}).items()):
@@ -288,7 +306,8 @@ def main():
                                 'other_pref': pref_mismatch_hit(cat, full)[1],
                                 'title': title, 'cat': cat[:120],
                                 'source': e.get('source')})
-        hit_ws, hit_name, hit_slugs = wrong_station_hit(title, full, kanji, romaji_re)
+        hit_ws, hit_name, hit_slugs = wrong_station_hit(
+            title, cat, full, kanji, romaji_re, same_name_names)
         if hit_ws:
             hp = sorted({(by_slug.get(s2) or {}).get('pref') or '?'
                          for s2 in (hit_slugs or [])})

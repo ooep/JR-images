@@ -693,12 +693,15 @@ def named_own_station(st, hits):
     return False
 
 
-def wrong_station_hit(title, st, name_index):
+def wrong_station_hit(title, cat, st, name_index, same_name_names):
     """wrong_station 判据：标题命中全站表中另一站的站名（汉字/官方罗马字）
     且不命中本站 → (True, 命中名, 命中站slugs)（硬拒）。
     防误杀约束：罗马字须有站名语境（后接 station/sta/stn/eki）；本站无
     name_en 时不采信罗马字命中（无法自识别）；复合站名子串跳过；通名跳过；
-    重叠命中取最长。回放 2,456 张误杀率 0%（<2% 线）。"""
+    重叠命中取最长。另两条旁证豁免（仅站名唯一且 category 佐证本站时）：
+    EX1 罗马字命中是本站名前缀/后缀（KT-Wakamatsu=伊勢若松简写）；
+    EX2 汉字命中无站名语境（后字非駅，如 瀬田⊂瀬田玉川神社）。
+    回放 2,937 张误杀率 0%（<2% 线）。"""
     if not title:
         return False, None, None
     kanji, _rom, romaji_re = name_index
@@ -710,6 +713,11 @@ def wrong_station_hit(title, st, name_index):
     for t in name_tokens(st):
         if t and _norm_loose(t) and _norm_loose(t) in loose:
             return False, None, None
+    own_unique = bool(name) and name not in same_name_names
+    cat_has_own = False
+    if cat:
+        catlow = _norm_loose(cat)
+        cat_has_own = any(_norm_loose(t) in catlow for t in name_tokens(st) if t)
     for _ln, nm, slugs in station_names_in_title(title, kanji, romaji_re):
         if slug in slugs:
             continue
@@ -721,6 +729,18 @@ def wrong_station_hit(title, st, name_index):
             continue
         if _norm_loose(nm) in _norm_loose(name):
             continue
+        if own_unique and cat_has_own:
+            # EX1：罗马字命中是本站名的前缀/后缀（简写）→ 豁免
+            if nm.isascii():
+                nmm = _norm_loose(nm)
+                own_rom = _norm_loose(en_own)
+                if nmm and own_rom and (own_rom.endswith(nmm) or own_rom.startswith(nmm)):
+                    continue
+            else:
+                # EX2：汉字命中后字非駅（非显式站名语境）→ 豁免
+                i = title.find(nm)
+                if title[i + len(nm):i + len(nm) + 1] != '駅':
+                    continue
         return True, nm, slugs
     return False, None, None
 
@@ -931,8 +951,10 @@ def process_station(st, args, tmpdir, relaxed=False, used=None):
             reject_dist['pref_mismatch_review'] = \
                 reject_dist.get('pref_mismatch_review', 0) + 1
         # wrong_station：标题指名全站表中另一站且不命中本站 → 硬拒
-        # （回放 2,456 张误杀率 0%<2%；通名/复合站名/无 name_en 已约束）
-        bad_ws, _wn, _ws = wrong_station_hit(_title, st, (_kanji, _rom, _romre))
+        # （回放 2,937 张误杀率 0%<2%；通名/复合站名/无 name_en/旁证豁免已约束）
+        bad_ws, _wn, _ws = wrong_station_hit(
+            _title, _cat, st, (_kanji, _rom, _romre),
+            getattr(args, 'same_name_names', set()))
         if bad_ws:
             reject_dist['wrong_station'] = reject_dist.get('wrong_station', 0) + 1
             continue
