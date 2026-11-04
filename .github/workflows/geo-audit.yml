@@ -1,0 +1,35 @@
+name: geo-audit
+
+# 已推图片地理回溯体检：图片页坐标 vs 站点坐标（同名站簇 10km / 其余 20km），
+# 无坐标的做都道府县名旁证。只读，不推 main。
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install --quiet requests
+
+      - name: Geo audit
+        run: python scripts/geo_audit.py
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: geo-audit-report
+          path: geo_audit_report.json
+          if-no-files-found: ignore

@@ -20,11 +20,13 @@
       --batch-index 0 --batch-size 500 --workdir . [--probe]
 """
 import argparse
+import collections
 import concurrent.futures
 import datetime
 import hashlib
 import io
 import json
+import math
 import os
 import re
 import sys
@@ -413,6 +415,49 @@ def hamming(a, b):
     return bin(a ^ b).count('1')
 
 
+def parse_gps(em, key):
+    """从 extmetadata 解析 GPS 十进制度数；解析不出返回 None。"""
+    v = ((em.get(key) or {}).get('value') or '').strip()
+    if not v:
+        return None
+    try:
+        return float(v)
+    except ValueError:
+        m = re.match(r'(-?\d+(?:\.\d+)?)[°:]\s*(\d+(?:\.\d+)?)[\'′:]\s*([\d.]+)["″]?\s*([NSEW]?)', v)
+        if not m:
+            return None
+        deg = float(m.group(1)) + float(m.group(2)) / 60 + float(m.group(3)) / 3600
+        if m.group(4) in ('S', 'W') or v.lstrip().startswith('-'):
+            deg = -abs(deg)
+        return deg
+
+
+def haversine_m(la1, lo1, la2, lo2):
+    r = 6371000.0
+    p1, p2 = math.radians(la1), math.radians(la2)
+    dp = math.radians(la2 - la1)
+    dl = math.radians(lo2 - lo1)
+    h = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return 2 * r * math.asin(math.sqrt(h))
+
+
+GEO_LIMIT_M = 20000        # 图片坐标与站点坐标距离上限
+GEO_LIMIT_SAMENAME_M = 10000  # 同名站簇（跨县同名风险）取更严阈值
+
+
+def geo_mismatch(info, st, same_name_names):
+    """地理校验闸门：图片带坐标且与站点坐标超阈值 → 拒（防同名异站错配）。
+    任一侧无坐标 → 放行（无法判定）。返回 (是否不符, 距离m 或 None)。"""
+    em = info.get('extmetadata') or {}
+    ilat, ilon = parse_gps(em, 'GPSLatitude'), parse_gps(em, 'GPSLongitude')
+    slat, slon = st.get('lat'), st.get('lon')
+    if ilat is None or ilon is None or not slat or not slon:
+        return False, None
+    d = haversine_m(ilat, ilon, slat, slon)
+    limit = GEO_LIMIT_SAMENAME_M if (st.get('name') in same_name_names) else GEO_LIMIT_M
+    return d > limit, d
+
+
 def quality_verdict(m, title, from_category):
     """返回 (verdict, reasons)：verdict ∈ done/review/reject。
     车站本体判定：分类来源=主题证据；搜索来源要求文件名含车站关键词；
@@ -590,13 +635,17 @@ def process_station(st, args, tmpdir, relaxed=False, used=None):
     if not merged and dup_title_skipped:
         return {'status': 'missing', 'reasons': {'duplicate_all_used': dup_title_skipped}}, None
 
-    # 硬过滤：选图口径硬排除（地图/示意图/时刻表/标牌/文字图）+ 许可 / 尺寸 / 体积 / mime
+    # 硬过滤：选图口径硬排除（地图/示意图/时刻表/标牌/文字图）+ 地理校验 + 许可 / 尺寸 / 体积 / mime
     kept, reject_dist = [], {}
     for c in merged:
         info = c['info']
         if HARD_EXCLUDE_RE.search(c['title']) or \
                 (c.get('cat') and HARD_EXCLUDE_RE.search(c['cat'])):
             reject_dist['hard_excluded'] = reject_dist.get('hard_excluded', 0) + 1
+            continue
+        bad_geo, _gd = geo_mismatch(info, st, getattr(args, 'same_name_names', set()))
+        if bad_geo:
+            reject_dist['geo_mismatch'] = reject_dist.get('geo_mismatch', 0) + 1
             continue
         ok, lic, lic_url, author, reason = license_verdict(info.get('extmetadata'))
         if not ok:
@@ -892,6 +941,9 @@ def main():
         args.batch_index, args.stations, len(stations), len(batch),
         '%s..%s' % (batch[0]['slug'], batch[-1]['slug']) if batch else '-'))
     print('User-Agent: %s' % UA)
+    # 同名站簇（全清单范围）：地理校验闸门对其使用更严阈值（10km）
+    _nc = collections.Counter((s.get('name') or '').strip() for s in stations)
+    args.same_name_names = {n for n, c in _nc.items() if c > 1 and n}
 
     state_path = args.state or os.path.join(args.workdir, 'state.json')
     state = load_state(state_path)
