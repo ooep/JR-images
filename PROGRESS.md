@@ -92,3 +92,13 @@
 - cumulative_indexed=3437/8909
 - elapsed=209s
 
+
+## dead retry — 2026-11-04T04:47:47Z
+- list: `data/stations_all.json` (canonical 8909)
+- attempted=0 done=7 review=3 missing=15 failed=0 skipped_resume=0
+- bytes_this_batch=4072592 avg=407259
+- dead: new=15 cumulative=184 retried=25 recovered=10
+- reject_dist={"no_station_evidence": 89, "wrong_station": 39, "hard_excluded": 12, "pref_mismatch": 25, "geo_mismatch": 43, "name_mismatch_review": 34, "resolution_low": 3, "low_color(map/text?)": 2}
+- cumulative_indexed=3437/8909
+- elapsed=167s
+
