@@ -754,15 +754,16 @@ def process_station(st, args, tmpdir, relaxed=False, used=None):
         if bad_geo:
             reject_dist['geo_mismatch'] = reject_dist.get('geo_mismatch', 0) + 1
             continue
-        # 不依赖坐标的硬判据：县名（拒）与站名（不选，待复核）
+        # 不依赖坐标的硬判据：县名（拒）；站名判据回溯误杀率 18.8%>2%，
+        # 暂只计数不拒（name_mismatch_review），待人工核对清单后再启用
         _text = (c['title'] or '') + ' ' + (c.get('cat') or '')
         bad_pref, _other = pref_mismatch_hit(_text, st)
         if bad_pref:
             reject_dist['pref_mismatch'] = reject_dist.get('pref_mismatch', 0) + 1
             continue
         if name_mismatch_hit(_text, st, en_label):
-            reject_dist['name_mismatch'] = reject_dist.get('name_mismatch', 0) + 1
-            continue
+            reject_dist['name_mismatch_review'] = \
+                reject_dist.get('name_mismatch_review', 0) + 1
         ok, lic, lic_url, author, reason = license_verdict(info.get('extmetadata'))
         if not ok:
             reject_dist[reason] = reject_dist.get(reason, 0) + 1
