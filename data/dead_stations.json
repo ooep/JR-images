@@ -1,5 +1,5 @@
 {
- "count": 340,
+ "count": 345,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -19,23 +19,21 @@
    "stage": "qa_pipeline_330"
   },
   "st00040": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T16:29:12Z",
-   "last_attempt": "2026-11-04T16:44:44Z",
+   "slug": "st00040",
    "name": "大谷",
    "name_en": "Ōtani",
+   "stage": "ws15_final",
    "reasons": {
-    "geo_mismatch": 8,
-    "hard_excluded": 6,
-    "name_mismatch_review": 9,
-    "no_station_evidence": 14
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
-   "slug": "st00040",
-   "source_page": null,
-   "stage": "retry"
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-04T16:29:12Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
+   "note": "ws15 round7 staged review 标缺：大谷(和歌山線)：候选为韩国大邱 Daegok 站台(异国)与东海道五十三次版画x2(非站景)，无本站可验证候选"
   },
   "st00051": {
    "attempts": 3,
@@ -1833,25 +1831,21 @@
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01459": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:52:12Z",
+   "slug": "st01459",
    "name": "小泉町",
    "name_en": "Koizumichō",
+   "stage": "ws15_final",
    "reasons": {
-    "geo_mismatch": 2,
-    "hard_excluded": 1,
-    "name_mismatch_review": 16,
-    "no_station_evidence": 17,
-    "pref_mismatch": 2,
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
-   "slug": "st01459",
-   "source_page": null,
-   "stage": "retry"
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-04T04:22:38Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
+   "note": "ws15 round7 staged review 标缺：小泉町(富山軌道線支線)：候选 3 张均为群马东武小泉町线小泉町(TI45,同名异线)，OCR 命中亦为他站牌"
   },
   "st01465": {
    "attempts": 1,
@@ -5627,7 +5621,92 @@
    "final_dead": false,
    "last_attempt": "2026-11-05T20:11:41Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st03765": {
+   "slug": "st03765",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T20:29:23Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
+   "note": "ws15 round7 staged review 标缺：鹿児(高知伊野線)：候选 2 张均为巴士照(Kako-bus,OCR 见西加古川駅/姫路=兵库区域)，非站景+错区域"
+  },
+  "st04575": {
+   "slug": "st04575",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T20:29:23Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
+   "note": "ws15 round7 staged review 标缺：高水(山口)：候选标题均为 Ikusabata Station(他站)，标题站名闸门拒；OCR/目检无本站名"
+  },
+  "st05365": {
+   "slug": "st05365",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T20:29:23Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
+   "note": "ws15 round7 staged review 标缺：安芸長浜(広島呉線)：唯一候选为圆顶站房远景无站名标识，站牌 OCR/目检未见站名不算通过"
+  },
+  "st06253": {
+   "slug": "st06253",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T20:29:23Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
+   "note": "ws15 round7 staged review 标缺：青野ケ原(兵庫加古川線)：候选 2 张(Former Aonogahara stn)站牌均不清晰可读，不算通过"
+  },
+  "st07707": {
+   "slug": "st07707",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T20:29:23Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
+   "note": "ws15 round7 staged review 标缺：西滑川(富山地鉄本線)：唯一候选为历史黑白扫描照，仅图外 caption 有站名，场景内无站牌"
   }
  },
- "updated_at": "2026-11-05T20:26:40Z"
+ "updated_at": "2026-11-05T20:29:23Z"
 }
