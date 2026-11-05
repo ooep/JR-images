@@ -1,5 +1,5 @@
 {
- "count": 336,
+ "count": 339,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -267,18 +267,18 @@
    "slug": "st00353",
    "name": "市立病院前",
    "name_en": "Naha City Hospital",
-   "stage": "mismatch_removal",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": null,
    "below_spec": false,
-   "attempts": 2,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-05T19:47:28Z",
-   "note": "revert: LOCAL6复核:既存图为冲绳Yui Rail市立病院前(同名异线错挂,横幅Naha City Hospital Station+单轨轨梁),目标为鹿児岛市电停留场"
+   "last_attempt": "2026-11-05T19:57:39Z",
+   "note": "ws15 round6 staged review 标缺：市立病院前(鹿児島市電)：round6 候选 2 张均为冲绳 Yui Rail 那霸市立病院前(同名异线)；HEAD 既存错挂图亦为 Yui Rail(横幅 Naha City Hospital Station)，revert-n 撤除后候选枯竭"
   },
   "st00356": {
    "attempts": 2,
@@ -5545,18 +5545,18 @@
    "slug": "st00716",
    "name": null,
    "name_en": null,
-   "stage": "mismatch_removal",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:北九州モノレール - panoramio (4).jpg",
    "below_spec": false,
-   "attempts": 2,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-05T18:44:53Z",
-   "last_attempt": "2026-11-05T18:44:53Z",
-   "note": "revert: 非站景：单轨高架轨道街景照无站体(round5 GPS 234m 误收)"
+   "last_attempt": "2026-11-05T19:57:39Z",
+   "note": "ws15 round6 staged review 标缺：北方(福岡小倉線)：候选为美濃北方(岐阜,废站)站舍/北方警察署(岐阜)/巴士总站，同名异县+非站景，无本站合格候选"
   },
   "st02692": {
    "slug": "st02692",
@@ -5594,7 +5594,58 @@
    "final_dead": false,
    "last_attempt": "2026-11-05T19:06:56Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st04604": {
+   "slug": "st04604",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T19:57:39Z",
+   "last_attempt": "2026-11-05T19:57:39Z",
+   "note": "ws15 round6 staged review 标缺：山田西町(高知土赞线)：唯一候选为无站名标识的无人站台照，站牌 OCR/目检未见站名不算通过，候选枯竭"
+  },
+  "st06696": {
+   "slug": "st06696",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T19:57:39Z",
+   "last_attempt": "2026-11-05T19:57:39Z",
+   "note": "ws15 round6 staged review 标缺：美濃川合(岐阜太多线)：唯一候选为发电站(Minokawai power station)非站景，候选枯竭"
+  },
+  "st07039": {
+   "slug": "st07039",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T19:57:39Z",
+   "last_attempt": "2026-11-05T19:57:39Z",
+   "note": "ws15 round6 staged review 标缺：吉富(福岡)：候选 2 张均为吉富町社区巴士/大交北部巴士，非站景(巴士)，候选枯竭"
   }
  },
- "updated_at": "2026-11-05T19:49:03Z"
+ "updated_at": "2026-11-05T19:57:39Z"
 }
