@@ -1,5 +1,5 @@
 {
- "count": 350,
+ "count": 352,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -5895,7 +5895,41 @@
    "first_seen": "2026-11-05T17:34:12Z",
    "last_attempt": "2026-11-05T17:34:12Z",
    "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+  },
+  "st02229": {
+   "slug": "st02229",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Nishitetsu8031F at Yabegawa bridge.jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:53:21Z",
+   "last_attempt": "2026-11-05T17:53:21Z",
+   "note": "revert: 非站景：st02229列车过矢部川桥照再犯；st05323为灾害损毁照(Hiroshima-dosya)"
+  },
+  "st05323": {
+   "slug": "st05323",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Hiroshima-dosya.jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:53:21Z",
+   "last_attempt": "2026-11-05T17:53:21Z",
+   "note": "revert: 非站景：st02229列车过矢部川桥照再犯；st05323为灾害损毁照(Hiroshima-dosya)"
   }
  },
- "updated_at": "2026-11-05T17:43:29Z"
+ "updated_at": "2026-11-05T17:53:21Z"
 }
