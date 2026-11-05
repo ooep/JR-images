@@ -1,5 +1,5 @@
 {
- "count": 359,
+ "count": 358,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -148,23 +148,6 @@
    "source_page": null,
    "stage": "retry",
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
-  },
-  "st00317": {
-   "attempts": 2,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-03T12:06:01Z",
-   "last_attempt": "2026-11-03T14:43:06Z",
-   "name": "升形",
-   "name_en": null,
-   "reasons": {
-    "low_color(map/text?)": 1,
-    "resolution_low": 3
-   },
-   "reject_dist": {},
-   "slug": "st00317",
-   "source_page": null,
-   "stage": "retry"
   },
   "st00330": {
    "attempts": 2,
@@ -5866,5 +5849,5 @@
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   }
  },
- "updated_at": "2026-11-05T21:27:53Z"
+ "updated_at": "2026-11-05T21:40:37Z"
 }

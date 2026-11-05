@@ -388,3 +388,14 @@
 - accepted(GPS<=2km)=5 staged_no_gps=12 still_missing=16
 - reject_dist={"resolution_low": 41, "title_names_other_station": 132, "duplicate_title": 3, "mime_unsupported": 130, "title_non_station_scene": 3, "hard_excluded": 10, "no_author_metadata": 2, "license_unclear": 1}
 - 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
+
+
+## ws15 local accept batch9 — 2026-11-05T21:40:37Z
+- st00317 升形 ← File:Masukata station.jpg (review)
+- st03414 新月 ← File:JR East Niitsuki Station Platform, Iwate Pref.jpg (done)
+- st05088 比津 ← File:Hitsu stn 1.jpg (review)
+- st08226 越ケ浜 ← File:Kosigahamastation.jpg (review)
+- st08287 五十猛 ← File:五十猛駅 ホーム.jpg (done)
+- st08318 ほうらい丘 ← File:坂本ケーブルほうらい丘駅.JPG (review)
+- st08816 吉里吉里 ← File:Kirikiri station,Otsuchi.jpg (review)
+- 拒收标缺 5 站见 finalize9：st03280 小杉(富山)←武蔵小杉(神奈川)异县错挂、st04602 六条(福井)←车照/名古屋泵站/札幌市电西線六条同名异线、st04643 土佐岩原←列车主体无站名、st06057 鶴丸←NHK 电波塔非站景、st06247 新西脇←警察官駐在所牌无站名。
