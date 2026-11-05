@@ -178,3 +178,9 @@
 - st02236 津古 ← File:Nishitetsu Tsuko Station01.jpg (review, 津古駅 / Tsuko Sta.（双牌）)
 - 证据：round2 artifact 回传候选，Vision OCR 站牌命中 + 目检通过。
 - st02193 三潴候选「Mizuma Station.JPG」目检为水间铁道水间观音駅（塔式站房+水間観音駅牌），拒收；st02232 徳益候选无站名牌证据，拒收留 round3。
+
+
+## ws16 foreign purge — 2026-11-05T17:34:12Z
+- 撤异国错配图 10 站（审计 P0，来源实证：上海/天津/北京/首尔/大邱地铁与 Korail）：st02517 st02777 st04016 st04955 st05323 st06754 st07109 st07703 st07983 st08679
+- 重置 stage=mismatch_removal 入重抓队列，round3 严格闸门重抓。
+- 旧编号 img/ 两张异国源图（st00214 澳门、st05802 韩国）属海报线辖，登记不移除，交审计线/海报线裁决。

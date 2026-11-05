@@ -1,5 +1,5 @@
 {
- "count": 344,
+ "count": 354,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -5793,7 +5793,177 @@
    "first_seen": "2026-11-05T17:21:35Z",
    "last_attempt": "2026-11-05T17:21:35Z",
    "note": "revert: 非站景：列车过矢部川桥照片(Nishitetsu EMU 8061F at Yabegawa Bridge)"
+  },
+  "st02517": {
+   "slug": "st02517",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Kawaji-eki.JPG",
+   "below_spec": false,
+   "attempts": 1,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T17:34:12Z",
+   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+  },
+  "st02777": {
+   "slug": "st02777",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Seba-Sta-Platform.JPG",
+   "below_spec": false,
+   "attempts": 1,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T17:34:12Z",
+   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+  },
+  "st04016": {
+   "slug": "st04016",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Kyoto subway 2231 20220506 Takeda.jpg",
+   "below_spec": false,
+   "attempts": 1,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T17:34:12Z",
+   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+  },
+  "st04955": {
+   "slug": "st04955",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Kusurimizu Station platform in 20150718.jpg",
+   "below_spec": false,
+   "attempts": 1,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T17:34:12Z",
+   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+  },
+  "st05323": {
+   "slug": "st05323",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Bairin Station building 2.jpg",
+   "below_spec": false,
+   "attempts": 1,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T17:34:12Z",
+   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+  },
+  "st06754": {
+   "slug": "st06754",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Kotobuki-STA-Gate.jpg",
+   "below_spec": false,
+   "attempts": 1,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T17:34:12Z",
+   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+  },
+  "st07109": {
+   "slug": "st07109",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:福井鉄道 水落駅 - panoramio.jpg",
+   "below_spec": false,
+   "attempts": 1,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T17:34:12Z",
+   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+  },
+  "st07703": {
+   "slug": "st07703",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Oritate Station 001.jpg",
+   "below_spec": false,
+   "attempts": 1,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T17:34:12Z",
+   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+  },
+  "st07983": {
+   "slug": "st07983",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:JR West Tojo station building inside.jpg",
+   "below_spec": false,
+   "attempts": 1,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T17:34:12Z",
+   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+  },
+  "st08679": {
+   "slug": "st08679",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Nagaden Asahi-STA Platform.jpg",
+   "below_spec": false,
+   "attempts": 1,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T17:34:12Z",
+   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
   }
  },
- "updated_at": "2026-11-05T17:23:32Z"
+ "updated_at": "2026-11-05T17:34:12Z"
 }
