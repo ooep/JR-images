@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 .DS_Store
 *.tmp
+# geo-audit 产物（artifact 回传，不入库；finalize 工作区断言需要）
+geo_audit_report.json
+# ws15 暂存候选（无 GPS 候选经 artifact 回传本地目检，不入库）
+ws15_stage/

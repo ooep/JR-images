@@ -34,10 +34,27 @@ jobs:
       - name: Install deps
         run: pip install --quiet pillow numpy requests
 
-      - name: Strict refetch
+      # 加密（2026-11）：重抓脚本入库即密文，运行时经 prep.sh 先验后写解密、用毕 clean。
+      # 钥匙来自 Secret: CODE_KEY。workflow YAML 本身无法加密（GitHub 调度限制）。
+      - name: Step 1/3 verify ciphertext (verify-only, zero writes)
         env:
+          OOEP_PASSPHRASE: ${{ secrets.CODE_KEY }}
+        run: bash encryption/logrun.sh 1/3 bash encryption/prep.sh 1
+
+      - name: Step 2/3 materialize fetchers
+        env:
+          OOEP_PASSPHRASE: ${{ secrets.CODE_KEY }}
+        run: bash encryption/logrun.sh 2/3 bash encryption/prep.sh 2
+
+      - name: Step 3/3 Strict refetch
+        env:
+          OOEP_PASSPHRASE: ${{ secrets.CODE_KEY }}
           UNCOVERED_TOP: ${{ inputs.uncovered_top }}
-        run: python scripts/ws15_refetch.py
+        run: bash encryption/logrun.sh 3/3 bash ci/step.sh ws15 3
+
+      # 抓取窗口结束：删除明文脚本（提交只涉及 stations/licenses/索引/报告）
+      - name: Remove plaintext fetchers
+        run: python3 encryption/decrypt.py clean --out .
 
       - name: Commit & push (never force)
         run: |
@@ -74,3 +91,7 @@ jobs:
             ws15_stage/
             reports/ws15_refetch_evidence.json
           if-no-files-found: ignore
+
+      - name: Finalize (cleanup + worktree assertion)
+        if: always()
+        run: bash encryption/finalize.sh

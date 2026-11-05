@@ -41,6 +41,7 @@ jobs:
     timeout-minutes: 350
     env:
       PUSH_CHUNK: '100'
+      BATCH_INDEX: ${{ inputs.batch_index }}
     steps:
       - uses: actions/checkout@v4
 
@@ -51,17 +52,28 @@ jobs:
       - name: Install deps
         run: pip install --quiet pillow numpy requests
 
-      - name: Fetch batch
+      # 加密（2026-11）：抓取脚本入库即密文（encrypted/*.enc + encryption/manifest.tsv），
+      # 运行时经 prep.sh 先验后写解密、用毕 clean。钥匙来自 Secret: CODE_KEY。
+      # workflow YAML 本身无法加密（GitHub 只从明文 YAML 调度）。
+      # inputs 一律 env 中转 + ci/step.sh 内白名单（路径形态/整数），不直插 run:。
+      - name: Step 1/3 verify ciphertext (verify-only, zero writes)
         env:
+          OOEP_PASSPHRASE: ${{ secrets.CODE_KEY }}
+        run: bash encryption/logrun.sh 1/3 bash encryption/prep.sh 1
+
+      - name: Step 2/3 materialize fetchers
+        env:
+          OOEP_PASSPHRASE: ${{ secrets.CODE_KEY }}
+        run: bash encryption/logrun.sh 2/3 bash encryption/prep.sh 2
+
+      - name: Step 3/3 Fetch batch
+        env:
+          OOEP_PASSPHRASE: ${{ secrets.CODE_KEY }}
           RETRY_ONLY: ${{ inputs.retry_only }}
-        run: |
-          extra=""
-          if [ "$RETRY_ONLY" = "true" ]; then extra="--dead-only"; fi
-          python scripts/batch_fetch.py \
-            --stations "${{ inputs.stations_path }}" \
-            --batch-index "${{ inputs.batch_index }}" \
-            --batch-size "${{ inputs.batch_size }}" \
-            --workdir . $extra
+          STATIONS_PATH: ${{ inputs.stations_path }}
+          BATCH_INDEX: ${{ inputs.batch_index }}
+          BATCH_SIZE: ${{ inputs.batch_size }}
+        run: bash encryption/logrun.sh 3/3 bash ci/step.sh batch 3
 
       - name: Verify batch
         id: verify
@@ -71,7 +83,14 @@ jobs:
         run: |
           python scripts/verify_local.py --workdir . --dead-list data/dead_stations.json
 
+      # 抓取窗口结束：删除明文脚本（提交只涉及 stations/licenses/索引，不含 scripts/）
+      - name: Remove plaintext fetchers
+        run: python3 encryption/decrypt.py clean --out .
+
       - name: Commit & push in chunks (never force)
+        env:
+          BATCH_INDEX: ${{ inputs.batch_index }}
+          STATIONS_PATH: ${{ inputs.stations_path }}
         run: |
           set -e
           git config user.name "jrimages-bot"
@@ -101,7 +120,7 @@ jobs:
           # 先推元数据（状态与进度、dead 清单），失败也能靠 state.json 续跑
           # （set -e 下必须显式兜住，否则元数据推送一失败整个步骤就中止）
           git add index.json state.json PROGRESS.md batch_stats_*.json data/dead_stations.json 2>/dev/null || true
-          if ! push_commit "batch ${{ inputs.batch_index }}: metadata (list=${{ inputs.stations_path }})"; then
+          if ! push_commit "batch ${BATCH_INDEX}: metadata (list=${STATIONS_PATH})"; then
             echo "metadata push failed; continuing (state.json 续跑兜底)"
           fi
 
@@ -115,14 +134,14 @@ jobs:
             if [ $((i % PUSH_CHUNK)) -eq 0 ]; then
               g=$((g+1))
               git add index.json state.json PROGRESS.md 2>/dev/null || true
-              if ! push_commit "batch ${{ inputs.batch_index }}: images group $g (${i} stations)"; then
+              if ! push_commit "batch ${BATCH_INDEX}: images group $g (${i} stations)"; then
                 echo "chunk $g push failed"; exit 1
               fi
             fi
           done
           g=$((g+1))
           git add index.json state.json PROGRESS.md 2>/dev/null || true
-          if ! push_commit "batch ${{ inputs.batch_index }}: images group $g (tail)"; then
+          if ! push_commit "batch ${BATCH_INDEX}: images group $g (tail)"; then
             echo "tail push failed"; exit 1
           fi
 
@@ -154,7 +173,7 @@ jobs:
             -H "Authorization: Bearer $GH_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${{ github.repository }}/actions/workflows/batch-fetch.yml/dispatches" \
-            -d "{\"ref\":\"main\",\"inputs\":{\"batch_index\":\"$NEXT\",\"batch_size\":\"${{ inputs.batch_size }}\",\"stations_path\":\"${{ inputs.stations_path }}\"}}")
+            -d "{\"ref\":\"main\",\"inputs\":{\"batch_index\":\"$NEXT\",\"batch_size\":\"${BATCH_SIZE}\",\"stations_path\":\"${STATIONS_PATH}\"}}")
           echo "dispatch HTTP $code"
           cat /tmp/dispatch.out
           [ "$code" = "204" ] || exit 1
@@ -163,8 +182,15 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: batch-${{ inputs.batch_index }}-stats
+          name: batch-${{ env.BATCH_INDEX }}-stats
           path: |
             batch_stats_*.json
             state.json
           if-no-files-found: ignore
+
+      # 常开收尾：再清一次（幂等）并断言工作区干净（图片/索引为已跟踪或预期产物）。
+      # 注意：本流程会提交大量图片，finalize 只断言「无明文脚本残留」语义由 clean 保证；
+      # 提交后工作区干净，断言与生产路径一致。
+      - name: Finalize (cleanup + worktree assertion)
+        if: always()
+        run: bash encryption/finalize.sh
