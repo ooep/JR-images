@@ -184,3 +184,10 @@
 - 撤异国错配图 10 站（审计 P0，来源实证：上海/天津/北京/首尔/大邱地铁与 Korail）：st02517 st02777 st04016 st04955 st05323 st06754 st07109 st07703 st07983 st08679
 - 重置 stage=mismatch_removal 入重抓队列，round3 严格闸门重抓。
 - 旧编号 img/ 两张异国源图（st00214 澳门、st05802 韩国）属海报线辖，登记不移除，交审计线/海报线裁决。
+
+
+## ws15 refetch round 1 — 2026-11-05T17:43:29Z
+- queue: wrong_station 重抓队列 16 站（stage=mismatch_removal）
+- accepted(GPS<=2km)=4 staged_no_gps=12 still_missing=0
+- reject_dist={"duplicate_title": 6, "title_names_other_station": 58, "mime_unsupported": 74, "hard_excluded": 63, "resolution_low": 56, "license_forbidden": 5, "license_unclear": 2}
+- 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
