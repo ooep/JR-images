@@ -171,3 +171,10 @@
 
 ## ws15 revert-n — 2026-11-05T17:21:35Z
 - 撤站 st02229；原因：非站景：列车过矢部川桥照片(Nishitetsu EMU 8061F at Yabegawa Bridge)
+
+
+## ws15 local accept batch2 — 2026-11-05T17:23:32Z
+- st02227 西鉄渡瀬 ← File:Nishitetsu Wataze Station 2021.JPG (done, 西鉄渡瀬駅 / Nishitetsu Wataze Sta. / 自動販売機コーナー)
+- st02236 津古 ← File:Nishitetsu Tsuko Station01.jpg (review, 津古駅 / Tsuko Sta.（双牌）)
+- 证据：round2 artifact 回传候选，Vision OCR 站牌命中 + 目检通过。
+- st02193 三潴候选「Mizuma Station.JPG」目检为水间铁道水间观音駅（塔式站房+水間観音駅牌），拒收；st02232 徳益候选无站名牌证据，拒收留 round3。
