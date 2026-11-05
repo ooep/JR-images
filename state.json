@@ -54039,41 +54039,17 @@
    "attempts": 2
   },
   "st00577": {
-   "status": "done",
-   "file": "stations/st00577/photo.jpg",
-   "sha256": "49afeb778e47ab4cfafa458e305eaf130c36d2440453a2c26fc717d835e1cf3d",
-   "bytes": 701535,
-   "width": 1800,
-   "height": 1352,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4624,
-    "original_height": 3472
-   },
-   "below_spec": false,
-   "source_title": "File:Dinosaurs outside Echizen Railway platforms at Fukui Station.jpg",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Dinosaurs_outside_Echizen_Railway_platforms_at_Fukui_Station.jpg",
-   "author": "eli fessler",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1352,
-    "lap_var": 2588.6,
-    "colorfulness": 39.2,
-    "white_frac": 0.005,
-    "edge_density": 0.1455,
-    "sky_frac": 0.163
-   },
-   "reasons": [],
-   "reject_dist": {
-    "resolution_low": 2
-   },
-   "downloads": 1,
-   "ts": "2026-11-03T12:30:59Z",
-   "attempts": 1
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
+   "reasons": [
+    "wrong_station_removed"
+   ],
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Dinosaurs outside Echizen Railway platforms at Fukui Station.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Dinosaurs_outside_Echizen_Railway_platforms_at_Fukui_Station.jpg",
+   "removed_sha256": "49afeb778e47ab4cfafa458e305eaf130c36d2440453a2c26fc717d835e1cf3d"
   },
   "st00579": {
    "status": "review",
@@ -54754,54 +54730,17 @@
    "attempts": 1
   },
   "st00609": {
-   "status": "review",
-   "file": "stations/st00609/photo.jpg",
-   "sha256": "e07d622706950a0e71934bb71a7977f22536f9404e4891cda65a27cdac3a7771",
-   "dhash": "d1703479eac5c9c9",
-   "bytes": 273597,
-   "width": 1280,
-   "height": 960,
-   "normalized": {
-    "encoded": true,
-    "long": 1280,
-    "quality": 85,
-    "original_width": 1280,
-    "original_height": 960
-   },
-   "below_spec": true,
-   "score": 1.64,
-   "source_title": "File:JRKyushu Ichinuno Station 2.jpg",
-   "source_cat": "Category:Ichinuno Station",
-   "source_page": "https://commons.wikimedia.org/wiki/File:JRKyushu_Ichinuno_Station_2.jpg",
-   "author": "Atsasebo",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "metrics": {
-    "width": 1280,
-    "height": 960,
-    "lap_var": 1003.9,
-    "colorfulness": 45.6,
-    "white_frac": 0.008,
-    "edge_density": 0.0702,
-    "sky_frac": 0.863,
-    "brightness": 132.7,
-    "dark_frac": 0.053,
-    "center_edge": 0.0909
-   },
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
    "reasons": [
-    "low_score(1.6<5.0)",
-    "below_spec(long=1280,dead retry)"
+    "wrong_station_removed"
    ],
-   "reject_dist": {
-    "hard_excluded": 1,
-    "geo_mismatch": 11,
-    "name_mismatch_review": 14,
-    "no_station_evidence": 14,
-    "wrong_station": 2
-   },
-   "downloads": 2,
-   "ts": "2026-11-04T05:08:08Z",
-   "attempts": 3
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:JRKyushu Ichinuno Station 2.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:JRKyushu_Ichinuno_Station_2.jpg",
+   "removed_sha256": "e07d622706950a0e71934bb71a7977f22536f9404e4891cda65a27cdac3a7771"
   },
   "st00610": {
    "status": "done",
@@ -96986,54 +96925,17 @@
    "attempts": 1
   },
   "st01798": {
-   "status": "review",
-   "file": "stations/st01798/photo.jpg",
-   "sha256": "b4f2855150e8fc1e4fac4df37b5c0b9ce6b3900ada1caa0b3282ea66a65fd315",
-   "dhash": "273727b3932b279c",
-   "bytes": 427205,
-   "width": 1200,
-   "height": 1800,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4096,
-    "original_height": 6144
-   },
-   "below_spec": false,
-   "score": 3.28,
-   "source_title": "File:NDL1310992 木曽六十九駅 宮ノ越木曽川ノ明星岩・暁星五郎.jpg",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:NDL1310992_木曽六十九駅_宮ノ越木曽川ノ明星岩・暁星五郎.jpg",
-   "author": "豊国",
-   "license": "Public domain",
-   "license_url": "",
-   "metrics": {
-    "width": 1200,
-    "height": 1800,
-    "lap_var": 1394.9,
-    "colorfulness": 55.5,
-    "white_frac": 0.002,
-    "edge_density": 0.0922,
-    "sky_frac": 0.249,
-    "brightness": 118.1,
-    "dark_frac": 0.174,
-    "center_edge": 0.1545
-   },
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
    "reasons": [
-    "low_score(3.3<5.0)"
+    "wrong_station_removed"
    ],
-   "reject_dist": {
-    "no_station_evidence": 19,
-    "name_mismatch_review": 11,
-    "wrong_station": 5,
-    "pref_mismatch": 3,
-    "geo_mismatch": 3,
-    "hard_excluded": 1
-   },
-   "downloads": 1,
-   "ts": "2026-11-04T06:30:52Z",
-   "attempts": 1
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:NDL1310992 木曽六十九駅 宮ノ越木曽川ノ明星岩・暁星五郎.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:NDL1310992_木曽六十九駅_宮ノ越木曽川ノ明星岩・暁星五郎.jpg",
+   "removed_sha256": "b4f2855150e8fc1e4fac4df37b5c0b9ce6b3900ada1caa0b3282ea66a65fd315"
   },
   "st01799": {
    "status": "review",
@@ -97178,52 +97080,17 @@
    "attempts": 1
   },
   "st01802": {
-   "status": "done",
-   "file": "stations/st01802/photo.jpg",
-   "sha256": "a8a147235e2b3218eba6637bd020491318173db24a619623f2ef768f46cb7835",
-   "dhash": "02c044200a060104",
-   "bytes": 447521,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3264,
-    "original_height": 2448
-   },
-   "below_spec": false,
-   "score": 7.85,
-   "source_title": "File:Kintetsu Miyamachi station platforms.jpg",
-   "source_cat": "Category:Miyamachi Station",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Kintetsu_Miyamachi_station_platforms.jpg",
-   "author": "Miyuki Meinaka",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1288.5,
-    "colorfulness": 67.8,
-    "white_frac": 0.0,
-    "edge_density": 0.0832,
-    "sky_frac": 0.044,
-    "brightness": 105.4,
-    "dark_frac": 0.181,
-    "center_edge": 0.0888
-   },
-   "reasons": [],
-   "reject_dist": {
-    "resolution_low": 1,
-    "wrong_station": 14,
-    "name_mismatch_review": 5,
-    "no_station_evidence": 5,
-    "geo_mismatch": 3,
-    "pref_mismatch": 1
-   },
-   "downloads": 3,
-   "ts": "2026-11-04T06:31:00Z",
-   "attempts": 1
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
+   "reasons": [
+    "wrong_station_removed"
+   ],
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Kintetsu Miyamachi station platforms.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Kintetsu_Miyamachi_station_platforms.jpg",
+   "removed_sha256": "a8a147235e2b3218eba6637bd020491318173db24a619623f2ef768f46cb7835"
   },
   "st01804": {
    "status": "done",
@@ -105269,53 +105136,17 @@
    "attempts": 1
   },
   "st02021": {
-   "status": "review",
-   "file": "stations/st02021/photo.jpg",
-   "sha256": "64eeb4ce9630ee3cc9623f0a6bad92072b4fdf23b9ed94205d432b6e513cab3c",
-   "dhash": "83d354c4f4545163",
-   "bytes": 276575,
-   "width": 1800,
-   "height": 983,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4465,
-    "original_height": 2439
-   },
-   "below_spec": false,
-   "score": 6.26,
-   "source_title": "File:JR Shinonoi-Line Hirata Station Gates.jpg",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Shinonoi-Line_Hirata_Station_Gates.jpg",
-   "author": "Mister0124",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 983,
-    "lap_var": 769.9,
-    "colorfulness": 24.0,
-    "white_frac": 0.05,
-    "edge_density": 0.0607,
-    "sky_frac": 0.139,
-    "brightness": 120.2,
-    "dark_frac": 0.117,
-    "center_edge": 0.101
-   },
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
    "reasons": [
-    "low_color"
+    "wrong_station_removed"
    ],
-   "reject_dist": {
-    "pref_mismatch": 2,
-    "wrong_station": 5,
-    "name_mismatch_review": 6,
-    "geo_mismatch": 13,
-    "resolution_low": 3
-   },
-   "downloads": 3,
-   "ts": "2026-11-04T06:48:31Z",
-   "attempts": 2
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:JR Shinonoi-Line Hirata Station Gates.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:JR_Shinonoi-Line_Hirata_Station_Gates.jpg",
+   "removed_sha256": "64eeb4ce9630ee3cc9623f0a6bad92072b4fdf23b9ed94205d432b6e513cab3c"
   },
   "st02022": {
    "status": "done",
@@ -105960,54 +105791,17 @@
    "attempts": 1
   },
   "st02036": {
-   "status": "review",
-   "file": "stations/st02036/photo.jpg",
-   "sha256": "0224151d706b67fb222e8b741b8e907910693e2e1e5830c5d738b670ebd0ccfd",
-   "dhash": "78eac092585284e0",
-   "bytes": 388255,
-   "width": 1800,
-   "height": 1205,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3872,
-    "original_height": 2592
-   },
-   "below_spec": false,
-   "score": 5.7,
-   "source_title": "File:HikoneGuchiEki KokokuBus 20070701.jpg",
-   "source_cat": "Category:Hikoneguchi Station",
-   "source_page": "https://commons.wikimedia.org/wiki/File:HikoneGuchiEki_KokokuBus_20070701.jpg",
-   "author": "Olegushka",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "metrics": {
-    "width": 1800,
-    "height": 1205,
-    "lap_var": 962.2,
-    "colorfulness": 21.8,
-    "white_frac": 0.0,
-    "edge_density": 0.0629,
-    "sky_frac": 0.852,
-    "brightness": 110.5,
-    "dark_frac": 0.202,
-    "center_edge": 0.1007
-   },
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
    "reasons": [
-    "low_color"
+    "wrong_station_removed"
    ],
-   "reject_dist": {
-    "no_author_metadata": 2,
-    "resolution_low": 1,
-    "wrong_station": 3,
-    "hard_excluded": 1,
-    "name_mismatch_review": 1,
-    "oversize_gt_25mb": 1
-   },
-   "downloads": 1,
-   "ts": "2026-11-04T06:48:34Z",
-   "attempts": 2
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:HikoneGuchiEki KokokuBus 20070701.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:HikoneGuchiEki_KokokuBus_20070701.jpg",
+   "removed_sha256": "0224151d706b67fb222e8b741b8e907910693e2e1e5830c5d738b670ebd0ccfd"
   },
   "st02037": {
    "status": "done",
@@ -106238,55 +106032,17 @@
    "attempts": 1
   },
   "st02044": {
-   "status": "review",
-   "file": "stations/st02044/photo.jpg",
-   "sha256": "7f484e33706a78664a8cf83f210aa3f14b06501026a2cc5cc1122cbb89e14469",
-   "dhash": "7b3ad3e3e17636cb",
-   "bytes": 396562,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4752,
-    "original_height": 3168
-   },
-   "below_spec": false,
-   "score": 6.78,
-   "source_title": "File:Tochio-daigakumae.jpg",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:Tochio-daigakumae.jpg",
-   "author": "Shokakuzuikaku",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1036.6,
-    "colorfulness": 26.1,
-    "white_frac": 0.031,
-    "edge_density": 0.0678,
-    "sky_frac": 0.941,
-    "brightness": 132.6,
-    "dark_frac": 0.052,
-    "center_edge": 0.0669
-   },
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
    "reasons": [
-    "subject_unverified(no_station_kw)"
+    "wrong_station_removed"
    ],
-   "reject_dist": {
-    "pref_mismatch": 6,
-    "name_mismatch_review": 1,
-    "resolution_low": 1,
-    "geo_mismatch": 16,
-    "oversize_gt_25mb": 1,
-    "wrong_station": 1,
-    "hard_excluded": 2
-   },
-   "downloads": 2,
-   "ts": "2026-11-04T06:48:41Z",
-   "attempts": 2
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Tochio-daigakumae.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Tochio-daigakumae.jpg",
+   "removed_sha256": "7f484e33706a78664a8cf83f210aa3f14b06501026a2cc5cc1122cbb89e14469"
   },
   "st02045": {
    "status": "done",
@@ -139649,49 +139405,17 @@
    "attempts": 1
   },
   "st05947": {
-   "status": "done",
-   "file": "stations/st05947/photo.jpg",
-   "sha256": "20adfacc896a7f7260d5c545d4f7894e8c3eb27f00eb37a87090c3be991ec7e0",
-   "dhash": "b4f172f4f4b09494",
-   "bytes": 174850,
-   "width": 1800,
-   "height": 1307,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 5322,
-    "original_height": 3864
-   },
-   "below_spec": false,
-   "score": 9.02,
-   "source_title": "File:201906 Nameboard in platform of Xidaqiao Station.jpg",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:201906_Nameboard_in_platform_of_Xidaqiao_Station.jpg",
-   "author": "Jonashtand",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1307,
-    "lap_var": 255.2,
-    "colorfulness": 77.4,
-    "white_frac": 0.002,
-    "edge_density": 0.0212,
-    "sky_frac": 0.416,
-    "brightness": 124.2,
-    "dark_frac": 0.027,
-    "center_edge": 0.0296
-   },
-   "reasons": [],
-   "reject_dist": {
-    "name_mismatch_review": 1,
-    "resolution_low": 2,
-    "wrong_station": 1
-   },
-   "downloads": 1,
-   "ts": "2026-11-04T07:27:15Z",
-   "attempts": 1
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
+   "reasons": [
+    "wrong_station_removed"
+   ],
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:201906 Nameboard in platform of Xidaqiao Station.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:201906_Nameboard_in_platform_of_Xidaqiao_Station.jpg",
+   "removed_sha256": "20adfacc896a7f7260d5c545d4f7894e8c3eb27f00eb37a87090c3be991ec7e0"
   },
   "st05949": {
    "status": "done",
@@ -251993,50 +251717,17 @@
    "attempts": 1
   },
   "st03214": {
-   "status": "done",
-   "file": "stations/st03214/photo.jpg",
-   "sha256": "ff6f74cc9605b422fe23bed1f85e84a9077b6973bce155bf5e4b9ba871fe0520",
-   "dhash": "7f27673723232b05",
-   "bytes": 385640,
-   "width": 1800,
-   "height": 1196,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4912,
-    "original_height": 3264
-   },
-   "below_spec": false,
-   "score": 7.89,
-   "source_title": "File:Exit 5, Daan Park Station 20200919.jpg",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:Exit_5,_Daan_Park_Station_20200919.jpg",
-   "author": "Solomon203",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1196,
-    "lap_var": 1870.9,
-    "colorfulness": 49.6,
-    "white_frac": 0.069,
-    "edge_density": 0.0988,
-    "sky_frac": 0.406,
-    "brightness": 154.9,
-    "dark_frac": 0.013,
-    "center_edge": 0.1229
-   },
-   "reasons": [],
-   "reject_dist": {
-    "geo_mismatch": 5,
-    "name_mismatch_review": 20,
-    "resolution_low": 1,
-    "low_color(map/text?)": 1
-   },
-   "downloads": 5,
-   "ts": "2026-11-04T11:08:14Z",
-   "attempts": 1
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
+   "reasons": [
+    "wrong_station_removed"
+   ],
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Exit 5, Daan Park Station 20200919.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Exit_5,_Daan_Park_Station_20200919.jpg",
+   "removed_sha256": "ff6f74cc9605b422fe23bed1f85e84a9077b6973bce155bf5e4b9ba871fe0520"
   },
   "st03369": {
    "status": "done",
@@ -317020,51 +316711,17 @@
    "attempts": 1
   },
   "st07773": {
-   "status": "done",
-   "file": "stations/st07773/photo.jpg",
-   "sha256": "fef4da2ce7e3cd3483114d827ee48c15c8133dad3639c84278b6c0af83573081",
-   "dhash": "98b6df92b6a08cc0",
-   "bytes": 471017,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 6000,
-    "original_height": 4000
-   },
-   "below_spec": false,
-   "score": 7.68,
-   "source_title": "File:20170402 Platform 2 of Xiangfeng Station.jpg",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:20170402_Platform_2_of_Xiangfeng_Station.jpg",
-   "author": "SCJiang",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1220.0,
-    "colorfulness": 29.8,
-    "white_frac": 0.009,
-    "edge_density": 0.0815,
-    "sky_frac": 0.221,
-    "brightness": 132.4,
-    "dark_frac": 0.099,
-    "center_edge": 0.0911
-   },
-   "reasons": [],
-   "reject_dist": {
-    "resolution_low": 3,
-    "geo_mismatch": 8,
-    "name_mismatch_review": 12,
-    "oversize_gt_25mb": 1,
-    "mime_unsupported": 1
-   },
-   "downloads": 5,
-   "ts": "2026-11-04T13:16:40Z",
-   "attempts": 1
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
+   "reasons": [
+    "wrong_station_removed"
+   ],
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:20170402 Platform 2 of Xiangfeng Station.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:20170402_Platform_2_of_Xiangfeng_Station.jpg",
+   "removed_sha256": "fef4da2ce7e3cd3483114d827ee48c15c8133dad3639c84278b6c0af83573081"
   },
   "st07774": {
    "status": "review",
