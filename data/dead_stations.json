@@ -1,5 +1,5 @@
 {
- "count": 348,
+ "count": 349,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -5714,7 +5714,24 @@
    "final_dead": false,
    "last_attempt": "2026-11-05T20:44:39Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st03600": {
+   "slug": "st03600",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:View near Ikoinomura Station.jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-05T21:11:42Z",
+   "last_attempt": "2026-11-05T21:11:42Z",
+   "note": "revert: round8 GPS 接受复核撤除: 标题 View near Ikoinomura Station, GPS 584m, 目检为路口草地纯风景无站房站台站牌, 非站景"
   }
  },
- "updated_at": "2026-11-05T21:05:10Z"
+ "updated_at": "2026-11-05T21:11:42Z"
 }

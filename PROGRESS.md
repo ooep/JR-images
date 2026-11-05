@@ -368,3 +368,7 @@
 - st08737 高子 ← File:Takako Station.jpg (review)
 - st08807 磯鶏 ← File:Sokei-Sta01.JPG (review)
 - 拒收标缺 6 站见 finalize8：st05977 東開聞 列车田野远景无站名、st07712 早月加積 3 候选均无站名、st07964 中田平 遗迹导览牌无站名、st08280 真倉 无站名+抽象图、st08405 林 乘车口牌/葡萄牙 Oriente(异国)、st08736 向瀬上 无站名。
+
+
+## ws15 revert-n — 2026-11-05T21:11:42Z
+- 撤站 st03600；原因：round8 GPS 接受复核撤除: 标题 View near Ikoinomura Station, GPS 584m, 目检为路口草地纯风景无站房站台站牌, 非站景
