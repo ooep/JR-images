@@ -1,24 +1,23 @@
 {
- "attempted": 33,
- "done": 5,
+ "attempted": 12,
+ "done": 0,
  "review": 0,
- "missing": 12,
+ "missing": 1,
  "failed": 0,
  "skipped_resume": 0,
- "bytes": 1530885,
+ "bytes": 0,
  "reject_dist": {
-  "resolution_low": 41,
-  "title_names_other_station": 132,
-  "duplicate_title": 3,
-  "mime_unsupported": 130,
-  "title_non_station_scene": 3,
-  "hard_excluded": 10,
-  "no_author_metadata": 2,
-  "license_unclear": 1
+  "title_names_other_station": 43,
+  "duplicate_title": 2,
+  "mime_unsupported": 8,
+  "hard_excluded": 6,
+  "resolution_low": 16,
+  "title_non_station_scene": 1,
+  "no_author_metadata": 2
  },
- "dead_retried": 33,
- "dead_recovered": 5,
- "dead_new": 16,
- "dead_cumulative": 359,
- "generated_at": "2026-11-05T21:27:53Z"
+ "dead_retried": 12,
+ "dead_recovered": 0,
+ "dead_new": 11,
+ "dead_cumulative": 365,
+ "generated_at": "2026-11-05T21:57:08Z"
 }

@@ -1,168 +1,31 @@
 {
  "queue": [
-  "st03600",
-  "st06506",
-  "st07946",
-  "st07834",
-  "st03225",
+  "st01628",
+  "st04564",
   "st07669",
   "st07649",
   "st07002",
   "st03646",
-  "st01185",
   "st03782",
-  "st08287",
   "st08290",
-  "st08816",
-  "st04564",
   "st07138",
-  "st06247",
-  "st04602",
-  "st04628",
-  "st04598",
-  "st05088",
-  "st06057",
   "st04561",
-  "st04643",
   "st06053",
-  "st08226",
-  "st03632",
-  "st04585",
-  "st00317",
-  "st01628",
-  "st03280",
-  "st03414",
-  "st08318"
+  "st04585"
  ],
- "accepted": [
-  {
-   "slug": "st04564",
-   "title": "File:椋野駅 - panoramio.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:椋野駅_-_panoramio.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/%E6%A4%8B%E9%87%8E%E9%A7%85_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 3.0",
-   "license_url": "https://creativecommons.org/licenses/by/3.0",
-   "author": "warabi hatogaya",
-   "sha256": "54f6ecfc51a5de40c2cf1bcbdbe1d45c4d58676adc005ba96ed036d75281bdae",
-   "dhash": "020618785c0d8080",
-   "bytes": 121849,
-   "width": 1605,
-   "height": 1204,
-   "normalized": {
-    "encoded": true,
-    "long": 1605,
-    "quality": 85,
-    "original_width": 1605,
-    "original_height": 1204
-   },
-   "dist_m": 71.2,
-   "score": 4.3
-  },
-  {
-   "slug": "st04628",
-   "title": "File:Rokutanji station 01.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Rokutanji_station_01.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Rokutanji_station_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "Public domain",
-   "license_url": "",
-   "author": "Navian",
-   "sha256": "f0b8093dce993a8642c29b69c83fa71500393d801d931169d2842f7065ece3dd",
-   "dhash": "3c2dbcb436ee9ab7",
-   "bytes": 521006,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3648,
-    "original_height": 2736
-   },
-   "dist_m": 26.9,
-   "score": 5.32
-  },
-  {
-   "slug": "st04598",
-   "title": "File:越前高田駅 ホーム - panoramio.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:越前高田駅_ホーム_-_panoramio.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/%E8%B6%8A%E5%89%8D%E9%AB%98%E7%94%B0%E9%A7%85_%E3%83%9B%E3%83%BC%E3%83%A0_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "クハ４１９－５",
-   "sha256": "d25c7cf6381fca4e8a8c0bf5f2e9dc93efea8548daa541aaa1049253dc37874a",
-   "dhash": "735d9f9816363f1b",
-   "bytes": 295216,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2048,
-    "original_height": 1536
-   },
-   "dist_m": 23.3,
-   "score": 5.52
-  },
-  {
-   "slug": "st03632",
-   "title": "File:Minamiaso Shirakawasuigen Station01.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Minamiaso_Shirakawasuigen_Station01.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Minamiaso_Shirakawasuigen_Station01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Muyo",
-   "sha256": "a47dc6352759b452f7ed74827ce73cf5b6e3ecb65658fd5f1812c67f3c963a71",
-   "dhash": "09682c0c9a3aac80",
-   "bytes": 231650,
-   "width": 1280,
-   "height": 960,
-   "normalized": {
-    "encoded": true,
-    "long": 1280,
-    "quality": 85,
-    "original_width": 1280,
-    "original_height": 960
-   },
-   "dist_m": 13.8,
-   "score": 4.14
-  },
-  {
-   "slug": "st01628",
-   "title": "File:Komachi-21 running near Shoden Station.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Komachi-21_running_near_Shoden_Station.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Komachi-21_running_near_Shoden_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "掬茶",
-   "sha256": "e5bf362849e2f9510ab4a1b8dbce52d77fbd7025b764ba0aa68250f7b41584cf",
-   "dhash": "c098b3c1dff8e0f0",
-   "bytes": 361164,
-   "width": 1800,
-   "height": 1012,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 6000,
-    "original_height": 3375
-   },
-   "dist_m": 162.9,
-   "score": 4.5
-  }
- ],
+ "accepted": [],
  "nogps_staged": [
   {
-   "slug": "st08287",
-   "title": "File:五十猛駅 ホーム.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:五十猛駅_ホーム.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/%E4%BA%94%E5%8D%81%E7%8C%9B%E9%A7%85_%E3%83%9B%E3%83%BC%E3%83%A0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "slug": "st01628",
+   "title": "File:Odakyu-electric-railway-Odawara-line-Ikuta-station-platform-20130711-165950.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Odakyu-electric-railway-Odawara-line-Ikuta-station-platform-20130711-165950.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Odakyu-electric-railway-Odawara-line-Ikuta-station-platform-20130711-165950.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "license": "CC BY-SA 4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "内林梓",
-   "sha256": "1f75ec9683b245e9a28352bb182c9f26dff1b13b1c22850655cb6ac879080eb9",
-   "dhash": "d7c36f7cd2df76cf",
-   "bytes": 263436,
+   "author": "LERK",
+   "sha256": "f3e96a9983bc384248e530effb51c8a2a5752bcc3e5cada349cc3514de85cdcb",
+   "dhash": "837666e666e6e2c0",
+   "bytes": 346106,
    "width": 1800,
    "height": 1012,
    "normalized": {
@@ -176,499 +39,71 @@
    "score": 6.5
   },
   {
-   "slug": "st08287",
-   "title": "File:Isotake stn.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Isotake_stn.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Isotake_stn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "author": "Bakkai",
-   "sha256": "a4c0e95ff50853ca8ba13b002c9b10518ed51667bc2887e0545b178eff453a02",
-   "dhash": "c4a0c05204011297",
-   "bytes": 316203,
-   "width": 1468,
-   "height": 1101,
+   "slug": "st01628",
+   "title": "File:Ikuta Station - Kanagawa - May 11 2021 various 18 45 42 501000.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_45_42_501000.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_45_42_501000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "577a2b77756d5162f03287aa271e417fb267a59ca7adc2afc0cd7b3c15e86fea",
+   "dhash": "9fa2c98743430385",
+   "bytes": 397480,
+   "width": 1800,
+   "height": 1522,
    "normalized": {
     "encoded": true,
-    "long": 1468,
+    "long": 1800,
     "quality": 85,
-    "original_width": 1468,
-    "original_height": 1101
+    "original_width": 4690,
+    "original_height": 3966
    },
    "dist_m": null,
-   "score": 3.23
+   "score": 5.85
   },
   {
-   "slug": "st08816",
-   "title": "File:Kirikiri station,Otsuchi.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Kirikiri_station,Otsuchi.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Kirikiri_station%2COtsuchi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Ty19080914",
-   "sha256": "0b1f5e9f1ecc6405416e3155d04babf0529d2a75a74a3ce29faa9b719dc15b3c",
-   "dhash": "3838c0f272f1b420",
-   "bytes": 406740,
-   "width": 1290,
-   "height": 968,
-   "normalized": {
-    "encoded": true,
-    "long": 1290,
-    "quality": 85,
-    "original_width": 1290,
-    "original_height": 968
-   },
-   "dist_m": null,
-   "score": 4.14
-  },
-  {
-   "slug": "st06247",
-   "title": "File:Shinnishiwaki sta 20190705.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Shinnishiwaki_sta_20190705.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Shinnishiwaki_sta_20190705.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Misei sen",
-   "sha256": "37e55811cbf24a1920b662661d96f5339955abfce67510fc75b02936dc8206ac",
-   "dhash": "4f86304dcc4c48c0",
-   "bytes": 379682,
+   "slug": "st01628",
+   "title": "File:Ikuta Station - Kanagawa - May 11 2021 various 18 44 50 483000.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_44_50_483000.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_44_50_483000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "78115033c0d5b88bd02241ac46d9a0c64034a7b1b02e6e8b44d9e68993a2a8a2",
+   "dhash": "4f7e1f0f9f9f1ffb",
+   "bytes": 391255,
    "width": 1800,
    "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 4608,
-    "original_height": 3456
+    "original_width": 4032,
+    "original_height": 3024
    },
    "dist_m": null,
-   "score": 4.8
-  },
-  {
-   "slug": "st04602",
-   "title": "File:Toyota 4BA-ZN6 86 GT“Limited” - Subaru TA-GGA Impreza Sports Wagon WRX (23110716154).jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Toyota_4BA-ZN6_86_GT“Limited”_-_Subaru_TA-GGA_Impreza_Sports_Wagon_WRX_(23110716154).jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Toyota_4BA-ZN6_86_GT%E2%80%9CLimited%E2%80%9D_-_Subaru_TA-GGA_Impreza_Sports_Wagon_WRX_%2823110716154%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "author": "先従隗始",
-   "sha256": "d0adf5c38f4c5feeaeff80f0c3fb967ece0369541053c9a781969d5b88447cfe",
-   "dhash": "5c5ad7d3cb0cc4e0",
-   "bytes": 326193,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4147,
-    "original_height": 2764
-   },
-   "dist_m": null,
-   "score": 2.57
-  },
-  {
-   "slug": "st04602",
-   "title": "File:Nagoya City Rokujo Pump Station, Rokuden Midori Ward Nagoya 2020.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Nagoya_City_Rokujo_Pump_Station,_Rokuden_Midori_Ward_Nagoya_2020.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Nagoya_City_Rokujo_Pump_Station%2C_Rokuden_Midori_Ward_Nagoya_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Tomio344456",
-   "sha256": "16ef544eaad835e36da367e4313670aaef1237054a1200bb2bfc0f97b805de5d",
-   "dhash": "1978d89c24e8e0a4",
-   "bytes": 384992,
-   "width": 1500,
-   "height": 1000,
-   "normalized": {
-    "encoded": true,
-    "long": 1500,
-    "quality": 85,
-    "original_width": 1500,
-    "original_height": 1000
-   },
-   "dist_m": null,
-   "score": 2.25
-  },
-  {
-   "slug": "st04602",
-   "title": "File:Sapporo Street Car Nishisen Rokujo Station.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Sapporo_Street_Car_Nishisen_Rokujo_Station.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Sapporo_Street_Car_Nishisen_Rokujo_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "Public domain",
-   "license_url": "",
-   "author": "Ozizo",
-   "sha256": "9d596daf9052dcc673d5f239b34cc92454fe8794344baac125e77120e5fbb242",
-   "dhash": "e080101964a6c3e8",
-   "bytes": 267386,
-   "width": 1408,
-   "height": 1056,
-   "normalized": {
-    "encoded": true,
-    "long": 1408,
-    "quality": 85,
-    "original_width": 1408,
-    "original_height": 1056
-   },
-   "dist_m": null,
-   "score": 2.2
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Hitsu stn 1.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hitsu_stn_1.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Hitsu_stn_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 3.0",
-   "license_url": "https://creativecommons.org/licenses/by/3.0",
-   "author": "Bakkai at Japanese Wikipedia",
-   "sha256": "1426a86716d0671d3b9470775d197c99614fbe9dcfc4fe73bbe2010a947ec638",
-   "dhash": "85cdccce6e6068ec",
-   "bytes": 335123,
-   "width": 1555,
-   "height": 1166,
-   "normalized": {
-    "encoded": true,
-    "long": 1555,
-    "quality": 85,
-    "original_width": 1555,
-    "original_height": 1166
-   },
-   "dist_m": null,
-   "score": 3.28
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Hitsu stn 2.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hitsu_stn_2.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Hitsu_stn_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 3.0",
-   "license_url": "https://creativecommons.org/licenses/by/3.0",
-   "author": "Bakkai at Japanese Wikipedia",
-   "sha256": "ea0d733084f2aafb78d3efc7e6c7c2a6cedeae97ccfa8dccc6cc4d547f4ee74a",
-   "dhash": "e07dcde229c962a1",
-   "bytes": 385432,
-   "width": 1555,
-   "height": 1166,
-   "normalized": {
-    "encoded": true,
-    "long": 1555,
-    "quality": 85,
-    "original_width": 1555,
-    "original_height": 1166
-   },
-   "dist_m": null,
-   "score": 3.28
-  },
-  {
-   "slug": "st06057",
-   "title": "File:NHK-JOHG-FM Kagoshima (Tsurumaru) Tower.JPG",
-   "page_url": "https://commons.wikimedia.org/wiki/File:NHK-JOHG-FM_Kagoshima_(Tsurumaru)_Tower.JPG",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/NHK-JOHG-FM_Kagoshima_%28Tsurumaru%29_Tower.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "ja:User:Sanjo",
-   "sha256": "d87bd322ac7bc6f5334b308d0534699e05548ab5d3bbda93c6b2df20725c46d6",
-   "dhash": "082c0c2c2c2d6c60",
-   "bytes": 75395,
-   "width": 988,
-   "height": 1372,
-   "normalized": {
-    "encoded": true,
-    "long": 1372,
-    "quality": 85,
-    "original_width": 988,
-    "original_height": 1372
-   },
-   "dist_m": null,
-   "score": 1.19
-  },
-  {
-   "slug": "st04643",
-   "title": "File:Kiha 58 at Tosa-Iwahara Station.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Kiha_58_at_Tosa-Iwahara_Station.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Kiha_58_at_Tosa-Iwahara_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Suikotei",
-   "sha256": "724763c9dfaecb9f9510a43cd8cd6c134ae7acaa8f7e4dad0ea76d7f96b63e26",
-   "dhash": "d8e7a7f7f0703e3f",
-   "bytes": 485588,
-   "width": 1577,
-   "height": 1055,
-   "normalized": {
-    "encoded": true,
-    "long": 1577,
-    "quality": 85,
-    "original_width": 1577,
-    "original_height": 1055
-   },
-   "dist_m": null,
-   "score": 4.29
-  },
-  {
-   "slug": "st08226",
-   "title": "File:Kosigahamastation.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Kosigahamastation.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Kosigahamastation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "author": "The original uploader was Hykw-a4 at Japanese Wikipedia.",
-   "sha256": "c5e44385d5dda556167a83114d980b1ec8215b73978dca4b31d8327f9111502d",
-   "dhash": "b0c8efcfcb3b3b7b",
-   "bytes": 157663,
-   "width": 1280,
-   "height": 960,
-   "normalized": {
-    "encoded": true,
-    "long": 1280,
-    "quality": 85,
-    "original_width": 1280,
-    "original_height": 960
-   },
-   "dist_m": null,
-   "score": 2.14
-  },
-  {
-   "slug": "st00317",
-   "title": "File:Masukata station.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Masukata_station.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Masukata_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Daigo35",
-   "sha256": "35989df2387806f58269c8cead381b2f46ba2aea5ac27849ebde8b49c8fd0bb4",
-   "dhash": "28ce27357366e686",
-   "bytes": 278539,
-   "width": 1500,
-   "height": 1000,
-   "normalized": {
-    "encoded": true,
-    "long": 1500,
-    "quality": 85,
-    "original_width": 1500,
-    "original_height": 1000
-   },
-   "dist_m": null,
-   "score": 2.25
-  },
-  {
-   "slug": "st03280",
-   "title": "File:JRmusashi-kosugi-station-NewSouth.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:JRmusashi-kosugi-station-NewSouth.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/JRmusashi-kosugi-station-NewSouth.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "author": "Rsa",
-   "sha256": "ae8a31fbd2bd85fd1e0b87e221d49778e40e9663d9f272b654ac6ddc630a06b6",
-   "dhash": "b1f0dc1236b6e6a4",
-   "bytes": 316616,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3072,
-    "original_height": 2304
-   },
-   "dist_m": null,
-   "score": 3.04
-  },
-  {
-   "slug": "st03280",
-   "title": "File:JRmusashi-kosugi-station-Yokosuka-Line.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:JRmusashi-kosugi-station-Yokosuka-Line.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/JRmusashi-kosugi-station-Yokosuka-Line.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "author": "Rsa",
-   "sha256": "6f6da89ff7c12f7ae0f92cbc8d8028ad46c23bcad25a95e861df722231c65d7c",
-   "dhash": "1a9ddef39d9d9ef9",
-   "bytes": 365054,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3072,
-    "original_height": 2304
-   },
-   "dist_m": null,
-   "score": 3.04
-  },
-  {
-   "slug": "st03414",
-   "title": "File:JR East Niitsuki Station building, Iwate Pref.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:JR_East_Niitsuki_Station_building,_Iwate_Pref.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/JR_East_Niitsuki_Station_building%2C_Iwate_Pref.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Mister0124",
-   "sha256": "0d2dbbb95e622739d19669ada4e687421ae46173035d7f02baa084e412b85760",
-   "dhash": "3db1c0c8c8fc3df1",
-   "bytes": 435575,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 6000,
-    "original_height": 4000
-   },
-   "dist_m": null,
-   "score": 6.5
-  },
-  {
-   "slug": "st03414",
-   "title": "File:JR East Niitsuki Station Platform, Iwate Pref.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:JR_East_Niitsuki_Station_Platform,_Iwate_Pref.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/JR_East_Niitsuki_Station_Platform%2C_Iwate_Pref.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Mister0124",
-   "sha256": "283279ead6fc314ba21cc8ad30b3f377e0442c715cdf5d18b7c138056c05649f",
-   "dhash": "7c04d893a38994a4",
-   "bytes": 525707,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 6000,
-    "original_height": 4000
-   },
-   "dist_m": null,
-   "score": 5.5
-  },
-  {
-   "slug": "st03414",
-   "title": "File:JR East Niitsuki Station Inside, Iwate Pref.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:JR_East_Niitsuki_Station_Inside,_Iwate_Pref.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/JR_East_Niitsuki_Station_Inside%2C_Iwate_Pref.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Mister0124",
-   "sha256": "da834b5ef0680fd749b252fa2f76efacbb5a4ef02fab9e67136b3d6ab116b43a",
-   "dhash": "f0d86cd8dcdc8d8f",
-   "bytes": 307866,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 6000,
-    "original_height": 4000
-   },
-   "dist_m": null,
-   "score": 4.5
-  },
-  {
-   "slug": "st08318",
-   "title": "File:坂本ケーブルほうらい丘駅前.JPG",
-   "page_url": "https://commons.wikimedia.org/wiki/File:坂本ケーブルほうらい丘駅前.JPG",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/%E5%9D%82%E6%9C%AC%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB%E3%81%BB%E3%81%86%E3%82%89%E3%81%84%E4%B8%98%E9%A7%85%E5%89%8D.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "author": "Bergmann",
-   "sha256": "3fa1881b978dba26f90e2d8c0fff3d5f0e01576da4d3e83887bde60a429ee6d5",
-   "dhash": "848cb47979fcd0f0",
-   "bytes": 475757,
-   "width": 1352,
-   "height": 1014,
-   "normalized": {
-    "encoded": true,
-    "long": 1352,
-    "quality": 85,
-    "original_width": 1352,
-    "original_height": 1014
-   },
-   "dist_m": null,
-   "score": 4.18
-  },
-  {
-   "slug": "st08318",
-   "title": "File:坂本ケーブルほうらい丘駅.JPG",
-   "page_url": "https://commons.wikimedia.org/wiki/File:坂本ケーブルほうらい丘駅.JPG",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/%E5%9D%82%E6%9C%AC%E3%82%B1%E3%83%BC%E3%83%96%E3%83%AB%E3%81%BB%E3%81%86%E3%82%89%E3%81%84%E4%B8%98%E9%A7%85.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "author": "Bergmann",
-   "sha256": "ada412d216a89c52fa2d951dd0076a3261a3e13feeb32611ca90430fa04d3566",
-   "dhash": "ebf6d6f8f8f0bdec",
-   "bytes": 486330,
-   "width": 1352,
-   "height": 1014,
-   "normalized": {
-    "encoded": true,
-    "long": 1352,
-    "quality": 85,
-    "original_width": 1352,
-    "original_height": 1014
-   },
-   "dist_m": null,
-   "score": 2.18
+   "score": 5.52
   }
  ],
  "still_missing": [
   {
-   "slug": "st03600",
-   "name": "いこいの村",
-   "pref": "熊本県",
-   "state": "no_candidate",
-   "reject_dist": {
-    "resolution_low": 4,
-    "title_names_other_station": 1
-   }
+   "slug": "st01628",
+   "name": "生田",
+   "pref": "秋田県",
+   "state": "staged_for_local_ocr_visual",
+   "n_staged": 3
   },
   {
-   "slug": "st06506",
-   "name": "新木屋瀬",
-   "pref": "福岡県",
+   "slug": "st04564",
+   "name": "椋野",
+   "pref": "山口県",
    "state": "no_candidate",
    "reject_dist": {
-    "resolution_low": 4,
-    "title_names_other_station": 2,
-    "duplicate_title": 1
-   }
-  },
-  {
-   "slug": "st07946",
-   "name": "棚方",
-   "pref": "長崎県",
-   "state": "no_candidate",
-   "reject_dist": {
-    "resolution_low": 5,
-    "title_names_other_station": 9,
+    "title_names_other_station": 6,
     "duplicate_title": 1,
-    "mime_unsupported": 22
-   }
-  },
-  {
-   "slug": "st07834",
-   "name": "山隈",
-   "pref": "福岡県",
-   "state": "no_candidate",
-   "reject_dist": {
-    "resolution_low": 7,
-    "title_names_other_station": 11,
-    "duplicate_title": 1,
-    "mime_unsupported": 26
-   }
-  },
-  {
-   "slug": "st03225",
-   "name": "丹波大山",
-   "pref": "兵庫県",
-   "state": "no_candidate",
-   "reject_dist": {
-    "resolution_low": 7,
-    "title_names_other_station": 12,
-    "duplicate_title": 1,
-    "mime_unsupported": 28
+    "mime_unsupported": 1,
+    "hard_excluded": 3,
+    "resolution_low": 6
    }
   },
   {
@@ -677,10 +112,11 @@
    "pref": "富山県",
    "state": "no_candidate",
    "reject_dist": {
-    "resolution_low": 8,
-    "title_names_other_station": 12,
+    "title_names_other_station": 6,
     "duplicate_title": 2,
-    "mime_unsupported": 30
+    "mime_unsupported": 3,
+    "hard_excluded": 3,
+    "resolution_low": 7
    }
   },
   {
@@ -689,10 +125,11 @@
    "pref": "岐阜県",
    "state": "no_candidate",
    "reject_dist": {
-    "resolution_low": 10,
-    "title_names_other_station": 12,
+    "title_names_other_station": 6,
     "duplicate_title": 2,
-    "mime_unsupported": 32,
+    "mime_unsupported": 5,
+    "hard_excluded": 3,
+    "resolution_low": 9,
     "title_non_station_scene": 1
    }
   },
@@ -702,12 +139,12 @@
    "pref": "大分県",
    "state": "no_candidate",
    "reject_dist": {
-    "resolution_low": 11,
-    "title_names_other_station": 12,
+    "title_names_other_station": 6,
     "duplicate_title": 2,
-    "mime_unsupported": 32,
-    "title_non_station_scene": 1,
-    "hard_excluded": 1
+    "mime_unsupported": 5,
+    "hard_excluded": 4,
+    "resolution_low": 10,
+    "title_non_station_scene": 1
    }
   },
   {
@@ -716,26 +153,12 @@
    "pref": "富山県",
    "state": "no_candidate",
    "reject_dist": {
-    "resolution_low": 12,
-    "title_names_other_station": 12,
+    "title_names_other_station": 6,
     "duplicate_title": 2,
-    "mime_unsupported": 32,
-    "title_non_station_scene": 1,
-    "hard_excluded": 2
-   }
-  },
-  {
-   "slug": "st01185",
-   "name": "今川河童",
-   "pref": "福岡県",
-   "state": "no_candidate",
-   "reject_dist": {
-    "resolution_low": 14,
-    "title_names_other_station": 19,
-    "duplicate_title": 2,
-    "mime_unsupported": 32,
-    "title_non_station_scene": 1,
-    "hard_excluded": 2
+    "mime_unsupported": 5,
+    "hard_excluded": 5,
+    "resolution_low": 11,
+    "title_non_station_scene": 1
    }
   },
   {
@@ -744,20 +167,13 @@
    "pref": "高知県",
    "state": "no_candidate",
    "reject_dist": {
-    "resolution_low": 16,
-    "title_names_other_station": 47,
+    "title_names_other_station": 34,
     "duplicate_title": 2,
-    "mime_unsupported": 32,
-    "title_non_station_scene": 1,
-    "hard_excluded": 3
+    "mime_unsupported": 5,
+    "hard_excluded": 6,
+    "resolution_low": 13,
+    "title_non_station_scene": 1
    }
-  },
-  {
-   "slug": "st08287",
-   "name": "五十猛",
-   "pref": "島根県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 2
   },
   {
    "slug": "st08290",
@@ -765,21 +181,14 @@
    "pref": "島根県",
    "state": "no_candidate",
    "reject_dist": {
-    "resolution_low": 16,
-    "title_names_other_station": 47,
+    "title_names_other_station": 34,
     "duplicate_title": 2,
-    "mime_unsupported": 33,
+    "mime_unsupported": 5,
+    "hard_excluded": 6,
+    "resolution_low": 13,
     "title_non_station_scene": 1,
-    "hard_excluded": 3,
     "no_author_metadata": 1
    }
-  },
-  {
-   "slug": "st08816",
-   "name": "吉里吉里",
-   "pref": "岩手県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 1
   },
   {
    "slug": "st07138",
@@ -787,42 +196,14 @@
    "pref": "島根県",
    "state": "no_candidate",
    "reject_dist": {
-    "resolution_low": 19,
-    "title_names_other_station": 47,
+    "title_names_other_station": 34,
     "duplicate_title": 2,
-    "mime_unsupported": 36,
+    "mime_unsupported": 5,
+    "hard_excluded": 6,
+    "resolution_low": 13,
     "title_non_station_scene": 1,
-    "hard_excluded": 3,
     "no_author_metadata": 2
    }
-  },
-  {
-   "slug": "st06247",
-   "name": "新西脇",
-   "pref": "兵庫県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 1
-  },
-  {
-   "slug": "st04602",
-   "name": "六条",
-   "pref": "福井県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 3
-  },
-  {
-   "slug": "st05088",
-   "name": "比津",
-   "pref": "三重県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 2
-  },
-  {
-   "slug": "st06057",
-   "name": "鶴丸",
-   "pref": "鹿児島県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 1
   },
   {
    "slug": "st04561",
@@ -830,21 +211,14 @@
    "pref": "山口県",
    "state": "no_candidate",
    "reject_dist": {
-    "resolution_low": 25,
-    "title_names_other_station": 85,
+    "title_names_other_station": 40,
     "duplicate_title": 2,
-    "mime_unsupported": 49,
-    "title_non_station_scene": 2,
-    "hard_excluded": 3,
+    "mime_unsupported": 8,
+    "hard_excluded": 6,
+    "resolution_low": 14,
+    "title_non_station_scene": 1,
     "no_author_metadata": 2
    }
-  },
-  {
-   "slug": "st04643",
-   "name": "土佐岩原",
-   "pref": "高知県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 1
   },
   {
    "slug": "st06053",
@@ -852,21 +226,14 @@
    "pref": "鹿児島県",
    "state": "no_candidate",
    "reject_dist": {
-    "resolution_low": 29,
-    "title_names_other_station": 89,
+    "title_names_other_station": 43,
     "duplicate_title": 2,
-    "mime_unsupported": 49,
-    "title_non_station_scene": 2,
-    "hard_excluded": 3,
+    "mime_unsupported": 8,
+    "hard_excluded": 6,
+    "resolution_low": 15,
+    "title_non_station_scene": 1,
     "no_author_metadata": 2
    }
-  },
-  {
-   "slug": "st08226",
-   "name": "越ケ浜",
-   "pref": "山口県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 1
   },
   {
    "slug": "st04585",
@@ -874,115 +241,51 @@
    "pref": "福井県",
    "state": "no_candidate",
    "reject_dist": {
-    "resolution_low": 30,
-    "title_names_other_station": 90,
+    "title_names_other_station": 43,
     "duplicate_title": 2,
-    "mime_unsupported": 76,
-    "title_non_station_scene": 3,
-    "hard_excluded": 4,
+    "mime_unsupported": 8,
+    "hard_excluded": 6,
+    "resolution_low": 16,
+    "title_non_station_scene": 1,
     "no_author_metadata": 2
    }
-  },
-  {
-   "slug": "st00317",
-   "name": "升形",
-   "pref": "山形県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 1
-  },
-  {
-   "slug": "st03280",
-   "name": "小杉",
-   "pref": "富山県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 2
-  },
-  {
-   "slug": "st03414",
-   "name": "新月",
-   "pref": "岩手県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 3
-  },
-  {
-   "slug": "st08318",
-   "name": "ほうらい丘",
-   "pref": "滋賀県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 2
   }
  ],
  "rejected_notable": [
   {
-   "slug": "st03600",
-   "title": "File:Platform of Aso Station and Train of JR Kyushu.jpg",
-   "named": "aso",
+   "slug": "st01628",
+   "title": "File:2代目もころん号（新宿方先頭車）.jpg",
+   "named": "新宿",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st06506",
-   "title": "File:View from platform of Kusubashi Station (south).jpg",
-   "named": "kusubashi",
+   "slug": "st01628",
+   "title": "File:Ikuta Road near Sannomiya Station 20131216.jpg",
+   "named": "sannomiya",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st07946",
-   "title": "File:Platform of Masaru Station 2.jpg",
-   "named": "masaru",
+   "slug": "st01628",
+   "title": "File:JR Noborito Station Ikuta Wooded Area 20061119.jpg",
+   "named": "noborito",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st07946",
-   "title": "File:View from train at Masaru Station.jpg",
-   "named": "masaru",
+   "slug": "st01628",
+   "title": "File:JR Noborito station Ikuta Wooded Area.jpg",
+   "named": "noborito",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st07946",
-   "title": "File:View from train at Masaru Station 2.jpg",
-   "named": "masaru",
+   "slug": "st01628",
+   "title": "File:Shin Kobe Station across Ikuta River at night Kobe 2026 dllu.jpg",
+   "named": "shin-kobe",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st07946",
-   "title": "File:十三經注疏校勘記(三十六).djvu",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st07946",
-   "title": "File:名山藏(十三).djvu",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st07946",
-   "title": "File:小倉山房詩集(十八).djvu",
-   "named": "小倉",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st07946",
-   "title": "File:續山東考古錄(一).djvu",
-   "named": "山東",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st07834",
-   "title": "File:Platform of Tachiarai Station 2.jpg",
-   "named": "tachiarai",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st07834",
-   "title": "File:Platform of Tachiarai Station 5.jpg",
-   "named": "tachiarai",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03225",
-   "title": "File:Tanba-Oyama stn.jpg",
-   "named": "oyama",
+   "slug": "st01628",
+   "title": "File:JR-Noborito-Sta-Ikutarokuchi.JPG",
+   "named": "noborito",
    "gate": "title_names_other_station"
   },
   {
@@ -990,48 +293,6 @@
    "title": "File:東大垣駅より揖斐川橋梁を臨む - panoramio.jpg",
    "named": null,
    "gate": "title_non_station_scene"
-  },
-  {
-   "slug": "st01185",
-   "title": "File:Platform of Toyotsu Station (Tagawa Line) 11.jpg",
-   "named": "toyotsu",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01185",
-   "title": "File:Platform of Toyotsu Station (Tagawa Line) 12.jpg",
-   "named": "toyotsu",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01185",
-   "title": "File:Platform of Toyotsu Station (Tagawa Line) 2.jpg",
-   "named": "toyotsu",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01185",
-   "title": "File:Platform of Toyotsu Station (Tagawa Line) 3.jpg",
-   "named": "toyotsu",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01185",
-   "title": "File:Platform of Toyotsu Station (Tagawa Line) 4.jpg",
-   "named": "toyotsu",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01185",
-   "title": "File:Platform of Toyotsu Station (Tagawa Line) 6.jpg",
-   "named": "toyotsu",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01185",
-   "title": "File:Platform of Toyotsu Station (Tagawa Line) 7.jpg",
-   "named": "toyotsu",
-   "gate": "title_names_other_station"
   },
   {
    "slug": "st03782",
@@ -1202,204 +463,6 @@
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st04602",
-   "title": "File:NDL769639 史籍集覧 〔３〕 好古小録（藤井貞幹）.pdf",
-   "named": "藤井",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les Célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue五十三次名所図会) Okazaki, le pon, M.C. 10211(1).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les Célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue五十三次名所図会) Okazaki, le pon, M.C. 10211(2).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Akasaka, sur l, M.C. 10226.jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Chiryū, l'anci, M.C. 10222(1).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Chiryū, l'anci, M.C. 10222(2).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Fujikawa, vill, M.C. 10216(1).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Fujikawa, vill, M.C. 10216(2).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Hamamatsu, le, M.C. 10217(2).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Kanagawa, vue, M.C. 10221(1).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Kanagawa, vue, M.C. 10221(2).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Kuwana, bacs à, M.C. 10224.jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Narumi, les bo, M.C. 10223.jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Shimada, le bo, Paris Musées 20231008005828(1).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Shimada, le bo, Paris Musées 20231008005828(2).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Shōno,vestiges, M.C. 10225.jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Yoshida, le gr, M.C. 10218(1).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue 五十三次名所図会) Yoshida, le gr, M.C. 10218(2).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue五十三次名所図会) Fuchū, Abekawa, M.C. 10210.jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue五十三次名所図会) Fujieda, la tra, M.C. 10215(1).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue五十三次名所図会) Ishibe, clients, M.C. 10228.jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue五十三次名所図会) Le Pont de Niho, M.C. 10209(1).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue五十三次名所図会) Le Pont de Niho, M.C. 10209(2).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue五十三次名所図会) Mariko, la vent, M.C. 10214(1).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue五十三次名所図会) Mariko, la vent, M.C. 10214(2).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue五十三次名所図会) Minakuchi, les, M.C. 10227.jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue五十三次名所図会) Shinagawa, vue d, M.C. 10213(1).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st05088",
-   "title": "File:Les célèbres vues des cinquante-trois relais de la route du Tōkaidō (Gojūsan tsugi meisho zue五十三次名所図会) Shinagawa, vue d, M.C. 10213(2).jpg",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st06057",
-   "title": "File:View from train between Tsurumaru Station and Kyomachi-Onsen Station.jpg",
-   "named": null,
-   "gate": "title_non_station_scene"
-  },
-  {
-   "slug": "st06057",
-   "title": "File:NDL960902 大正八年陸軍特別大演習地帯案内 part2.pdf",
-   "named": "大正",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st06057",
-   "title": "File:Platform of Yoshimatsu Station 2.jpg",
-   "named": "yoshimatsu",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st06057",
-   "title": "File:Platform of Yoshimatsu Station and Limited Express \"Isaburo-Shimpei\".jpg",
-   "named": "yoshimatsu",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st06057",
-   "title": "File:View from overpass of Yoshimatsu Station (north).jpg",
-   "named": "yoshimatsu",
-   "gate": "title_names_other_station"
-  },
-  {
    "slug": "st04561",
    "title": "File:Platform of Seiryu-Shin-Iwakuni Station 1.jpg",
    "named": "seiryu-shin-iwakuni",
@@ -1436,12 +499,6 @@
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st04643",
-   "title": "File:Iwahara station 2011b.jpg",
-   "named": "iwahara",
-   "gate": "title_names_other_station"
-  },
-  {
    "slug": "st06053",
    "title": "File:Platform of Kareigawa Station 2.jpg",
    "named": "kareigawa",
@@ -1457,270 +514,6 @@
    "slug": "st06053",
    "title": "File:Platform of Kareigawa Station 8.jpg",
    "named": "kareigawa",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st08226",
-   "title": "File:CNTS-00129837037 高麗史. 卷13-14, 世家 卷13-14.pdf",
-   "named": "高麗",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03632",
-   "title": "File:Minamiaso Torokko train Yusuge.jpg",
-   "named": null,
-   "gate": "title_non_station_scene"
-  },
-  {
-   "slug": "st01628",
-   "title": "File:2代目もころん号（新宿方先頭車）.jpg",
-   "named": "新宿",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01628",
-   "title": "File:Ikuta Road near Sannomiya Station 20131216.jpg",
-   "named": "sannomiya",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01628",
-   "title": "File:JR Noborito Station Ikuta Wooded Area 20061119.jpg",
-   "named": "noborito",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01628",
-   "title": "File:JR Noborito station Ikuta Wooded Area.jpg",
-   "named": "noborito",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01628",
-   "title": "File:Shin Kobe Station across Ikuta River at night Kobe 2026 dllu.jpg",
-   "named": "shin-kobe",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01628",
-   "title": "File:JR-Noborito-Sta-Ikutarokuchi.JPG",
-   "named": "noborito",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:Bus pool at Musashi-Kosugi Station - panoramio.jpg",
-   "named": "musashi-kosugi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:JR East Musashi-Kosugi Station North Gate in Kawasaki City Nakahara Ward, Kanagawa Pref 20240203.jpg",
-   "named": "musashi-kosugi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:JR East Musashi-Kosugi Station Platform 1・2.jpg",
-   "named": "musashi-kosugi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:JR East Musashi-Kosugi Station Platform 1・2 in Kawasaki City Nakahara Ward, Kanagawa Pref 20240203.jpg",
-   "named": "musashi-kosugi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:JR East Musashi-Kosugi Station Platform 3・4 in Kawasaki City Nakahara Ward, Kanagawa Pref 20240203.jpg",
-   "named": "musashi-kosugi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:JR East Musashi-Kosugi Station Tsunashima kaidō Gate in Kawasaki City Nakahara Ward, Kanagawa Pref 20240203.jpg",
-   "named": "musashi-kosugi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:Musashi-kosugi station.jpg",
-   "named": "musashi-kosugi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:Yokosuka line musashi kosugi station 2.JPG",
-   "named": "musashi-kosugi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:JR横須賀線武蔵小杉駅.JPG",
-   "named": "武蔵小杉",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:川崎市平和館前より武蔵小杉駅方向 - panoramio.jpg",
-   "named": "武蔵小杉",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:東急東横線元住吉駅より武蔵小杉方向 - panoramio.jpg",
-   "named": "武蔵小杉",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:東横線元住吉駅より武蔵小杉駅方向 - panoramio.jpg",
-   "named": "武蔵小杉",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:武蔵小杉駅3・4番線（横須賀線・湘南新宿ライン・埼京線）ホーム.jpg",
-   "named": "武蔵小杉",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03280",
-   "title": "File:武蔵小杉駅東口 - panoramio.jpg",
-   "named": "武蔵小杉",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:NDL876796 吾孺下五十三駅・月見曠名画一軸・新累女千種花嫁.pdf",
-   "named": "十三",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:さいたま新都心駅の貨物線に停車中のEH200（2024年3月）.jpg",
-   "named": "さいたま新都心",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:上りホームから撮影した沢渡駅新駅舎（2020年3月7日撮影）.jpg",
-   "named": "沢渡",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:岩村田駅新駅舎.jpg",
-   "named": "岩村田",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:広島駅4・5番乗り場（新発車標稼働後）.jpg",
-   "named": "広島駅",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:広島駅新跨線橋.JPG",
-   "named": "広島駅",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:新函館北斗駅を上空から（2016年7月）.jpg",
-   "named": "新函館北斗",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:新広駅01.jpg",
-   "named": "新広",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:新青森駅（2020年2月）.jpg",
-   "named": "新青森",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:東急新横浜線・相鉄新横浜線新横浜駅 2025年1月5日の横浜市 202501051230 IMG 8981.jpg",
-   "named": "新横浜",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:東急新横浜線・相鉄新横浜線新横浜駅 2025年2月2日の横浜市 202502021209 IMG 4559.jpg",
-   "named": "新横浜",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:東急新横浜線・相鉄新横浜線新横浜駅 2025年2月2日の横浜市 202502021209 IMG 4560.jpg",
-   "named": "新横浜",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:東急新横浜線・相鉄新横浜線新横浜駅 2025年9月5日の横浜市 202509052024 IMG 7817.jpg",
-   "named": "新横浜",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:東急新横浜線・相鉄新横浜線新横浜駅 2025年9月5日の横浜市 202509052024 IMG 7818.jpg",
-   "named": "新横浜",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:沢渡駅新駅舎待合室（2020年3月7日撮影）.jpg",
-   "named": "沢渡",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:沢渡駅新駅舎（2020年3月7日撮影）.jpg",
-   "named": "沢渡",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:渋谷駅新南口.jpg",
-   "named": "渋谷",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:砂越駅新駅舎.jpg",
-   "named": "砂越",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:福井新駅駅舎.JPG",
-   "named": "福井",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:西条駅新駅舎2015年1月全面供用開始時.jpg",
-   "named": "西条",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:野蒜駅新駅舎.JPG",
-   "named": "野蒜",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03414",
-   "title": "File:鼓滝駅新駅舎.JPG",
-   "named": "鼓滝",
    "gate": "title_names_other_station"
   }
  ]

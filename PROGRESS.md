@@ -411,3 +411,10 @@
 - st04643 土佐岩原(土讃線)：唯一候选为 Kiha58 列车站台停靠主体照，无站名牌可读，非站景主体
 - st06057 鶴丸(吉都線)：唯一候选为 NHK-JOG-FM 鹿児(鶴丸)电波塔照，非站景
 - st06247 新西脇(加古川線)：唯一候选站房竖牌为「警察官駐在所」(裁切放大确认)，场景内无站名标识
+
+
+## ws15 refetch round 1 — 2026-11-05T21:57:08Z
+- queue: wrong_station 重抓队列 12 站（stage=mismatch_removal）
+- accepted(GPS<=2km)=0 staged_no_gps=1 still_missing=11
+- reject_dist={"title_names_other_station": 43, "duplicate_title": 2, "mime_unsupported": 8, "hard_excluded": 6, "resolution_low": 16, "title_non_station_scene": 1, "no_author_metadata": 2}
+- 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
