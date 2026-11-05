@@ -30,6 +30,11 @@ GPS_ACCEPT_M = 2000.0
 NOGPS_STAGE_MAX = 3      # 每站最多回传的无 GPS 候选数
 MAX_DOWNLOADS = 8        # 每站最多下载数
 
+# 非站景标题黑名单（round3 教训：列车过桥照/灾害照曾两度通过 GPS 闸门）
+NON_SCENE_RE = re.compile(
+    r'bridge|EMU\b|\btrain\b|depot|garage|車庫|検車区|frigate|navy|\bship\b|'
+    r'flood|damage|disaster|震災|水害|土砂|dosya|車両基地|橋梁', re.I)
+
 # 每站的附加排除词（防再次抓到已确认错图的同源/同族图片）
 EXCLUDE_PAT = {
     'st02193': re.compile(r'水間|みずま|Mizuma\s*Railway|Mizuma\s*Kannon', re.I),
@@ -190,6 +195,13 @@ def main():
                 evidence['rejected_notable'].append(
                     {'slug': slug, 'title': title,
                      'named': other_hit[0][1], 'gate': 'title_names_other_station'})
+                continue
+            if NON_SCENE_RE.search(title):
+                stats['reject_dist']['title_non_station_scene'] = \
+                    stats['reject_dist'].get('title_non_station_scene', 0) + 1
+                evidence['rejected_notable'].append(
+                    {'slug': slug, 'title': title,
+                     'named': None, 'gate': 'title_non_station_scene'})
                 continue
             ok, lic, lic_url, author, reason = bf.license_verdict(info.get('extmetadata'))
             if not ok:
