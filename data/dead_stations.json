@@ -1,7 +1,23 @@
 {
- "count": 178,
+ "count": 352,
  "schema": 1,
  "stations": {
+  "st00014": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "紀伊長田",
+   "name_en": "Kii-Nagata",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st00014",
+   "stage": "qa_pipeline_330"
+  },
   "st00028": {
    "attempts": 2,
    "below_spec": false,
@@ -2756,6 +2772,246 @@
    "source_page": null,
    "stage": "retry"
   },
+  "st02484": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "茶臼山",
+   "name_en": "Chausuyama",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st02484",
+   "stage": "qa_pipeline_330"
+  },
+  "st02485": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "東新町",
+   "name_en": "Higashi-Shimmachi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st02485",
+   "stage": "qa_pipeline_330"
+  },
+  "st02728": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "江井ケ島",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st02728",
+   "stage": "qa_pipeline_330"
+  },
+  "st02729": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "西江井ケ島",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st02729",
+   "stage": "qa_pipeline_330"
+  },
+  "st02824": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "星ケ丘",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st02824",
+   "stage": "qa_pipeline_330"
+  },
+  "st02825": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "星ケ丘",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st02825",
+   "stage": "qa_pipeline_330"
+  },
+  "st02920": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "木太町",
+   "name_en": "Kitachō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st02920",
+   "stage": "qa_pipeline_330"
+  },
+  "st02922": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "古高松南",
+   "name_en": "Furutakamatsu-minami",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st02922",
+   "stage": "qa_pipeline_330"
+  },
+  "st02933": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "讃岐津田",
+   "name_en": "Sanuki-Tsuda",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st02933",
+   "stage": "qa_pipeline_330"
+  },
+  "st02947": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "山河内",
+   "name_en": "Yamagawachi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st02947",
+   "stage": "qa_pipeline_330"
+  },
+  "st02961": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "教会前",
+   "name_en": "Kyōkaimae",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st02961",
+   "stage": "qa_pipeline_330"
+  },
+  "st02969": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "鯖瀬",
+   "name_en": "Sabase",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st02969",
+   "stage": "qa_pipeline_330"
+  },
+  "st03027": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "近義の里",
+   "name_en": "Koginosato",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03027",
+   "stage": "qa_pipeline_330"
+  },
+  "st03164": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "南鳩ケ谷",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03164",
+   "stage": "qa_pipeline_330"
+  },
+  "st03208": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "鶴ケ島",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03208",
+   "stage": "qa_pipeline_330"
+  },
   "st03328": {
    "attempts": 3,
    "below_spec": false,
@@ -2771,6 +3027,22 @@
    "reject_dist": {},
    "slug": "st03328",
    "stage": "manual_qa"
+  },
+  "st03394": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "千代ケ岡",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03394",
+   "stage": "qa_pipeline_330"
   },
   "st03429": {
    "attempts": 3,
@@ -2788,6 +3060,38 @@
    "slug": "st03429",
    "stage": "manual_qa"
   },
+  "st03490": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "鞍手",
+   "name_en": "Kurate",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03490",
+   "stage": "qa_pipeline_330"
+  },
+  "st03501": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "三良坂",
+   "name_en": "Mirasaka",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03501",
+   "stage": "qa_pipeline_330"
+  },
   "st03578": {
    "attempts": 2,
    "below_spec": false,
@@ -2804,6 +3108,54 @@
    "source_page": null,
    "stage": "retry"
   },
+  "st03583": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "竜田口",
+   "name_en": "Tatsutaguchi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03583",
+   "stage": "qa_pipeline_330"
+  },
+  "st03617": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "大分大学前",
+   "name_en": "Ōita-daigaku-mae",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03617",
+   "stage": "qa_pipeline_330"
+  },
+  "st03620": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "犬飼",
+   "name_en": "Inukai",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03620",
+   "stage": "qa_pipeline_330"
+  },
   "st03644": {
    "attempts": 3,
    "below_spec": false,
@@ -2819,6 +3171,310 @@
    "reject_dist": {},
    "slug": "st03644",
    "stage": "manual_qa"
+  },
+  "st03653": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "栄町",
+   "name_en": "Sakaechō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03653",
+   "stage": "qa_pipeline_330"
+  },
+  "st03655": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "栄町",
+   "name_en": "Sakaechō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03655",
+   "stage": "qa_pipeline_330"
+  },
+  "st03728": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "知寄町二丁目",
+   "name_en": "Chiyorichō 2-chōme",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03728",
+   "stage": "qa_pipeline_330"
+  },
+  "st03735": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "桟橋通一丁目",
+   "name_en": "Sanbashi-dōri 1-chōme",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03735",
+   "stage": "qa_pipeline_330"
+  },
+  "st03756": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "西高須",
+   "name_en": "Nishi-Takasu",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03756",
+   "stage": "qa_pipeline_330"
+  },
+  "st03758": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "文珠通",
+   "name_en": "Monju-dōri",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03758",
+   "stage": "qa_pipeline_330"
+  },
+  "st03759": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "曙町",
+   "name_en": "Akebonochō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03759",
+   "stage": "qa_pipeline_330"
+  },
+  "st03760": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "曙町東町",
+   "name_en": "Akebonochō-Higashimachi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03760",
+   "stage": "qa_pipeline_330"
+  },
+  "st03761": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "鴨部",
+   "name_en": "Kamobe",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03761",
+   "stage": "qa_pipeline_330"
+  },
+  "st03762": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "介良通",
+   "name_en": "Kera-dōri",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03762",
+   "stage": "qa_pipeline_330"
+  },
+  "st03764": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "田辺島通",
+   "name_en": "Tabeshima-dōri",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03764",
+   "stage": "qa_pipeline_330"
+  },
+  "st03770": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "明見橋",
+   "name_en": "Myōkembashi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03770",
+   "stage": "qa_pipeline_330"
+  },
+  "st03789": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "伊野商業前",
+   "name_en": "Ino-shōgyō-mae",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03789",
+   "stage": "qa_pipeline_330"
+  },
+  "st03792": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "宇治団地前",
+   "name_en": "Uji-danchi-mae",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03792",
+   "stage": "qa_pipeline_330"
+  },
+  "st03793": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "咥内",
+   "name_en": "Kōnai",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03793",
+   "stage": "qa_pipeline_330"
+  },
+  "st03795": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "朝倉神社前",
+   "name_en": "Asakura-jinjamae",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03795",
+   "stage": "qa_pipeline_330"
+  },
+  "st03846": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "大阪教育大前",
+   "name_en": "Ōsaka-kyōikudai-mae",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03846",
+   "stage": "qa_pipeline_330"
+  },
+  "st03857": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "久宝寺口",
+   "name_en": "Kyūhōjiguchi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03857",
+   "stage": "qa_pipeline_330"
+  },
+  "st03900": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "観光通",
+   "name_en": "Kankōdōri",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03900",
+   "stage": "qa_pipeline_330"
   },
   "st04017": {
    "attempts": 1,
@@ -2840,6 +3496,374 @@
    "source_page": null,
    "stage": "retry"
   },
+  "st04045": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "中角",
+   "name_en": "Nakatsuno",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04045",
+   "stage": "qa_pipeline_330"
+  },
+  "st04134": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "蓬莱",
+   "name_en": "Hōrai",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04134",
+   "stage": "qa_pipeline_330"
+  },
+  "st04403": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "狭山ケ丘",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04403",
+   "stage": "qa_pipeline_330"
+  },
+  "st04542": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "牧",
+   "name_en": "Maki",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04542",
+   "stage": "qa_pipeline_330"
+  },
+  "st04543": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "牧",
+   "name_en": "Maki",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04543",
+   "stage": "qa_pipeline_330"
+  },
+  "st04562": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "南河内",
+   "name_en": "Minami-Gōchi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04562",
+   "stage": "qa_pipeline_330"
+  },
+  "st04563": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "行波",
+   "name_en": "Yukaba",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04563",
+   "stage": "qa_pipeline_330"
+  },
+  "st04566": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "根笠",
+   "name_en": "Negasa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04566",
+   "stage": "qa_pipeline_330"
+  },
+  "st04570": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "柱野",
+   "name_en": "Hashirano",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04570",
+   "stage": "qa_pipeline_330"
+  },
+  "st04574": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "米川",
+   "name_en": "Yonekawa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04574",
+   "stage": "qa_pipeline_330"
+  },
+  "st04577": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "大河内",
+   "name_en": "Ōkawachi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04577",
+   "stage": "qa_pipeline_330"
+  },
+  "st04586": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "下唯野",
+   "name_en": "Shimoyuino",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04586",
+   "stage": "qa_pipeline_330"
+  },
+  "st04587": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "越前富田",
+   "name_en": "Echizen-Tomida",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04587",
+   "stage": "qa_pipeline_330"
+  },
+  "st04621": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "旭",
+   "name_en": "Asahi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04621",
+   "stage": "qa_pipeline_330"
+  },
+  "st04632": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "土佐上川口",
+   "name_en": "Tosa-Kamikawaguchi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04632",
+   "stage": "qa_pipeline_330"
+  },
+  "st04642": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "豊永",
+   "name_en": "Toyonaga",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04642",
+   "stage": "qa_pipeline_330"
+  },
+  "st04671": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "高尾野",
+   "name_en": "Takaono",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04671",
+   "stage": "qa_pipeline_330"
+  },
+  "st04771": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "自由ケ丘",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04771",
+   "stage": "qa_pipeline_330"
+  },
+  "st04772": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "茶屋ケ坂",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04772",
+   "stage": "qa_pipeline_330"
+  },
+  "st04806": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "行啓通",
+   "name_en": "Gyōkeidōri",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04806",
+   "stage": "qa_pipeline_330"
+  },
+  "st04809": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "幌南小学校前",
+   "name_en": "Kōnan-shōgakkō-mae",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04809",
+   "stage": "qa_pipeline_330"
+  },
+  "st04816": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "西線14条",
+   "name_en": "Nishisen 14-jō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04816",
+   "stage": "qa_pipeline_330"
+  },
+  "st04817": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "西線11条",
+   "name_en": "Nishisen 11-jō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04817",
+   "stage": "qa_pipeline_330"
+  },
   "st04875": {
    "attempts": 1,
    "below_spec": false,
@@ -2859,6 +3883,38 @@
    "source_page": null,
    "stage": "retry"
   },
+  "st04959": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "駒ケ谷",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st04959",
+   "stage": "qa_pipeline_330"
+  },
+  "st05083": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "尼ケ辻",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05083",
+   "stage": "qa_pipeline_330"
+  },
   "st05086": {
    "attempts": 1,
    "below_spec": false,
@@ -2877,6 +3933,182 @@
    "slug": "st05086",
    "source_page": null,
    "stage": "retry"
+  },
+  "st05087": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "伊勢八知",
+   "name_en": "Ise-Yachi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05087",
+   "stage": "qa_pipeline_330"
+  },
+  "st05097": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "関ノ宮",
+   "name_en": "Sekinomiya",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05097",
+   "stage": "qa_pipeline_330"
+  },
+  "st05130": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "舟入南",
+   "name_en": "Funairi-minami",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05130",
+   "stage": "qa_pipeline_330"
+  },
+  "st05135": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "蚕桑",
+   "name_en": "Koguwa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05135",
+   "stage": "qa_pipeline_330"
+  },
+  "st05136": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "白兎",
+   "name_en": "Shirousagi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05136",
+   "stage": "qa_pipeline_330"
+  },
+  "st05141": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "時庭",
+   "name_en": "Tokiniwa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05141",
+   "stage": "qa_pipeline_330"
+  },
+  "st05143": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "西大塚",
+   "name_en": "Nishi-Ōtsuka",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05143",
+   "stage": "qa_pipeline_330"
+  },
+  "st05175": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "佐賀公園",
+   "name_en": "Sagakōen",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05175",
+   "stage": "qa_pipeline_330"
+  },
+  "st05177": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "有井川",
+   "name_en": "Ariigawa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05177",
+   "stage": "qa_pipeline_330"
+  },
+  "st05179": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "浮鞭",
+   "name_en": "Ukibuchi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05179",
+   "stage": "qa_pipeline_330"
+  },
+  "st05266": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "内之田",
+   "name_en": "Uchinoda",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05266",
+   "stage": "qa_pipeline_330"
   },
   "st05277": {
    "attempts": 1,
@@ -2898,6 +4130,182 @@
    "source_page": null,
    "stage": "retry"
   },
+  "st05397": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "肥前長野",
+   "name_en": "Hizen-Nagano",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05397",
+   "stage": "qa_pipeline_330"
+  },
+  "st05421": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "ひらんだ",
+   "name_en": "Hiranda",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05421",
+   "stage": "qa_pipeline_330"
+  },
+  "st05425": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "川根小山",
+   "name_en": "Kawane-Koyama",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05425",
+   "stage": "qa_pipeline_330"
+  },
+  "st05426": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "土本",
+   "name_en": "Domoto",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05426",
+   "stage": "qa_pipeline_330"
+  },
+  "st05427": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "沢間",
+   "name_en": "Sawama",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05427",
+   "stage": "qa_pipeline_330"
+  },
+  "st05430": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "閑蔵",
+   "name_en": "Kanzō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05430",
+   "stage": "qa_pipeline_330"
+  },
+  "st05528": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "幡ケ谷",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05528",
+   "stage": "qa_pipeline_330"
+  },
+  "st05617": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "芦ケ久保",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05617",
+   "stage": "qa_pipeline_330"
+  },
+  "st05651": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "鬼瀬",
+   "name_en": "Onigase",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05651",
+   "stage": "qa_pipeline_330"
+  },
+  "st05658": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "筑後大石",
+   "name_en": "Chikugo-Ōishi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05658",
+   "stage": "qa_pipeline_330"
+  },
+  "st05663": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "瓦ケ浜",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05663",
+   "stage": "qa_pipeline_330"
+  },
   "st05828": {
    "attempts": 1,
    "below_spec": false,
@@ -2916,6 +4324,438 @@
    "slug": "st05828",
    "source_page": null,
    "stage": "retry"
+  },
+  "st05906": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "観月橋",
+   "name_en": "Kangetsukyō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05906",
+   "stage": "qa_pipeline_330"
+  },
+  "st05985": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "頴娃大川",
+   "name_en": "Eiōkawa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st05985",
+   "stage": "qa_pipeline_330"
+  },
+  "st06054": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "表木山",
+   "name_en": "Hyōkiyama",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06054",
+   "stage": "qa_pipeline_330"
+  },
+  "st06061": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "えびの飯野",
+   "name_en": "Ebino-Iino",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06061",
+   "stage": "qa_pipeline_330"
+  },
+  "st06063": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "広原",
+   "name_en": "Hirowara",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06063",
+   "stage": "qa_pipeline_330"
+  },
+  "st06065": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "日向前田",
+   "name_en": "Hyūga-Maeda",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06065",
+   "stage": "qa_pipeline_330"
+  },
+  "st06067": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "東高崎",
+   "name_en": "Higashi-Takasaki",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06067",
+   "stage": "qa_pipeline_330"
+  },
+  "st06068": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "万ケ塚",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06068",
+   "stage": "qa_pipeline_330"
+  },
+  "st06114": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "楚原",
+   "name_en": "Sohara",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06114",
+   "stage": "qa_pipeline_330"
+  },
+  "st06135": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "大鳥羽",
+   "name_en": "Ōtoba",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06135",
+   "stage": "qa_pipeline_330"
+  },
+  "st06150": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "青郷",
+   "name_en": "Aonogō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06150",
+   "stage": "qa_pipeline_330"
+  },
+  "st06258": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "うらがわら",
+   "name_en": "Uragawara",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06258",
+   "stage": "qa_pipeline_330"
+  },
+  "st06359": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "二里ケ浜",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06359",
+   "stage": "qa_pipeline_330"
+  },
+  "st06479": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "迫川",
+   "name_en": "Hazakawa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06479",
+   "stage": "qa_pipeline_330"
+  },
+  "st06480": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "備前片岡",
+   "name_en": "Bizen-Kataoka",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06480",
+   "stage": "qa_pipeline_330"
+  },
+  "st06513": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "三ケ森",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06513",
+   "stage": "qa_pipeline_330"
+  },
+  "st06628": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "駒ケ林",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06628",
+   "stage": "qa_pipeline_330"
+  },
+  "st06669": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "蘇原",
+   "name_en": "Sohara",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06669",
+   "stage": "qa_pipeline_330"
+  },
+  "st06675": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "下麻生",
+   "name_en": "Shimo-Asō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06675",
+   "stage": "qa_pipeline_330"
+  },
+  "st06861": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "赤星",
+   "name_en": "Akaboshi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06861",
+   "stage": "qa_pipeline_330"
+  },
+  "st06891": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "上宇和",
+   "name_en": "Kami-Uwa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06891",
+   "stage": "qa_pipeline_330"
+  },
+  "st06920": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "伊予氷見",
+   "name_en": "Iyo-Himi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06920",
+   "stage": "qa_pipeline_330"
+  },
+  "st06922": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "玉之江",
+   "name_en": "Tamanoe",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06922",
+   "stage": "qa_pipeline_330"
+  },
+  "st06927": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "波方",
+   "name_en": "Namikata",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06927",
+   "stage": "qa_pipeline_330"
+  },
+  "st06995": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "下曽根",
+   "name_en": "Shimosone",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st06995",
+   "stage": "qa_pipeline_330"
+  },
+  "st07001": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "熊崎",
+   "name_en": "Kumasaki",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07001",
+   "stage": "qa_pipeline_330"
+  },
+  "st07020": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "東中津",
+   "name_en": "Higashi-Nakatsu",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07020",
+   "stage": "qa_pipeline_330"
   },
   "st07032": {
    "attempts": 1,
@@ -2937,6 +4777,246 @@
    "source_page": null,
    "stage": "retry"
   },
+  "st07034": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "直見",
+   "name_en": "Naomi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07034",
+   "stage": "qa_pipeline_330"
+  },
+  "st07035": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "直川",
+   "name_en": "Naokawa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07035",
+   "stage": "qa_pipeline_330"
+  },
+  "st07136": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "本俣賀",
+   "name_en": "Hommataga",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07136",
+   "stage": "qa_pipeline_330"
+  },
+  "st07139": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "青原",
+   "name_en": "Aohara",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07139",
+   "stage": "qa_pipeline_330"
+  },
+  "st07140": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "日原",
+   "name_en": "Nichihara",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07140",
+   "stage": "qa_pipeline_330"
+  },
+  "st07161": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "船平山",
+   "name_en": "Funahirayama",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07161",
+   "stage": "qa_pipeline_330"
+  },
+  "st07275": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "嘉川",
+   "name_en": "Kagawa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07275",
+   "stage": "qa_pipeline_330"
+  },
+  "st07363": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "紀伊日置",
+   "name_en": "Kii-Hiki",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07363",
+   "stage": "qa_pipeline_330"
+  },
+  "st07368": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "紀伊有田",
+   "name_en": "Kii-Arita",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07368",
+   "stage": "qa_pipeline_330"
+  },
+  "st07372": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "江住",
+   "name_en": "Esumi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07372",
+   "stage": "qa_pipeline_330"
+  },
+  "st07390": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "芳養",
+   "name_en": "Haya",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07390",
+   "stage": "qa_pipeline_330"
+  },
+  "st07392": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "紀伊佐野",
+   "name_en": "Kii-Sano",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07392",
+   "stage": "qa_pipeline_330"
+  },
+  "st07395": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "紀伊天満",
+   "name_en": "Kii-Tenma",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07395",
+   "stage": "qa_pipeline_330"
+  },
+  "st07399": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "紀伊田原",
+   "name_en": "Kii-Tahara",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07399",
+   "stage": "qa_pipeline_330"
+  },
+  "st07400": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "紀伊姫",
+   "name_en": "Kii-Hime",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07400",
+   "stage": "qa_pipeline_330"
+  },
   "st07513": {
    "attempts": 3,
    "below_spec": false,
@@ -2952,6 +5032,278 @@
    "reject_dist": {},
    "slug": "st07513",
    "stage": "manual_qa"
+  },
+  "st07579": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "苧ケ瀬",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07579",
+   "stage": "qa_pipeline_330"
+  },
+  "st07614": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "石打ダム",
+   "name_en": "Ishiuchi Dam",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07614",
+   "stage": "qa_pipeline_330"
+  },
+  "st07617": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "緑川",
+   "name_en": "Midorikawa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07617",
+   "stage": "qa_pipeline_330"
+  },
+  "st07650": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "横屋",
+   "name_en": "Yokoya",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07650",
+   "stage": "qa_pipeline_330"
+  },
+  "st07651": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "十九条",
+   "name_en": "Jūkujō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07651",
+   "stage": "qa_pipeline_330"
+  },
+  "st07655": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "糸貫",
+   "name_en": "Itonuki",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07655",
+   "stage": "qa_pipeline_330"
+  },
+  "st07658": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "木知原",
+   "name_en": "Kochibora",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07658",
+   "stage": "qa_pipeline_330"
+  },
+  "st07662": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "鍋原",
+   "name_en": "Nabera",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07662",
+   "stage": "qa_pipeline_330"
+  },
+  "st07670": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "相ノ木",
+   "name_en": "Ainoki",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07670",
+   "stage": "qa_pipeline_330"
+  },
+  "st07673": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "越中三郷",
+   "name_en": "Etchū-Sangō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07673",
+   "stage": "qa_pipeline_330"
+  },
+  "st07674": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "越中荏原",
+   "name_en": "Etchū-Ebara",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07674",
+   "stage": "qa_pipeline_330"
+  },
+  "st07681": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "釜ケ淵",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07681",
+   "stage": "qa_pipeline_330"
+  },
+  "st07765": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "勅旨",
+   "name_en": "Chokushi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07765",
+   "stage": "qa_pipeline_330"
+  },
+  "st07832": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "今隈",
+   "name_en": "Imaguma",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07832",
+   "stage": "qa_pipeline_330"
+  },
+  "st07833": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "西太刀洗",
+   "name_en": "Nishi-Tachiarai",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07833",
+   "stage": "qa_pipeline_330"
+  },
+  "st07933": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "鳴石",
+   "name_en": "Naruishi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07933",
+   "stage": "qa_pipeline_330"
+  },
+  "st07954": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "泉福寺",
+   "name_en": "Senpukuji",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07954",
+   "stage": "qa_pipeline_330"
   },
   "st07978": {
    "attempts": 3,
@@ -2989,6 +5341,86 @@
    "source_page": null,
    "stage": "retry"
   },
+  "st08009": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "志和地",
+   "name_en": "Shiwachi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08009",
+   "stage": "qa_pipeline_330"
+  },
+  "st08010": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "上川立",
+   "name_en": "Kami-Kawatachi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08010",
+   "stage": "qa_pipeline_330"
+  },
+  "st08043": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "円田",
+   "name_en": "Enden",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08043",
+   "stage": "qa_pipeline_330"
+  },
+  "st08046": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "戸綿",
+   "name_en": "Towata",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08046",
+   "stage": "qa_pipeline_330"
+  },
+  "st08048": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "いこいの広場",
+   "name_en": "Ikoino-hiroba",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08048",
+   "stage": "qa_pipeline_330"
+  },
   "st08068": {
    "attempts": 3,
    "below_spec": false,
@@ -3005,6 +5437,230 @@
    "slug": "st08068",
    "stage": "manual_qa"
   },
+  "st08156": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "鎌ケ谷大仏",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08156",
+   "stage": "qa_pipeline_330"
+  },
+  "st08242": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "荒島",
+   "name_en": "Arashima",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08242",
+   "stage": "qa_pipeline_330"
+  },
+  "st08252": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "岡見",
+   "name_en": "Okami",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08252",
+   "stage": "qa_pipeline_330"
+  },
+  "st08279": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "梅迫",
+   "name_en": "Umezako",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08279",
+   "stage": "qa_pipeline_330"
+  },
+  "st08286": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "静間",
+   "name_en": "Shizuma",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08286",
+   "stage": "qa_pipeline_330"
+  },
+  "st08300": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "大羽根園",
+   "name_en": "Ōbaneen",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08300",
+   "stage": "qa_pipeline_330"
+  },
+  "st08346": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "河芸",
+   "name_en": "Kawage",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08346",
+   "stage": "qa_pipeline_330"
+  },
+  "st08431": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "一武",
+   "name_en": "Ichibu",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08431",
+   "stage": "qa_pipeline_330"
+  },
+  "st08435": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "東免田",
+   "name_en": "Higashi-Menda",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08435",
+   "stage": "qa_pipeline_330"
+  },
+  "st08436": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "公立病院前",
+   "name_en": "Kōritsu-byōin-mae",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08436",
+   "stage": "qa_pipeline_330"
+  },
+  "st08470": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "狐ケ崎",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08470",
+   "stage": "qa_pipeline_330"
+  },
+  "st08540": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "南生駒",
+   "name_en": "Minami-Ikoma",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08540",
+   "stage": "qa_pipeline_330"
+  },
+  "st08692": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "鼓ケ浦",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08692",
+   "stage": "qa_pipeline_330"
+  },
+  "st08698": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "霞ケ浦",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08698",
+   "stage": "qa_pipeline_330"
+  },
   "st08712": {
    "attempts": 3,
    "below_spec": false,
@@ -3020,6 +5676,134 @@
    "reject_dist": {},
    "slug": "st08712",
    "stage": "manual_qa"
+  },
+  "st08792": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "霊丘公園体育館",
+   "name_en": "Reikyūkōentaiikukan",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08792",
+   "stage": "qa_pipeline_330"
+  },
+  "st08794": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "三会",
+   "name_en": "Mie",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08794",
+   "stage": "qa_pipeline_330"
+  },
+  "st08818": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "鵜住居",
+   "name_en": "Unosumai",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08818",
+   "stage": "qa_pipeline_330"
+  },
+  "st08819": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "両石",
+   "name_en": "Ryōishi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08819",
+   "stage": "qa_pipeline_330"
+  },
+  "st08829": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "十府ケ浦海岸",
+   "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08829",
+   "stage": "qa_pipeline_330"
+  },
+  "st08837": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "摂待",
+   "name_en": "Settai",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08837",
+   "stage": "qa_pipeline_330"
+  },
+  "st08840": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "佐羽根",
+   "name_en": "Sabane",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08840",
+   "stage": "qa_pipeline_330"
+  },
+  "st08841": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T07:48:02Z",
+   "last_attempt": "2026-11-05T07:48:02Z",
+   "name": "一の渡",
+   "name_en": "Ichinowatari",
+   "note": "330池组合检索+地理围栏+目检后无合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08841",
+   "stage": "qa_pipeline_330"
   },
   "st08891": {
    "attempts": 3,
@@ -3038,5 +5822,5 @@
    "stage": "manual_qa"
   }
  },
- "updated_at": "2026-11-05T03:47:18Z"
+ "updated_at": "2026-11-05T07:48:02Z"
 }
