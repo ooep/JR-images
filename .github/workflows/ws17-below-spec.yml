@@ -485,9 +485,23 @@ jobs:
 
       - name: Verify batch
         id: verify
-        continue-on-error: true
+        # 只报告不写 dead：既存一图两用基线（审计裁决二，dup_153_action.csv）不在
+        # 本工作流处置范围；闸门=本批站号零问题。
+        env:
+          BS_SLUGS: ${{ inputs.slugs }}
         run: |
-          python scripts/verify_local.py --workdir . --dead-list data/dead_stations.json
+          python3 - <<'PY'
+          import json, os, subprocess, sys
+          p = subprocess.run([sys.executable, 'scripts/verify_local.py', '--workdir', '.'],
+                             capture_output=True, text=True)
+          print(p.stdout[-6000:])
+          d = json.loads(p.stdout[p.stdout.rindex('{'):])
+          slugs = {s.strip() for s in os.environ['BS_SLUGS'].split(',') if s.strip()}
+          bad = [x for x in d['detail'] if x[0] in slugs]
+          print('batch-scoped problems: %s (total preexisting baseline: %d)'
+                % (bad, d['problems']))
+          sys.exit(1 if bad else 0)
+          PY
 
       # 抓取窗口结束：删除明文抓取脚本（提交只涉及 stations/licenses/索引/报告）
       - name: Remove plaintext fetchers
