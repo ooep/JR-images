@@ -6,3 +6,5 @@ __pycache__/
 geo_audit_report.json
 # ws15 暂存候选（无 GPS 候选经 artifact 回传本地目检，不入库）
 ws15_stage/
+# ws17 暂存候选（below_spec 替换候选经 artifact 回传本地 OCR+目检，不入库）
+ws17_stage/
