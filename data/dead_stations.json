@@ -1,5 +1,5 @@
 {
- "count": 349,
+ "count": 337,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -17,26 +17,6 @@
    "reject_dist": {},
    "slug": "st00014",
    "stage": "qa_pipeline_330"
-  },
-  "st00028": {
-   "attempts": 2,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T16:45:01Z",
-   "name": "橋本",
-   "name_en": "Hashimoto",
-   "reasons": {
-    "geo_mismatch": 9,
-    "hard_excluded": 1,
-    "name_mismatch_review": 1,
-    "no_station_evidence": 13,
-    "pref_mismatch": 3
-   },
-   "reject_dist": {},
-   "slug": "st00028",
-   "source_page": null,
-   "stage": "retry"
   },
   "st00040": {
    "attempts": 1,
@@ -1043,23 +1023,6 @@
    "source_page": null,
    "stage": "fetch"
   },
-  "st00716": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-03T13:43:51Z",
-   "last_attempt": "2026-11-03T13:43:51Z",
-   "name": "北方",
-   "name_en": "Kitagata",
-   "reasons": {
-    "mime_unsupported": 4,
-    "resolution_low": 9
-   },
-   "reject_dist": {},
-   "slug": "st00716",
-   "source_page": null,
-   "stage": "fetch"
-  },
   "st00792": {
    "attempts": 1,
    "below_spec": false,
@@ -1172,25 +1135,6 @@
    },
    "reject_dist": {},
    "slug": "st00827",
-   "source_page": null,
-   "stage": "retry"
-  },
-  "st00878": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:40:00Z",
-   "name": "三田",
-   "name_en": "Mita",
-   "reasons": {
-    "geo_mismatch": 3,
-    "hard_excluded": 2,
-    "no_station_evidence": 25,
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "slug": "st00878",
    "source_page": null,
    "stage": "retry"
   },
@@ -1644,25 +1588,6 @@
    "source_page": null,
    "stage": "fetch"
   },
-  "st01206": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:45:39Z",
-   "name": "新田",
-   "name_en": "Nitta",
-   "reasons": {
-    "geo_mismatch": 4,
-    "name_mismatch_review": 10,
-    "no_station_evidence": 20,
-    "pref_mismatch": 2
-   },
-   "reject_dist": {},
-   "slug": "st01206",
-   "source_page": null,
-   "stage": "retry"
-  },
   "st01209": {
    "attempts": 1,
    "below_spec": false,
@@ -1679,45 +1604,6 @@
    "slug": "st01209",
    "source_page": "https://commons.wikimedia.org/wiki/File:ＪＲ小倉駅とモノレール_-_panoramio.jpg",
    "stage": "audit"
-  },
-  "st01214": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:45:44Z",
-   "name": "木幡",
-   "name_en": "Kobata",
-   "reasons": {
-    "geo_mismatch": 4,
-    "name_mismatch_review": 6,
-    "no_station_evidence": 9,
-    "pref_mismatch": 4,
-    "wrong_station": 3
-   },
-   "reject_dist": {},
-   "slug": "st01214",
-   "source_page": null,
-   "stage": "retry"
-  },
-  "st01215": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T05:08:18Z",
-   "name": "木幡",
-   "name_en": "Kobata",
-   "reasons": {
-    "geo_mismatch": 1,
-    "name_mismatch_review": 9,
-    "no_station_evidence": 12,
-    "wrong_station": 7
-   },
-   "reject_dist": {},
-   "slug": "st01215",
-   "source_page": null,
-   "stage": "retry"
   },
   "st01233": {
    "attempts": 1,
@@ -1792,24 +1678,6 @@
    "source_page": null,
    "stage": "retry"
   },
-  "st01280": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:46:27Z",
-   "name": "柏原",
-   "name_en": "Kaibara",
-   "reasons": {
-    "geo_mismatch": 6,
-    "no_station_evidence": 20,
-    "pref_mismatch": 1
-   },
-   "reject_dist": {},
-   "slug": "st01280",
-   "source_page": null,
-   "stage": "retry"
-  },
   "st01282": {
    "attempts": 3,
    "below_spec": false,
@@ -1866,25 +1734,6 @@
    "source_page": null,
    "stage": "retry",
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
-  },
-  "st01354": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:46:39Z",
-   "name": "河原町",
-   "name_en": "Kawaramachi",
-   "reasons": {
-    "geo_mismatch": 8,
-    "hard_excluded": 3,
-    "no_station_evidence": 5,
-    "pref_mismatch": 13
-   },
-   "reject_dist": {},
-   "slug": "st01354",
-   "source_page": null,
-   "stage": "retry"
   },
   "st01374": {
    "attempts": 1,
@@ -1996,24 +1845,6 @@
    "source_page": null,
    "stage": "retry",
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
-  },
-  "st01434": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:47:20Z",
-   "name": "県庁前",
-   "name_en": "Ehime Pref. Office",
-   "reasons": {
-    "geo_mismatch": 21,
-    "no_station_evidence": 1,
-    "pref_mismatch": 2
-   },
-   "reject_dist": {},
-   "slug": "st01434",
-   "source_page": null,
-   "stage": "retry"
   },
   "st01435": {
    "attempts": 3,
@@ -2204,24 +2035,6 @@
    "slug": "st01648",
    "source_page": "https://commons.wikimedia.org/wiki/File:Sakhalin_railway_pokrovka_station_1.jpg",
    "stage": "audit"
-  },
-  "st01649": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:53:19Z",
-   "name": "黒川",
-   "name_en": "Kurogō",
-   "reasons": {
-    "geo_mismatch": 10,
-    "name_mismatch_review": 9,
-    "no_station_evidence": 17
-   },
-   "reject_dist": {},
-   "slug": "st01649",
-   "source_page": null,
-   "stage": "retry"
   },
   "st01659": {
    "attempts": 3,
@@ -3356,26 +3169,6 @@
    "slug": "st03900",
    "stage": "qa_pipeline_330"
   },
-  "st04017": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:54:16Z",
-   "name": "竹田",
-   "name_en": "Takeda",
-   "reasons": {
-    "geo_mismatch": 13,
-    "hard_excluded": 2,
-    "low_color(map/text?)": 1,
-    "name_mismatch_review": 10,
-    "no_station_evidence": 14
-   },
-   "reject_dist": {},
-   "slug": "st04017",
-   "source_page": null,
-   "stage": "retry"
-  },
   "st04045": {
    "attempts": 3,
    "below_spec": false,
@@ -3743,25 +3536,6 @@
    "reject_dist": {},
    "slug": "st04817",
    "stage": "qa_pipeline_330"
-  },
-  "st04875": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:54:21Z",
-   "name": "中津",
-   "name_en": "Nakatsu",
-   "reasons": {
-    "geo_mismatch": 17,
-    "hard_excluded": 7,
-    "no_station_evidence": 4,
-    "pref_mismatch": 1
-   },
-   "reject_dist": {},
-   "slug": "st04875",
-   "source_page": null,
-   "stage": "retry"
   },
   "st04959": {
    "attempts": 3,
@@ -5878,5 +5652,5 @@
    "note": "ws15 rounds1-4 标缺：朝阳(長野)：仅三重县朝日站(县不符)x3"
   }
  },
- "updated_at": "2026-11-05T18:18:01Z"
+ "updated_at": "2026-11-05T18:29:47Z"
 }

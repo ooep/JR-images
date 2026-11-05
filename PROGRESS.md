@@ -228,3 +228,10 @@
 - st07773 峰(栃木)：仅福州象峰(异国)x3 与横滨鹤峰巴士站(他站)
 - st08679 朝阳(長野)：仅三重县朝日站(县不符)x3
 - wrong_station 15 队列与 ws16 异国 10 队列至此全部处置完毕（补图/标缺），未覆盖站转 B2 客流策略续抓。
+
+
+## ws15 refetch round 1 — 2026-11-05T18:29:47Z
+- queue: wrong_station 重抓队列 30 站（stage=mismatch_removal）
+- accepted(GPS<=2km)=20 staged_no_gps=10 still_missing=0
+- reject_dist={"hard_excluded": 94, "resolution_low": 133, "duplicate_title": 43, "mime_unsupported": 142, "title_names_other_station": 161, "license_unclear": 3, "no_author_metadata": 7, "title_non_station_scene": 7}
+- 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
