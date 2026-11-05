@@ -207,3 +207,8 @@
 - accepted(GPS<=2km)=0 staged_no_gps=13 still_missing=0
 - reject_dist={"title_non_station_scene": 17, "duplicate_title": 5, "title_names_other_station": 55, "mime_unsupported": 65, "hard_excluded": 55, "resolution_low": 39, "license_forbidden": 5, "license_unclear": 2}
 - 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
+
+
+## ws15 local accept batch4 — 2026-11-05T18:15:10Z
+- st02229 江の浦 ← File:Nishitetsu Enoura Station01.jpg (review)
+- st05323 梅林 ← File:Bairin Station building 2.jpg (done)
