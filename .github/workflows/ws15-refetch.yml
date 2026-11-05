@@ -1,0 +1,68 @@
+name: ws15-refetch
+
+# wrong_station 重抓队列（stage=mismatch_removal，15 条）严格重抓。
+# 口径：GPS<=2km 直接接受；无 GPS 候选不直接入 HEAD，经 artifact 回传由本地
+# 会话做站牌 OCR + 目检后另行提交。详见 scripts/ws15_refetch.py 头注。
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ws15-refetch
+  cancel-in-progress: false
+
+jobs:
+  refetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install --quiet pillow numpy requests
+
+      - name: Strict refetch
+        run: python scripts/ws15_refetch.py
+
+      - name: Commit & push (never force)
+        run: |
+          set -e
+          git config user.name "jrimages-bot"
+          git config user.email "ooep@users.noreply.github.com"
+          git add stations licenses state.json index.json PROGRESS.md \
+                  batch_stats_dead.json data/dead_stations.json \
+                  reports/ws15_refetch_evidence.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "nothing to commit"; exit 0
+          fi
+          git commit -m "ws15 refetch round1: wrong_station queue strict refetch (GPS<=2km accepts; no-GPS staged to artifact)"
+          for n in 1 2 3 4; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "push failed ($n), fetch+rebase & retry"
+            git fetch origin main
+            git stash push -m rebase-shield >/dev/null 2>&1 || true
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              git stash pop || true
+              exit 1
+            fi
+            git stash pop || true
+          done
+          exit 1
+
+      - name: Upload staged candidates (no-GPS, for local OCR/visual)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ws15-stage-round1
+          path: |
+            ws15_stage/
+            reports/ws15_refetch_evidence.json
+          if-no-files-found: ignore
