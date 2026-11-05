@@ -1,5 +1,5 @@
 {
- "count": 168,
+ "count": 178,
  "schema": 1,
  "stations": {
   "st00028": {
@@ -131,6 +131,22 @@
    "slug": "st00190",
    "source_page": null,
    "stage": "retry"
+  },
+  "st00254": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T03:47:18Z",
+   "name": "追分",
+   "name_en": "Oiwake",
+   "note": "no_verifiable_candidate: 候选实为京阪追分(滋贺)站牌, 北海道追分无可用图",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st00254",
+   "stage": "manual_qa"
   },
   "st00309": {
    "attempts": 2,
@@ -842,21 +858,20 @@
    "stage": "verify"
   },
   "st00577": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-03T23:35:41Z",
-   "last_attempt": "2026-11-03T23:35:41Z",
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T03:47:18Z",
    "name": "福井",
    "name_en": "Fukui",
-   "note": "perceptual near-dup (dHash hamming<=6) of st00578; refetch a different photo",
+   "note": "no_verifiable_candidate",
    "reasons": {
-    "near_duplicate_with": "st00578"
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00577",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Dinosaurs_outside_Echizen_Railway_platforms_at_Fukui_Station.jpg",
-   "stage": "audit"
+   "stage": "manual_qa"
   },
   "st00580": {
    "attempts": 1,
@@ -955,6 +970,22 @@
    "slug": "st00602",
    "source_page": null,
    "stage": "retry"
+  },
+  "st00609": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T03:47:18Z",
+   "name": "市布",
+   "name_en": "Ichinuno",
+   "note": "no_verifiable_candidate",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st00609",
+   "stage": "manual_qa"
   },
   "st00639": {
    "attempts": 1,
@@ -2725,6 +2756,38 @@
    "source_page": null,
    "stage": "retry"
   },
+  "st03328": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T03:47:18Z",
+   "name": "横山",
+   "name_en": "Yokoyama",
+   "note": "no_verifiable_candidate",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03328",
+   "stage": "manual_qa"
+  },
+  "st03429": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T03:47:18Z",
+   "name": "板橋",
+   "name_en": "Itabashi",
+   "note": "no_verifiable_candidate: 唯一候选为废轨照片非站景",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03429",
+   "stage": "manual_qa"
+  },
   "st03578": {
    "attempts": 2,
    "below_spec": false,
@@ -2740,6 +2803,22 @@
    "slug": "st03578",
    "source_page": null,
    "stage": "retry"
+  },
+  "st03644": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T03:47:18Z",
+   "name": "布市",
+   "name_en": "Nunoichi",
+   "note": "no_verifiable_candidate",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st03644",
+   "stage": "manual_qa"
   },
   "st04017": {
    "attempts": 1,
@@ -2858,6 +2937,38 @@
    "source_page": null,
    "stage": "retry"
   },
+  "st07513": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T03:47:18Z",
+   "name": "兜",
+   "name_en": "Kabuto",
+   "note": "no_verifiable_candidate",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07513",
+   "stage": "manual_qa"
+  },
+  "st07978": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T03:47:18Z",
+   "name": "山谷",
+   "name_en": "Yamadani",
+   "note": "no_verifiable_candidate",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st07978",
+   "stage": "manual_qa"
+  },
   "st07999": {
    "attempts": 1,
    "below_spec": false,
@@ -2877,7 +2988,55 @@
    "slug": "st07999",
    "source_page": null,
    "stage": "retry"
+  },
+  "st08068": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T03:47:18Z",
+   "name": "虹の駅",
+   "name_en": null,
+   "note": "no_verifiable_candidate",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08068",
+   "stage": "manual_qa"
+  },
+  "st08712": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T03:47:18Z",
+   "name": "城東",
+   "name_en": "Jōtō",
+   "note": "no_verifiable_candidate",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08712",
+   "stage": "manual_qa"
+  },
+  "st08891": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T03:47:18Z",
+   "name": "西山口",
+   "name_en": "Nishiyamaguchi",
+   "note": "no_verifiable_candidate",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "slug": "st08891",
+   "stage": "manual_qa"
   }
  },
- "updated_at": "2026-11-04T16:47:03Z"
+ "updated_at": "2026-11-05T03:47:18Z"
 }
