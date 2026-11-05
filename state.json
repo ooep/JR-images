@@ -112455,51 +112455,17 @@
    "attempts": 1
   },
   "st02193": {
-   "status": "done",
-   "file": "stations/st02193/photo.jpg",
-   "sha256": "ca1a612c613d082a489167e7c4c9d2f9ea56ed744e4c49fac2313094f09dcd57",
-   "dhash": "80c0cb4e4737376c",
-   "bytes": 370143,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 5089,
-    "original_height": 3392
-   },
-   "below_spec": false,
-   "score": 8.07,
-   "source_title": "File:Mizuma Railway Mizuma Kannon Station.jpg",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:Mizuma_Railway_Mizuma_Kannon_Station.jpg",
-   "author": "KishujiRapid",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1129.0,
-    "colorfulness": 71.3,
-    "white_frac": 0.002,
-    "edge_density": 0.064,
-    "sky_frac": 0.016,
-    "brightness": 149.9,
-    "dark_frac": 0.085,
-    "center_edge": 0.0637
-   },
-   "reasons": [],
-   "reject_dist": {
-    "resolution_low": 3,
-    "no_station_evidence": 7,
-    "name_mismatch_review": 4,
-    "wrong_station": 2,
-    "geo_mismatch": 11
-   },
-   "downloads": 1,
-   "ts": "2026-11-04T06:33:32Z",
-   "attempts": 1
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
+   "reasons": [
+    "wrong_station_removed"
+   ],
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Mizuma Railway Mizuma Kannon Station.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Mizuma_Railway_Mizuma_Kannon_Station.jpg",
+   "removed_sha256": "ca1a612c613d082a489167e7c4c9d2f9ea56ed744e4c49fac2313094f09dcd57"
   },
   "st02194": {
    "status": "done",
@@ -112817,50 +112783,17 @@
    "attempts": 1
   },
   "st02201": {
-   "status": "review",
-   "file": "stations/st02201/photo.jpg",
-   "sha256": "21850db3ebf24afe5f67d7cf8854452f4ad79052ed31dcafff33d04c6447f00c",
-   "dhash": "cdf874e3c1c0e4d2",
-   "bytes": 496424,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3264,
-    "original_height": 2448
-   },
-   "below_spec": false,
-   "score": 7.25,
-   "source_title": "File:Platform of Kitano Station (Nishitetsu-Amagi Line) 2.jpg",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:Platform_of_Kitano_Station_(Nishitetsu-Amagi_Line)_2.jpg",
-   "author": "そらみみ",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 2088.7,
-    "colorfulness": 18.6,
-    "white_frac": 0.235,
-    "edge_density": 0.1056,
-    "sky_frac": 0.501,
-    "brightness": 128.2,
-    "dark_frac": 0.12,
-    "center_edge": 0.1445
-   },
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
    "reasons": [
-    "low_color"
+    "wrong_station_removed"
    ],
-   "reject_dist": {
-    "resolution_low": 1,
-    "name_mismatch_review": 4
-   },
-   "downloads": 4,
-   "ts": "2026-11-04T00:59:46Z",
-   "attempts": 1
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Platform of Kitano Station (Nishitetsu-Amagi Line) 2.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Platform_of_Kitano_Station_(Nishitetsu-Amagi_Line)_2.jpg",
+   "removed_sha256": "21850db3ebf24afe5f67d7cf8854452f4ad79052ed31dcafff33d04c6447f00c"
   },
   "st02202": {
    "status": "done",
@@ -113981,51 +113914,17 @@
    "attempts": 1
   },
   "st02227": {
-   "status": "review",
-   "file": "stations/st02227/photo.jpg",
-   "sha256": "b05e4a1887a807e7d904b022b41950fcab25f1f325b211b149c92cd8458c67b1",
-   "dhash": "8cdca4b3138ed0fa",
-   "bytes": 319143,
-   "width": 1800,
-   "height": 965,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2548,
-    "original_height": 1366
-   },
-   "below_spec": false,
-   "score": 7.32,
-   "source_title": "File:Nishitetsu Wataze Station 2021.JPG",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:Nishitetsu_Wataze_Station_2021.JPG",
-   "author": "hyolee2",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 965,
-    "lap_var": 1628.4,
-    "colorfulness": 20.9,
-    "white_frac": 0.025,
-    "edge_density": 0.0977,
-    "sky_frac": 0.954,
-    "brightness": 165.1,
-    "dark_frac": 0.021,
-    "center_edge": 0.1008
-   },
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
    "reasons": [
-    "low_color"
+    "wrong_station_removed"
    ],
-   "reject_dist": {
-    "name_mismatch_review": 1,
-    "no_station_evidence": 2,
-    "wrong_station": 4
-   },
-   "downloads": 2,
-   "ts": "2026-11-04T06:34:16Z",
-   "attempts": 1
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Nishitetsu Wataze Station 2021.JPG",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Nishitetsu_Wataze_Station_2021.JPG",
+   "removed_sha256": "b05e4a1887a807e7d904b022b41950fcab25f1f325b211b149c92cd8458c67b1"
   },
   "st02228": {
    "status": "done",
@@ -114073,54 +113972,17 @@
    "attempts": 1
   },
   "st02229": {
-   "status": "review",
-   "file": "stations/st02229/photo.jpg",
-   "sha256": "33b8870c9cc68f0a117f55f10cc981b41c86c9aa7cd539f0b90e40cf30031373",
-   "dhash": "fccac93df5cb2104",
-   "bytes": 267145,
-   "width": 1536,
-   "height": 1152,
-   "normalized": {
-    "encoded": true,
-    "long": 1536,
-    "quality": 85,
-    "original_width": 1536,
-    "original_height": 1152
-   },
-   "below_spec": true,
-   "score": 1.6,
-   "source_title": "File:Nishitetsu Enoura Station01.jpg",
-   "source_cat": "Category:Enoura Station",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Nishitetsu_Enoura_Station01.jpg",
-   "author": "Muyo",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "metrics": {
-    "width": 1536,
-    "height": 1152,
-    "lap_var": 1287.6,
-    "colorfulness": 19.3,
-    "white_frac": 0.004,
-    "edge_density": 0.0717,
-    "sky_frac": 0.979,
-    "brightness": 157.1,
-    "dark_frac": 0.001,
-    "center_edge": 0.1183
-   },
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
    "reasons": [
-    "low_color",
-    "low_score(1.6<5.0)",
-    "below_spec(long=1536,dead retry)"
+    "wrong_station_removed"
    ],
-   "reject_dist": {
-    "no_station_evidence": 25,
-    "name_mismatch_review": 11,
-    "wrong_station": 4,
-    "geo_mismatch": 15
-   },
-   "downloads": 1,
-   "ts": "2026-11-04T06:34:24Z",
-   "attempts": 1
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Nishitetsu Enoura Station01.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Nishitetsu_Enoura_Station01.jpg",
+   "removed_sha256": "33b8870c9cc68f0a117f55f10cc981b41c86c9aa7cd539f0b90e40cf30031373"
   },
   "st02230": {
    "status": "done",
@@ -114168,98 +114030,30 @@
    "attempts": 1
   },
   "st02231": {
-   "status": "done",
-   "file": "stations/st02231/photo.jpg",
-   "sha256": "620a0afeab804a4099ab79939498ed9c382fdbdc9c62d52038ca49d2b9fa43cc",
-   "dhash": "f4f0cd3a5ac49ca0",
-   "bytes": 231166,
-   "width": 1600,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1600,
-    "quality": 85,
-    "original_width": 1600,
-    "original_height": 1200
-   },
-   "below_spec": false,
-   "score": 6.61,
-   "source_title": "File:Nishitetsu Shiotsuka Station01.jpg",
-   "source_cat": "Category:Shiotsuka Station",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Nishitetsu_Shiotsuka_Station01.jpg",
-   "author": "Muyo",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "metrics": {
-    "width": 1600,
-    "height": 1200,
-    "lap_var": 1514.4,
-    "colorfulness": 38.0,
-    "white_frac": 0.001,
-    "edge_density": 0.0625,
-    "sky_frac": 0.419,
-    "brightness": 133.7,
-    "dark_frac": 0.017,
-    "center_edge": 0.096
-   },
-   "reasons": [],
-   "reject_dist": {
-    "no_station_evidence": 15,
-    "wrong_station": 2,
-    "geo_mismatch": 1,
-    "name_mismatch_review": 13
-   },
-   "downloads": 1,
-   "ts": "2026-11-04T06:34:33Z",
-   "attempts": 1
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
+   "reasons": [
+    "wrong_station_removed"
+   ],
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Nishitetsu Shiotsuka Station01.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Nishitetsu_Shiotsuka_Station01.jpg",
+   "removed_sha256": "620a0afeab804a4099ab79939498ed9c382fdbdc9c62d52038ca49d2b9fa43cc"
   },
   "st02232": {
-   "status": "review",
-   "file": "stations/st02232/photo.jpg",
-   "sha256": "3c56731cd2a0084f0c0f912104d25c8a05de3131010eccc5b03502d8f2d38f36",
-   "dhash": "f8b494e67e5f3759",
-   "bytes": 256889,
-   "width": 1280,
-   "height": 960,
-   "normalized": {
-    "encoded": true,
-    "long": 1280,
-    "quality": 85,
-    "original_width": 1280,
-    "original_height": 960
-   },
-   "below_spec": true,
-   "score": 1.45,
-   "source_title": "File:Nishitetsu Tokumasu Station01.jpg",
-   "source_cat": "Category:Tokumasu Station",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Nishitetsu_Tokumasu_Station01.jpg",
-   "author": "Muyo",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "metrics": {
-    "width": 1280,
-    "height": 960,
-    "lap_var": 2107.4,
-    "colorfulness": 36.9,
-    "white_frac": 0.001,
-    "edge_density": 0.1219,
-    "sky_frac": 0.569,
-    "brightness": 131.1,
-    "dark_frac": 0.039,
-    "center_edge": 0.1737
-   },
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
    "reasons": [
-    "low_score(1.4<5.0)",
-    "below_spec(long=1280,dead retry)"
+    "wrong_station_removed"
    ],
-   "reject_dist": {
-    "no_station_evidence": 22,
-    "wrong_station": 9,
-    "name_mismatch_review": 19
-   },
-   "downloads": 1,
-   "ts": "2026-11-04T06:34:42Z",
-   "attempts": 1
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Nishitetsu Tokumasu Station01.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Nishitetsu_Tokumasu_Station01.jpg",
+   "removed_sha256": "3c56731cd2a0084f0c0f912104d25c8a05de3131010eccc5b03502d8f2d38f36"
   },
   "st02233": {
    "status": "done",
@@ -114399,55 +114193,17 @@
    "attempts": 1
   },
   "st02236": {
-   "status": "review",
-   "file": "stations/st02236/photo.jpg",
-   "sha256": "25bcf3d62dfb289a0334c15bfb63551fc527e7c5b08cf06cfdeaee5f1aaf0652",
-   "dhash": "8428983163a6f6fc",
-   "bytes": 253625,
-   "width": 1280,
-   "height": 960,
-   "normalized": {
-    "encoded": true,
-    "long": 1280,
-    "quality": 85,
-    "original_width": 1280,
-    "original_height": 960
-   },
-   "below_spec": true,
-   "score": 1.18,
-   "source_title": "File:Nishitetsu Tsuko Station02.jpg",
-   "source_cat": "Category:Tsuko Station",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Nishitetsu_Tsuko_Station02.jpg",
-   "author": "Muyo",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "metrics": {
-    "width": 1280,
-    "height": 960,
-    "lap_var": 2441.0,
-    "colorfulness": 33.1,
-    "white_frac": 0.001,
-    "edge_density": 0.1191,
-    "sky_frac": 0.904,
-    "brightness": 134.0,
-    "dark_frac": 0.094,
-    "center_edge": 0.1461
-   },
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
    "reasons": [
-    "low_score(1.2<5.0)",
-    "below_spec(long=1280,dead retry)"
+    "wrong_station_removed"
    ],
-   "reject_dist": {
-    "no_station_evidence": 29,
-    "name_mismatch_review": 21,
-    "wrong_station": 6,
-    "pref_mismatch": 1,
-    "hard_excluded": 1,
-    "low_color(map/text?)": 1
-   },
-   "downloads": 2,
-   "ts": "2026-11-04T06:34:51Z",
-   "attempts": 1
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Nishitetsu Tsuko Station02.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Nishitetsu_Tsuko_Station02.jpg",
+   "removed_sha256": "25bcf3d62dfb289a0334c15bfb63551fc527e7c5b08cf06cfdeaee5f1aaf0652"
   },
   "st02237": {
    "status": "done",
@@ -114544,56 +114300,17 @@
    "attempts": 1
   },
   "st02239": {
-   "status": "review",
-   "file": "stations/st02239/photo.jpg",
-   "sha256": "505b365b37d4bcdc134ed81ca92e42c1a4c59648cb15bbb3fec3756fd2f00351",
-   "dhash": "9d95471604167090",
-   "bytes": 235920,
-   "width": 1280,
-   "height": 960,
-   "normalized": {
-    "encoded": true,
-    "long": 1280,
-    "quality": 85,
-    "original_width": 1280,
-    "original_height": 960
-   },
-   "below_spec": true,
-   "score": 1.08,
-   "source_title": "File:Nishitetsu Oho Station02.jpg",
-   "source_cat": "Category:Ōho Station",
-   "source_page": "https://commons.wikimedia.org/wiki/File:Nishitetsu_Oho_Station02.jpg",
-   "author": "Muyo",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "metrics": {
-    "width": 1280,
-    "height": 960,
-    "lap_var": 2075.0,
-    "colorfulness": 18.6,
-    "white_frac": 0.048,
-    "edge_density": 0.0971,
-    "sky_frac": 0.815,
-    "brightness": 138.4,
-    "dark_frac": 0.049,
-    "center_edge": 0.1275
-   },
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
    "reasons": [
-    "low_color",
-    "low_score(1.1<5.0)",
-    "below_spec(long=1280,dead retry)"
+    "wrong_station_removed"
    ],
-   "reject_dist": {
-    "no_station_evidence": 18,
-    "name_mismatch_review": 17,
-    "wrong_station": 6,
-    "pref_mismatch": 1,
-    "hard_excluded": 2,
-    "low_color(map/text?)": 1
-   },
-   "downloads": 3,
-   "ts": "2026-11-04T06:34:58Z",
-   "attempts": 1
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Nishitetsu Oho Station02.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Nishitetsu_Oho_Station02.jpg",
+   "removed_sha256": "505b365b37d4bcdc134ed81ca92e42c1a4c59648cb15bbb3fec3756fd2f00351"
   },
   "st02240": {
    "status": "review",
@@ -114691,52 +114408,17 @@
    "attempts": 1
   },
   "st02242": {
-   "status": "done",
-   "file": "stations/st02242/photo.jpg",
-   "sha256": "e52e529613c083093781f433129ca3654be288c0c049491fa79d6cbb3381a720",
-   "dhash": "9232313030699496",
-   "bytes": 590903,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4000,
-    "original_height": 3000
-   },
-   "below_spec": false,
-   "score": 6.63,
-   "source_title": "File:Hakataeki-torikai Street ENE from Nishitetsu Hirao Station Nanokawa Ōgusu Fukuoka 20230509.jpg",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:Hakataeki-torikai_Street_ENE_from_Nishitetsu_Hirao_Station_Nanokawa_Ōgusu_Fukuoka_20230509.jpg",
-   "author": "Hirho",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 3156.2,
-    "colorfulness": 37.5,
-    "white_frac": 0.01,
-    "edge_density": 0.1313,
-    "sky_frac": 0.276,
-    "brightness": 120.0,
-    "dark_frac": 0.107,
-    "center_edge": 0.1782
-   },
-   "reasons": [],
-   "reject_dist": {
-    "hard_excluded": 1,
-    "resolution_low": 1,
-    "name_mismatch_review": 3,
-    "no_station_evidence": 4,
-    "wrong_station": 1,
-    "low_color(map/text?)": 2
-   },
-   "downloads": 5,
-   "ts": "2026-11-04T06:35:12Z",
-   "attempts": 1
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
+   "reasons": [
+    "wrong_station_removed"
+   ],
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Hakataeki-torikai Street ENE from Nishitetsu Hirao Station Nanokawa Ōgusu Fukuoka 20230509.jpg",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Hakataeki-torikai_Street_ENE_from_Nishitetsu_Hirao_Station_Nanokawa_Ōgusu_Fukuoka_20230509.jpg",
+   "removed_sha256": "e52e529613c083093781f433129ca3654be288c0c049491fa79d6cbb3381a720"
   },
   "st02243": {
    "status": "done",
@@ -117034,52 +116716,17 @@
    "attempts": 1
   },
   "st02295": {
-   "status": "done",
-   "file": "stations/st02295/photo.jpg",
-   "sha256": "1b2416f23a0ccac5519676142749bca18df2c25fdf82157a819f16d44ea62cd5",
-   "dhash": "0307133b1b330300",
-   "bytes": 365076,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3264,
-    "original_height": 2448
-   },
-   "below_spec": false,
-   "score": 6.61,
-   "source_title": "File:Meitetsu-Ichinomiya station departures board on track 3 and 4..JPG",
-   "source_cat": null,
-   "source_page": "https://commons.wikimedia.org/wiki/File:Meitetsu-Ichinomiya_station_departures_board_on_track_3_and_4..JPG",
-   "author": "Radicaltrain",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 344.5,
-    "colorfulness": 35.1,
-    "white_frac": 0.061,
-    "edge_density": 0.0356,
-    "sky_frac": 0.339,
-    "brightness": 125.7,
-    "dark_frac": 0.122,
-    "center_edge": 0.0503
-   },
-   "reasons": [],
-   "reject_dist": {
-    "wrong_station": 3,
-    "hard_excluded": 11,
-    "name_mismatch_review": 4,
-    "no_station_evidence": 4,
-    "resolution_low": 2,
-    "low_color(map/text?)": 1
-   },
-   "downloads": 5,
-   "ts": "2026-11-04T06:35:22Z",
-   "attempts": 1
+   "status": "missing",
+   "file": null,
+   "sha256": null,
+   "bytes": null,
+   "reasons": [
+    "wrong_station_removed"
+   ],
+   "ts": "2026-11-05T11:15:46Z",
+   "removed_source_title": "File:Meitetsu-Ichinomiya station departures board on track 3 and 4..JPG",
+   "removed_source_page": "https://commons.wikimedia.org/wiki/File:Meitetsu-Ichinomiya_station_departures_board_on_track_3_and_4..JPG",
+   "removed_sha256": "1b2416f23a0ccac5519676142749bca18df2c25fdf82157a819f16d44ea62cd5"
   },
   "st02296": {
    "status": "done",
