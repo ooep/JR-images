@@ -1,0 +1,534 @@
+name: ws17-below-spec
+
+# review/below_spec 高分替换：对 state.json 中 status=review 的站（low_color /
+# subject_unverified / low_score / below_spec 等）逐站找更符合规范的新图替换。
+# 闸门（审计口径固化）：
+#   - 标题站名硬约束：标题命中他站名且不含本站名 → 拒；
+#   - 非站景标题黑名单（列车/桥梁/车库/灾害等）→ 拒；
+#   - `running near X` 类行驶句式视同无站名 → 不自动接受，转 staged；
+#   - GPS<=900m 且（标题含本站名 或 <=200m）才自动接受；>900m 一律 staged 人工复核；
+#     标题无站名且 dist>200m → staged；无 GPS → staged（每站最多 3 候选）；>2km 拒；
+#   - 候补长边 >=1600 且不低于现图（只升不降）；quality_verdict=done 且
+#     image_score>=5.0 且高于现图分（高分替换）；夜景黑照（brightness<50 或
+#     dark_frac>0.35）不自动接受；
+#   - 许可/mime/体积/sha/dHash/标题 查重沿用 batch_fetch；
+#   - 无更优候选：保留现图，条目标 below_spec_confirmed 记账，不硬凑。
+# staged 候选经 artifact 回传，本地 OCR(全名匹配)+目检后另行提交。
+
+on:
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: '逗号分隔站号列表（<=30），如 st05705,st03032'
+        required: true
+        type: string
+      batch_id:
+        description: '批次号，如 WS17-B01'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ws17-below-spec
+  cancel-in-progress: false
+
+jobs:
+  replace:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install --quiet pillow numpy requests
+
+      # 加密（2026-11）：抓取机制脚本入库即密文，运行时解密物化；本工作流的
+      # 编排逻辑内联于 YAML（YAML 本身无法加密），抓取端点/限速等仍在密文脚本内。
+      - name: Step 1/3 verify ciphertext (verify-only, zero writes)
+        env:
+          OOEP_PASSPHRASE: ${{ secrets.CODE_KEY }}
+        run: bash encryption/logrun.sh 1/3 bash encryption/prep.sh 1
+
+      - name: Step 2/3 materialize fetchers
+        env:
+          OOEP_PASSPHRASE: ${{ secrets.CODE_KEY }}
+        run: bash encryption/logrun.sh 2/3 bash encryption/prep.sh 2
+
+      - name: Step 3/3 below-spec replace driver
+        env:
+          BS_SLUGS: ${{ inputs.slugs }}
+          BS_BATCH_ID: ${{ inputs.batch_id }}
+        run: |
+          bash encryption/logrun.sh 3/3 python3 - <<'PY'
+          import collections, hashlib, json, os, re, sys
+          sys.path.insert(0, 'scripts')
+          import batch_fetch as bf
+
+          SLUGS = [s.strip() for s in os.environ['BS_SLUGS'].split(',')
+                   if re.fullmatch(r'st\d{5}', s.strip())]
+          BATCH_ID = os.environ.get('BS_BATCH_ID', 'WS17')
+          GPS_AUTO_M = 900.0     # 自动接受上限；>900m 一律转 staged 人工复核
+          GPS_HARD_M = 2000.0    # 硬拒上限
+          NOGPS_STAGE_MAX = 3
+          MAX_DOWNLOADS = 8
+          NIGHT_BRIGHT = 50.0
+          NIGHT_DARK = 0.35
+
+          NON_SCENE_RE = re.compile(
+              r'bridge|EMU\b|\btrain\b|depot|garage|車庫|検車区|frigate|navy|\bship\b|'
+              r'flood|damage|disaster|震災|水害|土砂|dosya|車両基地|橋梁', re.I)
+          RUNNING_NEAR_RE = re.compile(
+              r'running near|passing near|passes near|passed near|付近を走行|付近を通過', re.I)
+
+          stations_doc = json.load(open('data/stations_all.json', encoding='utf-8'))
+          stations = stations_doc['stations']
+          by_slug = {s['slug']: s for s in stations}
+          state = json.load(open('state.json', encoding='utf-8'))
+          index = json.load(open('index.json', encoding='utf-8'))
+
+          used = {'title': {}, 'sha': {}, 'dhash': {}}
+
+          def register(slug, e):
+              if not e:
+                  return
+              if e.get('sha256'):
+                  used['sha'].setdefault(e['sha256'], slug)
+              if e.get('source_title'):
+                  used['title'].setdefault(e['source_title'], slug)
+              if e.get('dhash'):
+                  try:
+                      used['dhash'].setdefault(int(e['dhash'], 16), slug)
+                  except ValueError:
+                      pass
+
+          for slug, e in (state.get('entries') or {}).items():
+              if e.get('status') in ('done', 'review'):
+                  register(slug, e)
+          for slug, e in (index.get('stations') or {}).items():
+              register(slug.replace('legacy_', ''), e)
+
+          _nc = collections.Counter((s.get('name') or '').strip() for s in stations)
+          kanji_idx, _romaji_idx, romaji_re = bf.build_name_index(stations)
+
+          evidence = {'batch_id': BATCH_ID, 'queue': SLUGS, 'replaced': [],
+                      'staged': [], 'confirmed': [], 'skipped': [],
+                      'rejected_notable': []}
+          stats = {'attempted': 0, 'replaced': 0, 'staged': 0, 'confirmed': 0,
+                   'skipped': 0, 'bytes': 0, 'reject_dist': {}}
+
+          st_rej = {}
+
+          def rej(reason):
+              stats['reject_dist'][reason] = stats['reject_dist'].get(reason, 0) + 1
+              st_rej[reason] = st_rej.get(reason, 0) + 1
+
+          def gather(st):
+              cands_raw, _en_label, infos = bf.gather_candidates(st, relaxed=True)
+              out = [(c['title'], c['from_category'], c.get('cat')) for c in cands_raw]
+              name = (st.get('name') or '').strip()
+              key = name[:-1] if name.endswith('駅') else name
+              en = (st.get('name_en') or '').strip()
+              qs = []
+              for ln in (st.get('lines') or [])[:2]:
+                  qs.append('%s駅 %s' % (key, ln))
+                  if en:
+                      qs.append('%s Station %s' % (en, ln))
+              for q in qs:
+                  try:
+                      for t, ii in (bf.search_files_info(q, limit=30) or {}).items():
+                          if ii and t not in infos:
+                              infos[t] = ii
+                              out.append((t, False, None))
+                  except Exception as e:  # noqa: BLE001
+                      print('   search %r ERR %s' % (q, str(e)[:80]), flush=True)
+              return out, infos
+
+          for slug in SLUGS:
+              st = by_slug.get(slug)
+              cur = state['entries'].get(slug) or {}
+              if not st or cur.get('status') != 'review':
+                  stats['skipped'] += 1
+                  evidence['skipped'].append({'slug': slug, 'reason': 'not_review_or_unknown'})
+                  continue
+              stats['attempted'] += 1
+              st_rej.clear()
+              cur_long = max(cur.get('width') or 0, cur.get('height') or 0)
+              cur_score = cur.get('score')
+              cur_sha = cur.get('sha256')
+              try:
+                  cur_dh = int(cur['dhash'], 16) if cur.get('dhash') else None
+              except (ValueError, TypeError):
+                  cur_dh = None
+              same_as_set = set(st.get('same_as') or [])
+              print('=== %s %s (%s) cur_long=%d cur_score=%s' % (
+                  slug, st['name'], st.get('pref'), cur_long, cur_score), flush=True)
+
+              titles, infos = gather(st)
+              cands = []
+              for title, from_cat, cat in titles:
+                  info = infos.get(title)
+                  if not info:
+                      continue
+                  if title == cur.get('source_title'):
+                      rej('same_as_current')
+                      continue
+                  if bf.HARD_EXCLUDE_RE.search(title):
+                      rej('hard_excluded')
+                      continue
+                  if NON_SCENE_RE.search(title):
+                      rej('title_non_station_scene')
+                      evidence['rejected_notable'].append(
+                          {'slug': slug, 'title': title, 'gate': 'title_non_station_scene'})
+                      continue
+                  hits = bf.station_names_in_title(title, kanji_idx, romaji_re)
+                  self_hit = any(slug in h[2] or (h[2] & same_as_set) for h in hits)
+                  other_hit = [h for h in hits
+                               if slug not in h[2] and not (h[2] & same_as_set)]
+                  if other_hit and not self_hit:
+                      rej('title_names_other_station')
+                      evidence['rejected_notable'].append(
+                          {'slug': slug, 'title': title,
+                           'named': other_hit[0][1], 'gate': 'title_names_other_station'})
+                      continue
+                  running_near = bool(RUNNING_NEAR_RE.search(title))
+                  if running_near:
+                      self_hit = False  # 行驶句式视同无站名 → 只能走 staged
+                  ok, lic, lic_url, author, reason = bf.license_verdict(info.get('extmetadata'))
+                  if not ok:
+                      rej(reason)
+                      continue
+                  if info.get('mime') not in bf.OK_MIME:
+                      rej('mime_unsupported')
+                      continue
+                  if (info.get('size') or 0) > bf.MAX_BYTES:
+                      rej('oversize_gt_25mb')
+                      continue
+                  w, h = info.get('width') or 0, info.get('height') or 0
+                  if max(w, h) < bf.MIN_SIDE:
+                      rej('resolution_low_lt_1600')
+                      continue
+                  if cur_long >= bf.MIN_SIDE and max(w, h) < cur_long:
+                      rej('resolution_not_upgrade')
+                      continue
+                  owner = used['title'].get(title)
+                  if owner and owner != slug and owner not in same_as_set:
+                      rej('duplicate_title')
+                      continue
+                  em = info.get('extmetadata') or {}
+                  ilat = bf.parse_gps(em, 'GPSLatitude')
+                  ilon = bf.parse_gps(em, 'GPSLongitude')
+                  dist = None
+                  if ilat is not None and ilon is not None and st.get('lat') and st.get('lon'):
+                      dist = bf.haversine_m(ilat, ilon, st['lat'], st['lon'])
+                  score = bf.score_candidate(info, title, from_cat, cat)
+                  cands.append({'title': title, 'info': info, 'from_cat': from_cat,
+                                'cat': cat, 'lic': lic, 'lic_url': lic_url,
+                                'author': author, 'dist': dist, 'score': score,
+                                'self_hit': self_hit, 'running_near': running_near})
+
+              def rank(c):
+                  d = c['dist']
+                  if d is not None and d <= GPS_AUTO_M:
+                      g = 0
+                  elif d is None:
+                      g = 1
+                  elif d <= GPS_HARD_M:
+                      g = 2
+                  else:
+                      g = 3
+                  return (g, -c['score'])
+              cands.sort(key=rank)
+              for c in cands[:6]:
+                  tag = ('GPS' if (c['dist'] is not None and c['dist'] <= GPS_AUTO_M)
+                         else ('NOGPS' if c['dist'] is None else 'FAR%.0f' % c['dist']))
+                  print('   cand %s %s score=%.2f %s' % (
+                      tag, ('%.0fm' % c['dist']) if c['dist'] is not None else '-',
+                      c['score'], c['title'][:80]), flush=True)
+
+              accepted = None
+              staged = []
+              downloads = 0
+              for c in cands:
+                  if accepted or downloads >= MAX_DOWNLOADS:
+                      break
+                  if c['dist'] is not None and c['dist'] > GPS_HARD_M:
+                      break
+                  downloads += 1
+                  info = c['info']
+                  try:
+                      r = bf.http_get(info['url'], domain='upload.wikimedia.org',
+                                      stream=True, timeout=180)
+                      with r:
+                          data = r.content
+                  except Exception as e:  # noqa: BLE001
+                      rej('fetch_error')
+                      print('   fetch_error %s' % str(e)[:80], flush=True)
+                      continue
+                  if len(data) > bf.MAX_BYTES:
+                      rej('oversize_gt_25mb')
+                      continue
+                  try:
+                      ndata, (nw, nh), norm = bf.normalize_image(data, bf.MAX_LONG, bf.JPEG_Q)
+                  except Exception:  # noqa: BLE001
+                      rej('undecodable')
+                      continue
+                  sha = hashlib.sha256(ndata).hexdigest()
+                  if sha == cur_sha:
+                      rej('duplicate_current_sha')
+                      continue
+                  owner = used['sha'].get(sha)
+                  if owner and owner != slug and owner not in same_as_set:
+                      rej('duplicate_sha256')
+                      continue
+                  try:
+                      dh = bf.dhash64(ndata)
+                  except Exception:  # noqa: BLE001
+                      dh = None
+                  if dh is not None and cur_dh is not None and \
+                          bf.hamming(cur_dh, dh) <= bf.NEAR_HAMMING:
+                      rej('duplicate_current_dhash')
+                      continue
+                  near = None
+                  if dh is not None:
+                      for odh, oslug in used['dhash'].items():
+                          if oslug != slug and oslug not in same_as_set and \
+                                  bf.hamming(odh, dh) <= bf.NEAR_HAMMING:
+                              near = oslug
+                              break
+                  if near:
+                      rej('near_duplicate')
+                      continue
+                  try:
+                      m = bf.analyze_pixels(ndata)
+                  except Exception:  # noqa: BLE001
+                      rej('pixel_analyze_failed')
+                      continue
+                  qv, qreasons = bf.quality_verdict(m, c['title'], c['from_cat'])
+                  iscore = bf.image_score(m)
+                  if qv == 'reject':
+                      rej('quality_reject_%s' % (qreasons[0].split('(')[0] if qreasons else 'x'))
+                      continue
+                  em = info.get('extmetadata') or {}
+                  page_url = (em.get('DescriptionPage') or {}).get('value') or \
+                      'https://commons.wikimedia.org/wiki/File:' + \
+                      c['title'].replace('File:', '').replace(' ', '_')
+                  rec = {'title': c['title'], 'page_url': page_url,
+                         'image_url': info.get('url'), 'license': c['lic'],
+                         'license_url': c['lic_url'], 'author': c['author'],
+                         'sha256': sha, 'dhash': ('%016x' % dh) if dh is not None else None,
+                         'bytes': len(ndata), 'width': nw, 'height': nh,
+                         'normalized': norm,
+                         'dist_m': round(c['dist'], 1) if c['dist'] is not None else None,
+                         'score': round(c['score'], 2), 'image_score': iscore,
+                         'quality': qv, 'quality_reasons': qreasons,
+                         'self_hit': c['self_hit'], 'running_near': c['running_near'],
+                         'data': ndata, 'metrics': m}
+                  night = m['brightness'] < NIGHT_BRIGHT or m['dark_frac'] > NIGHT_DARK
+                  score_up = cur_score is None or iscore > cur_score
+                  gps_auto = c['dist'] is not None and c['dist'] <= GPS_AUTO_M and \
+                      (c['self_hit'] or c['dist'] <= 200.0)
+                  review_score = getattr(bf, 'REVIEW_SCORE', 5.0)
+                  if qv == 'done' and iscore >= review_score and score_up and \
+                          gps_auto and not night and not c['running_near']:
+                      accepted = rec
+                  elif c['dist'] is None or c['dist'] <= GPS_HARD_M:
+                      # 标题无站名且 dist>200m / dist>900m / 无 GPS / 夜景 / 未达分差
+                      # → 一律 staged，本地 OCR+目检裁决
+                      staged.append(rec)
+                      if len(staged) >= NOGPS_STAGE_MAX:
+                          break
+
+              if accepted:
+                  photo_dir = os.path.join('stations', slug)
+                  os.makedirs(photo_dir, exist_ok=True)
+                  rel_file = 'stations/%s/photo.jpg' % slug
+                  with open(os.path.join(photo_dir, 'photo.jpg'), 'wb') as f:
+                      f.write(accepted['data'])
+                  lic_txt = (
+                      'station: %s (%s)\n'
+                      'file: %s\n'
+                      'sha256: %s\n'
+                      'source_page: %s\n'
+                      'image_url: %s\n'
+                      'author: %s\n'
+                      'license: %s\n'
+                      'license_url: %s\n'
+                      'retrieved_at: %s\n'
+                      'normalized: %s\n'
+                      'attribution: %s / %s / %s / %s\n'
+                      'evidence: ws17 higher-spec replace; gps_dist=%s; image_score=%.2f; '
+                      'prev_sha256=%s; prev_score=%s\n'
+                  ) % (st['name'], slug, rel_file, accepted['sha256'], accepted['page_url'],
+                       accepted['image_url'], accepted['author'] or '(unknown)',
+                       accepted['license'], accepted['license_url'] or '(none)', bf.now_iso(),
+                       'normalized to long side %d (JPEG q%d) from %dx%d' % (
+                           max(accepted['width'], accepted['height']), bf.JPEG_Q,
+                           accepted['normalized'].get('original_width', 0),
+                           accepted['normalized'].get('original_height', 0)),
+                       accepted['author'] or '(unknown)', accepted['title'], accepted['license'],
+                       accepted['license_url'] or '(none)',
+                       ('%.1fm' % accepted['dist_m']) if accepted['dist_m'] is not None else 'none(staged-tier accepted)',
+                       accepted['image_score'], cur_sha, cur_score)
+                  os.makedirs('licenses', exist_ok=True)
+                  with open(os.path.join('licenses', slug + '.txt'), 'w', encoding='utf-8') as f:
+                      f.write(lic_txt)
+                  prev_reasons = cur.get('reasons') or []
+                  entry = {
+                      'status': 'done', 'file': rel_file, 'sha256': accepted['sha256'],
+                      'dhash': accepted['dhash'], 'bytes': accepted['bytes'],
+                      'width': accepted['width'], 'height': accepted['height'],
+                      'normalized': accepted['normalized'], 'below_spec': False,
+                      'score': accepted['image_score'], 'metrics': accepted['metrics'],
+                      'source_title': accepted['title'], 'source_cat': accepted.get('cat'),
+                      'source_page': accepted['page_url'], 'author': accepted['author'],
+                      'license': accepted['license'], 'license_url': accepted['license_url'],
+                      'reasons': ['ws17_replace(prev:%s)' % ','.join(prev_reasons)[:80]]
+                                 if prev_reasons else ['ws17_replace'],
+                      'reject_dist': {}, 'downloads': downloads,
+                      'prev': {'source_title': cur.get('source_title'), 'sha256': cur_sha,
+                               'score': cur_score, 'long': cur_long,
+                               'reasons': prev_reasons},
+                      'ts': bf.now_iso(), 'attempts': cur.get('attempts', 0) + 1,
+                  }
+                  state['entries'][slug] = entry
+                  ie = index.setdefault('stations', {}).setdefault(slug, {})
+                  ie.update({
+                      'station_id': st.get('id'), 'name': st['name'],
+                      'name_en': st.get('name_en'),
+                      'lat': st.get('lat'), 'lon': st.get('lon'),
+                      'pref': st.get('pref'), 'scene': st.get('scene'),
+                      'lines': st.get('lines') or [], 'same_as': st.get('same_as') or [],
+                      'status': 'done', 'file': rel_file,
+                      'width': accepted['width'], 'height': accepted['height'],
+                      'bytes': accepted['bytes'], 'sha256': accepted['sha256'],
+                      'dhash': accepted['dhash'],
+                      'source': accepted['page_url'], 'license': accepted['license'],
+                      'license_url': accepted['license_url'], 'author': accepted['author'],
+                      'page_url': accepted['page_url'],
+                      'retrieved_at': entry['ts'], 'metrics': accepted['metrics'],
+                      'score': accepted['image_score'],
+                      'source_title': accepted['title'],
+                      'source_cat': accepted.get('cat'),
+                      'below_spec': False, 'review_reasons': [],
+                  })
+                  register(slug, entry)
+                  stats['replaced'] += 1
+                  stats['bytes'] += accepted['bytes']
+                  evidence['replaced'].append(
+                      dict(slug=slug, name=st['name'], pref=st.get('pref'),
+                           **{k: v for k, v in accepted.items()
+                              if k not in ('data', 'metrics')}))
+                  print('   REPLACE gps=%s score=%.2f %s' % (
+                      accepted['dist_m'], accepted['image_score'],
+                      accepted['title'][:70]), flush=True)
+              elif staged:
+                  st_dir = os.path.join('ws17_stage', slug)
+                  os.makedirs(st_dir, exist_ok=True)
+                  for i, rec in enumerate(staged, 1):
+                      with open(os.path.join(st_dir, '%d_photo.jpg' % i), 'wb') as f:
+                          f.write(rec['data'])
+                      meta = {k: v for k, v in rec.items() if k not in ('data', 'metrics')}
+                      meta['metrics'] = rec['metrics']
+                      meta['station'] = {'slug': slug, 'name': st['name'],
+                                         'pref': st.get('pref'), 'name_en': st.get('name_en'),
+                                         'lat': st.get('lat'), 'lon': st.get('lon'),
+                                         'lines': st.get('lines')}
+                      meta['current'] = {'sha256': cur_sha, 'score': cur_score,
+                                         'long': cur_long, 'reasons': cur.get('reasons'),
+                                         'source_title': cur.get('source_title')}
+                      with open(os.path.join(st_dir, '%d_meta.json' % i), 'w',
+                                encoding='utf-8') as f:
+                          json.dump(meta, f, ensure_ascii=False, indent=1)
+                      evidence['staged'].append(
+                          dict(slug=slug, **{k: v for k, v in meta.items()
+                                             if k != 'station'}))
+                  stats['staged'] += 1
+                  print('   STAGED %d candidates for local OCR/visual' % len(staged), flush=True)
+              else:
+                  cur['below_spec_confirmed'] = True
+                  cur['bs_confirmed_ts'] = bf.now_iso()
+                  cur['bs_batch'] = BATCH_ID
+                  cur['bs_reject_dist'] = dict(st_rej)
+                  state['entries'][slug] = cur
+                  stats['confirmed'] += 1
+                  evidence['confirmed'].append(
+                      {'slug': slug, 'name': st['name'], 'pref': st.get('pref'),
+                       'state': 'below_spec_confirmed_no_candidate'})
+                  print('   CONFIRMED (no better candidate; keep current)', flush=True)
+              sys.stdout.flush()
+
+          state['updated_at'] = bf.now_iso()
+          json.dump(state, open('state.json', 'w', encoding='utf-8'), ensure_ascii=False)
+          json.dump(index, open('index.json', 'w', encoding='utf-8'), ensure_ascii=False)
+          stats['generated_at'] = bf.now_iso()
+          json.dump(stats, open('batch_stats_bs.json', 'w', encoding='utf-8'),
+                    ensure_ascii=False, indent=1)
+          os.makedirs('reports', exist_ok=True)
+          json.dump(evidence, open('reports/ws17_below_spec_evidence.json', 'w',
+                                   encoding='utf-8'), ensure_ascii=False, indent=1)
+          with open('PROGRESS.md', 'a', encoding='utf-8') as f:
+              f.write('\n\n## ws17 below-spec replace %s — %s\n' % (BATCH_ID, bf.now_iso()))
+              f.write('- queue: %d 站（review/below_spec 高分替换）\n' % len(SLUGS))
+              f.write('- replaced=%d staged=%d confirmed=%d skipped=%d\n' % (
+                  stats['replaced'], stats['staged'], stats['confirmed'], stats['skipped']))
+              f.write('- reject_dist=%s\n' % json.dumps(stats['reject_dist'], ensure_ascii=False))
+          print('SUMMARY replaced=%d staged=%d confirmed=%d skipped=%d' % (
+              stats['replaced'], stats['staged'], stats['confirmed'], stats['skipped']),
+              flush=True)
+          PY
+
+      - name: Verify batch
+        id: verify
+        continue-on-error: true
+        run: |
+          python scripts/verify_local.py --workdir . --dead-list data/dead_stations.json
+
+      # 抓取窗口结束：删除明文抓取脚本（提交只涉及 stations/licenses/索引/报告）
+      - name: Remove plaintext fetchers
+        run: python3 encryption/decrypt.py clean --out .
+
+      - name: Commit & push (never force)
+        run: |
+          set -e
+          git config user.name "jrimages-bot"
+          git config user.email "ooep@users.noreply.github.com"
+          git add stations licenses state.json index.json PROGRESS.md \
+                  batch_stats_bs.json data/dead_stations.json \
+                  reports/ws17_below_spec_evidence.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "nothing to commit"; exit 0
+          fi
+          git commit -m "ws17 below-spec replace ${{ inputs.batch_id }}: higher-spec replacements for review pool (GPS<=900m auto; >900m/no-GPS staged)"
+          for n in 1 2 3 4; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "push failed ($n), fetch+rebase & retry"
+            git fetch origin main
+            git stash push -m rebase-shield >/dev/null 2>&1 || true
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              git stash pop || true
+              exit 1
+            fi
+            git stash pop || true
+          done
+          exit 1
+
+      - name: Upload staged candidates (for local OCR/visual)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ws17-stage-${{ inputs.batch_id }}
+          path: |
+            ws17_stage/
+            reports/ws17_below_spec_evidence.json
+          if-no-files-found: ignore
+
+      - name: Finalize (cleanup + worktree assertion)
+        if: always()
+        run: bash encryption/finalize.sh
