@@ -351,3 +351,20 @@
 - accepted(GPS<=2km)=7 staged_no_gps=19 still_missing=14
 - reject_dist={"title_names_other_station": 124, "duplicate_title": 3, "mime_unsupported": 257, "resolution_low": 67, "title_non_station_scene": 9, "hard_excluded": 13, "license_unclear": 13}
 - 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
+
+
+## ws15 local accept batch8 — 2026-11-05T21:05:10Z
+- st03783 鳴谷 ← File:Tosaden NarutaniDentei.JPG (done)
+- st04648 小村神社前 ← File:Omurajinjamae stn.jpg (review)
+- st04683 海浦 ← File:Uminoura Station 3.JPG (done)
+- st05192 備前福河 ← File:Bizen-Fukukawa Station.jpg (done)
+- st06886 伊予平野 ← File:Iyo-Hirano stn.jpg (review)
+- st07509 南角田 ← File:MinamikakudaEki2005-4.jpg (review)
+- st07671 越中泉 ← File:Etchuuizumi sta1.jpg (review)
+- st07972 潜竜ケ滝 ← File:Mr senryugataki station.jpg (review)
+- st07982 三代橋 ← File:Mr midaibashi station.jpg (review)
+- st08194 子吉 ← File:Koyoshi station.jpg (review)
+- st08232 江崎 ← File:Esakistation.jpg (review)
+- st08737 高子 ← File:Takako Station.jpg (review)
+- st08807 磯鶏 ← File:Sokei-Sta01.JPG (review)
+- 拒收标缺 6 站见 finalize8：st05977 東開聞 列车田野远景无站名、st07712 早月加積 3 候选均无站名、st07964 中田平 遗迹导览牌无站名、st08280 真倉 无站名+抽象图、st08405 林 乘车口牌/葡萄牙 Oriente(异国)、st08736 向瀬上 无站名。
