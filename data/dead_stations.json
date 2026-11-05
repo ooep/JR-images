@@ -1,5 +1,5 @@
 {
- "count": 339,
+ "count": 341,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -34,25 +34,6 @@
    },
    "reject_dist": {},
    "slug": "st00040",
-   "source_page": null,
-   "stage": "retry"
-  },
-  "st00041": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T16:29:12Z",
-   "last_attempt": "2026-11-04T16:44:48Z",
-   "name": "大谷",
-   "name_en": "Ōtani",
-   "reasons": {
-    "geo_mismatch": 7,
-    "hard_excluded": 6,
-    "name_mismatch_review": 10,
-    "no_station_evidence": 15
-   },
-   "reject_dist": {},
-   "slug": "st00041",
    "source_page": null,
    "stage": "retry"
   },
@@ -1395,24 +1376,21 @@
    "stage": "retry"
   },
   "st01167": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:41:20Z",
+   "last_attempt": "2026-11-05T20:11:30Z",
    "name": "上金田",
    "name_en": "Kami-Kanada",
    "reasons": {
-    "geo_mismatch": 2,
-    "name_mismatch_review": 34,
-    "no_station_evidence": 34,
-    "resolution_low": 1,
-    "wrong_station": 3
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01167",
    "source_page": null,
-   "stage": "retry"
+   "stage": "ws15_refetch",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st01168": {
    "attempts": 3,
@@ -1451,22 +1429,21 @@
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01170": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-03T14:36:28Z",
-   "last_attempt": "2026-11-03T14:36:28Z",
+   "last_attempt": "2026-11-05T20:09:38Z",
    "name": "下伊田",
    "name_en": "Shimo-Ita",
    "reasons": {
-    "low_color(map/text?)": 1,
-    "oversize_gt_25mb": 1,
-    "resolution_low": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01170",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "ws15_refetch",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st01174": {
    "attempts": 3,
@@ -1633,11 +1610,11 @@
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01241": {
-   "attempts": 2,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-05T19:07:34Z",
+   "last_attempt": "2026-11-05T20:06:37Z",
    "name": "西木津",
    "name_en": "Nishi-Kizu",
    "reasons": {
@@ -2374,22 +2351,6 @@
    },
    "reject_dist": {},
    "slug": "st02221",
-   "source_page": null,
-   "stage": "fetch"
-  },
-  "st02225": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T01:01:46Z",
-   "last_attempt": "2026-11-04T01:01:46Z",
-   "name": "東甘木",
-   "name_en": "Higashi-Amagi",
-   "reasons": {
-    "duplicate_all_used": 1
-   },
-   "reject_dist": {},
-   "slug": "st02225",
    "source_page": null,
    "stage": "fetch"
   },
@@ -5580,9 +5541,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
-   "last_attempt": "2026-11-05T19:04:20Z",
+   "last_attempt": "2026-11-05T20:06:16Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st04808": {
@@ -5590,9 +5551,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
-   "last_attempt": "2026-11-05T19:06:56Z",
+   "last_attempt": "2026-11-05T20:06:27Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st04604": {
@@ -5645,7 +5606,47 @@
    "first_seen": "2026-11-05T19:57:39Z",
    "last_attempt": "2026-11-05T19:57:39Z",
    "note": "ws15 round6 staged review 标缺：吉富(福岡)：候选 2 张均为吉富町社区巴士/大交北部巴士，非站景(巴士)，候选枯竭"
+  },
+  "st06506": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T20:10:09Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st07946": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T20:10:58Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st07834": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T20:11:06Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st03225": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T20:11:41Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   }
  },
- "updated_at": "2026-11-05T19:57:39Z"
+ "updated_at": "2026-11-05T20:12:49Z"
 }

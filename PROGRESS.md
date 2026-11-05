@@ -309,3 +309,10 @@
 - st04604 山田西町(高知土赞线)：唯一候选为无站名标识的无人站台照，站牌 OCR/目检未见站名不算通过，候选枯竭
 - st06696 美濃川合(岐阜太多线)：唯一候选为发电站(Minokawai power station)非站景，候选枯竭
 - st07039 吉富(福岡)：候选 2 张均为吉富町社区巴士/大交北部巴士，非站景(巴士)，候选枯竭
+
+
+## ws15 refetch round 1 — 2026-11-05T20:12:49Z
+- queue: wrong_station 重抓队列 40 站（stage=mismatch_removal）
+- accepted(GPS<=2km)=10 staged_no_gps=21 still_missing=9
+- reject_dist={"title_names_other_station": 157, "duplicate_title": 6, "mime_unsupported": 261, "resolution_low": 50, "hard_excluded": 28, "license_unclear": 14, "license_forbidden": 6, "no_author_metadata": 2, "near_duplicate": 1, "title_non_station_scene": 4}
+- 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
