@@ -200,3 +200,10 @@
 ## ws15 local accept batch3 — 2026-11-05T17:55:49Z
 - st07109 水落(福井県) ← File:Mizuochi Station 2020.jpg：站牌 OCR「水落」+目检竖牌水落駅；done。
 - round3 其余暂存拒收：洗马/川路/寿(富士急)候选无站名牌证据；首尔Yaksu x2+INS军舰(薬水)、慈寿寺 x2(寿)、Suraksan(水落)、下沙(下立)、象峰/鹤峰(峰)、三重朝陽x3(朝陽,县不符) 异国/他站/县不符。
+
+
+## ws15 refetch round 1 — 2026-11-05T18:04:03Z
+- queue: wrong_station 重抓队列 13 站（stage=mismatch_removal）
+- accepted(GPS<=2km)=0 staged_no_gps=13 still_missing=0
+- reject_dist={"title_non_station_scene": 17, "duplicate_title": 5, "title_names_other_station": 55, "mime_unsupported": 65, "hard_excluded": 55, "resolution_low": 39, "license_forbidden": 5, "license_unclear": 2}
+- 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
