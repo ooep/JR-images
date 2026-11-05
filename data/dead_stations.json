@@ -1,5 +1,5 @@
 {
- "count": 349,
+ "count": 355,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -5731,7 +5731,109 @@
    "first_seen": "2026-11-05T21:11:42Z",
    "last_attempt": "2026-11-05T21:11:42Z",
    "note": "revert: round8 GPS 接受复核撤除: 标题 View near Ikoinomura Station, GPS 584m, 目检为路口草地纯风景无站房站台站牌, 非站景"
+  },
+  "st05977": {
+   "slug": "st05977",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:13:22Z",
+   "last_attempt": "2026-11-05T21:13:22Z",
+   "note": "ws15 round8 staged review 标缺：東開聞(指宿枕崎線)：唯一候选为列车田野远景(标题東開聞駅列車)，站名不可读，非站景主体"
+  },
+  "st07712": {
+   "slug": "st07712",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:13:22Z",
+   "last_attempt": "2026-11-05T21:13:22Z",
+   "note": "ws15 round8 staged review 标缺：早月加積(富山地鉄本線)：3 候选均无站名(/1 警察官重点パトロール駅横幅、/2 2番線のりば吊牌、/3 站房+重点バス停留所横幅)"
+  },
+  "st07964": {
+   "slug": "st07964",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:13:22Z",
+   "last_attempt": "2026-11-05T21:13:22Z",
+   "note": "ws15 round8 staged review 标缺：中田平(松浦鉄道西九州線)：候选为站房远景+里田原遺跡/歴史民俗資料館导览牌，场景内无站名标识"
+  },
+  "st08280": {
+   "slug": "st08280",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:13:22Z",
+   "last_attempt": "2026-11-05T21:13:22Z",
+   "note": "ws15 round8 staged review 标缺：真倉(舞鶴線)：/1 山坡停车场远景无站名、/2 蓝色抽象图形非站照"
+  },
+  "st08405": {
+   "slug": "st08405",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:13:22Z",
+   "last_attempt": "2026-11-05T21:13:22Z",
+   "note": "ws15 round8 staged review 标缺：林(城端線)：/1 候车亭竖牌为「ワンマン乗車口」非站名、/2/3 为葡萄牙里斯本 CP Oriente 站(异国, Saída 出口牌)"
+  },
+  "st08736": {
+   "slug": "st08736",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:13:22Z",
+   "last_attempt": "2026-11-05T21:13:22Z",
+   "note": "ws15 round8 staged review 标缺：向瀬上(阿武隈急行線)：唯一候选为高架站房/跨线桥远景，无站名标识"
   }
  },
- "updated_at": "2026-11-05T21:11:42Z"
+ "updated_at": "2026-11-05T21:13:22Z"
 }
