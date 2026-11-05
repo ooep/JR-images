@@ -1,5 +1,5 @@
 {
- "count": 355,
+ "count": 359,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -1480,11 +1480,11 @@
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01185": {
-   "attempts": 2,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-05T20:42:30Z",
+   "last_attempt": "2026-11-05T21:24:26Z",
    "name": "今川河童",
    "name_en": "Imagawa Kappa",
    "reasons": {
@@ -1855,25 +1855,6 @@
    "first_seen": "2026-11-04T04:22:38Z",
    "last_attempt": "2026-11-05T18:56:59Z",
    "note": "ws15 rounds1-4 标缺：霞ケ関(埼玉東上線)：候选为东京 Metro 霞ケ関(同名异线)，无本站合格候选"
-  },
-  "st01628": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:53:03Z",
-   "name": "生田",
-   "name_en": "Ikuta",
-   "reasons": {
-    "hard_excluded": 2,
-    "no_station_evidence": 9,
-    "pref_mismatch": 5,
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "slug": "st01628",
-   "source_page": null,
-   "stage": "retry"
   },
   "st01648": {
    "attempts": 1,
@@ -5545,9 +5526,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 2,
-   "final_dead": false,
-   "last_attempt": "2026-11-05T20:39:40Z",
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:23:17Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st07946": {
@@ -5555,9 +5536,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 2,
-   "final_dead": false,
-   "last_attempt": "2026-11-05T20:39:50Z",
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:23:26Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st07834": {
@@ -5565,9 +5546,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 2,
-   "final_dead": false,
-   "last_attempt": "2026-11-05T20:39:58Z",
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:23:34Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st03225": {
@@ -5575,9 +5556,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 2,
-   "final_dead": false,
-   "last_attempt": "2026-11-05T20:40:19Z",
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:23:45Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st03765": {
@@ -5670,9 +5651,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
-   "last_attempt": "2026-11-05T20:40:27Z",
+   "last_attempt": "2026-11-05T21:23:53Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st07649": {
@@ -5680,9 +5661,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
-   "last_attempt": "2026-11-05T20:40:44Z",
+   "last_attempt": "2026-11-05T21:24:01Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st07002": {
@@ -5690,9 +5671,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
-   "last_attempt": "2026-11-05T20:41:33Z",
+   "last_attempt": "2026-11-05T21:24:10Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st03646": {
@@ -5700,9 +5681,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
-   "last_attempt": "2026-11-05T20:41:50Z",
+   "last_attempt": "2026-11-05T21:24:18Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st03782": {
@@ -5710,27 +5691,27 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
-   "last_attempt": "2026-11-05T20:44:39Z",
+   "last_attempt": "2026-11-05T21:24:35Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st03600": {
    "slug": "st03600",
    "name": null,
    "name_en": null,
-   "stage": "mismatch_removal",
+   "stage": "ws15_refetch",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:View near Ikoinomura Station.jpg",
    "below_spec": false,
-   "attempts": 2,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-05T21:11:42Z",
-   "last_attempt": "2026-11-05T21:11:42Z",
-   "note": "revert: round8 GPS 接受复核撤除: 标题 View near Ikoinomura Station, GPS 584m, 目检为路口草地纯风景无站房站台站牌, 非站景"
+   "last_attempt": "2026-11-05T21:23:09Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st05977": {
    "slug": "st05977",
@@ -5833,7 +5814,57 @@
    "first_seen": "2026-11-05T21:13:22Z",
    "last_attempt": "2026-11-05T21:13:22Z",
    "note": "ws15 round8 staged review 标缺：向瀬上(阿武隈急行線)：唯一候选为高架站房/跨线桥远景，无站名标识"
+  },
+  "st08290": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T21:24:52Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st07138": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T21:25:18Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st04561": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T21:26:20Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st06053": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T21:26:39Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st04585": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T21:27:01Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   }
  },
- "updated_at": "2026-11-05T21:13:22Z"
+ "updated_at": "2026-11-05T21:27:53Z"
 }

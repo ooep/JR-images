@@ -381,3 +381,10 @@
 - st08280 真倉(舞鶴線)：/1 山坡停车场远景无站名、/2 蓝色抽象图形非站照
 - st08405 林(城端線)：/1 候车亭竖牌为「ワンマン乗車口」非站名、/2/3 为葡萄牙里斯本 CP Oriente 站(异国, Saída 出口牌)
 - st08736 向瀬上(阿武隈急行線)：唯一候选为高架站房/跨线桥远景，无站名标识
+
+
+## ws15 refetch round 1 — 2026-11-05T21:27:53Z
+- queue: wrong_station 重抓队列 33 站（stage=mismatch_removal）
+- accepted(GPS<=2km)=5 staged_no_gps=12 still_missing=16
+- reject_dist={"resolution_low": 41, "title_names_other_station": 132, "duplicate_title": 3, "mime_unsupported": 130, "title_non_station_scene": 3, "hard_excluded": 10, "no_author_metadata": 2, "license_unclear": 1}
+- 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
