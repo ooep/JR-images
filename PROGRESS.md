@@ -160,3 +160,10 @@
 ## ws15 local accept — 2026-11-05T17:07:13Z
 - st00609 市布(長崎県) ← File:JRKyushu Ichinuno Station 1.jpg：站牌目检「市布駅/ICHIUNO」通过（round1 artifact 回传候选），below_spec(long=1280) 入 review。
 - 同批暂存其余 12 候选目检/OCR 拒收：深圳布吉x2、福州象峰x3（异国）、明星号列车x3（非站景）、彦根駅闸口（他站）、福井(福井県)x3（同名异县）。
+
+
+## ws15 refetch round 1 — 2026-11-05T17:15:00Z
+- queue: wrong_station 重抓队列 11 站（stage=mismatch_removal）
+- accepted(GPS<=2km)=2 staged_no_gps=7 still_missing=2
+- reject_dist={"duplicate_title": 1, "title_names_other_station": 38, "mime_unsupported": 22, "hard_excluded": 47, "resolution_low": 24, "no_author_metadata": 2}
+- 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json

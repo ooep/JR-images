@@ -1,5 +1,5 @@
 {
- "count": 347,
+ "count": 345,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -2400,22 +2400,22 @@
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st02036": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
+   "last_attempt": "2026-11-05T17:13:24Z",
    "name": "彦根口",
    "name_en": "Hikoneguchi",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:HikoneGuchiEki KokokuBus 20070701.jpg",
    "slug": "st02036",
    "source_page": null,
-   "stage": "mismatch_removal"
+   "stage": "ws15_refetch"
   },
   "st02042": {
    "attempts": 1,
@@ -5747,18 +5747,18 @@
    "slug": "st02201",
    "name": null,
    "name_en": null,
-   "stage": "mismatch_removal",
+   "stage": "ws15_refetch",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Platform of Kitano Station (Nishitetsu Amagi Line) 1.jpg",
    "below_spec": false,
-   "attempts": 2,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-05T17:04:52Z",
-   "last_attempt": "2026-11-05T17:04:52Z",
-   "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
+   "last_attempt": "2026-11-05T17:13:48Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st02227": {
    "slug": "st02227",
@@ -5770,23 +5770,6 @@
    },
    "reject_dist": {},
    "removed_source_title": "File:Platform of Hiraki Station 7.jpg",
-   "below_spec": false,
-   "attempts": 2,
-   "final_dead": false,
-   "first_seen": "2026-11-05T17:04:52Z",
-   "last_attempt": "2026-11-05T17:04:52Z",
-   "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
-  },
-  "st02229": {
-   "slug": "st02229",
-   "name": null,
-   "name_en": null,
-   "stage": "mismatch_removal",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Platform of Hiraki Station 5.jpg",
    "below_spec": false,
    "attempts": 2,
    "final_dead": false,
@@ -5827,24 +5810,7 @@
    "first_seen": "2026-11-05T17:04:52Z",
    "last_attempt": "2026-11-05T17:04:52Z",
    "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
-  },
-  "st02242": {
-   "slug": "st02242",
-   "name": null,
-   "name_en": null,
-   "stage": "mismatch_removal",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Platform of Yakuin Station (Nishitetsu).jpg",
-   "below_spec": false,
-   "attempts": 2,
-   "final_dead": false,
-   "first_seen": "2026-11-05T17:04:52Z",
-   "last_attempt": "2026-11-05T17:04:52Z",
-   "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
   }
  },
- "updated_at": "2026-11-05T17:07:13Z"
+ "updated_at": "2026-11-05T17:15:00Z"
 }
