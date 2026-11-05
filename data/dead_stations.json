@@ -77,57 +77,63 @@
    "stage": "retry"
   },
   "st00051": {
-   "attempts": 2,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T11:40:08Z",
-   "last_attempt": "2026-11-03T14:42:34Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "大和新庄",
    "name_en": "Yamato-Shinjō",
    "reasons": {
     "mime_unsupported": 2,
     "oversize_gt_25mb": 2,
-    "resolution_low": 7
+    "resolution_low": 7,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00051",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00170": {
-   "attempts": 2,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T00:14:16Z",
-   "last_attempt": "2026-11-04T04:13:40Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "皆実町六丁目",
    "name_en": "Minamimachi 6-chōme",
    "reasons": {
     "geo_mismatch": 25,
     "name_mismatch_review": 1,
-    "resolution_low": 1
+    "resolution_low": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00170",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00182": {
-   "attempts": 2,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T11:53:25Z",
-   "last_attempt": "2026-11-03T14:42:59Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "横川一丁目",
    "name_en": "Yokogawa 1-chōme",
    "reasons": {
     "low_color(map/text?)": 1,
-    "resolution_low": 3
+    "resolution_low": 3,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00182",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00190": {
    "attempts": 2,
@@ -165,11 +171,11 @@
    "stage": "manual_qa"
   },
   "st00309": {
-   "attempts": 2,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T16:45:09Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "青山",
    "name_en": "Aoyama",
    "reasons": {
@@ -177,12 +183,14 @@
     "name_mismatch_review": 8,
     "no_station_evidence": 10,
     "pref_mismatch": 6,
-    "wrong_station": 1
+    "wrong_station": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00309",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00317": {
    "attempts": 2,
@@ -330,28 +338,30 @@
    "stage": "verify"
   },
   "st00377": {
-   "attempts": 2,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T12:12:14Z",
-   "last_attempt": "2026-11-03T14:43:24Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "郡元・南",
    "name_en": null,
    "reasons": {
     "mime_unsupported": 11,
-    "oversize_gt_25mb": 19
+    "oversize_gt_25mb": 19,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00377",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00378": {
-   "attempts": 2,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T16:45:17Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "中郡",
    "name_en": "Chūgun",
    "reasons": {
@@ -359,28 +369,32 @@
     "name_mismatch_review": 9,
     "no_station_evidence": 10,
     "pref_mismatch": 2,
-    "wrong_station": 14
+    "wrong_station": 14,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00378",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00380": {
-   "attempts": 2,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T12:12:35Z",
-   "last_attempt": "2026-11-03T14:43:34Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "純心学園前",
    "name_en": "Junshingakuen-mae",
    "reasons": {
-    "resolution_low": 1
+    "resolution_low": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00380",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00383": {
    "attempts": 2,
@@ -543,22 +557,24 @@
    "stage": "retry"
   },
   "st00457": {
-   "attempts": 2,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T16:45:23Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "大橋",
    "name_en": "Ōhashi",
    "reasons": {
     "geo_mismatch": 23,
     "name_mismatch_review": 2,
-    "no_station_evidence": 6
+    "no_station_evidence": 6,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00457",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00458": {
    "attempts": 2,
@@ -622,18 +638,20 @@
    "stage": "verify"
   },
   "st00469": {
-   "attempts": 2,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-04T16:47:03Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
    "reasons": [
-    "duplicate_sha256_with:st00466"
+    "duplicate_sha256_with:st00466",
+    "no_verifiable_candidate"
    ],
    "slug": "st00469",
    "source_page": "https://commons.wikimedia.org/wiki/File:Hanshin_Sumiyoshi_Station_20200901.jpg",
-   "stage": "verify"
+   "stage": "verify",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00470": {
    "attempts": 2,
@@ -891,23 +909,25 @@
    "stage": "mismatch_removal"
   },
   "st00580": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T05:08:01Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "球場前",
    "name_en": "Kyūjō-mae",
    "reasons": {
     "geo_mismatch": 3,
     "name_mismatch_review": 20,
     "no_station_evidence": 25,
-    "pref_mismatch": 1
+    "pref_mismatch": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00580",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00581": {
    "attempts": 1,
@@ -972,21 +992,23 @@
    "stage": "verify"
   },
   "st00602": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:29:17Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "肥前竜王",
    "name_en": "Hizen-Ryūō",
    "reasons": {
     "resolution_low": 1,
-    "wrong_station": 1
+    "wrong_station": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00602",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00609": {
    "attempts": 1,
@@ -1073,42 +1095,46 @@
    "stage": "audit"
   },
   "st00812": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:39:46Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "新川",
    "name_en": "Nikkawa",
    "reasons": {
     "geo_mismatch": 8,
     "no_station_evidence": 15,
     "pref_mismatch": 3,
-    "wrong_station": 1
+    "wrong_station": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00812",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00813": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:39:50Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "新川",
    "name_en": "Nikkawa",
    "reasons": {
     "geo_mismatch": 8,
     "no_station_evidence": 15,
     "pref_mismatch": 3,
-    "wrong_station": 1
+    "wrong_station": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00813",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00822": {
    "attempts": 1,
@@ -1127,22 +1153,24 @@
    "stage": "fetch"
   },
   "st00824": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T13:52:36Z",
-   "last_attempt": "2026-11-03T13:52:36Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "野志",
    "name_en": "Noshi",
    "reasons": {
     "mime_unsupported": 18,
     "oversize_gt_25mb": 10,
-    "resolution_low": 2
+    "resolution_low": 2,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00824",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00827": {
    "attempts": 1,
@@ -1184,32 +1212,35 @@
    "stage": "retry"
   },
   "st00949": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T14:09:30Z",
-   "last_attempt": "2026-11-03T14:09:30Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "馬場崎町",
    "name_en": "Babasakichō",
    "reasons": {
-    "resolution_low": 2
+    "resolution_low": 2,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00949",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00953": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T00:14:16Z",
-   "last_attempt": "2026-11-04T00:14:16Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "高松町",
    "name_en": "Takamatsuchō",
-   "note": "user-confirmed wrong image; refetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
-    "pref_mismatch": "高松町←香川県道図 pref_mismatch"
+    "pref_mismatch": "高松町←香川県道図 pref_mismatch",
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00953",
@@ -1217,20 +1248,22 @@
    "stage": "audit"
   },
   "st00957": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T14:10:34Z",
-   "last_attempt": "2026-11-03T14:10:34Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "和田浜",
    "name_en": "Wadahama",
    "reasons": {
-    "resolution_low": 2
+    "resolution_low": 2,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st00957",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00980": {
    "attempts": 1,
@@ -1299,11 +1332,11 @@
    "stage": "fetch"
   },
   "st01041": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:40:22Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "岡田",
    "name_en": "Okada",
    "reasons": {
@@ -1311,19 +1344,21 @@
     "name_mismatch_review": 4,
     "no_station_evidence": 25,
     "pref_mismatch": 2,
-    "wrong_station": 1
+    "wrong_station": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01041",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01048": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:40:31Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "四所",
    "name_en": "Shisho",
    "reasons": {
@@ -1333,12 +1368,14 @@
     "name_mismatch_review": 8,
     "no_station_evidence": 12,
     "pref_mismatch": 1,
-    "wrong_station": 5
+    "wrong_station": 5,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01048",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01056": {
    "attempts": 1,
@@ -1357,11 +1394,11 @@
    "stage": "fetch"
   },
   "st01070": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:40:36Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "万博記念公園",
    "name_en": "Bampaku-kinen-kōen",
    "reasons": {
@@ -1369,12 +1406,14 @@
     "hard_excluded": 1,
     "name_mismatch_review": 2,
     "no_station_evidence": 16,
-    "pref_mismatch": 6
+    "pref_mismatch": 6,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01070",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01101": {
    "attempts": 1,
@@ -1393,11 +1432,11 @@
    "stage": "fetch"
   },
   "st01129": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:40:42Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "北浦",
    "name_en": "Kitaura",
    "reasons": {
@@ -1405,12 +1444,14 @@
     "name_mismatch_review": 3,
     "no_station_evidence": 18,
     "pref_mismatch": 5,
-    "wrong_station": 1
+    "wrong_station": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01129",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01157": {
    "attempts": 1,
@@ -1455,36 +1496,40 @@
    "stage": "retry"
   },
   "st01168": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T14:36:15Z",
-   "last_attempt": "2026-11-03T14:36:15Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "糒",
    "name_en": "Hoshii",
    "reasons": {
-    "resolution_low": 3
+    "resolution_low": 3,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01168",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01169": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T14:36:21Z",
-   "last_attempt": "2026-11-03T14:36:21Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "田川市立病院",
    "name_en": "Tagawa Municipal Hospital",
    "reasons": {
-    "resolution_low": 1
+    "resolution_low": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01169",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01170": {
    "attempts": 1,
@@ -1505,20 +1550,22 @@
    "stage": "fetch"
   },
   "st01174": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T14:36:58Z",
-   "last_attempt": "2026-11-03T14:36:58Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "柿下温泉口",
    "name_en": "Kakishita-onsen-guchi",
    "reasons": {
-    "resolution_low": 1
+    "resolution_low": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01174",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01179": {
    "attempts": 1,
@@ -1538,11 +1585,11 @@
    "stage": "fetch"
   },
   "st01180": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:41:29Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "犀川",
    "name_en": "Saigawa",
    "reasons": {
@@ -1551,29 +1598,33 @@
     "name_mismatch_review": 8,
     "no_station_evidence": 22,
     "resolution_low": 7,
-    "wrong_station": 3
+    "wrong_station": 3,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01180",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01181": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:45:09Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "東犀川三四郎",
    "name_en": "Higashi-Saigawa Sanshirō",
    "reasons": {
     "resolution_low": 1,
-    "wrong_station": 2
+    "wrong_station": 2,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01181",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01185": {
    "attempts": 1,
@@ -1700,23 +1751,25 @@
    "stage": "verify"
   },
   "st01240": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T05:08:27Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "島ケ原",
    "name_en": "Shimagahara",
    "reasons": {
     "hard_excluded": 1,
     "name_mismatch_review": 1,
     "no_station_evidence": 10,
-    "wrong_station": 1
+    "wrong_station": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01240",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01241": {
    "attempts": 1,
@@ -1775,22 +1828,24 @@
    "stage": "retry"
   },
   "st01282": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:46:29Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "柏原",
    "name_en": "Kaibara",
    "reasons": {
     "geo_mismatch": 6,
     "no_station_evidence": 20,
-    "pref_mismatch": 1
+    "pref_mismatch": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01282",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01351": {
    "attempts": 1,
@@ -1809,23 +1864,25 @@
    "stage": "fetch"
   },
   "st01353": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:46:35Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "河原町",
    "name_en": "Kawaramachi",
    "reasons": {
     "geo_mismatch": 8,
     "hard_excluded": 3,
     "no_station_evidence": 5,
-    "pref_mismatch": 13
+    "pref_mismatch": 13,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01353",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01354": {
    "attempts": 1,
@@ -1882,72 +1939,80 @@
    "stage": "fetch"
   },
   "st01414": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T15:11:02Z",
-   "last_attempt": "2026-11-03T15:11:02Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "高ノ宮",
    "name_en": "Takanomiya",
    "reasons": {
-    "resolution_low": 1
+    "resolution_low": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01414",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01416": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T15:11:15Z",
-   "last_attempt": "2026-11-03T15:11:15Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "朝日ケ丘",
    "name_en": null,
    "reasons": [
-    "no_candidates"
+    "no_candidates",
+    "no_verifiable_candidate"
    ],
    "reject_dist": {},
    "slug": "st01416",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01432": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:47:10Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "県庁前",
    "name_en": "Ehime Pref. Office",
    "reasons": {
     "geo_mismatch": 20,
     "no_station_evidence": 1,
-    "pref_mismatch": 3
+    "pref_mismatch": 3,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01432",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01433": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:47:15Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "県庁前",
    "name_en": "Ehime Pref. Office",
    "reasons": {
     "geo_mismatch": 20,
     "no_station_evidence": 1,
-    "pref_mismatch": 3
+    "pref_mismatch": 3,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01433",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01434": {
    "attempts": 1,
@@ -1968,40 +2033,44 @@
    "stage": "retry"
   },
   "st01435": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:47:25Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "県庁前",
    "name_en": "Ehime Pref. Office",
    "reasons": {
     "geo_mismatch": 21,
     "no_station_evidence": 1,
-    "pref_mismatch": 2
+    "pref_mismatch": 2,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01435",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01436": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:47:31Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "県庁前",
    "name_en": "Ehime Pref. Office",
    "reasons": {
     "geo_mismatch": 21,
     "no_station_evidence": 1,
-    "pref_mismatch": 2
+    "pref_mismatch": 2,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01436",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01459": {
    "attempts": 1,
@@ -2172,36 +2241,40 @@
    "stage": "retry"
   },
   "st01659": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T15:38:46Z",
-   "last_attempt": "2026-11-03T15:38:46Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "杉塘",
    "name_en": "Sugidomo",
    "reasons": {
-    "resolution_low": 2
+    "resolution_low": 2,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01659",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01792": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T15:52:10Z",
-   "last_attempt": "2026-11-03T15:52:10Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "松ケ崎",
    "name_en": null,
    "reasons": [
-    "no_candidates"
+    "no_candidates",
+    "no_verifiable_candidate"
    ],
    "reject_dist": {},
    "slug": "st01792",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01793": {
    "attempts": 1,
@@ -2273,52 +2346,58 @@
    "stage": "fetch"
   },
   "st01836": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T00:35:05Z",
-   "last_attempt": "2026-11-04T00:35:05Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "粟ケ崎",
    "name_en": null,
    "reasons": [
-    "no_candidates"
+    "no_candidates",
+    "no_verifiable_candidate"
    ],
    "reject_dist": {},
    "slug": "st01836",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01858": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T00:36:36Z",
-   "last_attempt": "2026-11-04T00:36:36Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "富士見ケ丘",
    "name_en": null,
    "reasons": [
-    "no_candidates"
+    "no_candidates",
+    "no_verifiable_candidate"
    ],
    "reject_dist": {},
    "slug": "st01858",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01958": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T00:42:12Z",
-   "last_attempt": "2026-11-04T00:42:12Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "ラクテンチ上",
    "name_en": null,
    "reasons": [
-    "no_candidates"
+    "no_candidates",
+    "no_verifiable_candidate"
    ],
    "reject_dist": {},
    "slug": "st01958",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st02000": {
    "attempts": 1,
@@ -2337,21 +2416,23 @@
    "stage": "fetch"
   },
   "st02003": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T00:45:21Z",
-   "last_attempt": "2026-11-04T00:45:21Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "法界院",
    "name_en": "Hōkaiin",
    "reasons": {
     "low_color(map/text?)": 2,
-    "resolution_low": 1
+    "resolution_low": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st02003",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st02021": {
    "attempts": 1,
@@ -2458,20 +2539,22 @@
    "stage": "fetch"
   },
   "st02056": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T00:49:35Z",
-   "last_attempt": "2026-11-04T00:49:35Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "水口城南",
    "name_en": "Minakuchi-Jōnan",
    "reasons": {
-    "resolution_low": 1
+    "resolution_low": 1,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st02056",
    "source_page": null,
-   "stage": "fetch"
+   "stage": "fetch",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st02077": {
    "attempts": 1,
@@ -3965,23 +4048,25 @@
    "stage": "qa_pipeline_330"
   },
   "st05086": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:54:37Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "伊勢鎌倉",
    "name_en": "Ise-Kamakura",
    "reasons": {
     "name_mismatch_review": 33,
     "no_station_evidence": 34,
     "pref_mismatch": 1,
-    "wrong_station": 2
+    "wrong_station": 2,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st05086",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st05087": {
    "attempts": 3,
@@ -4160,11 +4245,11 @@
    "stage": "qa_pipeline_330"
   },
   "st05277": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:54:45Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "宇島",
    "name_en": "Unoshima",
    "reasons": {
@@ -4172,12 +4257,14 @@
     "name_mismatch_review": 16,
     "no_station_evidence": 22,
     "resolution_low": 3,
-    "wrong_station": 12
+    "wrong_station": 12,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st05277",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st05397": {
    "attempts": 3,
@@ -5405,11 +5492,11 @@
    "stage": "manual_qa"
   },
   "st07999": {
-   "attempts": 1,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T05:00:39Z",
+   "last_attempt": "2026-11-05T15:34:52Z",
    "name": "甲立",
    "name_en": "Kōtachi",
    "reasons": {
@@ -5417,12 +5504,14 @@
     "name_mismatch_review": 25,
     "no_station_evidence": 26,
     "resolution_low": 1,
-    "wrong_station": 2
+    "wrong_station": 2,
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st07999",
    "source_page": null,
-   "stage": "retry"
+   "stage": "retry",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st08009": {
    "attempts": 3,
