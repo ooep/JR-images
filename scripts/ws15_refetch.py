@@ -34,8 +34,9 @@ MAX_DOWNLOADS = 8        # 每站最多下载数
 EXCLUDE_PAT = {
     'st02193': re.compile(r'水間|みずま|Mizuma\s*Railway|Mizuma\s*Kannon', re.I),
     'st02021': re.compile(r'篠ノ井|Shinonoi', re.I),
-    'st01798': re.compile(r'NDL\d|国立国会図書館', re.I),
-    'st02044': re.compile(r'上田電鉄以外の大学前', re.I),  # 占位（无实际排除）
+    'st01798': re.compile(r'NDL\d|国立国会図書館|\b583\b|EF6[0-9]|EF81|Ltd\s*Exp', re.I),
+    'st07773': re.compile(r'Xiangfeng|象峰|福州|Fuzhou|三江口', re.I),
+    'st00609': re.compile(r'布吉|Buji|深圳|Shenzhen', re.I),
 }
 
 # 公司/线路消歧前缀（用于追加检索词）
@@ -147,6 +148,9 @@ def main():
     _nc = collections.Counter((s.get('name') or '').strip() for s in stations)
     same_name_names = {n for n, c in _nc.items() if c > 1 and n}
 
+    # 全站名索引：标题站名闸门（round1 教训：GPS<2km 但标题指名邻站的误收）
+    kanji_idx, _romaji_idx, romaji_re = bf.build_name_index(stations)
+
     evidence = {'queue': queue, 'accepted': [], 'nogps_staged': [],
                 'still_missing': [], 'rejected_notable': []}
     stats = {'attempted': 0, 'done': 0, 'review': 0, 'missing': 0, 'failed': 0,
@@ -172,6 +176,20 @@ def main():
             if bf.HARD_EXCLUDE_RE.search(title) or (expat and expat.search(title)):
                 stats['reject_dist']['hard_excluded'] = \
                     stats['reject_dist'].get('hard_excluded', 0) + 1
+                continue
+            # 标题站名闸门：标题命中其他站名且不含本站名 → 拒
+            # （round1 教训：邻站照片 GPS 距离 <2km 但标题明确指名他站）
+            hits = bf.station_names_in_title(title, kanji_idx, romaji_re)
+            same_as_set = set(st.get('same_as') or [])
+            self_hit = any(slug in h[2] or (h[2] & same_as_set) for h in hits)
+            other_hit = [h for h in hits
+                         if slug not in h[2] and not (h[2] & same_as_set)]
+            if other_hit and not self_hit:
+                stats['reject_dist']['title_names_other_station'] = \
+                    stats['reject_dist'].get('title_names_other_station', 0) + 1
+                evidence['rejected_notable'].append(
+                    {'slug': slug, 'title': title,
+                     'named': other_hit[0][1], 'gate': 'title_names_other_station'})
                 continue
             ok, lic, lic_url, author, reason = bf.license_verdict(info.get('extmetadata'))
             if not ok:
@@ -371,7 +389,8 @@ def main():
             stats['done'] += 1
             stats['bytes'] += accepted['bytes']
             stats['dead_recovered'] += 1
-            evidence['accepted'].append({k: v for k, v in accepted.items() if k != 'data'})
+            evidence['accepted'].append(
+                dict(slug=slug, **{k: v for k, v in accepted.items() if k != 'data'}))
             print('   ACCEPT(GPS %.0fm) %s' % (accepted['dist_m'], accepted['title'][:70]),
                   flush=True)
         elif staged:
@@ -387,7 +406,7 @@ def main():
                 with open(os.path.join(st_dir, '%d_meta.json' % i), 'w', encoding='utf-8') as f:
                     json.dump(meta, f, ensure_ascii=False, indent=1)
                 evidence['nogps_staged'].append(
-                    {k: v for k, v in meta.items() if k != 'station'})
+                    dict(slug=slug, **{k: v for k, v in meta.items() if k != 'station'}))
             evidence['still_missing'].append({
                 'slug': slug, 'name': st['name'], 'pref': st.get('pref'),
                 'state': 'staged_for_local_ocr_visual', 'n_staged': len(staged)})

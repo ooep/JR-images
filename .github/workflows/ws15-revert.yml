@@ -1,0 +1,115 @@
+name: ws15-revert
+
+# 撤销 ws15 round1 中 7 个「标题指名他站」的 GPS 误收：
+# git rm 14 文件 + 修正 state/index/dead/PROGRESS，单提交，never force。
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ws15-revert
+  cancel-in-progress: false
+
+jobs:
+  revert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply revert
+        run: |
+          python3 - <<'PY'
+          import json, time, os
+          REVERTS = {
+              'st02193': 'File:Platform of Daizenji Station.jpg',
+              'st02201': 'File:Platform of Kitano Station (Nishitetsu Amagi Line) 1.jpg',
+              'st02227': 'File:Platform of Hiraki Station 7.jpg',
+              'st02229': 'File:Platform of Hiraki Station 5.jpg',
+              'st02232': 'File:Platform of Nishitetsu-Yanagawa Station 3.jpg',
+              'st02236': 'File:Platform of Mikunigaoka Station (north).JPG',
+              'st02242': 'File:Platform of Yakuin Station (Nishitetsu).jpg',
+          }
+          now = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
+          for slug in REVERTS:
+              p = 'stations/%s/photo.jpg' % slug
+              if os.path.exists(p):
+                  os.unlink(p)
+                  os.rmdir('stations/%s' % slug)
+              l = 'licenses/%s.txt' % slug
+              if os.path.exists(l):
+                  os.unlink(l)
+          state = json.load(open('state.json', encoding='utf-8'))
+          index = json.load(open('index.json', encoding='utf-8'))
+          dead = json.load(open('data/dead_stations.json', encoding='utf-8'))
+          for slug, title in REVERTS.items():
+              prev = state['entries'].get(slug, {})
+              state['entries'][slug] = {
+                  'status': 'missing', 'file': None, 'sha256': None, 'bytes': None,
+                  'reasons': ['ws15_revert_title_names_other_station'],
+                  'ts': now,
+                  'removed_source_title': title,
+                  'attempts': prev.get('attempts', 1),
+              }
+              index.get('stations', {}).pop(slug, None)
+              prevd = dead['stations'].get(slug, {})
+              dead['stations'][slug] = {
+                  'slug': slug, 'name': prevd.get('name'), 'name_en': prevd.get('name_en'),
+                  'stage': 'mismatch_removal',
+                  'reasons': {'wrong_station': 1},
+                  'reject_dist': {},
+                  'removed_source_title': title,
+                  'below_spec': False,
+                  'attempts': 2,
+                  'final_dead': False,
+                  'first_seen': prevd.get('first_seen') or now,
+                  'last_attempt': now,
+                  'note': 'ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓',
+              }
+          dead['count'] = len(dead['stations'])
+          dead['updated_at'] = now
+          state['updated_at'] = now
+          json.dump(state, open('state.json', 'w', encoding='utf-8'), ensure_ascii=False)
+          json.dump(index, open('index.json', 'w', encoding='utf-8'), ensure_ascii=False)
+          json.dump(dead, open('data/dead_stations.json', 'w', encoding='utf-8'),
+                    ensure_ascii=False, indent=1)
+          with open('PROGRESS.md', 'a', encoding='utf-8') as f:
+              f.write('\n\n## ws15 revert — %s\n' % now)
+              f.write('- round1 中 7 站 GPS<=2km 通过但标题明确指名邻站（大善寺/北野/開 x2/'
+                      '西鉄柳河/三国ヶ丘/薬院），判定图与站名不符，撤出 HEAD 并重置重抓队列。\n')
+              f.write('- 撤站: %s\n' % ' '.join(sorted(REVERTS)))
+              f.write('- round2 补丁：标题站名闸门（标题命中他站名即拒）+ '
+                      '象峰/布吉等异国关键词排除。\n')
+          print('revert applied')
+          PY
+
+      - name: Commit & push (never force)
+        run: |
+          set -e
+          git config user.name "jrimages-bot"
+          git config user.email "ooep@users.noreply.github.com"
+          git add -A stations licenses state.json index.json data/dead_stations.json PROGRESS.md
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "ws15 revert: 7 GPS-accepts removed (titles name adjacent stations <2km: Daizenji/Kitano/Hiraki x2/Yanagawa/Mikunigaoka/Yakuin); queue reset for round2 with title gate"
+          for n in 1 2 3 4; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "push failed ($n), fetch+rebase & retry"
+            git fetch origin main
+            git stash push -m rebase-shield >/dev/null 2>&1 || true
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              git stash pop || true
+              exit 1
+            fi
+            git stash pop || true
+          done
+          exit 1
