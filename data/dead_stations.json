@@ -1,5 +1,5 @@
 {
- "count": 355,
+ "count": 341,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -2310,24 +2310,6 @@
    "source_page": null,
    "stage": "mismatch_removal"
   },
-  "st01802": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "宮町",
-   "name_en": "Miyamachi",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Kintetsu Miyamachi station platforms.jpg",
-   "slug": "st01802",
-   "source_page": null,
-   "stage": "mismatch_removal"
-  },
   "st01804": {
    "attempts": 1,
    "below_spec": false,
@@ -2434,24 +2416,6 @@
    "stage": "fetch",
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
-  "st02021": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "平田",
-   "name_en": "Heita",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:JR Shinonoi-Line Hirata Station Gates.jpg",
-   "slug": "st02021",
-   "source_page": null,
-   "stage": "mismatch_removal"
-  },
   "st02036": {
    "attempts": 1,
    "below_spec": false,
@@ -2485,24 +2449,6 @@
    "slug": "st02042",
    "source_page": null,
    "stage": "fetch"
-  },
-  "st02044": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "大学前",
-   "name_en": "Daigaku-mae",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Tochio-daigakumae.jpg",
-   "slug": "st02044",
-   "source_page": null,
-   "stage": "mismatch_removal"
   },
   "st02049": {
    "attempts": 1,
@@ -2657,42 +2603,6 @@
    "source_page": null,
    "stage": "fetch"
   },
-  "st02193": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "三潴",
-   "name_en": "Mizuma",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Mizuma Railway Mizuma Kannon Station.jpg",
-   "slug": "st02193",
-   "source_page": null,
-   "stage": "mismatch_removal"
-  },
-  "st02201": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "古賀茶屋",
-   "name_en": "Koganchaya",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Platform of Kitano Station (Nishitetsu-Amagi Line) 2.jpg",
-   "slug": "st02201",
-   "source_page": null,
-   "stage": "mismatch_removal"
-  },
   "st02219": {
    "attempts": 1,
    "below_spec": false,
@@ -2743,149 +2653,23 @@
    "source_page": null,
    "stage": "fetch"
   },
-  "st02227": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "西鉄渡瀬",
-   "name_en": "Nishitetsu-Wataze",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Nishitetsu Wataze Station 2021.JPG",
-   "slug": "st02227",
-   "source_page": null,
-   "stage": "mismatch_removal"
-  },
-  "st02229": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "江の浦",
-   "name_en": "Enoura",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Nishitetsu Enoura Station01.jpg",
-   "slug": "st02229",
-   "source_page": null,
-   "stage": "mismatch_removal"
-  },
   "st02231": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
+   "last_attempt": "2026-11-05T16:39:57Z",
    "name": "塩塚",
    "name_en": "Shiotsuka",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Nishitetsu Shiotsuka Station01.jpg",
    "slug": "st02231",
    "source_page": null,
-   "stage": "mismatch_removal"
-  },
-  "st02232": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "徳益",
-   "name_en": "Tokumasu",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Nishitetsu Tokumasu Station01.jpg",
-   "slug": "st02232",
-   "source_page": null,
-   "stage": "mismatch_removal"
-  },
-  "st02236": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "津古",
-   "name_en": "Tsuko",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Nishitetsu Tsuko Station02.jpg",
-   "slug": "st02236",
-   "source_page": null,
-   "stage": "mismatch_removal"
-  },
-  "st02239": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "大保",
-   "name_en": "Ōho",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Nishitetsu Oho Station02.jpg",
-   "slug": "st02239",
-   "source_page": null,
-   "stage": "mismatch_removal"
-  },
-  "st02242": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "西鉄平尾",
-   "name_en": "Nishitetsu-Hirao",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Hakataeki-torikai Street ENE from Nishitetsu Hirao Station Nanokawa Ōgusu Fukuoka 20230509.jpg",
-   "slug": "st02242",
-   "source_page": null,
-   "stage": "mismatch_removal"
-  },
-  "st02295": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "名鉄一宮",
-   "name_en": "Meitetsu-Ichinomiya",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Meitetsu-Ichinomiya station departures board on track 3 and 4..JPG",
-   "slug": "st02295",
-   "source_page": null,
-   "stage": "mismatch_removal"
+   "stage": "ws15_refetch"
   },
   "st02484": {
    "attempts": 3,
@@ -3126,23 +2910,6 @@
    "reject_dist": {},
    "slug": "st03208",
    "stage": "qa_pipeline_330"
-  },
-  "st03214": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-05T11:17:08Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "",
-   "name_en": "",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Exit 5, Daan Park Station 20200919.jpg",
-   "slug": "st03214",
-   "stage": "mismatch_removal"
   },
   "st03328": {
    "attempts": 3,
@@ -4476,23 +4243,6 @@
    "reject_dist": {},
    "slug": "st05906",
    "stage": "qa_pipeline_330"
-  },
-  "st05947": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-05T11:17:08Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "",
-   "name_en": "",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:201906 Nameboard in platform of Xidaqiao Station.jpg",
-   "slug": "st05947",
-   "stage": "mismatch_removal"
   },
   "st05985": {
    "attempts": 3,
@@ -5994,5 +5744,5 @@
    "stage": "manual_qa"
   }
  },
- "updated_at": "2026-11-05T11:17:41Z"
+ "updated_at": "2026-11-05T16:41:29Z"
 }

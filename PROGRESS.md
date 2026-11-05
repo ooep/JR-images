@@ -142,3 +142,10 @@
 - cumulative_indexed=3437/8909
 - elapsed=144s
 
+
+
+## ws15 refetch round 1 — 2026-11-05T16:41:29Z
+- queue: wrong_station 重抓队列 20 站（stage=mismatch_removal）
+- accepted(GPS<=2km)=14 staged_no_gps=5 still_missing=1
+- reject_dist={"duplicate_title": 19, "hard_excluded": 58, "resolution_low": 58, "mime_unsupported": 139, "no_author_metadata": 3, "license_unclear": 1}
+- 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
