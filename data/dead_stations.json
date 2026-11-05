@@ -1,5 +1,5 @@
 {
- "count": 345,
+ "count": 346,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -5810,7 +5810,24 @@
    "first_seen": "2026-11-05T17:04:52Z",
    "last_attempt": "2026-11-05T17:04:52Z",
    "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
+  },
+  "st02229": {
+   "slug": "st02229",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Nishitetsu EMU 8061F at Yabegawa Bridge.jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:21:35Z",
+   "last_attempt": "2026-11-05T17:21:35Z",
+   "note": "revert: 非站景：列车过矢部川桥照片(Nishitetsu EMU 8061F at Yabegawa Bridge)"
   }
  },
- "updated_at": "2026-11-05T17:15:00Z"
+ "updated_at": "2026-11-05T17:21:35Z"
 }

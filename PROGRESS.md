@@ -167,3 +167,7 @@
 - accepted(GPS<=2km)=2 staged_no_gps=7 still_missing=2
 - reject_dist={"duplicate_title": 1, "title_names_other_station": 38, "mime_unsupported": 22, "hard_excluded": 47, "resolution_low": 24, "no_author_metadata": 2}
 - 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
+
+
+## ws15 revert-n — 2026-11-05T17:21:35Z
+- 撤站 st02229；原因：非站景：列车过矢部川桥照片(Nishitetsu EMU 8061F at Yabegawa Bridge)
