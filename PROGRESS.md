@@ -235,3 +235,7 @@
 - accepted(GPS<=2km)=20 staged_no_gps=10 still_missing=0
 - reject_dist={"hard_excluded": 94, "resolution_low": 133, "duplicate_title": 43, "mime_unsupported": 142, "title_names_other_station": 161, "license_unclear": 3, "no_author_metadata": 7, "title_non_station_scene": 7}
 - 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
+
+
+## ws15 revert-n — 2026-11-05T18:44:53Z
+- 撤站 st00716；原因：非站景：单轨高架轨道街景照无站体(round5 GPS 234m 误收)

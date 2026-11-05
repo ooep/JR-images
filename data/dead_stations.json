@@ -1,5 +1,5 @@
 {
- "count": 337,
+ "count": 338,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -5650,7 +5650,24 @@
    "first_seen": "2026-11-05T17:34:12Z",
    "last_attempt": "2026-11-05T18:18:01Z",
    "note": "ws15 rounds1-4 标缺：朝阳(長野)：仅三重县朝日站(县不符)x3"
+  },
+  "st00716": {
+   "slug": "st00716",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:北九州モノレール - panoramio (4).jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-05T18:44:53Z",
+   "last_attempt": "2026-11-05T18:44:53Z",
+   "note": "revert: 非站景：单轨高架轨道街景照无站体(round5 GPS 234m 误收)"
   }
  },
- "updated_at": "2026-11-05T18:29:47Z"
+ "updated_at": "2026-11-05T18:44:53Z"
 }
