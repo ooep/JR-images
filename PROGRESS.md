@@ -422,3 +422,10 @@
 
 ## ws15 finalize missing batch10 — 2026-11-05T22:04:19Z
 - st01628 生田(秋田県)：round10 暂存 3 候选均为神奈川生田(小田急小田原線站台/小田急生田駅牌目检确认/JR 生田)，同名异线；此前 round9 GPS 接受项为新干线行驶照已撤(REVERT7)；候选池枯竭
+
+
+## ws15 refetch round 1 — 2026-11-05T22:11:23Z
+- queue: wrong_station 重抓队列 5 站（stage=mismatch_removal）
+- accepted(GPS<=2km)=0 staged_no_gps=0 still_missing=5
+- reject_dist={"no_author_metadata": 2, "resolution_low": 3, "mime_unsupported": 3, "title_names_other_station": 9}
+- 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json

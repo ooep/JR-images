@@ -1,12 +1,5 @@
 {
  "queue": [
-  "st01628",
-  "st04564",
-  "st07669",
-  "st07649",
-  "st07002",
-  "st03646",
-  "st03782",
   "st08290",
   "st07138",
   "st04561",
@@ -14,179 +7,14 @@
   "st04585"
  ],
  "accepted": [],
- "nogps_staged": [
-  {
-   "slug": "st01628",
-   "title": "File:Odakyu-electric-railway-Odawara-line-Ikuta-station-platform-20130711-165950.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Odakyu-electric-railway-Odawara-line-Ikuta-station-platform-20130711-165950.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/35/Odakyu-electric-railway-Odawara-line-Ikuta-station-platform-20130711-165950.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "LERK",
-   "sha256": "f3e96a9983bc384248e530effb51c8a2a5752bcc3e5cada349cc3514de85cdcb",
-   "dhash": "837666e666e6e2c0",
-   "bytes": 346106,
-   "width": 1800,
-   "height": 1012,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4000,
-    "original_height": 2250
-   },
-   "dist_m": null,
-   "score": 6.5
-  },
-  {
-   "slug": "st01628",
-   "title": "File:Ikuta Station - Kanagawa - May 11 2021 various 18 45 42 501000.jpeg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_45_42_501000.jpeg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_45_42_501000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 4.0",
-   "license_url": "https://creativecommons.org/licenses/by/4.0",
-   "author": "Nesnad",
-   "sha256": "577a2b77756d5162f03287aa271e417fb267a59ca7adc2afc0cd7b3c15e86fea",
-   "dhash": "9fa2c98743430385",
-   "bytes": 397480,
-   "width": 1800,
-   "height": 1522,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4690,
-    "original_height": 3966
-   },
-   "dist_m": null,
-   "score": 5.85
-  },
-  {
-   "slug": "st01628",
-   "title": "File:Ikuta Station - Kanagawa - May 11 2021 various 18 44 50 483000.jpeg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_44_50_483000.jpeg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_44_50_483000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 4.0",
-   "license_url": "https://creativecommons.org/licenses/by/4.0",
-   "author": "Nesnad",
-   "sha256": "78115033c0d5b88bd02241ac46d9a0c64034a7b1b02e6e8b44d9e68993a2a8a2",
-   "dhash": "4f7e1f0f9f9f1ffb",
-   "bytes": 391255,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4032,
-    "original_height": 3024
-   },
-   "dist_m": null,
-   "score": 5.52
-  }
- ],
+ "nogps_staged": [],
  "still_missing": [
-  {
-   "slug": "st01628",
-   "name": "生田",
-   "pref": "秋田県",
-   "state": "staged_for_local_ocr_visual",
-   "n_staged": 3
-  },
-  {
-   "slug": "st04564",
-   "name": "椋野",
-   "pref": "山口県",
-   "state": "no_candidate",
-   "reject_dist": {
-    "title_names_other_station": 6,
-    "duplicate_title": 1,
-    "mime_unsupported": 1,
-    "hard_excluded": 3,
-    "resolution_low": 6
-   }
-  },
-  {
-   "slug": "st07669",
-   "name": "新相ノ木",
-   "pref": "富山県",
-   "state": "no_candidate",
-   "reject_dist": {
-    "title_names_other_station": 6,
-    "duplicate_title": 2,
-    "mime_unsupported": 3,
-    "hard_excluded": 3,
-    "resolution_low": 7
-   }
-  },
-  {
-   "slug": "st07649",
-   "name": "東大垣",
-   "pref": "岐阜県",
-   "state": "no_candidate",
-   "reject_dist": {
-    "title_names_other_station": 6,
-    "duplicate_title": 2,
-    "mime_unsupported": 5,
-    "hard_excluded": 3,
-    "resolution_low": 9,
-    "title_non_station_scene": 1
-   }
-  },
-  {
-   "slug": "st07002",
-   "name": "下ノ江",
-   "pref": "大分県",
-   "state": "no_candidate",
-   "reject_dist": {
-    "title_names_other_station": 6,
-    "duplicate_title": 2,
-    "mime_unsupported": 5,
-    "hard_excluded": 4,
-    "resolution_low": 10,
-    "title_non_station_scene": 1
-   }
-  },
-  {
-   "slug": "st03646",
-   "name": "朝菜町",
-   "pref": "富山県",
-   "state": "no_candidate",
-   "reject_dist": {
-    "title_names_other_station": 6,
-    "duplicate_title": 2,
-    "mime_unsupported": 5,
-    "hard_excluded": 5,
-    "resolution_low": 11,
-    "title_non_station_scene": 1
-   }
-  },
-  {
-   "slug": "st03782",
-   "name": "伊野駅前",
-   "pref": "高知県",
-   "state": "no_candidate",
-   "reject_dist": {
-    "title_names_other_station": 34,
-    "duplicate_title": 2,
-    "mime_unsupported": 5,
-    "hard_excluded": 6,
-    "resolution_low": 13,
-    "title_non_station_scene": 1
-   }
-  },
   {
    "slug": "st08290",
    "name": "石見福光",
    "pref": "島根県",
    "state": "no_candidate",
    "reject_dist": {
-    "title_names_other_station": 34,
-    "duplicate_title": 2,
-    "mime_unsupported": 5,
-    "hard_excluded": 6,
-    "resolution_low": 13,
-    "title_non_station_scene": 1,
     "no_author_metadata": 1
    }
   },
@@ -196,12 +24,6 @@
    "pref": "島根県",
    "state": "no_candidate",
    "reject_dist": {
-    "title_names_other_station": 34,
-    "duplicate_title": 2,
-    "mime_unsupported": 5,
-    "hard_excluded": 6,
-    "resolution_low": 13,
-    "title_non_station_scene": 1,
     "no_author_metadata": 2
    }
   },
@@ -211,13 +33,10 @@
    "pref": "山口県",
    "state": "no_candidate",
    "reject_dist": {
-    "title_names_other_station": 40,
-    "duplicate_title": 2,
-    "mime_unsupported": 8,
-    "hard_excluded": 6,
-    "resolution_low": 14,
-    "title_non_station_scene": 1,
-    "no_author_metadata": 2
+    "no_author_metadata": 2,
+    "resolution_low": 1,
+    "mime_unsupported": 3,
+    "title_names_other_station": 6
    }
   },
   {
@@ -226,13 +45,10 @@
    "pref": "鹿児島県",
    "state": "no_candidate",
    "reject_dist": {
-    "title_names_other_station": 43,
-    "duplicate_title": 2,
-    "mime_unsupported": 8,
-    "hard_excluded": 6,
-    "resolution_low": 15,
-    "title_non_station_scene": 1,
-    "no_author_metadata": 2
+    "no_author_metadata": 2,
+    "resolution_low": 2,
+    "mime_unsupported": 3,
+    "title_names_other_station": 9
    }
   },
   {
@@ -241,227 +57,14 @@
    "pref": "福井県",
    "state": "no_candidate",
    "reject_dist": {
-    "title_names_other_station": 43,
-    "duplicate_title": 2,
-    "mime_unsupported": 8,
-    "hard_excluded": 6,
-    "resolution_low": 16,
-    "title_non_station_scene": 1,
-    "no_author_metadata": 2
+    "no_author_metadata": 2,
+    "resolution_low": 3,
+    "mime_unsupported": 3,
+    "title_names_other_station": 9
    }
   }
  ],
  "rejected_notable": [
-  {
-   "slug": "st01628",
-   "title": "File:2代目もころん号（新宿方先頭車）.jpg",
-   "named": "新宿",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01628",
-   "title": "File:Ikuta Road near Sannomiya Station 20131216.jpg",
-   "named": "sannomiya",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01628",
-   "title": "File:JR Noborito Station Ikuta Wooded Area 20061119.jpg",
-   "named": "noborito",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01628",
-   "title": "File:JR Noborito station Ikuta Wooded Area.jpg",
-   "named": "noborito",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01628",
-   "title": "File:Shin Kobe Station across Ikuta River at night Kobe 2026 dllu.jpg",
-   "named": "shin-kobe",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st01628",
-   "title": "File:JR-Noborito-Sta-Ikutarokuchi.JPG",
-   "named": "noborito",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st07649",
-   "title": "File:東大垣駅より揖斐川橋梁を臨む - panoramio.jpg",
-   "named": null,
-   "gate": "title_non_station_scene"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:土佐電鉄高知駅前電停 - panoramio.jpg",
-   "named": "高知駅前",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:20210808 Ino Station station-wicket.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:20210808 LAWSON and Idemitsu in front of Ino Station.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Ino(Chiba) station platform.jpg",
-   "named": "chiba",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Ino-Station-20100527.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Ino-Station-Platform-20100527.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Ino Station.png",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Ino Station (Chiba) 2024.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Ino Station (Chiba) gate 2024.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Ino Station (Toden).jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Ino Station platform.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:JR East Ino Station 2020.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:JR East Ino Station 2023.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:JR Hakodate-Main-Line Ino Station-name signboards.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:JR Hakodate-Main-Line Ino Station Overall.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:JR Hakodate-Main-Line Ino Station Overpass.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:JR Hakodate-Main-Line Ino Station Platform.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:JR Hakodate-Main-Line Ino Station building.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:JR Ino Station.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:JR Ino station2.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:JR Joetsu Line Ino Station East Exit.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:JR Joetsu Line Ino Station Platform.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:JR Joetsu Line Ino Station West Gates.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Suzuka-Circuit-Ino Station Gate-For Yokkaichi 20230923.jpg",
-   "named": "suzuka circuit-ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Suzuka circuit ino station 2026.jpg",
-   "named": "suzuka circuit-ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Tosa-dentetsu Ino station(New building).jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Yamaman Ino station building.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st03782",
-   "title": "File:Yamaman Ino station platform.jpg",
-   "named": "ino",
-   "gate": "title_names_other_station"
-  },
   {
    "slug": "st04561",
    "title": "File:Platform of Seiryu-Shin-Iwakuni Station 1.jpg",
