@@ -1,5 +1,5 @@
 {
- "count": 341,
+ "count": 348,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -5742,7 +5742,126 @@
    "reject_dist": {},
    "slug": "st08891",
    "stage": "manual_qa"
+  },
+  "st02193": {
+   "slug": "st02193",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Platform of Daizenji Station.jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:04:52Z",
+   "last_attempt": "2026-11-05T17:04:52Z",
+   "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
+  },
+  "st02201": {
+   "slug": "st02201",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Platform of Kitano Station (Nishitetsu Amagi Line) 1.jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:04:52Z",
+   "last_attempt": "2026-11-05T17:04:52Z",
+   "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
+  },
+  "st02227": {
+   "slug": "st02227",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Platform of Hiraki Station 7.jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:04:52Z",
+   "last_attempt": "2026-11-05T17:04:52Z",
+   "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
+  },
+  "st02229": {
+   "slug": "st02229",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Platform of Hiraki Station 5.jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:04:52Z",
+   "last_attempt": "2026-11-05T17:04:52Z",
+   "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
+  },
+  "st02232": {
+   "slug": "st02232",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Platform of Nishitetsu-Yanagawa Station 3.jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:04:52Z",
+   "last_attempt": "2026-11-05T17:04:52Z",
+   "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
+  },
+  "st02236": {
+   "slug": "st02236",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Platform of Mikunigaoka Station (north).JPG",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:04:52Z",
+   "last_attempt": "2026-11-05T17:04:52Z",
+   "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
+  },
+  "st02242": {
+   "slug": "st02242",
+   "name": null,
+   "name_en": null,
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Platform of Yakuin Station (Nishitetsu).jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-05T17:04:52Z",
+   "last_attempt": "2026-11-05T17:04:52Z",
+   "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
   }
  },
- "updated_at": "2026-11-05T16:41:29Z"
+ "updated_at": "2026-11-05T17:04:52Z"
 }
