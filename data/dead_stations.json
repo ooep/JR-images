@@ -1,5 +1,5 @@
 {
- "count": 339,
+ "count": 336,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -1634,23 +1634,21 @@
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01241": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:46:14Z",
+   "last_attempt": "2026-11-05T19:07:34Z",
    "name": "西木津",
    "name_en": "Nishi-Kizu",
    "reasons": {
-    "geo_mismatch": 9,
-    "name_mismatch_review": 5,
-    "no_station_evidence": 8,
-    "wrong_station": 2
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01241",
    "source_page": null,
-   "stage": "retry"
+   "stage": "ws15_refetch",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st01249": {
    "slug": "st01249",
@@ -1932,24 +1930,6 @@
    "last_attempt": "2026-11-05T18:56:59Z",
    "note": "ws15 rounds1-4 标缺：泉(福島常磐線)：候选 Izumi Station 为九州(鹿児)出水系大型站房(同名异县)，无本站合格候选"
   },
-  "st01475": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-03T15:19:30Z",
-   "last_attempt": "2026-11-03T15:19:30Z",
-   "name": "泉",
-   "name_en": "Izumi",
-   "reasons": {
-    "mime_unsupported": 1,
-    "oversize_gt_25mb": 4,
-    "resolution_low": 10
-   },
-   "reject_dist": {},
-   "slug": "st01475",
-   "source_page": null,
-   "stage": "fetch"
-  },
   "st01523": {
    "slug": "st01523",
    "name": "霞ケ関",
@@ -1966,26 +1946,6 @@
    "first_seen": "2026-11-04T04:22:38Z",
    "last_attempt": "2026-11-05T18:56:59Z",
    "note": "ws15 rounds1-4 标缺：霞ケ関(埼玉東上線)：候选为东京 Metro 霞ケ関(同名异线)，无本站合格候选"
-  },
-  "st01552": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:52:56Z",
-   "name": "広野",
-   "name_en": "Hirono",
-   "reasons": {
-    "geo_mismatch": 15,
-    "name_mismatch_review": 1,
-    "no_station_evidence": 9,
-    "pref_mismatch": 1,
-    "wrong_station": 4
-   },
-   "reject_dist": {},
-   "slug": "st01552",
-   "source_page": null,
-   "stage": "retry"
   },
   "st01628": {
    "attempts": 1,
@@ -2770,22 +2730,6 @@
    "reject_dist": {},
    "slug": "st03501",
    "stage": "qa_pipeline_330"
-  },
-  "st03578": {
-   "attempts": 2,
-   "below_spec": false,
-   "first_seen": "2026-11-03T10:43:22Z",
-   "last_attempt": "2026-11-03T11:38:27Z",
-   "name": "平成",
-   "name_en": "Heisei",
-   "reasons": {
-    "low_color(map/text?)": 5,
-    "resolution_low": 4
-   },
-   "reject_dist": {},
-   "slug": "st03578",
-   "source_page": null,
-   "stage": "retry"
   },
   "st03583": {
    "attempts": 3,
@@ -3950,25 +3894,6 @@
    "slug": "st05663",
    "stage": "qa_pipeline_330"
   },
-  "st05828": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:54:51Z",
-   "name": "高瀬",
-   "name_en": "Takase",
-   "reasons": {
-    "name_mismatch_review": 7,
-    "no_station_evidence": 14,
-    "pref_mismatch": 14,
-    "wrong_station": 2
-   },
-   "reject_dist": {},
-   "slug": "st05828",
-   "source_page": null,
-   "stage": "retry"
-  },
   "st05906": {
    "attempts": 3,
    "below_spec": false,
@@ -4400,26 +4325,6 @@
    "reject_dist": {},
    "slug": "st07020",
    "stage": "qa_pipeline_330"
-  },
-  "st07032": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T05:00:23Z",
-   "name": "築城",
-   "name_en": "Tsuiki",
-   "reasons": {
-    "hard_excluded": 1,
-    "low_color(map/text?)": 2,
-    "name_mismatch_review": 11,
-    "no_station_evidence": 12,
-    "wrong_station": 8
-   },
-   "reject_dist": {},
-   "slug": "st07032",
-   "source_page": null,
-   "stage": "retry"
   },
   "st07034": {
    "attempts": 3,
@@ -5670,7 +5575,27 @@
    "first_seen": "2026-11-05T18:56:59Z",
    "last_attempt": "2026-11-05T18:56:59Z",
    "note": "ws15 rounds1-4 标缺：今津(大分日豊本線)：候选为阪神今津(兵庫,同名异线,邻站 Kusugawa/Hanshin-kokudo 证)，无本站合格候选"
+  },
+  "st04819": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T19:04:20Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st04808": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T19:06:56Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   }
  },
- "updated_at": "2026-11-05T18:56:59Z"
+ "updated_at": "2026-11-05T19:09:56Z"
 }
