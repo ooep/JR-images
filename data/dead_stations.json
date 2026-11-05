@@ -2212,22 +2212,21 @@
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st02036": {
-   "attempts": 2,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T17:13:24Z",
+   "slug": "st02036",
    "name": "彦根口",
    "name_en": "Hikoneguchi",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "stage": "ws15_final",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:HikoneGuchiEki KokokuBus 20070701.jpg",
-   "slug": "st02036",
-   "source_page": null,
-   "stage": "ws15_refetch"
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": "2026-11-05T18:48:46Z",
+   "note": "ws15 rounds1-4 标缺：彦根口(滋賀)：rounds1-4 仅彦根駅闸口/他站候选，无本站合格候选"
   },
   "st02042": {
    "attempts": 1,
@@ -5669,5 +5668,5 @@
    "note": "revert: 非站景：单轨高架轨道街景照无站体(round5 GPS 234m 误收)"
   }
  },
- "updated_at": "2026-11-05T18:44:53Z"
+ "updated_at": "2026-11-05T18:48:46Z"
 }
