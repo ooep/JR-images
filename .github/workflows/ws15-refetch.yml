@@ -5,7 +5,13 @@ name: ws15-refetch
 # 会话做站牌 OCR + 目检后另行提交。详见 scripts/ws15_refetch.py 头注。
 
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      uncovered_top:
+        description: '未覆盖站续抓数量（B2 客流降序；0=仅跑 mismatch_removal 队列）'
+        required: false
+        default: '0'
+        type: string
 
 permissions:
   contents: write
@@ -29,6 +35,8 @@ jobs:
         run: pip install --quiet pillow numpy requests
 
       - name: Strict refetch
+        env:
+          UNCOVERED_TOP: ${{ inputs.uncovered_top }}
         run: python scripts/ws15_refetch.py
 
       - name: Commit & push (never force)

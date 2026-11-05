@@ -125,6 +125,18 @@ def main():
     queue = [slug for slug, r in dead['stations'].items()
              if r.get('stage') == 'mismatch_removal' and not r.get('final_dead')]
     queue.sort()
+    # 未覆盖站续抓（B2 策略：客流降序 top-N；同名簇由标题闸门+10km 地理闸加严）
+    uncov_top = int(os.environ.get('UNCOVERED_TOP', '0') or 0)
+    if uncov_top:
+        cov = {s for s, e in state['entries'].items()
+               if e.get('status') in ('done', 'review')}
+        qset = set(queue)
+        uncov = [s for s in stations
+                 if s['slug'] not in cov
+                 and not dead['stations'].get(s['slug'], {}).get('final_dead')
+                 and s['slug'] not in qset]
+        uncov.sort(key=lambda s: -(s.get('riders') or 0))
+        queue = queue + [s['slug'] for s in uncov[:uncov_top]]
     print('ws15 queue: %d %s' % (len(queue), queue), flush=True)
 
     # 已用登记表
