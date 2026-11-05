@@ -435,3 +435,24 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=3 staged=17 confirmed=5 skipped=0
 - reject_dist={"hard_excluded": 48, "same_as_current": 25, "resolution_low_lt_1600": 62, "title_names_other_station": 76, "mime_unsupported": 61, "title_non_station_scene": 11, "duplicate_title": 2, "no_author_metadata": 9, "resolution_not_upgrade": 17, "quality_reject_low_color": 10}
+
+
+## ws17 local accept B01 — 2026-11-05T23:17:55Z
+- st02672 河内花園 ← File:Kawachi-Hanazono Station north entrance.jpg (done, score 6.53→6.23)
+- st05704 文の里 ← File:Fuminosato station exit 4.jpg (done, score 6.54→6.46)
+- st05719 田辺 ← File:Tanabe station exit.jpg (done, score 6.26→6.30)
+- st06640 岸里 ← File:Entrance No.2 of Kishinosato Station 2.jpg (done, score 6.01→5.00)
+- st06967 千林 ← File:Keihan Senbayashi Station platform - panoramio.jpg (done, score 6.51→5.39)
+- st08365 新深江 ← File:Shin-Fukae station exit 1.jpg (done, score 6.58→6.22)
+- st01324 JR河内永和 ← File:JR-Kawachi-Eiwa Station 2019,08.jpg (done, score 6.58→6.17)
+- st06575 维持现图 below_spec_confirmed：候选全为银行/超市/人像（りそな銀行/食品館アプロ/初芝崇史）非站景
+- st02549 维持现图 below_spec_confirmed：候选竖幅街景停留场，无站名牌可读，分不优于现图
+- st02573 维持现图 below_spec_confirmed：候选竖幅街景，塚西停留场柱牌可见但构图/分不优于现图
+- st02574 维持现图 below_spec_confirmed：候选街景轨道照，无东玉出停留场牌可读
+- st03851 维持现图 below_spec_confirmed：候选全为法善寺寺庙照，非站景
+- st04004 维持现图 below_spec_confirmed：候选夜景月台无站名/列车照（JR201/287 系）
+- st08464 维持现图 below_spec_confirmed：候选全为西塚/服部川古坟群照，非站景
+- st06611 维持现图 below_spec_confirmed：唯一站名候选为竖幅 iscore3.68<5.0，引入 low_score 新缺陷
+- st08054 维持现图 below_spec_confirmed：候选竖幅 iscore3.25，现图缺陷为 low_score 无更优候选
+- st06609 维持现图 below_spec_confirmed：候选竖幅 iscore3.49，引入 low_score 新缺陷
+- runner 42124115966 暂存 47 候选/17 站全量 OCR(全名匹配)+逐图目检；接受 7 / 标 below_spec_confirmed 10。
