@@ -1,5 +1,5 @@
 {
- "count": 348,
+ "count": 347,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -1009,23 +1009,6 @@
    "source_page": null,
    "stage": "retry",
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
-  },
-  "st00609": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-05T03:47:18Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
-   "name": "市布",
-   "name_en": "Ichinuno",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
-   "reasons": {
-    "wrong_station": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:JRKyushu Ichinuno Station 2.jpg",
-   "slug": "st00609",
-   "stage": "mismatch_removal"
   },
   "st00639": {
    "attempts": 1,
@@ -5863,5 +5846,5 @@
    "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
   }
  },
- "updated_at": "2026-11-05T17:04:52Z"
+ "updated_at": "2026-11-05T17:07:13Z"
 }
