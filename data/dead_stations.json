@@ -892,21 +892,21 @@
    "stage": "verify"
   },
   "st00577": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-05T03:47:18Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
+   "slug": "st00577",
    "name": "福井",
    "name_en": "Fukui",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Dinosaurs outside Echizen Railway platforms at Fukui Station.jpg",
-   "slug": "st00577",
-   "stage": "mismatch_removal"
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "note": "ws15 rounds1-4 标缺：福井(岡山)：Commons 仅福井県福井駅(同名异县)与货物南福井场景，无本站合格候选"
   },
   "st00580": {
    "attempts": 3,
@@ -2276,22 +2276,21 @@
    "stage": "fetch"
   },
   "st01798": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
+   "slug": "st01798",
    "name": "明星",
    "name_en": "Myōjō",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:NDL1310992 木曽六十九駅 宮ノ越木曽川ノ明星岩・暁星五郎.jpg",
-   "slug": "st01798",
-   "source_page": null,
-   "stage": "mismatch_removal"
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "note": "ws15 rounds1-4 标缺：明星(三重)：仅检车区/车库/列车照与中央大学明治大学(他站)，无本站站景"
   },
   "st01804": {
    "attempts": 1,
@@ -2637,22 +2636,21 @@
    "stage": "fetch"
   },
   "st02231": {
-   "attempts": 2,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T16:39:57Z",
+   "slug": "st02231",
    "name": "塩塚",
    "name_en": "Shiotsuka",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "stage": "ws15_final",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Nishitetsu Shiotsuka Station01.jpg",
-   "slug": "st02231",
-   "source_page": null,
-   "stage": "ws15_refetch"
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "note": "ws15 rounds1-4 标缺：塩塚(福岡)：rounds1-2 检索零候选"
   },
   "st02484": {
    "attempts": 3,
@@ -5128,21 +5126,21 @@
    "stage": "qa_pipeline_330"
   },
   "st07773": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-05T11:17:08Z",
-   "last_attempt": "2026-11-05T11:17:41Z",
+   "slug": "st07773",
    "name": "",
    "name_en": "",
-   "note": "确认错配移除后重置重抓队列(需站牌/GPS证据新图)",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:20170402 Platform 2 of Xiangfeng Station.jpg",
-   "slug": "st07773",
-   "stage": "mismatch_removal"
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T11:17:08Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "note": "ws15 rounds1-4 标缺：峰(栃木)：仅福州象峰(异国)x3 与横滨鹤峰巴士站(他站)"
   },
   "st07832": {
    "attempts": 3,
@@ -5730,18 +5728,18 @@
    "slug": "st02193",
    "name": null,
    "name_en": null,
-   "stage": "mismatch_removal",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Platform of Daizenji Station.jpg",
    "below_spec": false,
-   "attempts": 2,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-05T17:04:52Z",
-   "last_attempt": "2026-11-05T17:04:52Z",
-   "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "note": "ws15 rounds1-4 标缺：三潴(福岡)：仅水间铁道水间观音駅(他线)与消防署(非站景)，无本站站景"
   },
   "st02201": {
    "slug": "st02201",
@@ -5764,121 +5762,121 @@
    "slug": "st02232",
    "name": null,
    "name_en": null,
-   "stage": "mismatch_removal",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Platform of Nishitetsu-Yanagawa Station 3.jpg",
    "below_spec": false,
-   "attempts": 2,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-05T17:04:52Z",
-   "last_attempt": "2026-11-05T17:04:52Z",
-   "note": "ws15 round1 GPS 误收已撤(标题指名邻站<2km)；round2 带站名闸门重抓"
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "note": "ws15 rounds1-4 标缺：徳益(福岡)：仅无站名牌站台照，不满足站牌 OCR/目检口径"
   },
   "st02517": {
    "slug": "st02517",
    "name": null,
    "name_en": null,
-   "stage": "mismatch_removal",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Kawaji-eki.JPG",
    "below_spec": false,
-   "attempts": 1,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-05T17:34:12Z",
-   "last_attempt": "2026-11-05T17:34:12Z",
-   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "note": "ws15 rounds1-4 标缺：川路(長野)：仅上海铜川路(异国)与无站名牌 Kawaji-eki 照"
   },
   "st02777": {
    "slug": "st02777",
    "name": null,
    "name_en": null,
-   "stage": "mismatch_removal",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Seba-Sta-Platform.JPG",
    "below_spec": false,
-   "attempts": 1,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-05T17:34:12Z",
-   "last_attempt": "2026-11-05T17:34:12Z",
-   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "note": "ws15 rounds1-4 标缺：洗馬(長野)：仅无站名牌 Seba 站房照与木曾路册页/旧画"
   },
   "st04955": {
    "slug": "st04955",
    "name": null,
    "name_en": null,
-   "stage": "mismatch_removal",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Kusurimizu Station platform in 20150718.jpg",
    "below_spec": false,
-   "attempts": 1,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-05T17:34:12Z",
-   "last_attempt": "2026-11-05T17:34:12Z",
-   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "note": "ws15 rounds1-4 标缺：药水(奈良)：仅首尔药水站(异国)x3 与军舰照(非站景)"
   },
   "st06754": {
    "slug": "st06754",
    "name": null,
    "name_en": null,
-   "stage": "mismatch_removal",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Kotobuki-STA-Gate.jpg",
    "below_spec": false,
-   "attempts": 1,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-05T17:34:12Z",
-   "last_attempt": "2026-11-05T17:34:12Z",
-   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "note": "ws15 rounds1-4 标缺：寿(山梨)：仅北京慈寿寺(异国)x2 与无站名牌富士急寿照"
   },
   "st07703": {
    "slug": "st07703",
    "name": null,
    "name_en": null,
-   "stage": "mismatch_removal",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Oritate Station 001.jpg",
    "below_spec": false,
-   "attempts": 1,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-05T17:34:12Z",
-   "last_attempt": "2026-11-05T17:34:12Z",
-   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "note": "ws15 rounds1-4 标缺：下立(富山)：仅上海下沙(异国)与折立站/报纸扫描件(他站/非站景)"
   },
   "st08679": {
    "slug": "st08679",
    "name": null,
    "name_en": null,
-   "stage": "mismatch_removal",
+   "stage": "ws15_final",
    "reasons": {
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Nagaden Asahi-STA Platform.jpg",
    "below_spec": false,
-   "attempts": 1,
-   "final_dead": false,
+   "attempts": 3,
+   "final_dead": true,
    "first_seen": "2026-11-05T17:34:12Z",
-   "last_attempt": "2026-11-05T17:34:12Z",
-   "note": "ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓"
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "note": "ws15 rounds1-4 标缺：朝阳(長野)：仅三重县朝日站(县不符)x3"
   }
  },
- "updated_at": "2026-11-05T18:15:10Z"
+ "updated_at": "2026-11-05T18:18:01Z"
 }
