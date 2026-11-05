@@ -1,0 +1,111 @@
+name: ws16-purge
+
+# 异国错配清退（审计 P0，10 站仍在 HEAD）：撤图 + 重置重抓队列。
+# 清单来源：2026-11-05 mismatch_audit.md 表 2.2（异国/境外车站，blob/来源实证）。
+# 撤后由 ws15-refetch（round3）带标题站名闸门严格重抓。
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ws16-purge
+  cancel-in-progress: false
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Purge foreign mismatches
+        run: |
+          python3 - <<'PY'
+          import json, os, time
+          SLUGS = ['st02517','st02777','st04016','st04955','st05323',
+                   'st06754','st07109','st07703','st07983','st08679']
+          now = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
+          state = json.load(open('state.json', encoding='utf-8'))
+          index = json.load(open('index.json', encoding='utf-8'))
+          dead = json.load(open('data/dead_stations.json', encoding='utf-8'))
+          purged = []
+          for slug in SLUGS:
+              p = 'stations/%s/photo.jpg' % slug
+              old_title = (state['entries'].get(slug) or {}).get('source_title')
+              if os.path.exists(p):
+                  os.unlink(p)
+                  os.rmdir('stations/%s' % slug)
+                  purged.append(slug)
+              l = 'licenses/%s.txt' % slug
+              if os.path.exists(l):
+                  os.unlink(l)
+              prev = state['entries'].get(slug, {})
+              state['entries'][slug] = {
+                  'status': 'missing', 'file': None, 'sha256': None, 'bytes': None,
+                  'reasons': ['foreign_purge_pending_refetch'],
+                  'ts': now,
+                  'removed_source_title': old_title,
+                  'attempts': prev.get('attempts', 1),
+              }
+              index.get('stations', {}).pop(slug, None)
+              prevd = dead['stations'].get(slug, {})
+              dead['stations'][slug] = {
+                  'slug': slug, 'name': prevd.get('name'), 'name_en': prevd.get('name_en'),
+                  'stage': 'mismatch_removal',
+                  'reasons': {'wrong_station': 1},
+                  'reject_dist': {},
+                  'removed_source_title': old_title,
+                  'below_spec': False,
+                  'attempts': 1,
+                  'final_dead': False,
+                  'first_seen': now,
+                  'last_attempt': now,
+                  'note': 'ws16 foreign purge (mismatch_audit 2026-11-05 P0); round3 严格重抓',
+              }
+          dead['count'] = len(dead['stations'])
+          dead['updated_at'] = now
+          state['updated_at'] = now
+          json.dump(state, open('state.json', 'w', encoding='utf-8'), ensure_ascii=False)
+          json.dump(index, open('index.json', 'w', encoding='utf-8'), ensure_ascii=False)
+          json.dump(dead, open('data/dead_stations.json', 'w', encoding='utf-8'),
+                    ensure_ascii=False, indent=1)
+          with open('PROGRESS.md', 'a', encoding='utf-8') as f:
+              f.write('\n\n## ws16 foreign purge — %s\n' % now)
+              f.write('- 撤异国错配图 %d 站（审计 P0，来源实证：上海/天津/北京/首尔/大邱地铁与 '
+                      'Korail）：%s\n' % (len(purged), ' '.join(purged)))
+              f.write('- 重置 stage=mismatch_removal 入重抓队列，round3 严格闸门重抓。\n')
+              f.write('- 旧编号 img/ 两张异国源图（st00214 澳门、st05802 韩国）属海报线辖，'
+                      '登记不移除，交审计线/海报线裁决。\n')
+          print('purged', purged)
+          PY
+
+      - name: Commit & push (never force)
+        run: |
+          set -e
+          git config user.name "jrimages-bot"
+          git config user.email "ooep@users.noreply.github.com"
+          git add -A stations licenses state.json index.json data/dead_stations.json PROGRESS.md
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "ws16 purge: 10 foreign-mismatch photos removed (audit P0: Shanghai/Tianjin/Beijing/Seoul/Daegu metro, Korail); queue reset for strict round3 refetch"
+          for n in 1 2 3 4; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "push failed ($n), fetch+rebase & retry"
+            git fetch origin main
+            git stash push -m rebase-shield >/dev/null 2>&1 || true
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              git stash pop || true
+              exit 1
+            fi
+            git stash pop || true
+          done
+          exit 1
