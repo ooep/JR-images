@@ -264,22 +264,21 @@
    "stage": "verify"
   },
   "st00353": {
-   "attempts": 2,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T16:45:12Z",
+   "slug": "st00353",
    "name": "市立病院前",
    "name_en": "Naha City Hospital",
+   "stage": "mismatch_removal",
    "reasons": {
-    "geo_mismatch": 26,
-    "no_station_evidence": 1,
-    "pref_mismatch": 2
+    "wrong_station": 1
    },
    "reject_dist": {},
-   "slug": "st00353",
-   "source_page": null,
-   "stage": "retry"
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": "2026-11-05T19:47:28Z",
+   "note": "revert: LOCAL6复核:既存图为冲绳Yui Rail市立病院前(同名异线错挂,横幅Naha City Hospital Station+单轨轨梁),目标为鹿児岛市电停留场"
   },
   "st00356": {
    "attempts": 2,
@@ -5597,5 +5596,5 @@
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   }
  },
- "updated_at": "2026-11-05T19:09:56Z"
+ "updated_at": "2026-11-05T19:47:28Z"
 }

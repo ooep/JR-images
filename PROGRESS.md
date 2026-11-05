@@ -268,3 +268,7 @@
 - accepted(GPS<=2km)=9 staged_no_gps=29 still_missing=3
 - reject_dist={"mime_unsupported": 252, "duplicate_title": 10, "resolution_low": 74, "title_names_other_station": 154, "hard_excluded": 30, "title_non_station_scene": 5, "license_unclear": 5, "no_author_metadata": 5}
 - 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
+
+
+## ws15 revert-n — 2026-11-05T19:47:28Z
+- 撤站 st00353；原因：LOCAL6复核:既存图为冲绳Yui Rail市立病院前(同名异线错挂,横幅Naha City Hospital Station+单轨轨梁),目标为鹿児岛市电停留场
