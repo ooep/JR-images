@@ -372031,6 +372031,132 @@
     "cat": null,
     "source": "manual_qa_swap"
    }
+  },
+  "st02475": {
+   "status": "review",
+   "file": "stations/st02475/photo.jpg",
+   "sha256": "56b6a2acb76269cd71b6cc521faaffcebb66c69cb31585726def652e0af428b1",
+   "bytes": 269150,
+   "width": 1280,
+   "height": 960,
+   "source_title": "File:Kakidaira.jpg",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kakidaira.jpg",
+   "author": "",
+   "license": "CC BY-SA 3.0",
+   "license_url": "",
+   "ts": "2026-11-05T07:23:44Z",
+   "attempts": 1,
+   "reasons": [],
+   "qa": {
+    "geo_km": null,
+    "evidence": "ocr_no_name",
+    "source": "qa_pipeline_330"
+   }
+  },
+  "st05134": {
+   "status": "review",
+   "file": "stations/st05134/photo.jpg",
+   "sha256": "6edf43651a1339d029e6ae93adf53060261733cccbf99c79ffdcb6dbcb8e947c",
+   "bytes": 445658,
+   "width": 960,
+   "height": 1280,
+   "source_title": "File:AyukaiStn3.JPG",
+   "source_page": "https://commons.wikimedia.org/wiki/File:AyukaiStn3.JPG",
+   "author": "galbaldy1028",
+   "license": "CC BY-SA 3.0",
+   "license_url": "",
+   "ts": "2026-11-05T07:24:41Z",
+   "attempts": 1,
+   "reasons": [],
+   "qa": {
+    "geo_km": null,
+    "evidence": "romaji:ayukai",
+    "source": "qa_pipeline_330"
+   }
+  },
+  "st05138": {
+   "status": "review",
+   "file": "stations/st05138/photo.jpg",
+   "sha256": "17ae844a0714c4c0aec167dc593399639cfca80a4a1698eb48f39c696b467e64",
+   "bytes": 421657,
+   "width": 1280,
+   "height": 960,
+   "source_title": "File:AyameKoen.JPG",
+   "source_page": "https://commons.wikimedia.org/wiki/File:AyameKoen.JPG",
+   "author": "galbaldy1028",
+   "license": "CC BY-SA 3.0",
+   "license_url": "",
+   "ts": "2026-11-05T07:24:46Z",
+   "attempts": 1,
+   "reasons": [],
+   "qa": {
+    "geo_km": null,
+    "evidence": "kanji:あやめ公園",
+    "source": "qa_pipeline_330"
+   }
+  },
+  "st05140": {
+   "status": "review",
+   "file": "stations/st05140/photo.jpg",
+   "sha256": "a8b1833b7e18630d8e7085b7c6953acda7e807b46ae182ec8d1256ced3079011",
+   "bytes": 546026,
+   "width": 1280,
+   "height": 960,
+   "source_title": "File:MinamiNagaiStn Platform.JPG",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MinamiNagaiStn_Platform.JPG",
+   "author": "galbaldy1028",
+   "license": "CC BY-SA 3.0",
+   "license_url": "",
+   "ts": "2026-11-05T07:24:51Z",
+   "attempts": 1,
+   "reasons": [],
+   "qa": {
+    "geo_km": null,
+    "evidence": "ocr_no_name",
+    "source": "qa_pipeline_330"
+   }
+  },
+  "st08227": {
+   "status": "review",
+   "file": "stations/st08227/photo.jpg",
+   "sha256": "d7b82b60cf3b374201f4ea159b568aaf6fc71a68c1470588ffd20e1c44fcacc9",
+   "bytes": 92028,
+   "width": 1280,
+   "height": 960,
+   "source_title": "File:Nagatoooistation.jpg",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Nagatoooistation.jpg",
+   "author": "",
+   "license": "CC BY-SA 3.0",
+   "license_url": "",
+   "ts": "2026-11-05T07:25:39Z",
+   "attempts": 1,
+   "reasons": [],
+   "qa": {
+    "geo_km": null,
+    "evidence": "kanji:長門大井",
+    "source": "qa_pipeline_330"
+   }
+  },
+  "st08672": {
+   "status": "review",
+   "file": "stations/st08672/photo.jpg",
+   "sha256": "c2d46142c18a46bb42dc4dfed7c27f6cad1806ade88ccb4eb20586b856e4b7f3",
+   "bytes": 715951,
+   "width": 1280,
+   "height": 960,
+   "source_title": "File:Kitasuzaka sta.jpg",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kitasuzaka_sta.jpg",
+   "author": "",
+   "license": "CC BY-SA 3.0",
+   "license_url": "",
+   "ts": "2026-11-05T07:25:49Z",
+   "attempts": 1,
+   "reasons": [],
+   "qa": {
+    "geo_km": null,
+    "evidence": "kanji:北須坂",
+    "source": "qa_pipeline_330"
+   }
   }
  },
  "stations_path": "data/stations_all.json",
