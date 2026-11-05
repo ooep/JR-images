@@ -344,3 +344,10 @@
 - st05365 安芸長浜(広島呉線)：唯一候选为圆顶站房远景无站名标识，站牌 OCR/目检未见站名不算通过
 - st06253 青野ケ原(兵庫加古川線)：候选 2 张(Former Aonogahara stn)站牌均不清晰可读，不算通过
 - st07707 西滑川(富山地鉄本線)：唯一候选为历史黑白扫描照，仅图外 caption 有站名，场景内无站牌
+
+
+## ws15 refetch round 1 — 2026-11-05T20:45:07Z
+- queue: wrong_station 重抓队列 40 站（stage=mismatch_removal）
+- accepted(GPS<=2km)=7 staged_no_gps=19 still_missing=14
+- reject_dist={"title_names_other_station": 124, "duplicate_title": 3, "mime_unsupported": 257, "resolution_low": 67, "title_non_station_scene": 9, "hard_excluded": 13, "license_unclear": 13}
+- 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json

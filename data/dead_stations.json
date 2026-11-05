@@ -1,5 +1,5 @@
 {
- "count": 345,
+ "count": 348,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -1332,34 +1332,12 @@
    "stage": "retry",
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
-  "st01157": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:41:01Z",
-   "name": "中泉",
-   "name_en": "Nakaizumi",
-   "reasons": {
-    "geo_mismatch": 3,
-    "hard_excluded": 1,
-    "low_color(map/text?)": 1,
-    "name_mismatch_review": 20,
-    "no_station_evidence": 20,
-    "resolution_low": 1,
-    "wrong_station": 4
-   },
-   "reject_dist": {},
-   "slug": "st01157",
-   "source_page": null,
-   "stage": "retry"
-  },
   "st01167": {
-   "attempts": 2,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-05T20:11:30Z",
+   "last_attempt": "2026-11-05T20:40:08Z",
    "name": "上金田",
    "name_en": "Kami-Kanada",
    "reasons": {
@@ -1408,11 +1386,11 @@
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01170": {
-   "attempts": 2,
+   "attempts": 3,
    "below_spec": false,
-   "final_dead": false,
+   "final_dead": true,
    "first_seen": "2026-11-03T14:36:28Z",
-   "last_attempt": "2026-11-05T20:09:38Z",
+   "last_attempt": "2026-11-05T20:39:32Z",
    "name": "下伊田",
    "name_en": "Shimo-Ita",
    "reasons": {
@@ -1502,22 +1480,21 @@
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st01185": {
-   "attempts": 1,
+   "attempts": 2,
    "below_spec": false,
    "final_dead": false,
    "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:45:18Z",
+   "last_attempt": "2026-11-05T20:42:30Z",
    "name": "今川河童",
    "name_en": "Imagawa Kappa",
    "reasons": {
-    "geo_mismatch": 1,
-    "resolution_low": 2,
-    "wrong_station": 7
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01185",
    "source_page": null,
-   "stage": "retry"
+   "stage": "ws15_refetch",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st01191": {
    "attempts": 1,
@@ -1692,25 +1669,6 @@
    ],
    "reject_dist": {},
    "slug": "st01374",
-   "source_page": null,
-   "stage": "fetch"
-  },
-  "st01411": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-03T15:10:38Z",
-   "last_attempt": "2026-11-03T15:10:38Z",
-   "name": "湖遊館新駅",
-   "name_en": "Koyūkan-shineki",
-   "reasons": {
-    "low_color(map/text?)": 1,
-    "mime_unsupported": 17,
-    "oversize_gt_25mb": 8,
-    "resolution_low": 4
-   },
-   "reject_dist": {},
-   "slug": "st01411",
    "source_page": null,
    "stage": "fetch"
   },
@@ -5516,9 +5474,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 2,
-   "final_dead": false,
-   "last_attempt": "2026-11-05T20:06:16Z",
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T20:39:11Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st04808": {
@@ -5526,9 +5484,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 2,
-   "final_dead": false,
-   "last_attempt": "2026-11-05T20:06:27Z",
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T20:39:22Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st04604": {
@@ -5587,9 +5545,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
-   "last_attempt": "2026-11-05T20:10:09Z",
+   "last_attempt": "2026-11-05T20:39:40Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st07946": {
@@ -5597,9 +5555,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
-   "last_attempt": "2026-11-05T20:10:58Z",
+   "last_attempt": "2026-11-05T20:39:50Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st07834": {
@@ -5607,9 +5565,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
-   "last_attempt": "2026-11-05T20:11:06Z",
+   "last_attempt": "2026-11-05T20:39:58Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st03225": {
@@ -5617,9 +5575,9 @@
    "reasons": {
     "no_verifiable_candidate": 1
    },
-   "attempts": 1,
+   "attempts": 2,
    "final_dead": false,
-   "last_attempt": "2026-11-05T20:11:41Z",
+   "last_attempt": "2026-11-05T20:40:19Z",
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   },
   "st03765": {
@@ -5706,7 +5664,57 @@
    "first_seen": "2026-11-05T20:29:23Z",
    "last_attempt": "2026-11-05T20:29:23Z",
    "note": "ws15 round7 staged review 标缺：西滑川(富山地鉄本線)：唯一候选为历史黑白扫描照，仅图外 caption 有站名，场景内无站牌"
+  },
+  "st07669": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T20:40:27Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st07649": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T20:40:44Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st07002": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T20:41:33Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st03646": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T20:41:50Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+  },
+  "st03782": {
+   "stage": "ws15_refetch",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "attempts": 1,
+   "final_dead": false,
+   "last_attempt": "2026-11-05T20:44:39Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   }
  },
- "updated_at": "2026-11-05T20:29:23Z"
+ "updated_at": "2026-11-05T20:45:07Z"
 }
