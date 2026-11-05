@@ -1,0 +1,119 @@
+name: ws15-revert-n
+
+# 通用回滚：按输入站号列表撤 stations/<slug>/photo.jpg + licenses/<slug>.txt，
+# 重置 state/index/dead（stage=mismatch_removal 入重抓队列），单提交 never force。
+
+on:
+  workflow_dispatch:
+    inputs:
+      slugs:
+        description: '逗号分隔的站号列表，如 st02229,st01234'
+        required: true
+        type: string
+      reason:
+        description: '回滚原因（写入 dead note 与 PROGRESS）'
+        required: false
+        default: '图与站名/站景不符'
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ws15-revert-n
+  cancel-in-progress: false
+
+jobs:
+  revert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply revert
+        env:
+          SLUGS: ${{ inputs.slugs }}
+          REASON: ${{ inputs.reason }}
+        run: |
+          python3 - <<'PY'
+          import json, os, time
+          slugs = [s.strip() for s in os.environ['SLUGS'].split(',') if s.strip()]
+          reason = os.environ['REASON']
+          now = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
+          state = json.load(open('state.json', encoding='utf-8'))
+          index = json.load(open('index.json', encoding='utf-8'))
+          dead = json.load(open('data/dead_stations.json', encoding='utf-8'))
+          done = []
+          for slug in slugs:
+              p = 'stations/%s/photo.jpg' % slug
+              old = state['entries'].get(slug, {})
+              old_title = old.get('source_title')
+              if os.path.exists(p):
+                  os.unlink(p)
+                  os.rmdir('stations/%s' % slug)
+                  done.append(slug)
+              l = 'licenses/%s.txt' % slug
+              if os.path.exists(l):
+                  os.unlink(l)
+              state['entries'][slug] = {
+                  'status': 'missing', 'file': None, 'sha256': None, 'bytes': None,
+                  'reasons': ['ws15_revert_%s' % reason[:40]],
+                  'ts': now,
+                  'removed_source_title': old_title,
+                  'attempts': old.get('attempts', 1),
+              }
+              index.get('stations', {}).pop(slug, None)
+              prevd = dead['stations'].get(slug, {})
+              dead['stations'][slug] = {
+                  'slug': slug, 'name': prevd.get('name'), 'name_en': prevd.get('name_en'),
+                  'stage': 'mismatch_removal',
+                  'reasons': {'wrong_station': 1},
+                  'reject_dist': {},
+                  'removed_source_title': old_title,
+                  'below_spec': False,
+                  'attempts': prevd.get('attempts', 2),
+                  'final_dead': False,
+                  'first_seen': prevd.get('first_seen') or now,
+                  'last_attempt': now,
+                  'note': 'revert: %s' % reason,
+              }
+          dead['count'] = len(dead['stations'])
+          dead['updated_at'] = now
+          state['updated_at'] = now
+          json.dump(state, open('state.json', 'w', encoding='utf-8'), ensure_ascii=False)
+          json.dump(index, open('index.json', 'w', encoding='utf-8'), ensure_ascii=False)
+          json.dump(dead, open('data/dead_stations.json', 'w', encoding='utf-8'),
+                    ensure_ascii=False, indent=1)
+          with open('PROGRESS.md', 'a', encoding='utf-8') as f:
+              f.write('\n\n## ws15 revert-n — %s\n' % now)
+              f.write('- 撤站 %s；原因：%s\n' % (' '.join(done), reason))
+          print('reverted', done)
+          PY
+
+      - name: Commit & push (never force)
+        run: |
+          set -e
+          git config user.name "jrimages-bot"
+          git config user.email "ooep@users.noreply.github.com"
+          git add -A stations licenses state.json index.json data/dead_stations.json PROGRESS.md
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "ws15 revert-n: remove ${{ inputs.slugs }} — ${{ inputs.reason }}; queue reset"
+          for n in 1 2 3 4; do
+            if git push origin HEAD:main; then exit 0; fi
+            echo "push failed ($n), fetch+rebase & retry"
+            git fetch origin main
+            git stash push -m rebase-shield >/dev/null 2>&1 || true
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              git stash pop || true
+              exit 1
+            fi
+            git stash pop || true
+          done
+          exit 1
