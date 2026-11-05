@@ -1,5 +1,5 @@
 {
- "count": 341,
+ "count": 340,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -707,25 +707,6 @@
    },
    "reject_dist": {},
    "slug": "st00540",
-   "source_page": null,
-   "stage": "retry"
-  },
-  "st00548": {
-   "attempts": 2,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T16:47:02Z",
-   "name": "河原",
-   "name_en": "Kawahara",
-   "reasons": {
-    "geo_mismatch": 5,
-    "name_mismatch_review": 7,
-    "no_station_evidence": 12,
-    "wrong_station": 13
-   },
-   "reject_dist": {},
-   "slug": "st00548",
    "source_page": null,
    "stage": "retry"
   },
@@ -5648,5 +5629,5 @@
    "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
   }
  },
- "updated_at": "2026-11-05T20:12:49Z"
+ "updated_at": "2026-11-05T20:26:40Z"
 }

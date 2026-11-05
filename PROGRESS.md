@@ -316,3 +316,21 @@
 - accepted(GPS<=2km)=10 staged_no_gps=21 still_missing=9
 - reject_dist={"title_names_other_station": 157, "duplicate_title": 6, "mime_unsupported": 261, "resolution_low": 50, "hard_excluded": 28, "license_unclear": 14, "license_forbidden": 6, "no_author_metadata": 2, "near_duplicate": 1, "title_non_station_scene": 4}
 - 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
+
+
+## ws15 local accept batch7 — 2026-11-05T20:26:40Z
+- st00548 河原 ← File:JRW kawahara sta.jpg (done)
+- st02524 切石 ← File:Kiriishi-sta.jpg (review)
+- st03028 石才 ← File:Ishizai-station-2022.jpg (done)
+- st03367 池尻 ← File:JRKyushu Ikejiri Station02.jpg (review)
+- st03383 上三緒 ← File:Kamimio Station.JPG (review)
+- st04956 葛 ← File:Kuzu stn.jpg (review)
+- st05364 大乗 ← File:Onori stn.jpg (review)
+- st06503 感田 ← File:Ganda Station.jpg (done)
+- st07515 やながわ希望の森公園前 ← File:Yanagawa-kibounomori-kouemmae Station 02.jpg (review)
+- st07676 新庄田中 ← File:Shinjyotanakaeki.JPG (done)
+- st07683 榎町 ← File:Enokimachi sta1.jpg (review)
+- st07861 南中川 ← File:Minaminakagawa stn.jpg (review)
+- st08674 中野松川 ← File:Nakanomatsukawa sta.jpg (review)
+- st08738 上保原 ← File:Kamihobara Station.jpg (review)
+- 拒收标缺 7 站见 finalize7：st00040 大谷(和歌)←韩国大邱/版画、st01459 小泉町(富山軌道)←群马东武小泉町同名异线、st03765 鹿児←巴士错区域、st04575 高水←标题他站 Ikusabata、st05365 安芸長浜/st06253 青野ケ原 无站名标识、st07707 西滑川←历史黑白照无站牌。
