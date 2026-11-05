@@ -1,5 +1,5 @@
 {
- "count": 338,
+ "count": 339,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -116,23 +116,21 @@
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00190": {
-   "attempts": 2,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T16:45:04Z",
+   "slug": "st00190",
    "name": "稲荷町",
    "name_en": "Inarichō",
+   "stage": "ws15_final",
    "reasons": {
-    "hard_excluded": 5,
-    "no_station_evidence": 10,
-    "pref_mismatch": 7,
-    "wrong_station": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
-   "slug": "st00190",
-   "source_page": null,
-   "stage": "retry"
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": "2026-11-05T18:56:59Z",
+   "note": "ws15 rounds1-4 标缺：稲荷町(広島広電)：候选为东京 Metro 稲荷町(同名异线)，无本站合格候选"
   },
   "st00254": {
    "attempts": 3,
@@ -811,23 +809,21 @@
    "stage": "verify"
   },
   "st00571": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-04T05:07:56Z",
+   "slug": "st00571",
    "name": "栄",
    "name_en": "Sakae",
+   "stage": "ws15_final",
    "reasons": {
-    "geo_mismatch": 10,
-    "hard_excluded": 1,
-    "name_mismatch_review": 4,
-    "no_station_evidence": 20
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
-   "slug": "st00571",
-   "source_page": null,
-   "stage": "retry"
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": "2026-11-05T18:56:59Z",
+   "note": "ws15 rounds1-4 标缺：栄(岡山水島本線)：候选为名古屋名城线栄(同名异线)，无本站合格候选"
   },
   "st00572": {
    "attempts": 1,
@@ -1119,24 +1115,21 @@
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
   },
   "st00827": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:39:57Z",
+   "slug": "st00827",
    "name": "東野",
    "name_en": "Higashino",
+   "stage": "ws15_final",
    "reasons": {
-    "geo_mismatch": 13,
-    "hard_excluded": 4,
-    "name_mismatch_review": 3,
-    "no_station_evidence": 10,
-    "pref_mismatch": 2
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
-   "slug": "st00827",
-   "source_page": null,
-   "stage": "retry"
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-04T04:22:38Z",
+   "last_attempt": "2026-11-05T18:56:59Z",
+   "note": "ws15 rounds1-4 标缺：東野(岐阜明知線)：候选为京都市营 T06 東野(同名异线)，无本站合格候选"
   },
   "st00949": {
    "attempts": 3,
@@ -1660,23 +1653,21 @@
    "stage": "retry"
   },
   "st01249": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:46:20Z",
+   "slug": "st01249",
    "name": "長尾",
    "name_en": "Nagao",
+   "stage": "ws15_final",
    "reasons": {
-    "geo_mismatch": 19,
-    "hard_excluded": 2,
-    "no_station_evidence": 6,
-    "pref_mismatch": 1
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
-   "slug": "st01249",
-   "source_page": null,
-   "stage": "retry"
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-04T04:22:38Z",
+   "last_attempt": "2026-11-05T18:56:59Z",
+   "note": "ws15 rounds1-4 标缺：長尾(大阪JR片町線)：候选为ことでん長尾(香川,同名异线)，无本站合格候选"
   },
   "st01282": {
    "attempts": 3,
@@ -1925,22 +1916,21 @@
    "stage": "audit"
   },
   "st01474": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-03T15:19:26Z",
-   "last_attempt": "2026-11-03T15:19:26Z",
+   "slug": "st01474",
    "name": "泉",
    "name_en": "Izumi",
+   "stage": "ws15_final",
    "reasons": {
-    "mime_unsupported": 1,
-    "oversize_gt_25mb": 4,
-    "resolution_low": 10
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
-   "slug": "st01474",
-   "source_page": null,
-   "stage": "fetch"
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-03T15:19:26Z",
+   "last_attempt": "2026-11-05T18:56:59Z",
+   "note": "ws15 rounds1-4 标缺：泉(福島常磐線)：候选 Izumi Station 为九州(鹿児)出水系大型站房(同名异县)，无本站合格候选"
   },
   "st01475": {
    "attempts": 1,
@@ -1961,24 +1951,21 @@
    "stage": "fetch"
   },
   "st01523": {
-   "attempts": 1,
-   "below_spec": false,
-   "final_dead": false,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-04T04:52:51Z",
+   "slug": "st01523",
    "name": "霞ケ関",
    "name_en": null,
+   "stage": "ws15_final",
    "reasons": {
-    "geo_mismatch": 12,
-    "hard_excluded": 2,
-    "name_mismatch_review": 5,
-    "no_station_evidence": 6,
-    "pref_mismatch": 10
+    "no_verifiable_candidate": 1
    },
    "reject_dist": {},
-   "slug": "st01523",
-   "source_page": null,
-   "stage": "retry"
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-04T04:22:38Z",
+   "last_attempt": "2026-11-05T18:56:59Z",
+   "note": "ws15 rounds1-4 标缺：霞ケ関(埼玉東上線)：候选为东京 Metro 霞ケ関(同名异线)，无本站合格候选"
   },
   "st01552": {
    "attempts": 1,
@@ -5666,7 +5653,24 @@
    "first_seen": "2026-11-05T18:44:53Z",
    "last_attempt": "2026-11-05T18:44:53Z",
    "note": "revert: 非站景：单轨高架轨道街景照无站体(round5 GPS 234m 误收)"
+  },
+  "st02692": {
+   "slug": "st02692",
+   "name": null,
+   "name_en": null,
+   "stage": "ws15_final",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "below_spec": false,
+   "attempts": 3,
+   "final_dead": true,
+   "first_seen": "2026-11-05T18:56:59Z",
+   "last_attempt": "2026-11-05T18:56:59Z",
+   "note": "ws15 rounds1-4 标缺：今津(大分日豊本線)：候选为阪神今津(兵庫,同名异线,邻站 Kusugawa/Hanshin-kokudo 证)，无本站合格候选"
   }
  },
- "updated_at": "2026-11-05T18:55:22Z"
+ "updated_at": "2026-11-05T18:56:59Z"
 }
