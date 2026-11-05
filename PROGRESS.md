@@ -243,3 +243,10 @@
 
 ## ws15 finalize missing 补漏 — 2026-11-05T18:48:46Z
 - st02036 彦根口(滋賀)：rounds1-4 仅彦根駅闸口/他站候选，无本站合格候选
+
+
+## ws15 local accept batch5 — 2026-11-05T18:55:22Z
+- st05521 京王永山 ← File:Keio-railway-KO40-Keio-nagayama-station-platform-20130711-145642.jpg (done)
+- st05329 安芸長束 ← File:Aki-Nagatsuka Station building 2.jpg (done)
+- st03844 近鉄下田 ← File:Kintetsu-Shimoda stn.jpg (review)
+- 拒收标缺 7 站（同名异线/异县）：st00190 稲荷町(広島広電)←东京 Metro、st00571 栄(岡山水島)←名古屋名城线、st00827 東野(岐阜明知)←京都市营、st01249 長尾(大阪JR)←ことでん香川、st01523 霞ケ関(埼玉東上)←东京 Metro、st02692 今津(大分)←阪神兵庫、st01474 泉(福島常磐)←九州新干线出水系泉(鹿児)。
