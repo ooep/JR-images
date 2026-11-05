@@ -324,6 +324,16 @@ def main():
                    'bytes': len(ndata), 'width': nw, 'height': nh, 'normalized': norm,
                    'dist_m': round(c['dist'], 1) if c['dist'] is not None else None,
                    'score': round(c['score'], 2), 'data': ndata}
+            if c['dist'] is not None and c['dist'] <= GPS_ACCEPT_M and c['dist'] > 200:
+                # 新规则（审计回执要求）：标题无站名且 dist>200m → 不直接接受，转 staged 本地复核
+                _hits = bf.station_names_in_title(c['title'], kanji_idx, romaji_re)
+                _same = set(st.get('same_as') or [])
+                _self = any(slug in h[2] or (h[2] & _same) for h in _hits)
+                if not _self:
+                    staged.append(rec)
+                    if len(staged) >= NOGPS_STAGE_MAX:
+                        break
+                    continue
             if c['dist'] is not None and c['dist'] <= GPS_ACCEPT_M:
                 accepted = rec
             else:
