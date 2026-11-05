@@ -272,3 +272,32 @@
 
 ## ws15 revert-n — 2026-11-05T19:47:28Z
 - 撤站 st00353；原因：LOCAL6复核:既存图为冲绳Yui Rail市立病院前(同名异线错挂,横幅Naha City Hospital Station+单轨轨梁),目标为鹿児岛市电停留场
+
+
+## ws15 local accept batch6 — 2026-11-05T19:49:03Z
+- st02739 播磨町 ← File:Sanyo Harimacho Station.jpg (done)
+- st03029 清児 ← File:Sechigo station Mizuma railway.jpg (review)
+- st03489 筑前植木 ← File:JRKyushu Chikuzenueki Station01.jpg (review)
+- st03516 備後本庄 ← File:Bingo-honjo Station.jpg (done)
+- st03843 築山 ← File:Tsukiyama stn.jpg (review)
+- st04818 西線9条旭山公園通 ← File:Sapporo Street Car Nishisen Kujo Asahiyama Koen Dori Station.jpg (review)
+- st05067 平城 ← File:Kintetsu-Heijo-station01.jpg (done)
+- st05315 安登 ← File:Ato station.jpg (review)
+- st05911 鹿王院 ← File:嵐電鹿王院駅嵐山方面ホーム.JPG (review)
+- st05925 鳴滝 ← File:京福鳴滝駅2.JPG (review)
+- st06035 稲戸井 ← File:Kantetsu inatoi-station.jpg (review)
+- st06994 安部山公園 ← File:Abeyamakoen station2.jpg (review)
+- st07049 薩摩松元 ← File:JR Kyushu Satsuma-Matsumoto station.jpg (review)
+- st07245 安岡 ← File:YasuokaStation.jpg (done)
+- st07672 越中舟橋 ← File:Etchuufunahashi sta1.jpg (review)
+- st07684 五百石 ← File:Gohyakukoku Station.jpg (done)
+- st07857 床波 ← File:Tokonamistation.jpg (review)
+- st07975 清峰高校前 ← File:Seiho koukou mae station.jpg (review)
+- st08515 西富山 ← File:Nishi-Toyama Station 2020.jpg (done)
+- st08535 勢野北口 ← File:Seyakitaguchi Station.jpg (done)
+- st08538 元山上口 ← File:Motosanjoguchi Station.jpg (done)
+- st08539 萩の台 ← File:Haginodai stn.jpg (review)
+- st08734 福島学院前 ← File:Fukushimagakuimmae Station.jpg (review)
+- st08739 保原 ← File:Hobara Station.jpg (review)
+- 拒收标缺 5 站见 finalize6：st00353 市立病院前(鹿児)←冲绳 Yui Rail 同名异线、st00716 北方(福岡)←美濃北方(岐阜)/警察署/巴士总站、st04604 山田西町 无站名标识、st06696 美濃川合←发电站非站景、st07039 吉富←社区巴士非站景。
+- st00353 HEAD 既存错挂图(冲绳 Yui Rail)经 revert-n 撤除。
