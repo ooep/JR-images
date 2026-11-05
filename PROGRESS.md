@@ -429,3 +429,9 @@
 - accepted(GPS<=2km)=0 staged_no_gps=0 still_missing=5
 - reject_dist={"no_author_metadata": 2, "resolution_low": 3, "mime_unsupported": 3, "title_names_other_station": 9}
 - 无 GPS 候选经 artifact 回传，本地 OCR+目检后另行提交；证据见 reports/ws15_refetch_evidence.json
+
+
+## ws17 below-spec replace WS17-B01 — 2026-11-05T22:53:44Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=3 staged=17 confirmed=5 skipped=0
+- reject_dist={"hard_excluded": 48, "same_as_current": 25, "resolution_low_lt_1600": 62, "title_names_other_station": 76, "mime_unsupported": 61, "title_non_station_scene": 11, "duplicate_title": 2, "no_author_metadata": 9, "resolution_not_upgrade": 17, "quality_reject_low_color": 10}

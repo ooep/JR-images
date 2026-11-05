@@ -1,5 +1,5 @@
 {
- "count": 365,
+ "count": 526,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -19,21 +19,21 @@
    "stage": "qa_pipeline_330"
   },
   "st00040": {
-   "slug": "st00040",
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-04T16:29:12Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
    "name": "大谷",
    "name_en": "Ōtani",
-   "stage": "ws15_final",
+   "note": "ws15 round7 staged review 标缺：大谷(和歌山線)：候选为韩国大邱 Daegok 站台(异国)与东海道五十三次版画x2(非站景)，无本站可验证候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-04T16:29:12Z",
-   "last_attempt": "2026-11-05T20:29:23Z",
-   "note": "ws15 round7 staged review 标缺：大谷(和歌山線)：候选为韩国大邱 Daegok 站台(异国)与东海道五十三次版画x2(非站景)，无本站可验证候选"
+   "slug": "st00040",
+   "stage": "ws15_final"
   },
   "st00051": {
    "attempts": 3,
@@ -43,17 +43,17 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "大和新庄",
    "name_en": "Yamato-Shinjō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "mime_unsupported": 2,
+    "no_verifiable_candidate": 1,
     "oversize_gt_25mb": 2,
-    "resolution_low": 7,
-    "no_verifiable_candidate": 1
+    "resolution_low": 7
    },
    "reject_dist": {},
    "slug": "st00051",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st00170": {
    "attempts": 3,
@@ -63,17 +63,17 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "皆実町六丁目",
    "name_en": "Minamimachi 6-chōme",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 25,
     "name_mismatch_review": 1,
-    "resolution_low": 1,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "resolution_low": 1
    },
    "reject_dist": {},
    "slug": "st00170",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st00182": {
    "attempts": 3,
@@ -83,33 +83,33 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "横川一丁目",
    "name_en": "Yokogawa 1-chōme",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "low_color(map/text?)": 1,
-    "resolution_low": 3,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "resolution_low": 3
    },
    "reject_dist": {},
    "slug": "st00182",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st00190": {
-   "slug": "st00190",
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": "2026-11-05T18:56:59Z",
    "name": "稲荷町",
    "name_en": "Inarichō",
-   "stage": "ws15_final",
+   "note": "ws15 rounds1-4 标缺：稲荷町(広島広電)：候选为东京 Metro 稲荷町(同名异线)，无本站合格候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-05T18:56:59Z",
-   "note": "ws15 rounds1-4 标缺：稲荷町(広島広電)：候选为东京 Metro 稲荷町(同名异线)，无本站合格候选"
+   "slug": "st00190",
+   "stage": "ws15_final"
   },
   "st00254": {
    "attempts": 3,
@@ -127,6 +127,20 @@
    "slug": "st00254",
    "stage": "manual_qa"
   },
+  "st00260": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大久保",
+   "name_en": "Ōkubo",
+   "reasons": [
+    "duplicate_sha256_with:st00259"
+   ],
+   "slug": "st00260",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JRE_Okubo-STA_Platform1-2.jpg",
+   "stage": "verify"
+  },
   "st00309": {
    "attempts": 3,
    "below_spec": false,
@@ -135,19 +149,19 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "青山",
    "name_en": "Aoyama",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 10,
     "name_mismatch_review": 8,
     "no_station_evidence": 10,
+    "no_verifiable_candidate": 1,
     "pref_mismatch": 6,
-    "wrong_station": 1,
-    "no_verifiable_candidate": 1
+    "wrong_station": 1
    },
    "reject_dist": {},
    "slug": "st00309",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st00330": {
    "attempts": 2,
@@ -226,21 +240,21 @@
    "stage": "verify"
   },
   "st00353": {
-   "slug": "st00353",
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": "2026-11-05T19:57:39Z",
    "name": "市立病院前",
    "name_en": "Naha City Hospital",
-   "stage": "ws15_final",
+   "note": "ws15 round6 staged review 标缺：市立病院前(鹿児島市電)：round6 候选 2 张均为冲绳 Yui Rail 那霸市立病院前(同名异线)；HEAD 既存错挂图亦为 Yui Rail(横幅 Naha City Hospital Station)，revert-n 撤除后候选枯竭",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-05T19:57:39Z",
-   "note": "ws15 round6 staged review 标缺：市立病院前(鹿児島市電)：round6 候选 2 张均为冲绳 Yui Rail 那霸市立病院前(同名异线)；HEAD 既存错挂图亦为 Yui Rail(横幅 Naha City Hospital Station)，revert-n 撤除后候选枯竭"
+   "slug": "st00353",
+   "stage": "ws15_final"
   },
   "st00356": {
    "attempts": 2,
@@ -284,16 +298,16 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "郡元・南",
    "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "mime_unsupported": 11,
-    "oversize_gt_25mb": 19,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "oversize_gt_25mb": 19
    },
    "reject_dist": {},
    "slug": "st00377",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st00378": {
    "attempts": 3,
@@ -303,19 +317,19 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "中郡",
    "name_en": "Chūgun",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 2,
     "name_mismatch_review": 9,
     "no_station_evidence": 10,
+    "no_verifiable_candidate": 1,
     "pref_mismatch": 2,
-    "wrong_station": 14,
-    "no_verifiable_candidate": 1
+    "wrong_station": 14
    },
    "reject_dist": {},
    "slug": "st00378",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st00380": {
    "attempts": 3,
@@ -325,15 +339,15 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "純心学園前",
    "name_en": "Junshingakuen-mae",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
-    "resolution_low": 1,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "resolution_low": 1
    },
    "reject_dist": {},
    "slug": "st00380",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st00383": {
    "attempts": 2,
@@ -503,6 +517,7 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "大橋",
    "name_en": "Ōhashi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 23,
     "name_mismatch_review": 2,
@@ -512,8 +527,7 @@
    "reject_dist": {},
    "slug": "st00457",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st00458": {
    "attempts": 2,
@@ -580,17 +594,15 @@
    "attempts": 3,
    "final_dead": true,
    "first_seen": "2026-11-03T12:32:53Z",
-   "last_attempt": "2026-11-05T15:34:52Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
    "name": "住吉",
    "name_en": "Sumiyoshi",
    "reasons": [
-    "duplicate_sha256_with:st00466",
-    "no_verifiable_candidate"
+    "duplicate_sha256_with:st00466"
    ],
    "slug": "st00469",
    "source_page": "https://commons.wikimedia.org/wiki/File:Hanshin_Sumiyoshi_Station_20200901.jpg",
-   "stage": "verify",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "verify"
   },
   "st00470": {
    "attempts": 2,
@@ -751,21 +763,21 @@
    "stage": "verify"
   },
   "st00571": {
-   "slug": "st00571",
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-04T05:04:51Z",
+   "last_attempt": "2026-11-05T18:56:59Z",
    "name": "栄",
    "name_en": "Sakae",
-   "stage": "ws15_final",
+   "note": "ws15 rounds1-4 标缺：栄(岡山水島本線)：候选为名古屋名城线栄(同名异线)，无本站合格候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-04T05:04:51Z",
-   "last_attempt": "2026-11-05T18:56:59Z",
-   "note": "ws15 rounds1-4 标缺：栄(岡山水島本線)：候选为名古屋名城线栄(同名异线)，无本站合格候选"
+   "slug": "st00571",
+   "stage": "ws15_final"
   },
   "st00572": {
    "attempts": 1,
@@ -810,21 +822,21 @@
    "stage": "verify"
   },
   "st00577": {
-   "slug": "st00577",
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T03:47:18Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
    "name": "福井",
    "name_en": "Fukui",
-   "stage": "ws15_final",
+   "note": "ws15 rounds1-4 标缺：福井(岡山)：Commons 仅福井県福井駅(同名异县)与货物南福井场景，无本站合格候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Dinosaurs outside Echizen Railway platforms at Fukui Station.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T03:47:18Z",
-   "last_attempt": "2026-11-05T18:18:01Z",
-   "note": "ws15 rounds1-4 标缺：福井(岡山)：Commons 仅福井県福井駅(同名异县)与货物南福井场景，无本站合格候选"
+   "slug": "st00577",
+   "stage": "ws15_final"
   },
   "st00580": {
    "attempts": 3,
@@ -834,18 +846,18 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "球場前",
    "name_en": "Kyūjō-mae",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 3,
     "name_mismatch_review": 20,
     "no_station_evidence": 25,
-    "pref_mismatch": 1,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "pref_mismatch": 1
    },
    "reject_dist": {},
    "slug": "st00580",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st00581": {
    "attempts": 1,
@@ -917,16 +929,16 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "肥前竜王",
    "name_en": "Hizen-Ryūō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
+    "no_verifiable_candidate": 1,
     "resolution_low": 1,
-    "wrong_station": 1,
-    "no_verifiable_candidate": 1
+    "wrong_station": 1
    },
    "reject_dist": {},
    "slug": "st00602",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st00639": {
    "attempts": 1,
@@ -961,6 +973,23 @@
    "source_page": null,
    "stage": "fetch"
   },
+  "st00716": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T18:44:53Z",
+   "last_attempt": "2026-11-05T19:57:39Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round6 staged review 标缺：北方(福岡小倉線)：候选为美濃北方(岐阜,废站)站舍/北方警察署(岐阜)/巴士总站，同名异县+非站景，无本站合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:北九州モノレール - panoramio (4).jpg",
+   "slug": "st00716",
+   "stage": "ws15_final"
+  },
   "st00792": {
    "attempts": 1,
    "below_spec": false,
@@ -986,18 +1015,18 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "新川",
    "name_en": "Nikkawa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 8,
     "no_station_evidence": 15,
+    "no_verifiable_candidate": 1,
     "pref_mismatch": 3,
-    "wrong_station": 1,
-    "no_verifiable_candidate": 1
+    "wrong_station": 1
    },
    "reject_dist": {},
    "slug": "st00812",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st00813": {
    "attempts": 3,
@@ -1007,18 +1036,18 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "新川",
    "name_en": "Nikkawa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 8,
     "no_station_evidence": 15,
+    "no_verifiable_candidate": 1,
     "pref_mismatch": 3,
-    "wrong_station": 1,
-    "no_verifiable_candidate": 1
+    "wrong_station": 1
    },
    "reject_dist": {},
    "slug": "st00813",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st00822": {
    "attempts": 1,
@@ -1044,34 +1073,34 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "野志",
    "name_en": "Noshi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "mime_unsupported": 18,
+    "no_verifiable_candidate": 1,
     "oversize_gt_25mb": 10,
-    "resolution_low": 2,
-    "no_verifiable_candidate": 1
+    "resolution_low": 2
    },
    "reject_dist": {},
    "slug": "st00824",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st00827": {
-   "slug": "st00827",
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-04T04:22:38Z",
+   "last_attempt": "2026-11-05T18:56:59Z",
    "name": "東野",
    "name_en": "Higashino",
-   "stage": "ws15_final",
+   "note": "ws15 rounds1-4 标缺：東野(岐阜明知線)：候选为京都市营 T06 東野(同名异线)，无本站合格候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-05T18:56:59Z",
-   "note": "ws15 rounds1-4 标缺：東野(岐阜明知線)：候选为京都市营 T06 東野(同名异线)，无本站合格候选"
+   "slug": "st00827",
+   "stage": "ws15_final"
   },
   "st00949": {
    "attempts": 3,
@@ -1081,15 +1110,15 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "馬場崎町",
    "name_en": "Babasakichō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
-    "resolution_low": 2,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "resolution_low": 2
    },
    "reject_dist": {},
    "slug": "st00949",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st00953": {
    "attempts": 3,
@@ -1101,8 +1130,8 @@
    "name_en": "Takamatsuchō",
    "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
-    "pref_mismatch": "高松町←香川県道図 pref_mismatch",
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "pref_mismatch": "高松町←香川県道図 pref_mismatch"
    },
    "reject_dist": {},
    "slug": "st00953",
@@ -1117,15 +1146,15 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "和田浜",
    "name_en": "Wadahama",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
-    "resolution_low": 2,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "resolution_low": 2
    },
    "reject_dist": {},
    "slug": "st00957",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st00980": {
    "attempts": 1,
@@ -1201,19 +1230,19 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "岡田",
    "name_en": "Okada",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "hard_excluded": 1,
     "name_mismatch_review": 4,
     "no_station_evidence": 25,
+    "no_verifiable_candidate": 1,
     "pref_mismatch": 2,
-    "wrong_station": 1,
-    "no_verifiable_candidate": 1
+    "wrong_station": 1
    },
    "reject_dist": {},
    "slug": "st01041",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st01048": {
    "attempts": 3,
@@ -1223,21 +1252,21 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "四所",
    "name_en": "Shisho",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 15,
     "hard_excluded": 1,
     "low_color(map/text?)": 2,
     "name_mismatch_review": 8,
     "no_station_evidence": 12,
+    "no_verifiable_candidate": 1,
     "pref_mismatch": 1,
-    "wrong_station": 5,
-    "no_verifiable_candidate": 1
+    "wrong_station": 5
    },
    "reject_dist": {},
    "slug": "st01048",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st01056": {
    "attempts": 1,
@@ -1263,19 +1292,19 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "万博記念公園",
    "name_en": "Bampaku-kinen-kōen",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 5,
     "hard_excluded": 1,
     "name_mismatch_review": 2,
     "no_station_evidence": 16,
-    "pref_mismatch": 6,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "pref_mismatch": 6
    },
    "reject_dist": {},
    "slug": "st01070",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st01101": {
    "attempts": 1,
@@ -1301,19 +1330,19 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "北浦",
    "name_en": "Kitaura",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 5,
     "name_mismatch_review": 3,
     "no_station_evidence": 18,
+    "no_verifiable_candidate": 1,
     "pref_mismatch": 5,
-    "wrong_station": 1,
-    "no_verifiable_candidate": 1
+    "wrong_station": 1
    },
    "reject_dist": {},
    "slug": "st01129",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st01167": {
    "attempts": 3,
@@ -1323,14 +1352,14 @@
    "last_attempt": "2026-11-05T20:40:08Z",
    "name": "上金田",
    "name_en": "Kami-Kanada",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01167",
    "source_page": null,
-   "stage": "ws15_refetch",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+   "stage": "ws15_refetch"
   },
   "st01168": {
    "attempts": 3,
@@ -1340,15 +1369,15 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "糒",
    "name_en": "Hoshii",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
-    "resolution_low": 3,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "resolution_low": 3
    },
    "reject_dist": {},
    "slug": "st01168",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st01169": {
    "attempts": 3,
@@ -1358,15 +1387,15 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "田川市立病院",
    "name_en": "Tagawa Municipal Hospital",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
-    "resolution_low": 1,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "resolution_low": 1
    },
    "reject_dist": {},
    "slug": "st01169",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st01170": {
    "attempts": 3,
@@ -1376,14 +1405,14 @@
    "last_attempt": "2026-11-05T20:39:32Z",
    "name": "下伊田",
    "name_en": "Shimo-Ita",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01170",
    "source_page": null,
-   "stage": "ws15_refetch",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+   "stage": "ws15_refetch"
   },
   "st01174": {
    "attempts": 3,
@@ -1393,15 +1422,15 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "柿下温泉口",
    "name_en": "Kakishita-onsen-guchi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
-    "resolution_low": 1,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "resolution_low": 1
    },
    "reject_dist": {},
    "slug": "st01174",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st01179": {
    "attempts": 1,
@@ -1428,20 +1457,20 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "犀川",
    "name_en": "Saigawa",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 10,
     "low_color(map/text?)": 1,
     "name_mismatch_review": 8,
     "no_station_evidence": 22,
+    "no_verifiable_candidate": 1,
     "resolution_low": 7,
-    "wrong_station": 3,
-    "no_verifiable_candidate": 1
+    "wrong_station": 3
    },
    "reject_dist": {},
    "slug": "st01180",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st01181": {
    "attempts": 3,
@@ -1451,16 +1480,16 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "東犀川三四郎",
    "name_en": "Higashi-Saigawa Sanshirō",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
+    "no_verifiable_candidate": 1,
     "resolution_low": 1,
-    "wrong_station": 2,
-    "no_verifiable_candidate": 1
+    "wrong_station": 2
    },
    "reject_dist": {},
    "slug": "st01181",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st01185": {
    "attempts": 3,
@@ -1470,14 +1499,14 @@
    "last_attempt": "2026-11-05T21:24:26Z",
    "name": "今川河童",
    "name_en": "Imagawa Kappa",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01185",
    "source_page": null,
-   "stage": "ws15_refetch",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+   "stage": "ws15_refetch"
   },
   "st01191": {
    "attempts": 1,
@@ -1535,18 +1564,18 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "島ケ原",
    "name_en": "Shimagahara",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "hard_excluded": 1,
     "name_mismatch_review": 1,
     "no_station_evidence": 10,
-    "wrong_station": 1,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "wrong_station": 1
    },
    "reject_dist": {},
    "slug": "st01240",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st01241": {
    "attempts": 3,
@@ -1556,31 +1585,31 @@
    "last_attempt": "2026-11-05T20:06:37Z",
    "name": "西木津",
    "name_en": "Nishi-Kizu",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "slug": "st01241",
    "source_page": null,
-   "stage": "ws15_refetch",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
+   "stage": "ws15_refetch"
   },
   "st01249": {
-   "slug": "st01249",
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-04T04:22:38Z",
+   "last_attempt": "2026-11-05T18:56:59Z",
    "name": "長尾",
    "name_en": "Nagao",
-   "stage": "ws15_final",
+   "note": "ws15 rounds1-4 标缺：長尾(大阪JR片町線)：候选为ことでん長尾(香川,同名异线)，无本站合格候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-05T18:56:59Z",
-   "note": "ws15 rounds1-4 标缺：長尾(大阪JR片町線)：候选为ことでん長尾(香川,同名异线)，无本站合格候选"
+   "slug": "st01249",
+   "stage": "ws15_final"
   },
   "st01282": {
    "attempts": 3,
@@ -1590,17 +1619,17 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "柏原",
    "name_en": "Kaibara",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 6,
     "no_station_evidence": 20,
-    "pref_mismatch": 1,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "pref_mismatch": 1
    },
    "reject_dist": {},
    "slug": "st01282",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st01351": {
    "attempts": 1,
@@ -1626,18 +1655,18 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "河原町",
    "name_en": "Kawaramachi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 8,
     "hard_excluded": 3,
     "no_station_evidence": 5,
-    "pref_mismatch": 13,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "pref_mismatch": 13
    },
    "reject_dist": {},
    "slug": "st01353",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st01374": {
    "attempts": 1,
@@ -1663,15 +1692,15 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "高ノ宮",
    "name_en": "Takanomiya",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
-    "resolution_low": 1,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "resolution_low": 1
    },
    "reject_dist": {},
    "slug": "st01414",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st01416": {
    "attempts": 3,
@@ -1681,6 +1710,7 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "朝日ケ丘",
    "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": [
     "no_candidates",
     "no_verifiable_candidate"
@@ -1688,8 +1718,7 @@
    "reject_dist": {},
    "slug": "st01416",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st01432": {
    "attempts": 3,
@@ -1699,17 +1728,17 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "県庁前",
    "name_en": "Ehime Pref. Office",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 20,
     "no_station_evidence": 1,
-    "pref_mismatch": 3,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "pref_mismatch": 3
    },
    "reject_dist": {},
    "slug": "st01432",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st01433": {
    "attempts": 3,
@@ -1719,17 +1748,17 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "県庁前",
    "name_en": "Ehime Pref. Office",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 20,
     "no_station_evidence": 1,
-    "pref_mismatch": 3,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "pref_mismatch": 3
    },
    "reject_dist": {},
    "slug": "st01433",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st01435": {
    "attempts": 3,
@@ -1739,17 +1768,17 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "県庁前",
    "name_en": "Ehime Pref. Office",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 21,
     "no_station_evidence": 1,
-    "pref_mismatch": 2,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "pref_mismatch": 2
    },
    "reject_dist": {},
    "slug": "st01435",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st01436": {
    "attempts": 3,
@@ -1759,34 +1788,62 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "県庁前",
    "name_en": "Ehime Pref. Office",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 21,
     "no_station_evidence": 1,
-    "pref_mismatch": 2,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "pref_mismatch": 2
    },
    "reject_dist": {},
    "slug": "st01436",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
+  },
+  "st01437": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "県庁前",
+   "name_en": "Ehime Pref. Office",
+   "reasons": [
+    "duplicate_sha256_with:st01435"
+   ],
+   "slug": "st01437",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JP_日本_Japan_沖繩_OKINAWA_單軌電車_MonoRail_遊車河_tour_view_from_8_美栄橋駅_Miebashi_Station_Station_to_7_県庁前駅_Prefectural_Office_Station_morning_0836am_January_2025_R12S_05.jpg",
+   "stage": "verify"
+  },
+  "st01438": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "県庁前",
+   "name_en": "Ehime Pref. Office",
+   "reasons": [
+    "duplicate_sha256_with:st01432"
+   ],
+   "slug": "st01438",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Chiba-monorail-CM18-Kenchomae-station-platform-20190701-113716.jpg",
+   "stage": "verify"
   },
   "st01459": {
-   "slug": "st01459",
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-04T04:22:38Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
    "name": "小泉町",
    "name_en": "Koizumichō",
-   "stage": "ws15_final",
+   "note": "ws15 round7 staged review 标缺：小泉町(富山軌道線支線)：候选 3 张均为群马东武小泉町线小泉町(TI45,同名异线)，OCR 命中亦为他站牌",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-04T04:22:38Z",
-   "last_attempt": "2026-11-05T20:29:23Z",
-   "note": "ws15 round7 staged review 标缺：小泉町(富山軌道線支線)：候选 3 张均为群马东武小泉町线小泉町(TI45,同名异线)，OCR 命中亦为他站牌"
+   "slug": "st01459",
+   "stage": "ws15_final"
   },
   "st01465": {
    "attempts": 1,
@@ -1806,38 +1863,55 @@
    "stage": "audit"
   },
   "st01474": {
-   "slug": "st01474",
-   "name": "泉",
-   "name_en": "Izumi",
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
    "attempts": 3,
+   "below_spec": false,
    "final_dead": true,
    "first_seen": "2026-11-03T15:19:26Z",
    "last_attempt": "2026-11-05T18:56:59Z",
-   "note": "ws15 rounds1-4 标缺：泉(福島常磐線)：候选 Izumi Station 为九州(鹿児)出水系大型站房(同名异县)，无本站合格候选"
-  },
-  "st01523": {
-   "slug": "st01523",
-   "name": "霞ケ関",
-   "name_en": null,
-   "stage": "ws15_final",
+   "name": "泉",
+   "name_en": "Izumi",
+   "note": "ws15 rounds1-4 标缺：泉(福島常磐線)：候选 Izumi Station 为九州(鹿児)出水系大型站房(同名异县)，无本站合格候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": null,
-   "below_spec": false,
+   "slug": "st01474",
+   "stage": "ws15_final"
+  },
+  "st01523": {
    "attempts": 3,
+   "below_spec": false,
    "final_dead": true,
    "first_seen": "2026-11-04T04:22:38Z",
    "last_attempt": "2026-11-05T18:56:59Z",
-   "note": "ws15 rounds1-4 标缺：霞ケ関(埼玉東上線)：候选为东京 Metro 霞ケ関(同名异线)，无本站合格候选"
+   "name": "霞ケ関",
+   "name_en": null,
+   "note": "ws15 rounds1-4 标缺：霞ケ関(埼玉東上線)：候选为东京 Metro 霞ケ関(同名异线)，无本站合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st01523",
+   "stage": "ws15_final"
+  },
+  "st01628": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:47:07Z",
+   "last_attempt": "2026-11-05T22:04:19Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round10 staged review 标缺：生田(秋田県)：round10 暂存 3 候选均为神奈川生田(小田急小田原線站台/小田急生田駅牌目检确认/JR 生田)，同名异线；此前 round9 GPS 接受项为新干线行驶照已撤(REVERT7)；候选池枯竭",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Komachi-21 running near Shoden Station.jpg",
+   "slug": "st01628",
+   "stage": "ws15_final"
   },
   "st01648": {
    "attempts": 1,
@@ -1864,15 +1938,15 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "杉塘",
    "name_en": "Sugidomo",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
-    "resolution_low": 2,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "resolution_low": 2
    },
    "reject_dist": {},
    "slug": "st01659",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st01792": {
    "attempts": 3,
@@ -1882,6 +1956,7 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "松ケ崎",
    "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": [
     "no_candidates",
     "no_verifiable_candidate"
@@ -1889,8 +1964,7 @@
    "reject_dist": {},
    "slug": "st01792",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st01793": {
    "attempts": 1,
@@ -1909,21 +1983,21 @@
    "stage": "fetch"
   },
   "st01798": {
-   "slug": "st01798",
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
    "name": "明星",
    "name_en": "Myōjō",
-   "stage": "ws15_final",
+   "note": "ws15 rounds1-4 标缺：明星(三重)：仅检车区/车库/列车照与中央大学明治大学(他站)，无本站站景",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:NDL1310992 木曽六十九駅 宮ノ越木曽川ノ明星岩・暁星五郎.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T18:18:01Z",
-   "note": "ws15 rounds1-4 标缺：明星(三重)：仅检车区/车库/列车照与中央大学明治大学(他站)，无本站站景"
+   "slug": "st01798",
+   "stage": "ws15_final"
   },
   "st01804": {
    "attempts": 1,
@@ -1950,6 +2024,7 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "粟ケ崎",
    "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": [
     "no_candidates",
     "no_verifiable_candidate"
@@ -1957,8 +2032,7 @@
    "reject_dist": {},
    "slug": "st01836",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st01858": {
    "attempts": 3,
@@ -1968,6 +2042,7 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "富士見ケ丘",
    "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": [
     "no_candidates",
     "no_verifiable_candidate"
@@ -1975,8 +2050,7 @@
    "reject_dist": {},
    "slug": "st01858",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st01958": {
    "attempts": 3,
@@ -1986,6 +2060,7 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "ラクテンチ上",
    "name_en": null,
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": [
     "no_candidates",
     "no_verifiable_candidate"
@@ -1993,8 +2068,7 @@
    "reject_dist": {},
    "slug": "st01958",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st02000": {
    "attempts": 1,
@@ -2020,33 +2094,33 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "法界院",
    "name_en": "Hōkaiin",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "low_color(map/text?)": 2,
-    "resolution_low": 1,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "resolution_low": 1
    },
    "reject_dist": {},
    "slug": "st02003",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st02036": {
-   "slug": "st02036",
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": "2026-11-05T18:48:46Z",
    "name": "彦根口",
    "name_en": "Hikoneguchi",
-   "stage": "ws15_final",
+   "note": "ws15 rounds1-4 标缺：彦根口(滋賀)：rounds1-4 仅彦根駅闸口/他站候选，无本站合格候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:HikoneGuchiEki KokokuBus 20070701.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-04T02:27:36Z",
-   "last_attempt": "2026-11-05T18:48:46Z",
-   "note": "ws15 rounds1-4 标缺：彦根口(滋賀)：rounds1-4 仅彦根駅闸口/他站候选，无本站合格候选"
+   "slug": "st02036",
+   "stage": "ws15_final"
   },
   "st02042": {
    "attempts": 1,
@@ -2106,15 +2180,15 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "水口城南",
    "name_en": "Minakuchi-Jōnan",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
-    "resolution_low": 1,
-    "no_verifiable_candidate": 1
+    "no_verifiable_candidate": 1,
+    "resolution_low": 1
    },
    "reject_dist": {},
    "slug": "st02056",
    "source_page": null,
-   "stage": "fetch",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "fetch"
   },
   "st02077": {
    "attempts": 1,
@@ -2217,6 +2291,40 @@
    "source_page": null,
    "stage": "fetch"
   },
+  "st02193": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T17:04:52Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 rounds1-4 标缺：三潴(福岡)：仅水间铁道水间观音駅(他线)与消防署(非站景)，无本站站景",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Platform of Daizenji Station.jpg",
+   "slug": "st02193",
+   "stage": "ws15_final"
+  },
+  "st02201": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T17:04:52Z",
+   "last_attempt": "2026-11-05T17:13:48Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Platform of Kitano Station (Nishitetsu Amagi Line) 1.jpg",
+   "slug": "st02201",
+   "stage": "ws15_refetch"
+  },
   "st02219": {
    "attempts": 1,
    "below_spec": false,
@@ -2252,21 +2360,80 @@
    "stage": "fetch"
   },
   "st02231": {
-   "slug": "st02231",
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-04T02:27:36Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
    "name": "塩塚",
    "name_en": "Shiotsuka",
-   "stage": "ws15_final",
+   "note": "ws15 rounds1-4 标缺：塩塚(福岡)：rounds1-2 检索零候选",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:Nishitetsu Shiotsuka Station01.jpg",
-   "below_spec": false,
+   "slug": "st02231",
+   "stage": "ws15_final"
+  },
+  "st02232": {
    "attempts": 3,
+   "below_spec": false,
    "final_dead": true,
-   "first_seen": "2026-11-04T02:27:36Z",
+   "first_seen": "2026-11-05T17:04:52Z",
    "last_attempt": "2026-11-05T18:18:01Z",
-   "note": "ws15 rounds1-4 标缺：塩塚(福岡)：rounds1-2 检索零候选"
+   "name": null,
+   "name_en": null,
+   "note": "ws15 rounds1-4 标缺：徳益(福岡)：仅无站名牌站台照，不满足站牌 OCR/目检口径",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Platform of Nishitetsu-Yanagawa Station 3.jpg",
+   "slug": "st02232",
+   "stage": "ws15_final"
+  },
+  "st02344": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "長浦",
+   "name_en": "Nagaura",
+   "reasons": [
+    "duplicate_sha256_with:st02343"
+   ],
+   "slug": "st02344",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Nagaura_Station-Building_for_Ōtagawa_1.jpg",
+   "stage": "verify"
+  },
+  "st02350": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "榎戸",
+   "name_en": "Enokido",
+   "reasons": [
+    "duplicate_sha256_with:st02349"
+   ],
+   "slug": "st02350",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Enokido-station-building-for-Centrair.jpg",
+   "stage": "verify"
+  },
+  "st02392": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "白沢",
+   "name_en": "Shirasawa",
+   "reasons": [
+    "duplicate_sha256_with:st02390"
+   ],
+   "slug": "st02392",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Shirasawa_Station-Building_for_Ōtagawa.jpg",
+   "stage": "verify"
   },
   "st02484": {
    "attempts": 3,
@@ -2300,6 +2467,138 @@
    "slug": "st02485",
    "stage": "qa_pipeline_330"
   },
+  "st02517": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 rounds1-4 标缺：川路(長野)：仅上海铜川路(异国)与无站名牌 Kawaji-eki 照",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Kawaji-eki.JPG",
+   "slug": "st02517",
+   "stage": "ws15_final"
+  },
+  "st02559": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "船尾",
+   "name_en": "Funao",
+   "reasons": [
+    "duplicate_sha256_with:st02558"
+   ],
+   "slug": "st02559",
+   "source_page": "https://commons.wikimedia.org/wiki/File:阪堺電車「船尾」停留所.jpg",
+   "stage": "verify"
+  },
+  "st02584": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大山寺",
+   "name_en": "Taisanji",
+   "reasons": [
+    "duplicate_sha256_with:st02583"
+   ],
+   "slug": "st02584",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Taisanji_Station-Building_2.JPG",
+   "stage": "verify"
+  },
+  "st02626": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "額田",
+   "name_en": "Nukada",
+   "reasons": [
+    "duplicate_sha256_with:st02625"
+   ],
+   "slug": "st02626",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Suigun_Line_Nukada_Station_Platform.jpg",
+   "stage": "verify"
+  },
+  "st02661": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "枚岡",
+   "name_en": "Hiraoka",
+   "reasons": [
+    "duplicate_sha256_with:st02455"
+   ],
+   "slug": "st02661",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Hiraoka_Station_and_Ryusenkaku_ac.jpg",
+   "stage": "verify"
+  },
+  "st02668": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "学園前",
+   "name_en": "Gakuen-mae",
+   "reasons": [
+    "duplicate_sha256_with:st02666"
+   ],
+   "slug": "st02668",
+   "source_page": "https://commons.wikimedia.org/wiki/File:FamilyMart_Kintetsu_Gakuen-mae-eki_No.2_platform_Chuo_store_on_10th_April_2020.jpg",
+   "stage": "verify"
+  },
+  "st02681": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "九条",
+   "name_en": "Kujō",
+   "reasons": [
+    "duplicate_sha256_with:st02680"
+   ],
+   "slug": "st02681",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kintetsu_Kujo_Station_west_entrance.jpg",
+   "stage": "verify"
+  },
+  "st02692": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T18:56:59Z",
+   "last_attempt": "2026-11-05T18:56:59Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 rounds1-4 标缺：今津(大分日豊本線)：候选为阪神今津(兵庫,同名异线,邻站 Kusugawa/Hanshin-kokudo 证)，无本站合格候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st02692",
+   "stage": "ws15_final"
+  },
+  "st02718": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "霞ケ丘",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st02717"
+   ],
+   "slug": "st02718",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Kasumigaoka_Station_(trace)_1.jpg",
+   "stage": "verify"
+  },
   "st02728": {
    "attempts": 3,
    "below_spec": false,
@@ -2332,6 +2631,107 @@
    "slug": "st02729",
    "stage": "qa_pipeline_330"
   },
+  "st02733": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "高砂",
+   "name_en": "Takasago",
+   "reasons": [
+    "duplicate_sha256_with:st02732"
+   ],
+   "slug": "st02733",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Hakodate-Main-Line_Takasago_Station_building_(South_Exit).jpg",
+   "stage": "verify"
+  },
+  "st02738": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "別府",
+   "name_en": "Befu",
+   "reasons": [
+    "duplicate_sha256_with:st02736"
+   ],
+   "slug": "st02738",
+   "source_page": "https://commons.wikimedia.org/wiki/File:別府大学駅_駅舎_2022.jpg",
+   "stage": "verify"
+  },
+  "st02755": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "御影",
+   "name_en": "Mikage",
+   "reasons": [
+    "duplicate_sha256_with:st02753"
+   ],
+   "slug": "st02755",
+   "source_page": "https://commons.wikimedia.org/wiki/File:阪急御影駅大阪方面ホーム.jpg",
+   "stage": "verify"
+  },
+  "st02777": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 rounds1-4 标缺：洗馬(長野)：仅无站名牌 Seba 站房照与木曾路册页/旧画",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Seba-Sta-Platform.JPG",
+   "slug": "st02777",
+   "stage": "ws15_final"
+  },
+  "st02798": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "片原町",
+   "name_en": "Kataharamachi",
+   "reasons": [
+    "duplicate_sha256_with:st02797"
+   ],
+   "slug": "st02798",
+   "source_page": "https://commons.wikimedia.org/wiki/File:KD-Kataharamachi_Station-Building_1.jpg",
+   "stage": "verify"
+  },
+  "st02802": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "広小路",
+   "name_en": "Hirokōji",
+   "reasons": [
+    "duplicate_sha256_with:st02801"
+   ],
+   "slug": "st02802",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Tokyu-osaki-hirokoji-station-platform.jpg",
+   "stage": "verify"
+  },
+  "st02807": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "旭ケ丘",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st02806"
+   ],
+   "slug": "st02807",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Sendai-subway-N04-Asahigaoka-station-platform-20160727-104216.jpg",
+   "stage": "verify"
+  },
   "st02824": {
    "attempts": 3,
    "below_spec": false,
@@ -2363,6 +2763,90 @@
    "reject_dist": {},
    "slug": "st02825",
    "stage": "qa_pipeline_330"
+  },
+  "st02827": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "東山公園",
+   "name_en": "Higashiyama-kōen",
+   "reasons": [
+    "duplicate_sha256_with:st02826"
+   ],
+   "slug": "st02827",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Nagoya-subway-H17-Higashiyama-koen-station-platform-20100317.jpg",
+   "stage": "verify"
+  },
+  "st02893": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "府中",
+   "name_en": "Fuchū",
+   "reasons": [
+    "duplicate_sha256_with:st02890"
+   ],
+   "slug": "st02893",
+   "source_page": "https://commons.wikimedia.org/wiki/File:府中駅（福塩線）.JPG",
+   "stage": "verify"
+  },
+  "st02895": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "蔵本",
+   "name_en": "Kuramoto",
+   "reasons": [
+    "duplicate_sha256_with:st02768"
+   ],
+   "slug": "st02895",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kuramoto_Station-Platform-20110908.jpg",
+   "stage": "verify"
+  },
+  "st02903": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "中田",
+   "name_en": "Chūden",
+   "reasons": [
+    "duplicate_sha256_with:st02902"
+   ],
+   "slug": "st02903",
+   "source_page": "https://commons.wikimedia.org/wiki/File:駅舎（2024年4月）.jpg",
+   "stage": "verify"
+  },
+  "st02904": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "中田",
+   "name_en": "Chūden",
+   "reasons": [
+    "duplicate_sha256_with:st02902"
+   ],
+   "slug": "st02904",
+   "source_page": "https://commons.wikimedia.org/wiki/File:駅舎（2024年4月）.jpg",
+   "stage": "verify"
+  },
+  "st02910": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "西原",
+   "name_en": "Nishibara",
+   "reasons": [
+    "duplicate_sha256_with:st02909"
+   ],
+   "slug": "st02910",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Former_Nishibaru_Station_Platform_of_Miike_Railway.jpg",
+   "stage": "verify"
   },
   "st02920": {
    "attempts": 3,
@@ -2428,6 +2912,34 @@
    "slug": "st02947",
    "stage": "qa_pipeline_330"
   },
+  "st02950": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "北河内",
+   "name_en": "Kita-Gōchi",
+   "reasons": [
+    "duplicate_sha256_with:st02949"
+   ],
+   "slug": "st02950",
+   "source_page": "https://commons.wikimedia.org/wiki/File:北河内駅.JPG",
+   "stage": "verify"
+  },
+  "st02955": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "新野",
+   "name_en": "Aratano",
+   "reasons": [
+    "duplicate_sha256_with:st02954"
+   ],
+   "slug": "st02955",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Aratano-station_platform.jpg",
+   "stage": "verify"
+  },
   "st02961": {
    "attempts": 3,
    "below_spec": false,
@@ -2460,6 +2972,34 @@
    "slug": "st02969",
    "stage": "qa_pipeline_330"
   },
+  "st02973": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "神前",
+   "name_en": "Kanzaki",
+   "reasons": [
+    "duplicate_sha256_with:st02972"
+   ],
+   "slug": "st02973",
+   "source_page": "https://commons.wikimedia.org/wiki/File:WER-Kozaki-pf.jpg",
+   "stage": "verify"
+  },
+  "st02999": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "安田",
+   "name_en": "Yasuda",
+   "reasons": [
+    "duplicate_sha256_with:st02998"
+   ],
+   "slug": "st02999",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Shin-etsu_Line_Yasuda_Station_building.jpg",
+   "stage": "verify"
+  },
   "st03027": {
    "attempts": 3,
    "below_spec": false,
@@ -2475,6 +3015,62 @@
    "reject_dist": {},
    "slug": "st03027",
    "stage": "qa_pipeline_330"
+  },
+  "st03037": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "城下",
+   "name_en": "Shiroshita",
+   "reasons": [
+    "duplicate_sha256_with:st03036"
+   ],
+   "slug": "st03037",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Ueda-dentetsu-Shiroshita-station-platform-20110907-110542.jpg",
+   "stage": "verify"
+  },
+  "st03054": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "岩倉",
+   "name_en": "Iwakura",
+   "reasons": [
+    "duplicate_sha256_with:st03053"
+   ],
+   "slug": "st03054",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Iwakura_Station-Platform.jpg",
+   "stage": "verify"
+  },
+  "st03064": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "加納",
+   "name_en": "Kanō",
+   "reasons": [
+    "duplicate_sha256_with:st03063"
+   ],
+   "slug": "st03064",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Kanō_Station-Building_4.jpg",
+   "stage": "verify"
+  },
+  "st03126": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "星川",
+   "name_en": "Hoshikawa",
+   "reasons": [
+    "duplicate_sha256_with:st03125"
+   ],
+   "slug": "st03126",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Sagami-railway-SO05-Hoshikawa-station-platform-20191207-111422.jpg",
+   "stage": "verify"
   },
   "st03164": {
    "attempts": 3,
@@ -2508,6 +3104,145 @@
    "slug": "st03208",
    "stage": "qa_pipeline_330"
   },
+  "st03225": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:23:45Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
+  },
+  "st03230": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "黒井",
+   "name_en": "Kuroi",
+   "reasons": [
+    "duplicate_sha256_with:st03229"
+   ],
+   "slug": "st03230",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Shin-etsu_Line_Kuroi_Station_Platform.jpg",
+   "stage": "verify"
+  },
+  "st03255": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "野崎",
+   "name_en": "Nozaki",
+   "reasons": [
+    "duplicate_sha256_with:st03254"
+   ],
+   "slug": "st03255",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Nozaki_Station_building_20221127.jpg",
+   "stage": "verify"
+  },
+  "st03262": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "古市",
+   "name_en": "Furuichi",
+   "reasons": [
+    "duplicate_sha256_with:st03261"
+   ],
+   "slug": "st03262",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Platform_of_HRT_Furuichi_Station.JPG",
+   "stage": "verify"
+  },
+  "st03280": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:48:03Z",
+   "last_attempt": "2026-11-05T21:48:03Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round9 staged review 标缺：小杉(富山上滝線)：2 候选均为 JR 武蔵小杉(神奈川)新南改札/横須賀線口，异县错挂；OCR「小杉」为武蔵小杉子串误命中",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st03280",
+   "stage": "ws15_final"
+  },
+  "st03293": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "泊",
+   "name_en": "Tomari",
+   "reasons": [
+    "duplicate_sha256_with:st03292"
+   ],
+   "slug": "st03293",
+   "source_page": "https://commons.wikimedia.org/wiki/File:泊駅跨線橋からの風景20210410-IMG_2353.jpg",
+   "stage": "verify"
+  },
+  "st03294": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "泊",
+   "name_en": "Tomari",
+   "reasons": [
+    "duplicate_sha256_with:st03292"
+   ],
+   "slug": "st03294",
+   "source_page": "https://commons.wikimedia.org/wiki/File:泊駅跨線橋からの風景20210410-IMG_2353.jpg",
+   "stage": "verify"
+  },
+  "st03300": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "野々市",
+   "name_en": "Nonoichi",
+   "reasons": [
+    "duplicate_sha256_with:st03299"
+   ],
+   "slug": "st03300",
+   "source_page": "https://commons.wikimedia.org/wiki/File:IR_Ishikawa_Railway_Nonoichi_Station_south_side.jpg",
+   "stage": "verify"
+  },
+  "st03310": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "粟津",
+   "name_en": "Awazu",
+   "reasons": [
+    "duplicate_sha256_with:st03309"
+   ],
+   "slug": "st03310",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JRW_Awazu-STA_Platforms.jpg",
+   "stage": "verify"
+  },
+  "st03318": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "徳田",
+   "name_en": "Tokuda",
+   "reasons": [
+    "duplicate_sha256_with:st03317"
+   ],
+   "slug": "st03318",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Tokuda,_nanao.JPG",
+   "stage": "verify"
+  },
   "st03328": {
    "attempts": 3,
    "below_spec": false,
@@ -2523,6 +3258,20 @@
    "reject_dist": {},
    "slug": "st03328",
    "stage": "manual_qa"
+  },
+  "st03338": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "青海",
+   "name_en": "Aomi",
+   "reasons": [
+    "duplicate_sha256_with:st03337"
+   ],
+   "slug": "st03338",
+   "source_page": "https://commons.wikimedia.org/wiki/File:青海駅_遠景.jpg",
+   "stage": "verify"
   },
   "st03394": {
    "attempts": 3,
@@ -2540,6 +3289,34 @@
    "slug": "st03394",
    "stage": "qa_pipeline_330"
   },
+  "st03401": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "緑が丘",
+   "name_en": "Midorigaoka",
+   "reasons": [
+    "duplicate_sha256_with:st03399"
+   ],
+   "slug": "st03401",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Furano-Line_Midorigaoka_Station_Platform.jpg",
+   "stage": "verify"
+  },
+  "st03422": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "戸田",
+   "name_en": "Heta",
+   "reasons": [
+    "duplicate_sha256_with:st03421"
+   ],
+   "slug": "st03422",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Toda_Station_Platform.jpg",
+   "stage": "verify"
+  },
   "st03429": {
    "attempts": 3,
    "below_spec": false,
@@ -2555,6 +3332,20 @@
    "reject_dist": {},
    "slug": "st03429",
    "stage": "manual_qa"
+  },
+  "st03439": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "日進",
+   "name_en": "Nisshin",
+   "reasons": [
+    "duplicate_sha256_with:st03438"
+   ],
+   "slug": "st03439",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Soya-Main-Line_Nisshin_Station_building.jpg",
+   "stage": "verify"
   },
   "st03490": {
    "attempts": 3,
@@ -2572,6 +3363,20 @@
    "slug": "st03490",
    "stage": "qa_pipeline_330"
   },
+  "st03495": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "田原町",
+   "name_en": "Tawaramachi",
+   "reasons": [
+    "duplicate_sha256_with:st03494"
+   ],
+   "slug": "st03495",
+   "source_page": "https://commons.wikimedia.org/wiki/File:EC-Tawaramachi_Station-Building_2.jpg",
+   "stage": "verify"
+  },
   "st03501": {
    "attempts": 3,
    "below_spec": false,
@@ -2588,6 +3393,48 @@
    "slug": "st03501",
    "stage": "qa_pipeline_330"
   },
+  "st03521": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "御領",
+   "name_en": "Goryō",
+   "reasons": [
+    "duplicate_sha256_with:st03520"
+   ],
+   "slug": "st03521",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Goryo-Station-waiting-room-20100906.jpg",
+   "stage": "verify"
+  },
+  "st03525": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "井原",
+   "name_en": "Ibara",
+   "reasons": [
+    "duplicate_sha256_with:st03524"
+   ],
+   "slug": "st03525",
+   "source_page": "https://commons.wikimedia.org/wiki/File:井原鉄道IRT355形「アート列車」.jpg",
+   "stage": "verify"
+  },
+  "st03566": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "荒尾",
+   "name_en": "Arao",
+   "reasons": [
+    "duplicate_sha256_with:st03565"
+   ],
+   "slug": "st03566",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Central_Arao_Station_Overall.jpg",
+   "stage": "verify"
+  },
   "st03583": {
    "attempts": 3,
    "below_spec": false,
@@ -2603,6 +3450,23 @@
    "reject_dist": {},
    "slug": "st03583",
    "stage": "qa_pipeline_330"
+  },
+  "st03600": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:11:42Z",
+   "last_attempt": "2026-11-05T21:23:09Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:View near Ikoinomura Station.jpg",
+   "slug": "st03600",
+   "stage": "ws15_refetch"
   },
   "st03617": {
    "attempts": 3,
@@ -2652,6 +3516,30 @@
    "slug": "st03644",
    "stage": "manual_qa"
   },
+  "st03646": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:56:15Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
+  },
+  "st03649": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大泉",
+   "name_en": "Ōizumi",
+   "reasons": [
+    "duplicate_sha256_with:st03648"
+   ],
+   "slug": "st03649",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Koumi_Line_Kai-Oizumi_Station_building.jpg",
+   "stage": "verify"
+  },
   "st03653": {
    "attempts": 3,
    "below_spec": false,
@@ -2683,6 +3571,20 @@
    "reject_dist": {},
    "slug": "st03655",
    "stage": "qa_pipeline_330"
+  },
+  "st03665": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "甲南",
+   "name_en": "Kōnan",
+   "reasons": [
+    "duplicate_sha256_with:st03049"
+   ],
+   "slug": "st03665",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Kōnan_Station-Platform.jpg",
+   "stage": "verify"
   },
   "st03728": {
    "attempts": 3,
@@ -2828,6 +3730,23 @@
    "slug": "st03764",
    "stage": "qa_pipeline_330"
   },
+  "st03765": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T20:29:23Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round7 staged review 标缺：鹿児(高知伊野線)：候选 2 张均为巴士照(Kako-bus,OCR 见西加古川駅/姫路=兵库区域)，非站景+错区域",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st03765",
+   "stage": "ws15_final"
+  },
   "st03770": {
    "attempts": 3,
    "below_spec": false,
@@ -2843,6 +3762,58 @@
    "reject_dist": {},
    "slug": "st03770",
    "stage": "qa_pipeline_330"
+  },
+  "st03773": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "篠原",
+   "name_en": "Sasabara",
+   "reasons": [
+    "duplicate_sha256_with:st03772"
+   ],
+   "slug": "st03773",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Aikan-17-Sasabara-station-entrance-20150504-073120.jpg",
+   "stage": "verify"
+  },
+  "st03774": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "篠原",
+   "name_en": "Sasabara",
+   "reasons": [
+    "duplicate_sha256_with:st03772"
+   ],
+   "slug": "st03774",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Aikan-17-Sasabara-station-entrance-20150504-073120.jpg",
+   "stage": "verify"
+  },
+  "st03782": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:56:24Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
+  },
+  "st03787": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "北山",
+   "name_en": "Kitayama",
+   "reasons": [
+    "duplicate_sha256_with:st03785"
+   ],
+   "slug": "st03787",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Moka-railway-Kitayama-station-platform.jpg",
+   "stage": "verify"
   },
   "st03789": {
    "attempts": 3,
@@ -2940,6 +3911,20 @@
    "slug": "st03857",
    "stage": "qa_pipeline_330"
   },
+  "st03875": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "川内",
+   "name_en": "Kawauchi",
+   "reasons": [
+    "duplicate_sha256_with:st03874"
+   ],
+   "slug": "st03875",
+   "source_page": "https://commons.wikimedia.org/wiki/File:川内駅西口.JPG",
+   "stage": "verify"
+  },
   "st03900": {
    "attempts": 3,
    "below_spec": false,
@@ -2955,6 +3940,62 @@
    "reject_dist": {},
    "slug": "st03900",
    "stage": "qa_pipeline_330"
+  },
+  "st03919": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "桐原",
+   "name_en": "Kirihara",
+   "reasons": [
+    "duplicate_sha256_with:st03918"
+   ],
+   "slug": "st03919",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Echigo_Line_Kirihara_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st03922": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "妙法寺",
+   "name_en": "Myōhōji",
+   "reasons": [
+    "duplicate_sha256_with:st03921"
+   ],
+   "slug": "st03922",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Echigo_Line_Myohoji_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st03928": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "西山",
+   "name_en": "Nishiyama",
+   "reasons": [
+    "duplicate_sha256_with:st03927"
+   ],
+   "slug": "st03928",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Echigo_Line_Nishiyama_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st04037": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "番田",
+   "name_en": "Banda",
+   "reasons": [
+    "duplicate_sha256_with:st04036"
+   ],
+   "slug": "st04037",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Sagami_Line_Banda_Station_Platform.jpg",
+   "stage": "verify"
   },
   "st04045": {
    "attempts": 3,
@@ -2988,6 +4029,90 @@
    "slug": "st04134",
    "stage": "qa_pipeline_330"
   },
+  "st04194": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "原",
+   "name_en": "Hara",
+   "reasons": [
+    "duplicate_sha256_with:st04193"
+   ],
+   "slug": "st04194",
+   "source_page": "https://commons.wikimedia.org/wiki/File:NDL1309410_原.jpg",
+   "stage": "verify"
+  },
+  "st04195": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "原",
+   "name_en": "Hara",
+   "reasons": [
+    "duplicate_sha256_with:st04193"
+   ],
+   "slug": "st04195",
+   "source_page": "https://commons.wikimedia.org/wiki/File:NDL1309410_原.jpg",
+   "stage": "verify"
+  },
+  "st04216": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "丸山",
+   "name_en": "Maruyama",
+   "reasons": [
+    "duplicate_sha256_with:st04214"
+   ],
+   "slug": "st04216",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Maruyama_station_2022.jpg",
+   "stage": "verify"
+  },
+  "st04231": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "有明",
+   "name_en": "Ariake",
+   "reasons": [
+    "duplicate_sha256_with:st04230"
+   ],
+   "slug": "st04231",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Oito_Line_Ariake_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st04338": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "新白島",
+   "name_en": "Shin-Hakushima",
+   "reasons": [
+    "duplicate_sha256_with:st04336"
+   ],
+   "slug": "st04338",
+   "source_page": "https://commons.wikimedia.org/wiki/File:新白島駅JR南口駅舎列車運行情報表示.jpg",
+   "stage": "verify"
+  },
+  "st04393": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大倉山",
+   "name_en": "Ōkurayama",
+   "reasons": [
+    "duplicate_sha256_with:st04392"
+   ],
+   "slug": "st04393",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Ōkurayama_Sta_platform_20201228_155344.jpg",
+   "stage": "verify"
+  },
   "st04403": {
    "attempts": 3,
    "below_spec": false,
@@ -3003,6 +4128,62 @@
    "reject_dist": {},
    "slug": "st04403",
    "stage": "qa_pipeline_330"
+  },
+  "st04418": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "新井",
+   "name_en": "Arai",
+   "reasons": [
+    "duplicate_sha256_with:st04416"
+   ],
+   "slug": "st04418",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Echigo_TOKImeki_Railway_Myoko_Haneuma_Line_Kita-Arai_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st04460": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "運動公園前",
+   "name_en": "Undōkōen-mae",
+   "reasons": [
+    "duplicate_sha256_with:st04459"
+   ],
+   "slug": "st04460",
+   "source_page": "https://commons.wikimedia.org/wiki/File:運動公園前駅.JPG",
+   "stage": "verify"
+  },
+  "st04485": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "森下",
+   "name_en": "Morishita",
+   "reasons": [
+    "duplicate_sha256_with:st04484"
+   ],
+   "slug": "st04485",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Morishita_Station-Building.jpg",
+   "stage": "verify"
+  },
+  "st04518": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "中野",
+   "name_en": "Nakano",
+   "reasons": [
+    "duplicate_sha256_with:st04517"
+   ],
+   "slug": "st04518",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Nakano_2006_(2243821365).jpg",
+   "stage": "verify"
   },
   "st04542": {
    "attempts": 3,
@@ -3036,6 +4217,16 @@
    "slug": "st04543",
    "stage": "qa_pipeline_330"
   },
+  "st04561": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T22:11:03Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
+  },
   "st04562": {
    "attempts": 3,
    "below_spec": false,
@@ -3067,6 +4258,23 @@
    "reject_dist": {},
    "slug": "st04563",
    "stage": "qa_pipeline_330"
+  },
+  "st04564": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:47:07Z",
+   "last_attempt": "2026-11-05T21:55:42Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:椋野駅 - panoramio.jpg",
+   "slug": "st04564",
+   "stage": "ws15_refetch"
   },
   "st04566": {
    "attempts": 3,
@@ -3116,6 +4324,23 @@
    "slug": "st04574",
    "stage": "qa_pipeline_330"
   },
+  "st04575": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T20:29:23Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round7 staged review 标缺：高水(山口)：候选标题均为 Ikusabata Station(他站)，标题站名闸门拒；OCR/目检无本站名",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st04575",
+   "stage": "ws15_final"
+  },
   "st04577": {
    "attempts": 3,
    "below_spec": false,
@@ -3131,6 +4356,30 @@
    "reject_dist": {},
    "slug": "st04577",
    "stage": "qa_pipeline_330"
+  },
+  "st04583": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "越前下山",
+   "name_en": "Echizen-Shimoyama",
+   "reasons": [
+    "duplicate_sha256_with:st02996"
+   ],
+   "slug": "st04583",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Echizen-Shimoyama_Station_panorama_view.jpg",
+   "stage": "verify"
+  },
+  "st04585": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T22:11:22Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
   },
   "st04586": {
    "attempts": 3,
@@ -3163,6 +4412,40 @@
    "reject_dist": {},
    "slug": "st04587",
    "stage": "qa_pipeline_330"
+  },
+  "st04602": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:48:03Z",
+   "last_attempt": "2026-11-05T21:48:03Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round9 staged review 标缺：六条(ハピラインふくい線)：候选=车照(Toyota 86)/名古屋市六条泵站/札幌市電西線六条(北海道同名异线)，无本站候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st04602",
+   "stage": "ws15_final"
+  },
+  "st04604": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T19:57:39Z",
+   "last_attempt": "2026-11-05T19:57:39Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round6 staged review 标缺：山田西町(高知土赞线)：唯一候选为无站名标识的无人站台照，站牌 OCR/目检未见站名不算通过，候选枯竭",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st04604",
+   "stage": "ws15_final"
   },
   "st04621": {
    "attempts": 3,
@@ -3212,6 +4495,23 @@
    "slug": "st04642",
    "stage": "qa_pipeline_330"
   },
+  "st04643": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:48:03Z",
+   "last_attempt": "2026-11-05T21:48:03Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round9 staged review 标缺：土佐岩原(土讃線)：唯一候选为 Kiha58 列车站台停靠主体照，无站名牌可读，非站景主体",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st04643",
+   "stage": "ws15_final"
+  },
   "st04671": {
    "attempts": 3,
    "below_spec": false,
@@ -3227,6 +4527,20 @@
    "reject_dist": {},
    "slug": "st04671",
    "stage": "qa_pipeline_330"
+  },
+  "st04746": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "玉川",
+   "name_en": "Tamagawa",
+   "reasons": [
+    "duplicate_sha256_with:st04745"
+   ],
+   "slug": "st04746",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Futako-Tamagawa_Station_Concourse_2018.jpg",
+   "stage": "verify"
   },
   "st04771": {
    "attempts": 3,
@@ -3260,6 +4574,34 @@
    "slug": "st04772",
    "stage": "qa_pipeline_330"
   },
+  "st04780": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "千里中央",
+   "name_en": "Senri-chūō",
+   "reasons": [
+    "duplicate_sha256_with:st04779"
+   ],
+   "slug": "st04780",
+   "source_page": "https://commons.wikimedia.org/wiki/File:北大阪急行千里中央駅ホーム.jpg",
+   "stage": "verify"
+  },
+  "st04784": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "山田",
+   "name_en": "Yamada",
+   "reasons": [
+    "duplicate_sha256_with:st04782"
+   ],
+   "slug": "st04784",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Rikuchu_yamada_station_20130601.JPG",
+   "stage": "verify"
+  },
   "st04806": {
    "attempts": 3,
    "below_spec": false,
@@ -3275,6 +4617,16 @@
    "reject_dist": {},
    "slug": "st04806",
    "stage": "qa_pipeline_330"
+  },
+  "st04808": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T20:39:22Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
   },
   "st04809": {
    "attempts": 3,
@@ -3324,6 +4676,61 @@
    "slug": "st04817",
    "stage": "qa_pipeline_330"
   },
+  "st04819": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T20:39:11Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
+  },
+  "st04843": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大間々",
+   "name_en": "Ōmama",
+   "reasons": [
+    "duplicate_sha256_with:st04656"
+   ],
+   "slug": "st04843",
+   "source_page": "https://commons.wikimedia.org/wiki/File:大間々駅_駅舎(2023年8月).jpg",
+   "stage": "verify"
+  },
+  "st04849": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "運動公園",
+   "name_en": "Undōkōen",
+   "reasons": [
+    "duplicate_sha256_with:st04848"
+   ],
+   "slug": "st04849",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Platform_area_at_Urheilupuisto_metro_station_in_August_2023.jpg",
+   "stage": "verify"
+  },
+  "st04955": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 rounds1-4 标缺：药水(奈良)：仅首尔药水站(异国)x3 与军舰照(非站景)",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Kusurimizu Station platform in 20150718.jpg",
+   "slug": "st04955",
+   "stage": "ws15_final"
+  },
   "st04959": {
    "attempts": 3,
    "below_spec": false,
@@ -3339,6 +4746,62 @@
    "reject_dist": {},
    "slug": "st04959",
    "stage": "qa_pipeline_330"
+  },
+  "st05014": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "湖山",
+   "name_en": "Koyama",
+   "reasons": [
+    "duplicate_sha256_with:st03152"
+   ],
+   "slug": "st05014",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Musashi-Koyama-STA_Platform3-4.jpg",
+   "stage": "verify"
+  },
+  "st05021": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "松崎",
+   "name_en": "Matsuzaki",
+   "reasons": [
+    "duplicate_sha256_with:st05020"
+   ],
+   "slug": "st05021",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JRW_Matsuzaki-STA_Platform2.jpg",
+   "stage": "verify"
+  },
+  "st05025": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "浦安",
+   "name_en": "Urayasu",
+   "reasons": [
+    "duplicate_sha256_with:st05024"
+   ],
+   "slug": "st05025",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Urayasu-station-station-building2018.jpg",
+   "stage": "verify"
+  },
+  "st05036": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "日永",
+   "name_en": "Hinaga",
+   "reasons": [
+    "duplicate_sha256_with:st02345"
+   ],
+   "slug": "st05036",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Hinaga_Station-Building_1.jpg",
+   "stage": "verify"
   },
   "st05083": {
    "attempts": 3,
@@ -3364,18 +4827,18 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "伊勢鎌倉",
    "name_en": "Ise-Kamakura",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "name_mismatch_review": 33,
     "no_station_evidence": 34,
+    "no_verifiable_candidate": 1,
     "pref_mismatch": 1,
-    "wrong_station": 2,
-    "no_verifiable_candidate": 1
+    "wrong_station": 2
    },
    "reject_dist": {},
    "slug": "st05086",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st05087": {
    "attempts": 3,
@@ -3489,6 +4952,20 @@
    "slug": "st05143",
    "stage": "qa_pipeline_330"
   },
+  "st05170": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "国見",
+   "name_en": "Kunimi",
+   "reasons": [
+    "duplicate_sha256_with:st05169"
+   ],
+   "slug": "st05170",
+   "source_page": "https://commons.wikimedia.org/wiki/File:国見駅_駅舎.jpg",
+   "stage": "verify"
+  },
   "st05175": {
    "attempts": 3,
    "below_spec": false,
@@ -3537,6 +5014,20 @@
    "slug": "st05179",
    "stage": "qa_pipeline_330"
   },
+  "st05248": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "幸崎",
+   "name_en": "Kōzaki",
+   "reasons": [
+    "duplicate_sha256_with:st03811"
+   ],
+   "slug": "st05248",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Narita_Line_Shimōsa-Kōzaki_Station_building.jpg",
+   "stage": "verify"
+  },
   "st05266": {
    "attempts": 3,
    "below_spec": false,
@@ -3561,19 +5052,50 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "宇島",
    "name_en": "Unoshima",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "hard_excluded": 2,
     "name_mismatch_review": 16,
     "no_station_evidence": 22,
+    "no_verifiable_candidate": 1,
     "resolution_low": 3,
-    "wrong_station": 12,
-    "no_verifiable_candidate": 1
+    "wrong_station": 12
    },
    "reject_dist": {},
    "slug": "st05277",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
+  },
+  "st05321": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "可部",
+   "name_en": "Kabe",
+   "reasons": [
+    "duplicate_sha256_with:st04496"
+   ],
+   "slug": "st05321",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kabe_Station_building_grounds.jpg",
+   "stage": "verify"
+  },
+  "st05365": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T20:29:23Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round7 staged review 标缺：安芸長浜(広島呉線)：唯一候选为圆顶站房远景无站名标识，站牌 OCR/目检未见站名不算通过",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st05365",
+   "stage": "ws15_final"
   },
   "st05397": {
    "attempts": 3,
@@ -3671,6 +5193,34 @@
    "slug": "st05430",
    "stage": "qa_pipeline_330"
   },
+  "st05471": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "早稲田",
+   "name_en": "Waseda",
+   "reasons": [
+    "duplicate_sha256_with:st05470"
+   ],
+   "slug": "st05471",
+   "source_page": "https://commons.wikimedia.org/wiki/File:TokyoMetro-T04-Waseda-station-platform-20200408-115154.jpg",
+   "stage": "verify"
+  },
+  "st05487": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "平井",
+   "name_en": "Hirai",
+   "reasons": [
+    "duplicate_sha256_with:st05486"
+   ],
+   "slug": "st05487",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Chuo-Main-Line_Hirai_Station_Platform.jpg",
+   "stage": "verify"
+  },
   "st05528": {
    "attempts": 3,
    "below_spec": false,
@@ -3687,6 +5237,76 @@
    "slug": "st05528",
    "stage": "qa_pipeline_330"
   },
+  "st05533": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "菊川",
+   "name_en": "Kikugawa",
+   "reasons": [
+    "duplicate_sha256_with:st05532"
+   ],
+   "slug": "st05533",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Central_Kikugawa_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st05536": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大島",
+   "name_en": "Ōjima",
+   "reasons": [
+    "duplicate_sha256_with:st05535"
+   ],
+   "slug": "st05536",
+   "source_page": "https://commons.wikimedia.org/wiki/File:大島駅駅舎.JPG",
+   "stage": "verify"
+  },
+  "st05549": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "長沼",
+   "name_en": "Naganuma",
+   "reasons": [
+    "duplicate_sha256_with:st05548"
+   ],
+   "slug": "st05549",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Naganuma-Sta-Platform.JPG",
+   "stage": "verify"
+  },
+  "st05553": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "聖蹟桜ケ丘",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st03093"
+   ],
+   "slug": "st05553",
+   "source_page": "https://commons.wikimedia.org/wiki/File:多摩市の聖蹟桜ヶ丘駅前20170812.jpg",
+   "stage": "verify"
+  },
+  "st05593": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "永田",
+   "name_en": "Nagata",
+   "reasons": [
+    "duplicate_sha256_with:st05592"
+   ],
+   "slug": "st05593",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Sotobō_Line_Nagata_Station_building.jpg",
+   "stage": "verify"
+  },
   "st05617": {
    "attempts": 3,
    "below_spec": false,
@@ -3702,6 +5322,20 @@
    "reject_dist": {},
    "slug": "st05617",
    "stage": "qa_pipeline_330"
+  },
+  "st05642": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "北山田",
+   "name_en": "Kita-Yamata",
+   "reasons": [
+    "duplicate_sha256_with:st05641"
+   ],
+   "slug": "st05642",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kita-Yamata-STA_Platform1-2.jpg",
+   "stage": "verify"
   },
   "st05651": {
    "attempts": 3,
@@ -3751,6 +5385,48 @@
    "slug": "st05663",
    "stage": "qa_pipeline_330"
   },
+  "st05682": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "中川",
+   "name_en": "Nakagawa",
+   "reasons": [
+    "duplicate_sha256_with:st05681"
+   ],
+   "slug": "st05682",
+   "source_page": "https://commons.wikimedia.org/wiki/File:KINTETSU_ISE-NAKAGAWA_STATION.JPG",
+   "stage": "verify"
+  },
+  "st05724": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "長原",
+   "name_en": "Nagahara",
+   "reasons": [
+    "duplicate_sha256_with:st04093"
+   ],
+   "slug": "st05724",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Higashi-Nagahara_Station_Platform_1.jpg",
+   "stage": "verify"
+  },
+  "st05769": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "越水",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st03969"
+   ],
+   "slug": "st05769",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Senmo-Main-Line_Hama-Koshimizu_Station_building.jpg",
+   "stage": "verify"
+  },
   "st05906": {
    "attempts": 3,
    "below_spec": false,
@@ -3766,6 +5442,65 @@
    "reject_dist": {},
    "slug": "st05906",
    "stage": "qa_pipeline_330"
+  },
+  "st05909": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "嵐山",
+   "name_en": "Arashiyama",
+   "reasons": [
+    "duplicate_sha256_with:st05908"
+   ],
+   "slug": "st05909",
+   "source_page": "https://commons.wikimedia.org/wiki/File:阪急嵐山駅駅舎.jpg",
+   "stage": "verify"
+  },
+  "st05974": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大山",
+   "name_en": "Ōyama",
+   "reasons": [
+    "duplicate_sha256_with:st05973"
+   ],
+   "slug": "st05974",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Uzen-Ōyama_Station_Platform.jpg",
+   "stage": "verify"
+  },
+  "st05977": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:13:22Z",
+   "last_attempt": "2026-11-05T21:13:22Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round8 staged review 标缺：東開聞(指宿枕崎線)：唯一候选为列车田野远景(标题東開聞駅列車)，站名不可读，非站景主体",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st05977",
+   "stage": "ws15_final"
+  },
+  "st05980": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "入野",
+   "name_en": "Irino",
+   "reasons": [
+    "duplicate_sha256_with:st05979"
+   ],
+   "slug": "st05980",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JRW_Nyuno_Station_Platform_20090812.jpg",
+   "stage": "verify"
   },
   "st05985": {
    "attempts": 3,
@@ -3783,6 +5518,72 @@
    "slug": "st05985",
    "stage": "qa_pipeline_330"
   },
+  "st05993": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "上小川",
+   "name_en": "Kami-Ogawa",
+   "reasons": [
+    "duplicate_sha256_with:st05221"
+   ],
+   "slug": "st05993",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Suigun_Line_Kami-Ogawa_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st05995": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "下小川",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st03936"
+   ],
+   "slug": "st05995",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Suigun_Line_Shimo-Ogawa_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st06007": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "南石井",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st00540"
+   ],
+   "slug": "st06007",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Suigun_Line_Minami-Ishii_Station_Platform.jpg",
+   "stage": "verify"
+  },
+  "st06020": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "川東",
+   "name_en": "Kawahigashi",
+   "reasons": [
+    "duplicate_sha256_with:st06019"
+   ],
+   "slug": "st06020",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Suigun_Line_Kawahigashi_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st06053": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T22:11:14Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
+  },
   "st06054": {
    "attempts": 3,
    "below_spec": false,
@@ -3798,6 +5599,23 @@
    "reject_dist": {},
    "slug": "st06054",
    "stage": "qa_pipeline_330"
+  },
+  "st06057": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:48:03Z",
+   "last_attempt": "2026-11-05T21:48:03Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round9 staged review 标缺：鶴丸(吉都線)：唯一候选为 NHK-JOG-FM 鹿児(鶴丸)电波塔照，非站景",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st06057",
+   "stage": "ws15_final"
   },
   "st06061": {
    "attempts": 3,
@@ -3879,6 +5697,20 @@
    "slug": "st06068",
    "stage": "qa_pipeline_330"
   },
+  "st06097": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "渚",
+   "name_en": "Nagisa",
+   "reasons": [
+    "duplicate_sha256_with:st06096"
+   ],
+   "slug": "st06097",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Michinoeki_Hidakaido_Nagisa_2019-08-31.jpg",
+   "stage": "verify"
+  },
   "st06114": {
    "attempts": 3,
    "below_spec": false,
@@ -3927,6 +5759,110 @@
    "slug": "st06150",
    "stage": "qa_pipeline_330"
   },
+  "st06174": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "若林",
+   "name_en": "Wakabayashi",
+   "reasons": [
+    "duplicate_sha256_with:st06173"
+   ],
+   "slug": "st06174",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Wakabayashi_Station-Building_2026.3-1.jpg",
+   "stage": "verify"
+  },
+  "st06196": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "花園",
+   "name_en": "Hanazono",
+   "reasons": [
+    "duplicate_sha256_with:st06195"
+   ],
+   "slug": "st06196",
+   "source_page": "https://commons.wikimedia.org/wiki/File:KD-Hanazono_Station-Building.jpg",
+   "stage": "verify"
+  },
+  "st06211": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "陶",
+   "name_en": "Sue",
+   "reasons": [
+    "duplicate_sha256_with:st04831"
+   ],
+   "slug": "st06211",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MRT_Bang_Sue_Station-platform_20151108.jpg",
+   "stage": "verify"
+  },
+  "st06216": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "岡本",
+   "name_en": "Okamoto",
+   "reasons": [
+    "duplicate_sha256_with:st06215"
+   ],
+   "slug": "st06216",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Okamoto_Station_Platform_20221127.jpg",
+   "stage": "verify"
+  },
+  "st06222": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "羽間",
+   "name_en": "Hazama",
+   "reasons": [
+    "duplicate_sha256_with:st05575"
+   ],
+   "slug": "st06222",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Hazama-Sta-Platform.JPG",
+   "stage": "verify"
+  },
+  "st06247": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:48:03Z",
+   "last_attempt": "2026-11-05T21:48:03Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round9 staged review 标缺：新西脇(加古川線)：唯一候选站房竖牌为「警察官駐在所」(裁切放大确认)，场景内无站名标识",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st06247",
+   "stage": "ws15_final"
+  },
+  "st06253": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T20:29:23Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round7 staged review 标缺：青野ケ原(兵庫加古川線)：候选 2 张(Former Aonogahara stn)站牌均不清晰可读，不算通过",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st06253",
+   "stage": "ws15_final"
+  },
   "st06258": {
    "attempts": 3,
    "below_spec": false,
@@ -3943,6 +5879,34 @@
    "slug": "st06258",
    "stage": "qa_pipeline_330"
   },
+  "st06289": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "三川",
+   "name_en": "Mikawa",
+   "reasons": [
+    "duplicate_sha256_with:st03314"
+   ],
+   "slug": "st06289",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Hokuriku_Main_Line_Mikawa_Station_2021-03_ac.jpg",
+   "stage": "verify"
+  },
+  "st06320": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "横倉",
+   "name_en": "Yokokura",
+   "reasons": [
+    "duplicate_sha256_with:st06319"
+   ],
+   "slug": "st06320",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Iiyama_Line_Yokokura_Station_Platform.jpg",
+   "stage": "verify"
+  },
   "st06359": {
    "attempts": 3,
    "below_spec": false,
@@ -3958,6 +5922,34 @@
    "reject_dist": {},
    "slug": "st06359",
    "stage": "qa_pipeline_330"
+  },
+  "st06389": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "八津",
+   "name_en": "Yatsu",
+   "reasons": [
+    "duplicate_sha256_with:st03687"
+   ],
+   "slug": "st06389",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Yatsu_Station_building_-_Sep_2_2019_15_38_26_386000.jpeg",
+   "stage": "verify"
+  },
+  "st06443": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "油木",
+   "name_en": "Yuki",
+   "reasons": [
+    "duplicate_sha256_with:st02952"
+   ],
+   "slug": "st06443",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JREast-Higashi-yuki-station-platform.jpg",
+   "stage": "verify"
   },
   "st06479": {
    "attempts": 3,
@@ -3991,6 +5983,16 @@
    "slug": "st06480",
    "stage": "qa_pipeline_330"
   },
+  "st06506": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:23:17Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
+  },
   "st06513": {
    "attempts": 3,
    "below_spec": false,
@@ -4006,6 +6008,34 @@
    "reject_dist": {},
    "slug": "st06513",
    "stage": "qa_pipeline_330"
+  },
+  "st06540": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大和田",
+   "name_en": "Ōwada",
+   "reasons": [
+    "duplicate_sha256_with:st06539"
+   ],
+   "slug": "st06540",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Rumoi-Main-Line_Owada_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st06541": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大和田",
+   "name_en": "Ōwada",
+   "reasons": [
+    "duplicate_sha256_with:st06539"
+   ],
+   "slug": "st06541",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Rumoi-Main-Line_Owada_Station_building.jpg",
+   "stage": "verify"
   },
   "st06628": {
    "attempts": 3,
@@ -4055,6 +6085,82 @@
    "slug": "st06675",
    "stage": "qa_pipeline_330"
   },
+  "st06696": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T19:57:39Z",
+   "last_attempt": "2026-11-05T19:57:39Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round6 staged review 标缺：美濃川合(岐阜太多线)：唯一候选为发电站(Minokawai power station)非站景，候选枯竭",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st06696",
+   "stage": "ws15_final"
+  },
+  "st06714": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "相川",
+   "name_en": "Aikawa",
+   "reasons": [
+    "duplicate_sha256_with:st06376"
+   ],
+   "slug": "st06714",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Aikawa_Station_2022.jpg",
+   "stage": "verify"
+  },
+  "st06720": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "富田",
+   "name_en": "Tomida",
+   "reasons": [
+    "duplicate_sha256_with:st06719"
+   ],
+   "slug": "st06720",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Central_of_Tomida_Station_02.JPG",
+   "stage": "verify"
+  },
+  "st06724": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "上牧",
+   "name_en": "Kamimoku",
+   "reasons": [
+    "duplicate_sha256_with:st06723"
+   ],
+   "slug": "st06724",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Joetsu_Line_Kamimoku_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st06754": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 rounds1-4 标缺：寿(山梨)：仅北京慈寿寺(异国)x2 与无站名牌富士急寿照",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Kotobuki-STA-Gate.jpg",
+   "slug": "st06754",
+   "stage": "ws15_final"
+  },
   "st06861": {
    "attempts": 3,
    "below_spec": false,
@@ -4086,6 +6192,20 @@
    "reject_dist": {},
    "slug": "st06891",
    "stage": "qa_pipeline_330"
+  },
+  "st06914": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "喜多山",
+   "name_en": "Kitayama",
+   "reasons": [
+    "duplicate_sha256_with:st06913"
+   ],
+   "slug": "st06914",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Kitayama_Station-Building_(temporary)_3.jpg",
+   "stage": "verify"
   },
   "st06920": {
    "attempts": 3,
@@ -4135,6 +6255,20 @@
    "slug": "st06927",
    "stage": "qa_pipeline_330"
   },
+  "st06991": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "別府大学",
+   "name_en": "Beppu-daigaku",
+   "reasons": [
+    "duplicate_sha256_with:st02736"
+   ],
+   "slug": "st06991",
+   "source_page": "https://commons.wikimedia.org/wiki/File:別府大学駅_駅舎_2022.jpg",
+   "stage": "verify"
+  },
   "st06995": {
    "attempts": 3,
    "below_spec": false,
@@ -4166,6 +6300,16 @@
    "reject_dist": {},
    "slug": "st07001",
    "stage": "qa_pipeline_330"
+  },
+  "st07002": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:56:07Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
   },
   "st07020": {
    "attempts": 3,
@@ -4215,6 +6359,37 @@
    "slug": "st07035",
    "stage": "qa_pipeline_330"
   },
+  "st07039": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T19:57:39Z",
+   "last_attempt": "2026-11-05T19:57:39Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round6 staged review 标缺：吉富(福岡)：候选 2 张均为吉富町社区巴士/大交北部巴士，非站景(巴士)，候选枯竭",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st07039",
+   "stage": "ws15_final"
+  },
+  "st07075": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "上総湊",
+   "name_en": "Kazusa-Minato",
+   "reasons": [
+    "duplicate_sha256_with:st06607"
+   ],
+   "slug": "st07075",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Uchibō_Line_Kazusa-Minato_Station_building.jpg",
+   "stage": "verify"
+  },
   "st07136": {
    "attempts": 3,
    "below_spec": false,
@@ -4230,6 +6405,16 @@
    "reject_dist": {},
    "slug": "st07136",
    "stage": "qa_pipeline_330"
+  },
+  "st07138": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T22:10:55Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
   },
   "st07139": {
    "attempts": 3,
@@ -4279,6 +6464,62 @@
    "slug": "st07161",
    "stage": "qa_pipeline_330"
   },
+  "st07190": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大輪田",
+   "name_en": "Ōwada",
+   "reasons": [
+    "duplicate_sha256_with:st06539"
+   ],
+   "slug": "st07190",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Rumoi-Main-Line_Owada_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st07208": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "洲原",
+   "name_en": "Suhara",
+   "reasons": [
+    "duplicate_sha256_with:st02767"
+   ],
+   "slug": "st07208",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Tadami_Line_Echigo-Suhara_Station_Platform.jpg",
+   "stage": "verify"
+  },
+  "st07214": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "福野",
+   "name_en": "Fukuno",
+   "reasons": [
+    "duplicate_sha256_with:st07213"
+   ],
+   "slug": "st07214",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Fukuno_Station_platform.jpg",
+   "stage": "verify"
+  },
+  "st07271": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "居能",
+   "name_en": "Inō",
+   "reasons": [
+    "duplicate_sha256_with:st03780"
+   ],
+   "slug": "st07271",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Ino-Station-Platform-20100527.jpg",
+   "stage": "verify"
+  },
   "st07275": {
    "attempts": 3,
    "below_spec": false,
@@ -4294,6 +6535,20 @@
    "reject_dist": {},
    "slug": "st07275",
    "stage": "qa_pipeline_330"
+  },
+  "st07289": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "武庫",
+   "name_en": "Muko",
+   "reasons": [
+    "duplicate_sha256_with:st06729"
+   ],
+   "slug": "st07289",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Nishi-Muko_Station_platforms_2019-11-18_(50094719137).jpg",
+   "stage": "verify"
   },
   "st07363": {
    "attempts": 3,
@@ -4342,6 +6597,20 @@
    "reject_dist": {},
    "slug": "st07372",
    "stage": "qa_pipeline_330"
+  },
+  "st07380": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "紀伊中ノ島",
+   "name_en": "Kii-Nakanoshima",
+   "reasons": [
+    "duplicate_sha256_with:st06960"
+   ],
+   "slug": "st07380",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kii-Nakanoshima_Station,_old_platform.jpg",
+   "stage": "verify"
   },
   "st07390": {
    "attempts": 3,
@@ -4423,6 +6692,20 @@
    "slug": "st07400",
    "stage": "qa_pipeline_330"
   },
+  "st07456": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "船岡",
+   "name_en": "Funaoka",
+   "reasons": [
+    "duplicate_sha256_with:st07455"
+   ],
+   "slug": "st07456",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Tōhoku_Line_Funaoka_Station_building.jpg",
+   "stage": "verify"
+  },
   "st07513": {
    "attempts": 3,
    "below_spec": false,
@@ -4455,6 +6738,20 @@
    "slug": "st07579",
    "stage": "qa_pipeline_330"
   },
+  "st07585": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "黄金",
+   "name_en": "Kogane",
+   "reasons": [
+    "duplicate_sha256_with:st07584"
+   ],
+   "slug": "st07585",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Muroran-Main-Line_Kogane_Station_building.jpg",
+   "stage": "verify"
+  },
   "st07614": {
    "attempts": 3,
    "below_spec": false,
@@ -4486,6 +6783,30 @@
    "reject_dist": {},
    "slug": "st07617",
    "stage": "qa_pipeline_330"
+  },
+  "st07627": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "東長原",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st05723"
+   ],
+   "slug": "st07627",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Higashi-Nagahara_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st07649": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:55:58Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
   },
   "st07650": {
    "attempts": 3,
@@ -4567,6 +6888,30 @@
    "slug": "st07662",
    "stage": "qa_pipeline_330"
   },
+  "st07664": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "水鳥",
+   "name_en": "Midori",
+   "reasons": [
+    "duplicate_sha256_with:st03975"
+   ],
+   "slug": "st07664",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Senmo-Main-Line_Midori_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st07669": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:55:50Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
+  },
   "st07670": {
    "attempts": 3,
    "below_spec": false,
@@ -4631,6 +6976,99 @@
    "slug": "st07681",
    "stage": "qa_pipeline_330"
   },
+  "st07703": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 rounds1-4 标缺：下立(富山)：仅上海下沙(异国)与折立站/报纸扫描件(他站/非站景)",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Oritate Station 001.jpg",
+   "slug": "st07703",
+   "stage": "ws15_final"
+  },
+  "st07704": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "愛本",
+   "name_en": "Aimoto",
+   "reasons": [
+    "duplicate_sha256_with:st03264"
+   ],
+   "slug": "st07704",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Aimoto_Station_001.jpg",
+   "stage": "verify"
+  },
+  "st07707": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T20:29:23Z",
+   "last_attempt": "2026-11-05T20:29:23Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round7 staged review 标缺：西滑川(富山地鉄本線)：唯一候选为历史黑白扫描照，仅图外 caption 有站名，场景内无站牌",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st07707",
+   "stage": "ws15_final"
+  },
+  "st07712": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:13:22Z",
+   "last_attempt": "2026-11-05T21:13:22Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round8 staged review 标缺：早月加積(富山地鉄本線)：3 候选均无站名(/1 警察官重点パトロール駅横幅、/2 2番線のりば吊牌、/3 站房+重点バス停留所横幅)",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st07712",
+   "stage": "ws15_final"
+  },
+  "st07735": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "信濃常盤",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st00569"
+   ],
+   "slug": "st07735",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Oito_Line_Shinano-Tokiwa_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st07762": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "楽田",
+   "name_en": "Gakuden",
+   "reasons": [
+    "duplicate_sha256_with:st03386"
+   ],
+   "slug": "st07762",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Gakuden_Station-Building_for_Komaki.JPG",
+   "stage": "verify"
+  },
   "st07765": {
    "attempts": 3,
    "below_spec": false,
@@ -4648,21 +7086,35 @@
    "stage": "qa_pipeline_330"
   },
   "st07773": {
-   "slug": "st07773",
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T11:17:08Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
    "name": "",
    "name_en": "",
-   "stage": "ws15_final",
+   "note": "ws15 rounds1-4 标缺：峰(栃木)：仅福州象峰(异国)x3 与横滨鹤峰巴士站(他站)",
    "reasons": {
     "no_verifiable_candidate": 1
    },
    "reject_dist": {},
    "removed_source_title": "File:20170402 Platform 2 of Xiangfeng Station.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T11:17:08Z",
-   "last_attempt": "2026-11-05T18:18:01Z",
-   "note": "ws15 rounds1-4 标缺：峰(栃木)：仅福州象峰(异国)x3 与横滨鹤峰巴士站(他站)"
+   "slug": "st07773",
+   "stage": "ws15_final"
+  },
+  "st07801": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "榴ケ岡",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st05524"
+   ],
+   "slug": "st07801",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JREast-Senseki-line-Tsutsujigaoka-station-platform-20140813-061550.jpg",
+   "stage": "verify"
   },
   "st07832": {
    "attempts": 3,
@@ -4696,6 +7148,58 @@
    "slug": "st07833",
    "stage": "qa_pipeline_330"
   },
+  "st07834": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:23:34Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
+  },
+  "st07850": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "三河上郷",
+   "name_en": "Mikawa-Kamigō",
+   "reasons": [
+    "duplicate_sha256_with:st07165"
+   ],
+   "slug": "st07850",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Aikan-07-Mikawa-kamigo-station-platform-20150504-114216.jpg",
+   "stage": "verify"
+  },
+  "st07879": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "西ケ原四丁目",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st03169"
+   ],
+   "slug": "st07879",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Toden-SA19-Nishigahara-yonchome-station-platform-20181214-151401.jpg",
+   "stage": "verify"
+  },
+  "st07906": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "守山自衛隊前",
+   "name_en": "Moriyama-jieitai-mae",
+   "reasons": [
+    "duplicate_sha256_with:st05004"
+   ],
+   "slug": "st07906",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Moriyama-jieitai-mae_Station-Building.JPG",
+   "stage": "verify"
+  },
   "st07933": {
    "attempts": 3,
    "below_spec": false,
@@ -4711,6 +7215,16 @@
    "reject_dist": {},
    "slug": "st07933",
    "stage": "qa_pipeline_330"
+  },
+  "st07946": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T21:23:26Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
   },
   "st07954": {
    "attempts": 3,
@@ -4728,6 +7242,51 @@
    "slug": "st07954",
    "stage": "qa_pipeline_330"
   },
+  "st07964": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:13:22Z",
+   "last_attempt": "2026-11-05T21:13:22Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round8 staged review 标缺：中田平(松浦鉄道西九州線)：候选为站房远景+里田原遺跡/歴史民俗資料館导览牌，场景内无站名标识",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st07964",
+   "stage": "ws15_final"
+  },
+  "st07970": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "高岩",
+   "name_en": "Takaiwa",
+   "reasons": [
+    "duplicate_sha256_with:st07969"
+   ],
+   "slug": "st07970",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Koumi_Line_Takaiwa_Station_Platform.jpg",
+   "stage": "verify"
+  },
+  "st07974": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "吉井",
+   "name_en": "Yoshii",
+   "reasons": [
+    "duplicate_sha256_with:st07973"
+   ],
+   "slug": "st07974",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Joshin-railway-Yoshii-station-building.jpg",
+   "stage": "verify"
+  },
   "st07978": {
    "attempts": 3,
    "below_spec": false,
@@ -4744,6 +7303,20 @@
    "slug": "st07978",
    "stage": "manual_qa"
   },
+  "st07979": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大木",
+   "name_en": "Ōgi",
+   "reasons": [
+    "duplicate_sha256_with:st04927"
+   ],
+   "slug": "st07979",
+   "source_page": "https://commons.wikimedia.org/wiki/File:202201_Hanshin_Main_Line_Ōgi_Station_Platform_01.jpg",
+   "stage": "verify"
+  },
   "st07999": {
    "attempts": 3,
    "below_spec": false,
@@ -4752,19 +7325,19 @@
    "last_attempt": "2026-11-05T15:34:52Z",
    "name": "甲立",
    "name_en": "Kōtachi",
+   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）",
    "reasons": {
     "geo_mismatch": 1,
     "name_mismatch_review": 25,
     "no_station_evidence": 26,
+    "no_verifiable_candidate": 1,
     "resolution_low": 1,
-    "wrong_station": 2,
-    "no_verifiable_candidate": 1
+    "wrong_station": 2
    },
    "reject_dist": {},
    "slug": "st07999",
    "source_page": null,
-   "stage": "retry",
-   "note": "330池组合检索+地理围栏+目检后无合格候选（QA triage reject/visual fail）"
+   "stage": "retry"
   },
   "st08009": {
    "attempts": 3,
@@ -4797,6 +7370,20 @@
    "reject_dist": {},
    "slug": "st08010",
    "stage": "qa_pipeline_330"
+  },
+  "st08021": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "岩水寺",
+   "name_en": "Gansuiji",
+   "reasons": [
+    "duplicate_sha256_with:st03020"
+   ],
+   "slug": "st08021",
+   "source_page": "https://commons.wikimedia.org/wiki/File:ET-Enshu_Gansuiji_Station-Platform_2.jpg",
+   "stage": "verify"
   },
   "st08043": {
    "attempts": 3,
@@ -4862,6 +7449,20 @@
    "slug": "st08068",
    "stage": "manual_qa"
   },
+  "st08088": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "津久田",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st02937"
+   ],
+   "slug": "st08088",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Tsukuda_station_platform_aug_12_2014.jpg",
+   "stage": "verify"
+  },
   "st08156": {
    "attempts": 3,
    "below_spec": false,
@@ -4877,6 +7478,34 @@
    "reject_dist": {},
    "slug": "st08156",
    "stage": "qa_pipeline_330"
+  },
+  "st08186": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "西田井",
+   "name_en": "Nishidai",
+   "reasons": [
+    "duplicate_sha256_with:st03196"
+   ],
+   "slug": "st08186",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Toei-subway-I24-Nishidai-station-platform-20191220-141338.jpg",
+   "stage": "verify"
+  },
+  "st08213": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "黒松",
+   "name_en": "Kuromatsu",
+   "reasons": [
+    "duplicate_sha256_with:st08212"
+   ],
+   "slug": "st08213",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Sendai-subway-N03-Kuromatsu-station-platform-20160727-105054.jpg",
+   "stage": "verify"
   },
   "st08242": {
    "attempts": 3,
@@ -4926,6 +7555,23 @@
    "slug": "st08279",
    "stage": "qa_pipeline_330"
   },
+  "st08280": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:13:22Z",
+   "last_attempt": "2026-11-05T21:13:22Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round8 staged review 标缺：真倉(舞鶴線)：/1 山坡停车场远景无站名、/2 蓝色抽象图形非站照",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st08280",
+   "stage": "ws15_final"
+  },
   "st08286": {
    "attempts": 3,
    "below_spec": false,
@@ -4941,6 +7587,16 @@
    "reject_dist": {},
    "slug": "st08286",
    "stage": "qa_pipeline_330"
+  },
+  "st08290": {
+   "attempts": 3,
+   "final_dead": true,
+   "last_attempt": "2026-11-05T22:10:47Z",
+   "note": "ws15 round1: 无 GPS<=2km 或可回传候选",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "stage": "ws15_refetch"
   },
   "st08300": {
    "attempts": 3,
@@ -4958,6 +7614,20 @@
    "slug": "st08300",
    "stage": "qa_pipeline_330"
   },
+  "st08327": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "東山",
+   "name_en": "Higashiyama",
+   "reasons": [
+    "duplicate_sha256_with:st08326"
+   ],
+   "slug": "st08327",
+   "source_page": "https://commons.wikimedia.org/wiki/File:TRA_Dongshan_Station_Platform2016-8.JPG",
+   "stage": "verify"
+  },
   "st08346": {
    "attempts": 3,
    "below_spec": false,
@@ -4973,6 +7643,37 @@
    "reject_dist": {},
    "slug": "st08346",
    "stage": "qa_pipeline_330"
+  },
+  "st08361": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大屋",
+   "name_en": "Ōya",
+   "reasons": [
+    "duplicate_sha256_with:st07212"
+   ],
+   "slug": "st08361",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Shinano_Railway_Oya_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st08405": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:13:22Z",
+   "last_attempt": "2026-11-05T21:13:22Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round8 staged review 标缺：林(城端線)：/1 候车亭竖牌为「ワンマン乗車口」非站名、/2/3 为葡萄牙里斯本 CP Oriente 站(异国, Saída 出口牌)",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st08405",
+   "stage": "ws15_final"
   },
   "st08431": {
    "attempts": 3,
@@ -5022,6 +7723,20 @@
    "slug": "st08436",
    "stage": "qa_pipeline_330"
   },
+  "st08465": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "春日町",
+   "name_en": "Kasugachō",
+   "reasons": [
+    "duplicate_sha256_with:st04467"
+   ],
+   "slug": "st08465",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Nerima-kasugacho-STA_Platform1-2.jpg",
+   "stage": "verify"
+  },
   "st08470": {
    "attempts": 3,
    "below_spec": false,
@@ -5037,6 +7752,62 @@
    "reject_dist": {},
    "slug": "st08470",
    "stage": "qa_pipeline_330"
+  },
+  "st08478": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "甲斐大泉",
+   "name_en": "Kai-Ōizumi",
+   "reasons": [
+    "duplicate_sha256_with:st03648"
+   ],
+   "slug": "st08478",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Koumi_Line_Kai-Oizumi_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st08492": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "中佐都",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st07950"
+   ],
+   "slug": "st08492",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Koumi_Line_Nakasato_Station_Platform.jpg",
+   "stage": "verify"
+  },
+  "st08501": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "海瀬",
+   "name_en": null,
+   "reasons": [
+    "duplicate_sha256_with:st07951"
+   ],
+   "slug": "st08501",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Koumi_Line_Kaize_Station_Waiting_room_Apperance.jpg",
+   "stage": "verify"
+  },
+  "st08509": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "依那古",
+   "name_en": "Inako",
+   "reasons": [
+    "duplicate_sha256_with:st07357"
+   ],
+   "slug": "st08509",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Central_Inako_Station_Waiting_room.jpg",
+   "stage": "verify"
   },
   "st08540": {
    "attempts": 3,
@@ -5054,6 +7825,107 @@
    "slug": "st08540",
    "stage": "qa_pipeline_330"
   },
+  "st08552": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "大崎広小路",
+   "name_en": "Ōsakihirokōji",
+   "reasons": [
+    "duplicate_sha256_with:st02801"
+   ],
+   "slug": "st08552",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Tokyu-osaki-hirokoji-station-platform.jpg",
+   "stage": "verify"
+  },
+  "st08574": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "岩槻",
+   "name_en": "Iwatsuki",
+   "reasons": [
+    "duplicate_sha256_with:st08573"
+   ],
+   "slug": "st08574",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Tobu-railway-TD07-Higashi-iwatsuki-station-platform-20190720-153112.jpg",
+   "stage": "verify"
+  },
+  "st08625": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "愛野",
+   "name_en": "Aino",
+   "reasons": [
+    "duplicate_sha256_with:st03265"
+   ],
+   "slug": "st08625",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Central_Aino_Station_Platform.jpg",
+   "stage": "verify"
+  },
+  "st08626": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "愛野",
+   "name_en": "Aino",
+   "reasons": [
+    "duplicate_sha256_with:st03265"
+   ],
+   "slug": "st08626",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Central_Aino_Station_Platform.jpg",
+   "stage": "verify"
+  },
+  "st08653": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "北永山",
+   "name_en": "Kita-Nagayama",
+   "reasons": [
+    "duplicate_sha256_with:st02490"
+   ],
+   "slug": "st08653",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Soya-Main-Line_Kita-Nagayama_Station_Platform.jpg",
+   "stage": "verify"
+  },
+  "st08665": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "傘松",
+   "name_en": "Kasamatsu",
+   "reasons": [
+    "duplicate_sha256_with:st03061"
+   ],
+   "slug": "st08665",
+   "source_page": "https://commons.wikimedia.org/wiki/File:MT-Kasamatsu_Station-Building.jpg",
+   "stage": "verify"
+  },
+  "st08679": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T17:34:12Z",
+   "last_attempt": "2026-11-05T18:18:01Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 rounds1-4 标缺：朝阳(長野)：仅三重县朝日站(县不符)x3",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Nagaden Asahi-STA Platform.jpg",
+   "slug": "st08679",
+   "stage": "ws15_final"
+  },
   "st08692": {
    "attempts": 3,
    "below_spec": false,
@@ -5069,6 +7941,20 @@
    "reject_dist": {},
    "slug": "st08692",
    "stage": "qa_pipeline_330"
+  },
+  "st08695": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "益生",
+   "name_en": "Masuo",
+   "reasons": [
+    "duplicate_sha256_with:st08559"
+   ],
+   "slug": "st08695",
+   "source_page": "https://commons.wikimedia.org/wiki/File:KT-Masuo_Station-Building_1.jpg",
+   "stage": "verify"
   },
   "st08698": {
    "attempts": 3,
@@ -5102,6 +7988,37 @@
    "slug": "st08712",
    "stage": "manual_qa"
   },
+  "st08736": {
+   "attempts": 3,
+   "below_spec": false,
+   "final_dead": true,
+   "first_seen": "2026-11-05T21:13:22Z",
+   "last_attempt": "2026-11-05T21:13:22Z",
+   "name": null,
+   "name_en": null,
+   "note": "ws15 round8 staged review 标缺：向瀬上(阿武隈急行線)：唯一候选为高架站房/跨线桥远景，无站名标识",
+   "reasons": {
+    "no_verifiable_candidate": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": null,
+   "slug": "st08736",
+   "stage": "ws15_final"
+  },
+  "st08755": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "ひばりが丘",
+   "name_en": "Hibarigaoka",
+   "reasons": [
+    "duplicate_sha256_with:st04379"
+   ],
+   "slug": "st08755",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Seibu_Railway_Hibarigaoka_Station_Platform_1・2.jpg",
+   "stage": "verify"
+  },
   "st08792": {
    "attempts": 3,
    "below_spec": false,
@@ -5133,6 +8050,20 @@
    "reject_dist": {},
    "slug": "st08794",
    "stage": "qa_pipeline_330"
+  },
+  "st08804": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "森山",
+   "name_en": "Moriyama",
+   "reasons": [
+    "duplicate_sha256_with:st06023"
+   ],
+   "slug": "st08804",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Suigun_Line_Iwaki-Moriyama_Station_building.jpg",
+   "stage": "verify"
   },
   "st08818": {
    "attempts": 3,
@@ -5230,6 +8161,34 @@
    "slug": "st08841",
    "stage": "qa_pipeline_330"
   },
+  "st08869": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "宿河原",
+   "name_en": "Shukugawara",
+   "reasons": [
+    "duplicate_sha256_with:st07919"
+   ],
+   "slug": "st08869",
+   "source_page": "https://commons.wikimedia.org/wiki/File:JR_Nambu-Line_Shukugawara_Station_building.jpg",
+   "stage": "verify"
+  },
+  "st08889": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "山東",
+   "name_en": "Sandō",
+   "reasons": [
+    "duplicate_sha256_with:st03136"
+   ],
+   "slug": "st08889",
+   "source_page": "https://commons.wikimedia.org/wiki/File:TokyoMetro-F14-Kita-sando-station-platform-20170827-072042.jpg",
+   "stage": "verify"
+  },
   "st08891": {
    "attempts": 3,
    "below_spec": false,
@@ -5246,727 +8205,20 @@
    "slug": "st08891",
    "stage": "manual_qa"
   },
-  "st02193": {
-   "slug": "st02193",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Platform of Daizenji Station.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T17:04:52Z",
-   "last_attempt": "2026-11-05T18:18:01Z",
-   "note": "ws15 rounds1-4 标缺：三潴(福岡)：仅水间铁道水间观音駅(他线)与消防署(非站景)，无本站站景"
-  },
-  "st02201": {
-   "slug": "st02201",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Platform of Kitano Station (Nishitetsu Amagi Line) 1.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T17:04:52Z",
-   "last_attempt": "2026-11-05T17:13:48Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st02232": {
-   "slug": "st02232",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Platform of Nishitetsu-Yanagawa Station 3.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T17:04:52Z",
-   "last_attempt": "2026-11-05T18:18:01Z",
-   "note": "ws15 rounds1-4 标缺：徳益(福岡)：仅无站名牌站台照，不满足站牌 OCR/目检口径"
-  },
-  "st02517": {
-   "slug": "st02517",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Kawaji-eki.JPG",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T17:34:12Z",
-   "last_attempt": "2026-11-05T18:18:01Z",
-   "note": "ws15 rounds1-4 标缺：川路(長野)：仅上海铜川路(异国)与无站名牌 Kawaji-eki 照"
-  },
-  "st02777": {
-   "slug": "st02777",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Seba-Sta-Platform.JPG",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T17:34:12Z",
-   "last_attempt": "2026-11-05T18:18:01Z",
-   "note": "ws15 rounds1-4 标缺：洗馬(長野)：仅无站名牌 Seba 站房照与木曾路册页/旧画"
-  },
-  "st04955": {
-   "slug": "st04955",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Kusurimizu Station platform in 20150718.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T17:34:12Z",
-   "last_attempt": "2026-11-05T18:18:01Z",
-   "note": "ws15 rounds1-4 标缺：药水(奈良)：仅首尔药水站(异国)x3 与军舰照(非站景)"
-  },
-  "st06754": {
-   "slug": "st06754",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Kotobuki-STA-Gate.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T17:34:12Z",
-   "last_attempt": "2026-11-05T18:18:01Z",
-   "note": "ws15 rounds1-4 标缺：寿(山梨)：仅北京慈寿寺(异国)x2 与无站名牌富士急寿照"
-  },
-  "st07703": {
-   "slug": "st07703",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Oritate Station 001.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T17:34:12Z",
-   "last_attempt": "2026-11-05T18:18:01Z",
-   "note": "ws15 rounds1-4 标缺：下立(富山)：仅上海下沙(异国)与折立站/报纸扫描件(他站/非站景)"
-  },
-  "st08679": {
-   "slug": "st08679",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Nagaden Asahi-STA Platform.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T17:34:12Z",
-   "last_attempt": "2026-11-05T18:18:01Z",
-   "note": "ws15 rounds1-4 标缺：朝阳(長野)：仅三重县朝日站(县不符)x3"
-  },
-  "st00716": {
-   "slug": "st00716",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:北九州モノレール - panoramio (4).jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T18:44:53Z",
-   "last_attempt": "2026-11-05T19:57:39Z",
-   "note": "ws15 round6 staged review 标缺：北方(福岡小倉線)：候选为美濃北方(岐阜,废站)站舍/北方警察署(岐阜)/巴士总站，同名异县+非站景，无本站合格候选"
-  },
-  "st02692": {
-   "slug": "st02692",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T18:56:59Z",
-   "last_attempt": "2026-11-05T18:56:59Z",
-   "note": "ws15 rounds1-4 标缺：今津(大分日豊本線)：候选为阪神今津(兵庫,同名异线,邻站 Kusugawa/Hanshin-kokudo 证)，无本站合格候选"
-  },
-  "st04819": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T20:39:11Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st04808": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T20:39:22Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st04604": {
-   "slug": "st04604",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T19:57:39Z",
-   "last_attempt": "2026-11-05T19:57:39Z",
-   "note": "ws15 round6 staged review 标缺：山田西町(高知土赞线)：唯一候选为无站名标识的无人站台照，站牌 OCR/目检未见站名不算通过，候选枯竭"
-  },
-  "st06696": {
-   "slug": "st06696",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T19:57:39Z",
-   "last_attempt": "2026-11-05T19:57:39Z",
-   "note": "ws15 round6 staged review 标缺：美濃川合(岐阜太多线)：唯一候选为发电站(Minokawai power station)非站景，候选枯竭"
-  },
-  "st07039": {
-   "slug": "st07039",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T19:57:39Z",
-   "last_attempt": "2026-11-05T19:57:39Z",
-   "note": "ws15 round6 staged review 标缺：吉富(福岡)：候选 2 张均为吉富町社区巴士/大交北部巴士，非站景(巴士)，候选枯竭"
-  },
-  "st06506": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T21:23:17Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st07946": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T21:23:26Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st07834": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T21:23:34Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st03225": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T21:23:45Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st03765": {
-   "slug": "st03765",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T20:29:23Z",
-   "last_attempt": "2026-11-05T20:29:23Z",
-   "note": "ws15 round7 staged review 标缺：鹿児(高知伊野線)：候选 2 张均为巴士照(Kako-bus,OCR 见西加古川駅/姫路=兵库区域)，非站景+错区域"
-  },
-  "st04575": {
-   "slug": "st04575",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T20:29:23Z",
-   "last_attempt": "2026-11-05T20:29:23Z",
-   "note": "ws15 round7 staged review 标缺：高水(山口)：候选标题均为 Ikusabata Station(他站)，标题站名闸门拒；OCR/目检无本站名"
-  },
-  "st05365": {
-   "slug": "st05365",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T20:29:23Z",
-   "last_attempt": "2026-11-05T20:29:23Z",
-   "note": "ws15 round7 staged review 标缺：安芸長浜(広島呉線)：唯一候选为圆顶站房远景无站名标识，站牌 OCR/目检未见站名不算通过"
-  },
-  "st06253": {
-   "slug": "st06253",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T20:29:23Z",
-   "last_attempt": "2026-11-05T20:29:23Z",
-   "note": "ws15 round7 staged review 标缺：青野ケ原(兵庫加古川線)：候选 2 张(Former Aonogahara stn)站牌均不清晰可读，不算通过"
-  },
-  "st07707": {
-   "slug": "st07707",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T20:29:23Z",
-   "last_attempt": "2026-11-05T20:29:23Z",
-   "note": "ws15 round7 staged review 标缺：西滑川(富山地鉄本線)：唯一候选为历史黑白扫描照，仅图外 caption 有站名，场景内无站牌"
-  },
-  "st07669": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T21:55:50Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st07649": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T21:55:58Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st07002": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T21:56:07Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st03646": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T21:56:15Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st03782": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T21:56:24Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st03600": {
-   "slug": "st03600",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:View near Ikoinomura Station.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:11:42Z",
-   "last_attempt": "2026-11-05T21:23:09Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st05977": {
-   "slug": "st05977",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:13:22Z",
-   "last_attempt": "2026-11-05T21:13:22Z",
-   "note": "ws15 round8 staged review 标缺：東開聞(指宿枕崎線)：唯一候选为列车田野远景(标题東開聞駅列車)，站名不可读，非站景主体"
-  },
-  "st07712": {
-   "slug": "st07712",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:13:22Z",
-   "last_attempt": "2026-11-05T21:13:22Z",
-   "note": "ws15 round8 staged review 标缺：早月加積(富山地鉄本線)：3 候选均无站名(/1 警察官重点パトロール駅横幅、/2 2番線のりば吊牌、/3 站房+重点バス停留所横幅)"
-  },
-  "st07964": {
-   "slug": "st07964",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:13:22Z",
-   "last_attempt": "2026-11-05T21:13:22Z",
-   "note": "ws15 round8 staged review 标缺：中田平(松浦鉄道西九州線)：候选为站房远景+里田原遺跡/歴史民俗資料館导览牌，场景内无站名标识"
-  },
-  "st08280": {
-   "slug": "st08280",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:13:22Z",
-   "last_attempt": "2026-11-05T21:13:22Z",
-   "note": "ws15 round8 staged review 标缺：真倉(舞鶴線)：/1 山坡停车场远景无站名、/2 蓝色抽象图形非站照"
-  },
-  "st08405": {
-   "slug": "st08405",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:13:22Z",
-   "last_attempt": "2026-11-05T21:13:22Z",
-   "note": "ws15 round8 staged review 标缺：林(城端線)：/1 候车亭竖牌为「ワンマン乗車口」非站名、/2/3 为葡萄牙里斯本 CP Oriente 站(异国, Saída 出口牌)"
-  },
-  "st08736": {
-   "slug": "st08736",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:13:22Z",
-   "last_attempt": "2026-11-05T21:13:22Z",
-   "note": "ws15 round8 staged review 标缺：向瀬上(阿武隈急行線)：唯一候选为高架站房/跨线桥远景，无站名标识"
-  },
-  "st08290": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T22:10:47Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st07138": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T22:10:55Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st04561": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T22:11:03Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st06053": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T22:11:14Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st04585": {
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "attempts": 3,
-   "final_dead": true,
-   "last_attempt": "2026-11-05T22:11:22Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st01628": {
-   "slug": "st01628",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:Komachi-21 running near Shoden Station.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:47:07Z",
-   "last_attempt": "2026-11-05T22:04:19Z",
-   "note": "ws15 round10 staged review 标缺：生田(秋田県)：round10 暂存 3 候选均为神奈川生田(小田急小田原線站台/小田急生田駅牌目检确认/JR 生田)，同名异线；此前 round9 GPS 接受项为新干线行驶照已撤(REVERT7)；候选池枯竭"
-  },
-  "st04564": {
-   "slug": "st04564",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_refetch",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": "File:椋野駅 - panoramio.jpg",
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:47:07Z",
-   "last_attempt": "2026-11-05T21:55:42Z",
-   "note": "ws15 round1: 无 GPS<=2km 或可回传候选"
-  },
-  "st03280": {
-   "slug": "st03280",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:48:03Z",
-   "last_attempt": "2026-11-05T21:48:03Z",
-   "note": "ws15 round9 staged review 标缺：小杉(富山上滝線)：2 候选均为 JR 武蔵小杉(神奈川)新南改札/横須賀線口，异县错挂；OCR「小杉」为武蔵小杉子串误命中"
-  },
-  "st04602": {
-   "slug": "st04602",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:48:03Z",
-   "last_attempt": "2026-11-05T21:48:03Z",
-   "note": "ws15 round9 staged review 标缺：六条(ハピラインふくい線)：候选=车照(Toyota 86)/名古屋市六条泵站/札幌市電西線六条(北海道同名异线)，无本站候选"
-  },
-  "st04643": {
-   "slug": "st04643",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:48:03Z",
-   "last_attempt": "2026-11-05T21:48:03Z",
-   "note": "ws15 round9 staged review 标缺：土佐岩原(土讃線)：唯一候选为 Kiha58 列车站台停靠主体照，无站名牌可读，非站景主体"
-  },
-  "st06057": {
-   "slug": "st06057",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:48:03Z",
-   "last_attempt": "2026-11-05T21:48:03Z",
-   "note": "ws15 round9 staged review 标缺：鶴丸(吉都線)：唯一候选为 NHK-JOG-FM 鹿児(鶴丸)电波塔照，非站景"
-  },
-  "st06247": {
-   "slug": "st06247",
-   "name": null,
-   "name_en": null,
-   "stage": "ws15_final",
-   "reasons": {
-    "no_verifiable_candidate": 1
-   },
-   "reject_dist": {},
-   "removed_source_title": null,
-   "below_spec": false,
-   "attempts": 3,
-   "final_dead": true,
-   "first_seen": "2026-11-05T21:48:03Z",
-   "last_attempt": "2026-11-05T21:48:03Z",
-   "note": "ws15 round9 staged review 标缺：新西脇(加古川線)：唯一候选站房竖牌为「警察官駐在所」(裁切放大确认)，场景内无站名标识"
+  "st08893": {
+   "attempts": 0,
+   "final_dead": false,
+   "first_seen": "2026-11-05T22:53:59Z",
+   "last_attempt": "2026-11-05T22:53:59Z",
+   "name": "貴志",
+   "name_en": "Kishi",
+   "reasons": [
+    "duplicate_sha256_with:st04938"
+   ],
+   "slug": "st08893",
+   "source_page": "https://commons.wikimedia.org/wiki/File:Kishi_Station_building_(15008057648).jpg",
+   "stage": "verify"
   }
  },
- "updated_at": "2026-11-05T22:11:23Z"
+ "updated_at": "2026-11-05T22:53:59Z"
 }
