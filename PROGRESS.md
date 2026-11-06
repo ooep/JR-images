@@ -1306,3 +1306,9 @@
 - st07849 维持现图 below_spec_confirmed：最高 isc 6.69<7.73
 - st07896 维持现图 below_spec_confirmed：最高 isc 6.63<8.91（候选为名铁巴士站牌拒）
 - runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 23。
+
+
+## ws17 below-spec replace WS17-B27 — 2026-11-06T13:42:10Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=1 staged=20 confirmed=4 skipped=0
+- reject_dist={"resolution_low_lt_1600": 96, "mime_unsupported": 131, "same_as_current": 25, "license_unclear": 3, "quality_reject_low_color": 11, "title_names_other_station": 48, "duplicate_title": 5, "hard_excluded": 14, "title_non_station_scene": 5, "resolution_not_upgrade": 11, "no_author_metadata": 3, "oversize_gt_25mb": 8}
