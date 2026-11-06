@@ -609,3 +609,15 @@
 - queue: 8 站（review/below_spec 高分替换）
 - replaced=0 staged=8 confirmed=0 skipped=0
 - reject_dist={"resolution_low_lt_1600": 36, "hard_excluded": 38, "title_non_station_scene": 5, "same_as_current": 8, "quality_reject_low_color": 5, "title_names_other_station": 13, "resolution_not_upgrade": 10}
+
+
+## ws17 local accept B06 — 2026-11-06T04:58:42Z
+- st01788 维持现图 below_spec_confirmed：无站名命中且最高 6.59<8.97
+- st03848 维持现图 below_spec_confirmed：命中 河内山本 但 6.34<8.64 分差不足
+- st06558 维持现图 below_spec_confirmed：无站名命中且最高 5.68<8.76
+- st06705 维持现图 below_spec_confirmed：命中 南千里 但 6.62<8.66 分差不足
+- st06717 维持现图 below_spec_confirmed：无站名命中且最高 6.78<8.59
+- st08112 维持现图 below_spec_confirmed：无站名命中且最高 6.26<8.39
+- st08533 维持现图 below_spec_confirmed：无站名命中且最高 6.17<9.16
+- st08727 维持现图 below_spec_confirmed：无站名命中且最高 6.79<8.56
+- runner 42164807440 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 8。
