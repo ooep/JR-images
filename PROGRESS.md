@@ -1228,3 +1228,9 @@
 - st07831 维持现图 below_spec_confirmed：isc 6.91<7.98（巴士站牌）
 - st08851 维持现图 below_spec_confirmed：isc 6.02<6.24
 - runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 21。
+
+
+## ws17 below-spec replace WS17-B25 — 2026-11-06T12:19:21Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=1 staged=24 confirmed=0 skipped=0
+- reject_dist={"same_as_current": 24, "hard_excluded": 65, "resolution_low_lt_1600": 121, "title_names_other_station": 136, "quality_reject_low_color": 19, "no_author_metadata": 9, "duplicate_title": 8, "title_non_station_scene": 14, "mime_unsupported": 17, "resolution_not_upgrade": 13, "license_unclear": 1}
