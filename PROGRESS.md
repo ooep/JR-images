@@ -766,3 +766,9 @@
 - st01926 维持现图 below_spec_confirmed：命中 上中里 但最高 6.50<8.76
 - st06338 维持现图 below_spec_confirmed：无站名命中且最高 4.52<8.82
 - runner 42173343422 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 24。
+
+
+## ws17 below-spec replace WS17-B11 — 2026-11-06T06:37:52Z
+- queue: 7 站（review/below_spec 高分替换）
+- replaced=1 staged=6 confirmed=0 skipped=0
+- reject_dist={"resolution_low_lt_1600": 17, "mime_unsupported": 8, "same_as_current": 7, "quality_reject_low_color": 9, "title_names_other_station": 23, "duplicate_title": 2, "license_unclear": 2, "hard_excluded": 12, "resolution_not_upgrade": 7, "title_non_station_scene": 3}
