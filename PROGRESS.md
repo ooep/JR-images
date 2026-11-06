@@ -809,3 +809,9 @@
 - st08648 维持现图 below_spec_confirmed：命中系北剣淵子串误命中且最高 5.80<6.97
 - st02020 维持现图 below_spec_confirmed：命中 武佐 但最高 4.80<6.95
 - runner 42176125711 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 17。
+
+
+## ws17 below-spec replace WS17-B13 — 2026-11-06T07:10:43Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=25 confirmed=0 skipped=0
+- reject_dist={"same_as_current": 25, "license_unclear": 16, "quality_reject_low_color": 21, "hard_excluded": 31, "title_names_other_station": 64, "resolution_low_lt_1600": 60, "mime_unsupported": 78, "title_non_station_scene": 8, "resolution_not_upgrade": 4, "duplicate_title": 5, "oversize_gt_25mb": 1}
