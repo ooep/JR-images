@@ -1088,3 +1088,9 @@
 ## ws17 revert B20 st00973+st04398 — 2026-11-06T09:58:11Z
 - runner ed3d47d0…(B20=commit ed3d47d0 前一次 runner) 自动替换 st00973 根岸（罐车/货车主体）与 st04398 新高島（荒地人行桥航拍、无站体无站名）→ 站证不成立/非站景，撤除；
 - 恢复替换前 photo/license blob 与 state/index 条目（review 态保留）。
+
+
+## ws17 below-spec replace WS17-B21 — 2026-11-06T10:09:12Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=24 confirmed=1 skipped=0
+- reject_dist={"resolution_low_lt_1600": 132, "hard_excluded": 43, "same_as_current": 25, "resolution_not_upgrade": 23, "title_names_other_station": 30, "no_author_metadata": 12, "mime_unsupported": 48, "title_non_station_scene": 13, "quality_reject_low_color": 8, "duplicate_title": 4, "license_unclear": 6}
