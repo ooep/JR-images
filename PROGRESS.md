@@ -1336,3 +1336,9 @@
 - st08266 维持现图 below_spec_confirmed：最高 isc 5.88<6.46
 - st08666 维持现图 below_spec_confirmed：isc 6.49>6.21 但候选为缆车特写无「多宝塔」站名拒
 - runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 2 / 标 below_spec_confirmed 18。
+
+
+## ws17 below-spec replace WS17-B28 — 2026-11-06T14:16:07Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=1 staged=24 confirmed=0 skipped=0
+- reject_dist={"title_names_other_station": 44, "hard_excluded": 26, "resolution_low_lt_1600": 99, "same_as_current": 25, "resolution_not_upgrade": 21, "license_unclear": 8, "mime_unsupported": 52, "quality_reject_low_color": 16, "no_author_metadata": 8, "title_non_station_scene": 25, "duplicate_title": 1}
