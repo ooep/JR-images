@@ -82,7 +82,8 @@ jobs:
 
           NON_SCENE_RE = re.compile(
               r'bridge|EMU\b|\btrain\b|depot|garage|車庫|検車区|frigate|navy|\bship\b|'
-              r'flood|damage|disaster|震災|水害|土砂|dosya|車両基地|橋梁', re.I)
+              r'flood|damage|disaster|震災|水害|土砂|dosya|車両基地|橋梁|'
+              r'toilet|restroom|トイレ|化粧室|便所', re.I)
           RUNNING_NEAR_RE = re.compile(
               r'running near|passing near|passes near|passed near|付近を走行|付近を通過', re.I)
 
