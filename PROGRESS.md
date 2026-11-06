@@ -1398,3 +1398,9 @@
 - st07685 维持现图 below_spec_confirmed：isc 6.75>5.44 但候选为 ATTC2017 乒乓球赛人名照非站景拒
 - st08275 维持现图 below_spec_confirmed：最高 isc 6.56<8.07
 - runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 8。
+
+
+## ws17 below-spec replace WS17-B30 — 2026-11-06T15:27:07Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=21 confirmed=4 skipped=0
+- reject_dist={"title_non_station_scene": 9, "title_names_other_station": 76, "resolution_low_lt_1600": 74, "duplicate_title": 10, "hard_excluded": 29, "same_as_current": 25, "quality_reject_low_color": 13, "resolution_not_upgrade": 5, "quality_reject_white_screenshot": 1, "mime_unsupported": 99, "no_author_metadata": 3, "license_unclear": 2}
