@@ -1474,3 +1474,30 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=23 confirmed=2 skipped=0
 - reject_dist={"resolution_low_lt_1600": 60, "resolution_not_upgrade": 22, "same_as_current": 25, "mime_unsupported": 118, "title_names_other_station": 120, "title_non_station_scene": 2, "duplicate_title": 6, "hard_excluded": 13, "quality_reject_low_color": 15, "license_forbidden": 2, "license_unclear": 3}
+
+
+## ws17 local accept B32 — 2026-11-06T16:42:14Z
+- st05349 新井口 ← File:Shin-Inokuchi Station 20260613.jpg (done, score 7.11→7.18)
+- st00128 维持现图 below_spec_confirmed：最高 isc 5.91<6.24
+- st00180 维持现图 below_spec_confirmed：最高 isc 6.53<6.80
+- st03262 维持现图 below_spec_confirmed：最高 isc 6.42<6.73
+- st03500 维持现图 below_spec_confirmed：isc 7.47>6.97 但候选为瑞典 Hultsfred 站异国拒
+- st03530 维持现图 below_spec_confirmed：最高 isc 7.41<7.62
+- st03532 维持现图 below_spec_confirmed：最高 isc 6.73<6.86
+- st03533 维持现图 below_spec_confirmed：最高 isc 6.94<7.62
+- st04333 维持现图 below_spec_confirmed：最高 isc 5.08<6.07
+- st04334 维持现图 below_spec_confirmed：最高 isc 5.72<6.11
+- st04343 维持现图 below_spec_confirmed：最高 isc 7.15<7.55
+- st04344 维持现图 below_spec_confirmed：最高 isc 6.80<6.97
+- st05123 维持现图 below_spec_confirmed：最高 isc 7.02<7.11
+- st05127 维持现图 below_spec_confirmed：最高 isc 7.17<7.85
+- st05128 维持现图 below_spec_confirmed：最高 isc 7.39<7.57
+- st05131 维持现图 below_spec_confirmed：isc 7.21>6.33 但候选为三重桑名消防署/警察署非站景拒
+- st05339 维持现图 below_spec_confirmed：最高 isc 7.15<7.18
+- st05353 维持现图 below_spec_confirmed：最高 isc 6.54<7.05
+- st05919 维持现图 below_spec_confirmed：最高 isc 6.58<6.97
+- st07989 维持现图 below_spec_confirmed：最高 isc 7.20<7.35
+- st08003 维持现图 below_spec_confirmed：最高 isc 6.32<6.68
+- st08006 维持现图 below_spec_confirmed：最高 isc 6.79<6.99
+- st08012 维持现图 below_spec_confirmed：最高 isc 7.32<7.40
+- runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 1 / 标 below_spec_confirmed 22。
