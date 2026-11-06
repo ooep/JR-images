@@ -534,3 +534,9 @@
 - st08366 维持现图 below_spec_confirmed：无站名命中（江之电标题 runner 已拒）
 - st08451 维持现图 below_spec_confirmed：候选为 JR225 系列车照且分不足
 - runner 42159311966 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 23。
+
+
+## ws17 below-spec replace WS17-B04 — 2026-11-06T04:24:42Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=1 staged=24 confirmed=0 skipped=0
+- reject_dist={"title_names_other_station": 128, "resolution_low_lt_1600": 84, "same_as_current": 25, "hard_excluded": 57, "title_non_station_scene": 22, "quality_reject_low_color": 16, "resolution_not_upgrade": 57, "duplicate_title": 9, "no_author_metadata": 5, "mime_unsupported": 10, "near_duplicate": 1, "oversize_gt_25mb": 7}
