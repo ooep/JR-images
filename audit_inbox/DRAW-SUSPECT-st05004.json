@@ -1,0 +1,13 @@
+{
+ "station": "st05004",
+ "record_name": "自衛隊前",
+ "record_lines": [
+  "札幌市営地下鉄南北線"
+ ],
+ "source": "stations/st05004/photo.jpg",
+ "issue": "operator_mismatch: 源图=MEITETSU 守山自衛隊前駅(名鉄ロゴ+電車pictogram+踏切)、记录=札幌市営地下鉄自衛隊前",
+ "evidence": "thumb 目检：MEITETSUロゴ+守山自衛隊前駅名牌+踏切信号",
+ "action": "skip 不画",
+ "date": "2026-11-06",
+ "by": "draw-line"
+}
