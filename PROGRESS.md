@@ -850,3 +850,9 @@
 - st02732 高砂(兵庫・山陽電鉄) 撤除误挂照 File:JR Hakodate-Main-Line Takasago Station building (South Exit).jpg（站房 JR logo+「高砂駅」=JR 北海道函館本線高砂）；
 - 与 st02733(北海道) 同 sha256 116ae593（B14 verify 批内 dup 闸门拦截暴露）；
 - st02733 现图正确保留；st02732 置 missing 回重抓队列（dead stage=mismatch_removal）。
+
+
+## ws17 below-spec replace WS17-B14 — 2026-11-06T07:41:57Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=25 confirmed=0 skipped=0
+- reject_dist={"same_as_current": 25, "license_unclear": 31, "resolution_low_lt_1600": 87, "title_names_other_station": 40, "title_non_station_scene": 32, "resolution_not_upgrade": 17, "mime_unsupported": 44, "oversize_gt_25mb": 4, "no_author_metadata": 3, "hard_excluded": 10, "quality_reject_low_color": 17, "duplicate_title": 2, "license_forbidden": 3}
