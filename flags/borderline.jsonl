@@ -61,3 +61,6 @@
 {"station_id": "st03988", "path": "stations/st03988/photo.jpg", "type": "borderline_skip", "evidence": "源图=駅名標close-upが画面全体（こんぶもり/昆布盛/Kombumori+緑矢印帯+隣駅）、駅景なし；st01966 先例に従い skip", "date": "2026-11-06"}
 {"station_id": "st04258", "path": "stations/st04258/photo.jpg", "type": "borderline_skip", "evidence": "源图=発車案内ボード+階段close-upが画面全体（今度の発車は1番/2番+LED+時計+番線標）、駅景なし；st01966/st03988 先例に従い skip", "date": "2026-11-06"}
 {"station_id": "st04264", "path": "stations/st04264/photo.jpg", "type": "borderline_skip", "evidence": "源图主体=砂利駐車場+駐車列、高架ホームは遠景背景のみ；st01884 先例に従い skip", "date": "2026-11-06"}
+{"station_id": "st04284", "path": "stations/st04284/photo.jpg", "type": "borderline_skip", "evidence": "源图主体=站名標close-up全幅(なよろ/W48駅番号環/隣站名)、无站景；st02423 先例に従い skip", "date": "2026-11-06"}
+{"station_id": "st05002", "path": "stations/st05002/photo.jpg", "type": "borderline_skip", "evidence": "源图主体=站名標close-up全幅(N13/南平岸/箭头/隣站名)、无站景；st04284 先例に従い skip", "date": "2026-11-06"}
+{"station_id": "st05003", "path": "stations/st05003/photo.jpg", "type": "borderline_skip", "evidence": "源图主体=站名標close-up全幅(N14/澄川/箭头/隣站名)、无站景；st04284 先例に従い skip", "date": "2026-11-06"}

@@ -1,0 +1,13 @@
+{
+ "station": "st05001",
+ "record_name": "中の島",
+ "record_lines": [
+  "札幌市営地下鉄南北線"
+ ],
+ "source": "stations/st05001/photo.jpg",
+ "issue": "operator/scene mismatch: 源图=JR中野島駅(JR logo+地上站房+时钟塔+道口)、记录=市営地下鉄南北線中の島(地下站)",
+ "evidence": "thumb 目检：JRロゴ+中野島駅名牌+踏切信号機+地上站房",
+ "action": "skip 不画",
+ "date": "2026-11-06",
+ "by": "draw-line"
+}

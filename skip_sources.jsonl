@@ -48,3 +48,7 @@
 {"station_id": "st03970", "path": "stations/st03970/photo.jpg", "type": "borderline_skip", "evidence": "源图=枯草原の軌道分岐のみ、プラットフォーム/駅標/待合いずれも不入鏡；st01884 先例に従い skip", "date": "2026-11-06"}
 {"station_id": "st04247", "path": "stations/st04247/photo.jpg", "type": "non_station", "evidence": "源图=山頂観測施設+雲海草原（石畳步道+ロープ柵+登山者）、鉄道要素全くなし；記録駒ケ岳（函館本線・麓駅）と不一致＝錯挂嫌疑；不画", "date": "2026-11-06"}
 {"station_id": "st04271", "path": "stations/st04271/photo.jpg", "type": "non_station", "evidence": "源图主体=石碑（縦書き刻字）+木製銘板、駅舎は遠景帯のみ；non_station skip（記念碑主体）", "date": "2026-11-06"}
+{"station_id": "st04291", "path": "stations/st04291/photo.jpg", "type": "non_station", "reason": "源图为食物特写(海胆丼+渍物拼盘)、无任何车站/铁道要素", "date": "2026-11-06"}
+{"station_id": "st04298", "path": "stations/st04298/photo.jpg", "type": "non_station", "reason": "源图主体=丸瀬市(丸瀬布)生涯学習館コミュニティ施設(塔楼文字可辨)、前景停车场、无铁道要素", "date": "2026-11-06"}
+{"station_id": "st04997", "path": "stations/st04997/photo.jpg", "type": "operator_mismatch", "reason": "源图=JR札幌站地面轨条场+JR Tower+DAIMARU logo(高视点俯瞰)、記録=札幌市営地下鉄南北線/東豊線「さっぽろ」(地下站)；场景/运营商不符", "date": "2026-11-06"}
+{"station_id": "st05001", "path": "stations/st05001/photo.jpg", "type": "operator_mismatch", "reason": "源图=JR中野島駅(JR logo+地上站房+道口信号)、記録=札幌市営地下鉄南北線中の島(地下站)；运营商/场景不符", "date": "2026-11-06"}
