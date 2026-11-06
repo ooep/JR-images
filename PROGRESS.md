@@ -691,3 +691,9 @@
 - st08374 维持现图 below_spec_confirmed：命中 武蔵新田 但 7.02<7.34
 - st08549 维持现图 below_spec_confirmed：命中 千鳥町 但 7.10<7.15
 - runner 42168299403 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 25。
+
+
+## ws17 below-spec replace WS17-B09 — 2026-11-06T05:49:42Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=25 confirmed=0 skipped=0
+- reject_dist={"same_as_current": 25, "hard_excluded": 44, "resolution_low_lt_1600": 151, "title_non_station_scene": 11, "resolution_not_upgrade": 14, "mime_unsupported": 46, "title_names_other_station": 110, "quality_reject_low_color": 17, "no_author_metadata": 9, "duplicate_title": 5, "license_unclear": 4}
