@@ -662,3 +662,32 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=25 confirmed=0 skipped=0
 - reject_dist={"resolution_low_lt_1600": 253, "same_as_current": 25, "mime_unsupported": 38, "hard_excluded": 32, "quality_reject_low_color": 17, "title_names_other_station": 65, "title_non_station_scene": 2, "duplicate_title": 3, "resolution_not_upgrade": 24, "quality_reject_blurry": 1, "no_author_metadata": 11, "oversize_gt_25mb": 1, "license_unclear": 1}
+
+
+## ws17 local accept B08 — 2026-11-06T05:40:13Z
+- st01533 维持现图 below_spec_confirmed：无站名命中且最高 7.14<7.16
+- st01536 维持现图 below_spec_confirmed：命中 千歳船橋 但 6.83<7.26
+- st01645 维持现图 below_spec_confirmed：命中 小田急永山 但 6.79<7.26
+- st01734 维持现图 below_spec_confirmed：命中 一橋学園 但 6.38<7.10
+- st01735 维持现图 below_spec_confirmed：无站名命中且最高 6.80<7.04
+- st01741 维持现图 below_spec_confirmed：命中 Musashiseki 但 6.64<7.00
+- st02203 维持现图 below_spec_confirmed：命中 北野 但 6.09<7.10
+- st02421 维持现图 below_spec_confirmed：命中 小宮 但 7.39<7.04
+- st02422 维持现图 below_spec_confirmed：命中 北八王子 但 6.52<7.34
+- st03154 维持现图 below_spec_confirmed：无站名命中且最高 6.85<6.96
+- st03174 维持现图 below_spec_confirmed：无站名命中且最高 5.92<7.05
+- st03697 维持现图 below_spec_confirmed：无站名命中且最高 5.68<6.97
+- st03698 维持现图 below_spec_confirmed：命中 堀切菖蒲園 但 6.84<7.35
+- st04538 维持现图 below_spec_confirmed：命中 西武園 但 6.45<7.40
+- st04903 维持现图 below_spec_confirmed：命中 南新宿 但 6.62<7.02
+- st05550 维持现图 below_spec_confirmed：命中 平山城址公園 但 6.36<7.03
+- st05552 维持现图 below_spec_confirmed：无站名命中且最高 5.59<7.17
+- st05558 维持现图 below_spec_confirmed：命中 武蔵野台 但 6.44<7.35
+- st07872 维持现图 below_spec_confirmed：命中 荒川七丁目 但 6.21<7.34
+- st07878 维持现图 below_spec_confirmed：命中 滝野川一丁目 但 5.93<6.94
+- st07881 维持现图 below_spec_confirmed：无站名命中且最高 6.65<6.96
+- st07883 维持现图 below_spec_confirmed：命中 大塚駅前 但 6.82<7.31
+- st08307 维持现图 below_spec_confirmed：无站名命中且最高 5.56<6.95
+- st08374 维持现图 below_spec_confirmed：命中 武蔵新田 但 7.02<7.34
+- st08549 维持现图 below_spec_confirmed：命中 千鳥町 但 7.10<7.15
+- runner 42168299403 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 25。
