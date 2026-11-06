@@ -1128,3 +1128,21 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=1 staged=14 confirmed=10 skipped=0
 - reject_dist={"same_as_current": 25, "resolution_low_lt_1600": 65, "title_non_station_scene": 22, "title_names_other_station": 73, "hard_excluded": 19, "duplicate_title": 3, "resolution_not_upgrade": 7, "quality_reject_low_color": 18, "mime_unsupported": 93, "no_author_metadata": 1}
+
+
+## ws17 local accept B22 — 2026-11-06T10:51:29Z
+- st05624 南久留米 ← File:Minami-Kurume Station building 05 JAN 2026.jpg (done, score 6.27→6.20)
+- st00458 维持现图 below_spec_confirmed：候选 NDL 古画/西铁车照非站景拒（4.50>3.86 但闸门不过）
+- st00663 维持现图 below_spec_confirmed：无站名命中且最高 6.52<6.53
+- st02187 维持现图 below_spec_confirmed：互通口/小学非站景 2.52<5.69
+- st02191 维持现图 below_spec_confirmed：候选滋贺/京都·丹后大溝异县拒；3.50<6.40
+- st02222 维持现图 below_spec_confirmed：候选中国马田墟/土耳其布尔萨/特拉维夫异国拒；3.62<6.56
+- st02229 维持现图 below_spec_confirmed：候选神奈川江之浦观景台异县/非站景拒；3.50<4.27
+- st02236 维持现图 below_spec_confirmed：古画非站景 3.28<4.14
+- st03025 维持现图 below_spec_confirmed：无站名命中且最高 4.13<6.26
+- st03367 维持现图 below_spec_confirmed：候选东京池尻大桥同名异县拒；2.38<4.14
+- st03488 维持现图 below_spec_confirmed：候选广岛深入山/新入院异县拒；3.58<6.35
+- st03492 维持现图 below_spec_confirmed：候选爱尔兰 Leixlip/瑞典 Akalla 异国拒；4.95<6.22
+- st04533 维持现图 below_spec_confirmed：无站名命中且最高 6.50<6.58
+- st04837 维持现图 below_spec_confirmed：无站名命中且最高 6.13<6.43
+- runner 42203866174 暂存候选全量 OCR(全名匹配)+逐图目检；接受 1 / 标 below_spec_confirmed 13。
