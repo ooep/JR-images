@@ -568,3 +568,9 @@
 - st08369 维持现图 below_spec_confirmed：候选 6.48<现 7.54 分差不足
 - st08408 维持现图 below_spec_confirmed：候选 6.17<现 7.45 分差不足
 - runner 42161614385 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 24。
+
+
+## ws17 below-spec replace WS17-B05 — 2026-11-06T04:43:53Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=25 confirmed=0 skipped=0
+- reject_dist={"resolution_not_upgrade": 51, "same_as_current": 25, "resolution_low_lt_1600": 94, "hard_excluded": 87, "quality_reject_low_color": 25, "no_author_metadata": 15, "title_names_other_station": 68, "title_non_station_scene": 19, "mime_unsupported": 9, "duplicate_title": 3, "oversize_gt_25mb": 2}
