@@ -1,0 +1,11 @@
+{
+ "unit": "DRAW-LINE",
+ "kind": "suspect_source",
+ "station_id": "st02020",
+ "path": "stations/st02020/photo.jpg",
+ "type": "operator_mismatch",
+ "evidence": "源图=電化架線+青い電車1301+暖帯植生；記録は非電化根室本線武佐",
+ "action": "重绘线 skip 不画，提请审计线核源归属",
+ "date": "2026-11-06",
+ "head": "8029fdcc"
+}
