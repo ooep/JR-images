@@ -782,3 +782,9 @@
 - st04230 维持现图 below_spec_confirmed：命中 有明 但最高 4.03<9.08
 - st03153 维持现图 below_spec_confirmed：命中 西小山 但最高 4.50<9.36
 - runner 42174930519 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 6。
+
+
+## ws17 below-spec replace WS17-B12 — 2026-11-06T06:52:09Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=2 staged=17 confirmed=6 skipped=0
+- reject_dist={"same_as_current": 25, "resolution_low_lt_1600": 92, "license_unclear": 16, "hard_excluded": 10, "mime_unsupported": 38, "title_names_other_station": 76, "quality_reject_low_color": 18, "title_non_station_scene": 12, "resolution_not_upgrade": 6, "no_author_metadata": 3, "duplicate_title": 2, "oversize_gt_25mb": 7}
