@@ -1462,3 +1462,9 @@
 - st08403 维持现图 below_spec_confirmed：最高 isc 6.72<7.64
 - st08404 维持现图 below_spec_confirmed：最高 isc 7.25<8.32
 - runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 23。
+
+
+## ws17 P0 revert st03261 — 2026-11-06T16:23:11Z
+- st03261 古市(兵庫・JR東西線) 撤除误挂照 File:Platform of HRT Furuichi Station.JPG（高架 AGT+站台门=広岛新交通 Astram 古市；标题 HRT 运营商自证）；
+- 与 st03262(広岛 Astram) 同 sha 23ea79e0（legacy 基线 dup），B32 verify 批内 dup 闸暴露；
+- st03262 保留正确照；st03261 置 missing 回重抓队列（dead stage=mismatch_removal）。
