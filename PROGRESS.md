@@ -603,3 +603,9 @@
 - st06965 维持现图 below_spec_confirmed：命中 関目 但 6.46<=8.05 分差不足
 - st08368 维持现图 below_spec_confirmed：命中 Minami-Tatsumi 但 7.15<=7.72 分差不足
 - runner 42163290441 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 25。
+
+
+## ws17 below-spec replace WS17-B06 — 2026-11-06T04:56:04Z
+- queue: 8 站（review/below_spec 高分替换）
+- replaced=0 staged=8 confirmed=0 skipped=0
+- reject_dist={"resolution_low_lt_1600": 36, "hard_excluded": 38, "title_non_station_scene": 5, "same_as_current": 8, "quality_reject_low_color": 5, "title_names_other_station": 13, "resolution_not_upgrade": 10}
