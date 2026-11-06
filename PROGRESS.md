@@ -627,3 +627,7 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=4 staged=21 confirmed=0 skipped=0
 - reject_dist={"resolution_low_lt_1600": 178, "no_author_metadata": 17, "same_as_current": 25, "mime_unsupported": 31, "resolution_not_upgrade": 30, "quality_reject_low_color": 35, "title_non_station_scene": 7, "hard_excluded": 31, "license_unclear": 3, "title_names_other_station": 56, "duplicate_title": 5}
+
+
+## ws17 B07 revert（P0，本地 API 零分钟） — 2026-11-06T05:17:42Z
+- 撤 st02165 新宿：runner 自动替换图目检为 JR 新宿站全景招牌（Shinjuku Station 新宿駅），记录线路仅丸ノ内線→运营商不符=P0；恢复替换前 review 态旧图旧元数据（photo/license blob 复用旧 sha）
