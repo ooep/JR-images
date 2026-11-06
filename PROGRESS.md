@@ -954,3 +954,9 @@
 - st07322 维持现图 below_spec_confirmed：券売機/改札口特写 3.52<7.25
 - st08107 维持现图 below_spec_confirmed：无站名命中且最高 6.52<7.06
 - runner 42185727578 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 19。
+
+
+## ws17 below-spec replace WS17-B17 — 2026-11-06T08:47:37Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=25 confirmed=0 skipped=0
+- reject_dist={"resolution_not_upgrade": 47, "resolution_low_lt_1600": 74, "same_as_current": 25, "hard_excluded": 112, "title_names_other_station": 67, "title_non_station_scene": 22, "mime_unsupported": 14, "quality_reject_low_color": 19, "duplicate_title": 13, "no_author_metadata": 5, "license_unclear": 2, "license_forbidden": 1}
