@@ -1,12 +1,12 @@
 station: 大学前 (st02044)
 file: stations/st02044/photo.jpg
-sha256: 0737ea661664f35b1993ee2b462fe640715821805e3369813df2615132ca51c0
-source_page: https://commons.wikimedia.org/wiki/File:Ueda-dentetsu-Daigakumae-station-building-20110907-074226.jpg
-image_url: https://upload.wikimedia.org/wikipedia/commons/9/9d/Ueda-dentetsu-Daigakumae-station-building-20110907-074226.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+sha256: a0c7b79c306bff040b05205872f39ff54ffd3d4a2d66727d1bd10a1102f7399c
+source_page: https://commons.wikimedia.org/wiki/File:Ueda-dentetsu-Daigakumae-station-platform-20110907-074518.jpg
+image_url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Ueda-dentetsu-Daigakumae-station-platform-20110907-074518.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
 author: LERK
 license: CC BY-SA 4.0
 license_url: https://creativecommons.org/licenses/by-sa/4.0
-retrieved_at: 2026-11-05T16:38:57Z
-normalized: normalized to long side 1800 (JPEG q85) from 3648x2052
-attribution: LERK / File:Ueda-dentetsu-Daigakumae-station-building-20110907-074226.jpg / CC BY-SA 4.0 / https://creativecommons.org/licenses/by-sa/4.0
-evidence: gps_dist=24.6m (<=2000m)
+retrieved_at: 2026-11-06T23:48:09Z
+normalized: long 1800 q85 from 3648x2052
+attribution: LERK / File:Ueda-dentetsu-Daigakumae-station-platform-20110907-074518.jpg / CC BY-SA 4.0 / https://creativecommons.org/licenses/by-sa/4.0
+evidence: ws17 local accept B33; OCR full-name 大学前 全名命中（OCR「大学前」）; visual 站名牌「大学前 だいがくまえ Daigakumae」+「上田電鉄」+邻站「神畑/下之郷」=上田電鉄別所線；isc 6.09>5.32；长边 1800=现图; gps_dist=None; prev_sha256=0737ea661664f35b1993ee2b462fe640715821805e3369813df2615132ca51c0

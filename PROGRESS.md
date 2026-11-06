@@ -1507,3 +1507,23 @@
 - low_conf_identity.json(332bc346) 677 站标记 low_conf_identity；其中 549 站 status done→review（state+index 状态位仅改此字段，photo/blob 不动）入优先重捕段；
 - missing 31 站不入 ws17 队列（runner 仅吃 review），留 fetch 通道；
 - 队列=优先段 A(pool∩low_conf)+余段 B，县内站数降序/县内 score 升序，25/批，B33 起。
+
+
+## ws17 local accept B33 — 2026-11-06T23:48:09Z
+- st01830 穴川 ← File:Kintetsu Anagawa 1.jpg (done, score 6.69→7.01)
+- st02044 大学前 ← File:Ueda-dentetsu-Daigakumae-station-platform-20110907-074518.jpg (done, score 5.32→6.09)
+- st00336 维持现图 below_spec_confirmed：近鉄加茂 3 候选 isc 6.80/6.98/7.07<现图 7.47；京都加茂(JR奈良線)异县混入
+- st01800 维持现图 below_spec_confirmed：候选全为栃木 JR両毛線 小俣/小俣(Obata)异县，无站证；isc≤7.33<8.78
+- st01822 维持现图 below_spec_confirmed：候选=長崎 島原鉄道 南島原(Minami-Shimabara)，异县；isc 6.29<8.63
+- st01823 维持现图 below_spec_confirmed：候选=千葉 JR総武線 松尾等；仅 OCR「松尾」无法区分同运营商类型同名簇；isc≤8.11<9.85
+- st02052 维持现图 below_spec_confirmed：候选=日野自動車製バス/セレガ/甲州街道街景，非站景；isc≤7.54（唯一>6.69 者为公路街景）
+- st02120 维持现图 below_spec_confirmed：c1 栃木 大桑(東武)异县 isc4.48；c2 189系あずさ車照 5.92；均<6.63
+- st02360 维持现图 below_spec_confirmed：c1 木版画非照片；c2 桜駅構内 6.22<6.38；c3 近鉄湯の山線車両 6.88>6.38 但列車主体拒
+- st02439 维持现图 below_spec_confirmed：候选=広島 大崎下島御手洗，异县；isc≤6.17<8.07
+- st02440 维持现图 below_spec_confirmed：同上（広島 大崎下島），异县；isc≤6.17<7.24
+- st06096 维持现图 below_spec_confirmed：c1/c2 站景 isc 6.59/6.07<7.00；c3 ALPICO 車両 7.8 拒
+- st06721 维持现图 below_spec_confirmed：JR東海富田(三重)正确但 isc≤7.17<9.49
+- st06935 维持现图 below_spec_confirmed：c1 JR東日本岩手 柳原 异县异运营商 isc7.33<7.94；c3 愛媛 柳原 异县
+- st07970 维持现图 below_spec_confirmed：dup_image 隔离（图=小海線高岩 正确，配对站 st07969 長崎西九州線 错挂待审计）；本批不改状态
+- runner 42256039521 SUMMARY replaced=3/staged=22；因 dup_image 闸整批未提交，自动替换 3 站（st00255/st01222/st00447）留 B33b 重派；
+- 本批 25 站剔除 dup 命中 6 站（st02802/st03037/st03126/st03294/st03318/st03649）与 st07970（复算 dup）→ 16 站进本地裁决；接受 2 / below_spec_confirmed 13 / 不入提交 1(st07970)。
