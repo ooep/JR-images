@@ -60,3 +60,4 @@
 {"station_id": "st01966", "path": "stations/st01966/photo.jpg", "type": "borderline_skip", "evidence": "案内ボードclose-upが画面全体（TRAM STOP+方面標+路線図、90度回転）、駅景なし；st02423/st04058 先例に従い skip", "date": "2026-11-06"}
 {"station_id": "st03988", "path": "stations/st03988/photo.jpg", "type": "borderline_skip", "evidence": "源图=駅名標close-upが画面全体（こんぶもり/昆布盛/Kombumori+緑矢印帯+隣駅）、駅景なし；st01966 先例に従い skip", "date": "2026-11-06"}
 {"station_id": "st04258", "path": "stations/st04258/photo.jpg", "type": "borderline_skip", "evidence": "源图=発車案内ボード+階段close-upが画面全体（今度の発車は1番/2番+LED+時計+番線標）、駅景なし；st01966/st03988 先例に従い skip", "date": "2026-11-06"}
+{"station_id": "st04264", "path": "stations/st04264/photo.jpg", "type": "borderline_skip", "evidence": "源图主体=砂利駐車場+駐車列、高架ホームは遠景背景のみ；st01884 先例に従い skip", "date": "2026-11-06"}
