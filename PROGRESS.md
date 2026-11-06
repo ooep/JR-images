@@ -502,3 +502,8 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=1 staged=23 confirmed=1 skipped=0
 - reject_dist={"same_as_current": 25, "hard_excluded": 56, "quality_reject_low_color": 22, "resolution_low_lt_1600": 118, "duplicate_title": 7, "title_names_other_station": 62, "mime_unsupported": 39, "resolution_not_upgrade": 80, "title_non_station_scene": 5, "no_author_metadata": 3, "license_forbidden": 4, "license_unclear": 2, "quality_reject_white_screenshot": 1}
+
+
+## ws17 B03 revert（本地 API，零分钟） — 2026-11-06T04:10:56Z
+- 撤 st03236：runner 自动替换图目检为厕所照（标题「阪急吹田駅トイレ」含站名过标题闸但主体非站景）；且旧图「JR West Suita」与阪急记录运营商不符=同名异运营商第 6 簇（JR 吹田 vs 阪急吹田）；回重抓队列
+- 闸门补丁：NON_SCENE 黑名单加 toilet/restroom/トイレ/化粧室

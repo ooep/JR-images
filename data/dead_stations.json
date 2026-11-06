@@ -1,5 +1,5 @@
 {
- "count": 535,
+ "count": 536,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -8338,7 +8338,24 @@
    "final_dead": false,
    "first_seen": "2026-11-04T03:47:01Z",
    "last_attempt": null
+  },
+  "st03236": {
+   "slug": "st03236",
+   "name": "吹田",
+   "name_en": "Suita",
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:阪急吹田駅トイレ.jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-06T04:10:56Z",
+   "last_attempt": "2026-11-06T04:10:56Z",
+   "note": "revert: runner 自动替换为厕所照（标题含站名但主体非站景）；旧图 JR West Suita 与阪急记录运营商不符（同名异运营商第6簇）；撤图回重抓"
   }
  },
- "updated_at": "2026-11-06T03:39:05Z"
+ "updated_at": "2026-11-06T04:10:56Z"
 }
