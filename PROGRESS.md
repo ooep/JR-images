@@ -960,3 +960,32 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=25 confirmed=0 skipped=0
 - reject_dist={"resolution_not_upgrade": 47, "resolution_low_lt_1600": 74, "same_as_current": 25, "hard_excluded": 112, "title_names_other_station": 67, "title_non_station_scene": 22, "mime_unsupported": 14, "quality_reject_low_color": 19, "duplicate_title": 13, "no_author_metadata": 5, "license_unclear": 2, "license_forbidden": 1}
+
+
+## ws17 local accept B17 — 2026-11-06T08:52:48Z
+- st01304 维持现图 below_spec_confirmed：车照 3.25<7.30
+- st05050 维持现图 below_spec_confirmed：命中 野里 但最高 4.75<7.31
+- st07319 维持现图 below_spec_confirmed：无站名命中且最高 4.52<7.34
+- st08412 维持现图 below_spec_confirmed：命中 王子公園 但最高 4.52<7.35
+- st06633 维持现图 below_spec_confirmed：命中 みなと元町 但最高 4.50<7.36
+- st01197 维持现图 below_spec_confirmed：最高 4.58<7.37（候选3 京都木津同名异线拒）
+- st02724 维持现图 below_spec_confirmed：命中 西新町 但最高 5.88<7.43
+- st04704 维持现图 below_spec_confirmed：候选熊本桑水异县/废线迹非站景拒；最高 3.52<7.44
+- st08143 维持现图 below_spec_confirmed：无站名命中且最高 6.52<7.45
+- st05107 维持现图 below_spec_confirmed：出口案内特写 3.52<7.46
+- st07318 维持现图 below_spec_confirmed：无站名命中且最高 6.50<7.46
+- st03256 维持现图 below_spec_confirmed：无站名命中且最高 5.50<7.47
+- st02687 维持现图 below_spec_confirmed：无站名命中且最高 4.03<7.48
+- st05098 维持现图 below_spec_confirmed：无站名命中且最高 6.93<7.48
+- st06630 维持现图 below_spec_confirmed：命中 御崎公園 但最高 5.50<7.48
+- st01298 维持现图 below_spec_confirmed：命中 甲子園口 但最高 5.52<7.49
+- st08860 维持现图 below_spec_confirmed：无站名命中且最高 4.52<7.49
+- st00470 维持现图 below_spec_confirmed：命中 住吉 但最高 3.52<7.50
+- st00708 维持现图 below_spec_confirmed：命中 山本 但最高 4.52<7.50
+- st08409 维持现图 below_spec_confirmed：命中 園田 但最高 6.52<7.53
+- st04166 维持现图 below_spec_confirmed：命中 西相生 但最高 5.78<7.55
+- st03670 维持现图 below_spec_confirmed：候选大阪豊中/阪急曽根同名异线拒；最高 3.00<7.56
+- st05102 维持现图 below_spec_confirmed：命中 鼓滝 但最高 6.52<7.56
+- st08859 维持现图 below_spec_confirmed：命中 南公園 但最高 3.52<7.56
+- st02713 维持现图 below_spec_confirmed：无站名命中且最高 3.52<7.60
+- runner 42189100752 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 25。
