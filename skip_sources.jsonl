@@ -44,3 +44,5 @@
 {"station_id": "st03386", "path": "stations/st03386/photo.jpg", "type": "operator_mismatch", "evidence": "记录=北海道/学田（富良野線）；源图站名牌=「MEITETSU 楽田駅/GAKUDEN STATION」+名鉄logo+方面標「小牧・平安通方面」=名鉄小牧線楽田駅（愛知）；运营商前缀不符新闸门，不画", "date": "2026-11-06"}
 {"station_id": "st03948", "path": "stations/st03948/photo.jpg", "type": "operator_mismatch", "evidence": "记录=北海道/新富士（根室本線・農村ディーゼル駅）；源图=九州新幹線風大規模電化駅（LED=博多/新八代方面、4+軌道+大キャノピー+山並み）；線種・地域とも不一致＝別線源；不画", "date": "2026-11-06"}
 {"station_id": "st03951", "path": "stations/st03951/photo.jpg", "type": "non_station", "evidence": "源图主体=巴士站（「大楽毛駅前」バス停標+北海道バス/北海道中央バス停柱+路線図+街道）、鉄道駅景なし；non_station skip（バス停拒収先例）", "date": "2026-11-06"}
+{"station_id": "st03969", "path": "stations/st03969/photo.jpg", "type": "non_station", "evidence": "源图主体=道の駅はなやか小清水 복합체（青横幅+駐車場+道路+野球壁画）、鉄道要素（軌道/站台/駅標）全くなし；記録浜小清水との錯挂嫌疑；不画", "date": "2026-11-06"}
+{"station_id": "st03970", "path": "stations/st03970/photo.jpg", "type": "borderline_skip", "evidence": "源图=枯草原の軌道分岐のみ、プラットフォーム/駅標/待合いずれも不入鏡；st01884 先例に従い skip", "date": "2026-11-06"}

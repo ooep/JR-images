@@ -1,0 +1,18 @@
+{
+ "unit": "DRAW-LINE",
+ "kind": "suspect_source",
+ "station_id": "st03969",
+ "path": "stations/st03969/photo.jpg",
+ "type": "non_station",
+ "recorded": {
+  "pref": "北海道",
+  "name": "浜小清水",
+  "lines": [
+   "釧網本線"
+  ]
+ },
+ "evidence": "源图=道の駅はなやか小清水（町中心？）複合施設、鉄道要素なし；浜小清水駅実景と疑わしい",
+ "action": "重绘线 skip 不画，提请审计线核源归属",
+ "date": "2026-11-06",
+ "head": "0aa9b05f"
+}
