@@ -885,3 +885,9 @@
 - st04317 维持现图 below_spec_confirmed：无站名命中且最高 6.80<8.72
 - st00769 维持现图 below_spec_confirmed：命中 恵み野 但最高 3.71<8.75
 - runner 42181502394 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 25。
+
+
+## ws17 below-spec replace WS17-B15 — 2026-11-06T07:57:33Z
+- queue: 21 站（review/below_spec 高分替换）
+- replaced=1 staged=20 confirmed=0 skipped=0
+- reject_dist={"same_as_current": 21, "license_unclear": 20, "resolution_low_lt_1600": 46, "mime_unsupported": 67, "title_names_other_station": 20, "quality_reject_low_color": 26, "hard_excluded": 19, "title_non_station_scene": 23, "resolution_not_upgrade": 7, "duplicate_title": 1, "no_author_metadata": 1}
