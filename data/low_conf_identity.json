@@ -1,0 +1,7117 @@
+{
+ "generated_at": "2026-11-06T16:10:11Z",
+ "source": "audit opscan 8651/8651 converged",
+ "criteria": "no_station_evidence(OCR strict) AND same_name_cluster",
+ "count": 677,
+ "stations": [
+  {
+   "slug": "st00003",
+   "name": "高田",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st00002",
+    "st00004",
+    "st00005",
+    "st00006",
+    "st00007"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00004",
+   "name": "高田",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st00002",
+    "st00003",
+    "st00005",
+    "st00006",
+    "st00007"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00005",
+   "name": "高田",
+   "pref": "香川県",
+   "cluster_members": [
+    "st00002",
+    "st00003",
+    "st00004",
+    "st00006",
+    "st00007"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00006",
+   "name": "高田",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st00002",
+    "st00003",
+    "st00004",
+    "st00005",
+    "st00007"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00007",
+   "name": "高田",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st00002",
+    "st00003",
+    "st00004",
+    "st00005",
+    "st00006"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00028",
+   "name": "橋本",
+   "pref": "和歌山県",
+   "cluster_members": [
+    "st00029",
+    "st00030",
+    "st00031"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00029",
+   "name": "橋本",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st00028",
+    "st00030",
+    "st00031"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00030",
+   "name": "橋本",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st00028",
+    "st00029",
+    "st00031"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00031",
+   "name": "橋本",
+   "pref": "京都府",
+   "cluster_members": [
+    "st00028",
+    "st00029",
+    "st00030"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00036",
+   "name": "五条",
+   "pref": "京都府",
+   "cluster_members": [
+    "st00035"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00040",
+   "name": "大谷",
+   "pref": "和歌山県",
+   "cluster_members": [
+    "st00041"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00055",
+   "name": "桜井",
+   "pref": "奈良県",
+   "cluster_members": [
+    "st00056",
+    "st00057"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00056",
+   "name": "桜井",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st00055",
+    "st00057"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00057",
+   "name": "桜井",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st00055",
+    "st00056"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00070",
+   "name": "野田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st00071"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00071",
+   "name": "野田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st00070"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00082",
+   "name": "田町",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st00083"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00083",
+   "name": "田町",
+   "pref": "東京都",
+   "cluster_members": [
+    "st00082"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00112",
+   "name": "石津",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st00111"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00121",
+   "name": "宮内",
+   "pref": "広島県",
+   "cluster_members": [
+    "st00122",
+    "st00123"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00122",
+   "name": "宮内",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st00121",
+    "st00123"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00123",
+   "name": "宮内",
+   "pref": "山形県",
+   "cluster_members": [
+    "st00121",
+    "st00122"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00131",
+   "name": "井口",
+   "pref": "広島県",
+   "cluster_members": [
+    "st00132"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00135",
+   "name": "草津",
+   "pref": "広島県",
+   "cluster_members": [
+    "st00136"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00136",
+   "name": "草津",
+   "pref": "滋賀県",
+   "cluster_members": [
+    "st00135"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00138",
+   "name": "高須",
+   "pref": "広島県",
+   "cluster_members": [
+    "st00139"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00139",
+   "name": "高須",
+   "pref": "高知県",
+   "cluster_members": [
+    "st00138"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00145",
+   "name": "観音町",
+   "pref": "福井県",
+   "cluster_members": [
+    "st00144"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00148",
+   "name": "土橋",
+   "pref": "広島県",
+   "cluster_members": [
+    "st00149",
+    "st00150"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00150",
+   "name": "土橋",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st00148",
+    "st00149"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00159",
+   "name": "市役所前",
+   "pref": "鹿児島県",
+   "cluster_members": [
+    "st00158",
+    "st00160",
+    "st00161",
+    "st00162",
+    "st00163",
+    "st00164",
+    "st00165"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00160",
+   "name": "市役所前",
+   "pref": "北海道",
+   "cluster_members": [
+    "st00158",
+    "st00159",
+    "st00161",
+    "st00162",
+    "st00163",
+    "st00164",
+    "st00165"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00161",
+   "name": "市役所前",
+   "pref": "愛媛県",
+   "cluster_members": [
+    "st00158",
+    "st00159",
+    "st00160",
+    "st00162",
+    "st00163",
+    "st00164",
+    "st00165"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00162",
+   "name": "市役所前",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st00158",
+    "st00159",
+    "st00160",
+    "st00161",
+    "st00163",
+    "st00164",
+    "st00165"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00163",
+   "name": "市役所前",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st00158",
+    "st00159",
+    "st00160",
+    "st00161",
+    "st00162",
+    "st00164",
+    "st00165"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00164",
+   "name": "市役所前",
+   "pref": "和歌山県",
+   "cluster_members": [
+    "st00158",
+    "st00159",
+    "st00160",
+    "st00161",
+    "st00162",
+    "st00163",
+    "st00165"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00186",
+   "name": "八丁堀",
+   "pref": "広島県",
+   "cluster_members": [
+    "st00187"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00187",
+   "name": "八丁堀",
+   "pref": "東京都",
+   "cluster_members": [
+    "st00186"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00190",
+   "name": "稲荷町",
+   "pref": "広島県",
+   "cluster_members": [
+    "st00191",
+    "st00192"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00226",
+   "name": "平林",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st00227"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00227",
+   "name": "平林",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st00226"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00229",
+   "name": "村上",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st00230"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00230",
+   "name": "村上",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st00229"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00235",
+   "name": "月岡",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st00236"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00236",
+   "name": "月岡",
+   "pref": "富山県",
+   "cluster_members": [
+    "st00235"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00241",
+   "name": "新屋",
+   "pref": "群馬県",
+   "cluster_members": [
+    "st00240"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00255",
+   "name": "追分",
+   "pref": "三重県",
+   "cluster_members": [
+    "st00253",
+    "st00254",
+    "st00256"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00256",
+   "name": "追分",
+   "pref": "滋賀県",
+   "cluster_members": [
+    "st00253",
+    "st00254",
+    "st00255"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00257",
+   "name": "大久保",
+   "pref": "秋田県",
+   "cluster_members": [
+    "st00258",
+    "st00259",
+    "st00260"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00258",
+   "name": "大久保",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st00257",
+    "st00259",
+    "st00260"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00259",
+   "name": "大久保",
+   "pref": "京都府",
+   "cluster_members": [
+    "st00257",
+    "st00258",
+    "st00260"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00260",
+   "name": "大久保",
+   "pref": "東京都",
+   "cluster_members": [
+    "st00257",
+    "st00258",
+    "st00259"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00297",
+   "name": "今川",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st00298"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00298",
+   "name": "今川",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st00297"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00304",
+   "name": "白山",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st00305",
+    "st00306"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00305",
+   "name": "白山",
+   "pref": "東京都",
+   "cluster_members": [
+    "st00304",
+    "st00306"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00306",
+   "name": "白山",
+   "pref": "香川県",
+   "cluster_members": [
+    "st00304",
+    "st00305"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00307",
+   "name": "関屋",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st00308"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00308",
+   "name": "関屋",
+   "pref": "奈良県",
+   "cluster_members": [
+    "st00307"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00309",
+   "name": "青山",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st00310",
+    "st00311"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00310",
+   "name": "青山",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st00309",
+    "st00311"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00311",
+   "name": "青山",
+   "pref": "岩手県",
+   "cluster_members": [
+    "st00309",
+    "st00310"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00329",
+   "name": "三条",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st00330",
+    "st00331"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00330",
+   "name": "三条",
+   "pref": "香川県",
+   "cluster_members": [
+    "st00329",
+    "st00331"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00335",
+   "name": "加茂",
+   "pref": "京都府",
+   "cluster_members": [
+    "st00334",
+    "st00336"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00336",
+   "name": "加茂",
+   "pref": "三重県",
+   "cluster_members": [
+    "st00335",
+    "st00334"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00345",
+   "name": "吉田",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st00346"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00346",
+   "name": "吉田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st00345"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00354",
+   "name": "市立病院前",
+   "pref": "沖縄県",
+   "cluster_members": [
+    "st00353"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00367",
+   "name": "谷山",
+   "pref": "鹿児島県",
+   "cluster_members": [
+    "st00368"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00373",
+   "name": "二軒茶屋",
+   "pref": "鹿児島県",
+   "cluster_members": [
+    "st00374"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00374",
+   "name": "二軒茶屋",
+   "pref": "京都府",
+   "cluster_members": [
+    "st00373"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00378",
+   "name": "中郡",
+   "pref": "鹿児島県",
+   "cluster_members": [
+    "st00379"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00379",
+   "name": "中郡",
+   "pref": "山形県",
+   "cluster_members": [
+    "st00378"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00384",
+   "name": "神田",
+   "pref": "東京都",
+   "cluster_members": [
+    "st00383",
+    "st00385"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00385",
+   "name": "神田",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st00384",
+    "st00383"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00386",
+   "name": "郡元",
+   "pref": "鹿児島県",
+   "cluster_members": [
+    "st00387"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00396",
+   "name": "祇園",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st00397"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00400",
+   "name": "赤坂",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st00401",
+    "st00402",
+    "st00403"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00407",
+   "name": "藤崎",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st00408"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00408",
+   "name": "藤崎",
+   "pref": "青森県",
+   "cluster_members": [
+    "st00407"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00418",
+   "name": "呉服町",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st00419"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00419",
+   "name": "呉服町",
+   "pref": "熊本県",
+   "cluster_members": [
+    "st00418"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00425",
+   "name": "貝塚",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st00424"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00446",
+   "name": "桜町",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st00447"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00447",
+   "name": "桜町",
+   "pref": "長野県",
+   "cluster_members": [
+    "st00446"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00457",
+   "name": "大橋",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st00458"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00458",
+   "name": "大橋",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st00457"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00463",
+   "name": "千歳町",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st00464"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00464",
+   "name": "千歳町",
+   "pref": "北海道",
+   "cluster_members": [
+    "st00463"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00466",
+   "name": "住吉",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st00467",
+    "st00468",
+    "st00469",
+    "st00470",
+    "st00471"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00467",
+   "name": "住吉",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st00466",
+    "st00468",
+    "st00469",
+    "st00470",
+    "st00471"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00468",
+   "name": "住吉",
+   "pref": "東京都",
+   "cluster_members": [
+    "st00466",
+    "st00467",
+    "st00469",
+    "st00470",
+    "st00471"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00469",
+   "name": "住吉",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st00466",
+    "st00467",
+    "st00468",
+    "st00470",
+    "st00471"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00470",
+   "name": "住吉",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st00466",
+    "st00467",
+    "st00468",
+    "st00469",
+    "st00471"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00471",
+   "name": "住吉",
+   "pref": "熊本県",
+   "cluster_members": [
+    "st00466",
+    "st00467",
+    "st00468",
+    "st00469",
+    "st00470"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00474",
+   "name": "石橋",
+   "pref": "栃木県",
+   "cluster_members": [
+    "st00473"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00492",
+   "name": "高野",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st00493"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00493",
+   "name": "高野",
+   "pref": "東京都",
+   "cluster_members": [
+    "st00492"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00534",
+   "name": "大原",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st00535",
+    "st00536"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00535",
+   "name": "大原",
+   "pref": "広島県",
+   "cluster_members": [
+    "st00534",
+    "st00536"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00536",
+   "name": "大原",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st00534",
+    "st00535"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00541",
+   "name": "石井",
+   "pref": "徳島県",
+   "cluster_members": [
+    "st00540"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00558",
+   "name": "神戸",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st00559",
+    "st00560"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00559",
+   "name": "神戸",
+   "pref": "群馬県",
+   "cluster_members": [
+    "st00558",
+    "st00560"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00560",
+   "name": "神戸",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st00558",
+    "st00559"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00568",
+   "name": "常盤",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st00569",
+    "st00570"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00569",
+   "name": "常盤",
+   "pref": "京都府",
+   "cluster_members": [
+    "st00568",
+    "st00570"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00570",
+   "name": "常盤",
+   "pref": "山口県",
+   "cluster_members": [
+    "st00568",
+    "st00569"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00571",
+   "name": "栄",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st00572",
+    "st00573"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00572",
+   "name": "栄",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st00571",
+    "st00573"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00573",
+   "name": "栄",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st00571",
+    "st00572"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00575",
+   "name": "浦田",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st00576"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00576",
+   "name": "浦田",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st00575"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00578",
+   "name": "福井",
+   "pref": "福井県",
+   "cluster_members": [
+    "st00577"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00580",
+   "name": "球場前",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st00581"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00581",
+   "name": "球場前",
+   "pref": "高知県",
+   "cluster_members": [
+    "st00580"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00598",
+   "name": "久保田",
+   "pref": "佐賀県",
+   "cluster_members": [
+    "st00599"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00599",
+   "name": "久保田",
+   "pref": "秋田県",
+   "cluster_members": [
+    "st00598"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00604",
+   "name": "長崎",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st00605"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00605",
+   "name": "長崎",
+   "pref": "高知県",
+   "cluster_members": [
+    "st00604"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00623",
+   "name": "原田",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st00624"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00624",
+   "name": "原田",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st00623"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00630",
+   "name": "春日",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st00631"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00648",
+   "name": "松原",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st00649"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00686",
+   "name": "八幡",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st00684",
+    "st00685"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00692",
+   "name": "小倉",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st00693"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00693",
+   "name": "小倉",
+   "pref": "京都府",
+   "cluster_members": [
+    "st00692"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00704",
+   "name": "岩屋",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st00703"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00707",
+   "name": "山本",
+   "pref": "佐賀県",
+   "cluster_members": [
+    "st00708"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00708",
+   "name": "山本",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st00707"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00717",
+   "name": "大町",
+   "pref": "佐賀県",
+   "cluster_members": [
+    "st00718",
+    "st00719",
+    "st00720",
+    "st00721",
+    "st00722"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00718",
+   "name": "大町",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st00717",
+    "st00719",
+    "st00720",
+    "st00721",
+    "st00722"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00722",
+   "name": "大町",
+   "pref": "香川県",
+   "cluster_members": [
+    "st00717",
+    "st00718",
+    "st00719",
+    "st00720",
+    "st00721"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00725",
+   "name": "千歳",
+   "pref": "北海道",
+   "cluster_members": [
+    "st00726"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00736",
+   "name": "池田",
+   "pref": "北海道",
+   "cluster_members": [
+    "st00737",
+    "st00738"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00737",
+   "name": "池田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st00736",
+    "st00738"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00738",
+   "name": "池田",
+   "pref": "熊本県",
+   "cluster_members": [
+    "st00736",
+    "st00737"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00754",
+   "name": "琴似",
+   "pref": "北海道",
+   "cluster_members": [
+    "st00755"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00755",
+   "name": "琴似",
+   "pref": "北海道",
+   "cluster_members": [
+    "st00754"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00757",
+   "name": "白石",
+   "pref": "北海道",
+   "cluster_members": [
+    "st00758",
+    "st00759"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00758",
+   "name": "白石",
+   "pref": "宮城県",
+   "cluster_members": [
+    "st00757",
+    "st00759"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00759",
+   "name": "白石",
+   "pref": "北海道",
+   "cluster_members": [
+    "st00758",
+    "st00757"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00781",
+   "name": "富浦",
+   "pref": "北海道",
+   "cluster_members": [
+    "st00782"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00782",
+   "name": "富浦",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st00781"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00787",
+   "name": "森",
+   "pref": "北海道",
+   "cluster_members": [
+    "st00788"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00788",
+   "name": "森",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st00787"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00811",
+   "name": "新川",
+   "pref": "北海道",
+   "cluster_members": [
+    "st00812",
+    "st00813",
+    "st00814"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00813",
+   "name": "新川",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st00811",
+    "st00812",
+    "st00814"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00814",
+   "name": "新川",
+   "pref": "群馬県",
+   "cluster_members": [
+    "st00811",
+    "st00812",
+    "st00813"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00816",
+   "name": "明智",
+   "pref": "岐阜県",
+   "cluster_members": [
+    "st00817"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00827",
+   "name": "東野",
+   "pref": "岐阜県",
+   "cluster_members": [
+    "st00828"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00828",
+   "name": "東野",
+   "pref": "京都府",
+   "cluster_members": [
+    "st00827"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00866",
+   "name": "弘明寺",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st00867"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00870",
+   "name": "杉田",
+   "pref": "福島県",
+   "cluster_members": [
+    "st00869"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00877",
+   "name": "三田",
+   "pref": "東京都",
+   "cluster_members": [
+    "st00878"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00878",
+   "name": "三田",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st00877"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00881",
+   "name": "大門",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st00879",
+    "st00880"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00885",
+   "name": "日本橋",
+   "pref": "東京都",
+   "cluster_members": [
+    "st00886"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00886",
+   "name": "日本橋",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st00885"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00891",
+   "name": "浅草",
+   "pref": "東京都",
+   "cluster_members": [
+    "st00892"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00892",
+   "name": "浅草",
+   "pref": "東京都",
+   "cluster_members": [
+    "st00891"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00925",
+   "name": "梅屋敷",
+   "pref": "東京都",
+   "cluster_members": [
+    "st00926"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00926",
+   "name": "梅屋敷",
+   "pref": "奈良県",
+   "cluster_members": [
+    "st00925"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00950",
+   "name": "上道",
+   "pref": "鳥取県",
+   "cluster_members": [
+    "st00951"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00951",
+   "name": "上道",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st00950"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00962",
+   "name": "富士見町",
+   "pref": "鳥取県",
+   "cluster_members": [
+    "st00963"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00963",
+   "name": "富士見町",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st00962"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00972",
+   "name": "根岸",
+   "pref": "福島県",
+   "cluster_members": [
+    "st00973"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00998",
+   "name": "上条",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st00999"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st00999",
+   "name": "上条",
+   "pref": "長野県",
+   "cluster_members": [
+    "st00998"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01021",
+   "name": "滝谷",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st01020"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01040",
+   "name": "岡田",
+   "pref": "愛媛県",
+   "cluster_members": [
+    "st01041"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01049",
+   "name": "東雲",
+   "pref": "京都府",
+   "cluster_members": [
+    "st01050"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01055",
+   "name": "豊岡",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01056"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01056",
+   "name": "豊岡",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st01055"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01070",
+   "name": "万博記念公園",
+   "pref": "茨城県",
+   "cluster_members": [
+    "st01071"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01071",
+   "name": "万博記念公園",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st01070"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01090",
+   "name": "国際センター",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st01091"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01091",
+   "name": "国際センター",
+   "pref": "宮城県",
+   "cluster_members": [
+    "st01090"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01092",
+   "name": "丸の内",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st01093"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01093",
+   "name": "丸の内",
+   "pref": "富山県",
+   "cluster_members": [
+    "st01092"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01097",
+   "name": "今池",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st01098",
+    "st01099"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01098",
+   "name": "今池",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st01097",
+    "st01099"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01099",
+   "name": "今池",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st01097",
+    "st01098"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01112",
+   "name": "吹上",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st01113"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01113",
+   "name": "吹上",
+   "pref": "埼玉県",
+   "cluster_members": [
+    "st01112"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01119",
+   "name": "京橋",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st01120"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01120",
+   "name": "京橋",
+   "pref": "東京都",
+   "cluster_members": [
+    "st01119"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01129",
+   "name": "北浦",
+   "pref": "高知県",
+   "cluster_members": [
+    "st01128"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01158",
+   "name": "市場",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st01159",
+    "st01160"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01160",
+   "name": "市場",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01158",
+    "st01159"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01162",
+   "name": "赤池",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st01163",
+    "st01164"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01163",
+   "name": "赤池",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st01162",
+    "st01164"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01164",
+   "name": "赤池",
+   "pref": "岐阜県",
+   "cluster_members": [
+    "st01162",
+    "st01163"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01183",
+   "name": "豊津",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st01184"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01184",
+   "name": "豊津",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st01183"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01192",
+   "name": "松山",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st01193"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01193",
+   "name": "松山",
+   "pref": "愛媛県",
+   "cluster_members": [
+    "st01192"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01196",
+   "name": "木津",
+   "pref": "京都府",
+   "cluster_members": [
+    "st01197"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01197",
+   "name": "木津",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01196"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01206",
+   "name": "新田",
+   "pref": "埼玉県",
+   "cluster_members": [
+    "st01205",
+    "st01207",
+    "st01208"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01208",
+   "name": "新田",
+   "pref": "福島県",
+   "cluster_members": [
+    "st01205",
+    "st01206",
+    "st01207"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01210",
+   "name": "宇治",
+   "pref": "京都府",
+   "cluster_members": [
+    "st01211"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01211",
+   "name": "宇治",
+   "pref": "京都府",
+   "cluster_members": [
+    "st01210"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01213",
+   "name": "木幡",
+   "pref": "京都府",
+   "cluster_members": [
+    "st01214",
+    "st01215"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01214",
+   "name": "木幡",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01213",
+    "st01215"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01215",
+   "name": "木幡",
+   "pref": "京都府",
+   "cluster_members": [
+    "st01213",
+    "st01214"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01217",
+   "name": "六地蔵",
+   "pref": "京都府",
+   "cluster_members": [
+    "st01216"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01222",
+   "name": "亀山",
+   "pref": "三重県",
+   "cluster_members": [
+    "st01223"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01223",
+   "name": "亀山",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01222"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01225",
+   "name": "関",
+   "pref": "岐阜県",
+   "cluster_members": [
+    "st01224"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01227",
+   "name": "加太",
+   "pref": "和歌山県",
+   "cluster_members": [
+    "st01226"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01232",
+   "name": "郡山",
+   "pref": "奈良県",
+   "cluster_members": [
+    "st01233"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01233",
+   "name": "郡山",
+   "pref": "福島県",
+   "cluster_members": [
+    "st01232"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01237",
+   "name": "大河原",
+   "pref": "京都府",
+   "cluster_members": [
+    "st01238"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01238",
+   "name": "大河原",
+   "pref": "宮城県",
+   "cluster_members": [
+    "st01237"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01263",
+   "name": "尼崎",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01264"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01264",
+   "name": "尼崎",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01263"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01265",
+   "name": "伊丹",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01266"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01266",
+   "name": "伊丹",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01265"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01273",
+   "name": "平野",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st01274",
+    "st01275",
+    "st01276"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01274",
+   "name": "平野",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01273",
+    "st01275",
+    "st01276"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01275",
+   "name": "平野",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st01273",
+    "st01274",
+    "st01276"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01280",
+   "name": "柏原",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st01281",
+    "st01282"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01281",
+   "name": "柏原",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01280",
+    "st01282"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01282",
+   "name": "柏原",
+   "pref": "滋賀県",
+   "cluster_members": [
+    "st01280",
+    "st01281"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01283",
+   "name": "高井田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st01284"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01284",
+   "name": "高井田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st01283"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01286",
+   "name": "三郷",
+   "pref": "奈良県",
+   "cluster_members": [
+    "st01287",
+    "st01288"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01287",
+   "name": "三郷",
+   "pref": "埼玉県",
+   "cluster_members": [
+    "st01286",
+    "st01288"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01288",
+   "name": "三郷",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st01286",
+    "st01287"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01293",
+   "name": "塚口",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01294"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01294",
+   "name": "塚口",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01293"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01299",
+   "name": "西宮",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01300"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01300",
+   "name": "西宮",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01299"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01302",
+   "name": "芦屋",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01303"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01303",
+   "name": "芦屋",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01302"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01309",
+   "name": "元町",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01310"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01310",
+   "name": "元町",
+   "pref": "北海道",
+   "cluster_members": [
+    "st01309"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01315",
+   "name": "塩屋",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01316"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01316",
+   "name": "塩屋",
+   "pref": "香川県",
+   "cluster_members": [
+    "st01315"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01331",
+   "name": "大宮",
+   "pref": "埼玉県",
+   "cluster_members": [
+    "st01332"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01332",
+   "name": "大宮",
+   "pref": "京都府",
+   "cluster_members": [
+    "st01331"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01353",
+   "name": "河原町",
+   "pref": "熊本県",
+   "cluster_members": [
+    "st01354"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01354",
+   "name": "河原町",
+   "pref": "宮城県",
+   "cluster_members": [
+    "st01353"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01372",
+   "name": "国府",
+   "pref": "熊本県",
+   "cluster_members": [
+    "st01373",
+    "st01374"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01373",
+   "name": "国府",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st01372",
+    "st01374"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01374",
+   "name": "国府",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01372",
+    "st01373"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01394",
+   "name": "高浜",
+   "pref": "島根県",
+   "cluster_members": [
+    "st01395",
+    "st01396"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01395",
+   "name": "高浜",
+   "pref": "茨城県",
+   "cluster_members": [
+    "st01394",
+    "st01396"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01423",
+   "name": "こどもの国",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st01422"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01433",
+   "name": "県庁前",
+   "pref": "高知県",
+   "cluster_members": [
+    "st01437",
+    "st01432",
+    "st01434",
+    "st01435",
+    "st01436",
+    "st01438"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01434",
+   "name": "県庁前",
+   "pref": "愛媛県",
+   "cluster_members": [
+    "st01437",
+    "st01432",
+    "st01433",
+    "st01435",
+    "st01436",
+    "st01438"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01435",
+   "name": "県庁前",
+   "pref": "広島県",
+   "cluster_members": [
+    "st01437",
+    "st01432",
+    "st01433",
+    "st01434",
+    "st01436",
+    "st01438"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01436",
+   "name": "県庁前",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01437",
+    "st01432",
+    "st01433",
+    "st01434",
+    "st01435",
+    "st01438"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01437",
+   "name": "県庁前",
+   "pref": "沖縄県",
+   "cluster_members": [
+    "st01432",
+    "st01433",
+    "st01434",
+    "st01435",
+    "st01436",
+    "st01438"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01439",
+   "name": "新富町",
+   "pref": "富山県",
+   "cluster_members": [
+    "st01440"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01440",
+   "name": "新富町",
+   "pref": "東京都",
+   "cluster_members": [
+    "st01439"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01451",
+   "name": "競輪場前",
+   "pref": "富山県",
+   "cluster_members": [
+    "st01452"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01452",
+   "name": "競輪場前",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st01451"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01460",
+   "name": "小泉町",
+   "pref": "群馬県",
+   "cluster_members": [
+    "st01459"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01475",
+   "name": "泉",
+   "pref": "福島県",
+   "cluster_members": [
+    "st01474"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01492",
+   "name": "西日暮里",
+   "pref": "東京都",
+   "cluster_members": [
+    "st01491"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01518",
+   "name": "大手町",
+   "pref": "東京都",
+   "cluster_members": [
+    "st01519"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01519",
+   "name": "大手町",
+   "pref": "愛媛県",
+   "cluster_members": [
+    "st01518"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01522",
+   "name": "霞ケ関",
+   "pref": "東京都",
+   "cluster_members": [
+    "st01523"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01523",
+   "name": "霞ケ関",
+   "pref": "埼玉県",
+   "cluster_members": [
+    "st01522"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01551",
+   "name": "広野",
+   "pref": "福島県",
+   "cluster_members": [
+    "st01552"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01552",
+   "name": "広野",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01551"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01556",
+   "name": "草野",
+   "pref": "福島県",
+   "cluster_members": [
+    "st01557"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01557",
+   "name": "草野",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01556"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01560",
+   "name": "山下",
+   "pref": "宮城県",
+   "cluster_members": [
+    "st01561",
+    "st01562"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01561",
+   "name": "山下",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st01560",
+    "st01562"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01562",
+   "name": "山下",
+   "pref": "東京都",
+   "cluster_members": [
+    "st01560",
+    "st01561"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01577",
+   "name": "植田",
+   "pref": "福島県",
+   "cluster_members": [
+    "st01578",
+    "st01579"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01578",
+   "name": "植田",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st01577",
+    "st01579"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01579",
+   "name": "植田",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st01577",
+    "st01578"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01592",
+   "name": "大和",
+   "pref": "茨城県",
+   "cluster_members": [
+    "st01593"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01593",
+   "name": "大和",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st01592"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01604",
+   "name": "新木",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st01605"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01605",
+   "name": "新木",
+   "pref": "高知県",
+   "cluster_members": [
+    "st01604"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01608",
+   "name": "小林",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st01609",
+    "st01610"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01614",
+   "name": "海老名",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st01615"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01615",
+   "name": "海老名",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st01614"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01627",
+   "name": "生田",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st01628"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01648",
+   "name": "黒川",
+   "pref": "香川県",
+   "cluster_members": [
+    "st01647",
+    "st01649",
+    "st01650"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01649",
+   "name": "黒川",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st01647",
+    "st01648",
+    "st01650"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01722",
+   "name": "井野",
+   "pref": "群馬県",
+   "cluster_members": [
+    "st01723"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01723",
+   "name": "井野",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st01722"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01783",
+   "name": "三本松",
+   "pref": "奈良県",
+   "cluster_members": [
+    "st01784"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01793",
+   "name": "松ケ崎",
+   "pref": "京都府",
+   "cluster_members": [
+    "st01792"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01800",
+   "name": "小俣",
+   "pref": "三重県",
+   "cluster_members": [
+    "st01801"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01801",
+   "name": "小俣",
+   "pref": "栃木県",
+   "cluster_members": [
+    "st01800"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01822",
+   "name": "船津",
+   "pref": "三重県",
+   "cluster_members": [
+    "st01821"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01823",
+   "name": "松尾",
+   "pref": "三重県",
+   "cluster_members": [
+    "st01824",
+    "st01825"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01824",
+   "name": "松尾",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st01823",
+    "st01825"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01825",
+   "name": "松尾",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st01823",
+    "st01824"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01830",
+   "name": "穴川",
+   "pref": "三重県",
+   "cluster_members": [
+    "st01831"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01831",
+   "name": "穴川",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st01830"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01843",
+   "name": "磯部",
+   "pref": "石川県",
+   "cluster_members": [
+    "st01844"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01844",
+   "name": "磯部",
+   "pref": "群馬県",
+   "cluster_members": [
+    "st01843"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01896",
+   "name": "中山",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st01897"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01897",
+   "name": "中山",
+   "pref": "高知県",
+   "cluster_members": [
+    "st01896"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01899",
+   "name": "十日市場",
+   "pref": "山梨県",
+   "cluster_members": [
+    "st01898"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01917",
+   "name": "大森",
+   "pref": "東京都",
+   "cluster_members": [
+    "st01918"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01918",
+   "name": "大森",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st01917"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01941",
+   "name": "平岸",
+   "pref": "北海道",
+   "cluster_members": [
+    "st01942"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01942",
+   "name": "平岸",
+   "pref": "北海道",
+   "cluster_members": [
+    "st01941"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01947",
+   "name": "なんば",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st01948"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01948",
+   "name": "なんば",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st01947"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01962",
+   "name": "競馬場前",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st01961"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01975",
+   "name": "末広町",
+   "pref": "北海道",
+   "cluster_members": [
+    "st01976",
+    "st01977"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01976",
+   "name": "末広町",
+   "pref": "富山県",
+   "cluster_members": [
+    "st01975",
+    "st01977"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st01977",
+   "name": "末広町",
+   "pref": "東京都",
+   "cluster_members": [
+    "st01975",
+    "st01976"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02020",
+   "name": "武佐",
+   "pref": "北海道",
+   "cluster_members": [
+    "st02019"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02021",
+   "name": "平田",
+   "pref": "滋賀県",
+   "cluster_members": [
+    "st02022",
+    "st02023",
+    "st02024"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02023",
+   "name": "平田",
+   "pref": "高知県",
+   "cluster_members": [
+    "st02021",
+    "st02022",
+    "st02024"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02024",
+   "name": "平田",
+   "pref": "岩手県",
+   "cluster_members": [
+    "st02021",
+    "st02022",
+    "st02023"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02035",
+   "name": "高宮",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st02034"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02043",
+   "name": "大学前",
+   "pref": "滋賀県",
+   "cluster_members": [
+    "st02044"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02044",
+   "name": "大学前",
+   "pref": "長野県",
+   "cluster_members": [
+    "st02043"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02047",
+   "name": "桜川",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st02046"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02051",
+   "name": "日野",
+   "pref": "東京都",
+   "cluster_members": [
+    "st02050",
+    "st02052"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02052",
+   "name": "日野",
+   "pref": "長野県",
+   "cluster_members": [
+    "st02050",
+    "st02051"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02120",
+   "name": "大桑",
+   "pref": "長野県",
+   "cluster_members": [
+    "st02119"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02147",
+   "name": "入谷",
+   "pref": "東京都",
+   "cluster_members": [
+    "st02148"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02148",
+   "name": "入谷",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st02147"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02155",
+   "name": "高津",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st02156"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02156",
+   "name": "高津",
+   "pref": "京都府",
+   "cluster_members": [
+    "st02155"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02158",
+   "name": "江田",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st02159"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02159",
+   "name": "江田",
+   "pref": "福島県",
+   "cluster_members": [
+    "st02158"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02161",
+   "name": "藤が丘",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st02162"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02162",
+   "name": "藤が丘",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02161"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02164",
+   "name": "新宿",
+   "pref": "東京都",
+   "cluster_members": [
+    "st02165"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02202",
+   "name": "北野",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st02203"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02203",
+   "name": "北野",
+   "pref": "東京都",
+   "cluster_members": [
+    "st02202"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02206",
+   "name": "金島",
+   "pref": "群馬県",
+   "cluster_members": [
+    "st02205"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02208",
+   "name": "本郷",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st02209",
+    "st02210",
+    "st02211"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02209",
+   "name": "本郷",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02208",
+    "st02210",
+    "st02211"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02212",
+   "name": "新栄町",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st02213"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02234",
+   "name": "桜台",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st02235"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02235",
+   "name": "桜台",
+   "pref": "東京都",
+   "cluster_members": [
+    "st02234"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02237",
+   "name": "三沢",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st02238"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02238",
+   "name": "三沢",
+   "pref": "青森県",
+   "cluster_members": [
+    "st02237"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02267",
+   "name": "堀田",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02268"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02268",
+   "name": "堀田",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02267"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02284",
+   "name": "本宿",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02285"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02285",
+   "name": "本宿",
+   "pref": "群馬県",
+   "cluster_members": [
+    "st02284"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02303",
+   "name": "南桜井",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02304"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02304",
+   "name": "南桜井",
+   "pref": "埼玉県",
+   "cluster_members": [
+    "st02303"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02313",
+   "name": "山崎",
+   "pref": "京都府",
+   "cluster_members": [
+    "st02312",
+    "st02314"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02314",
+   "name": "山崎",
+   "pref": "北海道",
+   "cluster_members": [
+    "st02313",
+    "st02312"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02320",
+   "name": "観音寺",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02321"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02321",
+   "name": "観音寺",
+   "pref": "香川県",
+   "cluster_members": [
+    "st02320"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02322",
+   "name": "山王",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02323"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02323",
+   "name": "山王",
+   "pref": "福井県",
+   "cluster_members": [
+    "st02322"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02330",
+   "name": "大江",
+   "pref": "京都府",
+   "cluster_members": [
+    "st02329"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02333",
+   "name": "名和",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02334"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02340",
+   "name": "朝倉",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02342",
+    "st02341"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02341",
+   "name": "朝倉",
+   "pref": "高知県",
+   "cluster_members": [
+    "st02342",
+    "st02340"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02342",
+   "name": "朝倉",
+   "pref": "高知県",
+   "cluster_members": [
+    "st02340",
+    "st02341"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02359",
+   "name": "桜",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02360"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02360",
+   "name": "桜",
+   "pref": "三重県",
+   "cluster_members": [
+    "st02359"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02364",
+   "name": "内海",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02365"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02391",
+   "name": "白沢",
+   "pref": "秋田県",
+   "cluster_members": [
+    "st02390",
+    "st02392"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02406",
+   "name": "小川町",
+   "pref": "東京都",
+   "cluster_members": [
+    "st02405"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02439",
+   "name": "下島",
+   "pref": "長野県",
+   "cluster_members": [
+    "st02440"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02440",
+   "name": "下島",
+   "pref": "長野県",
+   "cluster_members": [
+    "st02439"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02492",
+   "name": "豊川",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02493"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02493",
+   "name": "豊川",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st02492"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02533",
+   "name": "西条",
+   "pref": "長野県",
+   "cluster_members": [
+    "st02534"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02534",
+   "name": "西条",
+   "pref": "広島県",
+   "cluster_members": [
+    "st02533"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02558",
+   "name": "船尾",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st02559"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02559",
+   "name": "船尾",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st02558"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02583",
+   "name": "大山寺",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st02584"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02584",
+   "name": "大山寺",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02583"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02599",
+   "name": "太田",
+   "pref": "香川県",
+   "cluster_members": [
+    "st02598"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02609",
+   "name": "細谷",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st02608"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02625",
+   "name": "額田",
+   "pref": "茨城県",
+   "cluster_members": [
+    "st02626"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02626",
+   "name": "額田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st02625"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02659",
+   "name": "瓢箪山",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st02660"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02660",
+   "name": "瓢箪山",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02659"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02667",
+   "name": "学園前",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st02666",
+    "st02668"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02676",
+   "name": "今里",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st02677"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02677",
+   "name": "今里",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st02676"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02680",
+   "name": "九条",
+   "pref": "京都府",
+   "cluster_members": [
+    "st02679",
+    "st02681"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02681",
+   "name": "九条",
+   "pref": "奈良県",
+   "cluster_members": [
+    "st02679",
+    "st02680"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02687",
+   "name": "神戸三宮",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st02688"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02688",
+   "name": "神戸三宮",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st02687"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02691",
+   "name": "今津",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st02692"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02717",
+   "name": "霞ケ丘",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st02718"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02718",
+   "name": "霞ケ丘",
+   "pref": "奈良県",
+   "cluster_members": [
+    "st02717"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02736",
+   "name": "別府",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st02737",
+    "st02738"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02738",
+   "name": "別府",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st02737",
+    "st02736"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02748",
+   "name": "荒井",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st02749"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02749",
+   "name": "荒井",
+   "pref": "宮城県",
+   "cluster_members": [
+    "st02748"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02751",
+   "name": "大阪梅田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st02752"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02753",
+   "name": "御影",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st02754",
+    "st02755"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02754",
+   "name": "御影",
+   "pref": "北海道",
+   "cluster_members": [
+    "st02753",
+    "st02755"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02755",
+   "name": "御影",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st02753",
+    "st02754"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02782",
+   "name": "春日井",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02783"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02783",
+   "name": "春日井",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02782"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02801",
+   "name": "広小路",
+   "pref": "富山県",
+   "cluster_members": [
+    "st02802"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02802",
+   "name": "広小路",
+   "pref": "三重県",
+   "cluster_members": [
+    "st02801"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02806",
+   "name": "旭ケ丘",
+   "pref": "富山県",
+   "cluster_members": [
+    "st02807",
+    "st02808"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02807",
+   "name": "旭ケ丘",
+   "pref": "宮崎県",
+   "cluster_members": [
+    "st02806",
+    "st02808"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02808",
+   "name": "旭ケ丘",
+   "pref": "宮城県",
+   "cluster_members": [
+    "st02806",
+    "st02807"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02826",
+   "name": "東山公園",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02827"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02827",
+   "name": "東山公園",
+   "pref": "鳥取県",
+   "cluster_members": [
+    "st02826"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02828",
+   "name": "本山",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st02829",
+    "st02830"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02834",
+   "name": "伏見",
+   "pref": "京都府",
+   "cluster_members": [
+    "st02833"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02868",
+   "name": "村山",
+   "pref": "山形県",
+   "cluster_members": [
+    "st02869"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02869",
+   "name": "村山",
+   "pref": "長野県",
+   "cluster_members": [
+    "st02868"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02891",
+   "name": "府中",
+   "pref": "広島県",
+   "cluster_members": [
+    "st02890",
+    "st02892",
+    "st02893"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02909",
+   "name": "西原",
+   "pref": "徳島県",
+   "cluster_members": [
+    "st02910"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02910",
+   "name": "西原",
+   "pref": "広島県",
+   "cluster_members": [
+    "st02909"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02913",
+   "name": "高松",
+   "pref": "香川県",
+   "cluster_members": [
+    "st02914",
+    "st02915"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02914",
+   "name": "高松",
+   "pref": "石川県",
+   "cluster_members": [
+    "st02913",
+    "st02915"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02917",
+   "name": "昭和町",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st02916"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02954",
+   "name": "新野",
+   "pref": "徳島県",
+   "cluster_members": [
+    "st02955"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02955",
+   "name": "新野",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st02954"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02972",
+   "name": "神前",
+   "pref": "香川県",
+   "cluster_members": [
+    "st02973"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02973",
+   "name": "神前",
+   "pref": "和歌山県",
+   "cluster_members": [
+    "st02972"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02995",
+   "name": "下山",
+   "pref": "高知県",
+   "cluster_members": [
+    "st02996"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st02996",
+   "name": "下山",
+   "pref": "京都府",
+   "cluster_members": [
+    "st02995"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03000",
+   "name": "田野",
+   "pref": "高知県",
+   "cluster_members": [
+    "st03001"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03001",
+   "name": "田野",
+   "pref": "宮崎県",
+   "cluster_members": [
+    "st03000"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03036",
+   "name": "城下",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st03037"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03037",
+   "name": "城下",
+   "pref": "長野県",
+   "cluster_members": [
+    "st03036"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03049",
+   "name": "江南",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st03050"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03050",
+   "name": "江南",
+   "pref": "島根県",
+   "cluster_members": [
+    "st03049"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03052",
+   "name": "岩倉",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st03053",
+    "st03054"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03053",
+   "name": "岩倉",
+   "pref": "京都府",
+   "cluster_members": [
+    "st03052",
+    "st03054"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03054",
+   "name": "岩倉",
+   "pref": "山口県",
+   "cluster_members": [
+    "st03052",
+    "st03053"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03063",
+   "name": "加納",
+   "pref": "岐阜県",
+   "cluster_members": [
+    "st03064"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03064",
+   "name": "加納",
+   "pref": "宮崎県",
+   "cluster_members": [
+    "st03063"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03111",
+   "name": "十川",
+   "pref": "青森県",
+   "cluster_members": [
+    "st03112"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03112",
+   "name": "十川",
+   "pref": "高知県",
+   "cluster_members": [
+    "st03111"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03125",
+   "name": "星川",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st03126"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03126",
+   "name": "星川",
+   "pref": "三重県",
+   "cluster_members": [
+    "st03125"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03129",
+   "name": "日吉",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st03130"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03130",
+   "name": "日吉",
+   "pref": "京都府",
+   "cluster_members": [
+    "st03129"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03214",
+   "name": "森林公園",
+   "pref": "埼玉県",
+   "cluster_members": [
+    "st03215"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03215",
+   "name": "森林公園",
+   "pref": "北海道",
+   "cluster_members": [
+    "st03214"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03229",
+   "name": "黒井",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st03230"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03230",
+   "name": "黒井",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st03229"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03235",
+   "name": "吹田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st03236"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03236",
+   "name": "吹田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st03235"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03245",
+   "name": "桂川",
+   "pref": "京都府",
+   "cluster_members": [
+    "st03246"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03246",
+   "name": "桂川",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st03245"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03254",
+   "name": "野崎",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st03255"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03255",
+   "name": "野崎",
+   "pref": "栃木県",
+   "cluster_members": [
+    "st03254"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03261",
+   "name": "古市",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st03262",
+    "st03263"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03262",
+   "name": "古市",
+   "pref": "広島県",
+   "cluster_members": [
+    "st03261",
+    "st03263"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03267",
+   "name": "瀬田",
+   "pref": "滋賀県",
+   "cluster_members": [
+    "st03268"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03268",
+   "name": "瀬田",
+   "pref": "熊本県",
+   "cluster_members": [
+    "st03267"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03279",
+   "name": "小杉",
+   "pref": "富山県",
+   "cluster_members": [
+    "st03280"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03292",
+   "name": "泊",
+   "pref": "富山県",
+   "cluster_members": [
+    "st03293",
+    "st03294"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03293",
+   "name": "泊",
+   "pref": "鳥取県",
+   "cluster_members": [
+    "st03292",
+    "st03294"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03294",
+   "name": "泊",
+   "pref": "三重県",
+   "cluster_members": [
+    "st03292",
+    "st03293"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03299",
+   "name": "野々市",
+   "pref": "石川県",
+   "cluster_members": [
+    "st03300"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03300",
+   "name": "野々市",
+   "pref": "石川県",
+   "cluster_members": [
+    "st03299"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03309",
+   "name": "粟津",
+   "pref": "石川県",
+   "cluster_members": [
+    "st03310"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03310",
+   "name": "粟津",
+   "pref": "滋賀県",
+   "cluster_members": [
+    "st03309"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03317",
+   "name": "徳田",
+   "pref": "石川県",
+   "cluster_members": [
+    "st03318"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03318",
+   "name": "徳田",
+   "pref": "三重県",
+   "cluster_members": [
+    "st03317"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03329",
+   "name": "横山",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st03328"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03337",
+   "name": "青海",
+   "pref": "新潟県",
+   "cluster_members": [
+    "st03338"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03338",
+   "name": "青海",
+   "pref": "東京都",
+   "cluster_members": [
+    "st03337"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03352",
+   "name": "長谷",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st03353"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03369",
+   "name": "一本松",
+   "pref": "埼玉県",
+   "cluster_members": [
+    "st03368"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03372",
+   "name": "志井",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st03373"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03373",
+   "name": "志井",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st03372"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03375",
+   "name": "石田",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st03376"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03376",
+   "name": "石田",
+   "pref": "京都府",
+   "cluster_members": [
+    "st03375"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03377",
+   "name": "城野",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st03378"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03378",
+   "name": "城野",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st03377"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03399",
+   "name": "緑が丘",
+   "pref": "北海道",
+   "cluster_members": [
+    "st03400",
+    "st03401"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03400",
+   "name": "緑が丘",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st03399",
+    "st03401"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03401",
+   "name": "緑が丘",
+   "pref": "東京都",
+   "cluster_members": [
+    "st03399",
+    "st03400"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03420",
+   "name": "戸田",
+   "pref": "埼玉県",
+   "cluster_members": [
+    "st03421",
+    "st03422"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03421",
+   "name": "戸田",
+   "pref": "山口県",
+   "cluster_members": [
+    "st03420",
+    "st03422"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03422",
+   "name": "戸田",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st03420",
+    "st03421"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03426",
+   "name": "十条",
+   "pref": "東京都",
+   "cluster_members": [
+    "st03427",
+    "st03428"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03427",
+   "name": "十条",
+   "pref": "京都府",
+   "cluster_members": [
+    "st03426",
+    "st03428"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03428",
+   "name": "十条",
+   "pref": "京都府",
+   "cluster_members": [
+    "st03426",
+    "st03427"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03438",
+   "name": "日進",
+   "pref": "埼玉県",
+   "cluster_members": [
+    "st03439",
+    "st03440"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03439",
+   "name": "日進",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st03438",
+    "st03440"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03440",
+   "name": "日進",
+   "pref": "北海道",
+   "cluster_members": [
+    "st03438",
+    "st03439"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03447",
+   "name": "長田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st03448",
+    "st03449"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03448",
+   "name": "長田",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st03447",
+    "st03449"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03449",
+   "name": "長田",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st03447",
+    "st03448"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03468",
+   "name": "中島",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st03469"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03469",
+   "name": "中島",
+   "pref": "広島県",
+   "cluster_members": [
+    "st03468"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03520",
+   "name": "御領",
+   "pref": "広島県",
+   "cluster_members": [
+    "st03521"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03521",
+   "name": "御領",
+   "pref": "鹿児島県",
+   "cluster_members": [
+    "st03520"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03524",
+   "name": "井原",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st03525"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03525",
+   "name": "井原",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st03524"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03555",
+   "name": "小田",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st03556"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03556",
+   "name": "小田",
+   "pref": "島根県",
+   "cluster_members": [
+    "st03555"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03558",
+   "name": "三谷",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st03559"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03565",
+   "name": "荒尾",
+   "pref": "熊本県",
+   "cluster_members": [
+    "st03566"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03566",
+   "name": "荒尾",
+   "pref": "岐阜県",
+   "cluster_members": [
+    "st03565"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03594",
+   "name": "立野",
+   "pref": "熊本県",
+   "cluster_members": [
+    "st03595"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03595",
+   "name": "立野",
+   "pref": "佐賀県",
+   "cluster_members": [
+    "st03594"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03602",
+   "name": "吉野",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st03603"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03603",
+   "name": "吉野",
+   "pref": "奈良県",
+   "cluster_members": [
+    "st03602"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03604",
+   "name": "渡瀬",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st03605"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03648",
+   "name": "大泉",
+   "pref": "富山県",
+   "cluster_members": [
+    "st03649",
+    "st03650"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03649",
+   "name": "大泉",
+   "pref": "三重県",
+   "cluster_members": [
+    "st03648",
+    "st03650"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03654",
+   "name": "栄町",
+   "pref": "東京都",
+   "cluster_members": [
+    "st03652",
+    "st03653",
+    "st03655",
+    "st03656"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03671",
+   "name": "曽根",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st03670"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03780",
+   "name": "伊野",
+   "pref": "高知県",
+   "cluster_members": [
+    "st03781"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03781",
+   "name": "伊野",
+   "pref": "高知県",
+   "cluster_members": [
+    "st03780"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03785",
+   "name": "北山",
+   "pref": "京都府",
+   "cluster_members": [
+    "st03784",
+    "st03786",
+    "st03787"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03787",
+   "name": "北山",
+   "pref": "栃木県",
+   "cluster_members": [
+    "st03784",
+    "st03785",
+    "st03786"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03865",
+   "name": "卸町",
+   "pref": "宮城県",
+   "cluster_members": [
+    "st03866"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03948",
+   "name": "新富士",
+   "pref": "北海道",
+   "cluster_members": [
+    "st03949"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03966",
+   "name": "北浜",
+   "pref": "北海道",
+   "cluster_members": [
+    "st03967"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st03967",
+   "name": "北浜",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st03966"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04011",
+   "name": "寺田",
+   "pref": "富山県",
+   "cluster_members": [
+    "st04010"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04016",
+   "name": "竹田",
+   "pref": "京都府",
+   "cluster_members": [
+    "st04017"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04017",
+   "name": "竹田",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st04016"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04031",
+   "name": "三国",
+   "pref": "福井県",
+   "cluster_members": [
+    "st04032"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04032",
+   "name": "三国",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st04031"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04036",
+   "name": "番田",
+   "pref": "福井県",
+   "cluster_members": [
+    "st04037"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04037",
+   "name": "番田",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st04036"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04083",
+   "name": "桜木",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st04082"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04132",
+   "name": "比良",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st04131"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04138",
+   "name": "小野",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st04136",
+    "st04137",
+    "st04139",
+    "st04140"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04139",
+   "name": "小野",
+   "pref": "京都府",
+   "cluster_members": [
+    "st04136",
+    "st04137",
+    "st04138",
+    "st04140"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04140",
+   "name": "小野",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st04136",
+    "st04137",
+    "st04138",
+    "st04139"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04167",
+   "name": "相生",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st04168"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04168",
+   "name": "相生",
+   "pref": "岐阜県",
+   "cluster_members": [
+    "st04167"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04185",
+   "name": "足柄",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st04186"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04186",
+   "name": "足柄",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st04185"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04193",
+   "name": "原",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st04194",
+    "st04195"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04194",
+   "name": "原",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st04193",
+    "st04195"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04195",
+   "name": "原",
+   "pref": "香川県",
+   "cluster_members": [
+    "st04193",
+    "st04194"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04202",
+   "name": "清水",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st04203",
+    "st04204"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04203",
+   "name": "清水",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st04202",
+    "st04204"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04204",
+   "name": "清水",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st04202",
+    "st04203"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04215",
+   "name": "丸山",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st04214",
+    "st04216"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04336",
+   "name": "白島",
+   "pref": "広島県",
+   "cluster_members": [
+    "st04337"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04341",
+   "name": "大塚",
+   "pref": "広島県",
+   "cluster_members": [
+    "st04342"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04342",
+   "name": "大塚",
+   "pref": "東京都",
+   "cluster_members": [
+    "st04341"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04392",
+   "name": "大倉山",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st04393"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04393",
+   "name": "大倉山",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st04392"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04459",
+   "name": "運動公園前",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st04460"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04460",
+   "name": "運動公園前",
+   "pref": "青森県",
+   "cluster_members": [
+    "st04459"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04481",
+   "name": "両国",
+   "pref": "東京都",
+   "cluster_members": [
+    "st04482"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04482",
+   "name": "両国",
+   "pref": "東京都",
+   "cluster_members": [
+    "st04481"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04483",
+   "name": "森下",
+   "pref": "東京都",
+   "cluster_members": [
+    "st04484",
+    "st04485"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04484",
+   "name": "森下",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st04483",
+    "st04485"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04485",
+   "name": "森下",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st04483",
+    "st04484"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04516",
+   "name": "中野",
+   "pref": "東京都",
+   "cluster_members": [
+    "st04517",
+    "st04518"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04558",
+   "name": "川西",
+   "pref": "山口県",
+   "cluster_members": [
+    "st04559"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04559",
+   "name": "川西",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st04558"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04626",
+   "name": "仁井田",
+   "pref": "高知県",
+   "cluster_members": [
+    "st04627"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04627",
+   "name": "仁井田",
+   "pref": "栃木県",
+   "cluster_members": [
+    "st04626"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04661",
+   "name": "国分",
+   "pref": "香川県",
+   "cluster_members": [
+    "st04662"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04662",
+   "name": "国分",
+   "pref": "鹿児島県",
+   "cluster_members": [
+    "st04661"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04745",
+   "name": "玉川",
+   "pref": "岩手県",
+   "cluster_members": [
+    "st04746"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04746",
+   "name": "玉川",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st04745"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04779",
+   "name": "千里中央",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st04780"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04780",
+   "name": "千里中央",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st04779"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04781",
+   "name": "山田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st04782",
+    "st04783",
+    "st04784"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04782",
+   "name": "山田",
+   "pref": "東京都",
+   "cluster_members": [
+    "st04781",
+    "st04783",
+    "st04784"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04783",
+   "name": "山田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st04781",
+    "st04782",
+    "st04784"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04784",
+   "name": "山田",
+   "pref": "岐阜県",
+   "cluster_members": [
+    "st04781",
+    "st04782",
+    "st04783"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04848",
+   "name": "運動公園",
+   "pref": "群馬県",
+   "cluster_members": [
+    "st04849"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04849",
+   "name": "運動公園",
+   "pref": "宮崎県",
+   "cluster_members": [
+    "st04848"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04874",
+   "name": "中津",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st04875",
+    "st04876"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04875",
+   "name": "中津",
+   "pref": "大分県",
+   "cluster_members": [
+    "st04874",
+    "st04876"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04876",
+   "name": "中津",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st04875",
+    "st04874"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04923",
+   "name": "春日野道",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st04924"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04924",
+   "name": "春日野道",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st04923"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04971",
+   "name": "矢田",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st04972"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st04972",
+   "name": "矢田",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st04971"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05020",
+   "name": "松崎",
+   "pref": "鳥取県",
+   "cluster_members": [
+    "st05021"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05021",
+   "name": "松崎",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st05020"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05024",
+   "name": "浦安",
+   "pref": "鳥取県",
+   "cluster_members": [
+    "st05025"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05025",
+   "name": "浦安",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st05024"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05081",
+   "name": "筒井",
+   "pref": "奈良県",
+   "cluster_members": [
+    "st05082"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05082",
+   "name": "筒井",
+   "pref": "青森県",
+   "cluster_members": [
+    "st05081"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05109",
+   "name": "光風台",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st05110"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05111",
+   "name": "ときわ台",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st05112"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05210",
+   "name": "新郷",
+   "pref": "岡山県",
+   "cluster_members": [
+    "st05211"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05211",
+   "name": "新郷",
+   "pref": "埼玉県",
+   "cluster_members": [
+    "st05210"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05241",
+   "name": "南方",
+   "pref": "宮崎県",
+   "cluster_members": [
+    "st05242"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05242",
+   "name": "南方",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st05241"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05324",
+   "name": "梅林",
+   "pref": "福岡県",
+   "cluster_members": [
+    "st05323"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05331",
+   "name": "横川",
+   "pref": "広島県",
+   "cluster_members": [
+    "st05332"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05373",
+   "name": "下松",
+   "pref": "山口県",
+   "cluster_members": [
+    "st05374"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05374",
+   "name": "下松",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st05373"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05376",
+   "name": "島田",
+   "pref": "山口県",
+   "cluster_members": [
+    "st05377"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05377",
+   "name": "島田",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st05376"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05384",
+   "name": "神代",
+   "pref": "秋田県",
+   "cluster_members": [
+    "st05383",
+    "st05385"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05385",
+   "name": "神代",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st05383",
+    "st05384"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05388",
+   "name": "味美",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st05389"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05486",
+   "name": "平井",
+   "pref": "東京都",
+   "cluster_members": [
+    "st05487"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05487",
+   "name": "平井",
+   "pref": "愛媛県",
+   "cluster_members": [
+    "st05486"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05532",
+   "name": "菊川",
+   "pref": "東京都",
+   "cluster_members": [
+    "st05533"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05533",
+   "name": "菊川",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st05532"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05548",
+   "name": "長沼",
+   "pref": "東京都",
+   "cluster_members": [
+    "st05549"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05549",
+   "name": "長沼",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st05548"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05573",
+   "name": "高尾",
+   "pref": "東京都",
+   "cluster_members": [
+    "st05574"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05574",
+   "name": "高尾",
+   "pref": "岐阜県",
+   "cluster_members": [
+    "st05573"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05587",
+   "name": "石原",
+   "pref": "京都府",
+   "cluster_members": [
+    "st05586"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05596",
+   "name": "桜沢",
+   "pref": "埼玉県",
+   "cluster_members": [
+    "st05597"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05597",
+   "name": "桜沢",
+   "pref": "長野県",
+   "cluster_members": [
+    "st05596"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05641",
+   "name": "北山田",
+   "pref": "大分県",
+   "cluster_members": [
+    "st05642"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05642",
+   "name": "北山田",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st05641"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05647",
+   "name": "庄内",
+   "pref": "大分県",
+   "cluster_members": [
+    "st05648"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05648",
+   "name": "庄内",
+   "pref": "大阪府",
+   "cluster_members": [
+    "st05647"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05681",
+   "name": "中川",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st05682"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05682",
+   "name": "中川",
+   "pref": "山形県",
+   "cluster_members": [
+    "st05681"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05724",
+   "name": "長原",
+   "pref": "東京都",
+   "cluster_members": [
+    "st05723"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05815",
+   "name": "醍醐",
+   "pref": "京都府",
+   "cluster_members": [
+    "st05814"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05828",
+   "name": "高瀬",
+   "pref": "香川県",
+   "cluster_members": [
+    "st05827"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05918",
+   "name": "山ノ内",
+   "pref": "京都府",
+   "cluster_members": [
+    "st05919"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05919",
+   "name": "山ノ内",
+   "pref": "広島県",
+   "cluster_members": [
+    "st05918"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05921",
+   "name": "西院",
+   "pref": "京都府",
+   "cluster_members": [
+    "st05922"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05922",
+   "name": "西院",
+   "pref": "京都府",
+   "cluster_members": [
+    "st05921"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05973",
+   "name": "大山",
+   "pref": "鹿児島県",
+   "cluster_members": [
+    "st05974"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05974",
+   "name": "大山",
+   "pref": "東京都",
+   "cluster_members": [
+    "st05973"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05979",
+   "name": "入野",
+   "pref": "鹿児島県",
+   "cluster_members": [
+    "st05980"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st05980",
+   "name": "入野",
+   "pref": "広島県",
+   "cluster_members": [
+    "st05979"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06096",
+   "name": "渚",
+   "pref": "長野県",
+   "cluster_members": [
+    "st06097"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06097",
+   "name": "渚",
+   "pref": "岐阜県",
+   "cluster_members": [
+    "st06096"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06173",
+   "name": "若林",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st06174"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06174",
+   "name": "若林",
+   "pref": "東京都",
+   "cluster_members": [
+    "st06173"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06185",
+   "name": "吉浜",
+   "pref": "岩手県",
+   "cluster_members": [
+    "st06184"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06199",
+   "name": "元山",
+   "pref": "香川県",
+   "cluster_members": [
+    "st06200"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06200",
+   "name": "元山",
+   "pref": "千葉県",
+   "cluster_members": [
+    "st06199"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06215",
+   "name": "岡本",
+   "pref": "栃木県",
+   "cluster_members": [
+    "st06214",
+    "st06216"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06216",
+   "name": "岡本",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st06214",
+    "st06215"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06249",
+   "name": "滝",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st06250"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06289",
+   "name": "三川",
+   "pref": "北海道",
+   "cluster_members": [
+    "st06288"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06319",
+   "name": "横倉",
+   "pref": "長野県",
+   "cluster_members": [
+    "st06320"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06320",
+   "name": "横倉",
+   "pref": "宮城県",
+   "cluster_members": [
+    "st06319"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06336",
+   "name": "三宮",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st06337"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06337",
+   "name": "三宮",
+   "pref": "兵庫県",
+   "cluster_members": [
+    "st06336"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06354",
+   "name": "東松江",
+   "pref": "島根県",
+   "cluster_members": [
+    "st06353"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06357",
+   "name": "八幡前",
+   "pref": "京都府",
+   "cluster_members": [
+    "st06356"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06405",
+   "name": "小柳",
+   "pref": "青森県",
+   "cluster_members": [
+    "st06406"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06711",
+   "name": "扇町",
+   "pref": "神奈川県",
+   "cluster_members": [
+    "st06710"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06721",
+   "name": "富田",
+   "pref": "三重県",
+   "cluster_members": [
+    "st06719",
+    "st06720"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06765",
+   "name": "梁川",
+   "pref": "福島県",
+   "cluster_members": [
+    "st06764"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06933",
+   "name": "柳原",
+   "pref": "愛媛県",
+   "cluster_members": [
+    "st06934",
+    "st06935"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st06935",
+   "name": "柳原",
+   "pref": "長野県",
+   "cluster_members": [
+    "st06933",
+    "st06934"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07072",
+   "name": "成島",
+   "pref": "群馬県",
+   "cluster_members": [
+    "st07071"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07145",
+   "name": "山口",
+   "pref": "山口県",
+   "cluster_members": [
+    "st07146"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07146",
+   "name": "山口",
+   "pref": "愛知県",
+   "cluster_members": [
+    "st07145"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07213",
+   "name": "福野",
+   "pref": "岐阜県",
+   "cluster_members": [
+    "st07214"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07214",
+   "name": "福野",
+   "pref": "富山県",
+   "cluster_members": [
+    "st07213"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07294",
+   "name": "東新川",
+   "pref": "山口県",
+   "cluster_members": [
+    "st07295"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07295",
+   "name": "東新川",
+   "pref": "群馬県",
+   "cluster_members": [
+    "st07294"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07338",
+   "name": "柚木",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st07339"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07455",
+   "name": "船岡",
+   "pref": "宮城県",
+   "cluster_members": [
+    "st07456"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07456",
+   "name": "船岡",
+   "pref": "京都府",
+   "cluster_members": [
+    "st07455"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07495",
+   "name": "愛宕",
+   "pref": "宮城県",
+   "cluster_members": [
+    "st07496"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07531",
+   "name": "本宮",
+   "pref": "福島県",
+   "cluster_members": [
+    "st07532"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07532",
+   "name": "本宮",
+   "pref": "富山県",
+   "cluster_members": [
+    "st07531"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07604",
+   "name": "黒石",
+   "pref": "熊本県",
+   "cluster_members": [
+    "st07605"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07889",
+   "name": "向原",
+   "pref": "東京都",
+   "cluster_members": [
+    "st07890"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07960",
+   "name": "御厨",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st07961"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07961",
+   "name": "御厨",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st07960"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07969",
+   "name": "高岩",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st07970"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st07970",
+   "name": "高岩",
+   "pref": "長野県",
+   "cluster_members": [
+    "st07969"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st08326",
+   "name": "東山",
+   "pref": "京都府",
+   "cluster_members": [
+    "st08327"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st08327",
+   "name": "東山",
+   "pref": "奈良県",
+   "cluster_members": [
+    "st08326"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st08518",
+   "name": "千里",
+   "pref": "三重県",
+   "cluster_members": [
+    "st08517"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st08625",
+   "name": "愛野",
+   "pref": "静岡県",
+   "cluster_members": [
+    "st08626"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st08626",
+   "name": "愛野",
+   "pref": "長崎県",
+   "cluster_members": [
+    "st08625"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  },
+  {
+   "slug": "st08718",
+   "name": "新里",
+   "pref": "群馬県",
+   "cluster_members": [
+    "st08719"
+   ],
+   "identity_confidence": "low",
+   "suggested_action": "优先重捕带站牌候选"
+  }
+ ]
+}
