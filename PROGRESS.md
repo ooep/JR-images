@@ -1037,3 +1037,9 @@
 - st04169 维持现图 below_spec_confirmed：最高 4.50<9.57（候选3 长野饭田线竜野同名异线拒）
 - st00507 维持现图 below_spec_confirmed：候选为三日月阵屋古建非站景拒；1.75 且现图无分
 - runner 42192788960 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 4。
+
+
+## ws17 below-spec replace WS17-B20 — 2026-11-06T09:28:55Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=5 staged=20 confirmed=0 skipped=0
+- reject_dist={"same_as_current": 25, "hard_excluded": 35, "resolution_low_lt_1600": 117, "mime_unsupported": 54, "quality_reject_low_color": 30, "title_names_other_station": 18, "duplicate_title": 5, "no_author_metadata": 20, "resolution_not_upgrade": 13, "title_non_station_scene": 19}

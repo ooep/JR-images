@@ -1,24 +1,76 @@
 {
- "batch_id": "WS17-B19",
+ "batch_id": "WS17-B20",
  "queue": [
-  "st01311",
-  "st03678",
-  "st04169",
-  "st00507"
+  "st01380",
+  "st00864",
+  "st00973",
+  "st03123",
+  "st04398",
+  "st02160",
+  "st01885",
+  "st01627",
+  "st04394",
+  "st03858",
+  "st05729",
+  "st02099",
+  "st02153",
+  "st02152",
+  "st01626",
+  "st01623",
+  "st01900",
+  "st03091",
+  "st01382",
+  "st02158",
+  "st00865",
+  "st06769",
+  "st05060",
+  "st06748",
+  "st03097"
  ],
- "replaced": [],
- "staged": [
+ "replaced": [
   {
-   "slug": "st01311",
-   "title": "File:JR西日本新長田駅前広場.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:JR西日本新長田駅前広場.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/JR%E8%A5%BF%E6%97%A5%E6%9C%AC%E6%96%B0%E9%95%B7%E7%94%B0%E9%A7%85%E5%89%8D%E5%BA%83%E5%A0%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "author": "NatsuTV",
-   "sha256": "06780b6a03cac786b062f706875effc9fa5229f8dee9ad7d2114ef572c08a3cb",
-   "dhash": "07436565e4b5fdc9",
-   "bytes": 382570,
+   "slug": "st00973",
+   "name": "根岸",
+   "pref": "神奈川県",
+   "title": "File:Many tank cars at JR Negishi Station (Kanagawa pref., Japan).jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Many_tank_cars_at_JR_Negishi_Station_(Kanagawa_pref.,_Japan).jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Many_tank_cars_at_JR_Negishi_Station_%28Kanagawa_pref.%2C_Japan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Hisi21",
+   "sha256": "a2e87f60319d3e9decb51a15bba5762b5a888e46446441b77e785f59f6e21e24",
+   "dhash": "90b7d4b631ef7fe1",
+   "bytes": 460476,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4608,
+    "original_height": 3456
+   },
+   "dist_m": 94.7,
+   "score": 3.8,
+   "image_score": 6.59,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false
+  },
+  {
+   "slug": "st03123",
+   "name": "鶴ケ峰",
+   "pref": "神奈川県",
+   "title": "File:Sagami-railway-SO09-Tsurugamine-station-entrance-south-20200114-122915.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Sagami-railway-SO09-Tsurugamine-station-entrance-south-20200114-122915.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Sagami-railway-SO09-Tsurugamine-station-entrance-south-20200114-122915.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "LERK",
+   "sha256": "797b4ee1763eea7bc31492c851e0a21e380a43d98fdd200fd966bf9af938e671",
+   "dhash": "a1cc9c7c5990cc83",
+   "bytes": 340059,
    "width": 1800,
    "height": 1012,
    "normalized": {
@@ -28,57 +80,584 @@
     "original_width": 4032,
     "original_height": 2268
    },
-   "dist_m": 86.9,
-   "score": 7.52,
+   "dist_m": 55.0,
+   "score": 3.52,
+   "image_score": 6.66,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": false,
+   "running_near": false
+  },
+  {
+   "slug": "st04398",
+   "name": "新高島",
+   "pref": "神奈川県",
+   "title": "File:Shin Takashima Station Surrounding Aug2016.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Shin_Takashima_Station_Surrounding_Aug2016.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Shin_Takashima_Station_Surrounding_Aug2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Doricono",
+   "sha256": "d2922727251332ce8092a1efb96d848d697ec3dc5f3b4ef95e539ee73984d3e0",
+   "dhash": "2cb4f0d85993971e",
+   "bytes": 476764,
+   "width": 1800,
+   "height": 1012,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3840,
+    "original_height": 2160
+   },
+   "dist_m": 225.3,
+   "score": 5.42,
    "image_score": 6.68,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false
+  },
+  {
+   "slug": "st03858",
+   "name": "希望ケ丘",
+   "pref": "神奈川県",
+   "title": "File:Sotetsu main line, Kibōgaoka Station, SO11, north exit.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Sotetsu_main_line,_Kibōgaoka_Station,_SO11,_north_exit.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Sotetsu_main_line%2C_Kib%C5%8Dgaoka_Station%2C_SO11%2C_north_exit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Kazyakuruma",
+   "sha256": "ecaa8d65e49d26ea30d86843c67a756492def6631eb31553c046f76327cc93e8",
+   "dhash": "6e6f4f4fcb4b5313",
+   "bytes": 455716,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3653,
+    "original_height": 2740
+   },
+   "dist_m": 119.9,
+   "score": 3.33,
+   "image_score": 7.13,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": false,
+   "running_near": false
+  },
+  {
+   "slug": "st01900",
+   "name": "長津田",
+   "pref": "神奈川県",
+   "title": "File:JREast-Yokohama-line-JH21-Nagatsuta-station-platform-20220723-162649.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:JREast-Yokohama-line-JH21-Nagatsuta-station-platform-20220723-162649.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/JREast-Yokohama-line-JH21-Nagatsuta-station-platform-20220723-162649.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "LERK",
+   "sha256": "e2b78a3e6602449ef007275614cae02a97b37136bf5f315f1fd66051624d7d70",
+   "dhash": "970f23a3a7878f3f",
+   "bytes": 454432,
+   "width": 1800,
+   "height": 1012,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 8160,
+    "original_height": 4590
+   },
+   "dist_m": 50.6,
+   "score": 5.5,
+   "image_score": 7.31,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false
+  }
+ ],
+ "staged": [
+  {
+   "slug": "st01380",
+   "title": "File:Tokaido Shinkansen transmission line owned by JR Central(from Nishi-Sagami frequency changer substation till Kamonomiya electrical substation) 14.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tokaido_Shinkansen_transmission_line_owned_by_JR_Central(from_Nishi-Sagami_frequency_changer_substation_till_Kamonomiya_electrical_substation)_14.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Tokaido_Shinkansen_transmission_line_owned_by_JR_Central%28from_Nishi-Sagami_frequency_changer_substation_till_Kamonomiya_electrical_substation%29_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "電助",
+   "sha256": "19924df905887b490e08d78c5e86a60120ed81938ec7903a0f80e62ee649f588",
+   "dhash": "0000c484f199982e",
+   "bytes": 352658,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2560,
+    "original_height": 1920
+   },
+   "dist_m": null,
+   "score": 4.78,
+   "image_score": 6.23,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 800.0,
+    "colorfulness": 35.9,
+    "white_frac": 0.0,
+    "edge_density": 0.0439,
+    "sky_frac": 0.409,
+    "brightness": 132.4,
+    "dark_frac": 0.25,
+    "center_edge": 0.0467
+   },
+   "current": {
+    "sha256": "9c2cafb0f13b7d82756357573423e27c516eb13adeec49dc2e8737d2cd2aebda",
+    "score": 5.89,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Gohyakurakan Station - 2022 Oct 2022 various 20 19 28 054000.jpeg"
+   }
+  },
+  {
+   "slug": "st01380",
+   "title": "File:Gohyakurakan-ji temple Dec 26 2020.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Gohyakurakan-ji_temple_Dec_26_2020.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Gohyakurakan-ji_temple_Dec_26_2020.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "6d420a867b39a0a0f6b7b71cc1cf380d74833f6f01de20c1f33fe2342dfa2a52",
+   "dhash": "064e4d6c891347c9",
+   "bytes": 383670,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": null,
+   "score": 2.52,
+   "image_score": 5.73,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color",
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 812.5,
+    "colorfulness": 23.9,
+    "white_frac": 0.038,
+    "edge_density": 0.0494,
+    "sky_frac": 0.472,
+    "brightness": 104.1,
+    "dark_frac": 0.183,
+    "center_edge": 0.0607
+   },
+   "current": {
+    "sha256": "9c2cafb0f13b7d82756357573423e27c516eb13adeec49dc2e8737d2cd2aebda",
+    "score": 5.89,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Gohyakurakan Station - 2022 Oct 2022 various 20 19 28 054000.jpeg"
+   }
+  },
+  {
+   "slug": "st01380",
+   "title": "File:Rakan-ji 500 Rakan 001.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Rakan-ji_500_Rakan_001.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Rakan-ji_500_Rakan_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Naokijp",
+   "sha256": "8f925689330a92753123653f992eeb658aad697b5c3ffa1c3c436b0a25e0f83e",
+   "dhash": "e08d862692932330",
+   "bytes": 984518,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3264,
+    "original_height": 2448
+   },
+   "dist_m": null,
+   "score": 2.13,
+   "image_score": 5.57,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 6728.5,
+    "colorfulness": 28.0,
+    "white_frac": 0.014,
+    "edge_density": 0.365,
+    "sky_frac": 0.188,
+    "brightness": 119.4,
+    "dark_frac": 0.061,
+    "center_edge": 0.4004
+   },
+   "current": {
+    "sha256": "9c2cafb0f13b7d82756357573423e27c516eb13adeec49dc2e8737d2cd2aebda",
+    "score": 5.89,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Gohyakurakan Station - 2022 Oct 2022 various 20 19 28 054000.jpeg"
+   }
+  },
+  {
+   "slug": "st00864",
+   "title": "File:Keikyu 1438 Minami Ota.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Keikyu_1438_Minami_Ota.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Keikyu_1438_Minami_Ota.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Hahifuheho\n\n This photo was taken with iPhone 5",
+   "sha256": "df0a7f06002ba1341afdb6188debda1b3fc13fb9de36190769188ce807f36d5f",
+   "dhash": "9ff06353b383e076",
+   "bytes": 474089,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3264,
+    "original_height": 2448
+   },
+   "dist_m": 38.1,
+   "score": 2.13,
+   "image_score": 5.88,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1756.4,
+    "colorfulness": 68.2,
+    "white_frac": 0.089,
+    "edge_density": 0.1352,
+    "sky_frac": 0.177,
+    "brightness": 85.8,
+    "dark_frac": 0.345,
+    "center_edge": 0.0995
+   },
+   "current": {
+    "sha256": "2974d5ef0195e08b59bfd615442cbcb84e4f00e186e1688a2013939bb7d178ac",
+    "score": 6.38,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Keikyu-railway-main-line-Minami-ota-station-north-entrance.jpg"
+   }
+  },
+  {
+   "slug": "st00864",
+   "title": "File:Keikyu 1439 Minami Ota.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Keikyu_1439_Minami_Ota.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Keikyu_1439_Minami_Ota.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Hahifuheho\n\n This photo was taken with iPhone 5",
+   "sha256": "4dca253a06c8e296618b51888bbffe2773faf64f8d21ab018bb04c68dbc09cd0",
+   "dhash": "20bff0696981f07f",
+   "bytes": 548308,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3264,
+    "original_height": 2448
+   },
+   "dist_m": 30.7,
+   "score": 2.13,
+   "image_score": 5.12,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 2462.8,
+    "colorfulness": 60.2,
+    "white_frac": 0.01,
+    "edge_density": 0.1427,
+    "sky_frac": 0.089,
+    "brightness": 70.6,
+    "dark_frac": 0.422,
+    "center_edge": 0.1434
+   },
+   "current": {
+    "sha256": "2974d5ef0195e08b59bfd615442cbcb84e4f00e186e1688a2013939bb7d178ac",
+    "score": 6.38,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Keikyu-railway-main-line-Minami-ota-station-north-entrance.jpg"
+   }
+  },
+  {
+   "slug": "st00864",
+   "title": "File:Keikyu 1440 Minami Ota.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Keikyu_1440_Minami_Ota.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Keikyu_1440_Minami_Ota.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Hahifuheho\n\n This photo was taken with iPhone 5",
+   "sha256": "9637a5792bb84b4fd07c17a031fef29ed5db17b8f53b8ef8d7d30ceebbe31b4a",
+   "dhash": "c3fdf069f981f079",
+   "bytes": 537914,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3264,
+    "original_height": 2448
+   },
+   "dist_m": 21.0,
+   "score": 2.13,
+   "image_score": 5.12,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 2479.6,
+    "colorfulness": 59.1,
+    "white_frac": 0.04,
+    "edge_density": 0.1379,
+    "sky_frac": 0.119,
+    "brightness": 71.6,
+    "dark_frac": 0.42,
+    "center_edge": 0.1334
+   },
+   "current": {
+    "sha256": "2974d5ef0195e08b59bfd615442cbcb84e4f00e186e1688a2013939bb7d178ac",
+    "score": 6.38,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Keikyu-railway-main-line-Minami-ota-station-north-entrance.jpg"
+   }
+  },
+  {
+   "slug": "st02160",
+   "title": "File:市が尾BT - panoramio.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:市が尾BT_-_panoramio.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/%E5%B8%82%E3%81%8C%E5%B0%BEBT_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "KΛNΛTΛ",
+   "sha256": "2b8009d7684cd7c47e0d40cd7fcbe0fb8d51bee44b7f92b5d330f8b9c6565dbf",
+   "dhash": "8df81a9ed7db764f",
+   "bytes": 352262,
+   "width": 1800,
+   "height": 1014,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4288,
+    "original_height": 2416
+   },
+   "dist_m": 100.2,
+   "score": 4.64,
+   "image_score": 6.09,
    "quality": "done",
    "quality_reasons": [],
    "self_hit": true,
    "running_near": false,
    "metrics": {
     "width": 1800,
-    "height": 1012,
-    "lap_var": 2342.4,
-    "colorfulness": 33.3,
-    "white_frac": 0.0,
-    "edge_density": 0.1047,
-    "sky_frac": 0.434,
-    "brightness": 122.9,
-    "dark_frac": 0.081,
-    "center_edge": 0.1136
+    "height": 1014,
+    "lap_var": 1662.7,
+    "colorfulness": 29.1,
+    "white_frac": 0.009,
+    "edge_density": 0.0968,
+    "sky_frac": 0.227,
+    "brightness": 110.0,
+    "dark_frac": 0.148,
+    "center_edge": 0.13
    },
    "current": {
-    "sha256": "57ef2fffd53f3297901b6687b2199728ca71cdd737f2e8ed5c3d0bd3c3b093ae",
-    "score": 8.76,
+    "sha256": "744de0bb1faf518794797db40ba3f5d1d91167435e5cbd58038fd829ccc53f52",
+    "score": 6.68,
     "long": 1800,
     "reasons": [
      "low_color"
     ],
-    "source_title": "File:JR新長田駅と神戸市営地下鉄新長田駅.jpg"
+    "source_title": "File:Ichigao Station Etomo.jpg"
    }
   },
   {
-   "slug": "st01311",
-   "title": "File:神戸市バス新長田駅前停留所C乗り場.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:神戸市バス新長田駅前停留所C乗り場.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/%E7%A5%9E%E6%88%B8%E5%B8%82%E3%83%90%E3%82%B9%E6%96%B0%E9%95%B7%E7%94%B0%E9%A7%85%E5%89%8D%E5%81%9C%E7%95%99%E6%89%80C%E4%B9%97%E3%82%8A%E5%A0%B4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "author": "小田急4000系ファン",
-   "sha256": "bb60b29b3a3fde04c6145d6ff5ca77eb276f309ee11717fffa938ab8fba42a07",
-   "dhash": "e4e952e6d3901433",
-   "bytes": 410159,
+   "slug": "st02160",
+   "title": "File:Tokyu-ichigao-platform.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tokyu-ichigao-platform.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Tokyu-ichigao-platform.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 2.5",
+   "license_url": "https://creativecommons.org/licenses/by/2.5",
+   "author": "LERK",
+   "sha256": "0b6fea461d7f5c3da1505a599c74526da7651c0c0e68ad5f6a79a061cecedb12",
+   "dhash": "59d2654d8fd3c8ce",
+   "bytes": 587887,
    "width": 1800,
-   "height": 1012,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 4032,
-    "original_height": 2268
+    "original_width": 2816,
+    "original_height": 2112
    },
-   "dist_m": 127.5,
-   "score": 7.52,
+   "dist_m": null,
+   "score": 5.91,
+   "image_score": 5.21,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 3200.5,
+    "colorfulness": 21.5,
+    "white_frac": 0.067,
+    "edge_density": 0.1488,
+    "sky_frac": 0.282,
+    "brightness": 101.1,
+    "dark_frac": 0.284,
+    "center_edge": 0.1654
+   },
+   "current": {
+    "sha256": "744de0bb1faf518794797db40ba3f5d1d91167435e5cbd58038fd829ccc53f52",
+    "score": 6.68,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Ichigao Station Etomo.jpg"
+   }
+  },
+  {
+   "slug": "st02160",
+   "title": "File:Ichigao Station west entrance.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Ichigao_Station_west_entrance.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Ichigao_Station_west_entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Yaguchi",
+   "sha256": "31cd2c60dd32b7588944f9efe97fe8447e9acb22b0958d4e190c8a4149c31696",
+   "dhash": "b4c4e4272f7cf303",
+   "bytes": 341203,
+   "width": 1800,
+   "height": 1200,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3798,
+    "original_height": 2532
+   },
+   "dist_m": null,
+   "score": 5.4,
+   "image_score": 6.03,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1200,
+    "lap_var": 776.6,
+    "colorfulness": 22.5,
+    "white_frac": 0.201,
+    "edge_density": 0.0576,
+    "sky_frac": 0.78,
+    "brightness": 124.6,
+    "dark_frac": 0.183,
+    "center_edge": 0.0636
+   },
+   "current": {
+    "sha256": "744de0bb1faf518794797db40ba3f5d1d91167435e5cbd58038fd829ccc53f52",
+    "score": 6.68,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Ichigao Station Etomo.jpg"
+   }
+  },
+  {
+   "slug": "st01885",
+   "title": "File:Isogo Station platforms - Sept 5 2021 various 16 20 57 986000.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Isogo_Station_platforms_-_Sept_5_2021_various_16_20_57_986000.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Isogo_Station_platforms_-_Sept_5_2021_various_16_20_57_986000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "d7c594c34009a34c664a55f86c21c78079cccd93f6b32632e59ca082b1aa4775",
+   "dhash": "0d8bce6eddcc5e5e",
+   "bytes": 276906,
+   "width": 1800,
+   "height": 915,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 7574,
+    "original_height": 3850
+   },
+   "dist_m": 144.6,
+   "score": 7.5,
    "image_score": 6.44,
    "quality": "review",
    "quality_reasons": [
@@ -88,49 +667,151 @@
    "running_near": false,
    "metrics": {
     "width": 1800,
-    "height": 1012,
-    "lap_var": 1917.0,
-    "colorfulness": 19.3,
-    "white_frac": 0.01,
-    "edge_density": 0.0972,
+    "height": 915,
+    "lap_var": 580.2,
+    "colorfulness": 20.7,
+    "white_frac": 0.084,
+    "edge_density": 0.0418,
     "sky_frac": 0.239,
-    "brightness": 115.9,
-    "dark_frac": 0.025,
-    "center_edge": 0.1384
+    "brightness": 111.8,
+    "dark_frac": 0.017,
+    "center_edge": 0.0445
    },
    "current": {
-    "sha256": "57ef2fffd53f3297901b6687b2199728ca71cdd737f2e8ed5c3d0bd3c3b093ae",
-    "score": 8.76,
+    "sha256": "98259723e7d3e862ec37f33faf94ed29545c9d18300b3a36e39d48a67e71b071",
+    "score": 6.71,
     "long": 1800,
     "reasons": [
      "low_color"
     ],
-    "source_title": "File:JR新長田駅と神戸市営地下鉄新長田駅.jpg"
+    "source_title": "File:JR Negishi-Line Isogo Station Platform.jpg"
    }
   },
   {
-   "slug": "st01311",
-   "title": "File:JR新長田駅改札口.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:JR新長田駅改札口.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/JR%E6%96%B0%E9%95%B7%E7%94%B0%E9%A7%85%E6%94%B9%E6%9C%AD%E5%8F%A3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "author": "NatsuTV",
-   "sha256": "53cbae2d4c3d420733b478230feaababa4ba1f3ee3457516f73b7f364118ef0c",
-   "dhash": "0d88f38f8a3ba868",
-   "bytes": 355343,
+   "slug": "st01885",
+   "title": "File:Isogo Station platforms - Sept 5 2021 various 16 20 16 173000.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Isogo_Station_platforms_-_Sept_5_2021_various_16_20_16_173000.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Isogo_Station_platforms_-_Sept_5_2021_various_16_20_16_173000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "af9c695b2e097005b62340aacc4396bb5909a8937e0f6203ad8027b071f9f59e",
+   "dhash": "f8fc6838301cc6f0",
+   "bytes": 568452,
    "width": 1800,
-   "height": 1012,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
     "original_width": 4032,
-    "original_height": 2268
+    "original_height": 3024
    },
-   "dist_m": 5.9,
+   "dist_m": 15.5,
+   "score": 6.52,
+   "image_score": 4.67,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 2352.4,
+    "colorfulness": 22.6,
+    "white_frac": 0.029,
+    "edge_density": 0.1147,
+    "sky_frac": 0.389,
+    "brightness": 81.1,
+    "dark_frac": 0.342,
+    "center_edge": 0.1901
+   },
+   "current": {
+    "sha256": "98259723e7d3e862ec37f33faf94ed29545c9d18300b3a36e39d48a67e71b071",
+    "score": 6.71,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:JR Negishi-Line Isogo Station Platform.jpg"
+   }
+  },
+  {
+   "slug": "st01885",
+   "title": "File:Isogo Station platforms - Sept 5 2021 various.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Isogo_Station_platforms_-_Sept_5_2021_various.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Isogo_Station_platforms_-_Sept_5_2021_various.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "cea35b5ddf5110ca7ed2e2ea452d74c970444666e1749e0699a6669c669d5938",
+   "dhash": "df2b8fa6b3941607",
+   "bytes": 537390,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": 16.0,
+   "score": 6.52,
+   "image_score": 4.76,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1705.5,
+    "colorfulness": 23.5,
+    "white_frac": 0.007,
+    "edge_density": 0.0983,
+    "sky_frac": 0.089,
+    "brightness": 80.8,
+    "dark_frac": 0.326,
+    "center_edge": 0.1101
+   },
+   "current": {
+    "sha256": "98259723e7d3e862ec37f33faf94ed29545c9d18300b3a36e39d48a67e71b071",
+    "score": 6.71,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:JR Negishi-Line Isogo Station Platform.jpg"
+   }
+  },
+  {
+   "slug": "st01627",
+   "title": "File:Ikuta Station - Kanagawa - May 11 2021 various 18 44 50 483000.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_44_50_483000.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_44_50_483000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "78115033c0d5b88bd02241ac46d9a0c64034a7b1b02e6e8b44d9e68993a2a8a2",
+   "dhash": "4f7e1f0f9f9f1ffb",
+   "bytes": 391255,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": null,
    "score": 5.52,
-   "image_score": 6.42,
+   "image_score": 4.88,
    "quality": "review",
    "quality_reasons": [
     "low_color"
@@ -139,247 +820,149 @@
    "running_near": false,
    "metrics": {
     "width": 1800,
-    "height": 1012,
-    "lap_var": 1931.6,
-    "colorfulness": 21.6,
-    "white_frac": 0.006,
-    "edge_density": 0.0929,
-    "sky_frac": 0.557,
-    "brightness": 124.3,
-    "dark_frac": 0.078,
-    "center_edge": 0.1188
+    "height": 1350,
+    "lap_var": 764.7,
+    "colorfulness": 20.6,
+    "white_frac": 0.062,
+    "edge_density": 0.0541,
+    "sky_frac": 0.009,
+    "brightness": 83.8,
+    "dark_frac": 0.29,
+    "center_edge": 0.0674
    },
    "current": {
-    "sha256": "57ef2fffd53f3297901b6687b2199728ca71cdd737f2e8ed5c3d0bd3c3b093ae",
-    "score": 8.76,
+    "sha256": "56e80a98b87f34051eb9b3df0f64569cb469735ed84e89b6213ca98eebff6fa9",
+    "score": 6.79,
     "long": 1800,
     "reasons": [
      "low_color"
     ],
-    "source_title": "File:JR新長田駅と神戸市営地下鉄新長田駅.jpg"
+    "source_title": "File:Ikuta Station - Kanagawa - May 11 2021 various 18 45 09 344000.jpeg"
    }
   },
   {
-   "slug": "st03678",
-   "title": "File:Aboshi 20200103150550 (50258834016).jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Aboshi_20200103150550_(50258834016).jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Aboshi_20200103150550_%2850258834016%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 2.0",
-   "license_url": "https://creativecommons.org/licenses/by/2.0",
-   "author": "inunami",
-   "sha256": "029210f2676a200c2d6520c29d37ce2e386d3ce35b92bd6f43eed58ed5ef2d38",
-   "dhash": "6134373b9f96fc0f",
-   "bytes": 403234,
+   "slug": "st01627",
+   "title": "File:Ikuta Station - Kanagawa - May 11 2021 various 18 45 24 479000.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_45_24_479000.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_45_24_479000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "8c507982a94da4fa6d41dfa9a2fabfdff79d3d653bc4577e66ecbd1adb1d9e03",
+   "dhash": "e0b09998c5ee2c8d",
+   "bytes": 330526,
    "width": 1800,
    "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 3264,
-    "original_height": 2448
+    "original_width": 4032,
+    "original_height": 3024
    },
-   "dist_m": 52.9,
-   "score": 4.13,
-   "image_score": 7.06,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1205.8,
-    "colorfulness": 46.2,
-    "white_frac": 0.002,
-    "edge_density": 0.0669,
-    "sky_frac": 0.147,
-    "brightness": 129.6,
-    "dark_frac": 0.096,
-    "center_edge": 0.1089
-   },
-   "current": {
-    "sha256": "809e7e44caa22fc9e44818ccbbbf7749f7d46b395c4759048712d64c9a8b74a0",
-    "score": 9.36,
-    "long": 1800,
-    "reasons": [
-     "low_color"
-    ],
-    "source_title": "File:JR網干駅 駅舎（2018-05-04）.jpg"
-   }
-  },
-  {
-   "slug": "st03678",
-   "title": "File:Aboshi 20200103150727 (50258833736).jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Aboshi_20200103150727_(50258833736).jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Aboshi_20200103150727_%2850258833736%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 2.0",
-   "license_url": "https://creativecommons.org/licenses/by/2.0",
-   "author": "inunami",
-   "sha256": "2769762084ba70357aba477f7a31dc92ae948ecfd86082b8233e1ed0311aaf99",
-   "dhash": "bedc58a9935384d0",
-   "bytes": 324353,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3264,
-    "original_height": 2448
-   },
-   "dist_m": 28.9,
-   "score": 4.13,
-   "image_score": 6.98,
-   "quality": "review",
-   "quality_reasons": [
-    "low_color"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 520.6,
-    "colorfulness": 19.4,
-    "white_frac": 0.13,
-    "edge_density": 0.0328,
-    "sky_frac": 0.969,
-    "brightness": 152.8,
-    "dark_frac": 0.043,
-    "center_edge": 0.0387
-   },
-   "current": {
-    "sha256": "809e7e44caa22fc9e44818ccbbbf7749f7d46b395c4759048712d64c9a8b74a0",
-    "score": 9.36,
-    "long": 1800,
-    "reasons": [
-     "low_color"
-    ],
-    "source_title": "File:JR網干駅 駅舎（2018-05-04）.jpg"
-   }
-  },
-  {
-   "slug": "st03678",
-   "title": "File:Aboshi 20200103151124 (50258833311).jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Aboshi_20200103151124_(50258833311).jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Aboshi_20200103151124_%2850258833311%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 2.0",
-   "license_url": "https://creativecommons.org/licenses/by/2.0",
-   "author": "inunami",
-   "sha256": "af2f01a301a0a1b6794cde2b210fc22f50368a15cb4e79e15a27b2b6cdec8e8e",
-   "dhash": "ffb8a2736893d8e6",
-   "bytes": 447915,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3264,
-    "original_height": 2448
-   },
-   "dist_m": 13.3,
-   "score": 4.13,
-   "image_score": 6.76,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1142.0,
-    "colorfulness": 26.7,
-    "white_frac": 0.033,
-    "edge_density": 0.0702,
-    "sky_frac": 0.91,
-    "brightness": 130.2,
-    "dark_frac": 0.051,
-    "center_edge": 0.0754
-   },
-   "current": {
-    "sha256": "809e7e44caa22fc9e44818ccbbbf7749f7d46b395c4759048712d64c9a8b74a0",
-    "score": 9.36,
-    "long": 1800,
-    "reasons": [
-     "low_color"
-    ],
-    "source_title": "File:JR網干駅 駅舎（2018-05-04）.jpg"
-   }
-  },
-  {
-   "slug": "st04169",
-   "title": "File:竜野駅改札口.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:竜野駅改札口.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/%E7%AB%9C%E9%87%8E%E9%A7%85%E6%94%B9%E6%9C%AD%E5%8F%A3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "author": "Takednao",
-   "sha256": "98bd2e8a0641ec6fca317b678fdad596a3524d5d1cdf28fdd38e81ad8a2a45aa",
-   "dhash": "7ab28c8c270d95ab",
-   "bytes": 292032,
-   "width": 1800,
-   "height": 1012,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3961,
-    "original_height": 2228
-   },
-   "dist_m": 53.8,
-   "score": 3.48,
-   "image_score": 7.54,
+   "dist_m": null,
+   "score": 5.52,
+   "image_score": 5.4,
    "quality": "done",
    "quality_reasons": [],
    "self_hit": true,
    "running_near": false,
    "metrics": {
     "width": 1800,
-    "height": 1012,
-    "lap_var": 933.1,
-    "colorfulness": 34.9,
-    "white_frac": 0.008,
-    "edge_density": 0.0556,
-    "sky_frac": 0.414,
-    "brightness": 160.8,
-    "dark_frac": 0.035,
-    "center_edge": 0.064
+    "height": 1350,
+    "lap_var": 530.0,
+    "colorfulness": 25.3,
+    "white_frac": 0.016,
+    "edge_density": 0.0465,
+    "sky_frac": 0.327,
+    "brightness": 92.3,
+    "dark_frac": 0.225,
+    "center_edge": 0.0691
    },
    "current": {
-    "sha256": "c1c08644fe14f398a7f7f1d960b2b3aa4fcff9fe747613c8659285972f293bcb",
-    "score": 9.57,
+    "sha256": "56e80a98b87f34051eb9b3df0f64569cb469735ed84e89b6213ca98eebff6fa9",
+    "score": 6.79,
     "long": 1800,
     "reasons": [
      "low_color"
     ],
-    "source_title": "File:JR Chuo-Main-Line・Iida-Line Tatsuno Station building.jpg"
+    "source_title": "File:Ikuta Station - Kanagawa - May 11 2021 various 18 45 09 344000.jpeg"
    }
   },
   {
-   "slug": "st04169",
-   "title": "File:Tatsuno Station (Hyogo), ekisha.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Tatsuno_Station_(Hyogo),_ekisha.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Tatsuno_Station_%28Hyogo%29%2C_ekisha.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "author": "Saigen Jiro",
-   "sha256": "7a94d4f7f2c293b65a6d324d84d8e0f020efd4bfc8d833de51405e1c4c8df363",
-   "dhash": "90f0e90b9a9be4b0",
-   "bytes": 494403,
+   "slug": "st01627",
+   "title": "File:Ikuta Station - Kanagawa - May 11 2021 various 18 46 08 713000.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_46_08_713000.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Ikuta_Station_-_Kanagawa_-_May_11_2021_various_18_46_08_713000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "ba24eb509983baa0b53db1efd153ba4d17c61c429d7d62b823ff77419b2cb149",
+   "dhash": "94b30b030382230b",
+   "bytes": 349757,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": null,
+   "score": 5.52,
+   "image_score": 5.76,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 587.4,
+    "colorfulness": 19.5,
+    "white_frac": 0.052,
+    "edge_density": 0.0413,
+    "sky_frac": 0.742,
+    "brightness": 106.0,
+    "dark_frac": 0.155,
+    "center_edge": 0.0371
+   },
+   "current": {
+    "sha256": "56e80a98b87f34051eb9b3df0f64569cb469735ed84e89b6213ca98eebff6fa9",
+    "score": 6.79,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Ikuta Station - Kanagawa - May 11 2021 various 18 45 09 344000.jpeg"
+   }
+  },
+  {
+   "slug": "st04394",
+   "title": "File:Myorenji Station - panoramio.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Myorenji_Station_-_panoramio.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Myorenji_Station_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "t-hideyuki",
+   "sha256": "a09180c8ae780c4eef3b4c163133b05064bac8a886aaa38c53a45d259d9610bf",
+   "dhash": "c020c8d9b88ef0d8",
+   "bytes": 370693,
    "width": 1800,
    "height": 1197,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 6014,
-    "original_height": 3998
+    "original_width": 3008,
+    "original_height": 2000
    },
-   "dist_m": null,
-   "score": 4.5,
-   "image_score": 7.72,
+   "dist_m": 49.3,
+   "score": 3.0,
+   "image_score": 6.3,
    "quality": "done",
    "quality_reasons": [],
    "self_hit": true,
@@ -387,97 +970,849 @@
    "metrics": {
     "width": 1800,
     "height": 1197,
-    "lap_var": 1587.9,
-    "colorfulness": 55.3,
-    "white_frac": 0.001,
-    "edge_density": 0.1001,
-    "sky_frac": 0.056,
-    "brightness": 146.2,
-    "dark_frac": 0.056,
-    "center_edge": 0.115
+    "lap_var": 1498.9,
+    "colorfulness": 59.5,
+    "white_frac": 0.034,
+    "edge_density": 0.0657,
+    "sky_frac": 0.046,
+    "brightness": 93.7,
+    "dark_frac": 0.218,
+    "center_edge": 0.1011
    },
    "current": {
-    "sha256": "c1c08644fe14f398a7f7f1d960b2b3aa4fcff9fe747613c8659285972f293bcb",
-    "score": 9.57,
+    "sha256": "26a34ba69342fccc913e13ed67a6a98be791a2b013667f0c3b5a789da70587ea",
+    "score": 6.9,
     "long": 1800,
     "reasons": [
      "low_color"
     ],
-    "source_title": "File:JR Chuo-Main-Line・Iida-Line Tatsuno Station building.jpg"
+    "source_title": "File:Myorenji Station, gaikan.jpg"
    }
   },
   {
-   "slug": "st04169",
-   "title": "File:JR Chuo-Main-Line・Iida-Line Tatsuno Station Gates.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:JR_Chuo-Main-Line・Iida-Line_Tatsuno_Station_Gates.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/JR_Chuo-Main-Line%E3%83%BBIida-Line_Tatsuno_Station_Gates.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Mister0124",
-   "sha256": "a92de3fcf2f148c28b086a5b2263ada5d1ad234ba29b7b80c6a92c0907f3fe63",
-   "dhash": "ece476c4743232f2",
-   "bytes": 304692,
+   "slug": "st04394",
+   "title": "File:Myoren-ji temple, Yokohama 長光山妙蓮寺 横浜市港北区 Mar 5, 2011.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Myoren-ji_temple,_Yokohama_長光山妙蓮寺_横浜市港北区_Mar_5,_2011.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Myoren-ji_temple%2C_Yokohama_%E9%95%B7%E5%85%89%E5%B1%B1%E5%A6%99%E8%93%AE%E5%AF%BA_%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA_Mar_5%2C_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "zenjiro",
+   "sha256": "44ab1c82b2e643bd298e92e547e0b7366c3090330e187a2371944b4cbf2356c9",
+   "dhash": "c2e022969b4b6842",
+   "bytes": 565135,
    "width": 1800,
-   "height": 981,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 4128,
-    "original_height": 2249
+    "original_width": 2560,
+    "original_height": 1920
    },
-   "dist_m": null,
-   "score": 3.56,
-   "image_score": 7.04,
+   "dist_m": 47.6,
+   "score": 1.78,
+   "image_score": 6.38,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 3359.1,
+    "colorfulness": 57.3,
+    "white_frac": 0.015,
+    "edge_density": 0.1666,
+    "sky_frac": 0.092,
+    "brightness": 115.7,
+    "dark_frac": 0.277,
+    "center_edge": 0.1412
+   },
+   "current": {
+    "sha256": "26a34ba69342fccc913e13ed67a6a98be791a2b013667f0c3b5a789da70587ea",
+    "score": 6.9,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Myorenji Station, gaikan.jpg"
+   }
+  },
+  {
+   "slug": "st04394",
+   "title": "File:Tokyu9000 TOQ-BOX.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tokyu9000_TOQ-BOX.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Tokyu9000_TOQ-BOX.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "JobanLineE531 (TC411-507)",
+   "sha256": "e766867101444eaf50338aa0aedaebc752c0f2e017c45dc2cae90989eb637e14",
+   "dhash": "9c9c37137a3a0b33",
+   "bytes": 457628,
+   "width": 1800,
+   "height": 1277,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2319,
+    "original_height": 1645
+   },
+   "dist_m": 151.9,
+   "score": 1.66,
+   "image_score": 5.8,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1277,
+    "lap_var": 1506.4,
+    "colorfulness": 33.9,
+    "white_frac": 0.005,
+    "edge_density": 0.1166,
+    "sky_frac": 0.459,
+    "brightness": 104.6,
+    "dark_frac": 0.23,
+    "center_edge": 0.0839
+   },
+   "current": {
+    "sha256": "26a34ba69342fccc913e13ed67a6a98be791a2b013667f0c3b5a789da70587ea",
+    "score": 6.9,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Myorenji Station, gaikan.jpg"
+   }
+  },
+  {
+   "slug": "st05729",
+   "title": "File:Hakone-Yumoto Station 2023 Dec 5 various 21 09 04 018000.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Hakone-Yumoto_Station_2023_Dec_5_various_21_09_04_018000.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Hakone-Yumoto_Station_2023_Dec_5_various_21_09_04_018000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "51f1da221f6900aae4d2af6fe61356256f546a170405ef5682a8279a80e698cd",
+   "dhash": "c1cbfc12327e2bb3",
+   "bytes": 421884,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": 41.4,
+   "score": 5.52,
+   "image_score": 6.79,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1242.2,
+    "colorfulness": 22.5,
+    "white_frac": 0.009,
+    "edge_density": 0.0603,
+    "sky_frac": 0.785,
+    "brightness": 134.8,
+    "dark_frac": 0.036,
+    "center_edge": 0.0616
+   },
+   "current": {
+    "sha256": "6d1cb85278dd8fdeec5c2752a2cd28e5d12308323ac67c90e4bdb191e8b6e961",
+    "score": 6.96,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Hakone-Yumoto Station (10621054455).jpg"
+   }
+  },
+  {
+   "slug": "st05729",
+   "title": "File:Hakone-Yumoto Station 2023 Dec 5 various 21 09 10 674000.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Hakone-Yumoto_Station_2023_Dec_5_various_21_09_10_674000.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Hakone-Yumoto_Station_2023_Dec_5_various_21_09_10_674000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "80e4ddb5e83ceb3e20e5351f3b0aff04b1b6b9620e2b9a7ca3fe2d4fcb1eb515",
+   "dhash": "c8eb3c3cde979694",
+   "bytes": 528023,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": 40.7,
+   "score": 5.52,
+   "image_score": 6.84,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 2425.7,
+    "colorfulness": 23.7,
+    "white_frac": 0.007,
+    "edge_density": 0.1289,
+    "sky_frac": 0.632,
+    "brightness": 130.1,
+    "dark_frac": 0.011,
+    "center_edge": 0.1289
+   },
+   "current": {
+    "sha256": "6d1cb85278dd8fdeec5c2752a2cd28e5d12308323ac67c90e4bdb191e8b6e961",
+    "score": 6.96,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Hakone-Yumoto Station (10621054455).jpg"
+   }
+  },
+  {
+   "slug": "st05729",
+   "title": "File:Hakone-Yumoto Station Odakyu platforms night 2024 Oct 24 various.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Hakone-Yumoto_Station_Odakyu_platforms_night_2024_Oct_24_various.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Hakone-Yumoto_Station_Odakyu_platforms_night_2024_Oct_24_various.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "8259991d1688e92ababecb007a28fee896861e9c0c50facbdf3e9ecf7aa79457",
+   "dhash": "f0f17230492060c8",
+   "bytes": 485606,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": 120.4,
+   "score": 4.52,
+   "image_score": 6.15,
    "quality": "done",
    "quality_reasons": [],
    "self_hit": true,
    "running_near": false,
    "metrics": {
     "width": 1800,
-    "height": 981,
-    "lap_var": 793.3,
+    "height": 1350,
+    "lap_var": 1922.8,
+    "colorfulness": 40.5,
+    "white_frac": 0.009,
+    "edge_density": 0.1039,
+    "sky_frac": 0.258,
+    "brightness": 106.9,
+    "dark_frac": 0.192,
+    "center_edge": 0.115
+   },
+   "current": {
+    "sha256": "6d1cb85278dd8fdeec5c2752a2cd28e5d12308323ac67c90e4bdb191e8b6e961",
+    "score": 6.96,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Hakone-Yumoto Station (10621054455).jpg"
+   }
+  },
+  {
+   "slug": "st02099",
+   "title": "File:Tokyu Saginuma - panoramio.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tokyu_Saginuma_-_panoramio.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Tokyu_Saginuma_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "kcomiida",
+   "sha256": "c16ce8dfc9c2ca04d4880d68a312510bc28bdce3b329c0c12a655b6f9e162253",
+   "dhash": "b869485085992935",
+   "bytes": 362423,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2048,
+    "original_height": 1536
+   },
+   "dist_m": 41.3,
+   "score": 3.52,
+   "image_score": 6.04,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 517.4,
+    "colorfulness": 20.2,
+    "white_frac": 0.048,
+    "edge_density": 0.0471,
+    "sky_frac": 0.483,
+    "brightness": 112.0,
+    "dark_frac": 0.114,
+    "center_edge": 0.0544
+   },
+   "current": {
+    "sha256": "86091cfbc6833bc7c27546abc713f724c96a432aa9dbd6ed6e3d7c4816e663a2",
+    "score": 6.98,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Saginuma Station Platform 01.jpg"
+   }
+  },
+  {
+   "slug": "st02099",
+   "title": "File:Saginuma Station Platform 02.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Saginuma_Station_Platform_02.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Saginuma_Station_Platform_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Suikotei",
+   "sha256": "4d968acada8e9cfa81c3f184da6833d655518cd799a007d5a620a91c155257bc",
+   "dhash": "c9e973523370e060",
+   "bytes": 499189,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4177,
+    "original_height": 3133
+   },
+   "dist_m": null,
+   "score": 6.59,
+   "image_score": 5.72,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1451.3,
     "colorfulness": 25.6,
-    "white_frac": 0.073,
-    "edge_density": 0.0691,
-    "sky_frac": 0.564,
-    "brightness": 149.1,
-    "dark_frac": 0.053,
-    "center_edge": 0.0848
+    "white_frac": 0.06,
+    "edge_density": 0.0905,
+    "sky_frac": 0.401,
+    "brightness": 104.8,
+    "dark_frac": 0.199,
+    "center_edge": 0.1175
    },
    "current": {
-    "sha256": "c1c08644fe14f398a7f7f1d960b2b3aa4fcff9fe747613c8659285972f293bcb",
-    "score": 9.57,
+    "sha256": "86091cfbc6833bc7c27546abc713f724c96a432aa9dbd6ed6e3d7c4816e663a2",
+    "score": 6.98,
     "long": 1800,
     "reasons": [
      "low_color"
     ],
-    "source_title": "File:JR Chuo-Main-Line・Iida-Line Tatsuno Station building.jpg"
+    "source_title": "File:Saginuma Station Platform 01.jpg"
    }
   },
   {
-   "slug": "st00507",
-   "title": "File:Mikazuki Jinya A09 01.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Mikazuki_Jinya_A09_01.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Mikazuki_Jinya_A09_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 3.0",
-   "license_url": "https://creativecommons.org/licenses/by/3.0",
-   "author": "Corpse Reviver",
-   "sha256": "03523e8c9d8f5132f45e6338426b5b21089867cbdce16d21ac4cc26f9c85af53",
-   "dhash": "00c0242cc95018c4",
-   "bytes": 434371,
+   "slug": "st02099",
+   "title": "File:Saginuma-Sta-Center1.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Saginuma-Sta-Center1.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Saginuma-Sta-Center1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Nyao148",
+   "sha256": "b730ca7180755441c2c3bcb3ca4ee5d4ee8c3f9e359b8b1dfa02d5b7c7396d5e",
+   "dhash": "008393d3f32f1ff3",
+   "bytes": 488385,
    "width": 1800,
-   "height": 1200,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 2496,
-    "original_height": 1664
+    "original_width": 2560,
+    "original_height": 1920
    },
    "dist_m": null,
-   "score": 1.75,
-   "image_score": 7.66,
+   "score": 3.78,
+   "image_score": 6.91,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 2144.7,
+    "colorfulness": 48.9,
+    "white_frac": 0.012,
+    "edge_density": 0.1119,
+    "sky_frac": 0.133,
+    "brightness": 128.6,
+    "dark_frac": 0.144,
+    "center_edge": 0.1901
+   },
+   "current": {
+    "sha256": "86091cfbc6833bc7c27546abc713f724c96a432aa9dbd6ed6e3d7c4816e663a2",
+    "score": 6.98,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Saginuma Station Platform 01.jpg"
+   }
+  },
+  {
+   "slug": "st02153",
+   "title": "File:Miyazakidai Elementary School.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Miyazakidai_Elementary_School.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Miyazakidai_Elementary_School.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Asasa198",
+   "sha256": "fb23924d7c31c8d8800cd345495f108905768072499f6946a4b85e6a85cc0da4",
+   "dhash": "8084c4d2f3dec8ee",
+   "bytes": 306617,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3072,
+    "original_height": 2304
+   },
+   "dist_m": 641.4,
+   "score": 2.04,
+   "image_score": 5.89,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color",
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 657.9,
+    "colorfulness": 23.5,
+    "white_frac": 0.117,
+    "edge_density": 0.0428,
+    "sky_frac": 0.699,
+    "brightness": 118.7,
+    "dark_frac": 0.201,
+    "center_edge": 0.0434
+   },
+   "current": {
+    "sha256": "50f26cdfcc5cb717b2d3ed8535856a8d9f9b6e38ed17ecb8634445e177513b18",
+    "score": 7.01,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Tokyu-railway-Miyazakidai-station-platform.jpg"
+   }
+  },
+  {
+   "slug": "st02153",
+   "title": "File:Tokyo Metro 18000 Series 18101F Miyazakidai Station 20210823.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tokyo_Metro_18000_Series_18101F_Miyazakidai_Station_20210823.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Tokyo_Metro_18000_Series_18101F_Miyazakidai_Station_20210823.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Rsa",
+   "sha256": "933a1cdca3d33c8b304888a9efac866c8b0c844400a080f852600b0848949df6",
+   "dhash": "323293d3731b8bb3",
+   "bytes": 436713,
+   "width": 1800,
+   "height": 1292,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3163,
+    "original_height": 2270
+   },
+   "dist_m": null,
+   "score": 5.08,
+   "image_score": 6.74,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1292,
+    "lap_var": 1608.6,
+    "colorfulness": 32.4,
+    "white_frac": 0.031,
+    "edge_density": 0.1067,
+    "sky_frac": 0.668,
+    "brightness": 134.9,
+    "dark_frac": 0.11,
+    "center_edge": 0.1003
+   },
+   "current": {
+    "sha256": "50f26cdfcc5cb717b2d3ed8535856a8d9f9b6e38ed17ecb8634445e177513b18",
+    "score": 7.01,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Tokyu-railway-Miyazakidai-station-platform.jpg"
+   }
+  },
+  {
+   "slug": "st02153",
+   "title": "File:Tokyo Metro 18101 The top partside.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tokyo_Metro_18101_The_top_partside.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Tokyo_Metro_18101_The_top_partside.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Rsa",
+   "sha256": "52403047c6b6b7c923f20eb8a38a0f824e9f77b956254263a2c840d463c8cf8e",
+   "dhash": "9086262284848018",
+   "bytes": 253854,
+   "width": 1800,
+   "height": 1253,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4588,
+    "original_height": 3194
+   },
+   "dist_m": null,
+   "score": 4.79,
+   "image_score": 5.93,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1253,
+    "lap_var": 577.1,
+    "colorfulness": 34.7,
+    "white_frac": 0.001,
+    "edge_density": 0.0408,
+    "sky_frac": 0.266,
+    "brightness": 109.8,
+    "dark_frac": 0.222,
+    "center_edge": 0.0401
+   },
+   "current": {
+    "sha256": "50f26cdfcc5cb717b2d3ed8535856a8d9f9b6e38ed17ecb8634445e177513b18",
+    "score": 7.01,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Tokyu-railway-Miyazakidai-station-platform.jpg"
+   }
+  },
+  {
+   "slug": "st02152",
+   "title": "File:Tobu 51056 (Crayon Shinchan blue) Miyamaedaira Station 20170507.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tobu_51056_(Crayon_Shinchan_blue)_Miyamaedaira_Station_20170507.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Tobu_51056_%28Crayon_Shinchan_blue%29_Miyamaedaira_Station_20170507.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "yagi-s",
+   "sha256": "f20fb241089ebcac4a3eddbbe7936ac4593465e03af27c0866ac7a59d56f11c9",
+   "dhash": "2b230f3b695d1b1d",
+   "bytes": 454612,
+   "width": 1200,
+   "height": 1800,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3631,
+    "original_height": 5446
+   },
+   "dist_m": 364.0,
+   "score": 6.22,
+   "image_score": 2.06,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1200,
+    "height": 1800,
+    "lap_var": 1928.4,
+    "colorfulness": 43.0,
+    "white_frac": 0.0,
+    "edge_density": 0.1046,
+    "sky_frac": 0.094,
+    "brightness": 91.6,
+    "dark_frac": 0.291,
+    "center_edge": 0.1555
+   },
+   "current": {
+    "sha256": "d7562d268902ce668c72428188c198d5299ccb9ce5134edb771ccbc2d87cbf15",
+    "score": 7.03,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Miyamaedaira Station Platform-2.jpg"
+   }
+  },
+  {
+   "slug": "st02152",
+   "title": "File:Tobu 51056 (Crayon Shinchan blue) Miyamaedaira Station 20170507 (cropped).jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tobu_51056_(Crayon_Shinchan_blue)_Miyamaedaira_Station_20170507_(cropped).jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Tobu_51056_%28Crayon_Shinchan_blue%29_Miyamaedaira_Station_20170507_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "author": "yagi-s",
+   "sha256": "fbd251453501470c83585a3deefc73e9c84fa008d6ed728350ccad0d04321741",
+   "dhash": "193d35302f2d392d",
+   "bytes": 630801,
+   "width": 1800,
+   "height": 1258,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2973,
+    "original_height": 2077
+   },
+   "dist_m": 364.0,
+   "score": 2.99,
+   "image_score": 4.81,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1258,
+    "lap_var": 2035.0,
+    "colorfulness": 33.2,
+    "white_frac": 0.001,
+    "edge_density": 0.1295,
+    "sky_frac": 0.154,
+    "brightness": 71.0,
+    "dark_frac": 0.333,
+    "center_edge": 0.1248
+   },
+   "current": {
+    "sha256": "d7562d268902ce668c72428188c198d5299ccb9ce5134edb771ccbc2d87cbf15",
+    "score": 7.03,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Miyamaedaira Station Platform-2.jpg"
+   }
+  },
+  {
+   "slug": "st02152",
+   "title": "File:Miyamaedaira Station Platform.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Miyamaedaira_Station_Platform.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Miyamaedaira_Station_Platform.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Suikotei",
+   "sha256": "d4a33a5fd63fda540535573e605aaa25969a108d3ebca2197897bf2be3c91161",
+   "dhash": "18638c70eadec0f3",
+   "bytes": 539813,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4320,
+    "original_height": 3240
+   },
+   "dist_m": null,
+   "score": 6.66,
+   "image_score": 5.79,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1428.6,
+    "colorfulness": 19.5,
+    "white_frac": 0.055,
+    "edge_density": 0.0922,
+    "sky_frac": 0.324,
+    "brightness": 105.9,
+    "dark_frac": 0.146,
+    "center_edge": 0.1138
+   },
+   "current": {
+    "sha256": "d7562d268902ce668c72428188c198d5299ccb9ce5134edb771ccbc2d87cbf15",
+    "score": 7.03,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Miyamaedaira Station Platform-2.jpg"
+   }
+  },
+  {
+   "slug": "st01626",
+   "title": "File:Odakyu Yomiurirandomae station front - Jan 12 2018.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Odakyu_Yomiurirandomae_station_front_-_Jan_12_2018.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Odakyu_Yomiurirandomae_station_front_-_Jan_12_2018.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Nesnad",
+   "sha256": "c42d8c610b5dc74c31f643bce5045f2d72a5ed545842afde770b2334abd28faf",
+   "dhash": "8efcfe1f2033bbff",
+   "bytes": 234905,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4608,
+    "original_height": 3456
+   },
+   "dist_m": null,
+   "score": 3.8,
+   "image_score": 6.67,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 276.2,
+    "colorfulness": 21.3,
+    "white_frac": 0.146,
+    "edge_density": 0.019,
+    "sky_frac": 0.883,
+    "brightness": 135.1,
+    "dark_frac": 0.06,
+    "center_edge": 0.0334
+   },
+   "current": {
+    "sha256": "cf51d11150d8cef7d5e37ac7de9eedf674f52bdb4698b97ead857ccdc91bf219",
+    "score": 7.06,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Yomiurilandstation-platforms-2018-3-18.jpg"
+   }
+  },
+  {
+   "slug": "st01626",
+   "title": "File:Yomiurilandmaestation-outside-2018-3-18.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Yomiurilandmaestation-outside-2018-3-18.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Yomiurilandmaestation-outside-2018-3-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "a85dc13698e90b2a33807c488d5b267ad7cf1fd6624e2efb86eae29798a8ad27",
+   "dhash": "445864459b667ef9",
+   "bytes": 325990,
+   "width": 1800,
+   "height": 1610,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3008,
+    "original_height": 2690
+   },
+   "dist_m": null,
+   "score": 3.0,
+   "image_score": 4.37,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1610,
+    "lap_var": 216.7,
+    "colorfulness": 25.6,
+    "white_frac": 0.0,
+    "edge_density": 0.0235,
+    "sky_frac": 0.838,
+    "brightness": 111.2,
+    "dark_frac": 0.062,
+    "center_edge": 0.0322
+   },
+   "current": {
+    "sha256": "cf51d11150d8cef7d5e37ac7de9eedf674f52bdb4698b97ead857ccdc91bf219",
+    "score": 7.06,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Yomiurilandstation-platforms-2018-3-18.jpg"
+   }
+  },
+  {
+   "slug": "st01626",
+   "title": "File:Yomiurilandmae-Sta-N.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Yomiurilandmae-Sta-N.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Yomiurilandmae-Sta-N.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Nyao148",
+   "sha256": "c2f15f3834e46ad829210d16ae2ab73832a5156c5bb158cf2eb25a981c5c38c3",
+   "dhash": "6d6c65565fcecafc",
+   "bytes": 478890,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3648,
+    "original_height": 2736
+   },
+   "dist_m": null,
+   "score": 2.32,
+   "image_score": 6.59,
    "quality": "review",
    "quality_reasons": [
     "subject_unverified(no_station_kw)"
@@ -486,49 +1821,98 @@
    "running_near": false,
    "metrics": {
     "width": 1800,
-    "height": 1200,
-    "lap_var": 2688.2,
-    "colorfulness": 40.7,
-    "white_frac": 0.249,
-    "edge_density": 0.1291,
-    "sky_frac": 0.822,
-    "brightness": 165.0,
-    "dark_frac": 0.058,
-    "center_edge": 0.1092
+    "height": 1350,
+    "lap_var": 1833.9,
+    "colorfulness": 28.7,
+    "white_frac": 0.014,
+    "edge_density": 0.0945,
+    "sky_frac": 0.722,
+    "brightness": 133.9,
+    "dark_frac": 0.12,
+    "center_edge": 0.0929
    },
    "current": {
-    "sha256": "2dfb6bcc3a8248a0315e0f119d11837573188789f0b122ed04002e8034d23355",
-    "score": null,
+    "sha256": "cf51d11150d8cef7d5e37ac7de9eedf674f52bdb4698b97ead857ccdc91bf219",
+    "score": 7.06,
     "long": 1800,
     "reasons": [
      "low_color"
     ],
-    "source_title": "File:Mikazuki Station Aug 14 2019 08-03AM.jpeg"
+    "source_title": "File:Yomiurilandstation-platforms-2018-3-18.jpg"
    }
   },
   {
-   "slug": "st00507",
-   "title": "File:Mikazuki Jinya A09 02.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Mikazuki_Jinya_A09_02.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Mikazuki_Jinya_A09_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 3.0",
-   "license_url": "https://creativecommons.org/licenses/by/3.0",
-   "author": "Corpse Reviver",
-   "sha256": "fe3fc86d0d6e0078f97df14e725217d4c370074812b1bfbbef77be8816f01928",
-   "dhash": "28521286a60a1f93",
-   "bytes": 296477,
+   "slug": "st01623",
+   "title": "File:Kakio-Sta-N.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Kakio-Sta-N.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Kakio-Sta-N.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "author": "Nyao148",
+   "sha256": "5df5b279a450b3a70431fe30975994e167548765ad2052a778f0f6d0b297ec4d",
+   "dhash": "f2c0c3b71c189ce7",
+   "bytes": 506026,
    "width": 1800,
-   "height": 1200,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 2496,
-    "original_height": 1664
+    "original_width": 3648,
+    "original_height": 2736
    },
-   "dist_m": null,
-   "score": 1.75,
-   "image_score": 6.86,
+   "dist_m": 22.0,
+   "score": 4.32,
+   "image_score": 6.6,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1436.6,
+    "colorfulness": 32.7,
+    "white_frac": 0.019,
+    "edge_density": 0.0768,
+    "sky_frac": 0.405,
+    "brightness": 130.9,
+    "dark_frac": 0.132,
+    "center_edge": 0.0698
+   },
+   "current": {
+    "sha256": "0a07c72f6dd06157fa34af44b0f3f8b95cecfc88eebb4c7f2693dc98108d1f9c",
+    "score": 7.07,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Odakyu-electric-railway-Odawara-line-Kakio-station-platform-20130719-141924.jpg"
+   }
+  },
+  {
+   "slug": "st01623",
+   "title": "File:JA Ceresa Kawasaki Kakio Branch.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:JA_Ceresa_Kawasaki_Kakio_Branch.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/JA_Ceresa_Kawasaki_Kakio_Branch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Suikotei",
+   "sha256": "4d6c157e11aa554b7a718538d55e45fe6f59c0c5a91148d112fab95e479b4a9c",
+   "dhash": "90d34185c4c04048",
+   "bytes": 419526,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4320,
+    "original_height": 3240
+   },
+   "dist_m": 128.3,
+   "score": 2.66,
+   "image_score": 8.04,
    "quality": "review",
    "quality_reasons": [
     "subject_unverified(no_station_kw)"
@@ -537,75 +1921,1222 @@
    "running_near": false,
    "metrics": {
     "width": 1800,
-    "height": 1200,
-    "lap_var": 982.8,
-    "colorfulness": 29.3,
-    "white_frac": 0.268,
-    "edge_density": 0.068,
-    "sky_frac": 0.801,
-    "brightness": 138.2,
-    "dark_frac": 0.074,
-    "center_edge": 0.0439
-   },
-   "current": {
-    "sha256": "2dfb6bcc3a8248a0315e0f119d11837573188789f0b122ed04002e8034d23355",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "low_color"
-    ],
-    "source_title": "File:Mikazuki Station Aug 14 2019 08-03AM.jpeg"
-   }
-  },
-  {
-   "slug": "st00507",
-   "title": "File:Mikazuki Jinya A09 03.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Mikazuki_Jinya_A09_03.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Mikazuki_Jinya_A09_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 3.0",
-   "license_url": "https://creativecommons.org/licenses/by/3.0",
-   "author": "Corpse Reviver",
-   "sha256": "a3042fea9be806ac9506b61b097599409dc9ac7024912b2437cd82a5ed12d822",
-   "dhash": "1a5c54545cdc1093",
-   "bytes": 392695,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2496,
-    "original_height": 1664
-   },
-   "dist_m": null,
-   "score": 1.75,
-   "image_score": 5.91,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1093.9,
-    "colorfulness": 29.7,
-    "white_frac": 0.003,
-    "edge_density": 0.0714,
+    "height": 1350,
+    "lap_var": 661.0,
+    "colorfulness": 55.5,
+    "white_frac": 0.002,
+    "edge_density": 0.051,
     "sky_frac": 0.426,
-    "brightness": 107.0,
-    "dark_frac": 0.186,
-    "center_edge": 0.0439
+    "brightness": 161.2,
+    "dark_frac": 0.039,
+    "center_edge": 0.0522
    },
    "current": {
-    "sha256": "2dfb6bcc3a8248a0315e0f119d11837573188789f0b122ed04002e8034d23355",
-    "score": null,
+    "sha256": "0a07c72f6dd06157fa34af44b0f3f8b95cecfc88eebb4c7f2693dc98108d1f9c",
+    "score": 7.07,
     "long": 1800,
     "reasons": [
      "low_color"
     ],
-    "source_title": "File:Mikazuki Station Aug 14 2019 08-03AM.jpeg"
+    "source_title": "File:Odakyu-electric-railway-Odawara-line-Kakio-station-platform-20130719-141924.jpg"
+   }
+  },
+  {
+   "slug": "st01623",
+   "title": "File:Kakio Post office.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Kakio_Post_office.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Kakio_Post_office.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Suikotei",
+   "sha256": "1a5e0da25270c7083c1b60ed5c4caf163f1941c2e6ba5aadb2877910b881b7a5",
+   "dhash": "0c28200122216101",
+   "bytes": 406784,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4320,
+    "original_height": 3240
+   },
+   "dist_m": 54.7,
+   "score": 2.66,
+   "image_score": 6.37,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 806.2,
+    "colorfulness": 30.6,
+    "white_frac": 0.085,
+    "edge_density": 0.0512,
+    "sky_frac": 0.772,
+    "brightness": 131.8,
+    "dark_frac": 0.179,
+    "center_edge": 0.0483
+   },
+   "current": {
+    "sha256": "0a07c72f6dd06157fa34af44b0f3f8b95cecfc88eebb4c7f2693dc98108d1f9c",
+    "score": 7.07,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Odakyu-electric-railway-Odawara-line-Kakio-station-platform-20130719-141924.jpg"
+   }
+  },
+  {
+   "slug": "st03091",
+   "title": "File:Odakyu Electric Railway Chōgo Station East Exit, FamilyMart Side.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Odakyu_Electric_Railway_Chōgo_Station_East_Exit,_FamilyMart_Side.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Odakyu_Electric_Railway_Ch%C5%8Dgo_Station_East_Exit%2C_FamilyMart_Side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Ow00wo",
+   "sha256": "ce8e5ccc018e22af9279555b7bf57869878686f14cdc7a1779cf90a4bd1cf709",
+   "dhash": "021e72872727ce1f",
+   "bytes": 563677,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 5712,
+    "original_height": 4284
+   },
+   "dist_m": 28.0,
+   "score": 6.36,
+   "image_score": 6.85,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 2937.6,
+    "colorfulness": 53.3,
+    "white_frac": 0.014,
+    "edge_density": 0.1406,
+    "sky_frac": 0.126,
+    "brightness": 111.4,
+    "dark_frac": 0.116,
+    "center_edge": 0.1077
+   },
+   "current": {
+    "sha256": "2bff71cac90d4b7a8aa19f8000f51eb7b7671fd772233d278fff9dc3b131ccd2",
+    "score": 7.2,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Odakyu-electric-railway-Enoshima-line-Chogo-station-platform-20130726-145742.jpg"
+   }
+  },
+  {
+   "slug": "st03091",
+   "title": "File:Odakyu Electric Railway Chōgo Station East Exit.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Odakyu_Electric_Railway_Chōgo_Station_East_Exit.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Odakyu_Electric_Railway_Ch%C5%8Dgo_Station_East_Exit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Ow00wo",
+   "sha256": "797317dd5b151bb5ac15d35dc4fe6e631e483277975e7cc1ff5b84d63aa6eb86",
+   "dhash": "0708b630184bb87e",
+   "bytes": 415225,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 5712,
+    "original_height": 4284
+   },
+   "dist_m": 43.8,
+   "score": 6.36,
+   "image_score": 5.92,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1234.9,
+    "colorfulness": 56.4,
+    "white_frac": 0.006,
+    "edge_density": 0.0666,
+    "sky_frac": 0.016,
+    "brightness": 98.4,
+    "dark_frac": 0.314,
+    "center_edge": 0.0967
+   },
+   "current": {
+    "sha256": "2bff71cac90d4b7a8aa19f8000f51eb7b7671fd772233d278fff9dc3b131ccd2",
+    "score": 7.2,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Odakyu-electric-railway-Enoshima-line-Chogo-station-platform-20130726-145742.jpg"
+   }
+  },
+  {
+   "slug": "st03091",
+   "title": "File:Odakyu Electric Railway Chōgo Station West Exit.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Odakyu_Electric_Railway_Chōgo_Station_West_Exit.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Odakyu_Electric_Railway_Ch%C5%8Dgo_Station_West_Exit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Ow00wo",
+   "sha256": "1b32e8d7501bec96b3138de7261bd385793ee54f0908acdd7581fcfffe8f8743",
+   "dhash": "befede1d35ede6b3",
+   "bytes": 523499,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 5712,
+    "original_height": 4284
+   },
+   "dist_m": 54.9,
+   "score": 6.36,
+   "image_score": 6.91,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 2363.4,
+    "colorfulness": 41.1,
+    "white_frac": 0.002,
+    "edge_density": 0.118,
+    "sky_frac": 0.08,
+    "brightness": 128.3,
+    "dark_frac": 0.095,
+    "center_edge": 0.085
+   },
+   "current": {
+    "sha256": "2bff71cac90d4b7a8aa19f8000f51eb7b7671fd772233d278fff9dc3b131ccd2",
+    "score": 7.2,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Odakyu-electric-railway-Enoshima-line-Chogo-station-platform-20130726-145742.jpg"
+   }
+  },
+  {
+   "slug": "st01382",
+   "title": "File:Iidaoka station 2025 6 22.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Iidaoka_station_2025_6_22.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Iidaoka_station_2025_6_22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "3d799a642106edad0655ce129c1321b30a3253d35658184ec63cea3b393454d5",
+   "dhash": "072626e66635cce7",
+   "bytes": 466875,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": 16.5,
+   "score": 5.52,
+   "image_score": 6.83,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1003.6,
+    "colorfulness": 23.6,
+    "white_frac": 0.005,
+    "edge_density": 0.0686,
+    "sky_frac": 0.236,
+    "brightness": 136.6,
+    "dark_frac": 0.04,
+    "center_edge": 0.0659
+   },
+   "current": {
+    "sha256": "ea720e475d30db21db09d1187f996c646784194b7e404a0d8f19146ffcca67bf",
+    "score": 7.24,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Izuhakone-railway-Daiyuzan-line-Iidaoka-station-platform-20140310-131340.jpg"
+   }
+  },
+  {
+   "slug": "st01382",
+   "title": "File:Izuhakone 5013 at Iidaoka Station.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Izuhakone_5013_at_Iidaoka_Station.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Izuhakone_5013_at_Iidaoka_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Suikotei",
+   "sha256": "87d8a5388d5cfe36a39684d9e1f569eddf1a14c87e7d3a1747ccc55021155200",
+   "dhash": "fd78780c8c6564f2",
+   "bytes": 404041,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3829,
+    "original_height": 2872
+   },
+   "dist_m": null,
+   "score": 5.41,
+   "image_score": 6.55,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 630.5,
+    "colorfulness": 32.7,
+    "white_frac": 0.192,
+    "edge_density": 0.0483,
+    "sky_frac": 0.514,
+    "brightness": 130.1,
+    "dark_frac": 0.14,
+    "center_edge": 0.0693
+   },
+   "current": {
+    "sha256": "ea720e475d30db21db09d1187f996c646784194b7e404a0d8f19146ffcca67bf",
+    "score": 7.24,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Izuhakone-railway-Daiyuzan-line-Iidaoka-station-platform-20140310-131340.jpg"
+   }
+  },
+  {
+   "slug": "st01382",
+   "title": "File:Odawara Iidaoka Post office.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Odawara_Iidaoka_Post_office.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Odawara_Iidaoka_Post_office.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Suikotei",
+   "sha256": "404b80867b453ab8d4287126aed5124030d21da02c4f86f833d18e7f546593c2",
+   "dhash": "f0ecc653d3d392d0",
+   "bytes": 468502,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4080,
+    "original_height": 3059
+   },
+   "dist_m": null,
+   "score": 2.54,
+   "image_score": 7.7,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1505.8,
+    "colorfulness": 91.7,
+    "white_frac": 0.002,
+    "edge_density": 0.0663,
+    "sky_frac": 0.014,
+    "brightness": 108.4,
+    "dark_frac": 0.131,
+    "center_edge": 0.0978
+   },
+   "current": {
+    "sha256": "ea720e475d30db21db09d1187f996c646784194b7e404a0d8f19146ffcca67bf",
+    "score": 7.24,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Izuhakone-railway-Daiyuzan-line-Iidaoka-station-platform-20140310-131340.jpg"
+   }
+  },
+  {
+   "slug": "st02158",
+   "title": "File:Tokyo Metro Series 18000 18102F in Eda Station.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tokyo_Metro_Series_18000_18102F_in_Eda_Station.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Tokyo_Metro_Series_18000_18102F_in_Eda_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Wikimizuki",
+   "sha256": "ea2da668cc9ab7fee67e1f40ca310ff6da1a3872fb357d8e5900a6509a8bf577",
+   "dhash": "feb9c63f8d8698d6",
+   "bytes": 539488,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3831,
+    "original_height": 2873
+   },
+   "dist_m": 92.4,
+   "score": 3.42,
+   "image_score": 6.01,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 3689.3,
+    "colorfulness": 29.0,
+    "white_frac": 0.006,
+    "edge_density": 0.175,
+    "sky_frac": 0.484,
+    "brightness": 110.2,
+    "dark_frac": 0.17,
+    "center_edge": 0.1655
+   },
+   "current": {
+    "sha256": "cc48d95558deda06a9ceef65ff2f327e2b6110776276039e1814db08447094cd",
+    "score": 7.3,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Tokyu-railway-den-en-toshi-line-Eda-station-platform.jpg"
+   }
+  },
+  {
+   "slug": "st02158",
+   "title": "File:Aerial view of Eda station of Tokyu Den'en Toshi Line.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Eda_station_of_Tokyu_Den'en_Toshi_Line.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Aerial_view_of_Eda_station_of_Tokyu_Den%27en_Toshi_Line.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "author": "Hovering Cat",
+   "sha256": "6da8ee54dbeb8202d88eb78b22ba79344d7f7f604e2327813c06df47bd8b16cc",
+   "dhash": "9457a6c374f87ed6",
+   "bytes": 661915,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3000,
+    "original_height": 2250
+   },
+   "dist_m": 152.2,
+   "score": 3.0,
+   "image_score": 6.5,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 2639.7,
+    "colorfulness": 24.2,
+    "white_frac": 0.025,
+    "edge_density": 0.153,
+    "sky_frac": 0.656,
+    "brightness": 138.4,
+    "dark_frac": 0.133,
+    "center_edge": 0.1679
+   },
+   "current": {
+    "sha256": "cc48d95558deda06a9ceef65ff2f327e2b6110776276039e1814db08447094cd",
+    "score": 7.3,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Tokyu-railway-den-en-toshi-line-Eda-station-platform.jpg"
+   }
+  },
+  {
+   "slug": "st02158",
+   "title": "File:Eda Station (Fukushima) 01.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Eda_Station_(Fukushima)_01.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Eda_Station_%28Fukushima%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Σ64",
+   "sha256": "753b9caee38323f1a33f1974ebc75abb5bf6e01dddd30eb9db555ba215ad739d",
+   "dhash": "6a349e9cfd3820f0",
+   "bytes": 626573,
+   "width": 1800,
+   "height": 1200,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 6000,
+    "original_height": 4000
+   },
+   "dist_m": null,
+   "score": 4.5,
+   "image_score": 5.79,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1200,
+    "lap_var": 1722.0,
+    "colorfulness": 25.6,
+    "white_frac": 0.006,
+    "edge_density": 0.1015,
+    "sky_frac": 0.026,
+    "brightness": 93.9,
+    "dark_frac": 0.134,
+    "center_edge": 0.1084
+   },
+   "current": {
+    "sha256": "cc48d95558deda06a9ceef65ff2f327e2b6110776276039e1814db08447094cd",
+    "score": 7.3,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Tokyu-railway-den-en-toshi-line-Eda-station-platform.jpg"
+   }
+  },
+  {
+   "slug": "st00865",
+   "title": "File:Kanagawa Chuo Kotsu YAMATE-LINER at Idogaya Station 01.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Kanagawa_Chuo_Kotsu_YAMATE-LINER_at_Idogaya_Station_01.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Kanagawa_Chuo_Kotsu_YAMATE-LINER_at_Idogaya_Station_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Suikotei",
+   "sha256": "4d45f119d2d72a3a81cd4086f99af796960ce6481bc4ba8a904f809a91c71af1",
+   "dhash": "c1d89cba1a0d1938",
+   "bytes": 527798,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4104,
+    "original_height": 3078
+   },
+   "dist_m": null,
+   "score": 3.55,
+   "image_score": 6.78,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1379.1,
+    "colorfulness": 28.9,
+    "white_frac": 0.052,
+    "edge_density": 0.0965,
+    "sky_frac": 0.663,
+    "brightness": 138.7,
+    "dark_frac": 0.096,
+    "center_edge": 0.1088
+   },
+   "current": {
+    "sha256": "f9e82ca022cbc06912e939ad19a8c5daac597b07814ce7f83bca2787a0bd604c",
+    "score": 7.31,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:Idogaya Guard.jpg"
+   }
+  },
+  {
+   "slug": "st00865",
+   "title": "File:Kanagawa Chuo Kotsu YAMATE-LINER at Idogaya Station 02.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Kanagawa_Chuo_Kotsu_YAMATE-LINER_at_Idogaya_Station_02.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Kanagawa_Chuo_Kotsu_YAMATE-LINER_at_Idogaya_Station_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Suikotei",
+   "sha256": "3b3b9ea2d32cd0bd5f57c0229a460a85f7497da2452dd57d742943fc83e94a82",
+   "dhash": "fbf9344996a63703",
+   "bytes": 476635,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3559,
+    "original_height": 2669
+   },
+   "dist_m": null,
+   "score": 3.28,
+   "image_score": 6.42,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1274.2,
+    "colorfulness": 34.9,
+    "white_frac": 0.025,
+    "edge_density": 0.0867,
+    "sky_frac": 0.251,
+    "brightness": 114.1,
+    "dark_frac": 0.119,
+    "center_edge": 0.0893
+   },
+   "current": {
+    "sha256": "f9e82ca022cbc06912e939ad19a8c5daac597b07814ce7f83bca2787a0bd604c",
+    "score": 7.31,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:Idogaya Guard.jpg"
+   }
+  },
+  {
+   "slug": "st06769",
+   "title": "File:JREast-Chuo-main-line-JC25-Sagamiko-station-platform-20220730-062444.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:JREast-Chuo-main-line-JC25-Sagamiko-station-platform-20220730-062444.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/JREast-Chuo-main-line-JC25-Sagamiko-station-platform-20220730-062444.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "LERK",
+   "sha256": "10a7c21a9aa3785156d0c066c7ba46a98d3d8f65f826d98b3ed30153aaaf97fd",
+   "dhash": "d2620b67b110198c",
+   "bytes": 527794,
+   "width": 1800,
+   "height": 1012,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 8160,
+    "original_height": 4590
+   },
+   "dist_m": 90.2,
+   "score": 7.5,
+   "image_score": 6.21,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1012,
+    "lap_var": 4733.4,
+    "colorfulness": 38.2,
+    "white_frac": 0.005,
+    "edge_density": 0.174,
+    "sky_frac": 0.246,
+    "brightness": 112.9,
+    "dark_frac": 0.188,
+    "center_edge": 0.2346
+   },
+   "current": {
+    "sha256": "7744091b2e59b8ad4c671a8802b74fbed4d9044d6235d582da56b5459dcb3359",
+    "score": 7.33,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Sagamiko station platform 2-3 20211121 111425.jpg"
+   }
+  },
+  {
+   "slug": "st06769",
+   "title": "File:Sagamiko station platform 1 20211121 111250.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Sagamiko_station_platform_1_20211121_111250.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Sagamiko_station_platform_1_20211121_111250.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "MaedaAkihiko",
+   "sha256": "44b0d9f62cfad26a6bd0473c8ab363bb9ad904d2d95e6f66d539659880ebbe38",
+   "dhash": "cf6737be995e4f9f",
+   "bytes": 423163,
+   "width": 1800,
+   "height": 1200,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 5472,
+    "original_height": 3648
+   },
+   "dist_m": 27.3,
+   "score": 7.24,
+   "image_score": 6.02,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1200,
+    "lap_var": 1163.6,
+    "colorfulness": 24.5,
+    "white_frac": 0.03,
+    "edge_density": 0.0823,
+    "sky_frac": 0.155,
+    "brightness": 104.7,
+    "dark_frac": 0.115,
+    "center_edge": 0.1117
+   },
+   "current": {
+    "sha256": "7744091b2e59b8ad4c671a8802b74fbed4d9044d6235d582da56b5459dcb3359",
+    "score": 7.33,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Sagamiko station platform 2-3 20211121 111425.jpg"
+   }
+  },
+  {
+   "slug": "st06769",
+   "title": "File:Sagamiko Station 2025 Nov 10 various 2.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Sagamiko_Station_2025_Nov_10_various_2.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Sagamiko_Station_2025_Nov_10_various_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "3564b1756ac028e7484a844766c937355a736349be5494a3cc45d1aa59c68f8c",
+   "dhash": "cf0e103d2d20a025",
+   "bytes": 171992,
+   "width": 1800,
+   "height": 505,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 13690,
+    "original_height": 3842
+   },
+   "dist_m": 86.3,
+   "score": 6.5,
+   "image_score": 7.3,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 505,
+    "lap_var": 902.6,
+    "colorfulness": 54.3,
+    "white_frac": 0.0,
+    "edge_density": 0.0655,
+    "sky_frac": 0.211,
+    "brightness": 118.6,
+    "dark_frac": 0.039,
+    "center_edge": 0.0829
+   },
+   "current": {
+    "sha256": "7744091b2e59b8ad4c671a8802b74fbed4d9044d6235d582da56b5459dcb3359",
+    "score": 7.33,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Sagamiko station platform 2-3 20211121 111425.jpg"
+   }
+  },
+  {
+   "slug": "st05060",
+   "title": "File:Tsubamesanjo Jibasan Center, Roadside Station, Niigata, Japan, August 2019.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tsubamesanjo_Jibasan_Center,_Roadside_Station,_Niigata,_Japan,_August_2019.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Tsubamesanjo_Jibasan_Center%2C_Roadside_Station%2C_Niigata%2C_Japan%2C_August_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Tail furry",
+   "sha256": "80da4f61d983a0b70d054aefe589fb6615e3da55b1583b2871a4c6ff677b6307",
+   "dhash": "59092f275b67270f",
+   "bytes": 477222,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": null,
+   "score": 3.52,
+   "image_score": 6.62,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1972.2,
+    "colorfulness": 24.9,
+    "white_frac": 0.0,
+    "edge_density": 0.0904,
+    "sky_frac": 0.82,
+    "brightness": 133.5,
+    "dark_frac": 0.088,
+    "center_edge": 0.174
+   },
+   "current": {
+    "sha256": "d01e25c0ed2134abbcee84bf1fcb9be5e86f26d4af3160f0256d6bca22aced8f",
+    "score": 7.38,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Kanazawa-seaside-line-SangyoShinkoCenter-station-platform.jpg"
+   }
+  },
+  {
+   "slug": "st05060",
+   "title": "File:Tsubamesanjo Jibasan Center, Roadside Station, Niigata, Japan, April 2016.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tsubamesanjo_Jibasan_Center,_Roadside_Station,_Niigata,_Japan,_April_2016.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Tsubamesanjo_Jibasan_Center%2C_Roadside_Station%2C_Niigata%2C_Japan%2C_April_2016.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Tail furry",
+   "sha256": "87df535007ae412e5d6a1de8c481704a1d4f94156da727a4069eb49991a78f88",
+   "dhash": "7fbc70736b4a72f0",
+   "bytes": 335775,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3264,
+    "original_height": 2448
+   },
+   "dist_m": null,
+   "score": 3.13,
+   "image_score": 5.66,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 776.7,
+    "colorfulness": 21.0,
+    "white_frac": 0.003,
+    "edge_density": 0.0375,
+    "sky_frac": 0.701,
+    "brightness": 99.4,
+    "dark_frac": 0.161,
+    "center_edge": 0.0769
+   },
+   "current": {
+    "sha256": "d01e25c0ed2134abbcee84bf1fcb9be5e86f26d4af3160f0256d6bca22aced8f",
+    "score": 7.38,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Kanazawa-seaside-line-SangyoShinkoCenter-station-platform.jpg"
+   }
+  },
+  {
+   "slug": "st05060",
+   "title": "File:Tsubamesanjo Regional Industries Promotion Center MESSEPIA.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tsubamesanjo_Regional_Industries_Promotion_Center_MESSEPIA.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Tsubamesanjo_Regional_Industries_Promotion_Center_MESSEPIA.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "Public domain",
+   "license_url": "",
+   "author": "Abasaa",
+   "sha256": "63ab606fbfe435c15b0fb827893101fe950e503f83fcc6104d5020cce45a0d28",
+   "dhash": "124309196929e929",
+   "bytes": 417497,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2560,
+    "original_height": 1920
+   },
+   "dist_m": null,
+   "score": 1.78,
+   "image_score": 7.21,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 774.4,
+    "colorfulness": 47.6,
+    "white_frac": 0.002,
+    "edge_density": 0.0599,
+    "sky_frac": 0.129,
+    "brightness": 131.4,
+    "dark_frac": 0.074,
+    "center_edge": 0.0889
+   },
+   "current": {
+    "sha256": "d01e25c0ed2134abbcee84bf1fcb9be5e86f26d4af3160f0256d6bca22aced8f",
+    "score": 7.38,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Kanazawa-seaside-line-SangyoShinkoCenter-station-platform.jpg"
+   }
+  },
+  {
+   "slug": "st06748",
+   "title": "File:1000系と8500系恩田にて.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:1000系と8500系恩田にて.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/1000%E7%B3%BB%E3%81%A88500%E7%B3%BB%E6%81%A9%E7%94%B0%E3%81%AB%E3%81%A6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "HOTSpring1949",
+   "sha256": "65c0b3a49bca6970e918a87afba8782a177a6218ca6b452386adca29f98c5d09",
+   "dhash": "f6d3dbcdcec3c86c",
+   "bytes": 226303,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2160,
+    "original_height": 1620
+   },
+   "dist_m": null,
+   "score": 3.58,
+   "image_score": 3.53,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 274.3,
+    "colorfulness": 28.1,
+    "white_frac": 0.0,
+    "edge_density": 0.0262,
+    "sky_frac": 0.002,
+    "brightness": 42.3,
+    "dark_frac": 0.546,
+    "center_edge": 0.0322
+   },
+   "current": {
+    "sha256": "d430d6a01dcbadfa8db4634cfc34ea3bdc3c946fa2cc6c1df9c1d80a8998704f",
+    "score": 7.4,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Tokyu-railway-kodomonokuni-line-Onda-station-platform.jpg"
+   }
+  },
+  {
+   "slug": "st06748",
+   "title": "File:うしでんしゃ恩田にて.png",
+   "page_url": "https://commons.wikimedia.org/wiki/File:うしでんしゃ恩田にて.png",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/%E3%81%86%E3%81%97%E3%81%A7%E3%82%93%E3%81%97%E3%82%83%E6%81%A9%E7%94%B0%E3%81%AB%E3%81%A6.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "HOTSpring1949",
+   "sha256": "f4e70b08416ce3c6f440314f48d75446d3e20a05d73c4c04753d9539cf468ca5",
+   "dhash": "81e4f64e36a5e608",
+   "bytes": 248403,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2160,
+    "original_height": 1620
+   },
+   "dist_m": null,
+   "score": 3.08,
+   "image_score": 4.4,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 947.7,
+    "colorfulness": 18.3,
+    "white_frac": 0.041,
+    "edge_density": 0.0576,
+    "sky_frac": 0.263,
+    "brightness": 71.9,
+    "dark_frac": 0.344,
+    "center_edge": 0.0736
+   },
+   "current": {
+    "sha256": "d430d6a01dcbadfa8db4634cfc34ea3bdc3c946fa2cc6c1df9c1d80a8998704f",
+    "score": 7.4,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Tokyu-railway-kodomonokuni-line-Onda-station-platform.jpg"
+   }
+  },
+  {
+   "slug": "st06748",
+   "title": "File:Ivan Jimenez en la radio con algunos companeros.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Ivan_Jimenez_en_la_radio_con_algunos_companeros.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Ivan_Jimenez_en_la_radio_con_algunos_companeros.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Iván Jiménez",
+   "sha256": "86a3a1813cb0fd1d8f8b3323732f7a91212be0dc3d6ebcb7ca6796cba8a5d20f",
+   "dhash": "e9e9c9cc4e9a989a",
+   "bytes": 145216,
+   "width": 1800,
+   "height": 375,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4800,
+    "original_height": 1000
+   },
+   "dist_m": null,
+   "score": 2.9,
+   "image_score": 7.27,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 375,
+    "lap_var": 1307.1,
+    "colorfulness": 33.2,
+    "white_frac": 0.001,
+    "edge_density": 0.0848,
+    "sky_frac": 0.57,
+    "brightness": 141.5,
+    "dark_frac": 0.01,
+    "center_edge": 0.0986
+   },
+   "current": {
+    "sha256": "d430d6a01dcbadfa8db4634cfc34ea3bdc3c946fa2cc6c1df9c1d80a8998704f",
+    "score": 7.4,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Tokyu-railway-kodomonokuni-line-Onda-station-platform.jpg"
+   }
+  },
+  {
+   "slug": "st03097",
+   "title": "File:Fujisawa-Hommachi Station 2023 April 2 various 19 43 19 573000.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Fujisawa-Hommachi_Station_2023_April_2_various_19_43_19_573000.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Fujisawa-Hommachi_Station_2023_April_2_various_19_43_19_573000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "c1de973f86265db374669084421a903fa9c28a112d9a226b118338aaa4d647e6",
+   "dhash": "8a0ee6d49aa7a50b",
+   "bytes": 379144,
+   "width": 1800,
+   "height": 1237,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 5516,
+    "original_height": 3792
+   },
+   "dist_m": 33.5,
+   "score": 6.26,
+   "image_score": 6.37,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1237,
+    "lap_var": 1704.9,
+    "colorfulness": 20.9,
+    "white_frac": 0.004,
+    "edge_density": 0.0718,
+    "sky_frac": 0.94,
+    "brightness": 127.1,
+    "dark_frac": 0.098,
+    "center_edge": 0.0796
+   },
+   "current": {
+    "sha256": "7cf5312426a899c25fcec9617f63de83682209c4ce7efb40fd333abe31a5bc60",
+    "score": 7.41,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Fujisawa-Hommachi Station platform 01.jpg"
+   }
+  },
+  {
+   "slug": "st03097",
+   "title": "File:Fujisawa-Hommachi Station 2023 April 2 various 19 42 46 708000.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Fujisawa-Hommachi_Station_2023_April_2_various_19_42_46_708000.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Fujisawa-Hommachi_Station_2023_April_2_various_19_42_46_708000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "b1ee6572b4390acd2e30c00bbf36c7f86591c13b71a69195b36e456e5312e6d8",
+   "dhash": "f0c68cd466242de8",
+   "bytes": 449419,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": 35.3,
+   "score": 5.52,
+   "image_score": 6.61,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1925.0,
+    "colorfulness": 26.7,
+    "white_frac": 0.004,
+    "edge_density": 0.08,
+    "sky_frac": 0.856,
+    "brightness": 134.3,
+    "dark_frac": 0.104,
+    "center_edge": 0.0917
+   },
+   "current": {
+    "sha256": "7cf5312426a899c25fcec9617f63de83682209c4ce7efb40fd333abe31a5bc60",
+    "score": 7.41,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Fujisawa-Hommachi Station platform 01.jpg"
+   }
+  },
+  {
+   "slug": "st03097",
+   "title": "File:Fujisawa-Hommachi Station 2023 April 2 various 19 42 54 281000.jpeg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Fujisawa-Hommachi_Station_2023_April_2_various_19_42_54_281000.jpeg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Fujisawa-Hommachi_Station_2023_April_2_various_19_42_54_281000.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Nesnad",
+   "sha256": "1f939e14d52dac8836bbe19aad42cacd103db46d1b78392b7d2a408166112957",
+   "dhash": "64c4cc6864acd0f0",
+   "bytes": 468991,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": 36.4,
+   "score": 5.52,
+   "image_score": 6.54,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1908.7,
+    "colorfulness": 28.8,
+    "white_frac": 0.003,
+    "edge_density": 0.0841,
+    "sky_frac": 0.838,
+    "brightness": 130.1,
+    "dark_frac": 0.119,
+    "center_edge": 0.1023
+   },
+   "current": {
+    "sha256": "7cf5312426a899c25fcec9617f63de83682209c4ce7efb40fd333abe31a5bc60",
+    "score": 7.41,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:Fujisawa-Hommachi Station platform 01.jpg"
    }
   }
  ],
@@ -613,212 +3144,206 @@
  "skipped": [],
  "rejected_notable": [
   {
-   "slug": "st01311",
-   "title": "File:JR西日本新長田駅トイレ.jpg",
+   "slug": "st00864",
+   "title": "File:Keikyu-railway-main-line-Minami-ota-station-platform.jpg",
+   "named": "ota",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st00864",
+   "title": "File:Minami Ota Station entrance.jpg",
+   "named": "ota",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st00973",
+   "title": "File:JR Ofuna Station Platform 9・10.jpg",
+   "named": "ofuna",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st00973",
+   "title": "File:JR Yokohama Station Platform 3・4.jpg",
+   "named": "yokohama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st04398",
+   "title": "File:Minatomirai station MM-02.svg",
+   "named": "minatomirai",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01885",
+   "title": "File:JR East Yokohama Transportation Depot in 2016.jpg",
    "gate": "title_non_station_scene"
   },
   {
-   "slug": "st01311",
-   "title": "File:長田街景 - panoramio.jpg",
-   "named": "長田",
+   "slug": "st01885",
+   "title": "File:Negishi-station2.jpg",
+   "named": "negishi",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 01.jpg",
-   "named": "sanyo-aboshi",
+   "slug": "st01885",
+   "title": "File:Negishi station.jpg",
+   "named": "negishi",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 02.jpg",
-   "named": "sanyo-aboshi",
+   "slug": "st01885",
+   "title": "File:Yabeno bridge.jpg",
+   "gate": "title_non_station_scene"
+  },
+  {
+   "slug": "st01885",
+   "title": "File:Yokohama MunicipalBus 横浜200か0198.jpg",
+   "named": "横浜",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 03.jpg",
-   "named": "sanyo-aboshi",
+   "slug": "st01885",
+   "title": "File:横浜市営バス64系統-1.jpg",
+   "named": "横浜",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 04.jpg",
-   "named": "sanyo-aboshi",
+   "slug": "st01885",
+   "title": "File:Shin-sugita-station busterminal.jpg",
+   "named": "shin-sugita",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 05.jpg",
-   "named": "sanyo-aboshi",
+   "slug": "st01627",
+   "title": "File:2代目もころん号（新宿方先頭車）.jpg",
+   "named": "新宿",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 06.jpg",
-   "named": "sanyo-aboshi",
+   "slug": "st04394",
+   "title": "File:CNTS-00129837044 高麗史. 卷31-32, 世家 卷31-32.pdf",
+   "named": "高麗",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 07.jpg",
-   "named": "sanyo-aboshi",
+   "slug": "st02099",
+   "title": "File:Saginuma depot1.JPG",
+   "gate": "title_non_station_scene"
+  },
+  {
+   "slug": "st02153",
+   "title": "File:Eidan 8000 series EMU 003.JPG",
+   "gate": "title_non_station_scene"
+  },
+  {
+   "slug": "st02153",
+   "title": "File:Tobu 50050 series EMU 021.JPG",
+   "gate": "title_non_station_scene"
+  },
+  {
+   "slug": "st02153",
+   "title": "File:Tobu 50050 series EMU 023.JPG",
+   "gate": "title_non_station_scene"
+  },
+  {
+   "slug": "st02153",
+   "title": "File:Tokyo Metro 08 series EMU 001.JPG",
+   "gate": "title_non_station_scene"
+  },
+  {
+   "slug": "st02153",
+   "title": "File:Tokyu 6000 (II) series EMU 031.JPG",
+   "gate": "title_non_station_scene"
+  },
+  {
+   "slug": "st02153",
+   "title": "File:Tokyu 8500 series EMU 021.JPG",
+   "gate": "title_non_station_scene"
+  },
+  {
+   "slug": "st02153",
+   "title": "File:Tokyu 8500 series EMU 023.JPG",
+   "gate": "title_non_station_scene"
+  },
+  {
+   "slug": "st02152",
+   "title": "File:東京メトロ8000系.jpg",
+   "named": "東京",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 08.jpg",
-   "named": "sanyo-aboshi",
+   "slug": "st02152",
+   "title": "File:Tobu 50050 series EMU 021.JPG",
+   "gate": "title_non_station_scene"
+  },
+  {
+   "slug": "st02152",
+   "title": "File:Tobu 50050 series EMU 023.JPG",
+   "gate": "title_non_station_scene"
+  },
+  {
+   "slug": "st01900",
+   "title": "File:こどもの国線 at Nagatsuta.jpg",
+   "named": "こどもの国",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 09.jpg",
-   "named": "sanyo-aboshi",
+   "slug": "st01900",
+   "title": "File:こどもの国線 at Nagatsuta -40996.jpeg",
+   "named": "こどもの国",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 10.jpg",
-   "named": "sanyo-aboshi",
+   "slug": "st01900",
+   "title": "File:こどもの国線 at Nagatsuta -54663.jpeg",
+   "named": "こどもの国",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 12.jpg",
-   "named": "sanyo-aboshi",
+   "slug": "st02158",
+   "title": "File:5000 Series EMU - 53912087449.jpg",
+   "gate": "title_non_station_scene"
+  },
+  {
+   "slug": "st02158",
+   "title": "File:NDL769654 史籍集覧 〔８〕 義山後覚（愚軒） 国分寺志料.pdf",
+   "named": "国分寺",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 13.jpg",
-   "named": "sanyo-aboshi",
-   "gate": "title_names_other_station"
+   "slug": "st06769",
+   "title": "File:Train station @ Sagamiko (9876739355).jpg",
+   "gate": "title_non_station_scene"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo-Aboshi Station 202208.jpg",
-   "named": "sanyo-aboshi",
-   "gate": "title_names_other_station"
+   "slug": "st06769",
+   "title": "File:Train station @ Sagamiko (9876744825).jpg",
+   "gate": "title_non_station_scene"
   },
   {
-   "slug": "st03678",
-   "title": "File:Sanyo 6000 series 6101 at Sanyo-Aboshi Station.jpg",
-   "named": "sanyo-aboshi",
-   "gate": "title_names_other_station"
+   "slug": "st06769",
+   "title": "File:Train station @ Sagamiko (9876763326).jpg",
+   "gate": "title_non_station_scene"
   },
   {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 01.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
+   "slug": "st06769",
+   "title": "File:Train station @ Sagamiko (9876860463).jpg",
+   "gate": "title_non_station_scene"
   },
   {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 02.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
+   "slug": "st06769",
+   "title": "File:Landscapes seen from JR中央本線 train between 小淵沢 and Takao (28143).jpg",
+   "gate": "title_non_station_scene"
   },
   {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 03.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
+   "slug": "st06769",
+   "title": "File:Landscapes seen from JR中央本線 train between 小淵沢 and Takao (42529).jpg",
+   "gate": "title_non_station_scene"
   },
   {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 04.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 05.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 06.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 07.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 08.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 09.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 10.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 11.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 12.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 13.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 14.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 15.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 16.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 17.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:Hon-Tatsuno Station 18.jpg",
-   "named": "hon-tatsuno",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st04169",
-   "title": "File:JRW Hon-Tatsuno station 071113.jpg",
-   "named": "hon-tatsuno",
+   "slug": "st05060",
+   "title": "File:Hachinohe Station Side Post Office.jpg",
+   "named": "hachinohe",
    "gate": "title_names_other_station"
   }
  ]
