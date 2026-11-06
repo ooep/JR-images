@@ -1312,3 +1312,27 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=1 staged=20 confirmed=4 skipped=0
 - reject_dist={"resolution_low_lt_1600": 96, "mime_unsupported": 131, "same_as_current": 25, "license_unclear": 3, "quality_reject_low_color": 11, "title_names_other_station": 48, "duplicate_title": 5, "hard_excluded": 14, "title_non_station_scene": 5, "resolution_not_upgrade": 11, "no_author_metadata": 3, "oversize_gt_25mb": 8}
+
+
+## ws17 local accept B27 — 2026-11-06T13:56:02Z
+- st02680 九条 ← File:Kyoto Kujo-STA Platform1-2.jpg (done, score 6.13→6.99)
+- st06981 藤森 ← File:Fujinomori Sta. West Entrance.jpg (done, score 6.24→6.76)
+- st01052 维持现图 below_spec_confirmed：最高 isc 6.17<6.33
+- st01059 维持现图 below_spec_confirmed：最高 isc 5.61<5.71
+- st01244 维持现图 below_spec_confirmed：最高 isc 5.94<6.21
+- st01578 维持现图 below_spec_confirmed：最高 isc 3.41<9.64
+- st04012 维持现图 below_spec_confirmed：isc 7.68>5.24 但候选为車塚古墳/埴轮列非站景拒
+- st05070 维持现图 below_spec_confirmed：isc 7.63>6.34 但候选为影视宣传照（Red Carpet 人像）非站景拒
+- st05071 维持现图 below_spec_confirmed：最高 isc 5.65<6.18
+- st05905 维持现图 below_spec_confirmed：最高 isc 5.95<6.16
+- st05916 维持现图 below_spec_confirmed：最高 isc 5.50<5.88
+- st05920 维持现图 below_spec_confirmed：isc 7.83>6.37 但候选为嵐電モボ车照拒
+- st05922 维持现图 below_spec_confirmed：isc 7.31>5.71 但候选为香港西湾河站异国拒（OCR Sai 子串误命中）
+- st05925 维持现图 below_spec_confirmed：isc 6.91>4.20 但候选为网球场/神社参道非站景拒
+- st05928 维持现图 below_spec_confirmed：isc 7.05>6.09 但候选为妙心寺寺院照拒
+- st06160 维持现图 below_spec_confirmed：最高 isc 7.68<9.22
+- st07666 维持现图 below_spec_confirmed：最高 isc 5.58<5.68
+- st07757 维持现图 below_spec_confirmed：最高 isc 7.35<9.43
+- st08266 维持现图 below_spec_confirmed：最高 isc 5.88<6.46
+- st08666 维持现图 below_spec_confirmed：isc 6.49>6.21 但候选为缆车特写无「多宝塔」站名拒
+- runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 2 / 标 below_spec_confirmed 18。
