@@ -1169,3 +1169,26 @@
 ## ws17 revert B23 st00672 — 2026-11-06T11:37:44Z
 - runner da0bcb53 自动替换 st00672 千鳥 为 File:View from Chidori Station (east).jpg（稻田眺望、无站体无站名）→ 站证不成立，撤除；
 - 恢复替换前 photo/license blob 与 state/index 条目（review 态保留）。
+
+
+## ws17 local accept B23 — 2026-11-06T11:39:20Z
+- st02265 金山 ← File:Fukuoka Kanayama-STA Entrance2.jpg (done, score 7.20→7.44)
+- st02212 维持现图 below_spec_confirmed：isc 5.88<6.65
+- st04536 维持现图 below_spec_confirmed：isc 6.45<6.69
+- st01155 维持现图 below_spec_confirmed：isc 5.79<6.74
+- st01191 维持现图 below_spec_confirmed：isc 5.92<6.74（候选1 意大利全景异国拒）
+- st01175 维持现图 below_spec_confirmed：候选千叶幕张丰砂异县拒（isc 过闸但无本站站证）
+- st02186 维持现图 below_spec_confirmed：isc 5.93<6.93
+- st04827 维持现图 below_spec_confirmed：isc 6.79<6.93
+- st03483 维持现图 below_spec_confirmed：isc 5.80<6.96
+- st06510 维持现图 below_spec_confirmed：isc 5.98<6.96
+- st06511 维持现图 below_spec_confirmed：isc 6.51<7.04（候选2 东武动物园异运营商拒）
+- st02240 维持现图 below_spec_confirmed：候选台湾 TRA 车照异国拒；isc 6.94<7.05
+- st03370 维持现图 below_spec_confirmed：候选大阪阪急河原町异县拒；isc 3.51<7.22
+- st03371 维持现图 below_spec_confirmed：候选2 邮便局非站景拒（isc 7.86 无站证）
+- st01962 维持现图 below_spec_confirmed：isc 7.33<7.38
+- st03378 维持现图 below_spec_confirmed：isc 5.97<7.44
+- st05659 维持现图 below_spec_confirmed：isc 7.20<7.50（候选2 墓碑非站景）
+- st02190 维持现图 below_spec_confirmed：isc 7.53<7.56（神社/会馆非站景）
+- st08418 维持现图 below_spec_confirmed：isc 6.52<7.16
+- runner 42209382012 暂存候选全量 OCR(全名匹配)+逐图目检；接受 1 / 标 below_spec_confirmed 18。
