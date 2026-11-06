@@ -856,3 +856,32 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=25 confirmed=0 skipped=0
 - reject_dist={"same_as_current": 25, "license_unclear": 31, "resolution_low_lt_1600": 87, "title_names_other_station": 40, "title_non_station_scene": 32, "resolution_not_upgrade": 17, "mime_unsupported": 44, "oversize_gt_25mb": 4, "no_author_metadata": 3, "hard_excluded": 10, "quality_reject_low_color": 17, "duplicate_title": 2, "license_forbidden": 3}
+
+
+## ws17 local accept B14 — 2026-11-06T07:45:00Z
+- st08662 维持现图 below_spec_confirmed：命中 佐久 但最高 6.80<7.99
+- st04304 维持现图 below_spec_confirmed：命中 然別 但最高 6.80<8.02
+- st04314 维持现图 below_spec_confirmed：命中 札苅 但最高 6.80<8.03
+- st00767 维持现图 below_spec_confirmed：无站名命中且最高 6.80<8.07
+- st07587 维持现图 below_spec_confirmed：命中 北舟岡 但最高 6.80<8.08
+- st00757 维持现图 below_spec_confirmed：命中 白石 但最高 5.80<8.14
+- st01978 维持现图 below_spec_confirmed：命中 十字街 但最高 4.04<8.19
+- st08660 维持现图 below_spec_confirmed：无站名命中且最高 6.80<8.22
+- st04281 维持现图 below_spec_confirmed：命中 峰延 但最高 7.80<8.28
+- st05403 维持现图 below_spec_confirmed：无站名命中且最高 7.54<8.28
+- st08387 维持现图 below_spec_confirmed：命中 安平 但最高 6.80<8.31
+- st04325 维持现图 below_spec_confirmed：命中 黒松内 但最高 6.80<8.32
+- st04327 维持现图 below_spec_confirmed：最高 6.80<8.46（候选3 贝壳标本非站景拒）
+- st03945 维持现图 below_spec_confirmed：无站名命中且最高 6.80<8.50
+- st04251 维持现图 below_spec_confirmed：命中 東久根別 但最高 6.80<8.55
+- st02733 维持现图 below_spec_confirmed：命中 高砂 但最高 4.80<8.55（候选3 木曽古画非站景拒）
+- st08390 维持现图 below_spec_confirmed：最高 6.80<8.55（候选2 上麻生他站拒）
+- st08655 维持现图 below_spec_confirmed：最高 7.24<8.62
+- st00771 维持现图 below_spec_confirmed：无站名命中且最高 6.80<8.68
+- st04277 维持现图 below_spec_confirmed：无站名命中且最高 6.80<8.70
+- st08649 维持现图 below_spec_confirmed：最高 6.80<8.70（候选3 NDL 古画非站景拒）
+- st08654 维持现图 below_spec_confirmed：最高 7.21<8.70
+- st05001 维持现图 below_spec_confirmed：最高 5.09<8.71（候选3 神奈川南線中之島同名异线拒）
+- st04317 维持现图 below_spec_confirmed：无站名命中且最高 6.80<8.72
+- st00769 维持现图 below_spec_confirmed：命中 恵み野 但最高 3.71<8.75
+- runner 42181502394 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 25。
