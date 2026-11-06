@@ -507,3 +507,30 @@
 ## ws17 B03 revert（本地 API，零分钟） — 2026-11-06T04:10:56Z
 - 撤 st03236：runner 自动替换图目检为厕所照（标题「阪急吹田駅トイレ」含站名过标题闸但主体非站景）；且旧图「JR West Suita」与阪急记录运营商不符=同名异运营商第 6 簇（JR 吹田 vs 阪急吹田）；回重抓队列
 - 闸门补丁：NON_SCENE 黑名单加 toilet/restroom/トイレ/化粧室
+
+
+## ws17 local accept B03 — 2026-11-06T04:16:21Z
+- st01284 维持现图 below_spec_confirmed：候选 iscore5.8<现 7.24 分差不足
+- st01988 维持现图 below_spec_confirmed：最优候选 7.08<现 7.12 分差不足
+- st02548 维持现图 below_spec_confirmed：无站名命中且候选分不足
+- st02917 维持现图 below_spec_confirmed：OCR 命中来自货车常备铭牌非站牌且分不足
+- st03253 维持现图 below_spec_confirmed：无站名命中（ monorail 延伸广告/商铺照）
+- st03847 维持现图 below_spec_confirmed：无站名命中（近铁发车标示无站名）
+- st03967 维持现图 below_spec_confirmed：无站名命中
+- st04793 维持现图 below_spec_confirmed：无站名命中（换乘案内/改名案内牌）
+- st04870 维持现图 below_spec_confirmed：候选 6.28<现 7.13 分差不足
+- st04882 维持现图 below_spec_confirmed：候选 6.83<现 7.18 分差不足
+- st04883 维持现图 below_spec_confirmed：OCR 命中 JR 長居与御堂筋線记录运营商不符+分不足
+- st04889 维持现图 below_spec_confirmed：候选 5.89<现 7.07 分差不足
+- st04935 维持现图 below_spec_confirmed：OCR 命中来自诊所招牌语境且 5.97<7.33
+- st04970 维持现图 below_spec_confirmed：无站名命中
+- st05725 维持现图 below_spec_confirmed：候选 6.6<现 7.08 分差不足
+- st05950 维持现图 below_spec_confirmed：候选 6.26<现 7.21 分差不足
+- st06549 维持现图 below_spec_confirmed：无站名命中（银行/广告牌）
+- st06582 维持现图 below_spec_confirmed：候选 6.5<现 7.09 分差不足
+- st07410 维持现图 below_spec_confirmed：无站名命中
+- st07420 维持现图 below_spec_confirmed：候选 6.42<现 7.28 分差不足
+- st07424 维持现图 below_spec_confirmed：候选 4.86<现 7.3 分差不足
+- st08366 维持现图 below_spec_confirmed：无站名命中（江之电标题 runner 已拒）
+- st08451 维持现图 below_spec_confirmed：候选为 JR225 系列车照且分不足
+- runner 42159311966 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 23。
