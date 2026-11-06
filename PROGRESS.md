@@ -891,3 +891,8 @@
 - queue: 21 站（review/below_spec 高分替换）
 - replaced=1 staged=20 confirmed=0 skipped=0
 - reject_dist={"same_as_current": 21, "license_unclear": 20, "resolution_low_lt_1600": 46, "mime_unsupported": 67, "title_names_other_station": 20, "quality_reject_low_color": 26, "hard_excluded": 19, "title_non_station_scene": 23, "resolution_not_upgrade": 7, "duplicate_title": 1, "no_author_metadata": 1}
+
+
+## ws17 revert B15 st04264 — 2026-11-06T08:02:39Z
+- runner 31b553ef 自动替换 st04264 深川 为 File:Fukagawa station North square 20120903.jpg（砾石停车场+远景高架，无站名标识/无站房主体）→ 站证不成立，撤除；
+- 恢复替换前 photo/license blob 与 state/index 条目（review 态保留）。
