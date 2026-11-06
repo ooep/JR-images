@@ -732,3 +732,9 @@
 - st00259 大久保(京都・近鉄) 撤除误挂照 File:JRE Okubo-STA Platform1-2.jpg（实为 JR 东东京大久保，案内牌 OCR「中央・総武線/新宿・秋葉原・千葉方」）；
 - 与 st00260(东京) 同 sha256 6b17e1c6（B10 verify 批内 dup 闸门拦截暴露）；
 - st00260 现图正确保留；st00259 置 missing 回重抓队列（dead stage=mismatch_removal）。
+
+
+## ws17 below-spec replace WS17-B10 — 2026-11-06T06:24:54Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=24 confirmed=1 skipped=0
+- reject_dist={"same_as_current": 25, "mime_unsupported": 30, "resolution_low_lt_1600": 180, "title_names_other_station": 118, "hard_excluded": 47, "resolution_not_upgrade": 30, "quality_reject_low_color": 9, "title_non_station_scene": 7, "duplicate_title": 5, "no_author_metadata": 10, "license_unclear": 3, "oversize_gt_25mb": 1}
