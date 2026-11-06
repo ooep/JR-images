@@ -496,3 +496,9 @@
 - st06969 维持现图 below_spec_confirmed：OCR 全名命中京阪土居且运营商匹配但 iscore6.63<现 6.79 分差不足
 - st08055 维持现图 below_spec_confirmed：OCR 命中高師浜来自诊所地址牌非站牌；其余分不足
 - runner <B02_RUN_ID> 暂存候选全量 OCR(全名匹配)+逐图目检；接受 1 / 标 below_spec_confirmed 23。
+
+
+## ws17 below-spec replace WS17-B03 — 2026-11-06T04:03:46Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=1 staged=23 confirmed=1 skipped=0
+- reject_dist={"same_as_current": 25, "hard_excluded": 56, "quality_reject_low_color": 22, "resolution_low_lt_1600": 118, "duplicate_title": 7, "title_names_other_station": 62, "mime_unsupported": 39, "resolution_not_upgrade": 80, "title_non_station_scene": 5, "no_author_metadata": 3, "license_forbidden": 4, "license_unclear": 2, "quality_reject_white_screenshot": 1}
