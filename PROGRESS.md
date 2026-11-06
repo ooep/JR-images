@@ -1370,3 +1370,9 @@
 - st08261 维持现图 below_spec_confirmed：最高 isc 6.47<7.21
 - st08293 维持现图 below_spec_confirmed：最高 isc 6.49<6.75
 - runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 24。
+
+
+## ws17 below-spec replace WS17-B29 — 2026-11-06T14:39:17Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=2 staged=14 confirmed=9 skipped=0
+- reject_dist={"duplicate_title": 2, "hard_excluded": 48, "resolution_low_lt_1600": 79, "resolution_not_upgrade": 27, "same_as_current": 25, "oversize_gt_25mb": 1, "mime_unsupported": 156, "title_names_other_station": 65, "title_non_station_scene": 11, "quality_reject_low_color": 15, "no_author_metadata": 3, "license_unclear": 1}
