@@ -726,3 +726,9 @@
 - st08305 维持现图 below_spec_confirmed：命中 上板橋 但最高 5.52<7.66
 - st08555 维持现图 below_spec_confirmed：命中 洗足池 但最高 1.94<7.57
 - runner 42169828734 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 25。
+
+
+## ws17 P0 revert st00259 — 2026-11-06T06:14:05Z
+- st00259 大久保(京都・近鉄) 撤除误挂照 File:JRE Okubo-STA Platform1-2.jpg（实为 JR 东东京大久保，案内牌 OCR「中央・総武線/新宿・秋葉原・千葉方」）；
+- 与 st00260(东京) 同 sha256 6b17e1c6（B10 verify 批内 dup 闸门拦截暴露）；
+- st00260 现图正确保留；st00259 置 missing 回重抓队列（dead stage=mismatch_removal）。
