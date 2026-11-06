@@ -1158,3 +1158,9 @@
 - st02559 船尾(福岡・JR後藤寺線) 撤除误挂照 File:阪堺電車「船尾」停留所.jpg（街面轨道+低站台=大阪阪堺電車；标题运营商自证）；
 - 与 st02558(大阪阪堺) 同 sha256 8dc30682（B23 verify 批内 dup 闸门拦截暴露）；
 - st02558 现图正确保留；st02559 置 missing 回重抓队列（dead stage=mismatch_removal）。
+
+
+## ws17 below-spec replace WS17-B23 — 2026-11-06T11:29:21Z
+- queue: 24 站（review/below_spec 高分替换）
+- replaced=2 staged=19 confirmed=3 skipped=0
+- reject_dist={"resolution_low_lt_1600": 57, "no_author_metadata": 1, "duplicate_title": 6, "title_names_other_station": 117, "same_as_current": 24, "hard_excluded": 26, "title_non_station_scene": 19, "quality_reject_low_color": 16, "mime_unsupported": 95, "license_unclear": 9, "oversize_gt_25mb": 1, "near_duplicate": 1, "resolution_not_upgrade": 5, "quality_reject_blurry": 2}
