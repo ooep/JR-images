@@ -1152,3 +1152,9 @@
 - 本地裁决误用 relevance score 作分数闸（workflow 闸为 image_score）；审计 15 个历史 PICK，8 站接受后分低于接受前，违反高分替换口径，撤除：
 - st01324, st02672, st05624, st05704, st06640, st06769, st06967, st08365
 - 恢复各站替换前 photo/license blob 与 state/index 条目（回 review 池）；st05624 标 below_spec_confirmed(B22)；其余 7 站回池待正确闸重试。
+
+
+## ws17 P0 revert st02559 — 2026-11-06T11:17:27Z
+- st02559 船尾(福岡・JR後藤寺線) 撤除误挂照 File:阪堺電車「船尾」停留所.jpg（街面轨道+低站台=大阪阪堺電車；标题运营商自证）；
+- 与 st02558(大阪阪堺) 同 sha256 8dc30682（B23 verify 批内 dup 闸门拦截暴露）；
+- st02558 现图正确保留；st02559 置 missing 回重抓队列（dead stage=mismatch_removal）。
