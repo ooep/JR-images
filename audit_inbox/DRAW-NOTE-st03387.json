@@ -1,0 +1,18 @@
+{
+ "unit": "DRAW-LINE",
+ "kind": "misattribution_note",
+ "station_id": "st03387",
+ "path": "stations/st03387/photo.jpg",
+ "type": "domestic_mislabel_drawn",
+ "recorded": {
+  "pref": "北海道",
+  "name": "鹿討",
+  "lines": [
+   "富良野線"
+  ]
+ },
+ "evidence": "源图站名标=「しかうち」隣駅 がくてん/かうち=富良野線 鹿討駅の実景（記録 st03387 鹿討と1駅ずれ）；st08660 国内誤標先例に従い照画+文字空白、記録修正は审计线へ",
+ "action": "已照画（draw_img/01_北海道/st03387.jpg），提请审计线核记录/源归属",
+ "date": "2026-11-06",
+ "head": "ef353834"
+}
