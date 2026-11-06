@@ -1501,3 +1501,9 @@
 - st08006 维持现图 below_spec_confirmed：最高 isc 6.79<6.99
 - st08012 维持现图 below_spec_confirmed：最高 isc 7.32<7.40
 - runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 1 / 标 below_spec_confirmed 22。
+
+
+## ws17 queue rebuild (audit handoff) — 2026-11-06T16:48:16Z
+- low_conf_identity.json(332bc346) 677 站标记 low_conf_identity；其中 549 站 status done→review（state+index 状态位仅改此字段，photo/blob 不动）入优先重捕段；
+- missing 31 站不入 ws17 队列（runner 仅吃 review），留 fetch 通道；
+- 队列=优先段 A(pool∩low_conf)+余段 B，县内站数降序/县内 score 升序，25/批，B33 起。
