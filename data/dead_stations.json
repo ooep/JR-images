@@ -1,5 +1,5 @@
 {
- "count": 526,
+ "count": 528,
  "schema": 1,
  "stations": {
   "st00014": {
@@ -8218,7 +8218,41 @@
    "slug": "st08893",
    "source_page": "https://commons.wikimedia.org/wiki/File:Kishi_Station_building_(15008057648).jpg",
    "stage": "verify"
+  },
+  "st01215": {
+   "slug": "st01215",
+   "name": "木幡",
+   "name_en": "Kobata",
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:木幡駅 - panoramio.jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-06T01:30:57Z",
+   "last_attempt": "2026-11-06T01:30:57Z",
+   "note": "revert: 错挂 JR 木幡，站证反向（审计 P1：唯一站证「JR 木幡」牌属 st01213）"
+  },
+  "st01213": {
+   "slug": "st01213",
+   "name": "木幡",
+   "name_en": "Kobata",
+   "stage": "mismatch_removal",
+   "reasons": {
+    "wrong_station": 1
+   },
+   "reject_dist": {},
+   "removed_source_title": "File:Shintetsu Kobata Station platform.jpg",
+   "below_spec": false,
+   "attempts": 2,
+   "final_dead": false,
+   "first_seen": "2026-11-06T01:30:57Z",
+   "last_attempt": "2026-11-06T01:30:57Z",
+   "note": "revert: 现图标题 Shintetsu Kobata（神铁同名异线）且框内无可读站牌，身份未证（审计 P1 关联）"
   }
  },
- "updated_at": "2026-11-05T22:53:59Z"
+ "updated_at": "2026-11-06T01:30:57Z"
 }

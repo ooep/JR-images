@@ -456,3 +456,9 @@
 - st08054 维持现图 below_spec_confirmed：候选竖幅 iscore3.25，现图缺陷为 low_score 无更优候选
 - st06609 维持现图 below_spec_confirmed：候选竖幅 iscore3.49，引入 low_score 新缺陷
 - runner 42124115966 暂存 47 候选/17 站全量 OCR(全名匹配)+逐图目检；接受 7 / 标 below_spec_confirmed 10。
+
+
+## ws15 revert-n（本地 API，零 Actions 分钟） — 2026-11-06T01:30:57Z
+- 撤站 st01215 st01213；原因：st01215 错挂 JR 木幡（唯一站证「JR 木幡」牌=st01213 之站，站证反向，审计 P1）；st01213 现图标题 Shintetsu Kobata（神铁同名异线）且框内无可读站牌，身份未证
+- 两站回重抓队列（stage=mismatch_removal）；st01215 撤下图经目检为 JR 木幡站证清晰图，重抓 st01213 时可作候选
+- 零分钟通道：GitHub git-data API 单提交（base_tree + sha:null 删除），force=false，推后回读
