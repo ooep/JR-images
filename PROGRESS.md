@@ -1279,3 +1279,30 @@
 - queue: 24 站（review/below_spec 高分替换）
 - replaced=1 staged=23 confirmed=0 skipped=0
 - reject_dist={"resolution_not_upgrade": 9, "hard_excluded": 39, "resolution_low_lt_1600": 98, "same_as_current": 24, "title_names_other_station": 94, "mime_unsupported": 38, "quality_reject_low_color": 30, "duplicate_title": 9, "quality_reject_blurry": 1, "title_non_station_scene": 5, "license_unclear": 2, "no_author_metadata": 1}
+
+
+## ws17 local accept B26 — 2026-11-06T13:25:51Z
+- st00560 维持现图 below_spec_confirmed：最高 isc 8.38<8.73
+- st01095 维持现图 below_spec_confirmed：最高 isc 6.82<7.97
+- st01104 维持现图 below_spec_confirmed：最高 isc 7.67<7.88
+- st01105 维持现图 below_spec_confirmed：最高 isc 6.78<7.86
+- st01109 维持现图 below_spec_confirmed：最高 isc 6.31<7.78
+- st01422 维持现图 below_spec_confirmed：最高 isc 7.47<8.32
+- st01590 维持现图 below_spec_confirmed：最高 isc 7.13<8.78
+- st02278 维持现图 below_spec_confirmed：最高 isc 7.37<7.71
+- st02319 维持现图 below_spec_confirmed：最高 isc 7.03<8.90
+- st02337 维持现图 below_spec_confirmed：最高 isc 6.35<7.72
+- st02390 维持现图 below_spec_confirmed：最高 isc 7.86<9.20
+- st02472 维持现图 below_spec_confirmed：最高 isc 6.00<8.13
+- st02483 维持现图 below_spec_confirmed：最高 isc 6.39<7.94
+- st02788 维持现图 below_spec_confirmed：最高 isc 7.18<8.18
+- st03075 维持现图 below_spec_confirmed：最高 isc 7.08<8.59
+- st03472 维持现图 below_spec_confirmed：最高 isc 7.21<7.55
+- st04455 维持现图 below_spec_confirmed：最高 isc 7.52<7.73
+- st04766 维持现图 below_spec_confirmed：最高 isc 7.59<7.96
+- st04773 维持现图 below_spec_confirmed：最高 isc 6.42<7.71
+- st07837 维持现图 below_spec_confirmed：最高 isc 6.89<7.98
+- st07846 维持现图 below_spec_confirmed：最高 isc 7.28<7.97
+- st07849 维持现图 below_spec_confirmed：最高 isc 6.69<7.73
+- st07896 维持现图 below_spec_confirmed：最高 isc 6.63<8.91（候选为名铁巴士站牌拒）
+- runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 23。
