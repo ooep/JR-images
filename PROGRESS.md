@@ -931,3 +931,26 @@
 ## ws17 revert B16 st02689+st01299 — 2026-11-06T08:27:11Z
 - runner 7d701c8b 自动替换 st02689 魚崎（高架通道+「阪神電車のりば 出口」吊牌，无站名）与 st01299 西宮（出口案内牌+巴士案内板主体，无站名牌）→ 站证不成立，撤除；
 - 恢复替换前 photo/license blob 与 state/index 条目（review 态保留）。
+
+
+## ws17 local accept B16 — 2026-11-06T08:28:38Z
+- st01057 维持现图 below_spec_confirmed：无站名命中且 5.04<5.40
+- st01270 维持现图 below_spec_confirmed：命中 西宮名塩 但 5.93<6.36
+- st01300 维持现图 below_spec_confirmed：候选为 JR 西宮站体 vs 记录阪神系，运营商不符拒；且 3.52<7.29
+- st02730 维持现图 below_spec_confirmed：候选为 JR 223 系车照且 3.19<7.29
+- st03232 维持现图 below_spec_confirmed：河流照非站景 3.09<6.74
+- st03261 维持现图 below_spec_confirmed：无站名命中且最高 4.58<6.73
+- st03669 维持现图 below_spec_confirmed：无站名命中且最高 6.50<6.95
+- st03673 维持现图 below_spec_confirmed：无站名命中且 2.56<7.03
+- st03676 维持现图 below_spec_confirmed：命中 英賀保 但最高 5.36<6.93
+- st04924 维持现图 below_spec_confirmed：命中 春日野道 但最高 3.52<7.06
+- st05045 维持现图 below_spec_confirmed：命中 甘地 但最高 4.75<6.56
+- st05191 维持现图 below_spec_confirmed：命中 天和 但最高 5.66<7.24
+- st05435 维持现图 below_spec_confirmed：候选为芬兰 Rautjärvi 风景(异国)拒；且 3.26<6.75
+- st06083 维持现图 below_spec_confirmed：命中 山陽天満 但最高 3.89<7.14
+- st06239 维持现图 below_spec_confirmed：命中 神野 但最高 5.41<6.86
+- st06244 维持现图 below_spec_confirmed：命中 黒田庄 但最高 4.30<7.27
+- st06337 维持现图 below_spec_confirmed：候选为 JR/阪神三宮站房景 vs 记录ポートライナー，运营商不符拒；主体公园/街景
+- st07322 维持现图 below_spec_confirmed：券売機/改札口特写 3.52<7.25
+- st08107 维持现图 below_spec_confirmed：无站名命中且最高 6.52<7.06
+- runner 42185727578 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 19。
