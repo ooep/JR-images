@@ -1386,3 +1386,15 @@
 ## ws17 revert B29 st01446 — 2026-11-06T15:04:49Z
 - runner 789afea6 自动替换 st01446 下奥井 为施工期轨道透视照：全图无「下奥井」站名（右侧蓝竖牌为施工告示「お願い/工事中中」+ANTETSU，裁切放大目检），站证不成立，撤除；
 - 恢复替换前 photo/license blob（File:Shimookui Station(1) - flickr.jpg）与 state/index 条目（review 态保留）。
+
+
+## ws17 local accept B29 — 2026-11-06T15:11:17Z
+- st01790 维持现图 below_spec_confirmed：最高 isc 6.67<8.43
+- st05121 维持现图 below_spec_confirmed：最高 isc 5.15<5.98
+- st05909 维持现图 below_spec_confirmed：最高 isc 6.04<8.33（现图=阪急嵐山站房，归属正确）
+- st05910 维持现图 below_spec_confirmed：最高 isc 5.48<8.28（现图=站前踏切轨道视，归属正确）
+- st06196 维持现图 below_spec_confirmed：最高 isc 6.38<8.42
+- st06978 维持现图 below_spec_confirmed：最高 isc 7.13<7.92
+- st07685 维持现图 below_spec_confirmed：isc 6.75>5.44 但候选为 ATTC2017 乒乓球赛人名照非站景拒
+- st08275 维持现图 below_spec_confirmed：最高 isc 6.56<8.07
+- runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 8。
