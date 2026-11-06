@@ -1234,3 +1234,9 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=1 staged=24 confirmed=0 skipped=0
 - reject_dist={"same_as_current": 24, "hard_excluded": 65, "resolution_low_lt_1600": 121, "title_names_other_station": 136, "quality_reject_low_color": 19, "no_author_metadata": 9, "duplicate_title": 8, "title_non_station_scene": 14, "mime_unsupported": 17, "resolution_not_upgrade": 13, "license_unclear": 1}
+
+
+## ws17 P0 revert st01288 — 2026-11-06T12:38:07Z
+- st01288 三郷(愛知・名鉄瀬戸線) 撤除误挂照 File:JR Musashino Line Misato Station Platform 2022-04-06.jpg（站牌 MY13+邻站新三郷/吉川+方向幕新松戸/武蔵浦和/府中本町=JR 東日本武蔵野線埼玉三郷，目检自证）；
+- legacy batch-4 批量导入(104d4083, 2026-11-03)同名错挂，与目标坐标相距 ~350km；st01287(埼玉) 自有正确照 c900d358 不受影响；
+- st01288 置 missing 回重抓队列（dead stage=mismatch_removal）。
