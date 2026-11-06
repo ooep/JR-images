@@ -995,3 +995,31 @@
 - queue: 24 站（review/below_spec 高分替换）
 - replaced=0 staged=24 confirmed=0 skipped=0
 - reject_dist={"same_as_current": 24, "title_names_other_station": 68, "resolution_low_lt_1600": 37, "resolution_not_upgrade": 59, "title_non_station_scene": 22, "hard_excluded": 112, "quality_reject_low_color": 23, "mime_unsupported": 16, "duplicate_title": 7, "no_author_metadata": 6, "license_unclear": 1}
+
+
+## ws17 local accept B18 — 2026-11-06T09:07:22Z
+- st06251 维持现图 below_spec_confirmed：最高 5.66<7.60（候选3 车照拒）
+- st08108 维持现图 below_spec_confirmed：无站名命中且最高 6.52<7.62
+- st08058 维持现图 below_spec_confirmed：无站名命中且最高 7.13<7.64
+- st05106 维持现图 below_spec_confirmed：无站名命中且最高 6.52<7.69
+- st03675 维持现图 below_spec_confirmed：命中 手柄山平和公園 但最高 3.54<7.70
+- st01293 维持现图 below_spec_confirmed：无站名命中且最高 4.52<7.71
+- st01303 维持现图 below_spec_confirmed：命中 芦屋 但最高 4.52<7.72
+- st04703 维持现图 below_spec_confirmed：无站名命中且最高 6.58<7.72
+- st08146 维持现图 below_spec_confirmed：无站名命中且最高 6.52<7.74
+- st04919 维持现图 below_spec_confirmed：命中 石屋川 但最高 5.52<7.75
+- st07321 维持现图 below_spec_confirmed：命中 市民広場 但最高 4.26<7.78
+- st01561 维持现图 below_spec_confirmed：无站名命中且最高 3.52<7.94
+- st06334 维持现图 below_spec_confirmed：无站名命中且最高 4.50<8.13
+- st02704 维持现图 below_spec_confirmed：命中 大開 但最高 5.52<8.16
+- st06335 维持现图 below_spec_confirmed：命中 湊川公園 但最高 6.52<8.17
+- st04922 维持现图 below_spec_confirmed：命中 西灘 但最高 6.52<8.24
+- st02693 维持现图 below_spec_confirmed：无站名命中且最高 6.52<8.33
+- st08057 维持现图 below_spec_confirmed：命中 アイランド北口 但最高 6.52<8.34
+- st04693 维持现图 below_spec_confirmed：无站名命中且最高 6.52<8.46
+- st06634 维持现图 below_spec_confirmed：命中 ハーバーランド 但最高 6.50<8.48
+- st04696 维持现图 below_spec_confirmed：命中 花山 但最高 6.58<8.67
+- st06740 维持现图 below_spec_confirmed：最高 5.52<8.63（候选2/3 北条古川他站拒）
+- st06329 维持现图 below_spec_confirmed：无站名命中且最高 6.52<8.73
+- st01557 维持现图 below_spec_confirmed：候选福岛常磐线草野同名异线拒；最高 4.59<8.38
+- runner 42191034501 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 24。
