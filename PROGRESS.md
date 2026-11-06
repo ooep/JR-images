@@ -1381,3 +1381,8 @@
 ## ws17 P0 revert B29 legacy 错挂四站 — 2026-11-06T14:54:35Z
 - st00693 小倉(京都・近鉄) 挂北九州单轨小仓照（单轨车辆+轨道梁目检）；st04544 下天津(京都・宮福) 挂天津地铁1号线下瓦房照（中文牌目检）；st05908 嵐山(京福) 挂阪急嵐山站房照（与 st05909 同 sha，阪急目检；st05909 保留）；st07456 船岡(京都・山陰) 挂 JR 東日本東北本線船岡照（宫城 heritage 站房目检）；
 - 均 legacy 批量导入错挂；四站置 missing 回重抓队列（dead stage=mismatch_removal）。
+
+
+## ws17 revert B29 st01446 — 2026-11-06T15:04:49Z
+- runner 789afea6 自动替换 st01446 下奥井 为施工期轨道透视照：全图无「下奥井」站名（右侧蓝竖牌为施工告示「お願い/工事中中」+ANTETSU，裁切放大目检），站证不成立，撤除；
+- 恢复替换前 photo/license blob（File:Shimookui Station(1) - flickr.jpg）与 state/index 条目（review 态保留）。
