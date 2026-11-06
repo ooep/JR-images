@@ -1,0 +1,13 @@
+{
+ "station": "st05941",
+ "record_name": "旭川四条",
+ "record_lines": [
+  "宗谷本線"
+ ],
+ "source": "stations/st05941/photo.jpg",
+ "issue": "electrification/structure mismatch: 源图=完整catenary門架+高架複線+都市高層背景(電化区間)；宗谷本線全線非電化且旭川四条为地上簡易站",
+ "evidence": "thumb 目检：架線門架+絶縁子+高架錆壁+2軌+マンション群",
+ "action": "skip 不画",
+ "date": "2026-11-06",
+ "by": "draw-line"
+}
