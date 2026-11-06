@@ -920,3 +920,9 @@
 - st01938 维持现图 below_spec_confirmed：候选长边 1800<现图 2048 缩边拒（且最高 6.80 无分差优势）
 - st01981 维持现图 below_spec_confirmed：命中 湯の川温泉 但最高 3.03<9.64（候选为酒店照）
 - runner 42183176167 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 20。
+
+
+## ws17 below-spec replace WS17-B16 — 2026-11-06T08:19:41Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=2 staged=19 confirmed=4 skipped=0
+- reject_dist={"same_as_current": 25, "resolution_low_lt_1600": 100, "title_names_other_station": 61, "quality_reject_low_color": 23, "duplicate_title": 6, "resolution_not_upgrade": 19, "license_unclear": 2, "hard_excluded": 28, "mime_unsupported": 75, "title_non_station_scene": 4, "no_author_metadata": 3}
