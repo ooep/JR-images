@@ -844,3 +844,9 @@
 - st07314 维持现图 below_spec_confirmed：最高 7.09<7.46
 - st08653 维持现图 below_spec_confirmed：命中 北永山 但最高 5.80<7.36
 - runner 42178076053 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 25。
+
+
+## ws17 P0 revert st02732 — 2026-11-06T07:30:31Z
+- st02732 高砂(兵庫・山陽電鉄) 撤除误挂照 File:JR Hakodate-Main-Line Takasago Station building (South Exit).jpg（站房 JR logo+「高砂駅」=JR 北海道函館本線高砂）；
+- 与 st02733(北海道) 同 sha256 116ae593（B14 verify 批内 dup 闸门拦截暴露）；
+- st02733 现图正确保留；st02732 置 missing 回重抓队列（dead stage=mismatch_removal）。
