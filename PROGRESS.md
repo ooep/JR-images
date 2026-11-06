@@ -1164,3 +1164,8 @@
 - queue: 24 站（review/below_spec 高分替换）
 - replaced=2 staged=19 confirmed=3 skipped=0
 - reject_dist={"resolution_low_lt_1600": 57, "no_author_metadata": 1, "duplicate_title": 6, "title_names_other_station": 117, "same_as_current": 24, "hard_excluded": 26, "title_non_station_scene": 19, "quality_reject_low_color": 16, "mime_unsupported": 95, "license_unclear": 9, "oversize_gt_25mb": 1, "near_duplicate": 1, "resolution_not_upgrade": 5, "quality_reject_blurry": 2}
+
+
+## ws17 revert B23 st00672 — 2026-11-06T11:37:44Z
+- runner da0bcb53 自动替换 st00672 千鳥 为 File:View from Chidori Station (east).jpg（稻田眺望、无站体无站名）→ 站证不成立，撤除；
+- 恢复替换前 photo/license blob 与 state/index 条目（review 态保留）。
