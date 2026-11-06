@@ -1029,3 +1029,11 @@
 - queue: 4 站（review/below_spec 高分替换）
 - replaced=0 staged=4 confirmed=0 skipped=0
 - reject_dist={"resolution_low_lt_1600": 21, "resolution_not_upgrade": 23, "hard_excluded": 18, "same_as_current": 4, "title_non_station_scene": 1, "title_names_other_station": 34, "quality_reject_low_color": 7, "mime_unsupported": 4, "quality_reject_blurry": 1}
+
+
+## ws17 local accept B19 — 2026-11-06T09:16:22Z
+- st01311 维持现图 below_spec_confirmed：无站名命中且最高 7.52<8.76
+- st03678 维持现图 below_spec_confirmed：无站名命中且最高 4.13<9.36
+- st04169 维持现图 below_spec_confirmed：最高 4.50<9.57（候选3 长野饭田线竜野同名异线拒）
+- st00507 维持现图 below_spec_confirmed：候选为三日月阵屋古建非站景拒；1.75 且现图无分
+- runner 42192788960 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 4。
