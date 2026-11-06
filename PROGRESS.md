@@ -574,3 +574,32 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=25 confirmed=0 skipped=0
 - reject_dist={"resolution_not_upgrade": 51, "same_as_current": 25, "resolution_low_lt_1600": 94, "hard_excluded": 87, "quality_reject_low_color": 25, "no_author_metadata": 15, "title_names_other_station": 68, "title_non_station_scene": 19, "mime_unsupported": 9, "duplicate_title": 3, "oversize_gt_25mb": 2}
+
+
+## ws17 local accept B05 — 2026-11-06T04:48:48Z
+- st00071 维持现图 below_spec_confirmed：无站名命中且候选最高 6.85<=7.99
+- st01776 维持现图 below_spec_confirmed：无站名命中且候选最高 6.22<=7.72
+- st01953 维持现图 below_spec_confirmed：无站名命中且候选最高 5.99<=7.66
+- st02047 维持现图 below_spec_confirmed：无站名命中且候选最高 6.48<=7.71
+- st02563 维持现图 below_spec_confirmed：无站名命中且候选最高 6.93<=7.65
+- st02580 维持现图 below_spec_confirmed：命中 新今宮駅前 但 6.44<=7.68 分差不足
+- st03033 维持现图 below_spec_confirmed：无站名命中且候选最高 6.33<=7.88
+- st03251 维持现图 below_spec_confirmed：无站名命中且候选最高 6.32<=7.76
+- st03252 维持现图 below_spec_confirmed：无站名命中且候选最高 5.34<=7.98
+- st03456 维持现图 below_spec_confirmed：无站名命中且候选最高 6.58<=7.73
+- st03855 维持现图 below_spec_confirmed：命中 長瀬 但 6.75<=8.13 分差不足
+- st04779 维持现图 below_spec_confirmed：无站名命中且候选最高 6.36<=7.75
+- st04780 维持现图 below_spec_confirmed：无站名命中且候选最高 6.36<=7.75
+- st04869 维持现图 below_spec_confirmed：无站名命中且候选最高 7.11<=8.32
+- st04877 维持现图 below_spec_confirmed：命中 Umeda 但 7.03<=7.72 分差不足
+- st05113 维持现图 below_spec_confirmed：无站名命中且候选最高 6.49<=8.15
+- st05114 维持现图 below_spec_confirmed：无站名命中且候选最高 6.31<=8.00
+- st05708 维持现图 below_spec_confirmed：无站名命中且候选最高 6.97<=8.13
+- st05877 维持现图 below_spec_confirmed：命中 井高野 但 7.80<=7.80 分差不足
+- st06540 维持现图 below_spec_confirmed：命中 大和田 但 7.07<=8.00 分差不足
+- st06578 维持现图 below_spec_confirmed：无站名命中且候选最高 6.33<=8.29
+- st06704 维持现图 below_spec_confirmed：命中 北千里 但 6.35<=7.89 分差不足
+- st06718 维持现图 below_spec_confirmed：命中 総持寺 但 6.50<=7.68 分差不足
+- st06965 维持现图 below_spec_confirmed：命中 関目 但 6.46<=8.05 分差不足
+- st08368 维持现图 below_spec_confirmed：命中 Minami-Tatsumi 但 7.15<=7.72 分差不足
+- runner 42163290441 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 25。
