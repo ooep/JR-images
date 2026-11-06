@@ -989,3 +989,9 @@
 - st08859 维持现图 below_spec_confirmed：命中 南公園 但最高 3.52<7.56
 - st02713 维持现图 below_spec_confirmed：无站名命中且最高 3.52<7.60
 - runner 42189100752 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 25。
+
+
+## ws17 below-spec replace WS17-B18 — 2026-11-06T09:04:12Z
+- queue: 24 站（review/below_spec 高分替换）
+- replaced=0 staged=24 confirmed=0 skipped=0
+- reject_dist={"same_as_current": 24, "title_names_other_station": 68, "resolution_low_lt_1600": 37, "resolution_not_upgrade": 59, "title_non_station_scene": 22, "hard_excluded": 112, "quality_reject_low_color": 23, "mime_unsupported": 16, "duplicate_title": 7, "no_author_metadata": 6, "license_unclear": 1}
