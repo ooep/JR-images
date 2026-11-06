@@ -1435,3 +1435,30 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=23 confirmed=2 skipped=0
 - reject_dist={"resolution_low_lt_1600": 66, "same_as_current": 25, "mime_unsupported": 102, "hard_excluded": 20, "title_names_other_station": 68, "duplicate_title": 10, "quality_reject_low_color": 13, "no_author_metadata": 8, "resolution_not_upgrade": 12, "license_unclear": 5, "title_non_station_scene": 1}
+
+
+## ws17 local accept B31 — 2026-11-06T16:02:02Z
+- st00134 维持现图 below_spec_confirmed：isc 7.04>5.31 但候选为银行/交番/机车照非站景拒
+- st00236 维持现图 below_spec_confirmed：最高 isc 8.19<8.59
+- st01429 维持现图 below_spec_confirmed：最高 isc 7.01<7.84
+- st01453 维持现图 below_spec_confirmed：最高 isc 6.00<8.04
+- st01457 维持现图 below_spec_confirmed：最高 isc 6.61<8.96
+- st01471 维持现图 below_spec_confirmed：最高 isc 6.25<8.83
+- st03282 维持现图 below_spec_confirmed：最高 isc 7.38<7.55
+- st03285 维持现图 below_spec_confirmed：最高 isc 6.45<9.07
+- st03286 维持现图 below_spec_confirmed：最高 isc 5.95<8.56
+- st03528 维持现图 below_spec_confirmed：isc 6.18>5.30 但候选为小学分校照非站景拒
+- st03657 维持现图 below_spec_confirmed：最高 isc 6.98<7.82
+- st05311 维持现图 below_spec_confirmed：最高 isc 7.15<9.19
+- st05312 维持现图 below_spec_confirmed：最高 isc 6.30<8.65
+- st05315 维持现图 below_spec_confirmed：isc 7.24>4.22 但候选为他站舍迹/热海 ATOS 幕拒
+- st07240 维持现图 below_spec_confirmed：isc 7.98>5.32 但候选为 JR 四国高知站（高架+土电电车目检）同名异县拒
+- st07691 维持现图 below_spec_confirmed：最高 isc 6.87<8.22
+- st07692 维持现图 below_spec_confirmed：最高 isc 6.54<7.52
+- st07708 维持现图 below_spec_confirmed：最高 isc 6.38<7.50
+- st08176 维持现图 below_spec_confirmed：最高 isc 6.90<8.10
+- st08398 维持现图 below_spec_confirmed：最高 isc 7.51<7.58
+- st08401 维持现图 below_spec_confirmed：最高 isc 7.51<8.03
+- st08403 维持现图 below_spec_confirmed：最高 isc 6.72<7.64
+- st08404 维持现图 below_spec_confirmed：最高 isc 7.25<8.32
+- runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 23。
