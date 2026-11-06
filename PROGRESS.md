@@ -896,3 +896,27 @@
 ## ws17 revert B15 st04264 — 2026-11-06T08:02:39Z
 - runner 31b553ef 自动替换 st04264 深川 为 File:Fukagawa station North square 20120903.jpg（砾石停车场+远景高架，无站名标识/无站房主体）→ 站证不成立，撤除；
 - 恢复替换前 photo/license blob 与 state/index 条目（review 态保留）。
+
+
+## ws17 local accept B15 — 2026-11-06T08:04:17Z
+- st08393 维持现图 below_spec_confirmed：命中 栗丘 但最高 5.02<8.78（候选2 神社非站景拒）
+- st00815 维持现图 below_spec_confirmed：无站名命中且最高 7.09<8.84
+- st03396 维持现图 below_spec_confirmed：命中 西神楽 但最高 6.80<8.85
+- st01966 维持现图 below_spec_confirmed：命中 五稜郭公園前 但最高 5.04<8.87（防風板/案内板特写）
+- st01967 维持现图 below_spec_confirmed：命中 中央病院前 但最高 2.80<8.89（停留所上屋特写）
+- st03969 维持现图 below_spec_confirmed：命中 浜小清水 但最高 4.80<8.89
+- st04266 维持现图 below_spec_confirmed：无站名命中且最高 6.80<8.91
+- st00754 维持现图 below_spec_confirmed：命中 琴似 但最高 5.09<8.96
+- st04250 维持现图 below_spec_confirmed：无站名命中且最高 6.02<8.98
+- st00727 维持现图 below_spec_confirmed：无站名命中且最高 6.24<9.00
+- st00783 维持现图 below_spec_confirmed：命中 伊達紋別 但最高 2.52<9.12
+- st00756 维持现图 below_spec_confirmed：无站名命中且最高 6.80<9.19
+- st01980 维持现图 below_spec_confirmed：无站名命中且最高 4.80<9.19
+- st04278 维持现图 below_spec_confirmed：无站名命中且最高 6.80<9.18
+- st01973 维持现图 below_spec_confirmed：命中 松風町 但最高 5.50<9.18
+- st04324 维持现图 below_spec_confirmed：无站名命中且最高 6.80<9.26
+- st04310 维持现图 below_spec_confirmed：无站名命中且最高 6.80<9.28
+- st04288 维持现图 below_spec_confirmed：命中 幌延 但最高 6.80<9.35（候选1 掲示板特写）
+- st01938 维持现图 below_spec_confirmed：候选长边 1800<现图 2048 缩边拒（且最高 6.80 无分差优势）
+- st01981 维持现图 below_spec_confirmed：命中 湯の川温泉 但最高 3.03<9.64（候选为酒店照）
+- runner 42183176167 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 20。
