@@ -6,17 +6,17 @@
  "skipped": 0,
  "bytes": 0,
  "reject_dist": {
-  "resolution_low_lt_1600": 66,
+  "resolution_low_lt_1600": 60,
+  "resolution_not_upgrade": 22,
   "same_as_current": 25,
-  "mime_unsupported": 102,
-  "hard_excluded": 20,
-  "title_names_other_station": 68,
-  "duplicate_title": 10,
-  "quality_reject_low_color": 13,
-  "no_author_metadata": 8,
-  "resolution_not_upgrade": 12,
-  "license_unclear": 5,
-  "title_non_station_scene": 1
+  "mime_unsupported": 118,
+  "title_names_other_station": 120,
+  "title_non_station_scene": 2,
+  "duplicate_title": 6,
+  "hard_excluded": 13,
+  "quality_reject_low_color": 15,
+  "license_forbidden": 2,
+  "license_unclear": 3
  },
- "generated_at": "2026-11-06T15:55:51Z"
+ "generated_at": "2026-11-06T16:36:06Z"
 }
