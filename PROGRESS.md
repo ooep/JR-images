@@ -1023,3 +1023,9 @@
 - st06329 维持现图 below_spec_confirmed：无站名命中且最高 6.52<8.73
 - st01557 维持现图 below_spec_confirmed：候选福岛常磐线草野同名异线拒；最高 4.59<8.38
 - runner 42191034501 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 24。
+
+
+## ws17 below-spec replace WS17-B19 — 2026-11-06T09:15:01Z
+- queue: 4 站（review/below_spec 高分替换）
+- replaced=0 staged=4 confirmed=0 skipped=0
+- reject_dist={"resolution_low_lt_1600": 21, "resolution_not_upgrade": 23, "hard_excluded": 18, "same_as_current": 4, "title_non_station_scene": 1, "title_names_other_station": 34, "quality_reject_low_color": 7, "mime_unsupported": 4, "quality_reject_blurry": 1}
