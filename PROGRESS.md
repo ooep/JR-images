@@ -468,3 +468,31 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=24 confirmed=1 skipped=0
 - reject_dist={"same_as_current": 24, "resolution_low_lt_1600": 113, "hard_excluded": 64, "resolution_not_upgrade": 43, "title_names_other_station": 99, "quality_reject_low_color": 22, "mime_unsupported": 23, "title_non_station_scene": 11, "no_author_metadata": 17, "duplicate_title": 7, "license_unclear": 2}
+
+
+## ws17 local accept B02 — 2026-11-06T03:50:02Z
+- st05710 東梅田 ← File:Higashi-umeda Platform Track 2.jpg (done, score 6.65→7.18)
+- st01071 维持现图 below_spec_confirmed：唯一超分候选为「お願い」告示牌特写，无站名证据
+- st01126 维持现图 below_spec_confirmed：候选分均低于现图 6.98
+- st01255 维持现图 below_spec_confirmed：候选分均低于现图 6.74（闸机/公寓照）
+- st01289 维持现图 below_spec_confirmed：唯一超分候选为小学照非站景
+- st01999 维持现图 below_spec_confirmed：候选分均低于现图 6.81
+- st02000 维持现图 below_spec_confirmed：超分候选为道口轨道远景，框内无站名牌
+- st02555 维持现图 below_spec_confirmed：候选分均低于现图 7.02（阪堺列车照）
+- st02656 维持现图 below_spec_confirmed：候选分均低于现图 7.02（奶箱/电器广告照）
+- st03239 维持现图 below_spec_confirmed：候选分均低于现图 7.02
+- st03671 维持现图 below_spec_confirmed：候选分均低于现图 7.07（阪急曽根但分不足）
+- st04876 维持现图 below_spec_confirmed：OCR 命中中津为大阪メトロ中津出入口，记录线路为阪急→运营商前缀不符新闸拒；其余分不足
+- st04881 维持现图 below_spec_confirmed：候选分均低于现图 6.94
+- st04969 维持现图 below_spec_confirmed：候选分均低于现图 6.78
+- st04971 维持现图 below_spec_confirmed：OCR 命中矢田为名鉄矢田（名古屋），记录为近鉄→运营商前缀不符新闸拒
+- st04977 维持现图 below_spec_confirmed：候选全为车展汽车照非站景
+- st05716 维持现图 below_spec_confirmed：OCR 全名命中千林大宮但 iscore6.33<现 7.06 分差不足
+- st06573 维持现图 below_spec_confirmed：唯一超分候选为南海 2200 系天空列车照非站景
+- st06574 维持现图 below_spec_confirmed：候选为南海 600 系列车照且分低于现图
+- st06576 维持现图 below_spec_confirmed：候选分均低于现图 6.91；OCR 命中白鷺来自商铺「白鷺駅前店」招牌非站牌
+- st06581 维持现图 below_spec_confirmed：候选为南海列车照/阪堺停留场且分低于现图 6.82
+- st06736 维持现图 below_spec_confirmed：候选分均低于现图 7.03（阪急崇禅寺但分不足）
+- st06969 维持现图 below_spec_confirmed：OCR 全名命中京阪土居且运营商匹配但 iscore6.63<现 6.79 分差不足
+- st08055 维持现图 below_spec_confirmed：OCR 命中高師浜来自诊所地址牌非站牌；其余分不足
+- runner <B02_RUN_ID> 暂存候选全量 OCR(全名匹配)+逐图目检；接受 1 / 标 below_spec_confirmed 23。
