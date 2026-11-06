@@ -1404,3 +1404,28 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=21 confirmed=4 skipped=0
 - reject_dist={"title_non_station_scene": 9, "title_names_other_station": 76, "resolution_low_lt_1600": 74, "duplicate_title": 10, "hard_excluded": 29, "same_as_current": 25, "quality_reject_low_color": 13, "resolution_not_upgrade": 5, "quality_reject_white_screenshot": 1, "mime_unsupported": 99, "no_author_metadata": 3, "license_unclear": 2}
+
+
+## ws17 local accept B30 — 2026-11-06T15:38:59Z
+- st01458 堀川小泉 ← File:Horikawakoizumieki.jpg (done, score 7.24→7.29)
+- st01451 维持现图 below_spec_confirmed：最高 isc 6.23<6.85
+- st01454 维持现图 below_spec_confirmed：isc 6.93>6.51 但候选为大広田站他站照拒
+- st01461 维持现图 below_spec_confirmed：最高 isc 6.45<7.33
+- st01465 维持现图 below_spec_confirmed：isc 6.35>6.13 但候选为高知とさでん交通ごめん・なかまち電停异县照拒
+- st01976 维持现图 below_spec_confirmed：最高 isc 6.01<7.40
+- st02800 维持现图 below_spec_confirmed：最高 isc 7.21<7.26
+- st02804 维持现图 below_spec_confirmed：isc 7.36>6.17 但候选为万叶线 MLRV1006 车照拒
+- st02810 维持现图 below_spec_confirmed：最高 isc 6.95<7.49
+- st02816 维持现图 below_spec_confirmed：isc 7.44>7.03 但候选为旭ヶ丘站他站照拒
+- st02818 维持现图 below_spec_confirmed：isc 7.44>7.30 但候选为旭ヶ丘站他站照拒
+- st02822 维持现图 below_spec_confirmed：最高 isc 4.32<7.26
+- st03290 维持现图 below_spec_confirmed：最高 isc 7.02<7.23
+- st03641 维持现图 below_spec_confirmed：isc 8.19>6.26 但候选为邮便局/车照非站景拒
+- st05120 维持现图 below_spec_confirmed：最高 isc 5.90<6.62
+- st07677 维持现图 below_spec_confirmed：最高 isc 6.85<6.98
+- st07700 维持现图 below_spec_confirmed：最高 isc 6.62<7.26
+- st07701 维持现图 below_spec_confirmed：最高 isc 6.70<7.10
+- st07705 维持现图 below_spec_confirmed：最高 isc 6.16<7.04
+- st08516 维持现图 below_spec_confirmed：最高 isc 6.93<7.10
+- st08521 维持现图 below_spec_confirmed：最高 isc 6.25<7.04
+- runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 1 / 标 below_spec_confirmed 20。
