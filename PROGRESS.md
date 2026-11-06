@@ -1072,3 +1072,8 @@
 - st05729 维持现图 below_spec_confirmed：无站名命中且最高 5.52<6.96
 - st06748 维持现图 below_spec_confirmed：车照/无关图 3.58<7.40
 - runner 42194133501 暂存候选全量 OCR(全名匹配)+逐图目检；接受 1 / 标 below_spec_confirmed 19。
+
+
+## ws17 revert B20 st00973+st04398 — 2026-11-06T09:37:37Z
+- runner ed3d47d0…(B20=commit ed3d47d0 前一次 runner) 自动替换 st00973 根岸（罐车/货车主体）与 st04398 新高島（荒地人行桥航拍、无站体无站名）→ 站证不成立/非站景，撤除；
+- 恢复替换前 photo/license blob 与 state/index 条目（review 态保留）。
