@@ -815,3 +815,32 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=25 confirmed=0 skipped=0
 - reject_dist={"same_as_current": 25, "license_unclear": 16, "quality_reject_low_color": 21, "hard_excluded": 31, "title_names_other_station": 64, "resolution_low_lt_1600": 60, "mime_unsupported": 78, "title_non_station_scene": 8, "resolution_not_upgrade": 4, "duplicate_title": 5, "oversize_gt_25mb": 1}
+
+
+## ws17 local accept B13 — 2026-11-06T07:14:11Z
+- st00743 维持现图 below_spec_confirmed：无站名命中且最高 6.80<7.29
+- st00759 维持现图 below_spec_confirmed：最高 5.09<7.92（候选2 宮城東北本線白石同名异线拒）
+- st00768 维持现图 below_spec_confirmed：无站名命中且最高 6.80<7.80
+- st00770 维持现图 below_spec_confirmed：无站名命中且最高 4.39<7.44
+- st00780 维持现图 below_spec_confirmed：命中 虎杖浜 但最高 5.80<7.13
+- st00792 维持现图 below_spec_confirmed：命中 川端 但最高 4.80<7.26
+- st00806 维持现图 below_spec_confirmed：无站名命中且最高 6.80<7.96
+- st00809 维持现图 below_spec_confirmed：命中 太平 但最高 6.80<7.37
+- st01963 维持现图 below_spec_confirmed：时钟特写 2.41<7.57
+- st01970 维持现图 below_spec_confirmed：候选为名古屋巴士/神户(异县)且最高 2.04<7.57
+- st01984 维持现图 below_spec_confirmed：2.41<7.47
+- st03395 维持现图 below_spec_confirmed：无站名命中且最高 5.80<7.47
+- st03974 维持现图 below_spec_confirmed：命中 札弦 但最高 5.04<7.32
+- st04256 维持现图 below_spec_confirmed：命中 幌向 但最高 5.80<7.59
+- st04265 维持现图 below_spec_confirmed：无站名命中且最高 5.80<7.99
+- st04287 维持现图 below_spec_confirmed：命中 天塩中川 但最高 5.80<7.43
+- st04303 维持现图 below_spec_confirmed：候选2 香川高徳琴平線塩谷同名异线拒；最高 4.80<7.29
+- st04309 维持现图 below_spec_confirmed：命中 渡島沼尻 但最高 7.12<7.30
+- st04800 维持现图 below_spec_confirmed：命中 狸小路 但最高 2.64<7.30
+- st04822 维持现图 below_spec_confirmed：候选标题西4丁目(他站)且 2.52<7.28
+- st04995 维持现图 below_spec_confirmed：命中 北18条 但最高 5.09<7.39
+- st07312 维持现图 below_spec_confirmed：最高 7.12<7.30
+- st07313 维持现图 below_spec_confirmed：命中 北13条東 但最高 5.09<7.52
+- st07314 维持现图 below_spec_confirmed：最高 7.09<7.46
+- st08653 维持现图 below_spec_confirmed：命中 北永山 但最高 5.80<7.36
+- runner 42178076053 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 25。
