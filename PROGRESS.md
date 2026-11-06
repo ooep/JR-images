@@ -1146,3 +1146,9 @@
 - st04533 维持现图 below_spec_confirmed：无站名命中且最高 6.50<6.58
 - st04837 维持现图 below_spec_confirmed：无站名命中且最高 6.13<6.43
 - runner 42203866174 暂存候选全量 OCR(全名匹配)+逐图目检；接受 1 / 标 below_spec_confirmed 13。
+
+
+## ws17 P1 revert gate-misuse 8 站 — 2026-11-06T10:58:07Z
+- 本地裁决误用 relevance score 作分数闸（workflow 闸为 image_score）；审计 15 个历史 PICK，8 站接受后分低于接受前，违反高分替换口径，撤除：
+- st01324, st02672, st05624, st05704, st06640, st06769, st06967, st08365
+- 恢复各站替换前 photo/license blob 与 state/index 条目（回 review 池）；st05624 标 below_spec_confirmed(B22)；其余 7 站回池待正确闸重试。
