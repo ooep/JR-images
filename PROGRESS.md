@@ -1342,3 +1342,31 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=1 staged=24 confirmed=0 skipped=0
 - reject_dist={"title_names_other_station": 44, "hard_excluded": 26, "resolution_low_lt_1600": 99, "same_as_current": 25, "resolution_not_upgrade": 21, "license_unclear": 8, "mime_unsupported": 52, "quality_reject_low_color": 16, "no_author_metadata": 8, "title_non_station_scene": 25, "duplicate_title": 1}
+
+
+## ws17 local accept B28 — 2026-11-06T14:23:04Z
+- st01066 维持现图 below_spec_confirmed：最高 isc 7.09<7.26
+- st01203 维持现图 below_spec_confirmed：最高 isc 7.48<7.64
+- st01239 维持现图 below_spec_confirmed：最高 isc 5.32<6.75
+- st01245 维持现图 below_spec_confirmed：最高 isc 5.48<6.55
+- st03376 维持现图 below_spec_confirmed：最高 isc 6.74<7.25
+- st04008 维持现图 below_spec_confirmed：最高 isc 6.89<7.65
+- st04009 维持现图 below_spec_confirmed：isc 6.59>6.54 但候选为香川富野荘同名异县照拒
+- st04010 维持现图 below_spec_confirmed：最高 isc 6.63<7.02
+- st04547 维持现图 below_spec_confirmed：isc 7.64>7.21 但候选为人名照（Hiroshi H. Miyamura）非站景拒
+- st04548 维持现图 below_spec_confirmed：最高 isc 6.30<7.14
+- st05912 维持现图 below_spec_confirmed：isc 8.39>6.63 但候选为車折神社芸能人奉纳栅栏/神社境内非站景拒
+- st05930 维持现图 below_spec_confirmed：最高 isc 6.72<7.16
+- st06078 维持现图 below_spec_confirmed：最高 isc 6.40<6.47
+- st06726 维持现图 below_spec_confirmed：最高 isc 6.80<7.42
+- st06727 维持现图 below_spec_confirmed：最高 isc 6.57<7.52
+- st06730 维持现图 below_spec_confirmed：最高 isc 6.63<7.33
+- st06731 维持现图 below_spec_confirmed：最高 isc 6.59<7.63
+- st06844 维持现图 below_spec_confirmed：最高 isc 5.93<7.29
+- st06845 维持现图 below_spec_confirmed：最高 isc 6.27<7.33
+- st06846 维持现图 below_spec_confirmed：最高 isc 6.01<7.07
+- st06854 维持现图 below_spec_confirmed：最高 isc 6.47<6.87
+- st07667 维持现图 below_spec_confirmed：最高 isc 6.64<6.70
+- st08261 维持现图 below_spec_confirmed：最高 isc 6.47<7.21
+- st08293 维持现图 below_spec_confirmed：最高 isc 6.49<6.75
+- runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 24。
