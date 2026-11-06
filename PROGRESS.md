@@ -772,3 +772,13 @@
 - queue: 7 站（review/below_spec 高分替换）
 - replaced=1 staged=6 confirmed=0 skipped=0
 - reject_dist={"resolution_low_lt_1600": 17, "mime_unsupported": 8, "same_as_current": 7, "quality_reject_low_color": 9, "title_names_other_station": 23, "duplicate_title": 2, "license_unclear": 2, "hard_excluded": 12, "resolution_not_upgrade": 7, "title_non_station_scene": 3}
+
+
+## ws17 local accept B11 — 2026-11-06T06:40:22Z
+- st06233 维持现图 below_spec_confirmed：命中 荏原町 但最高 6.50<8.87
+- st01492 维持现图 below_spec_confirmed：候选为 JR 西日暮里站台 vs 记录日暮里・舎人ライナー，运营商不符拒；且 5.50<8.88
+- st04503 维持现图 below_spec_confirmed：无站名命中且最高 6.60<8.88
+- st00592 维持现图 below_spec_confirmed：命中 江北 但最高 4.52<9.04
+- st04230 维持现图 below_spec_confirmed：命中 有明 但最高 4.03<9.08
+- st03153 维持现图 below_spec_confirmed：命中 西小山 但最高 4.50<9.36
+- runner 42174930519 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 6。
