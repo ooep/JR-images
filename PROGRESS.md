@@ -926,3 +926,8 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=2 staged=19 confirmed=4 skipped=0
 - reject_dist={"same_as_current": 25, "resolution_low_lt_1600": 100, "title_names_other_station": 61, "quality_reject_low_color": 23, "duplicate_title": 6, "resolution_not_upgrade": 19, "license_unclear": 2, "hard_excluded": 28, "mime_unsupported": 75, "title_non_station_scene": 4, "no_author_metadata": 3}
+
+
+## ws17 revert B16 st02689+st01299 — 2026-11-06T08:27:11Z
+- runner 7d701c8b 自动替换 st02689 魚崎（高架通道+「阪神電車のりば 出口」吊牌，无站名）与 st01299 西宮（出口案内牌+巴士案内板主体，无站名牌）→ 站证不成立，撤除；
+- 恢复替换前 photo/license blob 与 state/index 条目（review 态保留）。
