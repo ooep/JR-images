@@ -1094,3 +1094,31 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=24 confirmed=1 skipped=0
 - reject_dist={"resolution_low_lt_1600": 132, "hard_excluded": 43, "same_as_current": 25, "resolution_not_upgrade": 23, "title_names_other_station": 30, "no_author_metadata": 12, "mime_unsupported": 48, "title_non_station_scene": 13, "quality_reject_low_color": 8, "duplicate_title": 4, "license_unclear": 6}
+
+
+## ws17 local accept B21 — 2026-11-06T10:14:12Z
+- st00853 维持现图 below_spec_confirmed：无站名命中且最高 4.52<7.56
+- st00855 维持现图 below_spec_confirmed：无站名命中且最高 6.52<7.80
+- st00857 维持现图 below_spec_confirmed：命中 京急新子安 但最高 5.50<7.42
+- st01616 维持现图 below_spec_confirmed：命中 座間 但最高 4.65<7.81
+- st01617 维持现图 below_spec_confirmed：无站名命中且最高 4.50<7.45
+- st01624 维持现图 below_spec_confirmed：无站名命中且最高 4.52<7.60
+- st01625 维持现图 below_spec_confirmed：无站名命中且最高 4.52<7.97（dist 987m）
+- st02098 维持现图 below_spec_confirmed：无站名命中且最高 6.05<7.64
+- st02163 维持现图 below_spec_confirmed：命中 田奈 但最高 5.24<7.45
+- st03088 维持现图 below_spec_confirmed：无站名命中且最高 5.50<7.61
+- st03121 维持现图 below_spec_confirmed：无站名命中且最高 5.52<7.60
+- st03717 维持现图 below_spec_confirmed：无站名命中且最高 6.52<7.62
+- st03830 维持现图 below_spec_confirmed：无站名命中且最高 3.91<7.53
+- st03861 维持现图 below_spec_confirmed：无站名命中且最高 4.13<7.72
+- st04391 维持现图 below_spec_confirmed：命中 綱島 但最高 6.09<7.82
+- st04986 维持现图 below_spec_confirmed：无站名命中且最高 6.52<8.02
+- st05058 维持现图 below_spec_confirmed：最高 3.91<7.67（小学/路边非站景拒）
+- st05061 维持现图 below_spec_confirmed：最高 3.50<7.81（高楼/防波堤非站景、dist~700-850m）
+- st05065 维持现图 below_spec_confirmed：命中 海の公園南口 但最高 2.52<7.44
+- st05687 维持现图 below_spec_confirmed：商业设施/通风塔非站景 2.66<7.74
+- st05692 维持现图 below_spec_confirmed：最高 4.32<7.55（候选2 长野上田电铁蒔田同名异线拒）
+- st05702 维持现图 below_spec_confirmed：无站名命中且最高 5.24<7.70
+- st05741 维持现图 below_spec_confirmed：无站名命中且最高 5.24<8.01
+- st08866 维持现图 below_spec_confirmed：无站名命中且最高 5.52<7.63
+- runner 42196827100 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 24。
