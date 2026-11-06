@@ -1527,3 +1527,9 @@
 - st07970 维持现图 below_spec_confirmed：dup_image 隔离（图=小海線高岩 正确，配对站 st07969 長崎西九州線 错挂待审计）；本批不改状态
 - runner 42256039521 SUMMARY replaced=3/staged=22；因 dup_image 闸整批未提交，自动替换 3 站（st00255/st01222/st00447）留 B33b 重派；
 - 本批 25 站剔除 dup 命中 6 站（st02802/st03037/st03126/st03294/st03318/st03649）与 st07970（复算 dup）→ 16 站进本地裁决；接受 2 / below_spec_confirmed 13 / 不入提交 1(st07970)。
+
+
+## ws17 below-spec replace WS17-B33b — 2026-11-06T23:56:34Z
+- queue: 3 站（review/below_spec 高分替换）
+- replaced=3 staged=0 confirmed=0 skipped=0
+- reject_dist={"resolution_low_lt_1600": 15, "duplicate_title": 2, "resolution_not_upgrade": 10, "same_as_current": 3, "title_names_other_station": 28, "hard_excluded": 2, "title_non_station_scene": 2}
