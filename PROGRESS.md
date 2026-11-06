@@ -697,3 +697,32 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=25 confirmed=0 skipped=0
 - reject_dist={"same_as_current": 25, "hard_excluded": 44, "resolution_low_lt_1600": 151, "title_non_station_scene": 11, "resolution_not_upgrade": 14, "mime_unsupported": 46, "title_names_other_station": 110, "quality_reject_low_color": 17, "no_author_metadata": 9, "duplicate_title": 5, "license_unclear": 4}
+
+
+## ws17 local accept B09 — 2026-11-06T05:54:33Z
+- st00468 维持现图 below_spec_confirmed：命中 住吉 但最高 5.24<7.78
+- st01521 维持现图 below_spec_confirmed：命中 日比谷 但最高 4.10<7.42
+- st01534 维持现图 below_spec_confirmed：命中 豪徳寺 但最高 5.81<7.46
+- st01537 维持现图 below_spec_confirmed：无站名命中且最高 3.15<7.62
+- st01622 维持现图 below_spec_confirmed：命中 鶴川 但 3.46<7.62
+- st01636 维持现图 below_spec_confirmed：命中 和泉多摩川 但最高 7.50<7.63
+- st01729 维持现图 below_spec_confirmed：无站名命中且最高 4.13<7.51
+- st01748 维持现图 below_spec_confirmed：命中 野方 但最高 6.52<7.50
+- st01864 维持现图 below_spec_confirmed：无站名命中且最高 7.18<7.68
+- st02167 维持现图 below_spec_confirmed：命中 つくし野 但最高 4.44<7.62（候选为车照）
+- st02398 维持现图 below_spec_confirmed：命中 箱根ケ崎 但最高 4.32<7.43
+- st03134 维持现图 below_spec_confirmed：无站名命中且最高 3.54<7.76
+- st03167 维持现图 below_spec_confirmed：无站名命中且最高 5.91<7.55
+- st03178 维持现图 below_spec_confirmed：命中 六本木一丁目 但最高 3.95<7.41
+- st03425 维持现图 below_spec_confirmed：无站名命中且最高 7.50<7.77
+- st04223 维持现图 below_spec_confirmed：无站名命中且最高 5.91<7.47
+- st04495 维持现图 below_spec_confirmed：无站名命中且最高 6.81<7.64
+- st04502 维持现图 below_spec_confirmed：命中 中神 但最高 5.81<7.53
+- st05467 维持现图 below_spec_confirmed：无站名命中且最高 4.52<7.69
+- st06234 维持现图 below_spec_confirmed：无站名命中且 4.95<7.76
+- st06235 维持现图 below_spec_confirmed：无站名命中且最高 7.37<7.77
+- st07864 维持现图 below_spec_confirmed：命中 梶原 但最高 6.64<7.63
+- st07887 维持现图 below_spec_confirmed：无站名命中且 2.28<7.64（候选为车照）
+- st08305 维持现图 below_spec_confirmed：命中 上板橋 但最高 5.52<7.66
+- st08555 维持现图 below_spec_confirmed：命中 洗足池 但最高 1.94<7.57
+- runner 42169828734 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 25。
