@@ -631,3 +631,28 @@
 
 ## ws17 B07 revert（P0，本地 API 零分钟） — 2026-11-06T05:17:42Z
 - 撤 st02165 新宿：runner 自动替换图目检为 JR 新宿站全景招牌（Shinjuku Station 新宿駅），记录线路仅丸ノ内線→运营商不符=P0；恢复替换前 review 态旧图旧元数据（photo/license blob 复用旧 sha）
+
+
+## ws17 local accept B07 — 2026-11-06T05:23:05Z
+- st00897 四ツ木 ← File:Yotsugi-STA Entrance.jpg (done, score 5.61→7.07)
+- st03937 武蔵砂川 ← File:Musashi-Sunagawa sta2020-2.jpg (done, score 6.59→7.50)
+- st05520 京王多摩センター ← File:Keio-Tama-Center-Sta-Gate.JPG (done, score 6.93→6.95)
+- st05569 京王堀之内 ← File:Keio-Horinouchi-Sta-S.JPG (done, score 5.14→6.90)
+- st08377 沼部 ← File:Numabe Station 2024 May 30 various 16 15 53 422000.jpeg (done, score 6.44→6.75)
+- st00493 维持现图 below_spec_confirmed：OCR 命中高野为 JR 西日本姫新線高野（JR 标识），记录日暮里・舎人ライナー→运营商不符拒
+- st00930 维持现图 below_spec_confirmed：候选最高 6.52 vs 现 6.63 分差不足或无站名命中
+- st00931 维持现图 below_spec_confirmed：候选最高 6.76 vs 现 6.55 分差不足或无站名命中
+- st01526 维持现图 below_spec_confirmed：候选最高 6.49 vs 现 6.84 分差不足或无站名命中
+- st01529 维持现图 below_spec_confirmed：候选最高 7.16 vs 现 6.41 分差不足或无站名命中
+- st01863 维持现图 below_spec_confirmed：候选最高 7.14 vs 现 6.55 分差不足或无站名命中
+- st01867 维持现图 below_spec_confirmed：候选最高 5.25 vs 现 6.57 分差不足或无站名命中
+- st02135 维持现图 below_spec_confirmed：候选最高 5.34 vs 现 6.52 分差不足或无站名命中
+- st03700 维持现图 below_spec_confirmed：候选最高 5.71 vs 现 6.66 分差不足或无站名命中
+- st03896 维持现图 below_spec_confirmed：候选最高 7.10 vs 现 6.75 分差不足或无站名命中
+- st03935 维持现图 below_spec_confirmed：候选最高 6.68 vs 现 6.84 分差不足或无站名命中
+- st05563 维持现图 below_spec_confirmed：候选最高 6.18 vs 现 6.77 分差不足或无站名命中
+- st06227 维持现图 below_spec_confirmed：候选最高 6.56 vs 现 6.70 分差不足或无站名命中
+- st06236 维持现图 below_spec_confirmed：候选最高 5.95 vs 现 6.72 分差不足或无站名命中
+- st07871 维持现图 below_spec_confirmed：候选最高 6.32 vs 现 6.70 分差不足或无站名命中
+- st07884 维持现图 below_spec_confirmed：候选最高 5.88 vs 现 6.89 分差不足或无站名命中
+- runner 42165678188 暂存候选全量 OCR(全名匹配)+逐图目检；接受 5 / 标 below_spec_confirmed 16。
