@@ -540,3 +540,31 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=1 staged=24 confirmed=0 skipped=0
 - reject_dist={"title_names_other_station": 128, "resolution_low_lt_1600": 84, "same_as_current": 25, "hard_excluded": 57, "title_non_station_scene": 22, "quality_reject_low_color": 16, "resolution_not_upgrade": 57, "duplicate_title": 9, "no_author_metadata": 5, "mime_unsupported": 10, "near_duplicate": 1, "oversize_gt_25mb": 7}
+
+
+## ws17 local accept B04 — 2026-11-06T04:33:07Z
+- st01260 维持现图 below_spec_confirmed：无站名命中且候选分不足
+- st02547 维持现图 below_spec_confirmed：无站名命中且候选分不足
+- st02556 维持现图 below_spec_confirmed：无站名命中且候选分不足
+- st02558 维持现图 below_spec_confirmed：无站名命中且候选分不足
+- st02567 维持现图 below_spec_confirmed：无站名命中且候选分不足
+- st02679 维持现图 below_spec_confirmed：候选 6.84<现 7.41 分差不足
+- st02684 维持现图 below_spec_confirmed：候选 6.73<现 7.49 分差不足
+- st03447 维持现图 below_spec_confirmed：候选 6.41<现 7.53 分差不足
+- st03850 维持现图 below_spec_confirmed：OCR 命中 Onji 为观音寺（香川）语境且 6.78<7.53
+- st04787 维持现图 below_spec_confirmed：候选 5.55<现 7.58 分差不足
+- st04937 维持现图 below_spec_confirmed：候选 6.01<现 7.53 分差不足
+- st05714 维持现图 below_spec_confirmed：无站名命中且候选分不足
+- st05717 维持现图 below_spec_confirmed：候选 7.07<现 7.59 分差不足
+- st05718 维持现图 below_spec_confirmed：候选 6.57<现 7.51 分差不足
+- st05952 维持现图 below_spec_confirmed：候选 6.99<现 7.51 分差不足
+- st06639 维持现图 below_spec_confirmed：候选 6.77<现 7.35 分差不足
+- st06707 维持现图 below_spec_confirmed：候选 6.38<现 7.35 分差不足
+- st06962 维持现图 below_spec_confirmed：无站名命中且候选分不足
+- st06964 维持现图 below_spec_confirmed：候选 6.74<现 7.64 分差不足
+- st06966 维持现图 below_spec_confirmed：无站名命中且候选分不足
+- st07374 维持现图 below_spec_confirmed：候选 6.58<现 7.61 分差不足
+- st07376 维持现图 below_spec_confirmed：候选 7.07<现 7.54 分差不足
+- st08369 维持现图 below_spec_confirmed：候选 6.48<现 7.54 分差不足
+- st08408 维持现图 below_spec_confirmed：候选 6.17<现 7.45 分差不足
+- runner 42161614385 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 24。
