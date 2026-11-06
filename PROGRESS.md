@@ -788,3 +788,24 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=2 staged=17 confirmed=6 skipped=0
 - reject_dist={"same_as_current": 25, "resolution_low_lt_1600": 92, "license_unclear": 16, "hard_excluded": 10, "mime_unsupported": 38, "title_names_other_station": 76, "quality_reject_low_color": 18, "title_non_station_scene": 12, "resolution_not_upgrade": 6, "no_author_metadata": 3, "duplicate_title": 2, "oversize_gt_25mb": 7}
+
+
+## ws17 local accept B12 — 2026-11-06T06:58:02Z
+- st03398 维持现图 below_spec_confirmed：无站名命中且最高 4.80<5.40
+- st04820 维持现图 below_spec_confirmed：候选为东京渋谷/新桥(异县)且 2.55<5.88
+- st04276 维持现图 below_spec_confirmed：命中 蘭越 但最高 5.04<6.60
+- st08644 维持现图 below_spec_confirmed：最高 4.80<6.91（候选3 站牌命中但 2.82）
+- st01969 维持现图 below_spec_confirmed：候选为神奈川川崎(异县)且 2.32<6.48
+- st04802 维持现图 below_spec_confirmed：雪ミク车照 2.15<6.57
+- st04812 维持现图 below_spec_confirmed：无站名命中且最高 2.80<7.07
+- st04813 维持现图 below_spec_confirmed：车照 1.76<7.07
+- st04307 维持现图 below_spec_confirmed：最高 5.80<6.98（候选2 为 C11 机车照）
+- st03943 维持现图 below_spec_confirmed：命中 西帯広 但最高 5.80<6.99
+- st03946 维持现图 below_spec_confirmed：命中 幕別 但最高 5.80<7.10
+- st01965 维持现图 below_spec_confirmed：命中 杉並町 但最高 2.80<7.05（候选为时钟 plaque/上屋特写）
+- st00752 维持现图 below_spec_confirmed：无站名命中且最高 6.08<6.81
+- st04799 维持现图 below_spec_confirmed：雪ミク车照最高 3.09<6.29
+- st04821 维持现图 below_spec_confirmed：命中 中央区役所前 但最高 3.25<6.74
+- st08648 维持现图 below_spec_confirmed：命中系北剣淵子串误命中且最高 5.80<6.97
+- st02020 维持现图 below_spec_confirmed：命中 武佐 但最高 4.80<6.95
+- runner 42176125711 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 17。
