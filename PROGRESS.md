@@ -738,3 +738,31 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=24 confirmed=1 skipped=0
 - reject_dist={"same_as_current": 25, "mime_unsupported": 30, "resolution_low_lt_1600": 180, "title_names_other_station": 118, "hard_excluded": 47, "resolution_not_upgrade": 30, "quality_reject_low_color": 9, "title_non_station_scene": 7, "duplicate_title": 5, "no_author_metadata": 10, "license_unclear": 3, "oversize_gt_25mb": 1}
+
+
+## ws17 local accept B10 — 2026-11-06T06:29:27Z
+- st08053 维持现图 below_spec_confirmed：无站名命中且最高 7.19<7.79
+- st01860 维持现图 below_spec_confirmed：无站名命中且最高 5.24<7.83
+- st04225 维持现图 below_spec_confirmed：无站名命中且最高 6.52<7.88
+- st05453 维持现图 below_spec_confirmed：命中 柴崎体育館 但最高 6.52<7.90
+- st05560 维持现图 below_spec_confirmed：无站名命中且最高 6.32<7.90
+- st00260 维持现图 below_spec_confirmed：候选为秋田大久保(异县)且 6.50<7.94，拒
+- st07224 维持现图 below_spec_confirmed：命中 見沼代親水公園 但最高 7.32<7.95
+- st04226 维持现图 below_spec_confirmed：命中 豊洲 但最高 5.52<7.98
+- st07225 维持现图 below_spec_confirmed：命中 舎人 但最高 6.52<8.00
+- st04234 维持现图 below_spec_confirmed：无站名命中且最高 6.80<8.01
+- st04224 维持现图 below_spec_confirmed：无站名命中且最高 6.68<8.03
+- st05535 维持现图 below_spec_confirmed：命中 大島 但最高 5.15<8.03
+- st01532 维持现图 below_spec_confirmed：命中 世田谷代田 但最高 6.80<8.04
+- st08308 维持现图 below_spec_confirmed：命中 北池袋 但最高 6.32<8.11
+- st00916 维持现图 below_spec_confirmed：命中 天空橋 但最高 3.52<8.15（夜景）
+- st01488 维持现图 below_spec_confirmed：命中 湯島 但最高 5.50<8.16（候选3 岩手湯島异县拒）
+- st01050 维持现图 below_spec_confirmed：无站名命中且最高 5.24<8.18
+- st01854 维持现图 below_spec_confirmed：无站名命中且最高 6.52<8.21
+- st04240 维持现图 below_spec_confirmed：无站名命中且最高 3.54<8.22
+- st01520 维持现图 below_spec_confirmed：无站名命中且最高 4.50<8.37
+- st02090 维持现图 below_spec_confirmed：命中 永田町 但最高 5.13<8.44
+- st07228 维持现图 below_spec_confirmed：命中 西新井大師西 但最高 6.52<8.44
+- st01926 维持现图 below_spec_confirmed：命中 上中里 但最高 6.50<8.76
+- st06338 维持现图 below_spec_confirmed：无站名命中且最高 4.52<8.82
+- runner 42173343422 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 24。
