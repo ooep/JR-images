@@ -656,3 +656,9 @@
 - st07871 维持现图 below_spec_confirmed：候选最高 6.32 vs 现 6.70 分差不足或无站名命中
 - st07884 维持现图 below_spec_confirmed：候选最高 5.88 vs 现 6.89 分差不足或无站名命中
 - runner 42165678188 暂存候选全量 OCR(全名匹配)+逐图目检；接受 5 / 标 below_spec_confirmed 16。
+
+
+## ws17 below-spec replace WS17-B08 — 2026-11-06T05:34:16Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=25 confirmed=0 skipped=0
+- reject_dist={"resolution_low_lt_1600": 253, "same_as_current": 25, "mime_unsupported": 38, "hard_excluded": 32, "quality_reject_low_color": 17, "title_names_other_station": 65, "title_non_station_scene": 2, "duplicate_title": 3, "resolution_not_upgrade": 24, "quality_reject_blurry": 1, "no_author_metadata": 11, "oversize_gt_25mb": 1, "license_unclear": 1}
