@@ -1,0 +1,18 @@
+{
+ "unit": "DRAW-LINE",
+ "kind": "suspect_source",
+ "station_id": "st03948",
+ "path": "stations/st03948/photo.jpg",
+ "type": "operator_mismatch",
+ "recorded": {
+  "pref": "北海道",
+  "name": "新富士",
+  "lines": [
+   "根室本線"
+  ]
+ },
+ "evidence": "源图=九州新幹線風大規模電化駅（LED 博多/新八代、多軌道大キャノピー）；与记录根室本線新富士不符",
+ "action": "重绘线 skip 不画，提请审计线核源归属",
+ "date": "2026-11-06",
+ "head": "287af03c"
+}
