@@ -1267,3 +1267,9 @@
 - st07847 维持现图 below_spec_confirmed：最高 isc 6.55<6.83
 - st08857 维持现图 below_spec_confirmed：最高 isc 6.89<6.98
 - runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 2 / 标 below_spec_confirmed 21。
+
+
+## ws17 P0 revert 戸田簇双站 — 2026-11-06T13:08:07Z
+- st03421 戸田(山口・山陽本線)/st03422 戸田(愛知・近鉄名古屋線) 同挂 sha 4a5b274b File:JR Toda Station Platform.jpg；目检吊牌「埼京線/Saikyō Line」+方向幕 武蔵浦和・大宮・川越/池袋・新宿・大崎 = JR 東日本埼京線埼玉戸田（高架+团地背景互证）；
+- legacy 同名错挂（157 基线 dup 之一），B26 verify 批内 dup 闸暴露（st03422 在批）；
+- st03420(埼玉) 自有照 6722457f 不受影响；双站置 missing 回重抓队列（dead stage=mismatch_removal）。
