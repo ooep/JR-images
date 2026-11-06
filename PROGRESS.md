@@ -1192,3 +1192,9 @@
 - st02190 维持现图 below_spec_confirmed：isc 7.53<7.56（神社/会馆非站景）
 - st08418 维持现图 below_spec_confirmed：isc 6.52<7.16
 - runner 42209382012 暂存候选全量 OCR(全名匹配)+逐图目检；接受 1 / 标 below_spec_confirmed 18。
+
+
+## ws17 below-spec replace WS17-B24 — 2026-11-06T11:59:21Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=4 staged=21 confirmed=0 skipped=0
+- reject_dist={"title_names_other_station": 72, "hard_excluded": 61, "resolution_low_lt_1600": 69, "title_non_station_scene": 29, "same_as_current": 25, "mime_unsupported": 43, "no_author_metadata": 3, "quality_reject_low_color": 25, "license_unclear": 1, "duplicate_title": 12, "resolution_not_upgrade": 10}
