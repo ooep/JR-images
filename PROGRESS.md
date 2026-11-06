@@ -1203,3 +1203,28 @@
 ## ws17 revert B24 st04194+st06168 — 2026-11-06T12:04:47Z
 - runner 50074cec 自动替换 st04194 原（马赛克壁画+站长室吊牌、无站名）与 st06168 浄心（闸口+方向案内、案内站名为他站、无「浄心」站名）→ 站证不成立，撤除；
 - 恢复替换前 photo/license blob 与 state/index 条目（review 态保留）。
+
+
+## ws17 local accept B24 — 2026-11-06T12:06:17Z
+- st00006 维持现图 below_spec_confirmed：isc 6.85<7.93
+- st00399 维持现图 below_spec_confirmed：/3 站证清晰但 isc 3.53<5.0 质量下限拒；/1 isc 5.83 无站名；/2 案内板 2.58
+- st00682 维持现图 below_spec_confirmed：isc 6.88<7.65（路口/车照）
+- st00690 维持现图 below_spec_confirmed：isc 7.09<7.60
+- st01092 维持现图 below_spec_confirmed：isc 5.93<6.19
+- st01171 维持现图 below_spec_confirmed：isc 6.41<7.71
+- st02209 维持现图 below_spec_confirmed：/2 巴士站时刻表牌非地铁站拒；/3 福岛会津本郷同名异线拒；isc 6.20 仅微超
+- st02244 维持现图 below_spec_confirmed：isc 6.48<7.71
+- st02246 维持现图 below_spec_confirmed：isc 7.02<7.60
+- st03023 维持现图 below_spec_confirmed：isc 6.74<7.65
+- st03246 维持现图 below_spec_confirmed：isc 5.11<8.79
+- st03372 维持现图 below_spec_confirmed：isc 6.13<8.58（候选为 SL 广场人像）
+- st03384 维持现图 below_spec_confirmed：isc 7.38<8.24
+- st03484 维持现图 below_spec_confirmed：isc 6.69<8.30
+- st04457 维持现图 below_spec_confirmed：isc 5.85<6.57（车照）
+- st04830 维持现图 below_spec_confirmed：isc 7.58<7.91（矿渣山眺望）
+- st06521 维持现图 below_spec_confirmed：isc 5.79<8.23
+- st06528 维持现图 below_spec_confirmed：isc 6.84<7.93
+- st07753 维持现图 below_spec_confirmed：isc 3.08<4.50
+- st07831 维持现图 below_spec_confirmed：isc 6.91<7.98（巴士站牌）
+- st08851 维持现图 below_spec_confirmed：isc 6.02<6.24
+- runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 0 / 标 below_spec_confirmed 21。
