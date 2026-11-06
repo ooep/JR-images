@@ -462,3 +462,9 @@
 - 撤站 st01215 st01213；原因：st01215 错挂 JR 木幡（唯一站证「JR 木幡」牌=st01213 之站，站证反向，审计 P1）；st01213 现图标题 Shintetsu Kobata（神铁同名异线）且框内无可读站牌，身份未证
 - 两站回重抓队列（stage=mismatch_removal）；st01215 撤下图经目检为 JR 木幡站证清晰图，重抓 st01213 时可作候选
 - 零分钟通道：GitHub git-data API 单提交（base_tree + sha:null 删除），force=false，推后回读
+
+
+## ws17 below-spec replace WS17-B02 — 2026-11-06T03:25:46Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=24 confirmed=1 skipped=0
+- reject_dist={"same_as_current": 24, "resolution_low_lt_1600": 113, "hard_excluded": 64, "resolution_not_upgrade": 43, "title_names_other_station": 99, "quality_reject_low_color": 22, "mime_unsupported": 23, "title_non_station_scene": 11, "no_author_metadata": 17, "duplicate_title": 7, "license_unclear": 2}
