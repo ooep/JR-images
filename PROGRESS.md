@@ -1240,3 +1240,30 @@
 - st01288 三郷(愛知・名鉄瀬戸線) 撤除误挂照 File:JR Musashino Line Misato Station Platform 2022-04-06.jpg（站牌 MY13+邻站新三郷/吉川+方向幕新松戸/武蔵浦和/府中本町=JR 東日本武蔵野線埼玉三郷，目检自证）；
 - legacy batch-4 批量导入(104d4083, 2026-11-03)同名错挂，与目标坐标相距 ~350km；st01287(埼玉) 自有正确照 c900d358 不受影响；
 - st01288 置 missing 回重抓队列（dead stage=mismatch_removal）。
+
+
+## ws17 local accept B25 — 2026-11-06T12:40:39Z
+- st03083 徳重・名古屋芸大 ← File:Tokushige Nagoya Geidai sta.jpg (done, score 7.00→7.18)
+- st04454 豊橋公園前 ← File:愛知県豊橋市 豊橋鉄道東田本線 豊橋公園前電停 20240812 1408 (2).jpg (done, score 7.01→7.31)
+- st01096 维持现图 below_spec_confirmed：最高 isc 6.43<6.76
+- st01112 维持现图 below_spec_confirmed：最高 isc 6.41<7.50
+- st01803 维持现图 below_spec_confirmed：最高 isc 6.17<7.11（改札 QR 告示/无站名）
+- st02213 维持现图 below_spec_confirmed：最高 isc 7.09<7.39
+- st02279 维持现图 below_spec_confirmed：最高 isc 7.34<7.37
+- st02357 维持现图 below_spec_confirmed：最高 isc 7.12<7.41（/3 路口街景无站名）
+- st02482 维持现图 below_spec_confirmed：仅候选 isc 2.39<7.21（车照）
+- st03463 维持现图 below_spec_confirmed：最高 isc 7.23<7.49（/3 巴士站牌拒）
+- st03464 维持现图 below_spec_confirmed：最高 isc 6.72<7.49
+- st03465 维持现图 below_spec_confirmed：最高 isc 6.20<7.35
+- st03468 维持现图 below_spec_confirmed：isc 6.93<6.94（差 0.01 不过闸）
+- st03774 维持现图 below_spec_confirmed：最高 isc 6.52<6.82
+- st04453 维持现图 below_spec_confirmed：最高 isc 7.27<7.45
+- st04759 维持现图 below_spec_confirmed：最高 isc 7.06<7.37
+- st04761 维持现图 below_spec_confirmed：最高 isc 5.99<7.43
+- st04775 维持现图 below_spec_confirmed：最高 isc 5.41<7.21
+- st06183 维持现图 below_spec_confirmed：最高 isc 6.48<7.41
+- st07759 维持现图 below_spec_confirmed：最高 isc 6.73<7.37
+- st07838 维持现图 below_spec_confirmed：最高 isc 6.35<7.27（/2 车照拒）
+- st07847 维持现图 below_spec_confirmed：最高 isc 6.55<6.83
+- st08857 维持现图 below_spec_confirmed：最高 isc 6.89<6.98
+- runner 42212140449 暂存候选全量 OCR(全名匹配)+逐图目检；接受 2 / 标 below_spec_confirmed 21。
