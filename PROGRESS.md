@@ -1273,3 +1273,9 @@
 - st03421 戸田(山口・山陽本線)/st03422 戸田(愛知・近鉄名古屋線) 同挂 sha 4a5b274b File:JR Toda Station Platform.jpg；目检吊牌「埼京線/Saikyō Line」+方向幕 武蔵浦和・大宮・川越/池袋・新宿・大崎 = JR 東日本埼京線埼玉戸田（高架+团地背景互证）；
 - legacy 同名错挂（157 基线 dup 之一），B26 verify 批内 dup 闸暴露（st03422 在批）；
 - st03420(埼玉) 自有照 6722457f 不受影响；双站置 missing 回重抓队列（dead stage=mismatch_removal）。
+
+
+## ws17 below-spec replace WS17-B26 — 2026-11-06T13:20:45Z
+- queue: 24 站（review/below_spec 高分替换）
+- replaced=1 staged=23 confirmed=0 skipped=0
+- reject_dist={"resolution_not_upgrade": 9, "hard_excluded": 39, "resolution_low_lt_1600": 98, "same_as_current": 24, "title_names_other_station": 94, "mime_unsupported": 38, "quality_reject_low_color": 30, "duplicate_title": 9, "quality_reject_blurry": 1, "title_non_station_scene": 5, "license_unclear": 2, "no_author_metadata": 1}
