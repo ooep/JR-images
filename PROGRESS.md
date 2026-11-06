@@ -1048,3 +1048,27 @@
 ## ws17 revert B20 st00973+st04398 — 2026-11-06T09:34:01Z
 - runner ed3d47d0…(B20=commit ed3d47d0 前一次 runner) 自动替换 st00973 根岸（罐车/货车主体）与 st04398 新高島（荒地人行桥航拍、无站体无站名）→ 站证不成立/非站景，撤除；
 - 恢复替换前 photo/license blob 与 state/index 条目（review 态保留）。
+
+
+## ws17 local accept B20 — 2026-11-06T09:35:54Z
+- st06769 相模湖 ← File:JREast-Chuo-main-line-JC25-Sagamiko-station-platform-20220730-062444.jpg (done, score 7.33→6.21)
+- st00864 维持现图 below_spec_confirmed：京急车照 2.13<6.38
+- st00865 维持现图 below_spec_confirmed：巴士照 3.55<7.31
+- st01380 维持现图 below_spec_confirmed：送电线/寺院非站景 4.78<5.89
+- st01382 维持现图 below_spec_confirmed：最高 5.52<7.24（候选3 邮便局非站景）
+- st01623 维持现图 below_spec_confirmed：最高 4.32<7.07（JA/邮便局非站景）
+- st01626 维持现图 below_spec_confirmed：命中 読売ランド前 但最高 3.80<7.06
+- st01627 维持现图 below_spec_confirmed：命中 生田 但最高 5.52<6.79
+- st01885 维持现图 below_spec_confirmed：候选1 站台照 7.50>6.71 但站名不可见（OCR 仅车号）站证不成立拒
+- st02099 维持现图 below_spec_confirmed：无站名命中且最高 6.59<6.98
+- st02152 维持现图 below_spec_confirmed：最高 6.66<7.03（东武车照非本站运营商）
+- st02153 维持现图 below_spec_confirmed：最高 5.08<7.01（小学/车照非站景）
+- st02158 维持现图 below_spec_confirmed：最高 4.50<7.30（候选3 福岛江田同名异线拒）
+- st02160 维持现图 below_spec_confirmed：无站名命中且最高 5.91<6.68
+- st03091 维持现图 below_spec_confirmed：命中 長後 但最高 6.36<7.20
+- st03097 维持现图 below_spec_confirmed：命中 藤沢本町 但最高 6.26<7.41
+- st04394 维持现图 below_spec_confirmed：命中 妙蓮寺 但最高 3.00<6.90（候选2 寺院非站景）
+- st05060 维持现图 below_spec_confirmed：候选为新潟燕三条路边站同名异线拒；3.52<7.38
+- st05729 维持现图 below_spec_confirmed：无站名命中且最高 5.52<6.96
+- st06748 维持现图 below_spec_confirmed：车照/无关图 3.58<7.40
+- runner 42194133501 暂存候选全量 OCR(全名匹配)+逐图目检；接受 1 / 标 below_spec_confirmed 19。
