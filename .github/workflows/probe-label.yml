@@ -1,0 +1,17 @@
+name: probe-label
+
+# 临时探针：验证 runner 启动失败是否为 ubuntu-latest 镜像/池问题。
+# 只用 ubuntu-22.04 固定标签跑一条 echo，验证后即删。
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 5
+    steps:
+      - run: echo PROBE_OK $(date -u)
