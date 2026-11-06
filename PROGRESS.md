@@ -1198,3 +1198,8 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=4 staged=21 confirmed=0 skipped=0
 - reject_dist={"title_names_other_station": 72, "hard_excluded": 61, "resolution_low_lt_1600": 69, "title_non_station_scene": 29, "same_as_current": 25, "mime_unsupported": 43, "no_author_metadata": 3, "quality_reject_low_color": 25, "license_unclear": 1, "duplicate_title": 12, "resolution_not_upgrade": 10}
+
+
+## ws17 revert B24 st04194+st06168 — 2026-11-06T12:04:47Z
+- runner 50074cec 自动替换 st04194 原（马赛克壁画+站长室吊牌、无站名）与 st06168 浄心（闸口+方向案内、案内站名为他站、无「浄心」站名）→ 站证不成立，撤除；
+- 恢复替换前 photo/license blob 与 state/index 条目（review 态保留）。
