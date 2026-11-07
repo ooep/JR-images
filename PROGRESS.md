@@ -1962,3 +1962,7 @@
 - st06173 维持现图 below_spec_confirmed：若林：站名命中但 8.05<9.10
 - B45 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 cf9589c3）
 - B45 runner replaced=0、confirmed=0；staged=74 条覆盖 25 站；rejected_notable=54；本地接受 1
+
+
+## ws17 P1 swap 山崎 st02312/st02314（同名异运营者，2026-11-07）
+- st02312 山崎（愛知・名鉄尾西線/津島線）原图误为 JR函館本線山崎；st02314 山崎（北海道・JR函館本線）原图误为名鉄山崎。两图对调归位，州 state/index 图片字段互换，license 同步换绑；两站均保持 done，不置 bsc。
