@@ -1932,3 +1932,33 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=25 confirmed=0 skipped=0
 - reject_dist={"duplicate_title": 29, "license_unclear": 6, "resolution_not_upgrade": 12, "same_as_current": 25, "resolution_low_lt_1600": 134, "title_names_other_station": 50, "quality_reject_low_color": 18, "hard_excluded": 36, "no_author_metadata": 5, "title_non_station_scene": 4, "mime_unsupported": 20}
+
+
+## ws17 local accept WS17-B45 — 2026-11-07T10:18:30Z
+- st02314 山崎 ← File:MT-Yamazaki Station-Building 2.jpg (done, score 8.10→8.20)
+- st00056 维持现图 below_spec_confirmed：桜井：最高 7.58<9.18
+- st00150 维持现图 below_spec_confirmed：土橋：站名命中但最高 7.57<8.05
+- st00310 维持现图 below_spec_confirmed：青山：最高 7.00<8.32
+- st00781 维持现图 below_spec_confirmed：富浦：最高 7.35<9.46
+- st00811 维持现图 below_spec_confirmed：新川：站名命中但最高 6.92<8.16
+- st00881 维持现图 below_spec_confirmed：大門：最高 6.63<8.31
+- st01090 维持现图 below_spec_confirmed：国際センター：站名命中但最高 6.22<8.44
+- st01579 维持现图 below_spec_confirmed：植田：最高 7.91<8.51
+- st01941 维持现图 below_spec_confirmed：平岸：最高 6.12<8.35
+- st02267 维持现图 below_spec_confirmed：堀田：站名命中但 6.60<8.66
+- st02268 维持现图 below_spec_confirmed：堀田：站名命中但 6.72<8.50
+- st02284 维持现图 below_spec_confirmed：本宿：站名命中但 7.05<8.47
+- st02320 维持现图 below_spec_confirmed：観音寺：最高 6.83<8.07
+- st02333 维持现图 below_spec_confirmed：名和：最高 8.53<9.15
+- st02340 维持现图 below_spec_confirmed：朝倉：最高 7.95<8.05
+- st02364 维持现图 below_spec_confirmed：内海：站名命中但最高 7.34<8.93
+- st02826 维持现图 below_spec_confirmed：東山公園：最高 6.71<7.80
+- st03049 维持现图 below_spec_confirmed：江南：站名命中但 6.31<8.15
+- st03052 维持现图 below_spec_confirmed：岩倉：站名命中但最高 5.89<8.51
+- st03215 维持现图 below_spec_confirmed：森林公園：最高 7.06<8.68
+- st03440 维持现图 below_spec_confirmed：日進：站名命中但 7.31<8.23
+- st03948 维持现图 below_spec_confirmed：新富士：站名命中但 6.81<8.41
+- st04204 维持现图 below_spec_confirmed：清水：站名命中但最高 6.84<7.85
+- st06173 维持现图 below_spec_confirmed：若林：站名命中但 8.05<9.10
+- B45 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 cf9589c3）
+- B45 runner replaced=0、confirmed=0；staged=74 条覆盖 25 站；rejected_notable=54；本地接受 1
