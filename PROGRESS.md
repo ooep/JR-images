@@ -1779,3 +1779,9 @@
 
 ## ws17 P1 revert st01302 芦屋（2026-11-07）
 - st01302 芦屋（JR・東海道本線）当前图为 阪神芦屋駅2番線ホーム（同名异站，相距约1km）→ 错站，撤图置 missing；index 摘除；photo/license 待删；removed_misattached 留档；待补 JR 芦屋站景（已在 data/low_conf_identity.json）。
+
+
+## ws17 below-spec replace WS17-B41r — 2026-11-07T05:15:08Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=1 staged=23 confirmed=1 skipped=0
+- reject_dist={"hard_excluded": 69, "duplicate_title": 25, "resolution_low_lt_1600": 142, "same_as_current": 25, "quality_reject_low_color": 10, "title_names_other_station": 91, "mime_unsupported": 43, "resolution_not_upgrade": 45, "title_non_station_scene": 10, "no_author_metadata": 24, "license_unclear": 4}
