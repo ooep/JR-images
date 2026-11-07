@@ -1926,3 +1926,9 @@
 
 ## ws17 P1 revert st02492 豊川（条幅，2026-11-07）
 - runner B44 将 st02492 豊川替换为 1800x335 全景条幅（6.04）；条幅按站图展示比例不可读 → 回退原图 2048x1357（丰川駅东西自由通路站房，score 未评）并标 below_spec_confirmed。
+
+
+## ws17 below-spec replace WS17-B45 — 2026-11-07T08:18:19Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=25 confirmed=0 skipped=0
+- reject_dist={"duplicate_title": 29, "license_unclear": 6, "resolution_not_upgrade": 12, "same_as_current": 25, "resolution_low_lt_1600": 134, "title_names_other_station": 50, "quality_reject_low_color": 18, "hard_excluded": 36, "no_author_metadata": 5, "title_non_station_scene": 4, "mime_unsupported": 20}
