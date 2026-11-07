@@ -1686,3 +1686,32 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=1 staged=24 confirmed=0 skipped=0
 - reject_dist={"resolution_low_lt_1600": 86, "title_names_other_station": 26, "same_as_current": 25, "hard_excluded": 40, "resolution_not_upgrade": 43, "quality_reject_low_color": 6, "mime_unsupported": 5, "title_non_station_scene": 5, "duplicate_title": 20, "no_author_metadata": 2}
+
+
+## ws17 local accept WS17-B38 — 2026-11-07T03:42:39Z
+- st00162 维持现图 below_spec_confirmed：市役所前：最高 6.77<8.20
+- st00536 维持现图 below_spec_confirmed：大原：站名命中但最高 7.70<7.97
+- st00718 维持现图 below_spec_confirmed：大町：最高 6.90<7.91
+- st00937 维持现图 below_spec_confirmed：勝田台：最高 6.57<6.58
+- st00938 维持现图 below_spec_confirmed：京成大和田：最高 6.37<7.41
+- st01082 维持现图 below_spec_confirmed：柏たなか：最高 6.32<7.92
+- st01723 维持现图 below_spec_confirmed：井野：最高 6.34<8.11
+- st01831 维持现图 below_spec_confirmed：穴川：站名命中但竖幅 3.63<7.65
+- st02667 维持现图 below_spec_confirmed：学園前：最高 7.18<7.75
+- st03690 维持现图 below_spec_confirmed：京成西船：最高 5.81<8.17
+- st03703 维持现图 below_spec_confirmed：京成酒々井：最高 6.61<8.12
+- st03714 维持现图 below_spec_confirmed：新千葉：站名命中但竖幅 3.58<8.27
+- st03721 维持现图 below_spec_confirmed：大森台：最高 7.53<7.84
+- st05160 维持现图 below_spec_confirmed：鎌取：最高 6.43<7.98
+- st05461 维持现图 below_spec_confirmed：東船橋：最高 7.33<7.64
+- st05482 维持现图 below_spec_confirmed：下総中山：最高 6.42<7.37
+- st07090 维持现图 below_spec_confirmed：鵜原：站名命中但最高 7.65<8.35
+- st07750 维持现图 below_spec_confirmed：東京ディズニーランド・ステーション：7.84 过数值闸，画面为站房但无站名文字，按站名可见闸门拒
+- st07752 维持现图 below_spec_confirmed：東京ディズニーシー・ステーション：最高 6.34<6.96
+- st08560 维持现图 below_spec_confirmed：新柏：站名命中但最高 6.76<7.39
+- st08561 维持现图 below_spec_confirmed：豊四季：最高 6.81<6.86
+- st08568 维持现图 below_spec_confirmed：七光台：最高 6.79<7.82
+- st08579 维持现图 below_spec_confirmed：六実：站名命中但 7.12<7.25
+- st08758 维持现图 below_spec_confirmed：海士有木：站名命中但最高 6.74<8.10
+- B38 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 efc825db）
+- B38 runner replaced=1（st00945 東中山）；staged=72 条覆盖 24 站
