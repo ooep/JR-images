@@ -1999,3 +1999,9 @@
 - B46 首次 run 42363542677 因交换提交撞 head 失败；重派 B46r run 42364612763 success → 提交 e1e7b330
 - B46r 三查：foreign 0 / same_name_other_line 0 / dup_image 0；第四查候选 4 条（磯部 JR东日本异县、ふじみ野 地铁车照）均不接
 - B46r runner replaced=3（st01331 大宮/st01206 新田/st00541 石井，运营者均正确）、confirmed=1；staged=62（21 站）；本地 0 接受
+
+
+## ws17 below-spec replace WS17-C01 — 2026-11-07T11:03:28Z
+- queue: 24 站（review/below_spec 高分替换）
+- replaced=2 staged=22 confirmed=0 skipped=0
+- reject_dist={"title_non_station_scene": 15, "duplicate_title": 22, "resolution_not_upgrade": 62, "hard_excluded": 59, "resolution_low_lt_1600": 89, "same_as_current": 24, "quality_reject_low_color": 30, "title_names_other_station": 72, "mime_unsupported": 10, "no_author_metadata": 7}
