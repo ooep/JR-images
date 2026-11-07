@@ -1653,3 +1653,30 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=3 staged=22 confirmed=0 skipped=0
 - reject_dist={"same_as_current": 23, "title_names_other_station": 164, "title_non_station_scene": 19, "hard_excluded": 77, "resolution_low_lt_1600": 88, "mime_unsupported": 50, "duplicate_title": 22, "no_author_metadata": 14, "quality_reject_low_color": 10, "resolution_not_upgrade": 41}
+
+
+## ws17 local accept WS17-B37 — 2026-11-07T03:20:52Z
+- st02751 大阪梅田 ← File:Hanshin-Osaka-Umeda-STA Department-store-gate.jpg (done, score 6.45→7.57)
+- st05242 南方 ← File:Hankyu Minamikata-STA South-West-Entrance.jpg (done, score 4.52→6.94)
+- st00070 维持现图 below_spec_confirmed：野田：唯一过数值闸候选为大和路快速车照，无站证
+- st00112 维持现图 below_spec_confirmed：最高候选分 6.32<6.54，且为駅前通り/方向牌
+- st00425 维持现图 below_spec_confirmed：貝塚最高 7.35<7.36，无更优
+- st00886 维持现图 below_spec_confirmed：日本橋最高 7.51<7.53
+- st01021 维持现图 below_spec_confirmed：滝谷最高 6.98<7.57
+- st01098 维持现图 below_spec_confirmed：最高 6.20<6.83
+- st01119 维持现图 below_spec_confirmed：京橋最高 6.19<7.60
+- st01275 维持现图 below_spec_confirmed：平野最高 6.15<7.36
+- st01280 维持现图 below_spec_confirmed：柏原：7.15 候选为街景车辆；站内候选中无「柏原」站名
+- st01324 维持现图 below_spec_confirmed：最高 6.44<6.58
+- st02659 维持现图 below_spec_confirmed：箪山最高 6.73<7.86
+- st02672 维持现图 below_spec_confirmed：河内花園：7.24 候选为関西みらい銀行，非站景；其余 6.23/6.17<6.53
+- st03235 维持现图 below_spec_confirmed：吹田最高 6.78<7.23
+- st04559 维持现图 below_spec_confirmed：西最高 6.88<7.10
+- st04874 维持现图 below_spec_confirmed：最高 6.39<7.21
+- st05648 维持现图 below_spec_confirmed：庄内最高 6.61<7.65
+- st05704 维持现图 below_spec_confirmed：文の里 6.46<6.54
+- st06640 维持现图 below_spec_confirmed：岸里：7.39 候选为「汐見橋-岸里玉出」车头方向幕（南海），非岸里站
+- st06967 维持现图 below_spec_confirmed：千林最高 6.37<6.51
+- st08365 维持现图 below_spec_confirmed：新深江最高 6.32<6.58
+- B37 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 f063c2cc）
+- B37 runner replaced=3（st01947/st01948/st05374）；staged=65 条覆盖 22 站

@@ -1,11 +1,12 @@
 station: 大阪梅田 (st02751)
 file: stations/st02751/photo.jpg
-sha256: 168bb8df337af2c8768b60f701bdfcd56ddf85470c987cc9c6854140fd50959a
-source_page: https://commons.wikimedia.org/wiki/File:梅田駅_(13262).jpg
-image_url: https://upload.wikimedia.org/wikipedia/commons/d/d2/%E6%A2%85%E7%94%B0%E9%A7%85_%2813262%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
-author: 由紀奈
+sha256: 0cf332e0080cd21d599032d8c84810fac7ebe5561d542ba760ca69b205cb9bb2
+source_page: https://commons.wikimedia.org/wiki/File:Hanshin-Osaka-Umeda-STA_Department-store-gate.jpg
+image_url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Hanshin-Osaka-Umeda-STA_Department-store-gate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+author: MaedaAkihiko
 license: CC BY-SA 4.0
 license_url: https://creativecommons.org/licenses/by-sa/4.0
-retrieved_at: 2026-11-04T07:15:59Z
-normalized: normalized to long side 1800 (JPEG q85) from 3840x2160
-attribution: 由紀奈 / File:梅田駅 (13262).jpg / CC BY-SA 4.0 / https://creativecommons.org/licenses/by-sa/4.0
+retrieved_at: 2026-11-07T03:20:52Z
+normalized: long 1800 q85 from 5472x3648
+attribution: MaedaAkihiko / File:Hanshin-Osaka-Umeda-STA Department-store-gate.jpg / CC BY-SA 4.0 / https://creativecommons.org/licenses/by-sa/4.0
+evidence: ws17 local accept B33; OCR full-name 阪神電車 大阪梅田駅（百貨店口） Hanshin Railway Osaka-Umeda Station (Department Store Gate); visual 阪神大阪梅田駅百貨店口改札，站名牌清晰、线路运营商匹配，1800x1200，7.57>6.45; gps_dist=None; prev_sha256=168bb8df337af2c8768b60f701bdfcd56ddf85470c987cc9c6854140fd50959a
