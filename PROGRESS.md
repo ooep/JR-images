@@ -1966,3 +1966,9 @@
 
 ## ws17 P1 missing st00258 大久保（同名异公司，2026-11-07）
 - st00258 大久保（兵庫・山陽本線）图误为秋田 JR东日本大久保（前图亦为东京中央线大久保），第四查 operator_mismatch；无正确图可用 → 撤图置 missing + below_spec_confirmed，index 摘除，photo/license 删除。
+
+
+## ws17 below-spec replace WS17-B46r — 2026-11-07T10:45:18Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=3 staged=21 confirmed=1 skipped=0
+- reject_dist={"hard_excluded": 26, "same_as_current": 25, "resolution_low_lt_1600": 107, "duplicate_title": 10, "resolution_not_upgrade": 14, "title_names_other_station": 87, "oversize_gt_25mb": 2, "title_non_station_scene": 6, "mime_unsupported": 112, "no_author_metadata": 6, "quality_reject_low_color": 10, "license_unclear": 7}
