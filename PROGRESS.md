@@ -1922,3 +1922,7 @@
 - B44 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 1348523016）
 - B44 runner replaced=4（st02492 豊川/st01649 黒川/st06168 浄心/st02322 山王）；staged=58 条覆盖 21 站；本地 0 接受
 - P1：st02492 豊川 runner 替换图为 1800x335 条幅，按展示比例不可用 → 回退原图 2048x1357 并 bsc（另提交）
+
+
+## ws17 P1 revert st02492 豊川（条幅，2026-11-07）
+- runner B44 将 st02492 豊川替换为 1800x335 全景条幅（6.04）；条幅按站图展示比例不可读 → 回退原图 2048x1357（丰川駅东西自由通路站房，score 未评）并标 below_spec_confirmed。
