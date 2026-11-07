@@ -1620,3 +1620,30 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=22 confirmed=3 skipped=0
 - reject_dist={"same_as_current": 25, "mime_unsupported": 90, "title_names_other_station": 29, "resolution_low_lt_1600": 69, "license_unclear": 5, "hard_excluded": 10, "title_non_station_scene": 6, "quality_reject_low_color": 12, "resolution_not_upgrade": 14, "no_author_metadata": 2, "duplicate_title": 2}
+
+
+## ws17 local accept WS17-B36 — 2026-11-07T01:01:05Z
+- st02453 维持现图 below_spec_confirmed：候选最高 isc 7.10<8.25
+- st02502 维持现图 below_spec_confirmed：候选最高 isc 5.60<8.26
+- st02533 维持现图 below_spec_confirmed：候选最高 isc 7.13<8.45（OCR 西条 命中但分数不及）
+- st02540 维持现图 below_spec_confirmed：候选最高 isc 6.60<7.17
+- st02543 维持现图 below_spec_confirmed：候选最高 isc 7.22<7.81
+- st02765 维持现图 below_spec_confirmed：候选最高 isc 6.38<6.96（十二兼 命中但不及）
+- st03037 维持现图 below_spec_confirmed：候选最高 isc 6.75<7.82（城下 命中但不及）
+- st05416 维持现图 below_spec_confirmed：候选最高 isc 6.80<6.85
+- st05597 维持现图 below_spec_confirmed：候选最高 isc 6.81<8.20
+- st06087 维持现图 below_spec_confirmed：候选最高 isc 4.61<4.78
+- st06090 维持现图 below_spec_confirmed：候选最高 isc 6.71<7.21（三溝 命中但不及）
+- st06098 维持现图 below_spec_confirmed：候选最高 isc 6.58<6.75（西松本 命中但不及）
+- st06319 维持现图 below_spec_confirmed：候选最高 isc 7.28<8.18
+- st06947 维持现图 below_spec_confirmed：候选最高 isc 7.32<7.54
+- st08489 维持现图 below_spec_confirmed：候选最高 isc 7.13<8.22
+- st08678 维持现图 below_spec_confirmed：候选最高 isc 7.44<8.48
+- st08682 维持现图 below_spec_confirmed：候选最高 isc 7.02<8.12（権堂 命中但不及）
+- st02519 维持现图 below_spec_confirmed：c2 7.26>6.03 但图为印度 Balligavi 古迹；c1 4.95<6.03
+- st02524 维持现图 below_spec_confirmed：c1 Kiriishi tunnel 6.22>3.24 但为隧道照非站景
+- st02775 维持现图 below_spec_confirmed：c3 7.01>6.77 但为歌川广重木版画 NDL，非照片
+- st08674 维持现图 below_spec_confirmed：c1 8.30>3.14 但为「中野松川郵便局」照，非站景
+- st08676 维持现图 below_spec_confirmed：c1 7.53>7.02「Yomase Goso」无站名/站景证据
+- runner run 42320502622 success：replaced=0 / confirmed=3(st08672/st02770/st08670) / staged=57(22 站)
+- 22 站暂存裁决：0 接受 / 22 below_spec_confirmed（候选最高分普遍<现图，或过闸但为邮局/隧道/古迹/木版画）
