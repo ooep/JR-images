@@ -43535,53 +43535,37 @@
 "low_conf_identity": true
 },
 "st00258": {
-"status": "done",
-"file": "stations/st00258/photo.jpg",
-"sha256": "8143d5878ad1b9f2d9b145dc7e1299ea66b9887474452a8970c5deaa8fc69956",
-"dhash": "e8fc835315e0d0f0",
-"bytes": 352942,
-"width": 1800,
-"height": 1200,
-"normalized": {
-"encoded": true,
-"long": 1800,
-"quality": 85,
-"original_width": 6000,
-"original_height": 4000
-},
+"status": "missing",
 "below_spec": false,
-"score": 8.13,
-"metrics": {
-"w": 1800,
-"h": 1200,
-"lap_var": 1468.08,
-"colorfulness": 73.27,
-"brightness": 139.63,
-"white_frac": 0.0028,
-"dark_frac": 0.0379
-},
+"reasons": [
+"ws17_local_accept(ocr+visual:大久保駅 Okubo Station)",
+"audit_low_conf_priority_recapture",
+"p1_operator_missing: 同名异公司（兵庫大久保 vs 秋田/东京大久保），无正确图可用"
+],
+"reject_dist": {},
+"ts": "2026-11-07T10:33:47Z",
+"attempts": 2,
+"below_spec_confirmed": true,
+"bs_confirmed_ts": "2026-11-07T10:33:47Z",
+"bs_batch": "WS17-B42",
+"bs_note": "第四查 operator_mismatch：记录为兵庫・山陽本線大久保，图为秋田 JR东日本大久保（前图亦为东京中央线大久保）→ 无正确图，置 missing+bsc",
+"removed_misattached": {
+"sha256": "8143d5878ad1b9f2d9b145dc7e1299ea66b9887474452a8970c5deaa8fc69956",
 "source_title": "File:JR East Ōkubo Station building in Katagami City, Akita Pref.jpg",
-"source_cat": null,
 "source_page": "https://commons.wikimedia.org/wiki/File:JR_East_Ōkubo_Station_building_in_Katagami_City,_Akita_Pref.jpg",
 "author": "Mister0124",
 "license": "CC BY-SA 4.0",
-"license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-"reasons": [
-"ws17_local_accept(ocr+visual:大久保駅 Okubo Station)",
-"audit_low_conf_priority_recapture"
+"width": 1800,
+"height": 1200,
+"score": 8.13,
+"station_pref": "兵庫県",
+"station_lines": [
+"北陸本線",
+"山陽本線"
 ],
-"reject_dist": {},
-"prev": {
-"source_title": "File:JR Chuō Line Ōkubo Station Platform (20220626).jpg",
-"sha256": "d0c9890c3525d8c8d237c69cf1ff23cd8835e60f6283ee8c9230e9086f35f564",
-"score": 8.05,
-"long": 1800,
-"reasons": [
-"audit_low_conf_priority_recapture"
-]
-},
-"ts": "2026-11-07T05:40:52Z",
-"attempts": 2
+"reason": "同名异公司：秋田 JR东日本大久保误挂到兵庫 山陽本線大久保；前图为东京中央线大久保",
+"removed_at": "2026-11-07T10:33:47Z"
+}
 },
 "st00259": {
 "status": "missing",
@@ -379856,7 +379840,7 @@
 "stations_path": "data/stations_all.json",
 "batch_index": 5,
 "batch_size": 500,
-"updated_at": "2026-11-07T10:25:00Z",
+"updated_at": "2026-11-07T10:33:47Z",
 "rate_limit_events": 0,
 "maxlag_retries": 0
 }

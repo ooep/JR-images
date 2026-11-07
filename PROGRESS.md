@@ -1964,5 +1964,5 @@
 - B45 runner replaced=0、confirmed=0；staged=74 条覆盖 25 站；rejected_notable=54；本地接受 1
 
 
-## ws17 P1 swap 山崎 st02312/st02314（同名异运营者，2026-11-07）
-- st02312 山崎（愛知・名鉄尾西線/津島線）原图误为 JR函館本線山崎；st02314 山崎（北海道・JR函館本線）原图误为名鉄山崎。两图对调归位，州 state/index 图片字段互换，license 同步换绑；两站均保持 done，不置 bsc。
+## ws17 P1 missing st00258 大久保（同名异公司，2026-11-07）
+- st00258 大久保（兵庫・山陽本線）图误为秋田 JR东日本大久保（前图亦为东京中央线大久保），第四查 operator_mismatch；无正确图可用 → 撤图置 missing + below_spec_confirmed，index 摘除，photo/license 删除。
