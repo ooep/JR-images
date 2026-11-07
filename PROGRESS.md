@@ -1747,3 +1747,9 @@
 - st08539 维持现图 below_spec_confirmed：萩の台：最高 6.43，画面为街角电箱/保育园门，非站景
 - B39 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 cdede37b）
 - B39 runner replaced=1（st01286）；runner 自动确认 3；staged=59 条覆盖 21 站
+
+
+## ws17 below-spec replace WS17-B40 — 2026-11-07T04:16:35Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=9 staged=16 confirmed=0 skipped=0
+- reject_dist={"license_unclear": 7, "title_names_other_station": 59, "hard_excluded": 47, "resolution_not_upgrade": 63, "title_non_station_scene": 14, "same_as_current": 21, "duplicate_title": 20, "resolution_low_lt_1600": 90, "no_author_metadata": 4, "mime_unsupported": 14, "license_forbidden": 21, "quality_reject_low_color": 17}
