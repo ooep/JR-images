@@ -1785,3 +1785,32 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=1 staged=23 confirmed=1 skipped=0
 - reject_dist={"hard_excluded": 69, "duplicate_title": 25, "resolution_low_lt_1600": 142, "same_as_current": 25, "quality_reject_low_color": 10, "title_names_other_station": 91, "mime_unsupported": 43, "resolution_not_upgrade": 45, "title_non_station_scene": 10, "no_author_metadata": 24, "license_unclear": 4}
+
+
+## ws17 local accept WS17-B41r — 2026-11-07T05:22:18Z
+- st00187 维持现图 below_spec_confirmed：八丁堀：最高 6.64<8.81
+- st00305 维持现图 below_spec_confirmed：白山：站名命中但最高 6.66<7.81
+- st00877 维持现图 below_spec_confirmed：三田：最高 6.96<7.37
+- st00885 维持现图 below_spec_confirmed：日本橋：最高 6.56<7.57
+- st00891 维持现图 below_spec_confirmed：浅草：最高 5.95<7.22（竖幅候选 0.05 为差图）
+- st00892 维持现图 below_spec_confirmed：浅草：最高 5.95<7.18
+- st00925 维持现图 below_spec_confirmed：梅屋敷：最高 6.45<7.83
+- st01120 维持现图 below_spec_confirmed：京橋：7.86>7.44 且长边达标，但画面仅银座线站台/线路牌，无「京橋」站名
+- st01440 维持现图 below_spec_confirmed：新富町：站名命中但最高 7.54<7.88
+- st01518 维持现图 below_spec_confirmed：大手町：7.19>6.87 但仅换乘线路牌（半蔵門/千代田/東西/都営三田），无「大手町」站名
+- st01522 维持现图 below_spec_confirmed：霞ケ関：最高 6.96<8.19
+- st01562 维持现图 below_spec_confirmed：山下：最高 7.01<7.76
+- st01977 维持现图 below_spec_confirmed：末広町：站名命中但 7.02<7.53
+- st02051 维持现图 below_spec_confirmed：日野：最高 6.59<6.70
+- st02147 维持现图 below_spec_confirmed：入谷：最高 7.81<8.43
+- st02235 维持现图 below_spec_confirmed：桜台：最高 6.55<8.46
+- st03654 维持现图 below_spec_confirmed：栄町：6.66>4.52 且长边达标，但画面为丸ノ内線站台/楼梯，无「栄町」站名
+- st04481 维持现图 below_spec_confirmed：両国：最高 7.40<8.62
+- st04483 维持现图 below_spec_confirmed：森下：站名命中但最高 6.90<8.38
+- st04516 维持现图 below_spec_confirmed：中野：最高 7.45<7.48
+- st04782 维持现图 below_spec_confirmed：山田：最高 7.03<7.64
+- st05486 维持现图 below_spec_confirmed：平井：站名命中 Hirai 但 6.56<7.94
+- st05548 维持现图 below_spec_confirmed：長沼：最高 5.90<7.90
+- B41 首次 run 42339007612 因撤回提交改 head 导致 Commit & push 非 fast-forward（state 冲突）整批未推；重派 B41r run 42341152074 success → 提交 7c1f5d35
+- B41r 三查：foreign 0 / same_name_other_line 0 / dup_image 0
+- B41r runner replaced=1（st02165 新宿，1800x632 超宽全景，7.57>6.80）；staged=69 条覆盖 23 站；本地 0 接受
