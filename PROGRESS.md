@@ -1680,3 +1680,9 @@
 - st08365 维持现图 below_spec_confirmed：新深江最高 6.32<6.58
 - B37 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 f063c2cc）
 - B37 runner replaced=3（st01947/st01948/st05374）；staged=65 条覆盖 22 站
+
+
+## ws17 below-spec replace WS17-B38 — 2026-11-07T03:35:11Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=1 staged=24 confirmed=0 skipped=0
+- reject_dist={"resolution_low_lt_1600": 86, "title_names_other_station": 26, "same_as_current": 25, "hard_excluded": 40, "resolution_not_upgrade": 43, "quality_reject_low_color": 6, "mime_unsupported": 5, "title_non_station_scene": 5, "duplicate_title": 20, "no_author_metadata": 2}
