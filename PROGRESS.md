@@ -1715,3 +1715,9 @@
 - st08758 维持现图 below_spec_confirmed：海士有木：站名命中但最高 6.74<8.10
 - B38 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 efc825db）
 - B38 runner replaced=1（st00945 東中山）；staged=72 条覆盖 24 站
+
+
+## ws17 below-spec replace WS17-B39 — 2026-11-07T03:56:02Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=1 staged=21 confirmed=3 skipped=0
+- reject_dist={"mime_unsupported": 110, "resolution_low_lt_1600": 73, "title_names_other_station": 60, "duplicate_title": 8, "same_as_current": 25, "hard_excluded": 26, "resolution_not_upgrade": 15, "quality_reject_low_color": 20, "license_unclear": 2, "license_forbidden": 6, "no_author_metadata": 2}
