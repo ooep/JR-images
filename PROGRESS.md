@@ -1647,3 +1647,9 @@
 - st08676 维持现图 below_spec_confirmed：c1 7.53>7.02「Yomase Goso」无站名/站景证据
 - runner run 42320502622 success：replaced=0 / confirmed=3(st08672/st02770/st08670) / staged=57(22 站)
 - 22 站暂存裁决：0 接受 / 22 below_spec_confirmed（候选最高分普遍<现图，或过闸但为邮局/隧道/古迹/木版画）
+
+
+## ws17 below-spec replace WS17-B37 — 2026-11-07T01:13:56Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=3 staged=22 confirmed=0 skipped=0
+- reject_dist={"same_as_current": 23, "title_names_other_station": 164, "title_non_station_scene": 19, "hard_excluded": 77, "resolution_low_lt_1600": 88, "mime_unsupported": 50, "duplicate_title": 22, "no_author_metadata": 14, "quality_reject_low_color": 10, "resolution_not_upgrade": 41}
