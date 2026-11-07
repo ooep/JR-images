@@ -1850,3 +1850,7 @@
 - st08269 维持现图 below_spec_confirmed：福部：/3 7.86>7.57 但为福部町综合支所（町役场），非站景
 - B42 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 21ecfa00）
 - B42 runner replaced=0、confirmed=0；staged=70 条覆盖 25 站；rejected_notable=132；本地接受 1
+
+
+## ws17 P1 revert st02165 新宿（超宽全景，2026-11-07）
+- runner B41r 将 st02165 新宿替换为 1800x632 全景（7.57>6.80）；按站图展示比例中心裁切后站房与「新宿駅 Shinjuku Station」大字被切，主体成街道细带 → 回退原图 1800x1200（6.80），标 below_spec_confirmed 防重复覆盖。
