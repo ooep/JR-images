@@ -1539,3 +1539,26 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=1 staged=18 confirmed=6 skipped=0
 - reject_dist={"resolution_low_lt_1600": 74, "duplicate_title": 13, "hard_excluded": 15, "same_as_current": 25, "quality_reject_low_color": 7, "title_names_other_station": 70, "title_non_station_scene": 8, "mime_unsupported": 117, "resolution_not_upgrade": 7, "no_author_metadata": 1}
+
+
+## ws17 local accept B33 — 2026-11-07T00:31:37Z
+- st02023 平田 ← File:Hirata Station (Kochi), ekisha.jpg (done, score 6.55→7.54)
+- st00139 维持现图 below_spec_confirmed：候选为静岡 藤枝 高須駅跡与讃岐うどん店，异县非站景；isc≤5.71<6.88
+- st02342 维持现图 below_spec_confirmed：候选全为名鉄朝倉(愛知)异县异运营商；isc≤7.95 但无本站站证（本站为高知土佐電/とさでん）
+- st02995 维持现图 below_spec_confirmed：c1 高知下山駅 5.46<6.79；c2 大畑山景 4.75；c3 京都バス停 2.38（hit=下山 属巴士名）
+- st03730 维持现图 below_spec_confirmed：c1 高知宝永町郵便局 6.86>6.65 但非站景
+- st03731 维持现图 below_spec_confirmed：候选均为 1993 年車両照 2.47/6.06/2.72<7.05
+- st03732 维持现图 below_spec_confirmed：候选 3 张站台候车照 5.71~6.34<6.91，无更优
+- st03737 维持现图 below_spec_confirmed：候选 6.29<6.60
+- st03748 维持现图 below_spec_confirmed：候选 6.29<6.64
+- st03757 维持现图 below_spec_confirmed：候选 6.22<6.51 且为車照
+- st03766 维持现图 below_spec_confirmed：c2 岩手 下船渡 7.67>5.69 —— 「舟戸」⊂「下船渡」子串误判，异县拒
+- st03772 维持现图 below_spec_confirmed：c2 OCR 篠原 命中但 isc6.52<6.82（千葉佐原系异县），拒
+- st03784 维持现图 below_spec_confirmed：c1 广州地铁北山 5.73；c2/c3 宮城 JR北山 6.11/6.85<6.90 异县
+- st03797 维持现图 below_spec_confirmed：c1 試運転 6.73<6.88；c2 関係者乗車会 5.29；c3 3000型車照 3.1
+- st04626 维持现图 below_spec_confirmed：c1/c2 高知仁井田 6.53/6.49<6.66；c3 栃木仁井田 异县
+- st04635 维持现图 below_spec_confirmed：候选全为熊本 阿蘇大野郷（多ノ郷⊂阿蘇大野郷 子串风险），异县；isc≤6.21<6.88
+- st06361 维持现图 below_spec_confirmed：c1 試運転 6.73>6.22 但車照主体；c2 5.29；c3 車照 3.1
+- st06942 维持现图 below_spec_confirmed：候选 185系車照 2.61<6.40
+- runner 42256039521 SUMMARY replaced=3/staged=22；因 dup_image 闸整批未提交，自动替换 3 站（st00255/st01222/st00447）留 B33b 重派；
+- 本批 25 站剔除 dup 命中 6 站（st02802/st03037/st03126/st03294/st03318/st03649）与 st07970（复算 dup）→ 16 站进本地裁决；接受 2 / below_spec_confirmed 13 / 不入提交 1(st07970)。
