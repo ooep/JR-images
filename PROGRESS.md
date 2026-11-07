@@ -1972,3 +1972,30 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=3 staged=21 confirmed=1 skipped=0
 - reject_dist={"hard_excluded": 26, "same_as_current": 25, "resolution_low_lt_1600": 107, "duplicate_title": 10, "resolution_not_upgrade": 14, "title_names_other_station": 87, "oversize_gt_25mb": 2, "title_non_station_scene": 6, "mime_unsupported": 112, "no_author_metadata": 6, "quality_reject_low_color": 10, "license_unclear": 7}
+
+
+## ws17 local accept WS17-B46r — 2026-11-07T10:50:23Z
+- st01718 维持现图 below_spec_confirmed：本庄：最高 6.03<7.21
+- st01843 维持现图 below_spec_confirmed：磯部：最高 7.41<9.14（/2,/3 为 JR東日本 新潟磯部，异县）
+- st02076 维持现图 below_spec_confirmed：大袋：最高 7.13<9.52
+- st02881 维持现图 below_spec_confirmed：阿波山川：6.67>3.08 但为「109米」里程碑石，非站景
+- st02882 维持现图 below_spec_confirmed：山瀬：最高 7.14<7.51
+- st02889 维持现图 below_spec_confirmed：下浦：最高 7.14<7.50
+- st02900 维持现图 below_spec_confirmed：文化の森：最高 6.21<6.66
+- st02937 维持现图 below_spec_confirmed：佃：最高 6.66<7.34
+- st02940 维持现图 below_spec_confirmed：三加茂：7.79>5.45 但为道の駅/路边建筑，无站名
+- st03204 维持现图 below_spec_confirmed：ふじみ野：最高 7.00<7.17（/2,/3 为东京地铁车照）
+- st03214 维持现图 below_spec_confirmed：森林公園：7.06>5.52 但为站前广场，无站名
+- st03438 维持现图 below_spec_confirmed：日進：最高 7.21<9.02
+- st04383 维持现图 below_spec_confirmed：所沢：最高 6.73<7.03
+- st05211 维持现图 below_spec_confirmed：新郷：最高 6.02<6.38
+- st05592 维持现图 below_spec_confirmed：永田：最高 6.44<9.42
+- st05613 维持现图 below_spec_confirmed：東吾野：最高 7.54<8.96
+- st05616 维持现图 below_spec_confirmed：正丸：最高 6.60<8.78
+- st05885 维持现图 below_spec_confirmed：武州長瀬：站名命中但最高 6.58<7.14
+- st06121 维持现图 below_spec_confirmed：航空公園：最高 7.00<7.17
+- st06655 维持现图 below_spec_confirmed：道法寺：最高 7.55<8.40
+- st07648 维持现图 below_spec_confirmed：西武園ゆうえんち：最高 6.59<8.97
+- B46 首次 run 42363542677 因交换提交撞 head 失败；重派 B46r run 42364612763 success → 提交 e1e7b330
+- B46r 三查：foreign 0 / same_name_other_line 0 / dup_image 0；第四查候选 4 条（磯部 JR东日本异县、ふじみ野 地铁车照）均不接
+- B46r runner replaced=3（st01331 大宮/st01206 新田/st00541 石井，运营者均正确）、confirmed=1；staged=62（21 站）；本地 0 接受
