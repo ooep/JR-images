@@ -1775,3 +1775,7 @@
 - B40 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 e59785b9）
 - B40 runner replaced=9；staged=48 条覆盖 16 站；本地接受 1
 - P1 记档：st01302 芦屋（JR 记录）runner 替换图仍为阪神芦屋站台（前图亦为阪神），需身份裁决；st03329 横山替换图为神鉄 6514 车照（站台可见），暂留观察
+
+
+## ws17 P1 revert st01302 芦屋（2026-11-07）
+- st01302 芦屋（JR・東海道本線）当前图为 阪神芦屋駅2番線ホーム（同名异站，相距约1km）→ 错站，撤图置 missing；index 摘除；photo/license 待删；removed_misattached 留档；待补 JR 芦屋站景（已在 data/low_conf_identity.json）。
