@@ -1592,3 +1592,25 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=1 staged=16 confirmed=8 skipped=0
 - reject_dist={"same_as_current": 25, "title_names_other_station": 117, "quality_reject_low_color": 25, "resolution_low_lt_1600": 77, "mime_unsupported": 196, "resolution_not_upgrade": 14, "hard_excluded": 12, "title_non_station_scene": 10, "no_author_metadata": 8, "duplicate_title": 2, "oversize_gt_25mb": 9, "license_unclear": 1}
+
+
+## ws17 local accept WS17-B35 — 2026-11-07T00:47:41Z
+- st01757 维持现图 below_spec_confirmed：候选全为浅间列车照（大宮/长野 異県），车照主体；isc≤5.59<6.53
+- st01780 维持现图 below_spec_confirmed：候选为近鉄列車照（伊勢中川/名阪），isc≤5.57<6.63 且车照主体
+- st01799 维持现图 below_spec_confirmed：c1/c2 德国 Lütticher Straße 里程碑照；c3 同类 7.16>6.23 但非站景
+- st01810 维持现图 below_spec_confirmed：c1/c3 均为近鉄列車照（Local Tsushinmachi）；c3 7.38>6.85 但车照主体
+- st05094 维持现图 below_spec_confirmed：c1/c2 爱沙尼亚转车盘、c3 予讃線轨道照，非站景/异线
+- st06110 维持现图 below_spec_confirmed：c1 Nanawa-station 5.63<5.69
+- st06111 维持现图 below_spec_confirmed：c3 277系車照 8.12>6.54 但车照主体；c1 5.89<6.54
+- st06807 维持现图 below_spec_confirmed：c1 豊橋中瀬古町公民館 7.28>5.43 非站景
+- st08296 维持现图 below_spec_confirmed：c2/c3 2444系車照 7.65~7.71>6.00 车照主体；c1 5.94<6.00
+- st08297 维持现图 below_spec_confirmed：c3 三峰山景 7.08>6.31 非站景；c1/c2 神社石碑
+- st08298 维持现图 below_spec_confirmed：c1 四日市西警察署 7.96>5.64 非站景；c2/c3 車照
+- st08299 维持现图 below_spec_confirmed：c1~c3 全为 2444系車照 7.65~8.24>6.60 车照主体
+- st08301 维持现图 below_spec_confirmed：c1/c2/c3 isc≤5.25<5.78
+- st08508 维持现图 below_spec_confirmed：c1/c2/c3 广州黄边站，异県
+- st08696 维持现图 below_spec_confirmed：c2 军事演习照 6.58>4.47 非站景；c1 3.16<4.47
+- st08705 维持现图 below_spec_confirmed：c1/c3 大阪 Metro ドーム前千代崎（千代崎⊂ドーム前千代崎 同名子串）；c2 車照 5.63<6.69
+- runner run 42319052528 success：replaced=1 st08295 伊勢松本（站房全景，站名牌「伊勢松本駅」可读，目检通过，1800×~545 超宽条幅记异常）/ confirmed=8 / staged=44(16 站)
+- 16 站暂存裁决：0 接受 / 16 below_spec_confirmed（候选全为车照、异県同名、非站景）
+- 8 站 runner 直接 confirmed：st00107/st05092/st05088/st01827/st01782/st08415/st05091/st08345
