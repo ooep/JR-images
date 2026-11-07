@@ -1753,3 +1753,25 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=9 staged=16 confirmed=0 skipped=0
 - reject_dist={"license_unclear": 7, "title_names_other_station": 59, "hard_excluded": 47, "resolution_not_upgrade": 63, "title_non_station_scene": 14, "same_as_current": 21, "duplicate_title": 20, "resolution_low_lt_1600": 90, "no_author_metadata": 4, "mime_unsupported": 14, "license_forbidden": 21, "quality_reject_low_color": 17}
+
+
+## ws17 local accept WS17-B40 — 2026-11-07T04:31:22Z
+- st01214 木幡 ← File:Shintetsu Kobata Station.jpg (done, score 4.91→6.80)
+- st00573 维持现图 below_spec_confirmed：栄：最高 7.08<7.31
+- st00704 维持现图 below_spec_confirmed：岩屋：最高 6.95<7.21
+- st00878 维持现图 below_spec_confirmed：三田：候选为东京都营三田线三田駅（白金高輪/目黒/第一京浜），异县
+- st01055 维持现图 below_spec_confirmed：豊岡：候选长边 1800<现图 2048，尺寸闸不过
+- st01264 维持现图 below_spec_confirmed：尼崎：最高 6.50<7.38
+- st01274 维持现图 below_spec_confirmed：平野：能勢電鉄平野駅名命中但最高 6.52<7.47
+- st01294 维持现图 below_spec_confirmed：塚口：最高 6.72<7.47
+- st01552 维持现图 below_spec_confirmed：広野：候选为 JR 広野駅（福島常磐線）站台，与兵庫記録不符
+- st02691 维持现图 below_spec_confirmed：今津：最高 6.44<7.51
+- st02717 维持现图 below_spec_confirmed：霞ケ丘：最高 7.35<7.46
+- st04017 维持现图 below_spec_confirmed：竹田：候选为大邱/盆唐 Jukjeon（韩国），异国
+- st04167 维持现图 below_spec_confirmed：相生：候选长边 1800<现图 2048
+- st04923 维持现图 below_spec_confirmed：春日野道：最高 7.01<7.42
+- st06249 维持现图 below_spec_confirmed：滝：/1 为 JR烏山線滝駅（栃木）异站；/2 街景；/3 民家路景
+- st06336 维持现图 below_spec_confirmed：三宮：最高 4.47<5.66
+- B40 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 e59785b9）
+- B40 runner replaced=9；staged=48 条覆盖 16 站；本地接受 1
+- P1 记档：st01302 芦屋（JR 记录）runner 替换图仍为阪神芦屋站台（前图亦为阪神），需身份裁决；st03329 横山替换图为神鉄 6514 车照（站台可见），暂留观察
