@@ -1614,3 +1614,9 @@
 - runner run 42319052528 success：replaced=1 st08295 伊勢松本（站房全景，站名牌「伊勢松本駅」可读，目检通过，1800×~545 超宽条幅记异常）/ confirmed=8 / staged=44(16 站)
 - 16 站暂存裁决：0 接受 / 16 below_spec_confirmed（候选全为车照、异県同名、非站景）
 - 8 站 runner 直接 confirmed：st00107/st05092/st05088/st01827/st01782/st08415/st05091/st08345
+
+
+## ws17 below-spec replace WS17-B36 — 2026-11-07T00:59:00Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=22 confirmed=3 skipped=0
+- reject_dist={"same_as_current": 25, "mime_unsupported": 90, "title_names_other_station": 29, "resolution_low_lt_1600": 69, "license_unclear": 5, "hard_excluded": 10, "title_non_station_scene": 6, "quality_reject_low_color": 12, "resolution_not_upgrade": 14, "no_author_metadata": 2, "duplicate_title": 2}
