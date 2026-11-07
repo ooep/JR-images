@@ -1854,3 +1854,9 @@
 
 ## ws17 P1 revert st02165 新宿（超宽全景，2026-11-07）
 - runner B41r 将 st02165 新宿替换为 1800x632 全景（7.57>6.80）；按站图展示比例中心裁切后站房与「新宿駅 Shinjuku Station」大字被切，主体成街道细带 → 回退原图 1800x1200（6.80），标 below_spec_confirmed 防重复覆盖。
+
+
+## ws17 below-spec replace WS17-B43 — 2026-11-07T05:56:57Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=1 staged=24 confirmed=0 skipped=0
+- reject_dist={"resolution_low_lt_1600": 107, "same_as_current": 25, "license_unclear": 7, "title_non_station_scene": 6, "duplicate_title": 6, "title_names_other_station": 26, "mime_unsupported": 27, "quality_reject_low_color": 17, "hard_excluded": 35, "resolution_not_upgrade": 19, "no_author_metadata": 1}
