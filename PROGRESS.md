@@ -1814,3 +1814,9 @@
 - B41 首次 run 42339007612 因撤回提交改 head 导致 Commit & push 非 fast-forward（state 冲突）整批未推；重派 B41r run 42341152074 success → 提交 7c1f5d35
 - B41r 三查：foreign 0 / same_name_other_line 0 / dup_image 0
 - B41r runner replaced=1（st02165 新宿，1800x632 超宽全景，7.57>6.80）；staged=69 条覆盖 23 站；本地 0 接受
+
+
+## ws17 below-spec replace WS17-B42 — 2026-11-07T05:35:09Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=0 staged=25 confirmed=0 skipped=0
+- reject_dist={"same_as_current": 25, "duplicate_title": 21, "resolution_low_lt_1600": 72, "no_author_metadata": 9, "hard_excluded": 56, "title_names_other_station": 86, "mime_unsupported": 54, "oversize_gt_25mb": 2, "license_unclear": 10, "quality_reject_low_color": 16, "resolution_not_upgrade": 14, "title_non_station_scene": 46}
