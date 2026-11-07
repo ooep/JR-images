@@ -1586,3 +1586,9 @@
 - runner run 42316923596 success：replaced=1(st03781 伊野 站内售票处，GPS/标题站证，目检通过) / confirmed=6 / staged=18；verify 0 拦截 → 提交 73b2dca9
 - 18 站暂存裁决：接受 1(st02023) / below_spec_confirmed 17
 - 6 站 runner 直接 confirmed：st03112/st02991/st04648/st03736/st03763/st03777
+
+
+## ws17 below-spec replace WS17-B35 — 2026-11-07T00:45:19Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=1 staged=16 confirmed=8 skipped=0
+- reject_dist={"same_as_current": 25, "title_names_other_station": 117, "quality_reject_low_color": 25, "resolution_low_lt_1600": 77, "mime_unsupported": 196, "resolution_not_upgrade": 14, "hard_excluded": 12, "title_non_station_scene": 10, "no_author_metadata": 8, "duplicate_title": 2, "oversize_gt_25mb": 9, "license_unclear": 1}
