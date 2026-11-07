@@ -1895,3 +1895,30 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=4 staged=21 confirmed=0 skipped=0
 - reject_dist={"resolution_low_lt_1600": 129, "same_as_current": 25, "mime_unsupported": 47, "oversize_gt_25mb": 4, "title_non_station_scene": 15, "no_author_metadata": 9, "duplicate_title": 33, "title_names_other_station": 140, "quality_reject_low_color": 14, "resolution_not_upgrade": 40, "hard_excluded": 63, "license_unclear": 3}
+
+
+## ws17 local accept WS17-B44 — 2026-11-07T07:59:31Z
+- st00003 维持现图 below_spec_confirmed：高田：最高 7.49<8.50
+- st00163 维持现图 below_spec_confirmed：市役所前：最高 6.80<6.96
+- st00572 维持现图 below_spec_confirmed：栄：最高 6.21<7.07
+- st00640 维持现图 below_spec_confirmed：東諫早：7.91>7.90 但为彩绘列车过桥车照，无站名
+- st00648 维持现图 below_spec_confirmed：松原：最高 6.31<7.95
+- st01097 维持现图 below_spec_confirmed：今池：站名命中但 6.47<6.49
+- st01163 维持现图 below_spec_confirmed：赤池：最高 5.57<7.01
+- st01452 维持现图 below_spec_confirmed：競輪場前：最高 6.23<6.45
+- st02162 维持现图 below_spec_confirmed：藤が丘：站名命中但最高 6.33<7.43
+- st02359 维持现图 below_spec_confirmed：桜：最高 6.40<7.70
+- st02660 维持现图 below_spec_confirmed：瓢箪山：站名命中但最高 6.95<7.40
+- st02782 维持现图 below_spec_confirmed：春日井：候选长边 1800<现图 2048，尺寸闸不过
+- st02783 维持现图 below_spec_confirmed：春日井：7.75>7.46 但为站前时钟雕塑街景，无站名
+- st02828 维持现图 below_spec_confirmed：本山：站名命中但最高 6.09<6.15
+- st04132 维持现图 below_spec_confirmed：比良：最高 6.63<7.12
+- st04459 维持现图 below_spec_confirmed：運動公園前：站名命中但 5.92<7.25
+- st04972 维持现图 below_spec_confirmed：矢田：站名命中但最高 7.25<7.38
+- st05385 维持现图 below_spec_confirmed：神代：站名命中但 7.34<8.02
+- st07146 维持现图 below_spec_confirmed：山口：最高 6.92<7.26
+- st07942 维持现图 below_spec_confirmed：松浦：最高 6.71<8.09
+- st07969 维持现图 below_spec_confirmed：高岩：最高 7.03<7.74
+- B44 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 1348523016）
+- B44 runner replaced=4（st02492 豊川/st01649 黒川/st06168 浄心/st02322 山王）；staged=58 条覆盖 21 站；本地 0 接受
+- P1：st02492 豊川 runner 替换图为 1800x335 条幅，按展示比例不可用 → 回退原图 2048x1357 并 bsc（另提交）
