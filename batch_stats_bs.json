@@ -1,22 +1,23 @@
 {
  "attempted": 25,
- "replaced": 1,
- "staged": 24,
+ "replaced": 4,
+ "staged": 21,
  "confirmed": 0,
  "skipped": 0,
- "bytes": 317885,
+ "bytes": 1657678,
  "reject_dist": {
-  "resolution_low_lt_1600": 107,
+  "resolution_low_lt_1600": 129,
   "same_as_current": 25,
-  "license_unclear": 7,
-  "title_non_station_scene": 6,
-  "duplicate_title": 6,
-  "title_names_other_station": 26,
-  "mime_unsupported": 27,
-  "quality_reject_low_color": 17,
-  "hard_excluded": 35,
-  "resolution_not_upgrade": 19,
-  "no_author_metadata": 1
+  "mime_unsupported": 47,
+  "oversize_gt_25mb": 4,
+  "title_non_station_scene": 15,
+  "no_author_metadata": 9,
+  "duplicate_title": 33,
+  "title_names_other_station": 140,
+  "quality_reject_low_color": 14,
+  "resolution_not_upgrade": 40,
+  "hard_excluded": 63,
+  "license_unclear": 3
  },
- "generated_at": "2026-11-07T05:56:57Z"
+ "generated_at": "2026-11-07T06:44:08Z"
 }

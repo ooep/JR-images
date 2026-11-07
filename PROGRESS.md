@@ -1889,3 +1889,9 @@
 - st08570 维持现图 below_spec_confirmed：藤の牛島：最高 7.21<7.65
 - B43 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 8ce3261c）
 - B43 runner replaced=1（st03369 一本松，1800x1014，score 3.32）；staged=69 条覆盖 24 站；本地 0 接受
+
+
+## ws17 below-spec replace WS17-B44 — 2026-11-07T06:44:08Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=4 staged=21 confirmed=0 skipped=0
+- reject_dist={"resolution_low_lt_1600": 129, "same_as_current": 25, "mime_unsupported": 47, "oversize_gt_25mb": 4, "title_non_station_scene": 15, "no_author_metadata": 9, "duplicate_title": 33, "title_names_other_station": 140, "quality_reject_low_color": 14, "resolution_not_upgrade": 40, "hard_excluded": 63, "license_unclear": 3}
