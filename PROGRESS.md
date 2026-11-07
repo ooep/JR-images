@@ -1820,3 +1820,33 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=0 staged=25 confirmed=0 skipped=0
 - reject_dist={"same_as_current": 25, "duplicate_title": 21, "resolution_low_lt_1600": 72, "no_author_metadata": 9, "hard_excluded": 56, "title_names_other_station": 86, "mime_unsupported": 54, "oversize_gt_25mb": 2, "license_unclear": 10, "quality_reject_low_color": 16, "resolution_not_upgrade": 14, "title_non_station_scene": 46}
+
+
+## ws17 local accept WS17-B42 — 2026-11-07T05:40:52Z
+- st00258 大久保 ← File:JR East Ōkubo Station building in Katagami City, Akita Pref.jpg (done, score 8.05→8.13)
+- st00952 维持现图 below_spec_confirmed：余子：最高 7.09<7.29
+- st00954 维持现图 below_spec_confirmed：中浜：最高 4.37<7.38
+- st00955 维持现图 below_spec_confirmed：米子空港：/2 7.63>7.52 但为海上自卫队基地楼，/1 海上保安厅，无站名
+- st00962 维持现图 below_spec_confirmed：富士見町：最高 6.84<8.57
+- st01160 维持现图 below_spec_confirmed：市場：站名命中但最高 7.38<7.59
+- st01223 维持现图 below_spec_confirmed：亀山：最高 6.85<7.62
+- st01265 维持现图 below_spec_confirmed：伊丹：最高 7.30<8.40
+- st01266 维持现图 below_spec_confirmed：伊丹：最高 7.30<7.61
+- st01315 维持现图 below_spec_confirmed：塩屋：最高 7.83<7.99
+- st01374 维持现图 below_spec_confirmed：国府：最高 7.53<8.61
+- st02736 维持现图 below_spec_confirmed：別府：最高 6.97<8.13
+- st02748 维持现图 below_spec_confirmed：荒井：最高 7.04<8.28
+- st02753 维持现图 below_spec_confirmed：御影：最高 6.49<7.53
+- st03229 维持现图 below_spec_confirmed：黒井：最高 8.09<8.14
+- st03400 维持现图 below_spec_confirmed：緑が丘：站名命中但 7.00<7.74
+- st03448 维持现图 below_spec_confirmed：長田：最高 6.40<8.56
+- st03449 维持现图 below_spec_confirmed：長田：站名命中但 7.30<7.65
+- st04138 维持现图 below_spec_confirmed：小野：最高 6.59<7.80
+- st04215 维持现图 below_spec_confirmed：丸山：最高 6.39<8.51
+- st05020 维持现图 below_spec_confirmed：松崎：最高 8.07<8.66
+- st05024 维持现图 below_spec_confirmed：浦安：最高 7.99<8.70
+- st05030 维持现图 below_spec_confirmed：御来屋：最高 6.81<7.27
+- st07292 维持现图 below_spec_confirmed：岸本：/3 7.78>7.72 但为列车+大山风景，车照非站景
+- st08269 维持现图 below_spec_confirmed：福部：/3 7.86>7.57 但为福部町综合支所（町役场），非站景
+- B42 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 21ecfa00）
+- B42 runner replaced=0、confirmed=0；staged=70 条覆盖 25 站；rejected_notable=132；本地接受 1
