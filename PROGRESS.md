@@ -1860,3 +1860,32 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=1 staged=24 confirmed=0 skipped=0
 - reject_dist={"resolution_low_lt_1600": 107, "same_as_current": 25, "license_unclear": 7, "title_non_station_scene": 6, "duplicate_title": 6, "title_names_other_station": 26, "mime_unsupported": 27, "quality_reject_low_color": 17, "hard_excluded": 35, "resolution_not_upgrade": 19, "no_author_metadata": 1}
+
+
+## ws17 local accept WS17-B43 — 2026-11-07T06:32:14Z
+- st01113 维持现图 below_spec_confirmed：吹上：最高 7.21<7.39
+- st01287 维持现图 below_spec_confirmed：三郷：最高 6.12<7.76
+- st01932 维持现图 below_spec_confirmed：川口：最高 6.62<8.50
+- st02068 维持现图 below_spec_confirmed：杉戸高野台：最高 7.37<7.90
+- st02069 维持现图 below_spec_confirmed：東武動物公園：最高 7.12<8.27
+- st02079 维持现图 below_spec_confirmed：新越谷：最高 5.76<8.63
+- st02304 维持现图 below_spec_confirmed：南桜井：最高 7.73<8.11（/3 为 1800x333 条幅）
+- st02399 维持现图 below_spec_confirmed：金子：站名命中但最高 7.34<8.59
+- st02589 维持现图 below_spec_confirmed：鷲宮：最高 6.66<7.90
+- st03149 维持现图 below_spec_confirmed：和光市：最高 7.09<7.58
+- st03420 维持现图 below_spec_confirmed：戸田：最高 7.39<7.67
+- st04213 维持现图 below_spec_confirmed：沼南：站名命中但最高 6.49<7.51
+- st04218 维持现图 below_spec_confirmed：伊奈中央：站名命中但最高 6.11<7.81
+- st04407 维持现图 below_spec_confirmed：仏子：站名命中但最高 6.59<7.97
+- st05580 维持现图 below_spec_confirmed：武州荒木：站名命中但最高 7.34<7.74
+- st05581 维持现图 below_spec_confirmed：東行田：站名命中但 7.46<7.52
+- st05595 维持现图 below_spec_confirmed：小前田：站名命中但最高 6.39<7.55
+- st05596 维持现图 below_spec_confirmed：桜沢：最高 6.81<7.60
+- st05603 维持现图 below_spec_confirmed：親鼻：最高 6.41<7.22
+- st05887 维持现图 below_spec_confirmed：武州唐沢：最高 6.38<7.73
+- st06119 维持现图 below_spec_confirmed：入曽：最高 6.82<7.83
+- st06120 维持现图 below_spec_confirmed：新所沢：站名命中但最高 6.93<7.87
+- st08313 维持现图 below_spec_confirmed：玉淀：站名命中但最高 7.57<7.68
+- st08570 维持现图 below_spec_confirmed：藤の牛島：最高 7.21<7.65
+- B43 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 8ce3261c）
+- B43 runner replaced=1（st03369 一本松，1800x1014，score 3.32）；staged=69 条覆盖 24 站；本地 0 接受
