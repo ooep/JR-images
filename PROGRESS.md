@@ -1721,3 +1721,29 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=1 staged=21 confirmed=3 skipped=0
 - reject_dist={"mime_unsupported": 110, "resolution_low_lt_1600": 73, "title_names_other_station": 60, "duplicate_title": 8, "same_as_current": 25, "hard_excluded": 26, "resolution_not_upgrade": 15, "quality_reject_low_color": 20, "license_unclear": 2, "license_forbidden": 6, "no_author_metadata": 2}
+
+
+## ws17 local accept WS17-B39 — 2026-11-07T04:03:26Z
+- st02681 九条 ← File:Kintetsu Kujo Station east entrance.jpg (done, score 6.13→6.86)
+- st07191 新王寺 ← File:Shin-Ōji Station 202608.jpg (done, score 6.32→6.59)
+- st00055 维持现图 below_spec_confirmed：桜井：候选长边 1800<现图 2048，尺寸闸不过
+- st00064 维持现图 below_spec_confirmed：帯解：最高 6.19，无站名站证
+- st01232 维持现图 below_spec_confirmed：郡山：候选长边 1800<现图 2048
+- st01761 维持现图 below_spec_confirmed：五位堂：最高 5.51<6.72
+- st01785 维持现图 below_spec_confirmed：長谷寺：最高 6.09<6.12
+- st01786 维持现图 below_spec_confirmed：大和朝倉：最高 5.85<6.11
+- st02669 维持现图 below_spec_confirmed：菖蒲池：7.39/7.30 为彩虹湖景，非站景
+- st02670 维持现图 below_spec_confirmed：新大宮：6.49>5.97 但画面为公路跨线桥，无站名
+- st02696 维持现图 below_spec_confirmed：平端：最高 6.44<6.51
+- st02697 维持现图 below_spec_confirmed：二階堂：7.53 为粉色花丛，非站景
+- st03462 维持现图 below_spec_confirmed：白庭台：8.06/7.07 为バーミヤン餐饮店，非站景
+- st03841 维持现图 below_spec_confirmed：真菅：7.14 为松塚-真菅间车照，非站景
+- st03843 维持现图 below_spec_confirmed：築山：7.68 为石室古迹，非站景
+- st04956 维持现图 below_spec_confirmed：葛：/1 为东武葛生駅（栃木）异站；/2 改札无站名；/3 无站证
+- st04957 维持现图 below_spec_confirmed：市尾：5.88<6.78
+- st04961 维持现图 below_spec_confirmed：二上山：4.14/4.00 为书籍插图页
+- st05075 维持现图 below_spec_confirmed：畝傍御陵前：站名命中但最高 6.76<6.88
+- st07188 维持现图 below_spec_confirmed：池部：最高 5.96<6.67
+- st08539 维持现图 below_spec_confirmed：萩の台：最高 6.43，画面为街角电箱/保育园门，非站景
+- B39 三查：foreign 0 / same_name_other_line 0 / dup_image 0（runner verify 通过后提交 cdede37b）
+- B39 runner replaced=1（st01286）；runner 自动确认 3；staged=59 条覆盖 21 站
