@@ -2039,3 +2039,31 @@
 - queue: 24 站（review/below_spec 高分替换）
 - replaced=1 staged=15 confirmed=0 skipped=8
 - reject_dist={"title_names_other_station": 67, "hard_excluded": 55, "resolution_low_lt_1600": 86, "same_as_current": 16, "mime_unsupported": 29, "duplicate_title": 10, "resolution_not_upgrade": 19, "title_non_station_scene": 15, "quality_reject_low_color": 10, "license_unclear": 6, "license_forbidden": 2, "no_author_metadata": 1}
+
+
+## ws17 WS17-MISS01 无图站重捕裁决 — 2026-11-09T06:41:06Z（runner 42571733409, artifact 13653937312）
+- st00014  runner 无候选，保留 review 转 WS17-MISS02
+- st00040 大谷 置 missing+bsc：3 张全为韩国大邱 Daegok（Daegu 地铁 / Korail K322），c3 见「Way out 出口 / Transfer 換乘」——第一查 foreign 直接拦截
+- st00051  runner 无候选，保留 review 转 WS17-MISS02
+- st00085  runner 无候选，保留 review 转 WS17-MISS02
+- st00149 土橋 置 missing+bsc：3 张全为名鉄 土橋駅（愛知県豊田市），OCR「土橋駅 MEITETSU TSUCHIHASHI STATION」；基线 愛媛県 郡中線（伊予鉄）。opcheck 因 郡中線 无 LINE_OP 映射未命中，人工按同名异社拦截
+- st00170  runner 无候选，保留 review 转 WS17-MISS02
+- st00182  runner 无候选，保留 review 转 WS17-MISS02
+- st00190 稲荷町 置 missing+bsc：3 张全为東京メトロ銀座線 稲荷町（OCR いなりちょう / たわらまち），基线 広島県 広島電鉄 稲荷町 → 同名异社异县
+- st00254 追分 接受 c1「File:JR Muroran-Main-Line・Sekisho-Line Oiwake Station building.jpg」isc 6.65（photo+license 同步落库）
+- st00258 大久保 置 missing+bsc：c1/c2 秋田県潟上市 JR東日本 大久保（第四查两条 jr_region_mismatch）、c3 東京 JR中央・総武線 大久保（OCR 中央・総武線）；基线 兵庫県 北陸本線/山陽本線。按交接文档「st00258 置 missing+bsc」执行
+- st00259  runner 无候选，保留 review 转 WS17-MISS02
+- st00309 青山 接受 c1「File:JR Echigo Line Aoyama Station building.jpg」isc 6.76（photo+license 同步落库）
+- st00353 市立病院前 置 missing+bsc：c1/c2 均为沖縄ゆいレール 市立病院前（高架单轨），基线 鹿児島県 鹿児島市電第二期線 路面电车站 → 同名异县异社
+- st00377  runner 无候选，保留 review 转 WS17-MISS02
+- st00378 中郡 置 missing+bsc：c1/c2 均为山形県 JR東日本 中郡（第四查两条命中 obs=JR東日本 exp=JR九州），基线 鹿児島市電 中郡 → 异地区异社
+- st00380  runner 无候选，保留 review 转 WS17-MISS02
+- st00424 貝塚 接受 c3「File:Platform of Kaizuka Station (Nishitetsu Kaizuka Line) 8.jpg」isc 6.07（photo+license 同步落库）
+- st00457 大橋 置 missing+bsc：c1 西武多摩川線 是政駅と是政大橋（非本站）、c2 国立国会图书馆锦绘「木曽六十九駅 京都三條大橋」非站景照片；基线 長崎県 長崎電気軌道 大橋
+- st00469 住吉 转 review：3 张均为阪堺線/上町線 住吉 路面电车照，线路相符但 self_hit=False、无可见站名牌（subject_unverified），且 st00469 处于 dup_quarantine 重复图组 → 保留人工复核
+- st00473 石橋 置 missing+bsc：c1 JR東日本 石橋駅（栃木，第四查命中），基线 長崎県 長崎電軌大浦支線 石橋 → 同名异社
+- st00571 栄 置 missing+bsc：c1/c3 名古屋市営地下鉄名城線 栄（OCR M 名城線）、c2 神鉄 栄（obs=神鉄，opcheck 因 水島本線 无映射漏判，人工拦截）；基线 岡山県 水島本線 栄
+- st00577 福井 置 missing+bsc：c1 JR西日本 福井駅、c2/c3 JR貨物 南福井駅 （OCR 南福井駅），均 福井県；基线 岡山県 水島本線 福井 → 异县异社
+- st00580 球場前 转 review：c2/c3 为水島臨海鉄道 キハ37 103 车辆照（运营者相符，OCR MIZUSHIMA RINKAI RAILWAY），但无站景/站名牌；c1 西武球場前 异社。属 no_station_evidence，保留人工复核
+- st00602  runner 无候选，保留 review 转 WS17-MISS02
+- 合计 ACCEPT 3 / MISSING_BSC 10 / REVIEW 2 / RETRY 9；40 候选逐条跑 OCR + 第四查，另人工补拦 opcheck 无 LINE_OP 映射的 st00149（名鉄土橋）、st00571（神鉄栄）两条同名异社。
