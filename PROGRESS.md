@@ -2224,3 +2224,31 @@
 - queue: 24 站（review/below_spec 高分替换）
 - replaced=3 staged=16 confirmed=5 skipped=0
 - reject_dist={"resolution_low_lt_1600": 65, "quality_reject_low_color": 13, "no_author_metadata": 3, "title_names_other_station": 135, "hard_excluded": 21, "mime_unsupported": 55, "duplicate_title": 13, "license_unclear": 2, "near_duplicate": 1, "title_non_station_scene": 34}
+
+
+## WS17-MISS04 本地裁决 — 2026-11-09T08:34:49Z（runner 42584813882）
+- st01958 ラクテンチ上 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st02003 法界院 撤图置 missing+bsc：3 张「Hokaiin 02/03/05」放大后为法界院寺院山门/堂宇（石柱刻「法界院」），非津山線法界院駅站景，全部拦截。
+- st02036 彦根口 接受 c1「File:HikoneGuchiEki KokokuBus 20070701.jpg」isc 5.69（替换原错挂图 None）
+- st02056 水口城南 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st02188 蒲池 接受 c1「File:Nishitestu kamachi 2026.jpg」isc 6.53（替换原错挂图 None）
+- st02193 三潴 撤图置 missing+bsc：c1「Mizuma Railway Mikeyamaguchi」三ヶ山口駅、c2 水間鉄道 0km 标、c3 放大后匾额「驛間水 / 水間観音駅」——整组为大阪府水間鉄道，与目标福岡県西鉄三潴同名异县异社，全部拦截。
+- st02201 古賀茶屋 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st02231 塩塚 接受 c1「File:Nishitetsu Shiotsuka Station01.jpg」isc 6.61（替换原错挂图 None）
+- st02232 徳益 撤图置 missing+bsc：2 张候选为「有明海沿岸道路 徳益IC」高速公路交流道（OCR「有明海沿岸道路」），不是车站，拦截。
+- st02265 金山 接受 c2「File:Fukuoka Kanayama-STA Entrance2.jpg」isc 7.44（替换原错挂图 None）
+- st02317 萩原 撤图置 missing+bsc：3 张「MT-Hagiwara Station」OCR「萩原駅 MEITETSU HAGIWARA STATION」为愛知県名鉄萩原駅，与目标福岡県筑豊電気鉄道線萩原同名异县异社，拦截。
+- st02517 川路 接受 c3「File:Kawaji-eki2.JPG」isc 4.92（替换原错挂图 None）
+- st02559 船尾 撤图置 missing+bsc：3 张「Hankai Funao」OCR「HN28/29 ふなお 船尾 FUNAO 石津 浜寺駅前」为大阪府阪堺電軌船尾，与目标福岡県後藤寺線船尾同名异县异社，拦截。
+- st02668 学園前 撤图置 missing+bsc：c1「Keisei KS63 Gakuemmae」为千葉県京成千原線学園前（OCR「おゆみ野 がくえんまえ」），c2/c3 为奈良県近鉄学園前駅站内 FamilyMart 便利店（非站景），目标北海道東豊線学園前，全部拦截。
+- st02692 今津 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st02732 高砂 撤图置 missing+bsc：c1 为高砂駅跡空地、c2「JR Hakodate-Main-Line Takasago Station」为北海道函館本線高砂駅、c3 为锦绘；目标兵庫県山陽電鉄高砂，同名异县异社，拦截。
+- st02752 大阪梅田 保留现状：runner 已替换并随 ac54ad4b 入库；回读放大为阪急大阪梅田駅站内地下通道+扶梯，标题「阪急大阪梅田駅エスカレーター」线路/运营者/都道府県一致，虽取景为站内通道但无错站风险，保留现挂图。
+- st02777 洗馬 接受 c3「File:JR Seba sta 001.jpg」isc 6.63（替换原错挂图 None）
+- st02801 広小路 撤图置 missing+bsc：c1「Osaki-Hirokoji」OCR 含「TOKYUポイント / 立正大学」为東急池上線大崎広小路（東京）；c2 放大为三重県伊賀線「広小路駅 HIROKOJI STATION」木造站舍+红色 763 号车，c3 亦非万葉線电停；目标富山県高岡軌道線広小路，全部拦截。
+- st02802 広小路 保留现状：runner 已替换并入库；回读为三重県伊賀線広小路駅木造站舍+单线站台+售货机，与基线一致，第四查无冲突，保留。
+- st02903 中田 接受 c3「File:Yokohama-municipal-subway-B04-Nakada-station-platform-20230708-150302.jpg」isc 7.74（替换原错挂图 None）
+- st03036 城下 保留现状：runner 已替换并入库；回读为岡山電気軌道東山本線城下电停（路面电车+岛式电停），与基线一致，保留。
+- st03126 星川 接受 c3「File:SG-Hoshikawa Station-Building.jpg」isc 7.10（替换原错挂图 None）
+- st03225 丹波大山 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- 合计 ACCEPT 8 / MISSING_BSC 13 / REVIEW 0 / RETRY 0 / NOOP 3；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
