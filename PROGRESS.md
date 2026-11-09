@@ -2218,3 +2218,9 @@
 - st06711 扇町 接受 c2「File:JREast-Tsurumi-line-JI10-Ogimachi-station-platform-20240203-142146.jpg」isc 7.34（替换原错挂图 File:JR Tsurumi Line Ōgimachi Station Platform.jpg）
 - st06769 相模湖 接受 c1「File:JREast-Chuo-main-line-JC25-Sagamiko-station-platform-20220730-062444.jpg」isc 6.21（替换原错挂图 File:Sagamiko station platform 2-3 20211121 111425.jpg）
 - 合计 ACCEPT 16 / MISSING_BSC 0 / REVIEW 0 / RETRY 0 / NOOP 9；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
+
+
+## ws17 below-spec replace WS17-MISS04 — 2026-11-09T08:28:08Z
+- queue: 24 站（review/below_spec 高分替换）
+- replaced=3 staged=16 confirmed=5 skipped=0
+- reject_dist={"resolution_low_lt_1600": 65, "quality_reject_low_color": 13, "no_author_metadata": 3, "title_names_other_station": 135, "hard_excluded": 21, "mime_unsupported": 55, "duplicate_title": 13, "license_unclear": 2, "near_duplicate": 1, "title_non_station_scene": 34}
