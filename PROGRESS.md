@@ -2005,3 +2005,31 @@
 - queue: 24 站（review/below_spec 高分替换）
 - replaced=2 staged=22 confirmed=0 skipped=0
 - reject_dist={"title_non_station_scene": 15, "duplicate_title": 22, "resolution_not_upgrade": 62, "hard_excluded": 59, "resolution_low_lt_1600": 89, "same_as_current": 24, "quality_reject_low_color": 30, "title_names_other_station": 72, "mime_unsupported": 10, "no_author_metadata": 7}
+
+
+## ws17 C01 cleanup 裁决 — 2026-11-09T06:04:28Z（runner 42365826212）
+- st01196 木津 置 missing+bsc，删 photo/license：c1 无站证、c2=新木津駅遗迹非本站、c3 木津改札内景 isc2.35≪8.66 且无站名牌
+- st01265 伊丹 置 missing+bsc，删 photo/license：c1/c2 阪急伊丹(异社，第四查拦)；c3 JR伊丹観光案内所/キオスク店铺内景 isc6.35<8.4，非站舍
+- st00467 住吉 置 missing+bsc，删 photo/license：c1 阪神住吉(异社)；c2 六甲ライナー住吉(神戸新交通，非JR)
+- st01317 垂水 转 review：第四查「山陽」为误报：Sanyo Main Line=JR山陽本線，c2 OCR「JR神戸線 西明石・姫路方面」可证；3 张 isc≤5.86<7.35，待人工决定是否降分接受
+- st01293 塚口 置 missing+bsc，删 photo/license：c1/c3 阪急塚口(异社)；c2 券売機画面特写非站景
+- st03265 相野 置 missing+bsc，删 photo/license：3 张全为秋田県「あいのの」駅(JR東日本)，异县异地区，第四查 3 命中
+- st03805 佐倉 置 missing+bsc，删 photo/license：runner 无候选返回
+- st05483 本八幡 转 review：c2/c3 都営地下鉄本八幡(异社)；c1 仅见「JR総武線」导向牌、无站名牌且标题为都営新宿線，证据不足
+- st02737 別府 转 review：c3=福岡 別府駅(异县)；c1 夜景无站证；c2 标题「JR別府駅」但为 1800×533 超宽条幅，按坑⑤不得裁切使用
+- st07007 大神 转 review：c1/c3=秋田 男鹿駅(异县，第四查 JR東日本)；c2 OCR「大神駅」正确但 isc5.66<8.49
+- st07025 立石 置 missing+bsc，删 photo/license：3 张全为京成 立石/青砥-亀有 东京都景(异社异县)，c1 第四查命中京成
+- st00068 福島 转 review：c1 OCR「福島駅 ふくしま」+标题 Fukushima Station (JR West) 正确、c2 大阪環状線福島駅正确；isc≤6.04<7.81；c3 阪神福島(异社)
+- st00072 西九条 置 missing+bsc，删 photo/license：runner 无候选返回
+- st01207 新田 置 missing+bsc，删 photo/license：c1「SHINDEN STATION」无法确认为宮城県新田、c2 東武200系车照、c3 下新田駅(群馬)
+- st07267 埴生 转 review：c1 OCR「厚狭/新山口方面/下関・九州方面」可证 JR 埴生，isc6.65<7.42；c3 isc7.79>7.42 但无可见站名牌，二者择一待人工
+- st05376 島田 转 review：c1/c2 OCR「島田駅」正确(山口 島田)，isc≤7.71<8.01；c3 待合室内景无站证
+- st05513 富士急ハイランド 转 review：3 张均为本站富士急ハイランド駅，第四查「富士急」判异社源于 index lines 推得 exp=JR，属基线冲突，需人工确认运营者口径
+- st00534 大原 转 review：c1 OCR「大原駅」+标题 Ōhara Station (Okayama) 正确，isc7.6<9.14；c2=千葉 大原(异县)、c3=西大原
+- st05185 邑久 置 missing+bsc，删 photo/license：3 张全为東京 尾久駅(JR東日本 東北本線)，异县；c1/c3 第四查命中
+- st00880 大門 置 missing+bsc，删 photo/license：3 张全为都営浅草線 大門(東京)，目检均地下铁站台；c2 第四查命中都営，c1/c3 靠目检补拦
+- st01120 京橋 接受 c3「File:Tokyo-Metro Kyobashi-STA Platform1-2.jpg」isc 7.44→7.86（photo+license 同步换）
+- st03823 馬喰町 转 review：第四查「都営」为误报(画面内「都営地下鉄新宿線は西口へ」导向牌)；c1 为 JR 馬喰町総武快速站台，但现图长边2048>候选1800，不满足长边条件
+- st02123 東武ワールドスクウェア 转 review：3 张均为本站東武ワールドスクウェア駅，第四查「東武」判异社源于 index lines 推得 exp=JR，属基线冲突，需人工确认
+- st01993 守山 置 missing+bsc，删 photo/license：c1=磐城守山(福島)、c2=锦绘非站景、c3 告示为「奈良線/京都」与滋賀 守山(琵琶湖線)不符
+- 合计 ACCEPT 1 / MISSING_BSC 12 / REVIEW 11；第四查对 Sanyo Main Line、都営导向牌、lines 跨社污染产生的误报已逐条人工复核。
