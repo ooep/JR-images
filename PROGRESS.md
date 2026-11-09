@@ -2326,3 +2326,28 @@
 - queue: 20 站（review/below_spec 高分替换）
 - replaced=1 staged=9 confirmed=10 skipped=0
 - reject_dist={"resolution_low_lt_1600": 65, "title_names_other_station": 63, "duplicate_title": 8, "mime_unsupported": 138, "hard_excluded": 17, "license_unclear": 12, "quality_reject_low_color": 7, "title_non_station_scene": 5, "no_author_metadata": 2, "quality_reject_white_screenshot": 1}
+
+
+## WS17-MISS07 本地裁决 — 2026-11-09T10:58:43Z（runner 42593235332）
+- st07511 丸森 撤图置 missing+bsc：c1「Marumoribashi EchigoBus」为丸森橋巴士站旁水池/锈牌，非駅景；c2「KIMG1664」与 c3「Abukuma express railway abukuma station」均为阿武隈急行「あぶくま駅」木造站舍（c2 墙面牌放大读「あぶくま」，OCR 亦命中），站名与目标宮城県阿武隈急行線丸森駅不符；三张全拦。
+- st07585 黄金 接受 c1「File:Kintetsu Kogane Sta. - panoramio - Nagono.jpg」isc 5.15（替换原错挂图 None）
+- st07649 東大垣 撤图置 missing+bsc：3 张「Ogaki Castle (Gifu)」均为大垣城白墙黑瓦仓库与屋脊鯱（しゃちほこ）瓦饰特写，非駅景，全部拦截。
+- st07669 新相ノ木 撤图置 missing+bsc：runner confirmed「below_spec_confirmed_no_candidate」：整批无任何候选回传，确认无可用图。
+- st07703 下立 接受 c3「File:Oritate sta.jpg」isc 5.32（替换原错挂图 None）
+- st07707 西滑川 撤图置 missing+bsc：runner confirmed「below_spec_confirmed_no_candidate」：整批无任何候选回传，确认无可用图。
+- st07712 早月加積 撤图置 missing+bsc：runner confirmed「below_spec_confirmed_no_candidate」：整批无任何候选回传，确认无可用图。
+- st07773 峰 撤图置 missing+bsc：3 张「Xiangfeng Station」均为中国福州地铁象峰站站台/站厅（OCR「终点站 / 象峰 / Xiangfeng / 客服中心」），第一查 foreign 且非目标栃木県宇都宮芳賀ライトレール線峰，全部拦截。
+- st07834 山隈 撤图置 missing+bsc：runner confirmed「below_spec_confirmed_no_candidate」：整批无任何候选回传，确认无可用图。
+- st07919 宿川原 保留现状：runner 自动替换并随 90ee2aaa 入库；回读 photo 放大为青森県乡间单线白色小站房+蓝色駅名標，OCR 检出「宿川原駅」，title「Shukugawara Station, Aomori 20190921.jpg」、GPS dist=21.0m、self_hit=True；与青森県大鰐線宿川原駅基线一致，NOOP 保留。
+- st07946 棚方 撤图置 missing+bsc：runner confirmed「below_spec_confirmed_no_candidate」：整批无任何候选回传，确认无可用图。
+- st07964 中田平 撤图置 missing+bsc：runner confirmed「below_spec_confirmed_no_candidate」：整批无任何候选回传，确认无可用图。
+- st07999 甲立 清除 runner 误标的 bsc 确认标记（保留现挂图与 index 现状）
+- st07999 甲立 保留现状：runner 本批无任何候选回传并把它标成 below_spec_confirmed/bs_batch，但该站 state=review / index=done 且photo+license 现挂图完整，属此前已识别的 state/index 历史语义分歧站（同 st05086、st05277）。按既定口径不撤图、不判 bsc，仅清除 runner 误标并保留现挂图与 index 现状。
+- st08280 真倉 撤图置 missing+bsc：runner confirmed「below_spec_confirmed_no_candidate」：整批无任何候选回传，确认无可用图。
+- st08290 石見福光 撤图置 missing+bsc：runner confirmed「below_spec_confirmed_no_candidate」：整批无任何候选回传，确认无可用图。
+- st08405 林 撤图置 missing+bsc：c1「Hayashi Station Platform」虽为日本乡间单线站台，但 OCR NO_TEXT_DETECTED、候车亭白色小牌放大无可读站名、dist=None，缺站名牌与运营者证据，按「无站名文字全拒」口径不误接受；c2/c3「CP Oriente Station」为葡萄牙里斯本东方站玻璃钢结构穹顶，第一查 foreign，全部拦截。
+- st08517 千里 撤图置 missing+bsc：第四查 FLAG operator_mismatch：c1「KT-Chisato Station-Building 1」OCR「近鉄 KINTETSU 千里駅 Chisato Station」，c2「Chisat station platform」、c3「Chisato Station 2020」同簇近鉄千里站舍/站台；目标为富山県高山本線千里（exp=JR），异社同名，全部拦截。
+- st08679 朝陽 撤图置 missing+bsc：3 张「Beijing Chaoyang Railway Station」均为中国北京朝阳站出站口/综合服务中心（OCR「铁路出站口 / 综合服务中心 / 京哈高铁 / 北京朝阳站」），第一查 foreign，全部拦截。
+- st08736 向瀬上 撤图置 missing+bsc：runner confirmed「below_spec_confirmed_no_candidate」：整批无任何候选回传，确认无可用图。
+- st08804 森山 撤图置 missing+bsc：c1「JR Suigun Line Iwaki-Moriyama Station Platform」与 c3 候车室为福島県 JR 水郡線磐城守山駅（OCR「磐城守山」）；c2「JR West Moriyama Station Gate」第四查 FLAG jr_region_mismatch（OCR「奈良線 / 菎津・京都」，JR西日本）；目标为長崎県島原鉄道線森山，同名异县异社，全部拦截。
+- 合计 ACCEPT 2 / MISSING_BSC 16 / REVIEW 0 / RETRY 0 / NOOP 2；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
