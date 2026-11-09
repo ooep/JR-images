@@ -2357,3 +2357,32 @@
 - queue: 25 站（review/below_spec 高分替换）
 - replaced=2 staged=18 confirmed=5 skipped=0
 - reject_dist={"hard_excluded": 69, "resolution_low_lt_1600": 80, "duplicate_title": 9, "same_as_current": 25, "mime_unsupported": 174, "title_names_other_station": 113, "quality_reject_low_color": 13, "title_non_station_scene": 25, "license_unclear": 5, "no_author_metadata": 4, "resolution_not_upgrade": 22}
+
+
+## WS17-B48 本地裁决 — 2026-11-09T11:20:45Z（runner 42605793317）
+- st00858 子安 接受 c1「File:Keikyu-railway-KK33-Koyasu-station-platform-20230708-114139.jpg」isc 6.77（替换原错挂图 File:Keikyu-railway-KK33-Koyasu-station-building-20230815-14）
+- st01381 穴部 接受 c1「File:Anabe Station 2025 6 22.jpg」isc 6.69（替换原错挂图 File:Daiyuzan-Series5000.jpg）
+- st01593 大和 接受 c2「File:Yamato Station platforms - Kanagawa - 2023 March 3 various 18 29 47 496000.jpeg」isc 6.49（替换原错挂图 File:Sagami-railway-SO14-Yamato-station-platform-20200103-13）
+- st02155 高津 接受 c3「File:Tokyu-railway-den-en-toshi-line-Takatsu-station-platform-2 20080828.jpg」isc 6.10（替换原错挂图 File:Both exits panorama - Takatsu station - August 2014.jpg）
+- st02583 大山寺 保留现状：3 张「MT-Taisanji Station-Building」均为愛知県名鉄小牧線大山寺駅（c3 OCR「※大山寺駅 / 名鉄名古屋方面」，绿色拱顶站舍 + 蓝色栏杆），目标为神奈川県大山鋼索線大山寺駅，同名异县异社，全部拦截。注意现挂图「MT-Taisanji Station-Building 2.JPG」同属此错挂簇，本批无正确替换图；按常规批口径不撤图，标注留待专门清扫。
+- st03125 星川 接受 c1「File:Hoshikawa Station Kanagawa 2022 Dec 11 various.jpeg」isc 6.91（替换原错挂图 File:Sagami-railway-SO05-Hoshikawa-station-platform-20191207）
+- st03129 日吉 保留现状：3 张「2 Chome Hiyoshi, Kōhoku-ku, Yokohama ... panoramio」均为日吉站前商店街 / 广场 / 商业设施内景（OCR「中央三井 / Wister Donut / ITOKUL」），非駅舍站台主体，全部拦截，保留现挂图。
+- st03718 神武寺 接受 c1「File:Keikyu-railway-KK52-Jimmuji-station-platform-20190221-082652.jpg」isc 6.94（替换原错挂图 File:Keikyu-railway-KK52-Jimmuji-station-building-20190221-0）
+- st03835 衣笠 接受 c1「File:JRE Kinugasa-STA Platform.jpg」isc 6.35（替换原错挂图 File:JR Yokosuka-Line Kinugasa Station building.jpg）
+- st04186 足柄 保留现状：c3「JR Gotemba Line Ashigara Station Platform」为静岡県 JR 御殿場線足柄駅（OCR「御殿場 / for Gotemba, Numazu / 松田・国府津方面」），与基线小田急小田原線足柄駅同名异线异社；c1 为站前巷道民居、c2 为小田急列车照，均非駅舍站台主体，全部拦截。现挂图「JR Gotemba Line Ashigara Station building」亦为同一错挂簇，本批无合格替换图；按常规批口径不撤图，标注留待专门清扫。
+- st04243 東門前 接受 c1「File:Keikyu-railway-KK24-Higashimonzen-station-platform-20230815-121421.jpg」isc 6.24（替换原错挂图 File:Keikyu-railway-KK24-Higashimonzen-station-building-2023）
+- st04567 河山 保留现状：runner confirmed「below_spec_confirmed_no_candidate」：本批无候选回传；该站有现挂图与 license，按常规批口径保留现挂图，不撤图、不判 missing+bsc。
+- st07145 山口 保留现状：runner 自动替换并随 5f83ca46 入库；回读放大为 JR 山口駅木造大屋顶站舍 + 土产店，title「140720 Yamaguchi Station Yamaguchi Yamaguchi pref Japan02s3.jpg」、dist=10.6m、self_hit，与山口県山口駅基线一致，NOOP 保留。
+- st07262 人丸 保留现状：3 张均为歌川国貞浮世绘「東海道五十三次の内 鳴海 人丸」美人画（OCR 仅为国立国会图书馆编号 893701），锦绘非駅景，全部拦截，保留现挂图。
+- st07269 宇部 保留现状：runner 自动替换并入库；回读放大为宇部駅多股道站台（蓝色 JR 货车/机车 + 架线门架），title「宇部駅ホーム（下関方面）」、dist=105.4m、self_hit，与山口県宇部駅基线一致，NOOP 保留。
+- st07821 浅野 接受 c1「File:JREast-Tsurumi-line-JI05-Asano-station-platform-1-2-20220730-135900.jpg」isc 7.36（替换原错挂图 File:Asano-Station-building-2020.jpg）
+- st07827 海芝浦 接受 c2「File:海芝浦駅 - panoramio.jpg」isc 7.40（替换原错挂图 File:Umishibaura sunrise panorama.jpg）
+- st07857 床波 保留现状：runner confirmed「below_spec_confirmed_no_candidate」：本批无候选回传；该站有现挂图与 license，按常规批口径保留现挂图，不撤图、不判 missing+bsc。
+- st07861 南中川 保留现状：唯一候选「Kasuga-Onojo-Nakagawa Fire Station Minami Branch」为春日・大野・中川消防署南分署建筑（OCR「毎日・大野」），非駅景，拦截，保留现挂图。
+- st08226 越ケ浜 保留现状：runner confirmed「below_spec_confirmed_no_candidate」：本批无候选回传；该站有现挂图与 license，按常规批口径保留现挂图，不撤图、不判 missing+bsc。
+- st08227 長門大井 保留现状：runner confirmed「below_spec_confirmed_no_candidate」：本批无候选回传；该站有现挂图与 license，按常规批口径保留现挂图，不撤图、不判 missing+bsc。
+- st08232 江崎 保留现状：runner confirmed「below_spec_confirmed_no_candidate」：本批无候选回传；该站有现挂图与 license，按常规批口径保留现挂图，不撤图、不判 missing+bsc。
+- st08545 尻手 接受 c1「File:JREast-Nambu-line-JN02-Shitte-station-building-20220730-151708.jpg」isc 6.58（替换原错挂图 File:JR Nambu-Line Shitte Station building.jpg）
+- st08868 久地 接受 c1「File:JREast-Nambu-line-JN12-Kuji-station-platform-20240203-101928.jpg」isc 6.42（替换原错挂图 File:JR Nambu-Line Kuji Station building.jpg）
+- st08877 稲田堤 接受 c2「File:JR南武線 稲田堤駅 2013.5.17 - panoramio.jpg」isc 7.32（替换原错挂图 File:Inadazutsumi Station new station-building 20230811.jpg）
+- 合计 ACCEPT 13 / MISSING_BSC 0 / REVIEW 0 / RETRY 0 / NOOP 12；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
