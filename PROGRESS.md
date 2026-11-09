@@ -2252,3 +2252,9 @@
 - st03126 星川 接受 c3「File:SG-Hoshikawa Station-Building.jpg」isc 7.10（替换原错挂图 None）
 - st03225 丹波大山 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
 - 合计 ACCEPT 8 / MISSING_BSC 13 / REVIEW 0 / RETRY 0 / NOOP 3；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
+
+
+## ws17 below-spec replace WS17-MISS05 — 2026-11-09T08:48:30Z
+- queue: 24 站（review/below_spec 高分替换）
+- replaced=0 staged=14 confirmed=10 skipped=0
+- reject_dist={"hard_excluded": 30, "resolution_low_lt_1600": 86, "duplicate_title": 8, "title_non_station_scene": 6, "title_names_other_station": 88, "quality_reject_low_color": 17, "mime_unsupported": 105, "license_unclear": 2, "quality_reject_blurry": 1, "no_author_metadata": 1, "license_forbidden": 4}
