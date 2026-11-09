@@ -2155,3 +2155,9 @@
 - st05973 大山 撤图置 missing+bsc：c1/c2 为栃木県 JR 小山駅（Oyama）东西口、c3 为鹿児島 西大山駅看板（OCR「西大山駅 JR日本最南端」）——站名与基线「大山」均不符；现挂山形県 羽前大山駅亦错，同名簇无一正确
 - st08626 愛野 撤图置 missing+bsc：3 张全为静岡県 JR東海 愛野駅（第四查 3 条 jr_region_mismatch exp=JR九州 obs=JR東海），现挂也是 JR Central Aino；基线長崎県島原鉄道愛野，同名异县异社
 - 合计 ACCEPT 2 / MISSING_BSC 11 / REVIEW 0 / RETRY 0 / NOOP 2；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
+
+
+## ws17 below-spec replace WS17-MISS03 — 2026-11-09T07:39:52Z
+- queue: 24 站（review/below_spec 高分替换）
+- replaced=5 staged=16 confirmed=3 skipped=0
+- reject_dist={"resolution_low_lt_1600": 81, "title_names_other_station": 62, "hard_excluded": 27, "title_non_station_scene": 13, "quality_reject_low_color": 10, "mime_unsupported": 45, "duplicate_title": 29, "no_author_metadata": 1, "license_unclear": 9}
