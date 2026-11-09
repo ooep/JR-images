@@ -2320,3 +2320,9 @@
 - st07190 大輪田 撤图置 missing+bsc：候选为留萌本線大和田駅站舍（与 st06539/1 同图）、大阪/京阪大和田站台（与 st06539/2 同图）；目标为奈良県田原本線「大輪田」（非「大和田」），站名亦不符，全部拦截。
 - st07456 船岡 撤图置 missing+bsc：3 张为宮城県東北本線船岡駅站台/隧道水路/木造站舍，目标京都府山陰本線船岡，同名异县，全部拦截。
 - 合计 ACCEPT 1 / MISSING_BSC 17 / REVIEW 0 / RETRY 0 / NOOP 6；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
+
+
+## ws17 below-spec replace WS17-MISS07 — 2026-11-09T09:35:28Z
+- queue: 20 站（review/below_spec 高分替换）
+- replaced=1 staged=9 confirmed=10 skipped=0
+- reject_dist={"resolution_low_lt_1600": 65, "title_names_other_station": 63, "duplicate_title": 8, "mime_unsupported": 138, "hard_excluded": 17, "license_unclear": 12, "quality_reject_low_color": 7, "title_non_station_scene": 5, "no_author_metadata": 2, "quality_reject_white_screenshot": 1}
