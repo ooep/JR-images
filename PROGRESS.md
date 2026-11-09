@@ -2092,3 +2092,31 @@
 - st07011 日代 撤图置 missing+bsc：3 张全为车辆照（225系100番代 / JNR DD51 844 ×2），无站景无站名牌，no_station_evidence；现挂近鉄18400 亦为车辆照，撤除
 - st08644 永山 接受 c1「File:JR Soya-Main-Line Nagayama Station Platform.jpg」isc 6.82（替换原错挂图 File:Odakyu-Nagayama Station Platform 02.jpg）
 - 合计 ACCEPT 11 / MISSING_BSC 4 / REVIEW 0 / RETRY 0 / NOOP 0；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
+
+
+## WS17-MISS02 本地裁决 — 2026-11-09T07:05:00Z（runner 42574830320）
+- st00649 松原 接受 c3「File:Tokyu Matsubara-STA Platforms.jpg」isc 7.36（替换原错挂图 None）
+- st00693 小倉 接受 c2「File:近鉄京都線 小倉駅 Ogura station 2013.1.10 - panoramio (1).jpg」isc 6.25（替换原错挂图 None）
+- st00703 岩屋 撤图置 missing+bsc：3 张全为兵庫県 阪神岩屋駅：c2/c3 第四查 operator_mismatch（exp=JR obs=阪神），c1 OCR「阪神電車 岩屋駅（兵庫県立美術館）」；基线佐賀県唐津線，同名异县异社
+- st00716 北方 转 review：c1「北九州モノレール」高架站区 dist 234.1m 但全图无站名牌、runner 因「标题无站名且 dist>200m」暂存；放大目检仍无可读站名，证据不足留人工；c2 岐阜美濃北方、c3 岐阜県警察署均非本站
+- st00812 新川 撤图置 missing+bsc：c1 宮城県 JR東日本 奥新川駅（第四查 jr_region_mismatch）；c2/c3「Joden-Nikkawa-station」经 Commons/Wikidata 查证为群馬県桐生市 上毛電気鉄道 新川駅（Nikkawa, Jōmō Line），OCR「新川駅 にっかわ」；基线愛媛県伊予鉄郡中線，同名簇全错
+- st00813 新川 撤图置 missing+bsc：同一组同名簇：c1/c3 为群馬県上毛電鉄 新川駅（已查证），c2 宮城県 JR東日本 奥新川駅（第四查命中）；基线愛知県豊橋鉄道東田本線，无一正确
+- st00824 野志 保留现状：runner 未返回候选，保留 review 转后续批次重捕
+- st00827 東野 接受 c2「File:Higashino station, Ena 2021-11.jpg」isc 7.72（替换原错挂图 None）
+- st00949 馬場崎町 保留现状：runner 未返回候选，保留 review 转后续批次重捕
+- st00957 和田浜 撤图置 missing+bsc：唯一候选「和田浜海岸から富士山」为静岡海岸风景照（棕榈树+富士山），非站景，no_station_evidence
+- st01041 岡田 接受 c1「File:Kotoden-Kotohira-line-Okada-station-platform-20100805.jpg」isc 6.12（替换原错挂图 None）
+- st01048 四所 接受 c1「File:Sisyo, enclosure, Kitakinki Tango Railway, 20080815.jpg」isc 6.22（替换原错挂图 None）
+- st01070 万博記念公園 撤图置 missing+bsc：3 张均为大阪モノレール 万博記念公園駅（c2 OCR「本阪モノール 万博記念公園駅」、目检单轨高架与站台）；基线茨城県つくばエクスプレス，同名异县异社
+- st01129 北浦 撤图置 missing+bsc：3 张全为宮城県 JR東日本 北浦駅（第四查 3 条 jr_region_mismatch exp=JR四国 obs=JR東日本）；基线高知県とさでん交通路面电车站
+- st01167 上金田 撤图置 missing+bsc：3 张全为加拿大 Calgary「Olympic Oval / Anneau Olympique / 188 University Gate」（OCR 可证），第一查 foreign 直接拦截
+- st01168 糒 撤图置 missing+bsc：c1 为 Comic Market 91 Cosplay 人像、c2 为乐队专辑封面插画，均非站景，no_station_evidence
+- st01169 田川市立病院 保留现状：runner 未返回候选，保留 review 转后续批次重捕
+- st01170 下伊田 保留现状：runner 未返回候选，保留 review 转后续批次重捕
+- st01174 柿下温泉口 保留现状：runner 未返回候选，保留 review 转后续批次重捕
+- st01180 犀川 撤图置 missing+bsc：c1 犀川調整扉門说明牌、c2 犀川河道、c3 水坝，三张均为河流/水利设施，无站景无站名牌
+- st01181 東犀川三四郎 保留现状：runner 未返回候选，保留 review 转后续批次重捕
+- st01185 今川河童 保留现状：runner 未返回候选，保留 review 转后续批次重捕
+- st01213 木幡 保留现状：runner 自动接受的「木幡駅 - panoramio」已复核：evidence.dist_m=50.8m（京阪木幡约 700m 外）、目检站名牌「木幡」+ JR 奈良线复线架空线，四查无告警，保留
+- st01215 木幡 撤图置 missing+bsc：同名三社簇：c1/c3 为神戸電鉄木幡（c1 第四查 operator_mismatch exp=京阪 obs=神鉄），c2 为 JR奈良線木幡駅；基线京阪宇治線木幡駅（读 Kowata），无一正确
+- 合计 ACCEPT 5 / MISSING_BSC 10 / REVIEW 1 / RETRY 7 / NOOP 1；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
