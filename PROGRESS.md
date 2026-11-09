@@ -2073,3 +2073,22 @@
 - queue: 24 站（review/below_spec 高分替换）
 - replaced=1 staged=16 confirmed=7 skipped=0
 - reject_dist={"title_names_other_station": 88, "resolution_low_lt_1600": 91, "hard_excluded": 27, "no_author_metadata": 5, "mime_unsupported": 104, "duplicate_title": 16, "oversize_gt_25mb": 1, "title_non_station_scene": 22, "quality_reject_low_color": 10}
+
+
+## WS17-C02 本地裁决 — 2026-11-09T06:55:50Z（runner 42571781149）
+- st00298 今川 撤图置 missing+bsc：3 张全为新潟 羽越線 JR東日本 今川駅（OCR 今川駅 Imagawa Station / 羽越線 村上・新津方面），第四查 3 条 jr_region_mismatch；现挂图同为 JR East Imagawa，属同名簇错挂，一并撤除
+- st00707 山本 撤图置 missing+bsc：c1「旧筑肥線山本駅」实为唐津市農協第2みかん選果場厂房（OCR 可证）非站景；c2/c3 为韩国 Korail 산본 Sanbon（OCR KORAIL / Surisan），第一查 foreign；现挂图为阪急山本，属错挂，撤除
+- st02304 南桜井 接受 c1「File:Minamisakurai Station South Entrance 1.JPG」isc 6.26（替换原错挂图 File:Meitetsu Minami-Sakurai-STA Platforms.jpg）
+- st02667 学園前 接受 c1「File:Keisei-railway-KS63-Gakuemmae-station-building-east-20200809-092452.jpg」isc 6.53（替换原错挂图 File:FamilyMart Kintetsu Gakuen-mae station No.2 platform ce）
+- st02691 今津 接受 c1「File:阪神今津駅1番線ホーム.jpg」isc 6.18（替换原错挂图 File:阪急今津駅ホーム2.jpg）
+- st02753 御影 接受 c1「File:阪神御影駅1・2番線ホーム.jpg」isc 6.25（替换原错挂图 File:阪急御影駅大阪方面ホーム.jpg）
+- st02754 御影 接受 c1「File:JR Nemuro-Main-Line Mikage Station Platform.jpg」isc 6.11（替换原错挂图 File:Hanshin Mikage Station north entrance.jpg）
+- st03376 石田 接受 c1「File:京都市営地下鉄石田駅2番出入口.jpg」isc 6.54（替换原错挂图 File:Odakyu-electric-railway-Odawara-line-Aiko-ishida-statio）
+- st03565 荒尾 接受 c1「File:Platform of Arao Station (Kagoshima Main Line).jpg」isc 6.97（替换原错挂图 File:JR Central Arao Station Overall.jpg）
+- st03592 朝地 接受 c1「File:JR-Kyushu-Asazi-Station.jpg」isc 4.74（替换原错挂图 File:Tobus P-M188 To-02-otsu Extend.jpg）
+- st04923 春日野道 撤图置 missing+bsc：3 张均为阪急 春日野道（dist≈509m，第四查 3 条 operator_mismatch exp=阪神 obs=阪急），同名异社；现挂图也是阪急春日野道，属错挂，撤除
+- st04924 春日野道 接受 c3「File:Hankyu Kasuganomichi Station platform - panoramio (11).jpg」isc 7.01（替换原错挂图 File:阪神春日野道駅大阪方面ホーム.jpg）
+- st06216 岡本 接受 c1「File:阪急岡本駅1号線ホーム.jpg」isc 6.56（替换原错挂图 File:JR East Okamoto Station Platform 20221127.jpg）
+- st07011 日代 撤图置 missing+bsc：3 张全为车辆照（225系100番代 / JNR DD51 844 ×2），无站景无站名牌，no_station_evidence；现挂近鉄18400 亦为车辆照，撤除
+- st08644 永山 接受 c1「File:JR Soya-Main-Line Nagayama Station Platform.jpg」isc 6.82（替换原错挂图 File:Odakyu-Nagayama Station Platform 02.jpg）
+- 合计 ACCEPT 11 / MISSING_BSC 4 / REVIEW 0 / RETRY 0 / NOOP 0；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
