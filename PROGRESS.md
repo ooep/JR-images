@@ -2292,3 +2292,31 @@
 - queue: 24 站（review/below_spec 高分替换）
 - replaced=4 staged=13 confirmed=7 skipped=0
 - reject_dist={"resolution_low_lt_1600": 82, "mime_unsupported": 73, "title_names_other_station": 97, "hard_excluded": 16, "oversize_gt_25mb": 1, "no_author_metadata": 7, "title_non_station_scene": 11, "duplicate_title": 6, "license_unclear": 3, "quality_reject_low_color": 7}
+
+
+## WS17-MISS06 本地裁决 — 2026-11-09T09:15:47Z（runner 42589960235）
+- st05004 自衛隊前 接受 c1「File:Namboku-line Jieitaimae-sta Platform.jpg」isc 6.57（替换原错挂图 None）
+- st05086 伊勢鎌倉 保留现状：本轮唯一候选「Meisho-Line Tea-plantation」为名松線沿线茶园风景，非駅景；但该站 state=missing 与 index=done 分歧且仓库实际有现挂 photo，故不撤图、不判 bsc，NOOP 保留现挂图。
+- st05087 伊勢八知 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st05169 国見 撤图置 missing+bsc：第四查 3 FLAG（jr_region_mismatch）：c1/c2/c3 均为宮城県 JR 仙山線国見駅（OCR「仙山線 / 愛子・作並・山寺・山形方面 / 仙台方」），目标高知県中村線・宿毛線国見（JR四国/土佐くろしお），同名异县异地区，全部拦截。
+- st05277 宇島 保留现状：3 张候选为丰前警察署 / 河口湖鹈岛 / 丰前 IC 高速出入口，均非駅景；该站同属 state/index 分歧且实际有现挂 photo，NOOP 保留现挂图。
+- st05365 安芸長浜 撤图置 missing+bsc：唯一候选「USMC-091214-M-1298M-026」为美国海军陆战队人员合影，第一查 foreign 且非駅景，拦截。
+- st05908 嵐山 保留现状：runner 已替换并随 c7231438 入库；回读放大为阪急嵐山駅木造站台+复古灯笼，与京都府嵐山本線基线一致，保留。
+- st05977 東開聞 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st06053 中福良 撤图置 missing+bsc：3 张均为中福良小学校 / 旧中福良中学校舍，非駅景，拦截。
+- st06057 鶴丸 撤图置 missing+bsc：3 张均为「刀剣乱舞 鶴丸国永」cosplay 与加拿大 UFV 大学毕业展合影，站名同音误命中，非駅景，拦截。
+- st06247 新西脇 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st06253 青野ケ原 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st06506 新木屋瀬 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st06539 大和田 撤图置 missing+bsc：c1/c2 为北海道留萌本線大和田駅（OCR「JR 大和田駅」），c3 为京阪大和田駅；目标静岡県大井川本線大和田，同名异县异社。且 c1/c2 与 st07190 批内重复同图，全部拦截。
+- st06540 大和田 保留现状：runner 已替换并入库；回读为京阪本線大和田駅站前（京阪巴士+蓝色駅名標），与大阪府京阪本線一致，保留。
+- st06541 大和田 保留现状：runner 已替换并入库；放大后駅名標两侧为「TD 04」（東武アーバンパークライン/野田線站号）、站内 PASMO ATM，确为埼玉県大和田駅而非京阪大和田，同名簇已辨明，保留。
+- st06696 美濃川合 撤图置 missing+bsc：唯一候选「Minokawai power station」为美濃川合发电站/水坝，power station 非 railway station，拦截。
+- st06710 扇町 保留现状：runner 已替换并入库；回读为大阪 Metro 堺筋線扇町駅地下站台（屏蔽门+8号車标识），与大阪府基线一致，保留。
+- st06754 寿 撤图置 missing+bsc：第四查 FLAG：c1「Fuji-kyuko-Kotobuki」为富士急行寿駅（obs=東武，与 JR 目标冲突）；c2/c3「Cishousi Station」为中国北京地铁慈寿寺站（OCR「To Subway / 10号线」），第一查 foreign。全部拦截。
+- st07002 下ノ江 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st07039 吉富 撤图置 missing+bsc：3 张为吉富町役场与 Japan Cup 赛马 paddock 骑师照，非駅景，拦截。
+- st07138 東青原 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st07190 大輪田 撤图置 missing+bsc：候选为留萌本線大和田駅站舍（与 st06539/1 同图）、大阪/京阪大和田站台（与 st06539/2 同图）；目标为奈良県田原本線「大輪田」（非「大和田」），站名亦不符，全部拦截。
+- st07456 船岡 撤图置 missing+bsc：3 张为宮城県東北本線船岡駅站台/隧道水路/木造站舍，目标京都府山陰本線船岡，同名异县，全部拦截。
+- 合计 ACCEPT 1 / MISSING_BSC 17 / REVIEW 0 / RETRY 0 / NOOP 6；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
