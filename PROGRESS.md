@@ -2189,3 +2189,32 @@
 - st01836 粟ケ崎 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
 - st01858 富士見ケ丘 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
 - 合计 ACCEPT 1 / MISSING_BSC 18 / REVIEW 0 / RETRY 0 / NOOP 5；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
+
+
+## WS17-B47 本地裁决 — 2026-11-09T08:12:06Z（runner 42579749344）
+- st00007 高田 保留现状：3 张候选全为新潟「えちごトキめき鉄道妙高はねうまライン高田駅」站舍/闸机，与目标神奈川県横浜市営地下鉄4号線高田同名异县异社，保留现挂图。
+- st00029 橋本 接受 c1「File:JREast-Yokohama-line-JH28-Hashimoto-station-platform-20220723-154851.jpg」isc 6.10（替换原错挂图 File:橋本駅 - panoramio.jpg）
+- st00866 弘明寺 接受 c3「File:Gumyoji Station keikyu line - Nov 16 2020 various 16 56 42 142000.jpeg」isc 5.64（替换原错挂图 File:Subway-gumyoji-Sta-Platform.JPG）
+- st00963 富士見町 接受 c1「File:Shonan-monorail-SMR2-Fujimicho-station-entrance-for-Ofuna-20200315-124127.jpg」isc 6.37（替换原错挂图 File:Shonan-monorail-SMR2-Fujimicho-station-platform-2020031）
+- st00973 根岸 保留现状：runner 判定可替换（JR 根岸駅罐车货场），同上未回传且原图不可达；且该图主体为货运罐车非站舍站台，保留现挂图。
+- st01387 富士フイルム前 接受 c1「File:Izuhakone-railway-Daiyuzan-line-Fuji-film-mae-station-platform-20140310-141146.jpg」isc 6.78（替换原错挂图 File:Izuhakone-railway-Daiyuzan-line-Fuji-film-mae-station-b）
+- st01423 こどもの国 接受 c2「File:Kodomonokuni Station -83318.jpeg」isc 6.74（替换原错挂图 File:MT-Kodomonokuni Station-Platform 3.jpg）
+- st01614 海老名 保留现状：三张候选均为海老名站前广场 / 列车照，非站舍站台主体；且与 st01615 完全共享同一组三张图（第三查 intra-batch dup），两站都不接受，保留现挂图。
+- st01615 海老名 保留现状：同上：与 st01614 共享同一组三张图，重复图风险 + 无合格站景，保留现挂图。
+- st01647 黒川 保留现状：三张均为小田急 5000/1000/3000 系车辆照（OCR「Odakyu / Shinjuku」），非黒川駅站景，保留现挂图。
+- st01896 中山 保留现状：runner 判定可替换（JR横浜線中山駅站台），但 Step 10 Commit & push 因 head 变动失败，候选图未随 artifact 回传；Wikimedia 原图在本环境连接超时无法补回，保留现挂图不倒退。
+- st01910 新杉田 接受 c3「File:Kanazawa-seaside-line-Shin-sugita-station-platform.jpg」isc 6.85（替换原错挂图 File:Seaside-line Shin-Sugita-STA Platform1-2.jpg）
+- st02148 入谷 接受 c2「File:JR Sagami Line Iriya Station Platform.jpg」isc 7.81（替换原错挂图 File:入谷駅周辺.jpg）
+- st02161 藤が丘 接受 c2「File:藤が丘駅, Fujigaoka Sta. - panoramio - xezna.jpg」isc 5.70（替换原错挂图 File:Tokyu Fujigaoka Station Platform 02.jpg）
+- st03128 新綱島 接受 c2「File:新綱島駅改札口.jpg」isc 6.00（替换原错挂图 File:Tokyu-railway-SH02-Shin-tsunashima-station-platform-202）
+- st03352 長谷 保留现状：runner 判定可替换（江ノ電長谷駅站舍），同上未回传且原图不可达，保留现挂图，留待下一轮重捕。
+- st03836 横須賀 接受 c3「File:JR Yokosuka sta 001.jpg」isc 5.49（替换原错挂图 File:Yokosuka Station on a rainy day July 2 2021 various 05 ）
+- st04392 大倉山 接受 c1「File:Okurayama Station -01.jpg」isc 6.92（替换原错挂图 File:Ōkurayama Sta platform 20201228 155344.jpg）
+- st04398 新高島 保留现状：runner 判定可替换（新高島駅周边），同上未回传且原图不可达；站周边景亦非站主体，保留现挂图。
+- st05062 市大医学部 接受 c2「File:Shidai-Igakubu-STA Gate.jpg」isc 7.68（替换原错挂图 File:Shidai-Igakubu-STA Platform.jpg）
+- st05681 中川 保留现状：runner skipped（not_review_or_unknown）；该站已在 WS17-C04 确认 missing+bsc，不重复处理。
+- st05736 小涌谷 接受 c3「File:Hakone-tozan-railway-OH55-Kowakidani-station-platform-20171230-120456.jpg」isc 5.98（替换原错挂图 File:Kowakidani station building.jpg）
+- st06459 南橋本 接受 c1「File:JR Sagami Line Minami-Hashimoto Station Platform.jpg」isc 6.88（替换原错挂图 File:JR南橋本駅旧駅舎跡地.JPG）
+- st06711 扇町 接受 c2「File:JREast-Tsurumi-line-JI10-Ogimachi-station-platform-20240203-142146.jpg」isc 7.34（替换原错挂图 File:JR Tsurumi Line Ōgimachi Station Platform.jpg）
+- st06769 相模湖 接受 c1「File:JREast-Chuo-main-line-JC25-Sagamiko-station-platform-20220730-062444.jpg」isc 6.21（替换原错挂图 File:Sagamiko station platform 2-3 20211121 111425.jpg）
+- 合计 ACCEPT 16 / MISSING_BSC 0 / REVIEW 0 / RETRY 0 / NOOP 9；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
