@@ -2067,3 +2067,9 @@
 - st00580 球場前 转 review：c2/c3 为水島臨海鉄道 キハ37 103 车辆照（运营者相符，OCR MIZUSHIMA RINKAI RAILWAY），但无站景/站名牌；c1 西武球場前 异社。属 no_station_evidence，保留人工复核
 - st00602  runner 无候选，保留 review 转 WS17-MISS02
 - 合计 ACCEPT 3 / MISSING_BSC 10 / REVIEW 2 / RETRY 9；40 候选逐条跑 OCR + 第四查，另人工补拦 opcheck 无 LINE_OP 映射的 st00149（名鉄土橋）、st00571（神鉄栄）两条同名异社。
+
+
+## ws17 below-spec replace WS17-MISS02 — 2026-11-09T06:54:37Z
+- queue: 24 站（review/below_spec 高分替换）
+- replaced=1 staged=16 confirmed=7 skipped=0
+- reject_dist={"title_names_other_station": 88, "resolution_low_lt_1600": 91, "hard_excluded": 27, "no_author_metadata": 5, "mime_unsupported": 104, "duplicate_title": 16, "oversize_gt_25mb": 1, "title_non_station_scene": 22, "quality_reject_low_color": 10}
