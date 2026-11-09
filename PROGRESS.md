@@ -2033,3 +2033,9 @@
 - st02123 東武ワールドスクウェア 转 review：3 张均为本站東武ワールドスクウェア駅，第四查「東武」判异社源于 index lines 推得 exp=JR，属基线冲突，需人工确认
 - st01993 守山 置 missing+bsc，删 photo/license：c1=磐城守山(福島)、c2=锦绘非站景、c3 告示为「奈良線/京都」与滋賀 守山(琵琶湖線)不符
 - 合计 ACCEPT 1 / MISSING_BSC 12 / REVIEW 11；第四查对 Sanyo Main Line、都営导向牌、lines 跨社污染产生的误报已逐条人工复核。
+
+
+## ws17 below-spec replace WS17-C02 — 2026-11-09T06:33:00Z
+- queue: 24 站（review/below_spec 高分替换）
+- replaced=1 staged=15 confirmed=0 skipped=8
+- reject_dist={"title_names_other_station": 67, "hard_excluded": 55, "resolution_low_lt_1600": 86, "same_as_current": 16, "mime_unsupported": 29, "duplicate_title": 10, "resolution_not_upgrade": 19, "title_non_station_scene": 15, "quality_reject_low_color": 10, "license_unclear": 6, "license_forbidden": 2, "no_author_metadata": 1}
