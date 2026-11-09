@@ -2120,3 +2120,19 @@
 - st01213 木幡 保留现状：runner 自动接受的「木幡駅 - panoramio」已复核：evidence.dist_m=50.8m（京阪木幡约 700m 外）、目检站名牌「木幡」+ JR 奈良线复线架空线，四查无告警，保留
 - st01215 木幡 撤图置 missing+bsc：同名三社簇：c1/c3 为神戸電鉄木幡（c1 第四查 operator_mismatch exp=京阪 obs=神鉄），c2 为 JR奈良線木幡駅；基线京阪宇治線木幡駅（读 Kowata），无一正确
 - 合计 ACCEPT 5 / MISSING_BSC 10 / REVIEW 1 / RETRY 7 / NOOP 1；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
+
+
+## WS17-C03 本地裁决 — 2026-11-09T07:14:02Z（runner 42574870477）
+- st00055 桜井 转 review：现图为桜井駅站台厕所特写（2048×1152，OCR 仅 Sakurai），站证弱但确系本站；候选 c1/c2「JR桜井線 桜井駅」dist 95.7/83.9m、OCR「桜井駅」站舍全景更好，但长边 1800<2048 违反「只升不降」；c3 名鉄桜井异社。留人工决定
+- st00535 大原 撤图置 missing+bsc：3 张全为千葉県いすみ鉄道 大原/西大原（c1 标题即含 Chiba、c2 西大原）；现挂也是 JR East・Isumi Railway 大原，属同名异县；基线広島アストラムライン大原为高架站，撤除
+- st00570 常盤 接受 c1「File:JR West Tokiwa Station.jpg」isc 7.31（替换原错挂图 File:JR Central Kai-tokiwa Station Platform (20221002).jpg）
+- st00812 新川 撤图置 missing+bsc：WS17-MISS02 已裁 missing+bsc（宮城奥新川 / 群馬上毛電鉄新川 同名簇）；本次仅清理 index 残留 source_title/score，避免后续 opcheck --current 误报
+- st00813 新川 撤图置 missing+bsc：同 st00812：WS17-MISS02 已裁决，本次清理 index 残留元数据
+- st02047 桜川 保留现状：现挂「阪神桜川駅ホーム」isc 7.71 已是本站（基线含阪神なんば線）；候选 c1/c2 同站但 isc 6.48/5.89 更低，无替换价值。第四查 exp=近鉄 obs=阪神 属 LINE_OP 未覆盖阪神なんば線的基线误报，保留现图
+- st02783 春日井 保留现状：现挂「Kasugai Station (Meitetsu)」isc 7.46 为名鉄小牧線（旧上飯田線）春日井駅，正确；候选 3 张全是 JR東海中央本線 春日井駅（另一座同名站，c1 山车祭、c2 自行车场、c3 站前时钟塔），异社且非站舍，保留现图
+- st03254 野崎 接受 c2「File:Nozaki Station (Osaka) west entrance.jpg」isc 7.67（替换原错挂图 File:JR East Nozaki Station building 20221127.jpg）
+- st04168 相生 撤图置 missing+bsc：3 张全为兵庫県 JR西日本 相生駅（c1/c2「JR Aioi Station」、c3 JRW225 车辆），现挂也是 JR West Aioi South Gate；基线岐阜県長良川鉄道越美南線相生，同名异县异社，撤除
+- st04783 山田 接受 c2「File:阪急千里線 山田駅 Yamada sta. 2013.12.01 - panoramio.jpg」isc 6.12（替换原错挂图 File:大阪モノレール山田駅発車標 2番ホーム千里中央行き.jpg）
+- st04971 矢田 撤图置 missing+bsc：c1 名鉄矢田駅（第四查 operator_mismatch exp=近鉄 obs=名鉄）、c2 阪和貨物線线路照非站景；现挂也是名鉄矢田站台，同名异社，撤除
+- st05682 中川 撤图置 missing+bsc：c2/c3「KT-Nakagawa Station WestGate」OCR「伊勢中川」= 三重県近鉄伊勢中川駅，c1 近鉄エキファミ店内（第四查 obs=近鉄）；现挂也是 KINTETSU ISE-NAKAGAWA；基线山形県奥羽本線中川，同名异县异社，撤除
+- 合计 ACCEPT 3 / MISSING_BSC 6 / REVIEW 1 / RETRY 0 / NOOP 2；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
