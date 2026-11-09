@@ -2351,3 +2351,9 @@
 - st08736 向瀬上 撤图置 missing+bsc：runner confirmed「below_spec_confirmed_no_candidate」：整批无任何候选回传，确认无可用图。
 - st08804 森山 撤图置 missing+bsc：c1「JR Suigun Line Iwaki-Moriyama Station Platform」与 c3 候车室为福島県 JR 水郡線磐城守山駅（OCR「磐城守山」）；c2「JR West Moriyama Station Gate」第四查 FLAG jr_region_mismatch（OCR「奈良線 / 菎津・京都」，JR西日本）；目标为長崎県島原鉄道線森山，同名异县异社，全部拦截。
 - 合计 ACCEPT 2 / MISSING_BSC 16 / REVIEW 0 / RETRY 0 / NOOP 2；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
+
+
+## ws17 below-spec replace WS17-B48 — 2026-11-09T11:12:37Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=2 staged=18 confirmed=5 skipped=0
+- reject_dist={"hard_excluded": 69, "resolution_low_lt_1600": 80, "duplicate_title": 9, "same_as_current": 25, "mime_unsupported": 174, "title_names_other_station": 113, "quality_reject_low_color": 13, "title_non_station_scene": 25, "license_unclear": 5, "no_author_metadata": 4, "resolution_not_upgrade": 22}
