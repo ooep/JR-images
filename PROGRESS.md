@@ -2258,3 +2258,31 @@
 - queue: 24 站（review/below_spec 高分替换）
 - replaced=0 staged=14 confirmed=10 skipped=0
 - reject_dist={"hard_excluded": 30, "resolution_low_lt_1600": 86, "duplicate_title": 8, "title_non_station_scene": 6, "title_names_other_station": 88, "quality_reject_low_color": 17, "mime_unsupported": 105, "license_unclear": 2, "quality_reject_blurry": 1, "no_author_metadata": 1, "license_forbidden": 4}
+
+
+## WS17-MISS05 本地裁决 — 2026-11-09T08:56:18Z（runner 42587368140）
+- st03236 吹田 接受 c3「File:阪急吹田駅西口.jpg」isc 6.24（替换原错挂图 None）
+- st03261 古市 转 review：3 张候选「Furuichi station - Ssayama, Hyogo 福知山線古市駅 篠山市」确为兵庫県福知山線古市駅站舍/站台，但基线 lines 记为「JR東西線 / 東海道本線」，与候选线路不符；第二查同名簇线路比对存在冲突，既不误接受也不判无图，转人工复核（本就无现挂图）。
+- st03280 小杉 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st03318 徳田 接受 c1「File:Tokuda Station 2020.jpg」isc 6.64（替换原错挂图 None）
+- st03421 戸田 撤图置 missing+bsc：第四查 FLAG（jr_region_mismatch）：c1/c2 为埼玉県 JR 埼京線戸田駅（OCR「埼京線 Saikyo Line / 武蔵浦和・大宮・川越方面」），与目标山口県山陽本線戸田同名异县异线；c3 为锦绘。且与 st03422 共享同两张图，全部拦截。
+- st03422 戸田 撤图置 missing+bsc：c1「Toda No.1 Railroad Crossing on the Kintetsu Nagoya Line」为铁路踏切+骑车人，非站舍/站台景；c2/c3 为埼玉県埼京線戸田駅（第四查 FLAG，JR東日本 vs 目标近鉄名古屋線），且与 st03421 批内重复同图，全部拦截。
+- st03600 いこいの村 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st03646 朝菜町 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st03648 大泉 接受 c1「File:CT-Oizumi Station-Platform.jpg」isc 6.39（替换原错挂图 None）
+- st03649 大泉 撤图置 missing+bsc：c1/c2 与 st03648 共享同一组「CT-Oizumi」富山地方鉄道大泉駅图（第三查 intra dup），不能重复挂图；独占的 c3「Img Oizumihigashi-station」站名「大泉東」≠目标「大泉」，且无站名牌证据，拦截。
+- st03765 鹿児 撤图置 missing+bsc：2 张候选为「かごバス」加古川巴士车辆（OCR「西加古川駅 / 姫路200」），属兵庫県巴士，目标为高知県とさでん交通伊野線/桟橋線鹿児，异县异社且非站景，拦截。
+- st03782 伊野駅前 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st04544 下天津 接受 c1「File:Shimoamazu Station 20200301.jpg」isc 6.12（替换原错挂图 None）
+- st04561 守内かさ神 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st04564 椋野 撤图置 missing+bsc：3 张为椋神社鸟居/社殿与湖中鸟居风景，非錦川清流線椋野駅站景，拦截。
+- st04575 高水 撤图置 missing+bsc：3 张「Ikusabata Station @ Mount Takamizu hike」为東京都青梅線軍畑駅登山途中的山景/山路，非山陽本線高水駅站景，拦截。
+- st04585 柿ケ島 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st04602 六条 撤图置 missing+bsc：c1 为 Toyota 86 / Subaru Impreza 汽车店，c2 为神戸六条八幡神社，均非ハピラインふくい線六条駅站景，拦截。
+- st04604 山田西町 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st04642 豊永 撤图置 missing+bsc：3 张均为歌川国贞等浮世绘锦绘（Recueil d'estampes），非土讃線豊永駅站景，拦截。
+- st04643 土佐岩原 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st04808 山鼻19条 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st04819 西線6条 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st04955 薬水 接受 c1「File:Kusurimizu Station platform in 20150718.jpg」isc 6.65（替换原错挂图 None）
+- 合计 ACCEPT 5 / MISSING_BSC 18 / REVIEW 1 / RETRY 0 / NOOP 0；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
