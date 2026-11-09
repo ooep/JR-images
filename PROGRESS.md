@@ -2161,3 +2161,31 @@
 - queue: 24 站（review/below_spec 高分替换）
 - replaced=5 staged=16 confirmed=3 skipped=0
 - reject_dist={"resolution_low_lt_1600": 81, "title_names_other_station": 62, "hard_excluded": 27, "title_non_station_scene": 13, "quality_reject_low_color": 10, "mime_unsupported": 45, "duplicate_title": 29, "no_author_metadata": 1, "license_unclear": 9}
+
+
+## WS17-MISS03 本地裁决 — 2026-11-09T08:10:49Z（runner 42579693074）
+- st01240 島ケ原 撤图置 missing+bsc：唯一候选「正月堂」为神社门楼且 GPS dist 1517.3m；现挂图为島ヶ原大橋风景非站景，runner 本轮无合格候选，撤图。
+- st01241 西木津 撤图置 missing+bsc：3 张为 1989 年片町線车辆照与神户市立木津小学（神戸電鉄木津同名异社），均非站景；现挂图「Junction at JRW Kizu station」是木津駅而非西木津，撤图。
+- st01249 長尾 撤图置 missing+bsc：第四查 FLAG：c1 OCR「エことでん 長尾駅 Nagao Station」、c2「Kotoden-Nagao-line」均为香川県高松琴平電鉄長尾駅，与目标大阪府 JR 片町線長尾同名异县异社；c3 为片町線车辆照无站景。现挂图同为香川「Nagao Station (Kagawa)」，撤图。
+- st01282 柏原 撤图置 missing+bsc：c1 航空写真、c3 售票机均非站景；c2 木造站舍内部 OCR「篠山口・大阪方面」「For Fukuchiyama」，与现挂图「Kaibara Station Tamba Hyogo pref」同属兵庫県福知山線柏原駅，与目标滋賀県東海道本線柏原同名异线，撤图。
+- st01288 三郷 保留现状：runner 已自动替换并随 9a1491eb 入库；本地回读 photo 放大复核为名鉄瀬戸線三郷駅站台（愛知県），线路 / 都道府県 / 运营者一致，第四查无冲突，保留现挂图。
+- st01302 芦屋 保留现状：runner 已自动替换并随 9a1491eb 入库；本地回读 photo 放大复核为阪神本線芦屋駅2番線ホーム（兵庫県），线路 / 都道府県 / 运营者一致，第四查无冲突，保留现挂图。
+- st01353 河原町 撤图置 missing+bsc：2 张候选与现挂图均为阪急京都河原町（OCR「高槻市・茨木市・淡路」「Umeda」「KYOTO」），目标为熊本県熊本市電河原町，同名异县异社，撤图。
+- st01373 国府 保留现状：runner 已自动替换并随 9a1491eb 入库；本地回读 photo 放大复核为名鉄名古屋本線国府駅站舍（愛知県，dist 95.2m），线路 / 都道府県 / 运营者一致，第四查无冲突，保留现挂图。
+- st01414 高ノ宮 撤图置 missing+bsc：3 张为高ノ宮神社鸟居 / 社殿 / 伊势神宫，无站景；本就无现挂图。
+- st01416 朝日ケ丘 撤图置 missing+bsc：c2「Asahigaoka Station (Toyama)」为富山同名异县；c1 岐阜関市旭ヶ丘学校、c3 指挥中心，均非島根県北松江線朝日ケ丘，本就无图。
+- st01432 県庁前 撤图置 missing+bsc：候选为千葉「Kenchō-mae Station (Chiba)」与沖縄ゆいレール県庁前，且第三查与 st01433/st01435 批内共享同图（intra-batch dup）；现挂图为千葉モノレール県庁前，与目标富山県同名异县，撤图。
+- st01433 県庁前 撤图置 missing+bsc：候选与现挂图均为千葉県庁前 / 沖縄ゆいレール，目标高知県伊野線県庁前，同名异县；并与 st01432/st01435 批内重复同图，撤图。
+- st01435 県庁前 撤图置 missing+bsc：候选为千葉県庁前 / 沖縄ゆいレール，现挂图即沖縄ゆいレール美栄橋駅，目标広島県広島新交通1号線県庁前，同名异县；批内重复同图，撤图。
+- st01436 県庁前 保留现状：runner 已自动替换并随 9a1491eb 入库；本地回读 photo 放大复核为神戸市営地下鉄県庁前駅东出口（兵庫県，可见站名牌），线路 / 都道府県 / 运营者一致，第四查无冲突，保留现挂图。
+- st01459 小泉町 撤图置 missing+bsc：候选与现挂图均为群馬県東武小泉町駅（OCR「小泉町駅 Koizumimachi Station」「Gunma Koizumimachi」），目标为富山県富山軌道線小泉町，同名异县异社，撤图。
+- st01474 泉 接受 c1「File:JR Jōban Line Izumi Station Platform.jpg」isc 7.10（替换原错挂图 None）
+- st01492 西日暮里 保留现状：runner 已自动替换并随 9a1491eb 入库；本地回读 photo 放大复核为JR 西日暮里駅站台（東京都），线路 / 都道府県 / 运营者一致，第四查无冲突，保留现挂图。
+- st01523 霞ケ関 撤图置 missing+bsc：c1 为锦绘「霞ケ関」非站景；c2/c3 与现挂图均为東京メトロ霞ケ関（東京都），目标埼玉県東上本線霞ケ関，同名异县异社；c2 sha 与现挂图相同属自我重复，撤图。
+- st01628 生田 撤图置 missing+bsc：c1「Komachi-21 running near Shoden Station」为列车+田野风景虽 dist 162.9m 但非站景；c2/c3 为神奈川小田急生田駅与闸机广告，同名异县，本就无图。
+- st01659 杉塘 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st01792 松ケ崎 撤图置 missing+bsc：候选为京都市営地下鉄松ケ崎（OCR「まつがさき Matsugasaki 北山 国際会館 宝池」），目标三重県近鉄松ケ崎，同名异县异社，本就无图。
+- st01798 明星 撤图置 missing+bsc：c1 锦绘、c2 EF65 列车照，c3「Chuomeiseistation」为多摩モノレール中央大学・明星大学駅，目标三重県近鉄明星，均不符，本就无图。
+- st01836 粟ケ崎 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- st01858 富士見ケ丘 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
+- 合计 ACCEPT 1 / MISSING_BSC 18 / REVIEW 0 / RETRY 0 / NOOP 5；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
