@@ -2286,3 +2286,9 @@
 - st04819 西線6条 撤图置 missing+bsc：runner confirmed：整批无任何候选回传，确认无可用图。
 - st04955 薬水 接受 c1「File:Kusurimizu Station platform in 20150718.jpg」isc 6.65（替换原错挂图 None）
 - 合计 ACCEPT 5 / MISSING_BSC 18 / REVIEW 1 / RETRY 0 / NOOP 0；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
+
+
+## ws17 below-spec replace WS17-MISS06 — 2026-11-09T09:09:45Z
+- queue: 24 站（review/below_spec 高分替换）
+- replaced=4 staged=13 confirmed=7 skipped=0
+- reject_dist={"resolution_low_lt_1600": 82, "mime_unsupported": 73, "title_names_other_station": 97, "hard_excluded": 16, "oversize_gt_25mb": 1, "no_author_metadata": 7, "title_non_station_scene": 11, "duplicate_title": 6, "license_unclear": 3, "quality_reject_low_color": 7}
