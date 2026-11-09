@@ -2136,3 +2136,22 @@
 - st04971 矢田 撤图置 missing+bsc：c1 名鉄矢田駅（第四查 operator_mismatch exp=近鉄 obs=名鉄）、c2 阪和貨物線线路照非站景；现挂也是名鉄矢田站台，同名异社，撤除
 - st05682 中川 撤图置 missing+bsc：c2/c3「KT-Nakagawa Station WestGate」OCR「伊勢中川」= 三重県近鉄伊勢中川駅，c1 近鉄エキファミ店内（第四查 obs=近鉄）；现挂也是 KINTETSU ISE-NAKAGAWA；基线山形県奥羽本線中川，同名异县异社，撤除
 - 合计 ACCEPT 3 / MISSING_BSC 6 / REVIEW 1 / RETRY 0 / NOOP 2；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
+
+
+## WS17-C04 本地裁决 — 2026-11-09T07:22:02Z（runner 42576349698）
+- st00648 松原 撤图置 missing+bsc：3 张全为東京都世田谷区（東急世田谷線松原 / 京王井の頭線明大前 / 小田急梅ヶ丘），现挂近鉄河内松原（大阪）亦错；基线長崎県大村線，同名簇无一正确
+- st01129 北浦 撤图置 missing+bsc：WS17-MISS02 已裁 missing+bsc（宮城 JR東日本 北浦，第四查 3 条命中）；本次清理 index 残留 source_title/score
+- st01648 黒川 撤图置 missing+bsc：3 张全为兵庫県 能勢電鉄 妙見の森ケーブル黒川駅（OCR「妙見の森ケーブル 黒川駅 / 妙見ケーブルのりば」），现挂小田急多摩線黒川駅（東京）亦错；基线香川県土讃線
+- st02234 桜台 接受 c2「File:Platform of Sakuradai Station (Nishitetsu) 2.jpg」isc 5.45（替换原错挂图 File:Seibu Railway Shin-Sakuradai Station Platform 1.jpg）
+- st02342 朝倉 撤图置 missing+bsc：3 张全为愛知県名鉄 朝倉駅（c1/c2 第四查 operator_mismatch exp=JR obs=名鉄、c3 名鉄朝倉巴士站）；基线高知県土讃線/中村線，同名异社
+- st02440 下島 撤图置 missing+bsc：3 张为広島県大崎下島御手洗町並み保存地区街景（OCR「江戸みなとまち展示館」），非站景；现挂 JR東海飯田線下島駅（伊那市）异社；基线アルピコ上高地線下島駅（松本）
+- st03268 瀬田 撤图置 missing+bsc：c1/c2 滋賀県 JR西日本 瀬田駅（第四查 jr_region_mismatch），c3 世田谷区豪徳寺商店街；现挂也是 JR West Seta；基线熊本県豊肥本線瀬田，同名异县
+- st03784 北山 撤图置 missing+bsc：c1 为广州地铁 12 号线 北山站（GZMTR，第一查 foreign）、c2/c3 宮城県 JR東日本 北山駅（第四查 2 条命中）；现挂也是 JREast 仙山線北山；基线高知県とさでん伊野線
+- st04226 豊洲 保留现状：现挂「ゆりかもめ豊洲駅のプラットホーム」isc 7.98 即本站（基线含東京臨海新交通臨海線），候选 c3 東京メトロ豊洲駅出入口 isc 7.4 更低；c2 第四查 obs=ゆりかもめ 属 LINE_OP 未覆盖临海线的基线误报，保留现图
+- st04240 汐留 保留现状：现挂「ゆりかもめ汐留駅駅舎」isc 8.22 正确；3 张候选均为都営大江戸線汐留駅扶梯内景、isc≤6.5 且无站名牌，无替换价值，保留现图
+- st05030 御来屋 接受 c3「File:Mikuriya Station (Tottori) waiting room ヨ5000.jpg」isc 6.61（替换原错挂图 File:JR Central Mikuriya Station Gate.jpg）
+- st05532 菊川 撤图置 missing+bsc：3 张全为静岡県 JR東海 菊川駅（c1/c2 第四查 jr_region_mismatch exp=JR東日本 obs=JR東海，OCR 東海道線浜松・豊橋方面）；现挂也是 JR Central Kikugawa；基线東京都都営新宿線菊川，同名异县异社
+- st05681 中川 撤图置 missing+bsc：3 张全为三重県 近鉄伊勢中川駅（c1 第四查 exp=横浜市営 obs=近鉄，c2/c3 OCR「伊勢中川」），现挂也是 KINTETSU ISE-NAKAGAWA；基线横浜市営地下鉄中川，同名异县异社
+- st05973 大山 撤图置 missing+bsc：c1/c2 为栃木県 JR 小山駅（Oyama）东西口、c3 为鹿児島 西大山駅看板（OCR「西大山駅 JR日本最南端」）——站名与基线「大山」均不符；现挂山形県 羽前大山駅亦错，同名簇无一正确
+- st08626 愛野 撤图置 missing+bsc：3 张全为静岡県 JR東海 愛野駅（第四查 3 条 jr_region_mismatch exp=JR九州 obs=JR東海），现挂也是 JR Central Aino；基线長崎県島原鉄道愛野，同名异县异社
+- 合计 ACCEPT 2 / MISSING_BSC 11 / REVIEW 0 / RETRY 0 / NOOP 2；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
