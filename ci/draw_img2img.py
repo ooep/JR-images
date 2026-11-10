@@ -359,17 +359,33 @@ def download(url, tag):
 
 
 def push_files(files, msg):
-    """files: {remote_path: bytes}；Git Data API 提交，force=false + head 重放。"""
+    """files: {remote_path: bytes}；Git Data API 提交，force=false + head 重放。
+
+    仓库已有数千张照片，POST /git/trees 带 base_tree 时服务端偶发 422
+    “request timed out / input too large / build the tree incrementally”。
+    本地经验是同一提交重放第二次即可成功，因此 422 必须重试而不是直接
+    崩掉整个 run（run10/12/13 都是这样夭折的）。
+    """
     blobs = {}
     for path, data in files.items():
-        s, d = gh('POST', '/git/blobs',
-                  {'content': base64.b64encode(data).decode(), 'encoding': 'base64'})
-        assert s == 201, 'blob %s http=%s' % (path, s)
-        blobs[path] = d['sha']
+        sha = None
+        for i in range(4):
+            s, d = gh('POST', '/git/blobs',
+                      {'content': base64.b64encode(data).decode(), 'encoding': 'base64'})
+            if s == 201:
+                sha = d['sha']
+                break
+            log('BLOB_RETRY %s http=%s %s' % (path, s, str(d)[:80]))
+            time.sleep(3 * (i + 1))
+        assert sha, 'blob %s http=%s' % (path, s)
+        blobs[path] = sha
     for attempt in range(1, 9):
         head = get_head()
         s, root = gh('GET', '/git/trees/' + head)
-        assert s == 200, 'root tree %s' % s
+        if s != 200:
+            log('ROOT_RETRY attempt%d http=%s' % (attempt, s))
+            time.sleep(3 * attempt)
+            continue
         top = {t['path']: t for t in root['tree']}
         existing = set()
         ent = top.get('draw_img')
@@ -383,12 +399,22 @@ def push_files(files, msg):
             log('ALL_EXIST nothing to commit')
             return None
         s, c = gh('GET', '/git/commits/' + head)
-        assert s == 200, 'get commit %s' % s
+        if s != 200:
+            log('HEAD_RETRY attempt%d http=%s' % (attempt, s))
+            time.sleep(3 * attempt)
+            continue
         s, t = gh('POST', '/git/trees', {'base_tree': c['tree']['sha'], 'tree': entries})
-        assert s == 201, 'tree %s %s' % (s, str(t)[:120])
+        if s != 201:
+            # 422 超时 / 其它偶发：换新 head 重放，重试代价远小于 run 崩溃
+            log('TREE_RETRY attempt%d http=%s %s' % (attempt, s, str(t)[:120]))
+            time.sleep(min(30, 4 * attempt))
+            continue
         s, cm = gh('POST', '/git/commits',
                    {'message': msg, 'tree': t['sha'], 'parents': [head]})
-        assert s == 201, 'commit %s %s' % (s, str(cm)[:120])
+        if s != 201:
+            log('COMMIT_RETRY attempt%d http=%s %s' % (attempt, s, str(cm)[:120]))
+            time.sleep(min(30, 4 * attempt))
+            continue
         s, rf = gh('PATCH', '/git/refs/heads/main', {'sha': cm['sha'], 'force': False})
         if s in (200, 201):
             chk = get_head()
@@ -529,11 +555,27 @@ def main():
     batches = 0
     fail_count = {}
     while time.time() < deadline:
-        head, todo = remote_state()
+        try:
+            head, todo = remote_state()
+        except Exception as e:
+            log('REMOTE_STATE_ERR %s %s — 重试本批' % (type(e).__name__, str(e)[:160]))
+            time.sleep(20)
+            continue
         if not todo:
             log('ALL_DONE: 全站照片重绘无待处理项')
             break
-        n, reasons, summary = run_batch(todo, fail_count)
+        try:
+            n, reasons, summary = run_batch(todo, fail_count)
+        except Exception as e:
+            # 单批的意外异常（网络/服务端）不应崩掉整个 run：
+            # 状态全在远端，直接进入下一批重算。
+            log('BATCH_ERR %s %s — 跳过本批' % (type(e).__name__, str(e)[:200]))
+            empty_streak += 1
+            if empty_streak >= 5:
+                log('ABORT: 连续 5 批异常，停止本 run')
+                break
+            time.sleep(30)
+            continue
         generated += n
         batches += 1
         log('BATCH %d generated=%d total=%d remaining=%d elapsed=%ds | %s' % (
@@ -548,8 +590,12 @@ def main():
         else:
             empty_streak = 0
 
-    _, todo = remote_state()
-    remaining = len(todo)
+    try:
+        _, todo = remote_state()
+        remaining = len(todo)
+    except Exception as e:
+        log('FINAL_STATE_ERR %s %s — 以最后一批计数续派' % (type(e).__name__, str(e)[:160]))
+        remaining = 1
     emit('generated', generated)
     emit('remaining', remaining)
     # 只要还有 todo 且本轮有产出就续派：跑满时限、零产出提前退出、甚至
