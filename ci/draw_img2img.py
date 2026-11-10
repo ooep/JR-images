@@ -193,23 +193,35 @@ def ocr_check(path):
             conf = float(r.get('conf') or -1)
         except ValueError:
             conf = -1
-        if not txt or conf < 55:
+        # 插画里高对比线条/网点会被 Tesseract 当成假名、拉丁字母或长音符号，
+        # 这些误检 conf 多在 0.55~0.79、只有 1~2 个字符且框极小。
+        # 真实站牌/告示文字通常是多字符、高置信度、有一定物理尺寸，
+        # 因此按「置信度 + 长度 + 实义字符 + 最小框」四道过滤，
+        # 既保留零文字门禁，又不让噪点把整批成图全部废掉。
+        if not txt or conf < 80 or len(txt) < 2:
             continue
-        if len(txt) < 2 and not any(c.isalnum() for c in txt):
+        # 实义字符：字母/数字/平假名/片假名(排除 中点・和 长音ー)/汉字。
+        # 纯符号串（ーー、=!、・ ・）不当文字。
+        def meaningful(c):
+            return (('a' <= c.lower() <= 'z') or c.isdigit() or
+                    '\u3041' <= c <= '\u3096' or
+                    '\u30a1' <= c <= '\u30fa' or
+                    '\u3400' <= c <= '\u9fff')
+        if not any(meaningful(c) for c in txt):
             continue
         try:
             left, top = float(r['left']), float(r['top'])
             w, h = float(r['width']), float(r['height'])
         except (KeyError, ValueError):
             continue
-        if w <= 0 or h <= 0:
-            continue
+        if w <= 0 or h <= 0 or w < 8 or h < 8:
+            continue  # <8px 的框是噪点，不是文字
         hits.append((txt, conf / 100.0,
                      left / W, 1 - (top + h) / H, w / W, h / H))
     if not hits:
         return 0, 'NO_TEXT_DETECTED'
     out = ['TEXT_DETECTED %d' % len(hits)]
-    for txt, c, x, y, w, h in hits[:12]:
+    for txt, c, x, y, w, h in hits[:80]:
         out.append('  > "%s" conf=%.2f bb=(%.2f,%.2f,%.2f,%.2f)' % (
             txt, c, x, y, w, h))
     return 1, '\n'.join(out)
@@ -244,7 +256,7 @@ def gate(im, tag):
                       centering=(0.5, 0.5))
     tmp = os.path.join(TMP, 'draw_gate_%s.jpg' % tag)
     patched, rc, out = 0, -1, ''
-    for attempt in range(3):
+    for attempt in range(5):
         im.save(tmp, 'JPEG', quality=89, optimize=True)
         rc, out = ocr_check(tmp)
         if rc == 0:
