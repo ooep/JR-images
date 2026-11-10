@@ -1,19 +1,27 @@
 name: draw-img2img
 
 # B 线全站照片图生图（Actions 版）。
-# 与本地 img2img_allphotos.py 口径一致：源 stations/<slug>/photo.jpg，
-# 输出 draw_img/<NN_都道府県>/<slug>.jpg，2400x1800 + Vision OCR 零文字门禁。
-# OCR 门禁依赖 macOS Vision，必须在 macOS runner 上现场编译 ci/ocr.swift。
-# 提交走 Git Data API（force=false + head 重放），不使用 git push，
-# 因此 GITHUB_TOKEN 产生的提交不会触发其它 workflow 的 push 链。
+# 口径（用户 2026-11-10 确认）：源 stations/<slug>/photo.jpg，
+# 输出 draw_img/<NN_都道府県>/<slug>.jpg，2400x1800 + OCR 零文字门禁。
+# 该账户不支持任何 macOS runner 配置（Vision 无法编译），故用 ubuntu-latest
+# + Tesseract(jpn+eng) 作零文字门禁；命中文字按 bbox 补平后复检。
+# 提交走 Git Data API（force=false + head 重放），不用 git push，
+# 因此 GITHUB_TOKEN 的提交不会触发其它 workflow 的 push 链。
+# 单 job 最多 6 小时，全量约 7600 张需分批：本轮跑满 DISPATCH 时限后
+# 由 "Chain next batch" 自动 dispatch 下一轮，直到远端 todo 清零。
 
 on:
   workflow_dispatch:
     inputs:
-      limit:
-        description: '本轮最多生成张数（试跑建议 2-4）'
+      batch_size:
+        description: '每批张数'
         required: false
-        default: '4'
+        default: '20'
+        type: string
+      max_seconds:
+        description: '本轮最多跑多少秒（<6h job 上限，留余量给续派）'
+        required: false
+        default: '19800'
         type: string
       from_end:
         description: 'true=从待办队列尾部取（避开本地长跑正在处理的头部）'
@@ -21,18 +29,24 @@ on:
         default: 'true'
         type: string
       dry_run:
-        description: 'true=只做环境自检（OCR 编译/门禁/secrets/远端树），不生图不提交'
+        description: 'true=只做环境自检（Tesseract/OCR门禁/secrets/远端树/LUPI连通性），不生图不提交'
         required: false
         default: 'false'
         type: string
-      runner:
-        description: 'runner label（macos-14 在部分账户不可用，可换 macos-13 / macos-15 / ubuntu-latest）'
+      chain:
+        description: 'true=本轮跑满时限后自动派发下一轮'
         required: false
-        default: 'macos-14'
+        default: 'true'
+        type: string
+      runner:
+        description: 'runner label（该账户仅 ubuntu-latest 可用）'
+        required: false
+        default: 'ubuntu-latest'
         type: string
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: draw-img2img
@@ -41,12 +55,13 @@ concurrency:
 jobs:
   draw:
     runs-on: ${{ inputs.runner }}
-    timeout-minutes: 90
+    timeout-minutes: 350
     env:
       GH_TOKEN: ${{ github.token }}
       LUPI_KEY: ${{ secrets.LUPI_KEY }}
       GITHUB_REPOSITORY: ${{ github.repository }}
-      DRAW_LIMIT: ${{ inputs.limit }}
+      DRAW_BATCH_SIZE: ${{ inputs.batch_size }}
+      DRAW_MAX_SECONDS: ${{ inputs.max_seconds }}
       DRAW_FROM_END: ${{ inputs.from_end }}
       DRAW_DRY_RUN: ${{ inputs.dry_run }}
       GITHUB_RUN_ID: ${{ github.run_id }}
@@ -54,7 +69,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           # 8584 站照片全量 checkout 体积过大；脚本按 blob sha 拉取源图，
-          # 只需拿到 ci/ 下的脚本与 OCR 源码。
+          # 只需拿到 ci/ 下的脚本。
           sparse-checkout: |
             ci
           sparse-checkout-cone-mode: true
@@ -65,20 +80,53 @@ jobs:
           python-version: '3.12'
 
       - name: Install deps
-        run: pip install --quiet pillow requests
-
-      - name: Build OCR gate (Swift / Vision)
         run: |
           set -e
-          swiftc -O ci/ocr.swift -o "$RUNNER_TEMP/ocr"
-          echo "OCR_BIN=$RUNNER_TEMP/ocr" >> "$GITHUB_ENV"
-          echo "OCR built:"; file "$RUNNER_TEMP/ocr"
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq tesseract-ocr tesseract-ocr-jpn tesseract-ocr-eng
+          pip install --quiet pillow requests
+          tesseract --version | head -n 1
+          tesseract --list-langs | tr '\n' ' '; echo
 
       - name: Self check + draw
+        id: draw
         run: |
           set -e
-          : "${OCR_BIN:?OCR binary 未编译}"
-          if [ "${DRAW_DRY_RUN}" != "true" ]; then
-            : "${LUPI_KEY:?LUPI_KEY secret 未配置，正式生图必须先设置该 Secret}"
-          fi
+          : "${LUPI_KEY:?LUPI_KEY secret 未配置}"
           python3 ci/draw_img2img.py
+
+      - name: Chain next batch
+        if: success() && inputs.chain == 'true' && inputs.dry_run != 'true' && steps.draw.outputs.chain == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BATCH_SIZE: ${{ inputs.batch_size }}
+          MAX_SECONDS: ${{ inputs.max_seconds }}
+          FROM_END: ${{ inputs.from_end }}
+          RUNNER_LABEL: ${{ inputs.runner }}
+        run: |
+          set -e
+          echo "chain: generated=${{ steps.draw.outputs.generated }} remaining=${{ steps.draw.outputs.remaining }}"
+          code=$(curl -sS -o /tmp/dispatch.out -w '%{http_code}' -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/draw-img2img.yml/dispatches" \
+            -d "$(python3 -c '
+          import json, os
+          print(json.dumps({"ref":"main","inputs":{
+            "batch_size":os.environ["BATCH_SIZE"],
+            "max_seconds":os.environ["MAX_SECONDS"],
+            "from_end":os.environ["FROM_END"],
+            "dry_run":"false",
+            "chain":"true",
+            "runner":os.environ["RUNNER_LABEL"]}}))')")
+          echo "dispatch HTTP $code"
+          cat /tmp/dispatch.out
+          [ "$code" = "204" ] || exit 1
+
+      - name: Upload run log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: draw-run-${{ github.run_id }}
+          path: ${{ runner.temp }}/draw_gate_*.jpg
+          if-no-files-found: ignore

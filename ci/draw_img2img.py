@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""ci/draw_img2img.py — GitHub Actions runner 版 B 线全站照片图生图。
+"""ci/draw_img2img.py — GitHub Actions runner 版 B 线全站照片图生图（Linux/Tesseract）。
 
-口径与本地 img2img_allphotos.py 完全一致：
+口径（用户 2026-11-10 确认）：
   源图     stations/<slug>/photo.jpg（按 git blob sha 拉取，不依赖 checkout 全仓）
   输出     draw_img/<NN_都道府県>/<slug>.jpg，2400x1800 + OCR 零文字门禁
   提示词   原样沿用 img2img_run.py 的风格转化提示词（不逐站描述）
+  门禁     Linux runner 无 macOS Vision，改用 Tesseract (jpn+eng) 零文字检查；
+           命中文字按 bbox 补平为纯色空白牌，复检通过才定稿
   跳过     draw_img/ 或 'draw img/' 已有同名 slug
   提交     Git Data API，force=false + head 变动重放；推前查远端去重
 凭据只从环境变量读取：LUPI_KEY（Actions Secret）、GH_TOKEN（github.token）。
-不写任何本地状态文件；每轮从远端树重算 todo，天然断点续跑。
+不写本地状态文件；每轮从远端树重算 todo，天然断点续跑。
 """
 import base64
+import csv
 import io
 import json
 import os
@@ -19,7 +22,6 @@ import re
 import subprocess
 import sys
 import time
-import urllib.parse
 import uuid
 
 import requests
@@ -30,12 +32,17 @@ API = 'https://api.github.com/repos/' + REPO
 LUPI = 'https://lupi.mlgb7.com'
 GH_TOKEN = os.environ.get('GH_TOKEN', '')
 LUPI_KEY = os.environ.get('LUPI_KEY', '')
-OCR_BIN = os.environ.get('OCR_BIN', 'ocr')
+VISION_BIN = os.environ.get('OCR_BIN', '')
 TMP = os.environ.get('RUNNER_TEMP', '/tmp')
-LIMIT = int(os.environ.get('DRAW_LIMIT', '4'))
+LIMIT = int(os.environ.get('DRAW_LIMIT', '20'))          # 每批张数
+BATCH_SIZE = int(os.environ.get('DRAW_BATCH_SIZE', '20'))
+MAX_SECONDS = int(os.environ.get('DRAW_MAX_SECONDS', '19800'))  # 单 job 5.5h，留余量给续派
 FROM_END = os.environ.get('DRAW_FROM_END', 'true').lower() in ('1', 'true', 'yes')
 DRY_RUN = os.environ.get('DRAW_DRY_RUN', 'false').lower() in ('1', 'true', 'yes')
 RUN_TAG = os.environ.get('GITHUB_RUN_ID', 'local')
+GITHUB_OUTPUT = os.environ.get('GITHUB_OUTPUT', '')
+USE_VISION = bool(VISION_BIN and os.path.exists(VISION_BIN)
+                  and os.access(VISION_BIN, os.X_OK))
 
 # 与本地 img2img_run.py 逐字一致，不得改写
 PROMPT = (
@@ -56,8 +63,14 @@ def log(msg):
     print(time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()) + ' ' + str(msg), flush=True)
 
 
+def emit(key, val):
+    if GITHUB_OUTPUT:
+        with open(GITHUB_OUTPUT, 'a', encoding='utf-8') as f:
+            f.write('%s=%s\n' % (key, val))
+    log('OUTPUT %s=%s' % (key, val))
+
+
 def gh(method, path, payload=None, tries=4, timeout=90):
-    """GitHub REST，重试只针对网络/5xx；返回 (status, json)。"""
     hdr = {'Authorization': 'Bearer ' + GH_TOKEN,
            'Accept': 'application/vnd.github+json',
            'X-GitHub-Api-Version': '2022-11-28'}
@@ -108,7 +121,6 @@ def remote_state():
         ent = top.get(name)
         if ent and ent['type'] == 'tree':
             blobs.update(subtree_blobs(ent['sha'], name))
-    # data/ 只需顶层清单，用来定位 stations_all.json（都道府県 -> NN_xx 目录映射）
     ent = top.get('data')
     if ent and ent['type'] == 'tree':
         s, d = gh('GET', '/git/trees/' + ent['sha'])
@@ -122,7 +134,6 @@ def remote_state():
     photos = {p.split('/')[1]: sha for p, sha in blobs.items()
               if p.startswith('stations/') and p.endswith('/photo.jpg')}
 
-    # 都道府県目录映射：优先仓库 stations_all.json，退回 index.json
     sa = {}
     for cand in ('data/stations_all.json', 'stations_all.json'):
         if cand in blobs:
@@ -161,12 +172,51 @@ def remote_state():
 
 
 def ocr_check(path):
-    p = subprocess.run([OCR_BIN, path], capture_output=True, text=True, timeout=90)
-    return p.returncode, p.stdout.strip()
+    """返回 (rc, out)。out 用与本地 Vision 工具相同的 bb=(x,y,w,h) 归一化格式，
+    以便 blank_patch 完全复用。Tesseract 的左上像素坐标会换算成 Vision 的左下坐标。
+    """
+    if USE_VISION:
+        p = subprocess.run([VISION_BIN, path], capture_output=True, text=True, timeout=90)
+        return p.returncode, p.stdout.strip()
+    p = subprocess.run(['tesseract', path, 'stdout', '-l', 'jpn+eng',
+                        '--psm', '11', 'tsv'],
+                       capture_output=True, text=True, timeout=150)
+    if p.returncode != 0:
+        raise RuntimeError('tesseract rc=%s %s' % (p.returncode, p.stderr[:160]))
+    with Image.open(path) as im:
+        W, H = im.size
+    hits = []
+    for r in csv.DictReader(io.StringIO(p.stdout), delimiter='\t',
+                            quoting=csv.QUOTE_NONE):
+        txt = (r.get('text') or '').strip()
+        try:
+            conf = float(r.get('conf') or -1)
+        except ValueError:
+            conf = -1
+        if not txt or conf < 55:
+            continue
+        if len(txt) < 2 and not any(c.isalnum() for c in txt):
+            continue
+        try:
+            left, top = float(r['left']), float(r['top'])
+            w, h = float(r['width']), float(r['height'])
+        except (KeyError, ValueError):
+            continue
+        if w <= 0 or h <= 0:
+            continue
+        hits.append((txt, conf / 100.0,
+                     left / W, 1 - (top + h) / H, w / W, h / H))
+    if not hits:
+        return 0, 'NO_TEXT_DETECTED'
+    out = ['TEXT_DETECTED %d' % len(hits)]
+    for txt, c, x, y, w, h in hits[:12]:
+        out.append('  > "%s" conf=%.2f bb=(%.2f,%.2f,%.2f,%.2f)' % (
+            txt, c, x, y, w, h))
+    return 1, '\n'.join(out)
 
 
 def blank_patch(im, ocr_out):
-    """按 Vision OCR 框把残留文字补成纯色空白牌（坐标系原点左下）。"""
+    """按 OCR 框把残留文字补成纯色空白牌（Vision 归一化坐标，原点左下）。"""
     boxes = re.findall(r'bb=\(([0-9.]+),([0-9.]+),([0-9.]+),([0-9.]+)\)', ocr_out)
     if not boxes:
         return im, 0
@@ -200,12 +250,13 @@ def gate(im, tag):
         if rc == 0:
             break
         if attempt == 0:
-            log('OCR_PATCH %s hits=%d %s' % (tag, out.count('bb='), out[:140].replace('\n', ' ')))
+            log('OCR_PATCH %s hits=%d %s' % (
+                tag, out.count('bb='), out[:140].replace('\n', ' ')))
         im, n = blank_patch(im, out)
         patched += n
     if rc != 0:
-        raise RuntimeError('OCR gate failed %s after %d patches: %s' % (tag, patched, out[:200]))
-    # tmp 就是 im 以同样参数保存的定稿，OCR 已通过；直接复用字节避免二次编码偏差
+        raise RuntimeError('OCR gate failed %s after %d patches: %s' % (
+            tag, patched, out[:200]))
     data = open(tmp, 'rb').read()
     assert len(data) > 10000, 'gate output too small %s' % tag
     log('GATE_OK %s size=2400x1800 patches=%d ocr=%s bytes=%d' % (
@@ -321,38 +372,44 @@ def push_files(files, msg):
 
 
 def preflight(todo):
-    log('PREFLIGHT: OCR binary=%s exists=%s' % (OCR_BIN, os.path.exists(OCR_BIN)))
+    log('PREFLIGHT: OCR engine=%s' % ('Vision' if USE_VISION else 'Tesseract'))
+    if not USE_VISION:
+        v = subprocess.run(['tesseract', '--version'], capture_output=True, text=True)
+        log('PREFLIGHT: tesseract rc=%s %s' % (v.returncode, v.stdout.splitlines()[:1]))
+        assert v.returncode == 0, 'tesseract not installed'
+        langs = subprocess.run(['tesseract', '--list-langs'], capture_output=True, text=True)
+        log('PREFLIGHT: langs=%s' % langs.stdout.strip().replace('\n', ',')[:160])
     probe = os.path.join(TMP, 'draw_ocr_probe.jpg')
     Image.new('RGB', (2400, 1800), (214, 226, 235)).save(probe, 'JPEG')
     rc, out = ocr_check(probe)
-    log('PREFLIGHT: OCR rc=%s out=%s' % (rc, out[:80]))
+    log('PREFLIGHT: blank-image OCR rc=%s out=%s' % (rc, out[:80]))
     assert rc == 0 and 'NO_TEXT_DETECTED' in out, 'OCR gate broken on runner'
     assert GH_TOKEN, 'GH_TOKEN missing'
     log('PREFLIGHT: repo=%s head=%s todo=%d sample=%s LUPI_KEY=%s' % (
         REPO, get_head()[:10], len(todo), [x['slug'] for x in todo[:3]],
         'set' if LUPI_KEY else 'MISSING'))
-    log('PREFLIGHT OK: OCR / GitHub API / runner env usable')
+    # LUPI 端点连通性（不消耗生图额度）
+    if LUPI_KEY:
+        try:
+            r = requests.get(LUPI + '/api/image-tasks?ids=__connectivity_probe__',
+                             headers={'Authorization': 'Bearer ' + LUPI_KEY}, timeout=25)
+            log('PREFLIGHT: LUPI probe http=%s body=%s' % (r.status_code, r.text[:100]))
+        except Exception as e:
+            log('PREFLIGHT: LUPI UNREACHABLE %s' % str(e)[:160])
+    log('PREFLIGHT OK')
 
 
-def main():
-    head, todo = remote_state()
-    log('REMOTE head=%s photos_todo=%d from_end=%s limit=%d dry_run=%s' % (
-        head[:10], len(todo), FROM_END, LIMIT, DRY_RUN))
-    if DRY_RUN:
-        preflight(todo)
-        return
-    picked = list(reversed(todo))[:LIMIT] if FROM_END else todo[:LIMIT]
+def run_batch(todo):
+    """跑一批，返回成功入库张数。"""
+    picked = list(reversed(todo))[:BATCH_SIZE] if FROM_END else todo[:BATCH_SIZE]
     if not picked:
-        log('NOTHING_TO_DO')
-        return
-    log('PICK %s' % ','.join(x['slug'] for x in picked))
-
+        return 0
+    log('BATCH PICK %d %s' % (len(picked), ','.join(x['slug'] for x in picked)))
     inflight = {}
     for item in picked:
         slug = item['slug']
         try:
-            raw = blob_bytes(item['sha'])
-            im = Image.open(io.BytesIO(raw)).convert('RGB')
+            im = Image.open(io.BytesIO(blob_bytes(item['sha']))).convert('RGB')
             im.thumbnail((1024, 1024), Image.LANCZOS)
             im, n = preblank_ref(im)
             ref = os.path.join(TMP, 'draw_ref_%s.jpg' % slug)
@@ -363,9 +420,8 @@ def main():
             log('SUBMIT %s pref=%s patches=%d task=%s' % (slug, item['pref'], n, tid))
         except Exception as e:
             log('SUBMIT_FAIL %s %s' % (slug, str(e)[:200]))
-
     if not inflight:
-        raise RuntimeError('all submits failed')
+        return 0
     finished = poll(list(inflight))
     files = {}
     for tid, item in inflight.items():
@@ -379,17 +435,58 @@ def main():
             log('NO_URL %s' % slug)
             continue
         try:
-            im = download(url, slug)
-            data = gate(im, slug)
-            files['draw_img/%s/%s.jpg' % (item['pref'], slug)] = data
+            files['draw_img/%s/%s.jpg' % (item['pref'], slug)] = gate(download(url, slug), slug)
         except Exception as e:
             log('FINALIZE_FAIL %s %s' % (slug, str(e)[:200]))
     if files:
         push_files(files, 'draw(img2img/actions): %d images, 2400x1800, OCR clean' % len(files))
-        log('PUSHED %d files: %s' % (len(files), ','.join(os.path.basename(p) for p in files)))
-    else:
-        log('NO_FILES_TO_PUSH')
-    log('RUN DONE picked=%d generated=%d' % (len(picked), len(files)))
+        log('PUSHED %d %s' % (len(files), ','.join(os.path.basename(p) for p in files)))
+    return len(files)
+
+
+def main():
+    head, todo = remote_state()
+    log('REMOTE head=%s todo=%d from_end=%s batch=%d max_seconds=%d dry_run=%s' % (
+        head[:10], len(todo), FROM_END, BATCH_SIZE, MAX_SECONDS, DRY_RUN))
+    preflight(todo)
+    if DRY_RUN:
+        emit('generated', 0)
+        emit('remaining', len(todo))
+        emit('chain', 'false')
+        return
+
+    deadline = time.time() + MAX_SECONDS
+    generated = 0
+    empty_streak = 0
+    batches = 0
+    while time.time() < deadline:
+        head, todo = remote_state()
+        if not todo:
+            log('ALL_DONE: 全站照片重绘无待处理项')
+            break
+        n = run_batch(todo)
+        generated += n
+        batches += 1
+        log('BATCH %d generated=%d total=%d remaining=%d elapsed=%ds' % (
+            batches, n, generated, len(todo), int(time.time() - (deadline - MAX_SECONDS))))
+        if n == 0:
+            empty_streak += 1
+            if empty_streak >= 3:
+                log('ABORT: 连续 3 批零产出，停止本 run（避免空转；状态在远端可续跑）')
+                break
+            time.sleep(20 * empty_streak)
+        else:
+            empty_streak = 0
+
+    _, todo = remote_state()
+    remaining = len(todo)
+    emit('generated', generated)
+    emit('remaining', remaining)
+    chain = 'true' if remaining > 0 and generated > 0 and time.time() >= deadline - 60 else 'false'
+    emit('chain', chain)
+    log('RUN DONE generated=%d remaining=%d chain=%s' % (generated, remaining, chain))
+    if generated == 0:
+        raise SystemExit('NO_OUTPUT: 生图服务不可用或全部失败，不触发续派')
 
 
 if __name__ == '__main__':
