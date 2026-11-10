@@ -279,22 +279,39 @@ def preblank_ref(im):
 
 
 def submit(slug, ref_path, attempt, idem):
+    """提交一次图生图任务；429/5xx 属瞬态，退避重试而不是直接记失败。"""
     model = 'gpt-image-2.5-flare' if attempt == 0 else 'gpt-image-2'
     size = '1536x1024' if attempt == 0 else '1024x1024'
-    with open(ref_path, 'rb') as f:
-        r = requests.post(
-            LUPI + '/v1/images/edits',
-            headers={'Authorization': 'Bearer ' + LUPI_KEY, 'Idempotency-Key': idem},
-            data={'model': model, 'prompt': PROMPT, 'n': '1', 'size': size,
-                  'quality': 'low', 'async': 'true', 'response_format': 'url'},
-            files={'image': ('ref.jpg', f, 'image/jpeg')}, timeout=120)
-    if r.status_code != 202:
-        raise RuntimeError('submit %s http=%s %s' % (slug, r.status_code, r.text[:220]))
-    d = r.json()
-    return d.get('task_id') or d.get('id')
+    last = ''
+    for i in range(3):
+        try:
+            with open(ref_path, 'rb') as f:
+                r = requests.post(
+                    LUPI + '/v1/images/edits',
+                    headers={'Authorization': 'Bearer ' + LUPI_KEY,
+                             'Idempotency-Key': idem},
+                    data={'model': model, 'prompt': PROMPT, 'n': '1', 'size': size,
+                          'quality': 'low', 'async': 'true', 'response_format': 'url'},
+                    files={'image': ('ref.jpg', f, 'image/jpeg')}, timeout=120)
+            if r.status_code == 202:
+                d = r.json()
+                tid = d.get('task_id') or d.get('id')
+                if tid:
+                    return tid
+                last = '202 but no task_id: ' + r.text[:120]
+            else:
+                last = 'http=%s %s' % (r.status_code, r.text[:160])
+                if r.status_code not in (429, 500, 502, 503, 504):
+                    break
+        except Exception as e:
+            last = str(e)[:160]
+        if i < 2:
+            time.sleep(4 * (i + 1))
+    raise RuntimeError('submit %s %s' % (slug, last))
 
 
-def poll(ids, max_wait=540):
+def poll(ids, max_wait=720):
+    """等待任务终态；返回 (done, timeout_ids)。整批并发时偶有长尾任务。"""
     done, start = {}, time.time()
     while time.time() - start < max_wait and len(done) < len(ids):
         try:
@@ -308,7 +325,7 @@ def poll(ids, max_wait=540):
             log('poll err ' + str(e)[:120])
         if len(done) < len(ids):
             time.sleep(8)
-    return done
+    return done, [t for t in ids if t not in done]
 
 
 def download(url, tag):
@@ -399,13 +416,37 @@ def preflight(todo):
     log('PREFLIGHT OK')
 
 
-def run_batch(todo):
-    """跑一批，返回成功入库张数。"""
-    picked = list(reversed(todo))[:BATCH_SIZE] if FROM_END else todo[:BATCH_SIZE]
+def fmt_reasons(reasons):
+    """把本批失败原因压成一行，写进 commit message，运行期无需日志即可诊断。"""
+    if not reasons:
+        return 'fails=0'
+    return ','.join('%s=%d' % (k, v) for k, v in sorted(
+        reasons.items(), key=lambda kv: -kv[1])[:6])[:180]
+
+
+def run_batch(todo, fail_count):
+    """跑一批，返回 (成功入库张数, 失败原因 dict, 诊断摘要)。
+
+    服务端 task 失败率偏高时，同一批尾部 slug 会被反复重取；用 fail_count
+    给失败 slug 做本 run 内冷却（最多 2 次），让队列继续向前推进。
+    """
+    elig = [x for x in todo if fail_count.get(x['slug'], 0) < 2]
+    if not elig and fail_count:
+        log('COOLDOWN_RESET: 全部 todo 已冷却，清空计数重试')
+        fail_count.clear()
+        elig = list(todo)
+    picked = list(reversed(elig))[:BATCH_SIZE] if FROM_END else elig[:BATCH_SIZE]
     if not picked:
-        return 0
+        return 0, {}, 'no_pick'
     log('BATCH PICK %d %s' % (len(picked), ','.join(x['slug'] for x in picked)))
     inflight = {}
+    reasons = {}
+
+    def fail(key, slug, detail=''):
+        reasons[key] = reasons.get(key, 0) + 1
+        fail_count[slug] = fail_count.get(slug, 0) + 1
+        log('FAIL %s %s %s' % (key, slug, str(detail)[:160]))
+
     for item in picked:
         slug = item['slug']
         try:
@@ -419,29 +460,44 @@ def run_batch(todo):
             inflight[tid] = item
             log('SUBMIT %s pref=%s patches=%d task=%s' % (slug, item['pref'], n, tid))
         except Exception as e:
-            log('SUBMIT_FAIL %s %s' % (slug, str(e)[:200]))
+            fail('submit', slug, e)
     if not inflight:
-        return 0
-    finished = poll(list(inflight))
+        return 0, reasons, fmt_reasons(reasons)
+    finished, timed_out = poll(list(inflight))
+    if timed_out:
+        log('POLL_TIMEOUT %d tasks not terminal' % len(timed_out))
     files = {}
     for tid, item in inflight.items():
         slug = item['slug']
         task = finished.get(tid)
-        if not task or task.get('status') != 'success' or not task.get('results'):
-            log('TASK_FAIL %s %s' % (slug, (task or {}).get('error_code') or 'timeout'))
+        if not task:
+            fail('task_timeout', slug)
+            continue
+        if task.get('status') != 'success' or not task.get('results'):
+            key = 'task_%s_%s' % (str(task.get('status') or '?')[:12],
+                                  str(task.get('error_code') or 'no_result')[:20])
+            fail(key, slug, str(task.get('error'))[:100])
             continue
         url = task['results'][0].get('url')
         if not url:
-            log('NO_URL %s' % slug)
+            fail('no_url', slug)
             continue
         try:
-            files['draw_img/%s/%s.jpg' % (item['pref'], slug)] = gate(download(url, slug), slug)
+            data = gate(download(url, slug), slug)
+            files['draw_img/%s/%s.jpg' % (item['pref'], slug)] = data
+            fail_count.pop(slug, None)
         except Exception as e:
-            log('FINALIZE_FAIL %s %s' % (slug, str(e)[:200]))
+            msg = str(e)
+            key = ('ocr_gate' if 'OCR gate' in msg else
+                   'download' if 'download' in msg.lower() else 'finalize')
+            fail(key, slug, e)
     if files:
-        push_files(files, 'draw(img2img/actions): %d images, 2400x1800, OCR clean' % len(files))
-        log('PUSHED %d %s' % (len(files), ','.join(os.path.basename(p) for p in files)))
-    return len(files)
+        summary = fmt_reasons(reasons)
+        push_files(files, 'draw(img2img/actions): %d images, 2400x1800, OCR clean | %s'
+                   % (len(files), summary))
+        log('PUSHED %d %s | %s' % (
+            len(files), ','.join(os.path.basename(p) for p in files), summary))
+    return len(files), reasons, fmt_reasons(reasons)
 
 
 def main():
@@ -459,20 +515,22 @@ def main():
     generated = 0
     empty_streak = 0
     batches = 0
+    fail_count = {}
     while time.time() < deadline:
         head, todo = remote_state()
         if not todo:
             log('ALL_DONE: 全站照片重绘无待处理项')
             break
-        n = run_batch(todo)
+        n, reasons, summary = run_batch(todo, fail_count)
         generated += n
         batches += 1
-        log('BATCH %d generated=%d total=%d remaining=%d elapsed=%ds' % (
-            batches, n, generated, len(todo), int(time.time() - (deadline - MAX_SECONDS))))
+        log('BATCH %d generated=%d total=%d remaining=%d elapsed=%ds | %s' % (
+            batches, n, generated, len(todo),
+            int(time.time() - (deadline - MAX_SECONDS)), summary))
         if n == 0:
             empty_streak += 1
             if empty_streak >= 3:
-                log('ABORT: 连续 3 批零产出，停止本 run（避免空转；状态在远端可续跑）')
+                log('ABORT: 连续 3 批零产出，停止本 run（远端状态可续跑）')
                 break
             time.sleep(20 * empty_streak)
         else:
@@ -482,7 +540,9 @@ def main():
     remaining = len(todo)
     emit('generated', generated)
     emit('remaining', remaining)
-    chain = 'true' if remaining > 0 and generated > 0 and time.time() >= deadline - 60 else 'false'
+    # 只要还有 todo 且本轮有产出就续派：跑满时限、零产出提前退出、甚至
+    # 被 job 时限逼近而退出，都不应让自动链断开。
+    chain = 'true' if remaining > 0 and generated > 0 else 'false'
     emit('chain', chain)
     log('RUN DONE generated=%d remaining=%d chain=%s' % (generated, remaining, chain))
     if generated == 0:

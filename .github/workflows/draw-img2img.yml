@@ -43,6 +43,11 @@ on:
         required: false
         default: 'ubuntu-latest'
         type: string
+      chain_depth:
+        description: '自动续派代数（内部计数，超过 60 代停止，避免服务异常时无限空转）'
+        required: false
+        default: '0'
+        type: string
 
 permissions:
   contents: write
@@ -91,9 +96,9 @@ jobs:
       - name: Self check + draw
         id: draw
         run: |
-          set -e
+          set -eo pipefail
           : "${LUPI_KEY:?LUPI_KEY secret 未配置}"
-          python3 ci/draw_img2img.py
+          python3 ci/draw_img2img.py 2>&1 | tee "$RUNNER_TEMP/draw_run.log"
 
       - name: Chain next batch
         if: success() && inputs.chain == 'true' && inputs.dry_run != 'true' && steps.draw.outputs.chain == 'true'
@@ -103,9 +108,16 @@ jobs:
           MAX_SECONDS: ${{ inputs.max_seconds }}
           FROM_END: ${{ inputs.from_end }}
           RUNNER_LABEL: ${{ inputs.runner }}
+          CHAIN_DEPTH: ${{ inputs.chain_depth }}
         run: |
           set -e
-          echo "chain: generated=${{ steps.draw.outputs.generated }} remaining=${{ steps.draw.outputs.remaining }}"
+          echo "chain: generated=${{ steps.draw.outputs.generated }} remaining=${{ steps.draw.outputs.remaining }} depth=${CHAIN_DEPTH:-0}"
+          depth=$(( ${CHAIN_DEPTH:-0} + 1 ))
+          if [ "$depth" -gt 60 ]; then
+            echo "chain depth $depth > 60, stop auto-chain to avoid empty spin"
+            exit 0
+          fi
+          export CHAIN_DEPTH="$depth"
           code=$(curl -sS -o /tmp/dispatch.out -w '%{http_code}' -X POST \
             -H "Authorization: Bearer $GH_TOKEN" \
             -H "Accept: application/vnd.github+json" \
@@ -118,7 +130,8 @@ jobs:
             "from_end":os.environ["FROM_END"],
             "dry_run":"false",
             "chain":"true",
-            "runner":os.environ["RUNNER_LABEL"]}}))')")
+            "runner":os.environ["RUNNER_LABEL"],
+            "chain_depth":str(os.environ["CHAIN_DEPTH"])}}))')")
           echo "dispatch HTTP $code"
           cat /tmp/dispatch.out
           [ "$code" = "204" ] || exit 1
@@ -128,5 +141,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: draw-run-${{ github.run_id }}
-          path: ${{ runner.temp }}/draw_gate_*.jpg
+          path: |
+            ${{ runner.temp }}/draw_gate_*.jpg
+            ${{ runner.temp }}/draw_run.log
           if-no-files-found: ignore
