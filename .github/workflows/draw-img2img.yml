@@ -1,0 +1,79 @@
+name: draw-img2img
+
+# B 线全站照片图生图（Actions 版）。
+# 与本地 img2img_allphotos.py 口径一致：源 stations/<slug>/photo.jpg，
+# 输出 draw_img/<NN_都道府県>/<slug>.jpg，2400x1800 + Vision OCR 零文字门禁。
+# OCR 门禁依赖 macOS Vision，必须在 macOS runner 上现场编译 ci/ocr.swift。
+# 提交走 Git Data API（force=false + head 重放），不使用 git push，
+# 因此 GITHUB_TOKEN 产生的提交不会触发其它 workflow 的 push 链。
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: '本轮最多生成张数（试跑建议 2-4）'
+        required: false
+        default: '4'
+        type: string
+      from_end:
+        description: 'true=从待办队列尾部取（避开本地长跑正在处理的头部）'
+        required: false
+        default: 'true'
+        type: string
+      dry_run:
+        description: 'true=只做环境自检（OCR 编译/门禁/secrets/远端树），不生图不提交'
+        required: false
+        default: 'false'
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: draw-img2img
+  cancel-in-progress: false
+
+jobs:
+  draw:
+    runs-on: macos-14
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ github.token }}
+      LUPI_KEY: ${{ secrets.LUPI_KEY }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+      DRAW_LIMIT: ${{ inputs.limit }}
+      DRAW_FROM_END: ${{ inputs.from_end }}
+      DRAW_DRY_RUN: ${{ inputs.dry_run }}
+      GITHUB_RUN_ID: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # 8584 站照片全量 checkout 体积过大；脚本按 blob sha 拉取源图，
+          # 只需拿到 ci/ 下的脚本与 OCR 源码。
+          sparse-checkout: |
+            ci
+          sparse-checkout-cone-mode: true
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install --quiet pillow requests
+
+      - name: Build OCR gate (Swift / Vision)
+        run: |
+          set -e
+          swiftc -O ci/ocr.swift -o "$RUNNER_TEMP/ocr"
+          echo "OCR_BIN=$RUNNER_TEMP/ocr" >> "$GITHUB_ENV"
+          echo "OCR built:"; file "$RUNNER_TEMP/ocr"
+
+      - name: Self check + draw
+        run: |
+          set -e
+          : "${OCR_BIN:?OCR binary 未编译}"
+          if [ "${DRAW_DRY_RUN}" != "true" ]; then
+            : "${LUPI_KEY:?LUPI_KEY secret 未配置，正式生图必须先设置该 Secret}"
+          fi
+          python3 ci/draw_img2img.py
