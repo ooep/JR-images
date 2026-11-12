@@ -2386,3 +2386,9 @@
 - st08868 久地 接受 c1「File:JREast-Nambu-line-JN12-Kuji-station-platform-20240203-101928.jpg」isc 6.42（替换原错挂图 File:JR Nambu-Line Kuji Station building.jpg）
 - st08877 稲田堤 接受 c2「File:JR南武線 稲田堤駅 2013.5.17 - panoramio.jpg」isc 7.32（替换原错挂图 File:Inadazutsumi Station new station-building 20230811.jpg）
 - 合计 ACCEPT 13 / MISSING_BSC 0 / REVIEW 0 / RETRY 0 / NOOP 12；四道门禁 + OCR + GPS + 放大目检后逐条裁决。
+
+
+## ws17 below-spec replace WS17-B55 — 2026-11-12T00:47:47Z
+- queue: 25 站（review/below_spec 高分替换）
+- replaced=4 staged=21 confirmed=0 skipped=0
+- reject_dist={"resolution_low_lt_1600": 99, "same_as_current": 24, "duplicate_title": 27, "hard_excluded": 67, "resolution_not_upgrade": 34, "mime_unsupported": 45, "title_non_station_scene": 19, "title_names_other_station": 64, "license_unclear": 2, "quality_reject_low_color": 19, "undecodable": 1, "no_author_metadata": 4}
