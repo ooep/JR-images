@@ -1,106 +1,86 @@
 {
- "batch_id": "WS17-B49r",
+ "batch_id": "WS17-B66r",
  "queue": [
-  "st00117",
-  "st00120",
-  "st00121",
-  "st00124",
-  "st00126",
-  "st00131",
-  "st00133",
-  "st00138",
-  "st00143",
-  "st00147",
-  "st00148",
-  "st00152",
-  "st00171",
-  "st00174",
-  "st00175",
-  "st00176",
-  "st00184",
-  "st00186",
-  "st00189",
-  "st00194",
-  "st00196",
-  "st00197",
-  "st00200"
+  "st03744",
+  "st01605",
+  "st04641",
+  "st03738",
+  "st03747",
+  "st03771",
+  "st03791",
+  "st03778",
+  "st04653",
+  "st03000",
+  "st03779",
+  "st03750",
+  "st01897",
+  "st04655",
+  "st00605",
+  "st02341",
+  "st03004",
+  "st03780",
+  "st00355",
+  "st00360",
+  "st00367",
+  "st00372",
+  "st00373"
  ],
- "replaced": [],
+ "replaced": [
+  {
+   "slug": "st00367",
+   "name": "谷山",
+   "pref": "鹿児島県",
+   "title": "File:Kagoshima City Tramcar and platform of Taniyama Station.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Kagoshima_City_Tramcar_and_platform_of_Taniyama_Station.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Kagoshima_City_Tramcar_and_platform_of_Taniyama_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "そらみみ",
+   "sha256": "8ecaef28ae6e72c039261d417be7410c6d315c84785454da37883b9f62a6b04b",
+   "dhash": "784474707848cbd8",
+   "bytes": 396806,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": 4.9,
+   "score": 4.52,
+   "image_score": 5.87,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false
+  }
+ ],
  "staged": [
   {
-   "slug": "st00117",
-   "title": "File:Hiroden-Ajina Sta.01.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden-Ajina_Sta.01.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Hiroden-Ajina_Sta.01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Ujinaport",
-   "sha256": "92bbea70bb0096084d5da03ae9d5dd1628ab64e5f0ba9debcb6acc146236e2a6",
-   "dhash": "78f49c563318f4d0",
-   "bytes": 519361,
+   "slug": "st03744",
+   "title": "File:Tosaden Asahi1Dentei.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tosaden_Asahi1Dentei.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Tosaden_Asahi1Dentei.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "Public domain",
+   "license_url": "",
+   "author": "Nh3526",
+   "sha256": "754238ee69efc318dc3e782a0caaaf046c33c3ad38a0d070f44bdf689c4bedfc",
+   "dhash": "4db1b8fc7accbc34",
+   "bytes": 467897,
    "width": 1800,
    "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 2048,
-    "original_height": 1536
+    "original_width": 2000,
+    "original_height": 1500
    },
    "dist_m": null,
-   "score": 1.52,
-   "image_score": 7.0,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": true,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1697.6,
-    "colorfulness": 40.0,
-    "white_frac": 0.005,
-    "edge_density": 0.1083,
-    "sky_frac": 0.382,
-    "brightness": 132.1,
-    "dark_frac": 0.081,
-    "center_edge": 0.1086
-   },
-   "current": {
-    "sha256": "f18fbcd7f7da4aaeb8489247372169b1b05d1760a387e988483d0a1b2835a8e9",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden-Ajina Sta.03.jpg"
-   }
-  },
-  {
-   "slug": "st00120",
-   "title": "File:Hiroden JA Hiroshima Hospital Sta.01.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden_JA_Hiroshima_Hospital_Sta.01.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Hiroden_JA_Hiroshima_Hospital_Sta.01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Ujinaport",
-   "sha256": "5dc9391f5d61954ac03ef590f2f32a9e05d077ede23725720417505d3bc69207",
-   "dhash": "6c6062398c8cac61",
-   "bytes": 505802,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2048,
-    "original_height": 1536
-   },
-   "dist_m": null,
-   "score": 1.52,
-   "image_score": 6.91,
+   "score": 1.5,
+   "image_score": 7.15,
    "quality": "review",
    "quality_reasons": [
     "subject_unverified(no_station_kw)"
@@ -110,48 +90,197 @@
    "metrics": {
     "width": 1800,
     "height": 1350,
-    "lap_var": 1810.4,
-    "colorfulness": 39.4,
-    "white_frac": 0.01,
-    "edge_density": 0.1156,
-    "sky_frac": 0.38,
-    "brightness": 132.8,
-    "dark_frac": 0.103,
-    "center_edge": 0.1224
+    "lap_var": 1179.7,
+    "colorfulness": 37.1,
+    "white_frac": 0.012,
+    "edge_density": 0.0739,
+    "sky_frac": 0.634,
+    "brightness": 136.7,
+    "dark_frac": 0.044,
+    "center_edge": 0.0957
    },
    "current": {
-    "sha256": "7e40a35178c466f107f02f12b652b42703a6c216d14b791cd937f5de941beb78",
-    "score": null,
+    "sha256": "99b8f5dcc4bd2117a2d8ad7a22192f27a94f3686a8e2ae1164f465fefa92f343",
+    "score": 7.34,
     "long": 1800,
     "reasons": [
      "subject_unverified(no_station_kw)"
     ],
-    "source_title": "File:Hiroden JA Hiroshima Hospital Sta.03.jpg"
+    "source_title": "File:Asahimachi-itchchome-tramstop.jpg"
    }
   },
   {
-   "slug": "st00120",
-   "title": "File:Hiroden JA Hiroshima Hospital Sta.02.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden_JA_Hiroshima_Hospital_Sta.02.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Hiroden_JA_Hiroshima_Hospital_Sta.02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Ujinaport",
-   "sha256": "4844f4cdcec38801e748c8c622b758eb4020b0e70ecc4d35148d0e5d5076e289",
-   "dhash": "b0e0431c1f4e46c2",
-   "bytes": 397136,
+   "slug": "st01605",
+   "title": "File:JREast-Araki-station-platform.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:JREast-Araki-station-platform.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/JREast-Araki-station-platform.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "LERK (talk · contribs)",
+   "sha256": "4ba2a272fcde72be47ef90c7c9505d37924f2a4376a140ee8dcc459828f63b0d",
+   "dhash": "52e0b030e0e3c9cc",
+   "bytes": 452479,
    "width": 1800,
    "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 2048,
-    "original_height": 1536
+    "original_width": 2816,
+    "original_height": 2112
    },
    "dist_m": null,
-   "score": 1.52,
-   "image_score": 6.22,
+   "score": 3.91,
+   "image_score": 6.62,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1210.7,
+    "colorfulness": 44.9,
+    "white_frac": 0.006,
+    "edge_density": 0.0673,
+    "sky_frac": 0.229,
+    "brightness": 116.1,
+    "dark_frac": 0.141,
+    "center_edge": 0.0822
+   },
+   "current": {
+    "sha256": "77f2ad2aa1904656539868055bbb8bd89b21f0e332b493f4bbec2d1fa8eff90e",
+    "score": 7.35,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:JR Narita-Line Araki Station Platform.jpg"
+   }
+  },
+  {
+   "slug": "st01605",
+   "title": "File:Narita-Line Araki Station North Exit.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Narita-Line_Araki_Station_North_Exit.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Narita-Line_Araki_Station_North_Exit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Rory trains",
+   "sha256": "f454f1cb8fc2cc0c26d6f826ef38fbd26e3aca4df3003ab256e8e9e90cb45444",
+   "dhash": "804085cdede49bf0",
+   "bytes": 415679,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": null,
+   "score": 3.52,
+   "image_score": 6.91,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1473.6,
+    "colorfulness": 28.0,
+    "white_frac": 0.001,
+    "edge_density": 0.0805,
+    "sky_frac": 0.99,
+    "brightness": 144.2,
+    "dark_frac": 0.08,
+    "center_edge": 0.0858
+   },
+   "current": {
+    "sha256": "77f2ad2aa1904656539868055bbb8bd89b21f0e332b493f4bbec2d1fa8eff90e",
+    "score": 7.35,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:JR Narita-Line Araki Station Platform.jpg"
+   }
+  },
+  {
+   "slug": "st01605",
+   "title": "File:Narita-Line Araki Station South Exit.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Narita-Line_Araki_Station_South_Exit.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Narita-Line_Araki_Station_South_Exit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Rory trains",
+   "sha256": "54238f8e4da3e8dda8c6be1c85c675d6bef7d8830586bd86e5f87776697536ee",
+   "dhash": "69e3c6ecf1b37be3",
+   "bytes": 529730,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": null,
+   "score": 3.52,
+   "image_score": 6.28,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 2548.3,
+    "colorfulness": 21.3,
+    "white_frac": 0.012,
+    "edge_density": 0.1221,
+    "sky_frac": 0.435,
+    "brightness": 130.5,
+    "dark_frac": 0.138,
+    "center_edge": 0.1119
+   },
+   "current": {
+    "sha256": "77f2ad2aa1904656539868055bbb8bd89b21f0e332b493f4bbec2d1fa8eff90e",
+    "score": 7.35,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:JR Narita-Line Araki Station Platform.jpg"
+   }
+  },
+  {
+   "slug": "st04641",
+   "title": "File:Otaguchi Street in Toyama city ac (2).jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Otaguchi_Street_in_Toyama_city_ac_(2).jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Otaguchi_Street_in_Toyama_city_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Asturio Cantabrio",
+   "sha256": "2582a470eafe374b07905c5c01632c081b02d4c6041edaa77e84cf48bee64e2a",
+   "dhash": "f0b1f1f1b373f1f1",
+   "bytes": 477373,
+   "width": 1800,
+   "height": 1197,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 6016,
+    "original_height": 4000
+   },
+   "dist_m": null,
+   "score": 3.5,
+   "image_score": 6.23,
    "quality": "review",
    "quality_reasons": [
     "low_color",
@@ -161,692 +290,191 @@
    "running_near": false,
    "metrics": {
     "width": 1800,
-    "height": 1350,
-    "lap_var": 691.4,
-    "colorfulness": 20.2,
-    "white_frac": 0.144,
-    "edge_density": 0.0543,
-    "sky_frac": 0.446,
-    "brightness": 121.3,
-    "dark_frac": 0.109,
-    "center_edge": 0.0705
+    "height": 1197,
+    "lap_var": 1571.4,
+    "colorfulness": 21.0,
+    "white_frac": 0.074,
+    "edge_density": 0.1004,
+    "sky_frac": 0.634,
+    "brightness": 119.4,
+    "dark_frac": 0.103,
+    "center_edge": 0.1107
    },
    "current": {
-    "sha256": "7e40a35178c466f107f02f12b652b42703a6c216d14b791cd937f5de941beb78",
-    "score": null,
+    "sha256": "f103f4249cf9ab5486cbf42f2f1a8f4c91aa82870f4e42b42fd02feeb1d44b15",
+    "score": 7.42,
     "long": 1800,
     "reasons": [
      "subject_unverified(no_station_kw)"
     ],
-    "source_title": "File:Hiroden JA Hiroshima Hospital Sta.03.jpg"
+    "source_title": "File:Cimg2044 (2354511502).jpg"
    }
   },
   {
-   "slug": "st00121",
-   "title": "File:JR Shin-etsu Line・Joetsu Line Miyauchi Station Platform 1.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:JR_Shin-etsu_Line・Joetsu_Line_Miyauchi_Station_Platform_1.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/JR_Shin-etsu_Line%E3%83%BBJoetsu_Line_Miyauchi_Station_Platform_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "slug": "st04641",
+   "title": "File:Otaguchi Street in Toyama city ac (3).jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Otaguchi_Street_in_Toyama_city_ac_(3).jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Otaguchi_Street_in_Toyama_city_ac_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "license": "CC BY-SA 4.0",
    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Mister0124",
-   "sha256": "2a17bba06e1bdb9c7ffdd0c273979a52e7c83edfac96e6d9690e28c1f8b9bd47",
-   "dhash": "094e8888c8d99fb9",
-   "bytes": 473961,
-   "width": 1800,
-   "height": 1276,
+   "author": "Asturio Cantabrio",
+   "sha256": "8ad1fe53fe8e5c23d59984786f768badbb7eae8028db1251446331ac786afe05",
+   "dhash": "6ce4266347e1c2c3",
+   "bytes": 532686,
+   "width": 1382,
+   "height": 1800,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 4161,
-    "original_height": 2949
+    "original_width": 3999,
+    "original_height": 5208
    },
    "dist_m": null,
-   "score": 4.58,
-   "image_score": 6.73,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": true,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1276,
-    "lap_var": 1539.2,
-    "colorfulness": 32.4,
-    "white_frac": 0.054,
-    "edge_density": 0.0966,
-    "sky_frac": 0.151,
-    "brightness": 132.5,
-    "dark_frac": 0.104,
-    "center_edge": 0.0914
-   },
-   "current": {
-    "sha256": "8efea84067bce868883262f35602cabdb3e0e47749a6db0ab741473e679c5a29",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "audit_low_conf_priority_recapture"
-    ],
-    "source_title": "File:Miyauchi Station, Nagaoka 03.jpg"
-   }
-  },
-  {
-   "slug": "st00121",
-   "title": "File:JR Shin-etsu Line・Joetsu Line Miyauchi Station Platform 2・3.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:JR_Shin-etsu_Line・Joetsu_Line_Miyauchi_Station_Platform_2・3.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/JR_Shin-etsu_Line%E3%83%BBJoetsu_Line_Miyauchi_Station_Platform_2%E3%83%BB3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Mister0124",
-   "sha256": "0d7af2c928958c268f2ed7925905fe576100df072f9af6322eacd09fa8242030",
-   "dhash": "979f4bcbea368607",
-   "bytes": 455898,
-   "width": 1800,
-   "height": 1276,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4161,
-    "original_height": 2949
-   },
-   "dist_m": null,
-   "score": 4.58,
-   "image_score": 6.47,
+   "score": 3.1,
+   "image_score": 3.08,
    "quality": "review",
    "quality_reasons": [
-    "low_color"
+    "subject_unverified(no_station_kw)"
    ],
-   "self_hit": true,
+   "self_hit": false,
    "running_near": false,
    "metrics": {
-    "width": 1800,
-    "height": 1276,
-    "lap_var": 1549.6,
-    "colorfulness": 24.2,
-    "white_frac": 0.031,
-    "edge_density": 0.0962,
-    "sky_frac": 0.277,
-    "brightness": 125.2,
-    "dark_frac": 0.086,
-    "center_edge": 0.1099
+    "width": 1382,
+    "height": 1800,
+    "lap_var": 962.8,
+    "colorfulness": 52.4,
+    "white_frac": 0.012,
+    "edge_density": 0.0829,
+    "sky_frac": 0.263,
+    "brightness": 107.0,
+    "dark_frac": 0.159,
+    "center_edge": 0.075
    },
    "current": {
-    "sha256": "8efea84067bce868883262f35602cabdb3e0e47749a6db0ab741473e679c5a29",
-    "score": null,
+    "sha256": "f103f4249cf9ab5486cbf42f2f1a8f4c91aa82870f4e42b42fd02feeb1d44b15",
+    "score": 7.42,
     "long": 1800,
     "reasons": [
-     "audit_low_conf_priority_recapture"
+     "subject_unverified(no_station_kw)"
     ],
-    "source_title": "File:Miyauchi Station, Nagaoka 03.jpg"
+    "source_title": "File:Cimg2044 (2354511502).jpg"
    }
   },
   {
-   "slug": "st00121",
-   "title": "File:Miyauchi Station, Nagaoka 01.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Miyauchi_Station,_Nagaoka_01.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Miyauchi_Station%2C_Nagaoka_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "slug": "st04641",
+   "title": "File:Otaguchi Street in Toyama city ac (1).jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Otaguchi_Street_in_Toyama_city_ac_(1).jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Otaguchi_Street_in_Toyama_city_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Asturio Cantabrio",
+   "sha256": "62b95be0d5f805610ac8a1f138d2d632e599b806952bdb9f0bcaeecbabe01a86",
+   "dhash": "850911a220608606",
+   "bytes": 380009,
+   "width": 1800,
+   "height": 1539,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3999,
+    "original_height": 3419
+   },
+   "dist_m": null,
+   "score": 2.5,
+   "image_score": 4.58,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color",
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1539,
+    "lap_var": 335.7,
+    "colorfulness": 20.4,
+    "white_frac": 0.043,
+    "edge_density": 0.0382,
+    "sky_frac": 0.579,
+    "brightness": 132.7,
+    "dark_frac": 0.066,
+    "center_edge": 0.0481
+   },
+   "current": {
+    "sha256": "f103f4249cf9ab5486cbf42f2f1a8f4c91aa82870f4e42b42fd02feeb1d44b15",
+    "score": 7.42,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:Cimg2044 (2354511502).jpg"
+   }
+  },
+  {
+   "slug": "st03738",
+   "title": "File:Sanbashi-dori-4chome-tramstop.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Sanbashi-dori-4chome-tramstop.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Sanbashi-dori-4chome-tramstop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Rsa",
+   "sha256": "384db48564a4c2c32156b1d1b49c77448e3a73d6c21a454eddd48a5370eeb4a6",
+   "dhash": "9a307fe7b5251ac0",
+   "bytes": 505991,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3072,
+    "original_height": 2304
+   },
+   "dist_m": null,
+   "score": 2.04,
+   "image_score": 7.37,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 1950.0,
+    "colorfulness": 42.7,
+    "white_frac": 0.165,
+    "edge_density": 0.0912,
+    "sky_frac": 0.807,
+    "brightness": 141.9,
+    "dark_frac": 0.047,
+    "center_edge": 0.1486
+   },
+   "current": {
+    "sha256": "ce5e28d27737536702c630dc947530f000bdbcab572a1cd5243a57ecb2d8eba2",
+    "score": 7.45,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:Tosaden sambashi4.JPG"
+   }
+  },
+  {
+   "slug": "st03747",
+   "title": "File:Tosaden 625 tram 20200725 (50183445013).jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tosaden_625_tram_20200725_(50183445013).jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Tosaden_625_tram_20200725_%2850183445013%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "license": "CC BY 2.0",
    "license_url": "https://creativecommons.org/licenses/by/2.0",
-   "author": "nubobo",
-   "sha256": "1b22e5ce1c4fa8f200e52e0ef4ffbc11568fd680ba91862e72534ff9dff3e9b4",
-   "dhash": "d2a2228ac5d452f0",
-   "bytes": 289637,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 5616,
-    "original_height": 3744
-   },
-   "dist_m": null,
-   "score": 4.31,
-   "image_score": 5.95,
-   "quality": "review",
-   "quality_reasons": [
-    "low_color"
-   ],
-   "self_hit": true,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 512.0,
-    "colorfulness": 20.5,
-    "white_frac": 0.087,
-    "edge_density": 0.0478,
-    "sky_frac": 0.77,
-    "brightness": 121.0,
-    "dark_frac": 0.176,
-    "center_edge": 0.0548
-   },
-   "current": {
-    "sha256": "8efea84067bce868883262f35602cabdb3e0e47749a6db0ab741473e679c5a29",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "audit_low_conf_priority_recapture"
-    ],
-    "source_title": "File:Miyauchi Station, Nagaoka 03.jpg"
-   }
-  },
-  {
-   "slug": "st00124",
-   "title": "File:Temple of Hera (Paestum), East view.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Temple_of_Hera_(Paestum),_East_view.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Temple_of_Hera_%28Paestum%29%2C_East_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "PaestumPaestum",
-   "sha256": "a3250acea19aadb99688eed18299934df0dffc47c024f2f041903e94dbf8d99f",
-   "dhash": "00a26d713beaf0e8",
-   "bytes": 479498,
-   "width": 1800,
-   "height": 1064,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 7798,
-    "original_height": 4608
-   },
-   "dist_m": null,
-   "score": 3.5,
-   "image_score": 7.58,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1064,
-    "lap_var": 2523.1,
-    "colorfulness": 65.0,
-    "white_frac": 0.001,
-    "edge_density": 0.157,
-    "sky_frac": 0.042,
-    "brightness": 121.7,
-    "dark_frac": 0.05,
-    "center_edge": 0.2067
-   },
-   "current": {
-    "sha256": "aa5c3b39b11b50d2d8bf7ce36528adb85cffa2f48507b83517aac1f61d16f70d",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Temple of Hera (Paestum), South-East view.jpg"
-   }
-  },
-  {
-   "slug": "st00124",
-   "title": "File:Temple of Hera (Paestum), Western view.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Temple_of_Hera_(Paestum),_Western_view.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Temple_of_Hera_%28Paestum%29%2C_Western_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "PaestumPaestum",
-   "sha256": "9cf2b5925c5728104099a739bfc5a0e8db1be596d304859892505bfdc0e596f5",
-   "dhash": "fcb72f29298f1f9e",
-   "bytes": 435497,
-   "width": 1800,
-   "height": 1081,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 7497,
-    "original_height": 4501
-   },
-   "dist_m": null,
-   "score": 3.5,
-   "image_score": 7.49,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1081,
-    "lap_var": 1506.9,
-    "colorfulness": 58.0,
-    "white_frac": 0.001,
-    "edge_density": 0.1044,
-    "sky_frac": 0.046,
-    "brightness": 122.3,
-    "dark_frac": 0.032,
-    "center_edge": 0.1082
-   },
-   "current": {
-    "sha256": "aa5c3b39b11b50d2d8bf7ce36528adb85cffa2f48507b83517aac1f61d16f70d",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Temple of Hera (Paestum), South-East view.jpg"
-   }
-  },
-  {
-   "slug": "st00124",
-   "title": "File:Temple of Hera (Paestum), front East view.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Temple_of_Hera_(Paestum),_front_East_view.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Temple_of_Hera_%28Paestum%29%2C_front_East_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "PaestumPaestum",
-   "sha256": "c939c07addc39ade62550088ecf19ff3c8b2ba05cc7c1d621b896399452d5bc6",
-   "dhash": "41806d713beaf0f8",
-   "bytes": 482232,
-   "width": 1800,
-   "height": 1064,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 7721,
-    "original_height": 4562
-   },
-   "dist_m": null,
-   "score": 3.5,
-   "image_score": 7.56,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1064,
-    "lap_var": 2546.8,
-    "colorfulness": 65.0,
-    "white_frac": 0.001,
-    "edge_density": 0.1576,
-    "sky_frac": 0.041,
-    "brightness": 121.3,
-    "dark_frac": 0.052,
-    "center_edge": 0.2074
-   },
-   "current": {
-    "sha256": "aa5c3b39b11b50d2d8bf7ce36528adb85cffa2f48507b83517aac1f61d16f70d",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Temple of Hera (Paestum), South-East view.jpg"
-   }
-  },
-  {
-   "slug": "st00131",
-   "title": "File:Inokuchieki.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Inokuchieki.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Inokuchieki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 3.0",
-   "license_url": "https://creativecommons.org/licenses/by/3.0",
-   "author": "ヤン提督 at Japanese Wikipedia",
-   "sha256": "9f9aec06af6c3368afc25f9cacdda26e37fa404108eee8b33d7784896ec5360a",
-   "dhash": "0460400f690b00f0",
-   "bytes": 506349,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3264,
-    "original_height": 2448
-   },
-   "dist_m": null,
-   "score": 3.13,
-   "image_score": 7.17,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 2432.8,
-    "colorfulness": 25.4,
-    "white_frac": 0.313,
-    "edge_density": 0.1435,
-    "sky_frac": 0.906,
-    "brightness": 154.4,
-    "dark_frac": 0.042,
-    "center_edge": 0.1087
-   },
-   "current": {
-    "sha256": "cdd9145a6c905381e35190f8d8c68b811b710d6a028274068cc3cd9f7997c004",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "audit_low_conf_priority_recapture"
-    ],
-    "source_title": "File:Hokutetsu Inokuchi-STA Platform.jpg"
-   }
-  },
-  {
-   "slug": "st00131",
-   "title": "File:115 series R-07 HiroSeki yellow.JPG",
-   "page_url": "https://commons.wikimedia.org/wiki/File:115_series_R-07_HiroSeki_yellow.JPG",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/115_series_R-07_HiroSeki_yellow.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Psjk2106",
-   "sha256": "330eb31fe8160103dfb1f5c415a848d028d7f19789b55c69c53cf19c577b7024",
-   "dhash": "b0d6e60616075068",
-   "bytes": 538403,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3264,
-    "original_height": 2448
-   },
-   "dist_m": null,
-   "score": 3.13,
-   "image_score": 6.99,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1137.9,
-    "colorfulness": 53.0,
-    "white_frac": 0.002,
-    "edge_density": 0.0897,
-    "sky_frac": 0.191,
-    "brightness": 121.7,
-    "dark_frac": 0.121,
-    "center_edge": 0.104
-   },
-   "current": {
-    "sha256": "cdd9145a6c905381e35190f8d8c68b811b710d6a028274068cc3cd9f7997c004",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "audit_low_conf_priority_recapture"
-    ],
-    "source_title": "File:Hokutetsu Inokuchi-STA Platform.jpg"
-   }
-  },
-  {
-   "slug": "st00131",
-   "title": "File:HiroSekiC-34 yellow.JPG",
-   "page_url": "https://commons.wikimedia.org/wiki/File:HiroSekiC-34_yellow.JPG",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/HiroSekiC-34_yellow.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Psjk2106",
-   "sha256": "8f38f0d68d9ce872d75b2ba1a53eb9b66df854c2127d82713776569e8c8fcd62",
-   "dhash": "68ce9fb1538f88c1",
-   "bytes": 476431,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3264,
-    "original_height": 2448
-   },
-   "dist_m": null,
-   "score": 3.13,
-   "image_score": 5.19,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 592.1,
-    "colorfulness": 29.0,
-    "white_frac": 0.003,
-    "edge_density": 0.0426,
-    "sky_frac": 0.657,
-    "brightness": 92.7,
-    "dark_frac": 0.301,
-    "center_edge": 0.0395
-   },
-   "current": {
-    "sha256": "cdd9145a6c905381e35190f8d8c68b811b710d6a028274068cc3cd9f7997c004",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "audit_low_conf_priority_recapture"
-    ],
-    "source_title": "File:Hokutetsu Inokuchi-STA Platform.jpg"
-   }
-  },
-  {
-   "slug": "st00138",
-   "title": "File:Ex site of Takasu Station, in Fujieda City 01.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Ex_site_of_Takasu_Station,_in_Fujieda_City_01.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Ex_site_of_Takasu_Station%2C_in_Fujieda_City_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Halowand",
-   "sha256": "febe8dee970fe06d912a3e0ee5f3e30b1666f54d6a91c3e24283b419f03f0d50",
-   "dhash": "9ca5cf9fbf7feaea",
-   "bytes": 521091,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 5152,
-    "original_height": 3864
-   },
-   "dist_m": null,
-   "score": 4.08,
-   "image_score": 5.71,
-   "quality": "review",
-   "quality_reasons": [
-    "low_color"
-   ],
-   "self_hit": true,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1984.2,
-    "colorfulness": 20.1,
-    "white_frac": 0.019,
-    "edge_density": 0.0931,
-    "sky_frac": 0.156,
-    "brightness": 120.3,
-    "dark_frac": 0.231,
-    "center_edge": 0.1346
-   },
-   "current": {
-    "sha256": "6d1b03ccbee993ec6ca14d07536c2029091cee55a5131bb5b34d4bec73e567d6",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "audit_low_conf_priority_recapture"
-    ],
-    "source_title": "File:Takasujinsha station.jpg"
-   }
-  },
-  {
-   "slug": "st00138",
-   "title": "File:Ex site of Takasu Station, in Fujieda City 02.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Ex_site_of_Takasu_Station,_in_Fujieda_City_02.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Ex_site_of_Takasu_Station%2C_in_Fujieda_City_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Halowand",
-   "sha256": "1f8caa0972f8da2a9baee91efbec3e90f01b29fc760a7d69375dba258f0e8320",
-   "dhash": "163f29bafee9e737",
-   "bytes": 647759,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 5152,
-    "original_height": 3864
-   },
-   "dist_m": null,
-   "score": 4.08,
-   "image_score": 5.65,
-   "quality": "review",
-   "quality_reasons": [
-    "low_color"
-   ],
-   "self_hit": true,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 2300.9,
-    "colorfulness": 18.6,
-    "white_frac": 0.006,
-    "edge_density": 0.1165,
-    "sky_frac": 0.002,
-    "brightness": 103.1,
-    "dark_frac": 0.165,
-    "center_edge": 0.1227
-   },
-   "current": {
-    "sha256": "6d1b03ccbee993ec6ca14d07536c2029091cee55a5131bb5b34d4bec73e567d6",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "audit_low_conf_priority_recapture"
-    ],
-    "source_title": "File:Takasujinsha station.jpg"
-   }
-  },
-  {
-   "slug": "st00138",
-   "title": "File:Kama-age sanuki udon by sekido in Takamatsu, Kagawa.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Kama-age_sanuki_udon_by_sekido_in_Takamatsu,_Kagawa.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Kama-age_sanuki_udon_by_sekido_in_Takamatsu%2C_Kagawa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 2.0",
-   "license_url": "https://creativecommons.org/licenses/by/2.0",
-   "author": "sekido",
-   "sha256": "846aff2c6daeacd03782b2b568c87f83cbd78ac49d15fef322b822599bd6f77b",
-   "dhash": "9870e6d2cc6f2e1c",
-   "bytes": 223617,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4272,
-    "original_height": 2848
-   },
-   "dist_m": null,
-   "score": 3.64,
-   "image_score": 5.43,
-   "quality": "review",
-   "quality_reasons": [
-    "soft_focus"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 68.1,
-    "colorfulness": 28.7,
-    "white_frac": 0.0,
-    "edge_density": 0.0076,
-    "sky_frac": 0.428,
-    "brightness": 120.4,
-    "dark_frac": 0.106,
-    "center_edge": 0.0111
-   },
-   "current": {
-    "sha256": "6d1b03ccbee993ec6ca14d07536c2029091cee55a5131bb5b34d4bec73e567d6",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "audit_low_conf_priority_recapture"
-    ],
-    "source_title": "File:Takasujinsha station.jpg"
-   }
-  },
-  {
-   "slug": "st00143",
-   "title": "File:5200系.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:5200系.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/5200%E7%B3%BB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "エムティ",
-   "sha256": "8cb69b4169058d9ca9fb6213eac4bcda427569f93854b0806708db868fd0579a",
-   "dhash": "be5231f0f1d16bcd",
-   "bytes": 485426,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 5184,
-    "original_height": 3456
-   },
-   "dist_m": null,
-   "score": 3.09,
-   "image_score": 6.34,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1489.1,
-    "colorfulness": 38.3,
-    "white_frac": 0.0,
-    "edge_density": 0.1061,
-    "sky_frac": 0.209,
-    "brightness": 105.8,
-    "dark_frac": 0.127,
-    "center_edge": 0.1073
-   },
-   "current": {
-    "sha256": "40c833ee1d0fa8eeced3b00b1ade2daf7680748cfc86cd1c398eb7fa60619284",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:広島電鉄 西観音町電停より Nishi-kan'onmachi 2011.1.05 - panoramio.jpg"
-   }
-  },
-  {
-   "slug": "st00143",
-   "title": "File:Nishi-Kan-on-machi Tramstop pt1.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Nishi-Kan-on-machi_Tramstop_pt1.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Nishi-Kan-on-machi_Tramstop_pt1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Ujinaport",
-   "sha256": "7839597107ea18921422bd4b104e37282d1aad075e7f691ea4df58b84754d16e",
-   "dhash": "dcccfbb9b1f152cc",
-   "bytes": 457072,
+   "author": "7beachbum from Tsuruoka, Japan",
+   "sha256": "272e07ec8fdcc4bead50bd632e0d9dacdc1cf1b1c6abfac93ace3100f5fe968a",
+   "dhash": "3fad8c03390b2fe2",
+   "bytes": 427310,
    "width": 1800,
    "height": 1350,
    "normalized": {
@@ -858,7 +486,7 @@
    },
    "dist_m": null,
    "score": 1.52,
-   "image_score": 7.07,
+   "image_score": 6.65,
    "quality": "review",
    "quality_reasons": [
     "subject_unverified(no_station_kw)"
@@ -868,1203 +496,489 @@
    "metrics": {
     "width": 1800,
     "height": 1350,
-    "lap_var": 1185.9,
-    "colorfulness": 31.1,
-    "white_frac": 0.003,
-    "edge_density": 0.0779,
-    "sky_frac": 0.93,
-    "brightness": 136.9,
-    "dark_frac": 0.029,
-    "center_edge": 0.1291
+    "lap_var": 1040.1,
+    "colorfulness": 38.6,
+    "white_frac": 0.061,
+    "edge_density": 0.0782,
+    "sky_frac": 0.469,
+    "brightness": 116.6,
+    "dark_frac": 0.095,
+    "center_edge": 0.0733
    },
    "current": {
-    "sha256": "40c833ee1d0fa8eeced3b00b1ade2daf7680748cfc86cd1c398eb7fa60619284",
-    "score": null,
+    "sha256": "c13c53d343986d8b71388053ae3791715e58440cff821593ecf880ecdbddfaed",
+    "score": 7.46,
     "long": 1800,
     "reasons": [
      "subject_unverified(no_station_kw)"
     ],
-    "source_title": "File:広島電鉄 西観音町電停より Nishi-kan'onmachi 2011.1.05 - panoramio.jpg"
+    "source_title": "File:Kamimachi-nichome-tramstop.jpg"
    }
   },
   {
-   "slug": "st00147",
-   "title": "File:NDL-DC 1308525-Utagawa Kunisada and Hiroshige-高名会席尽 魚太・太郎左衛門-crd.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:NDL-DC_1308525-Utagawa_Kunisada_and_Hiroshige-高名会席尽_魚太・太郎左衛門-crd.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/NDL-DC_1308525-Utagawa_Kunisada_and_Hiroshige-%E9%AB%98%E5%90%8D%E4%BC%9A%E5%B8%AD%E5%B0%BD_%E9%AD%9A%E5%A4%AA%E3%83%BB%E5%A4%AA%E9%83%8E%E5%B7%A6%E8%A1%9B%E9%96%80-crd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "Public domain",
-   "license_url": "",
-   "author": "Utagawa Kunisada / Utagawa Hiroshige",
-   "sha256": "bb473d9f4c4a6a5582a977b48523dda451bfad4f10527633601d701faa7ab261",
-   "dhash": "a4bc8ca4e57379b3",
-   "bytes": 500606,
-   "width": 1260,
-   "height": 1800,
+   "slug": "st03791",
+   "title": "File:20211212 Yashirodori.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:20211212_Yashirodori.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/20211212_Yashirodori.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "瀬戸内たんな",
+   "sha256": "6569bf014b74d23b6403400e063ec539d5a062ee0c709d9a0f5dd29d1267bed7",
+   "dhash": "044336145b9a3a4e",
+   "bytes": 474819,
+   "width": 1800,
+   "height": 1200,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 3012,
-    "original_height": 4302
+    "original_width": 4512,
+    "original_height": 3008
+   },
+   "dist_m": null,
+   "score": 2.76,
+   "image_score": 7.19,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1200,
+    "lap_var": 2830.7,
+    "colorfulness": 61.2,
+    "white_frac": 0.019,
+    "edge_density": 0.1254,
+    "sky_frac": 0.079,
+    "brightness": 120.9,
+    "dark_frac": 0.119,
+    "center_edge": 0.1487
+   },
+   "current": {
+    "sha256": "ec879b60d9a0c3220607b55f67d4ba82bf93cae62d817cf916c8b8b949b2ed87",
+    "score": 7.49,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:Yashiro-dori tramstop.jpg"
+   }
+  },
+  {
+   "slug": "st03791",
+   "title": "File:Yashirodori Station 14-Sep-2019.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Yashirodori_Station_14-Sep-2019.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Yashirodori_Station_14-Sep-2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Kc3302",
+   "sha256": "984772fd76cfffb034310b149037caeeceb894b442ece253a6bb65e46588db17",
+   "dhash": "66625a5aaaacb6c5",
+   "bytes": 265730,
+   "width": 1800,
+   "height": 1039,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2302,
+    "original_height": 1329
    },
    "dist_m": null,
    "score": 2.65,
-   "image_score": 4.01,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
+   "image_score": 5.8,
+   "quality": "done",
+   "quality_reasons": [],
    "self_hit": false,
    "running_near": false,
    "metrics": {
-    "width": 1260,
-    "height": 1800,
-    "lap_var": 1277.4,
-    "colorfulness": 53.0,
-    "white_frac": 0.0,
-    "edge_density": 0.1052,
-    "sky_frac": 0.375,
-    "brightness": 135.4,
-    "dark_frac": 0.048,
-    "center_edge": 0.0909
+    "width": 1800,
+    "height": 1039,
+    "lap_var": 738.8,
+    "colorfulness": 31.0,
+    "white_frac": 0.001,
+    "edge_density": 0.0747,
+    "sky_frac": 0.327,
+    "brightness": 106.2,
+    "dark_frac": 0.217,
+    "center_edge": 0.1077
    },
    "current": {
-    "sha256": "abb20b6d0d13d6a9e363a6c18c16809738b8610fd3fc7d6dabb5684ff3526fde",
-    "score": null,
+    "sha256": "ec879b60d9a0c3220607b55f67d4ba82bf93cae62d817cf916c8b8b949b2ed87",
+    "score": 7.49,
     "long": 1800,
     "reasons": [
      "subject_unverified(no_station_kw)"
     ],
-    "source_title": "File:Koamicho-sign.JPG"
+    "source_title": "File:Yashiro-dori tramstop.jpg"
    }
   },
   {
-   "slug": "st00147",
-   "title": "File:NDL-DC 1303249-Utagawa Hiroshige-名所江戸百景 鎧の渡し小網町-crd.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:NDL-DC_1303249-Utagawa_Hiroshige-名所江戸百景_鎧の渡し小網町-crd.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/NDL-DC_1303249-Utagawa_Hiroshige-%E5%90%8D%E6%89%80%E6%B1%9F%E6%88%B8%E7%99%BE%E6%99%AF_%E9%8E%A7%E3%81%AE%E6%B8%A1%E3%81%97%E5%B0%8F%E7%B6%B2%E7%94%BA-crd.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "slug": "st03778",
+   "title": "File:Tosaden GomenNakamachiDentei.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tosaden_GomenNakamachiDentei.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Tosaden_GomenNakamachiDentei.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "license": "Public domain",
    "license_url": "",
-   "author": "Utagawa Hiroshige",
-   "sha256": "9aa641581030b804ef852411d06c070b820a7fbd3aa6dac5c341b8a9b7ed08bb",
-   "dhash": "0080e8a4f0cdc15d",
-   "bytes": 414501,
-   "width": 1191,
-   "height": 1800,
+   "author": "Nh3526",
+   "sha256": "1af5f2e8ed0e2a274785d4cc63b274b59ae490cf4ccc5812d8b46b63928acde6",
+   "dhash": "d9f1e0e8b84a9a39",
+   "bytes": 380452,
+   "width": 1800,
+   "height": 1350,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 2540,
-    "original_height": 3840
+    "original_width": 2000,
+    "original_height": 1500
    },
    "dist_m": null,
-   "score": 2.42,
-   "image_score": 4.45,
+   "score": 1.5,
+   "image_score": 6.35,
    "quality": "review",
    "quality_reasons": [
     "subject_unverified(no_station_kw)"
    ],
-   "self_hit": true,
+   "self_hit": false,
    "running_near": false,
    "metrics": {
-    "width": 1191,
-    "height": 1800,
-    "lap_var": 959.4,
-    "colorfulness": 63.5,
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 859.7,
+    "colorfulness": 44.4,
     "white_frac": 0.0,
-    "edge_density": 0.0752,
-    "sky_frac": 0.244,
-    "brightness": 144.3,
-    "dark_frac": 0.042,
-    "center_edge": 0.0856
+    "edge_density": 0.0596,
+    "sky_frac": 0.029,
+    "brightness": 96.2,
+    "dark_frac": 0.122,
+    "center_edge": 0.0793
    },
    "current": {
-    "sha256": "abb20b6d0d13d6a9e363a6c18c16809738b8610fd3fc7d6dabb5684ff3526fde",
-    "score": null,
+    "sha256": "a9cc8e108dbaca89d6f3b83f5e5584c95c76e40099a7a75b2b7de38383b2d351",
+    "score": 7.53,
     "long": 1800,
     "reasons": [
      "subject_unverified(no_station_kw)"
     ],
-    "source_title": "File:Koamicho-sign.JPG"
+    "source_title": "File:Gomen-Nakamachi tramstop 20120520.jpg"
    }
   },
   {
-   "slug": "st00147",
-   "title": "File:Koamicyo stn.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Koamicyo_stn.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Koamicyo_stn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "slug": "st04653",
+   "title": "File:JR Series2000-2153 Ashizuri.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:JR_Series2000-2153_Ashizuri.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/JR_Series2000-2153_Ashizuri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "MaedaAkihiko",
+   "sha256": "4a9875987f9f977d467416f9ee3c5452aea11b3a09da0fba154c327f1122dd25",
+   "dhash": "000c11c316146774",
+   "bytes": 328260,
+   "width": 1800,
+   "height": 1200,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4914,
+    "original_height": 3276
+   },
+   "dist_m": null,
+   "score": 2.96,
+   "image_score": 7.16,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1200,
+    "lap_var": 1145.5,
+    "colorfulness": 88.6,
+    "white_frac": 0.0,
+    "edge_density": 0.0746,
+    "sky_frac": 0.012,
+    "brightness": 88.1,
+    "dark_frac": 0.163,
+    "center_edge": 0.0445
+   },
+   "current": {
+    "sha256": "5a93de19d1592eba3679676fa6fbedabe0f181d30ed6d71df9df95b4c329c498",
+    "score": 7.69,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:JR Series2700-2780 Dosan-Line.jpg"
+   }
+  },
+  {
+   "slug": "st04653",
+   "title": "File:JRS Type1000 1021.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:JRS_Type1000_1021.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/JRS_Type1000_1021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "MaedaAkihiko",
+   "sha256": "88b9aaf6410a734aaea962f33b19f9a18f3977fb6096981cd3016623bf4bb953",
+   "dhash": "14294314bcda0903",
+   "bytes": 305630,
+   "width": 1800,
+   "height": 1200,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3888,
+    "original_height": 2592
+   },
+   "dist_m": null,
+   "score": 2.44,
+   "image_score": 6.75,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1200,
+    "lap_var": 801.8,
+    "colorfulness": 67.5,
+    "white_frac": 0.0,
+    "edge_density": 0.0678,
+    "sky_frac": 0.04,
+    "brightness": 98.6,
+    "dark_frac": 0.177,
+    "center_edge": 0.0711
+   },
+   "current": {
+    "sha256": "5a93de19d1592eba3679676fa6fbedabe0f181d30ed6d71df9df95b4c329c498",
+    "score": 7.69,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:JR Series2700-2780 Dosan-Line.jpg"
+   }
+  },
+  {
+   "slug": "st04653",
+   "title": "File:Kiha185 Shikoku-Tosa-Exp.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Kiha185_Shikoku-Tosa-Exp.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Kiha185_Shikoku-Tosa-Exp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "MaedaAkihiko",
+   "sha256": "3858a5b939ef17857417432398d1d70823b1c93e68494a58e7c5ba66e623dbf6",
+   "dhash": "061223059ca50362",
+   "bytes": 349455,
+   "width": 1800,
+   "height": 1200,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3500,
+    "original_height": 2334
+   },
+   "dist_m": null,
+   "score": 2.25,
+   "image_score": 6.97,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1200,
+    "lap_var": 1312.6,
+    "colorfulness": 87.5,
+    "white_frac": 0.0,
+    "edge_density": 0.0848,
+    "sky_frac": 0.002,
+    "brightness": 94.1,
+    "dark_frac": 0.228,
+    "center_edge": 0.0762
+   },
+   "current": {
+    "sha256": "5a93de19d1592eba3679676fa6fbedabe0f181d30ed6d71df9df95b4c329c498",
+    "score": 7.69,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:JR Series2700-2780 Dosan-Line.jpg"
+   }
+  },
+  {
+   "slug": "st03000",
+   "title": "File:「道の駅田野駅屋」とエレベーター完成後の田野駅（2023年7月6日撮影）.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:「道の駅田野駅屋」とエレベーター完成後の田野駅（2023年7月6日撮影）.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/%E3%80%8C%E9%81%93%E3%81%AE%E9%A7%85%E7%94%B0%E9%87%8E%E9%A7%85%E5%B1%8B%E3%80%8D%E3%81%A8%E3%82%A8%E3%83%AC%E3%83%99%E3%83%BC%E3%82%BF%E3%83%BC%E5%AE%8C%E6%88%90%E5%BE%8C%E3%81%AE%E7%94%B0%E9%87%8E%E9%A7%85%EF%BC%882023%E5%B9%B47%E6%9C%886%E6%97%A5%E6%92%AE%E5%BD%B1%EF%BC%89.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "やなちゃん徳島",
+   "sha256": "21c349258c8ba1e4a50b361a7bb77aab65b5dcbf169e73869e1053d9e3e23060",
+   "dhash": "201105a64a4b90e9",
+   "bytes": 316883,
+   "width": 1800,
+   "height": 1012,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 2268
+   },
+   "dist_m": null,
+   "score": 3.52,
+   "image_score": 6.36,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1012,
+    "lap_var": 1234.9,
+    "colorfulness": 18.8,
+    "white_frac": 0.0,
+    "edge_density": 0.0657,
+    "sky_frac": 0.883,
+    "brightness": 126.1,
+    "dark_frac": 0.085,
+    "center_edge": 0.1122
+   },
+   "current": {
+    "sha256": "67963ac58ba4e9c4e0e8fa699a7700f9a63b3841b65e15a359ef79cdc1e9a00c",
+    "score": 7.71,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:Overview of Michinoeki Tano.jpg"
+   }
+  },
+  {
+   "slug": "st03000",
+   "title": "File:TKT Tano Station ac.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:TKT_Tano_Station_ac.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/TKT_Tano_Station_ac.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Asturio Cantabrio",
+   "sha256": "f2a65fa48bb5684575459e45ce7d2527d32b4a30bf52f33ce458edc2df1b4204",
+   "dhash": "2d8d6d3d8d7c3c7b",
+   "bytes": 339488,
+   "width": 1800,
+   "height": 1200,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4009,
+    "original_height": 2673
+   },
+   "dist_m": null,
+   "score": 3.5,
+   "image_score": 7.16,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1200,
+    "lap_var": 1384.9,
+    "colorfulness": 62.5,
+    "white_frac": 0.001,
+    "edge_density": 0.0771,
+    "sky_frac": 0.103,
+    "brightness": 122.9,
+    "dark_frac": 0.144,
+    "center_edge": 0.1108
+   },
+   "current": {
+    "sha256": "67963ac58ba4e9c4e0e8fa699a7700f9a63b3841b65e15a359ef79cdc1e9a00c",
+    "score": 7.71,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:Overview of Michinoeki Tano.jpg"
+   }
+  },
+  {
+   "slug": "st03000",
+   "title": "File:Miyazaki Tano Station.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Miyazaki_Tano_Station.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Miyazaki_Tano_Station.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "license": "CC BY-SA 3.0",
    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
-   "author": "おんさか",
-   "sha256": "e57b02b7728cea8e8b582b1842ee7fbd0eee3841163f2c6c3b9d20fb3f2182b3",
-   "dhash": "fd9df9b79cd0e080",
-   "bytes": 439209,
+   "author": "Sanjo at Japanese Wikipedia",
+   "sha256": "d91a4c1eeb83623533036a1d070e854b99ee21769e6ee7c174d69398938f8e14",
+   "dhash": "d0310d133a0857e8",
+   "bytes": 388839,
    "width": 1800,
-   "height": 1350,
+   "height": 1012,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 2816,
-    "original_height": 2112
+    "original_width": 1920,
+    "original_height": 1080
    },
    "dist_m": null,
-   "score": 1.91,
-   "image_score": 6.06,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 946.2,
-    "colorfulness": 25.0,
-    "white_frac": 0.003,
-    "edge_density": 0.0668,
-    "sky_frac": 0.206,
-    "brightness": 100.0,
-    "dark_frac": 0.088,
-    "center_edge": 0.0838
-   },
-   "current": {
-    "sha256": "abb20b6d0d13d6a9e363a6c18c16809738b8610fd3fc7d6dabb5684ff3526fde",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Koamicho-sign.JPG"
-   }
-  },
-  {
-   "slug": "st00148",
-   "title": "File:MT-Tsuchihashi Station-Building.JPG",
-   "page_url": "https://commons.wikimedia.org/wiki/File:MT-Tsuchihashi_Station-Building.JPG",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/MT-Tsuchihashi_Station-Building.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "ButuCC",
-   "sha256": "a5ce760fca6258783830e05db1540c03effd6d6a6ba4182995841e050faa7bf2",
-   "dhash": "830434bda69b95d4",
-   "bytes": 277559,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2816,
-    "original_height": 2112
-   },
-   "dist_m": null,
-   "score": 4.91,
-   "image_score": 7.11,
+   "score": 2.46,
+   "image_score": 7.29,
    "quality": "done",
    "quality_reasons": [],
-   "self_hit": false,
+   "self_hit": true,
    "running_near": false,
    "metrics": {
     "width": 1800,
-    "height": 1350,
-    "lap_var": 403.1,
-    "colorfulness": 28.8,
-    "white_frac": 0.0,
-    "edge_density": 0.0397,
-    "sky_frac": 0.655,
-    "brightness": 144.1,
-    "dark_frac": 0.033,
-    "center_edge": 0.0314
+    "height": 1012,
+    "lap_var": 1546.8,
+    "colorfulness": 50.3,
+    "white_frac": 0.012,
+    "edge_density": 0.0977,
+    "sky_frac": 0.059,
+    "brightness": 131.0,
+    "dark_frac": 0.068,
+    "center_edge": 0.1291
    },
    "current": {
-    "sha256": "be5d2941862eaafe44c786c8a2d82daeed68f1b73b28f045d27983049161da96",
-    "score": null,
+    "sha256": "67963ac58ba4e9c4e0e8fa699a7700f9a63b3841b65e15a359ef79cdc1e9a00c",
+    "score": 7.71,
     "long": 1800,
     "reasons": [
      "audit_low_conf_priority_recapture"
     ],
-    "source_title": "File:Westbound platform of Tuqiao Station (20210826132621).jpg"
+    "source_title": "File:Overview of Michinoeki Tano.jpg"
    }
   },
   {
-   "slug": "st00148",
-   "title": "File:MT-Tsuchihashi Station-Platform 3.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:MT-Tsuchihashi_Station-Platform_3.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/MT-Tsuchihashi_Station-Platform_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "ButuCC",
-   "sha256": "2a20e898b49420f065517353c1e0005d298d38839e70fcafc42d9e0c0ccf9f12",
-   "dhash": "128ad93226021664",
-   "bytes": 429888,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2622,
-    "original_height": 1966
-   },
-   "dist_m": null,
-   "score": 3.81,
-   "image_score": 6.88,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 936.3,
-    "colorfulness": 29.8,
-    "white_frac": 0.043,
-    "edge_density": 0.0694,
-    "sky_frac": 0.624,
-    "brightness": 133.4,
-    "dark_frac": 0.054,
-    "center_edge": 0.0797
-   },
-   "current": {
-    "sha256": "be5d2941862eaafe44c786c8a2d82daeed68f1b73b28f045d27983049161da96",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "audit_low_conf_priority_recapture"
-    ],
-    "source_title": "File:Westbound platform of Tuqiao Station (20210826132621).jpg"
-   }
-  },
-  {
-   "slug": "st00148",
-   "title": "File:MT-Tsuchihashi Station-Platform 1.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:MT-Tsuchihashi_Station-Platform_1.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/MT-Tsuchihashi_Station-Platform_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "ButuCC",
-   "sha256": "9cf9f5c432f6f7c48611cd67673b5e40e759307394cbba74ce7c00f41d290bab",
-   "dhash": "86e6f6ce8e8e6726",
-   "bytes": 443983,
-   "width": 1800,
-   "height": 1349,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2605,
-    "original_height": 1953
-   },
-   "dist_m": null,
-   "score": 3.8,
-   "image_score": 7.57,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1349,
-    "lap_var": 1534.3,
-    "colorfulness": 41.4,
-    "white_frac": 0.005,
-    "edge_density": 0.0959,
-    "sky_frac": 0.7,
-    "brightness": 158.4,
-    "dark_frac": 0.058,
-    "center_edge": 0.1164
-   },
-   "current": {
-    "sha256": "be5d2941862eaafe44c786c8a2d82daeed68f1b73b28f045d27983049161da96",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "audit_low_conf_priority_recapture"
-    ],
-    "source_title": "File:Westbound platform of Tuqiao Station (20210826132621).jpg"
-   }
-  },
-  {
-   "slug": "st00152",
-   "title": "File:Honkawacho, Naka Ward, Hiroshima, Hiroshima Prefecture 730-0802, Japan - panoramio (1).jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Honkawacho,_Naka_Ward,_Hiroshima,_Hiroshima_Prefecture_730-0802,_Japan_-_panoramio_(1).jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Honkawacho%2C_Naka_Ward%2C_Hiroshima%2C_Hiroshima_Prefecture_730-0802%2C_Japan_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "菅野崇",
-   "sha256": "b7b4c09381110f7c9ba3135d8e280936716b3d40fc5ea00601c4833d352a89f6",
-   "dhash": "d3c3e3d41d316805",
-   "bytes": 472480,
-   "width": 1205,
-   "height": 1800,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2592,
-    "original_height": 3872
-   },
-   "dist_m": 291.9,
-   "score": 2.44,
-   "image_score": 2.46,
-   "quality": "review",
-   "quality_reasons": [
-    "low_color",
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1205,
-    "height": 1800,
-    "lap_var": 1806.2,
-    "colorfulness": 23.7,
-    "white_frac": 0.019,
-    "edge_density": 0.1118,
-    "sky_frac": 0.44,
-    "brightness": 107.5,
-    "dark_frac": 0.137,
-    "center_edge": 0.1157
-   },
-   "current": {
-    "sha256": "a65a0c6fa2c8090f914dcd3f829841dbc0fda64e69b1fdccf4c2671e407e3484",
-    "score": null,
-    "long": 1600,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden 1002 PICCOLA 2013-03-31-1038.jpg"
-   }
-  },
-  {
-   "slug": "st00152",
-   "title": "File:Honkawacho, Naka Ward, Hiroshima, Hiroshima Prefecture 730-0802, Japan - panoramio.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Honkawacho,_Naka_Ward,_Hiroshima,_Hiroshima_Prefecture_730-0802,_Japan_-_panoramio.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Honkawacho%2C_Naka_Ward%2C_Hiroshima%2C_Hiroshima_Prefecture_730-0802%2C_Japan_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 3.0",
-   "license_url": "https://creativecommons.org/licenses/by/3.0",
-   "author": "warabi hatogaya",
-   "sha256": "c453ab9ef5d9ab11a05fd68ffa9a7fcc17b9ca3331fcaab8f47324ce92191431",
-   "dhash": "a0d0c0c0e0e636e0",
-   "bytes": 175123,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2408,
-    "original_height": 1806
-   },
-   "dist_m": 409.9,
-   "score": 1.7,
-   "image_score": 3.91,
-   "quality": "review",
-   "quality_reasons": [
-    "soft_focus",
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 51.0,
-    "colorfulness": 32.6,
-    "white_frac": 0.0,
-    "edge_density": 0.003,
-    "sky_frac": 0.0,
-    "brightness": 70.7,
-    "dark_frac": 0.303,
-    "center_edge": 0.0048
-   },
-   "current": {
-    "sha256": "a65a0c6fa2c8090f914dcd3f829841dbc0fda64e69b1fdccf4c2671e407e3484",
-    "score": null,
-    "long": 1600,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden 1002 PICCOLA 2013-03-31-1038.jpg"
-   }
-  },
-  {
-   "slug": "st00152",
-   "title": "File:Hiroden Honkawa-cho Station-01.JPG",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden_Honkawa-cho_Station-01.JPG",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Hiroden_Honkawa-cho_Station-01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Flyingbear",
-   "sha256": "00ab6541a7eb17c7d4aa005f27ea6cca96476c36ed98eb569f23d9687d9c22bb",
-   "dhash": "8f83a2a2c6cce0b0",
-   "bytes": 374035,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2592,
-    "original_height": 1944
-   },
-   "dist_m": null,
-   "score": 2.8,
-   "image_score": 6.69,
-   "quality": "review",
-   "quality_reasons": [
-    "low_color"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 639.6,
-    "colorfulness": 20.9,
-    "white_frac": 0.135,
-    "edge_density": 0.0615,
-    "sky_frac": 0.537,
-    "brightness": 135.2,
-    "dark_frac": 0.052,
-    "center_edge": 0.0853
-   },
-   "current": {
-    "sha256": "a65a0c6fa2c8090f914dcd3f829841dbc0fda64e69b1fdccf4c2671e407e3484",
-    "score": null,
-    "long": 1600,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden 1002 PICCOLA 2013-03-31-1038.jpg"
-   }
-  },
-  {
-   "slug": "st00174",
-   "title": "File:Hiroden Ujina3 Sta.01.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden_Ujina3_Sta.01.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Hiroden_Ujina3_Sta.01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Ujinaport",
-   "sha256": "cebccf3ce1273fcb5848b24e6838c93af81d8daa5c5baf6ba015b6e0ceb22924",
-   "dhash": "5c4ac9586c2000c0",
-   "bytes": 541725,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2048,
-    "original_height": 1536
-   },
-   "dist_m": null,
-   "score": 1.52,
-   "image_score": 5.86,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1771.8,
-    "colorfulness": 26.8,
-    "white_frac": 0.044,
-    "edge_density": 0.1096,
-    "sky_frac": 0.381,
-    "brightness": 100.1,
-    "dark_frac": 0.151,
-    "center_edge": 0.1687
-   },
-   "current": {
-    "sha256": "6f5e765197b7d36557c9e938263a9d2e3d23485da8b1685c6c8270d8d40014c8",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "low_color",
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden Ujina3 Sta.02.jpg"
-   }
-  },
-  {
-   "slug": "st00174",
-   "title": "File:Hiroden Ujina2 Sta.02.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden_Ujina2_Sta.02.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Hiroden_Ujina2_Sta.02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Ujinaport",
-   "sha256": "49e234897661600a12fd4292e8eece0de652b7b04c74191ca6a11ebc114e5243",
-   "dhash": "6e646664653ee08a",
-   "bytes": 532223,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2048,
-    "original_height": 1536
-   },
-   "dist_m": null,
-   "score": 1.52,
-   "image_score": 7.44,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1538.8,
-    "colorfulness": 28.6,
-    "white_frac": 0.115,
-    "edge_density": 0.0964,
-    "sky_frac": 0.543,
-    "brightness": 160.1,
-    "dark_frac": 0.017,
-    "center_edge": 0.1225
-   },
-   "current": {
-    "sha256": "6f5e765197b7d36557c9e938263a9d2e3d23485da8b1685c6c8270d8d40014c8",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "low_color",
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden Ujina3 Sta.02.jpg"
-   }
-  },
-  {
-   "slug": "st00174",
-   "title": "File:Hiroden Ujina4 Sta01.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden_Ujina4_Sta01.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Hiroden_Ujina4_Sta01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Ujinaport",
-   "sha256": "2a9bdde0377c97fd446ba006b9930d89e2c6a7ac98130c51c6ca7c40f42f549d",
-   "dhash": "a090e4da9beeef87",
-   "bytes": 484303,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2048,
-    "original_height": 1536
-   },
-   "dist_m": null,
-   "score": 1.52,
-   "image_score": 6.74,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1303.0,
-    "colorfulness": 25.9,
-    "white_frac": 0.03,
-    "edge_density": 0.0929,
-    "sky_frac": 0.726,
-    "brightness": 133.4,
-    "dark_frac": 0.065,
-    "center_edge": 0.123
-   },
-   "current": {
-    "sha256": "6f5e765197b7d36557c9e938263a9d2e3d23485da8b1685c6c8270d8d40014c8",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "low_color",
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden Ujina3 Sta.02.jpg"
-   }
-  },
-  {
-   "slug": "st00175",
-   "title": "File:Hiroden Series1000-1017.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden_Series1000-1017.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Hiroden_Series1000-1017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "MaedaAkihiko",
-   "sha256": "80136fbb41ec5e48ca888aaf4cfe73be6e6a867eca37f82dc1de570316f81fd4",
-   "dhash": "edcdf17c559d9f3c",
-   "bytes": 471625,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4832,
-    "original_height": 3221
-   },
-   "dist_m": null,
-   "score": 2.92,
-   "image_score": 7.67,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1445.9,
-    "colorfulness": 64.3,
-    "white_frac": 0.016,
-    "edge_density": 0.1023,
-    "sky_frac": 0.366,
-    "brightness": 128.3,
-    "dark_frac": 0.049,
-    "center_edge": 0.1126
-   },
-   "current": {
-    "sha256": "aace5f6d94aa9bdc67d0c6ec37f81bcdf063ff91b85c19d9b590d0002ebd6f66",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden Ujina4 Sta02.jpg"
-   }
-  },
-  {
-   "slug": "st00175",
-   "title": "File:Hiroden Series5200-5205B Ekimae-route-HM.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden_Series5200-5205B_Ekimae-route-HM.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Hiroden_Series5200-5205B_Ekimae-route-HM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "author": "MaedaAkihiko",
-   "sha256": "9ef5b83d4957618a9357649051bab4b55fb84700541e71d5643387a904aaf98e",
-   "dhash": "67266ec5842c2583",
-   "bytes": 478635,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2655,
-    "original_height": 1770
-   },
-   "dist_m": null,
-   "score": 2.83,
-   "image_score": 7.03,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 2493.6,
-    "colorfulness": 34.4,
-    "white_frac": 0.024,
-    "edge_density": 0.1338,
-    "sky_frac": 0.705,
-    "brightness": 146.2,
-    "dark_frac": 0.099,
-    "center_edge": 0.1558
-   },
-   "current": {
-    "sha256": "aace5f6d94aa9bdc67d0c6ec37f81bcdf063ff91b85c19d9b590d0002ebd6f66",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden Ujina4 Sta02.jpg"
-   }
-  },
-  {
-   "slug": "st00175",
-   "title": "File:Hiroden Series750-762 Ekimae-route-HM.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden_Series750-762_Ekimae-route-HM.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Hiroden_Series750-762_Ekimae-route-HM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "author": "MaedaAkihiko",
-   "sha256": "8e56f145a7b56d8f67c81eb45f843f293624d1ed4333362fca4ded8c8344a73e",
-   "dhash": "39b171cdcd6d0703",
-   "bytes": 408670,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2628,
-    "original_height": 1752
-   },
-   "dist_m": null,
-   "score": 2.81,
-   "image_score": 7.08,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1740.9,
-    "colorfulness": 43.4,
-    "white_frac": 0.008,
-    "edge_density": 0.1008,
-    "sky_frac": 0.663,
-    "brightness": 139.9,
-    "dark_frac": 0.116,
-    "center_edge": 0.0967
-   },
-   "current": {
-    "sha256": "aace5f6d94aa9bdc67d0c6ec37f81bcdf063ff91b85c19d9b590d0002ebd6f66",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden Ujina4 Sta02.jpg"
-   }
-  },
-  {
-   "slug": "st00176",
-   "title": "File:Hiroden Series1000-1017.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden_Series1000-1017.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Hiroden_Series1000-1017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "MaedaAkihiko",
-   "sha256": "80136fbb41ec5e48ca888aaf4cfe73be6e6a867eca37f82dc1de570316f81fd4",
-   "dhash": "edcdf17c559d9f3c",
-   "bytes": 471625,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4832,
-    "original_height": 3221
-   },
-   "dist_m": null,
-   "score": 2.92,
-   "image_score": 7.67,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1445.9,
-    "colorfulness": 64.3,
-    "white_frac": 0.016,
-    "edge_density": 0.1023,
-    "sky_frac": 0.366,
-    "brightness": 128.3,
-    "dark_frac": 0.049,
-    "center_edge": 0.1126
-   },
-   "current": {
-    "sha256": "e4f44efc099d596b0d416e3dc484c58cca2fdca3383f3e3cb5199a3f08ff1b68",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden Ujina5 Sta.02.jpg"
-   }
-  },
-  {
-   "slug": "st00176",
-   "title": "File:Hiroden Series5200-5205B Ekimae-route-HM.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden_Series5200-5205B_Ekimae-route-HM.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Hiroden_Series5200-5205B_Ekimae-route-HM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "author": "MaedaAkihiko",
-   "sha256": "9ef5b83d4957618a9357649051bab4b55fb84700541e71d5643387a904aaf98e",
-   "dhash": "67266ec5842c2583",
-   "bytes": 478635,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2655,
-    "original_height": 1770
-   },
-   "dist_m": null,
-   "score": 2.83,
-   "image_score": 7.03,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 2493.6,
-    "colorfulness": 34.4,
-    "white_frac": 0.024,
-    "edge_density": 0.1338,
-    "sky_frac": 0.705,
-    "brightness": 146.2,
-    "dark_frac": 0.099,
-    "center_edge": 0.1558
-   },
-   "current": {
-    "sha256": "e4f44efc099d596b0d416e3dc484c58cca2fdca3383f3e3cb5199a3f08ff1b68",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden Ujina5 Sta.02.jpg"
-   }
-  },
-  {
-   "slug": "st00176",
-   "title": "File:Hiroden Series750-762 Ekimae-route-HM.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroden_Series750-762_Ekimae-route-HM.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Hiroden_Series750-762_Ekimae-route-HM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "author": "MaedaAkihiko",
-   "sha256": "8e56f145a7b56d8f67c81eb45f843f293624d1ed4333362fca4ded8c8344a73e",
-   "dhash": "39b171cdcd6d0703",
-   "bytes": 408670,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 2628,
-    "original_height": 1752
-   },
-   "dist_m": null,
-   "score": 2.81,
-   "image_score": 7.08,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 1740.9,
-    "colorfulness": 43.4,
-    "white_frac": 0.008,
-    "edge_density": 0.1008,
-    "sky_frac": 0.663,
-    "brightness": 139.9,
-    "dark_frac": 0.116,
-    "center_edge": 0.0967
-   },
-   "current": {
-    "sha256": "e4f44efc099d596b0d416e3dc484c58cca2fdca3383f3e3cb5199a3f08ff1b68",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden Ujina5 Sta.02.jpg"
-   }
-  },
-  {
-   "slug": "st00184",
-   "title": "File:Hiroshima 20200102135628 (50267069661).jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroshima_20200102135628_(50267069661).jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Hiroshima_20200102135628_%2850267069661%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "slug": "st03750",
+   "title": "File:Eurotunnel substation at Folkstone Terminal UK 2013.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Eurotunnel_substation_at_Folkstone_Terminal_UK_2013.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Eurotunnel_substation_at_Folkstone_Terminal_UK_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "license": "CC BY 2.0",
    "license_url": "https://creativecommons.org/licenses/by/2.0",
-   "author": "inunami",
-   "sha256": "8584fe847432458560badab2ba7c437cfbd9d9eb36d26d4827a254ddaf231a47",
-   "dhash": "c1c3c0c3ce612038",
-   "bytes": 408526,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3264,
-    "original_height": 2448
-   },
-   "dist_m": 80.5,
-   "score": 2.13,
-   "image_score": 5.77,
-   "quality": "review",
-   "quality_reasons": [
-    "low_color",
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1091.5,
-    "colorfulness": 20.3,
-    "white_frac": 0.109,
-    "edge_density": 0.063,
-    "sky_frac": 0.487,
-    "brightness": 106.6,
-    "dark_frac": 0.159,
-    "center_edge": 0.0826
-   },
-   "current": {
-    "sha256": "eb2dddcf93dedab14575c5a2ea14d73647c6b1163b193216cc10d8f9e4c68f41",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "low_color",
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Kamiyacho higashi stn.JPG"
-   }
-  },
-  {
-   "slug": "st00184",
-   "title": "File:Hiroshima 20200102135744 (50266409953).jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroshima_20200102135744_(50266409953).jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Hiroshima_20200102135744_%2850266409953%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY 2.0",
-   "license_url": "https://creativecommons.org/licenses/by/2.0",
-   "author": "inunami",
-   "sha256": "344d683b1311c4334c6ccf7ca653adec8f68457e094e93bc4244f0be1b2ec8f1",
-   "dhash": "362660c95e56c9ce",
-   "bytes": 476010,
-   "width": 1800,
-   "height": 1350,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3264,
-    "original_height": 2448
-   },
-   "dist_m": 46.5,
-   "score": 2.13,
-   "image_score": 5.87,
-   "quality": "review",
-   "quality_reasons": [
-    "low_color",
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1350,
-    "lap_var": 1387.8,
-    "colorfulness": 18.1,
-    "white_frac": 0.067,
-    "edge_density": 0.0873,
-    "sky_frac": 0.511,
-    "brightness": 110.5,
-    "dark_frac": 0.137,
-    "center_edge": 0.1075
-   },
-   "current": {
-    "sha256": "eb2dddcf93dedab14575c5a2ea14d73647c6b1163b193216cc10d8f9e4c68f41",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "low_color",
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Kamiyacho higashi stn.JPG"
-   }
-  },
-  {
-   "slug": "st00184",
-   "title": "File:紙屋町東電停01.JPG",
-   "page_url": "https://commons.wikimedia.org/wiki/File:紙屋町東電停01.JPG",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/%E7%B4%99%E5%B1%8B%E7%94%BA%E6%9D%B1%E9%9B%BB%E5%81%9C01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 3.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-   "author": "Inaji pc",
-   "sha256": "7c2ef5f7f18e620bbcedaa860b73e04ba1a371b53856db5be886e94b7a5cdcd5",
-   "dhash": "61e0c34d61909699",
-   "bytes": 410364,
-   "width": 1800,
-   "height": 1344,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 4608,
-    "original_height": 3440
-   },
-   "dist_m": null,
-   "score": 2.8,
-   "image_score": 6.6,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": true,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1344,
-    "lap_var": 924.7,
-    "colorfulness": 29.0,
-    "white_frac": 0.049,
-    "edge_density": 0.0624,
-    "sky_frac": 0.353,
-    "brightness": 117.3,
-    "dark_frac": 0.051,
-    "center_edge": 0.0788
-   },
-   "current": {
-    "sha256": "eb2dddcf93dedab14575c5a2ea14d73647c6b1163b193216cc10d8f9e4c68f41",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "low_color",
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Kamiyacho higashi stn.JPG"
-   }
-  },
-  {
-   "slug": "st00186",
-   "title": "File:Tokyo-Metro Hatchobori-STA Platform1-2.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Tokyo-Metro_Hatchobori-STA_Platform1-2.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Tokyo-Metro_Hatchobori-STA_Platform1-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC0",
-   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-   "author": "MaedaAkihiko",
-   "sha256": "eadd722ac9275e441d01d449be11b807c8f0b4d4c4798bd382f0f3d81893ab5b",
-   "dhash": "29b3f03369e8c8cc",
-   "bytes": 356775,
-   "width": 1800,
-   "height": 1200,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 5471,
-    "original_height": 3647
-   },
-   "dist_m": null,
-   "score": 5.24,
-   "image_score": 7.03,
-   "quality": "review",
-   "quality_reasons": [
-    "low_color"
-   ],
-   "self_hit": true,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 879.7,
-    "colorfulness": 20.0,
-    "white_frac": 0.011,
-    "edge_density": 0.0574,
-    "sky_frac": 0.494,
-    "brightness": 152.5,
-    "dark_frac": 0.033,
-    "center_edge": 0.0633
-   },
-   "current": {
-    "sha256": "9675abb8884ce9867dd334e3b239c2d464ad87c8864f447ea1686e79ec9326f4",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "audit_low_conf_priority_recapture"
-    ],
-    "source_title": "File:Hatchōbori Station hibiya Line ticket gates Jan 08 2019 03-01-47 PM.jpeg"
-   }
-  },
-  {
-   "slug": "st00186",
-   "title": "File:JR Keiyo-Line Hatchobori Station Platform.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:JR_Keiyo-Line_Hatchobori_Station_Platform.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/JR_Keiyo-Line_Hatchobori_Station_Platform.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Mister0124",
-   "sha256": "b8a7d280c8db7c7b1fbcec5da4f535640895bb86dbd966c6f3a0af1bf5e6c4cd",
-   "dhash": "e0c89aa8e9e98d8d",
-   "bytes": 306390,
-   "width": 1800,
-   "height": 1048,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 3645,
-    "original_height": 2122
-   },
-   "dist_m": null,
-   "score": 4.32,
-   "image_score": 6.58,
-   "quality": "done",
-   "quality_reasons": [],
-   "self_hit": true,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1048,
-    "lap_var": 610.7,
-    "colorfulness": 28.4,
-    "white_frac": 0.001,
-    "edge_density": 0.0465,
-    "sky_frac": 0.008,
-    "brightness": 113.8,
-    "dark_frac": 0.038,
-    "center_edge": 0.0511
-   },
-   "current": {
-    "sha256": "9675abb8884ce9867dd334e3b239c2d464ad87c8864f447ea1686e79ec9326f4",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "audit_low_conf_priority_recapture"
-    ],
-    "source_title": "File:Hatchōbori Station hibiya Line ticket gates Jan 08 2019 03-01-47 PM.jpeg"
-   }
-  },
-  {
-   "slug": "st00186",
-   "title": "File:八丁堀駅にて.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:八丁堀駅にて.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/%E5%85%AB%E4%B8%81%E5%A0%80%E9%A7%85%E3%81%AB%E3%81%A6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "エムティ",
-   "sha256": "ab4ef1965db16afea05d515f599fd2d1aa8b89d7f93db95470a7059e9692bf5b",
-   "dhash": "a4a89999dad21119",
-   "bytes": 372147,
+   "author": "Tim Sheerman-Chase",
+   "sha256": "40f2c270a616665e872f7b94a0cb540af5a6607a1dfcb0a43b690debe541206f",
+   "dhash": "e26ed18cccf04ecb",
+   "bytes": 460066,
    "width": 1800,
    "height": 1200,
    "normalized": {
@@ -2076,56 +990,1001 @@
    },
    "dist_m": null,
    "score": 4.09,
-   "image_score": 7.06,
+   "image_score": 6.9,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1200,
+    "lap_var": 792.7,
+    "colorfulness": 25.5,
+    "white_frac": 0.002,
+    "edge_density": 0.0553,
+    "sky_frac": 0.352,
+    "brightness": 128.5,
+    "dark_frac": 0.001,
+    "center_edge": 0.0786
+   },
+   "current": {
+    "sha256": "5f542656a707957a4260054c082d17730642c4136c6e6c5fd2191f21369cfc5a",
+    "score": 7.81,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:ハートラムⅡ.jpg"
+   }
+  },
+  {
+   "slug": "st03750",
+   "title": "File:Class 03 No.D2199 on hire duty at Eurotunnel's Cheriton terminal Folkestone 8-4-94 Barrie Hughes.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Class_03_No.D2199_on_hire_duty_at_Eurotunnel's_Cheriton_terminal_Folkestone_8-4-94_Barrie_Hughes.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Class_03_No.D2199_on_hire_duty_at_Eurotunnel%27s_Cheriton_terminal_Folkestone_8-4-94_Barrie_Hughes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Barrie Hughes",
+   "sha256": "61f9d7ab3b95dda9ec859ddd47c26899ae433697cd98ef5c7e8b9610fa7fa687",
+   "dhash": "f0a6a6be360e82e0",
+   "bytes": 448967,
+   "width": 1800,
+   "height": 1200,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 2688
+   },
+   "dist_m": null,
+   "score": 2.52,
+   "image_score": 6.89,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1200,
+    "lap_var": 1020.6,
+    "colorfulness": 39.4,
+    "white_frac": 0.0,
+    "edge_density": 0.0815,
+    "sky_frac": 0.758,
+    "brightness": 139.9,
+    "dark_frac": 0.139,
+    "center_edge": 0.0987
+   },
+   "current": {
+    "sha256": "5f542656a707957a4260054c082d17730642c4136c6e6c5fd2191f21369cfc5a",
+    "score": 7.81,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:ハートラムⅡ.jpg"
+   }
+  },
+  {
+   "slug": "st01897",
+   "title": "File:中山駅.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:中山駅.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/%E4%B8%AD%E5%B1%B1%E9%A7%85.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Gohachiyasu1214",
+   "sha256": "7554dd5c9bc532a3103151dc0f6c56b89dee7ca00e2f0c70375765f94c37657c",
+   "dhash": "c010266ece04d0c8",
+   "bytes": 342563,
+   "width": 1800,
+   "height": 1204,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3216,
+    "original_height": 2152
+   },
+   "dist_m": null,
+   "score": 3.11,
+   "image_score": 6.59,
    "quality": "done",
    "quality_reasons": [],
    "self_hit": true,
    "running_near": false,
    "metrics": {
     "width": 1800,
-    "height": 1200,
-    "lap_var": 1188.5,
-    "colorfulness": 26.8,
-    "white_frac": 0.078,
-    "edge_density": 0.0868,
-    "sky_frac": 0.768,
-    "brightness": 148.4,
-    "dark_frac": 0.051,
-    "center_edge": 0.1037
+    "height": 1204,
+    "lap_var": 787.1,
+    "colorfulness": 36.2,
+    "white_frac": 0.001,
+    "edge_density": 0.066,
+    "sky_frac": 0.464,
+    "brightness": 118.1,
+    "dark_frac": 0.102,
+    "center_edge": 0.0857
    },
    "current": {
-    "sha256": "9675abb8884ce9867dd334e3b239c2d464ad87c8864f447ea1686e79ec9326f4",
-    "score": null,
+    "sha256": "7ad58ac13e3870928c1b877cdd3a658f8249d3ca86f8f5df3f3f298b2557650f",
+    "score": 7.84,
     "long": 1800,
     "reasons": [
      "audit_low_conf_priority_recapture"
     ],
-    "source_title": "File:Hatchōbori Station hibiya Line ticket gates Jan 08 2019 03-01-47 PM.jpeg"
+    "source_title": "File:JR Sōbu Line Shimōsa-Nakayama Station Platform.jpg"
    }
   },
   {
-   "slug": "st00189",
-   "title": "File:Hiroshima Bank Kanayamacho Branch.jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Hiroshima_Bank_Kanayamacho_Branch.jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Hiroshima_Bank_Kanayamacho_Branch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "slug": "st04655",
+   "title": "File:Asō station 01.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Asō_station_01.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/As%C5%8D_station_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "Public domain",
+   "license_url": "",
+   "author": "Navian",
+   "sha256": "f6189cee27aeda8873f1ae9166fb7f56cfe43cf2a8167934d953f5be70618513",
+   "dhash": "c6ccd12737f1b072",
+   "bytes": 664973,
+   "width": 1800,
+   "height": 1346,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3532,
+    "original_height": 2642
+   },
+   "dist_m": 26.4,
+   "score": 3.27,
+   "image_score": 6.94,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1346,
+    "lap_var": 3043.8,
+    "colorfulness": 45.0,
+    "white_frac": 0.027,
+    "edge_density": 0.1733,
+    "sky_frac": 0.723,
+    "brightness": 127.8,
+    "dark_frac": 0.111,
+    "center_edge": 0.1804
+   },
+   "current": {
+    "sha256": "d4734d6dac919a6c3a816d6187b0fc5d642b6b1f81047585957c0166b4fd2c99",
+    "score": 7.9,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:JRS-Aso-STA Inside.jpg"
+   }
+  },
+  {
+   "slug": "st04655",
+   "title": "File:Asō station 02.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Asō_station_02.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/As%C5%8D_station_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "Public domain",
+   "license_url": "",
+   "author": "Navian",
+   "sha256": "b249b0de504aa073f59bf47be75814944e21958edc4be88ce9ab2ab4cba9bfcd",
+   "dhash": "2129e0e40c0f6338",
+   "bytes": 528025,
+   "width": 1800,
+   "height": 1346,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3467,
+    "original_height": 2593
+   },
+   "dist_m": 26.4,
+   "score": 3.23,
+   "image_score": 6.58,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1346,
+    "lap_var": 2083.1,
+    "colorfulness": 32.2,
+    "white_frac": 0.042,
+    "edge_density": 0.125,
+    "sky_frac": 0.942,
+    "brightness": 131.0,
+    "dark_frac": 0.133,
+    "center_edge": 0.1207
+   },
+   "current": {
+    "sha256": "d4734d6dac919a6c3a816d6187b0fc5d642b6b1f81047585957c0166b4fd2c99",
+    "score": 7.9,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:JRS-Aso-STA Inside.jpg"
+   }
+  },
+  {
+   "slug": "st04655",
+   "title": "File:Kumamoto-Aso-station-platform2020.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Kumamoto-Aso-station-platform2020.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Kumamoto-Aso-station-platform2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Tokyo-Good",
+   "sha256": "3592bcbc2e2d7b4612a21fd42ff6b811cc6a2de9c9b5cf7f5218b356ca30752d",
+   "dhash": "b6736263e935190c",
+   "bytes": 571278,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": null,
+   "score": 4.52,
+   "image_score": 6.34,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 3309.9,
+    "colorfulness": 37.9,
+    "white_frac": 0.014,
+    "edge_density": 0.1435,
+    "sky_frac": 0.313,
+    "brightness": 120.9,
+    "dark_frac": 0.188,
+    "center_edge": 0.194
+   },
+   "current": {
+    "sha256": "d4734d6dac919a6c3a816d6187b0fc5d642b6b1f81047585957c0166b4fd2c99",
+    "score": 7.9,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:JRS-Aso-STA Inside.jpg"
+   }
+  },
+  {
+   "slug": "st00605",
+   "title": "File:F803 Zr.Ms. Tromp in Nagasaki Japan.jpg 03.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:F803_Zr.Ms._Tromp_in_Nagasaki_Japan.jpg_03.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/F803_Zr.Ms._Tromp_in_Nagasaki_Japan.jpg_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Sengoku2501",
+   "sha256": "d1c7697d35286e69ea62db5b133bc1cc1d156f48c0515d48af7ec892de744a5e",
+   "dhash": "e0c402c33890c64c",
+   "bytes": 369597,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4032,
+    "original_height": 3024
+   },
+   "dist_m": null,
+   "score": 4.52,
+   "image_score": 7.13,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 963.1,
+    "colorfulness": 45.9,
+    "white_frac": 0.0,
+    "edge_density": 0.0516,
+    "sky_frac": 0.041,
+    "brightness": 120.3,
+    "dark_frac": 0.038,
+    "center_edge": 0.0463
+   },
+   "current": {
+    "sha256": "225b549adfe6732191c097135e8645b467cb90e9a31bc0faf9b130c1542aa026",
+    "score": 7.91,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:F803 Zr.Ms. Tromp in Nagasaki Japan.jpg"
+   }
+  },
+  {
+   "slug": "st00605",
+   "title": "File:F803 Zr.Ms. Tromp in Nagasaki Japan 02.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:F803_Zr.Ms._Tromp_in_Nagasaki_Japan_02.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/F803_Zr.Ms._Tromp_in_Nagasaki_Japan_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Sengoku2501",
+   "sha256": "23b14add376fa47771f3e0ad3b4332f133837f5f2a71b2beed33600058d0ec3a",
+   "dhash": "0480c08027633d20",
+   "bytes": 236389,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3993,
+    "original_height": 2995
+   },
+   "dist_m": null,
+   "score": 4.5,
+   "image_score": 7.0,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 385.6,
+    "colorfulness": 21.3,
+    "white_frac": 0.108,
+    "edge_density": 0.026,
+    "sky_frac": 0.894,
+    "brightness": 156.6,
+    "dark_frac": 0.066,
+    "center_edge": 0.0287
+   },
+   "current": {
+    "sha256": "225b549adfe6732191c097135e8645b467cb90e9a31bc0faf9b130c1542aa026",
+    "score": 7.91,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:F803 Zr.Ms. Tromp in Nagasaki Japan.jpg"
+   }
+  },
+  {
+   "slug": "st00605",
+   "title": "File:長崎駅新駅.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:長崎駅新駅.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/%E9%95%B7%E5%B4%8E%E9%A7%85%E6%96%B0%E9%A7%85.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Peachkk",
+   "sha256": "fbe30566ab2eab32be5047e87196d06da7754c39a599fdd528f37b84415ba8b8",
+   "dhash": "c6713e7fadafafbb",
+   "bytes": 374906,
+   "width": 1800,
+   "height": 1013,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 5488,
+    "original_height": 3088
+   },
+   "dist_m": null,
+   "score": 4.24,
+   "image_score": 6.79,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1013,
+    "lap_var": 1640.3,
+    "colorfulness": 29.8,
+    "white_frac": 0.05,
+    "edge_density": 0.0901,
+    "sky_frac": 0.881,
+    "brightness": 132.3,
+    "dark_frac": 0.072,
+    "center_edge": 0.1321
+   },
+   "current": {
+    "sha256": "225b549adfe6732191c097135e8645b467cb90e9a31bc0faf9b130c1542aa026",
+    "score": 7.91,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:F803 Zr.Ms. Tromp in Nagasaki Japan.jpg"
+   }
+  },
+  {
+   "slug": "st02341",
+   "title": "File:Meitetsu Asakura Station ac (1).jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Meitetsu_Asakura_Station_ac_(1).jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Meitetsu_Asakura_Station_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Asturio Cantabrio",
+   "sha256": "6f52726c354a21b1d37de995b16af54dc6a8ff3517dc020c281da2ab01dcdcc1",
+   "dhash": "808090c28492d1d0",
+   "bytes": 206340,
+   "width": 1800,
+   "height": 1197,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 5962,
+    "original_height": 3964
+   },
+   "dist_m": null,
+   "score": 4.48,
+   "image_score": 7.79,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1197,
+    "lap_var": 407.8,
+    "colorfulness": 61.5,
+    "white_frac": 0.0,
+    "edge_density": 0.0386,
+    "sky_frac": 0.001,
+    "brightness": 134.6,
+    "dark_frac": 0.03,
+    "center_edge": 0.0364
+   },
+   "current": {
+    "sha256": "d047a6ebd3bfac3da91665baf808b1cde0dc3370d82c023261e2b0adcc588b85",
+    "score": 8.2,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:MT-Asakura Station-Platform.jpg"
+   }
+  },
+  {
+   "slug": "st02341",
+   "title": "File:Meitetsu Asakura Station ac (2).jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Meitetsu_Asakura_Station_ac_(2).jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Meitetsu_Asakura_Station_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Asturio Cantabrio",
+   "sha256": "80c6459b9ba6907284db9615162a34bec068334cb52864b8dc39f1632a916af3",
+   "dhash": "f090e1a6b0d1d0f0",
+   "bytes": 219092,
+   "width": 1800,
+   "height": 1197,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 5956,
+    "original_height": 3960
+   },
+   "dist_m": null,
+   "score": 4.48,
+   "image_score": 7.08,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1197,
+    "lap_var": 348.6,
+    "colorfulness": 52.5,
+    "white_frac": 0.0,
+    "edge_density": 0.0356,
+    "sky_frac": 0.002,
+    "brightness": 113.2,
+    "dark_frac": 0.06,
+    "center_edge": 0.053
+   },
+   "current": {
+    "sha256": "d047a6ebd3bfac3da91665baf808b1cde0dc3370d82c023261e2b0adcc588b85",
+    "score": 8.2,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:MT-Asakura Station-Platform.jpg"
+   }
+  },
+  {
+   "slug": "st02341",
+   "title": "File:Meitetsu Asakura Station ac (3).jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Meitetsu_Asakura_Station_ac_(3).jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Meitetsu_Asakura_Station_ac_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "Asturio Cantabrio",
+   "sha256": "ec2b5c40f62c4912a17e8787793624a595f115419e5a8c0fbb5a1049e59453f5",
+   "dhash": "f0e4f28c72d2e202",
+   "bytes": 223883,
+   "width": 1800,
+   "height": 1197,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 5930,
+    "original_height": 3943
+   },
+   "dist_m": null,
+   "score": 4.46,
+   "image_score": 6.85,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1197,
+    "lap_var": 368.4,
+    "colorfulness": 49.7,
+    "white_frac": 0.0,
+    "edge_density": 0.0375,
+    "sky_frac": 0.003,
+    "brightness": 107.6,
+    "dark_frac": 0.078,
+    "center_edge": 0.037
+   },
+   "current": {
+    "sha256": "d047a6ebd3bfac3da91665baf808b1cde0dc3370d82c023261e2b0adcc588b85",
+    "score": 8.2,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:MT-Asakura Station-Platform.jpg"
+   }
+  },
+  {
+   "slug": "st03004",
+   "title": "File:Tateda station 02.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tateda_station_02.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Tateda_station_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "Public domain",
+   "license_url": "",
+   "author": "Navian",
+   "sha256": "35cd403b04211f2d1c49c6af211560829ea89df99c015a4a8be0e886ee7d79ec",
+   "dhash": "184601181252e464",
+   "bytes": 474778,
+   "width": 1800,
+   "height": 1346,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2922,
+    "original_height": 2185
+   },
+   "dist_m": 25.0,
+   "score": 4.96,
+   "image_score": 6.12,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1346,
+    "lap_var": 1997.3,
+    "colorfulness": 30.8,
+    "white_frac": 0.005,
+    "edge_density": 0.1021,
+    "sky_frac": 0.808,
+    "brightness": 123.6,
+    "dark_frac": 0.21,
+    "center_edge": 0.0885
+   },
+   "current": {
+    "sha256": "6942b2a9c40f0b3acfc26a4d2fcbf0f65c4eb0548e7933b35dd67bcd4b5e46fe",
+    "score": 8.23,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:Road-of-LotusRoot-02.png"
+   }
+  },
+  {
+   "slug": "st03004",
+   "title": "File:Tateda station 01.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Tateda_station_01.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Tateda_station_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "Public domain",
+   "license_url": "",
+   "author": "Navian",
+   "sha256": "e7e05660f76d9a4bf5925cadd746ea1d0ddfecd371568b700de48867ff53f4a3",
+   "dhash": "00068e0c30711152",
+   "bytes": 359210,
+   "width": 1800,
+   "height": 1346,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2908,
+    "original_height": 2175
+   },
+   "dist_m": 25.0,
+   "score": 4.95,
+   "image_score": 7.25,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1346,
+    "lap_var": 893.4,
+    "colorfulness": 42.7,
+    "white_frac": 0.019,
+    "edge_density": 0.0513,
+    "sky_frac": 0.28,
+    "brightness": 136.7,
+    "dark_frac": 0.055,
+    "center_edge": 0.0529
+   },
+   "current": {
+    "sha256": "6942b2a9c40f0b3acfc26a4d2fcbf0f65c4eb0548e7933b35dd67bcd4b5e46fe",
+    "score": 8.23,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:Road-of-LotusRoot-02.png"
+   }
+  },
+  {
+   "slug": "st03004",
+   "title": "File:Road-of-LotusRoot-01.png",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Road-of-LotusRoot-01.png",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Road-of-LotusRoot-01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "author": "アセルス",
+   "sha256": "f4b060f6e38bf499ca5420007c5f6498c46de0614f7f3bd7fd7b7b59926e4c2e",
+   "dhash": "503381834ac34b9f",
+   "bytes": 884283,
+   "width": 1624,
+   "height": 1800,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2090,
+    "original_height": 2316
+   },
+   "dist_m": null,
+   "score": 1.16,
+   "image_score": 3.29,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1624,
+    "height": 1800,
+    "lap_var": 4488.3,
+    "colorfulness": 38.3,
+    "white_frac": 0.012,
+    "edge_density": 0.2288,
+    "sky_frac": 0.386,
+    "brightness": 113.4,
+    "dark_frac": 0.17,
+    "center_edge": 0.2694
+   },
+   "current": {
+    "sha256": "6942b2a9c40f0b3acfc26a4d2fcbf0f65c4eb0548e7933b35dd67bcd4b5e46fe",
+    "score": 8.23,
+    "long": 1800,
+    "reasons": [
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:Road-of-LotusRoot-02.png"
+   }
+  },
+  {
+   "slug": "st03780",
+   "title": "File:20210808 LAWSON and Idemitsu in front of Ino Station.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:20210808_LAWSON_and_Idemitsu_in_front_of_Ino_Station.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/20210808_LAWSON_and_Idemitsu_in_front_of_Ino_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Rsa",
+   "sha256": "c171e4ec337d224692f94247cf06104593919b6dcc3541b8921a33a7a40198c0",
+   "dhash": "33df99422390b84b",
+   "bytes": 356457,
+   "width": 1800,
+   "height": 836,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2549,
+    "original_height": 1184
+   },
+   "dist_m": 127.9,
+   "score": 2.77,
+   "image_score": 7.86,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 836,
+    "lap_var": 3585.9,
+    "colorfulness": 87.1,
+    "white_frac": 0.038,
+    "edge_density": 0.1689,
+    "sky_frac": 0.016,
+    "brightness": 127.1,
+    "dark_frac": 0.141,
+    "center_edge": 0.2077
+   },
+   "current": {
+    "sha256": "07a37315f7099a7c283a5783acaacc30a8a21b057e9735e66e2185bcee777cba",
+    "score": 8.35,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:Ino-Station-Platform-20100527.jpg"
+   }
+  },
+  {
+   "slug": "st03780",
+   "title": "File:JR Ino Station.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:JR_Ino_Station.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/JR_Ino_Station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "author": "tosimisi",
+   "sha256": "79b0b778f444eec8b03fdea0eca3eee6e0e89c780a3e753b8f9d76c8f76a52bf",
+   "dhash": "0306040c1725fce4",
+   "bytes": 319827,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2048,
+    "original_height": 1536
+   },
+   "dist_m": 190.2,
+   "score": 2.52,
+   "image_score": 7.46,
+   "quality": "done",
+   "quality_reasons": [],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 551.5,
+    "colorfulness": 61.9,
+    "white_frac": 0.0,
+    "edge_density": 0.0339,
+    "sky_frac": 0.096,
+    "brightness": 132.6,
+    "dark_frac": 0.105,
+    "center_edge": 0.0429
+   },
+   "current": {
+    "sha256": "07a37315f7099a7c283a5783acaacc30a8a21b057e9735e66e2185bcee777cba",
+    "score": 8.35,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:Ino-Station-Platform-20100527.jpg"
+   }
+  },
+  {
+   "slug": "st03780",
+   "title": "File:JR Ino station2.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:JR_Ino_station2.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/JR_Ino_station2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "author": "tosimisi",
+   "sha256": "8a484fb94c0a6221451ef257ecb4b02e59c40873ae0ec88ee2b03247c63e93a3",
+   "dhash": "f0f4b0b69f8d03f2",
+   "bytes": 303199,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 2048,
+    "original_height": 1536
+   },
+   "dist_m": 177.9,
+   "score": 2.52,
+   "image_score": 7.45,
+   "quality": "review",
+   "quality_reasons": [
+    "low_color",
+    "mostly_white"
+   ],
+   "self_hit": true,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 587.6,
+    "colorfulness": 23.0,
+    "white_frac": 0.449,
+    "edge_density": 0.0477,
+    "sky_frac": 0.997,
+    "brightness": 175.6,
+    "dark_frac": 0.043,
+    "center_edge": 0.0617
+   },
+   "current": {
+    "sha256": "07a37315f7099a7c283a5783acaacc30a8a21b057e9735e66e2185bcee777cba",
+    "score": 8.35,
+    "long": 1800,
+    "reasons": [
+     "audit_low_conf_priority_recapture"
+    ],
+    "source_title": "File:Ino-Station-Platform-20100527.jpg"
+   }
+  },
+  {
+   "slug": "st00355",
+   "title": "File:Nakasu Dentei.JPG",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Nakasu_Dentei.JPG",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Nakasu_Dentei.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "author": "Sakoppi",
+   "sha256": "ce7e391b935217788e2b9241f29551c30b84d1efc5d4740f6f9df27cca2c8671",
+   "dhash": "4cd8dc44a624e180",
+   "bytes": 406027,
+   "width": 1800,
+   "height": 1350,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 3648,
+    "original_height": 2736
+   },
+   "dist_m": null,
+   "score": 2.32,
+   "image_score": 7.21,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1350,
+    "lap_var": 677.8,
+    "colorfulness": 42.5,
+    "white_frac": 0.013,
+    "edge_density": 0.0651,
+    "sky_frac": 0.195,
+    "brightness": 136.3,
+    "dark_frac": 0.062,
+    "center_edge": 0.088
+   },
+   "current": {
+    "sha256": "94a9b7dce532c3767c86310c4565b0967974e26e7e6d1a9efddf2ba7ed3c8b76",
+    "score": null,
+    "long": 1800,
+    "reasons": [
+     "low_color",
+     "subject_unverified(no_station_kw)"
+    ],
+    "source_title": "File:KagoshimaCity513 Route2 NakasuDori 19930505.jpg"
+   }
+  },
+  {
+   "slug": "st00360",
+   "title": "File:Kagoshima Sogo Shinkin Bank Takamibaba Branch.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Kagoshima_Sogo_Shinkin_Bank_Takamibaba_Branch.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Kagoshima_Sogo_Shinkin_Bank_Takamibaba_Branch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "license": "CC BY 4.0",
    "license_url": "https://creativecommons.org/licenses/by/4.0",
    "author": "Suikotei",
-   "sha256": "cce7d57ca1c39a27bdd691b3d87379f2f89d9c9676c4db7b27b6ceedb9c3da63",
-   "dhash": "1c0e2e4e03270b03",
-   "bytes": 618381,
+   "sha256": "341f82dadab2350b8065568e8682058f2b32f112d6eb736c85ad3788084addab",
+   "dhash": "6339296969696d6c",
+   "bytes": 570100,
+   "width": 1800,
+   "height": 1352,
+   "normalized": {
+    "encoded": true,
+    "long": 1800,
+    "quality": 85,
+    "original_width": 4624,
+    "original_height": 3472
+   },
+   "dist_m": 39.6,
+   "score": 2.81,
+   "image_score": 6.04,
+   "quality": "review",
+   "quality_reasons": [
+    "subject_unverified(no_station_kw)"
+   ],
+   "self_hit": false,
+   "running_near": false,
+   "metrics": {
+    "width": 1800,
+    "height": 1352,
+    "lap_var": 2183.1,
+    "colorfulness": 41.4,
+    "white_frac": 0.002,
+    "edge_density": 0.1157,
+    "sky_frac": 0.419,
+    "brightness": 104.2,
+    "dark_frac": 0.214,
+    "center_edge": 0.1365
+   },
+   "current": {
+    "sha256": "6b479536b0487ab4311cf31edd62d59cf71ed90e70d1079614c2e02b35ffb24e",
+    "score": null,
+    "long": 1800,
+    "reasons": [
+     "low_color"
+    ],
+    "source_title": "File:高見馬場 - panoramio.jpg"
+   }
+  },
+  {
+   "slug": "st00360",
+   "title": "File:Kagoshima Bank Takamibaba Branch.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Kagoshima_Bank_Takamibaba_Branch.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Kagoshima_Bank_Takamibaba_Branch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "author": "Suikotei",
+   "sha256": "2e9a33263867fcec0edc6951d290c7d6b37d1787a10fb855f9c943590455fb8f",
+   "dhash": "d7b3bbfb7f77765e",
+   "bytes": 596535,
    "width": 1800,
    "height": 1351,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 4097,
-    "original_height": 3076
+    "original_width": 4334,
+    "original_height": 3254
    },
-   "dist_m": 80.1,
-   "score": 2.55,
-   "image_score": 6.57,
+   "dist_m": null,
+   "score": 2.67,
+   "image_score": 6.14,
    "quality": "review",
    "quality_reasons": [
     "subject_unverified(no_station_kw)"
@@ -2135,406 +1994,542 @@
    "metrics": {
     "width": 1800,
     "height": 1351,
-    "lap_var": 2984.6,
-    "colorfulness": 49.3,
-    "white_frac": 0.017,
-    "edge_density": 0.1584,
-    "sky_frac": 0.287,
-    "brightness": 112.1,
-    "dark_frac": 0.165,
-    "center_edge": 0.1339
+    "lap_var": 2546.6,
+    "colorfulness": 28.4,
+    "white_frac": 0.041,
+    "edge_density": 0.1436,
+    "sky_frac": 0.517,
+    "brightness": 107.7,
+    "dark_frac": 0.122,
+    "center_edge": 0.1051
    },
    "current": {
-    "sha256": "bda692e1015b80ead7495851976ae9c4776f58afed0e5229e062d1881c7e9ad9",
+    "sha256": "6b479536b0487ab4311cf31edd62d59cf71ed90e70d1079614c2e02b35ffb24e",
     "score": null,
     "long": 1800,
     "reasons": [
-     "low_color",
-     "subject_unverified(no_station_kw)"
+     "low_color"
     ],
-    "source_title": "File:Hiroden Kanayama-cho Sta.01.jpg"
+    "source_title": "File:高見馬場 - panoramio.jpg"
    }
   },
   {
-   "slug": "st00189",
-   "title": "File:Gifu Prefectural Road Route 58 (Gero Kanayamacho Sugatakirihora).jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Gifu_Prefectural_Road_Route_58_(Gero_Kanayamacho_Sugatakirihora).jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Gifu_Prefectural_Road_Route_58_%28Gero_Kanayamacho_Sugatakirihora%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Alpsdake",
-   "sha256": "08108e7abfdebc74fe96c7541524bcfa7ffc6623ae379b98b78e6342e9c31963",
-   "dhash": "e0c88590b093b170",
-   "bytes": 577466,
+   "slug": "st00373",
+   "title": "File:Eiden300Series01.jpg",
+   "page_url": "https://commons.wikimedia.org/wiki/File:Eiden300Series01.jpg",
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Eiden300Series01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "author": "Y3006",
+   "sha256": "7eaaa5dbb9341b1a3a16e6d0941cd9b1a411fda39da4d4dae1d092973cd78175",
+   "dhash": "81839914391b0b23",
+   "bytes": 545742,
    "width": 1800,
-   "height": 1200,
+   "height": 1193,
    "normalized": {
     "encoded": true,
     "long": 1800,
     "quality": 85,
-    "original_width": 6000,
-    "original_height": 4000
+    "original_width": 3130,
+    "original_height": 2075
    },
    "dist_m": null,
-   "score": 3.5,
-   "image_score": 6.45,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1200,
-    "lap_var": 2373.2,
-    "colorfulness": 39.6,
-    "white_frac": 0.057,
-    "edge_density": 0.1315,
-    "sky_frac": 0.168,
-    "brightness": 131.2,
-    "dark_frac": 0.214,
-    "center_edge": 0.1356
-   },
-   "current": {
-    "sha256": "bda692e1015b80ead7495851976ae9c4776f58afed0e5229e062d1881c7e9ad9",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "low_color",
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden Kanayama-cho Sta.01.jpg"
-   }
-  },
-  {
-   "slug": "st00189",
-   "title": "File:Gifu Prefectural Road Route 58 (Gero Kanayamacho Kanayama).jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Gifu_Prefectural_Road_Route_58_(Gero_Kanayamacho_Kanayama).jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Gifu_Prefectural_Road_Route_58_%28Gero_Kanayamacho_Kanayama%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Alpsdake",
-   "sha256": "e8447ba291f5b1acca88e66c44812221cb1616816965d65300d648fbcfdf6e70",
-   "dhash": "80c0c0e1e8d4b6f7",
-   "bytes": 405236,
-   "width": 1800,
-   "height": 915,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 5900,
-    "original_height": 3000
-   },
-   "dist_m": null,
-   "score": 3.45,
+   "score": 4.06,
    "image_score": 6.4,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
+   "quality": "done",
+   "quality_reasons": [],
    "self_hit": false,
    "running_near": false,
    "metrics": {
     "width": 1800,
-    "height": 915,
-    "lap_var": 1488.5,
-    "colorfulness": 30.1,
-    "white_frac": 0.009,
-    "edge_density": 0.1025,
-    "sky_frac": 0.052,
-    "brightness": 116.1,
-    "dark_frac": 0.104,
-    "center_edge": 0.1297
+    "height": 1193,
+    "lap_var": 1670.9,
+    "colorfulness": 28.6,
+    "white_frac": 0.134,
+    "edge_density": 0.1103,
+    "sky_frac": 0.637,
+    "brightness": 120.5,
+    "dark_frac": 0.112,
+    "center_edge": 0.0921
    },
    "current": {
-    "sha256": "bda692e1015b80ead7495851976ae9c4776f58afed0e5229e062d1881c7e9ad9",
+    "sha256": "4e1a1db639ab28cd44ca2b8177d131a7216fd9363390d313d16aea40017af8e0",
     "score": null,
     "long": 1800,
     "reasons": [
-     "low_color",
-     "subject_unverified(no_station_kw)"
+     "audit_low_conf_priority_recapture"
     ],
-    "source_title": "File:Hiroden Kanayama-cho Sta.01.jpg"
-   }
-  },
-  {
-   "slug": "st00194",
-   "title": "File:Mito Minamimachi 1-chome ac (2).jpg",
-   "page_url": "https://commons.wikimedia.org/wiki/File:Mito_Minamimachi_1-chome_ac_(2).jpg",
-   "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Mito_Minamimachi_1-chome_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "license": "CC BY-SA 4.0",
-   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "author": "Asturio Cantabrio",
-   "sha256": "1679aed8edb63f2866fb764e5198670429918bcc468a01d5e00ced1c2093d255",
-   "dhash": "9191d1d39371f0e2",
-   "bytes": 437750,
-   "width": 1800,
-   "height": 1197,
-   "normalized": {
-    "encoded": true,
-    "long": 1800,
-    "quality": 85,
-    "original_width": 5781,
-    "original_height": 3843
-   },
-   "dist_m": null,
-   "score": 3.39,
-   "image_score": 5.8,
-   "quality": "review",
-   "quality_reasons": [
-    "subject_unverified(no_station_kw)"
-   ],
-   "self_hit": false,
-   "running_near": false,
-   "metrics": {
-    "width": 1800,
-    "height": 1197,
-    "lap_var": 1494.3,
-    "colorfulness": 26.5,
-    "white_frac": 0.014,
-    "edge_density": 0.1022,
-    "sky_frac": 0.458,
-    "brightness": 111.9,
-    "dark_frac": 0.214,
-    "center_edge": 0.1179
-   },
-   "current": {
-    "sha256": "fe3c060f4022cef99cbe882ffb8f6c7f6f3385a5346e0135fe3c62c18a030ed2",
-    "score": null,
-    "long": 1800,
-    "reasons": [
-     "subject_unverified(no_station_kw)"
-    ],
-    "source_title": "File:Hiroden Minami-machi2 Sta.01.jpg"
+    "source_title": "File:Nikenchaya station IC card readers 20200523.jpg"
    }
   }
  ],
  "confirmed": [
   {
-   "slug": "st00126",
-   "name": "山陽女学園前",
-   "pref": "広島県",
+   "slug": "st03771",
+   "name": "小篭通",
+   "pref": "高知県",
    "state": "below_spec_confirmed_no_candidate"
   },
   {
-   "slug": "st00133",
-   "name": "商工センター入口",
-   "pref": "広島県",
+   "slug": "st03779",
+   "name": "後免東町",
+   "pref": "高知県",
    "state": "below_spec_confirmed_no_candidate"
   },
   {
-   "slug": "st00171",
-   "name": "広大附属学校前",
-   "pref": "広島県",
-   "state": "below_spec_confirmed_no_candidate"
-  },
-  {
-   "slug": "st00196",
-   "name": "比治山橋",
-   "pref": "広島県",
-   "state": "below_spec_confirmed_no_candidate"
-  },
-  {
-   "slug": "st00197",
-   "name": "比治山下",
-   "pref": "広島県",
-   "state": "below_spec_confirmed_no_candidate"
-  },
-  {
-   "slug": "st00200",
-   "name": "段原一丁目",
-   "pref": "広島県",
+   "slug": "st00372",
+   "name": "宇宿一丁目",
+   "pref": "鹿児島県",
    "state": "below_spec_confirmed_no_candidate"
   }
  ],
  "skipped": [],
  "rejected_notable": [
   {
-   "slug": "st00117",
-   "title": "File:CNTS-00129837043 高麗史. 卷29-30, 世家 卷29-30.pdf",
-   "named": "高麗",
+   "slug": "st01605",
+   "title": "File:Bushu-Araki Station, ekisha.JPG",
+   "named": "bushu-araki",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st00117",
-   "title": "File:NAJDA-ヨ310-0116 写真週報 199号 昭和16年12月17日号.pdf",
+   "slug": "st03747",
+   "title": "File:Tosa-den Kamimachi-4-chome Station 20120520.jpg",
+   "named": "kamimachi 4-chome",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03747",
+   "title": "File:Tosa-den Kamimachi-5-chome Station 20120520.jpg",
+   "named": "kamimachi 5-chome",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03747",
+   "title": "File:Tosa-den Kamimachi-5-chōme sta.jpg",
+   "named": "kamimachi 5-chome",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03747",
+   "title": "File:Tosa-den Kamimachi 1-chome Sta01n3872.jpg",
+   "named": "kamimachi 1-chome",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03747",
+   "title": "File:Tosa-den Kamimachi 1-chome Sta02n3872.jpg",
+   "named": "kamimachi 1-chome",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03791",
+   "title": "File:NDL1697908 相続税財産評価基準付属路線価設定地域図 全管 昭和38年分 part1.pdf",
    "named": "昭和",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st00117",
-   "title": "File:Platform of Hiroden-Miyajimaguchi Station 3.jpg",
-   "named": "hiroden-miyajimaguchi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00117",
-   "title": "File:Hiroden Ajina-Higashi Sta.01.jpg",
-   "named": "ajina-higashi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00117",
-   "title": "File:Hiroden Ajina-Higashi Sta.02.jpg",
-   "named": "ajina-higashi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00121",
-   "title": "File:2022-02-12 Train Approaching.jpg",
-   "gate": "title_non_station_scene"
-  },
-  {
-   "slug": "st00126",
-   "title": "File:広島電鉄 1051号 山陽女子大前.jpg",
-   "named": "女子大",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00131",
-   "title": "File:Shin-Inokuchi Station 20260613.jpg",
-   "named": "shin-inokuchi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00131",
-   "title": "File:Shin-inokuchi station.jpg",
-   "named": "shin-inokuchi",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00131",
-   "title": "File:新井口駅を走る清盛マリンビュー.jpg",
-   "named": "新井口",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00131",
-   "title": "File:新井口駅駅舎.jpg",
-   "named": "新井口",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00138",
-   "title": "File:Higashi-takasu-station-1.JPG",
-   "named": "higashi-takasu",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00138",
-   "title": "File:Higashi-takasu-station-2.JPG",
-   "named": "higashi-takasu",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00138",
-   "title": "File:NDL764990 岐阜県名誉図誌附録 - 美濃地理歴史.pdf",
-   "named": "岐阜",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00138",
-   "title": "File:NDL958488 養老鉄道案内.pdf",
-   "named": "養老",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00138",
-   "title": "File:Nishi-takasu-station.jpg",
-   "named": "nishi-takasu",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00138",
-   "title": "File:Platform of Hiroden-Nishi-Hiroshima Station.jpg",
-   "named": "nishi-hiroshima",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00138",
-   "title": "File:東高須駅付近 - panoramio.jpg",
-   "named": "東高須",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00138",
-   "title": "File:高須神社停留場.jpg",
-   "named": "高須神社",
-   "gate": "title_names_other_station"
-  },
-  {
-   "slug": "st00147",
-   "title": "File:北九州予備校東京校.jpg",
+   "slug": "st03791",
+   "title": "File:NDL764239 東京名所図絵 part1.pdf",
    "named": "東京",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st00147",
-   "title": "File:日本橋小綱町 - panoramio.jpg",
-   "named": "日本橋",
+   "slug": "st03000",
+   "title": "File:Echizen-Tano Station.jpg",
+   "named": "echizen-tano",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st00152",
-   "title": "File:19990122広島電鉄1100型.jpg",
-   "named": "広島",
+   "slug": "st03000",
+   "title": "File:光緒順天府志(十三).djvu",
+   "named": "十三",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st00152",
-   "title": "File:A train in Naka-ku, Hiroshima (DSC 0355 - panoramio).jpg",
+   "slug": "st01897",
+   "title": "File:Baraki-Nakayama Station concourse 2024.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:Baraki-Nakayama Station east 2024.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:Baraki-Nakayama Station gate 2024.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:Baraki-Nakayama Station metro center 1 2024.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:Baraki-Nakayama Station metro center 2 2024.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:Baraki-Nakayama Station north 2024.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:Baraki-Nakayama Station platform 2024.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:Baraki-nakayama Station 2024 1.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:Baraki-nakayama Station 2024 2.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:TokyoMetro-T22-Baraki-nakayama-station-entrance-east-20220712-110705.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:TokyoMetro-T22-Baraki-nakayama-station-entrance-north-20220712-111040.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:TokyoMetro-T22-Baraki-nakayama-station-entrance-south-20220712-110900.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:TokyoMetro-T22-Baraki-nakayama-station-platform-20220712-123415.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:TokyoMetro-T22-Baraki-nakayama-station-platform-20220712-123659.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:TokyoMetro-T22-Baraki-nakayama-station-platform-20220712-123936.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:TokyoMetro-T22-Baraki-nakayama-station-platform-20220712-124159.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:Tokyo Metro Baraki-Nakayama sta 001.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:Tokyo Metro Baraki-Nakayama sta 002.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:Tokyo Metro Baraki-Nakayama sta 003.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:Tokyo Metro Baraki-Nakayama sta 004.jpg",
+   "named": "baraki-nakayama",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:下総中山駅（船橋市）20250928-P1073660.jpg",
+   "named": "下総中山",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:京成中山駅20220629-P1000051.jpg",
+   "named": "京成中山",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:京成中山駅改札口（駅舎建替え後）20250323-P1065708.jpg",
+   "named": "京成中山",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:京成中山駅（下り線側改札口）20250928-P1073668.jpg",
+   "named": "京成中山",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:京成中山駅（改装中仮改札）20240907-P1057032.jpg",
+   "named": "京成中山",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st01897",
+   "title": "File:京成中山駅（構内踏切跡）20250928-P1073677.jpg",
+   "named": "京成中山",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st04655",
+   "title": "File:Kami-Aso Station 20140205.jpg",
+   "named": "kami-aso",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st04655",
+   "title": "File:Kami-Aso Station Building 19871229.jpg",
+   "named": "kami-aso",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st04655",
+   "title": "File:Platform of Aso Station and Train of JR Kyushu.jpg",
    "gate": "title_non_station_scene"
   },
   {
-   "slug": "st00175",
-   "title": "File:2014-09-02 Hiroden 650 series on Hiroden Ujina Line near Senda Tram Depot.jpg",
-   "gate": "title_non_station_scene"
-  },
-  {
-   "slug": "st00175",
-   "title": "File:2014-09-02 Hiroden 650 series on Hiroden Ujina Line near Senda Tram Depot 01.jpg",
-   "gate": "title_non_station_scene"
-  },
-  {
-   "slug": "st00175",
-   "title": "File:千田町1丁目交差点 Senda-machi-1 - panoramio.jpg",
-   "named": "田町",
+   "slug": "st04655",
+   "title": "File:Takayama Main Line from Kami-Aso Station (East).jpg",
+   "named": "kami-aso",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st00175",
-   "title": "File:鷹野橋交差点 Takanobashi - panoramio.jpg",
-   "named": "鷹野橋",
+   "slug": "st04655",
+   "title": "File:Takayama Main Line from Kami-Aso Station (West).jpg",
+   "named": "kami-aso",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st00176",
-   "title": "File:2014-09-02 Hiroden 650 series on Hiroden Ujina Line near Senda Tram Depot.jpg",
+   "slug": "st04655",
+   "title": "File:View of Kami-Aso Station.jpg",
+   "named": "kami-aso",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st00605",
+   "title": "File:Nagasaki Electric Tramway Nagasaki Station Station.jpg",
+   "named": "nagasaki station",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st00605",
+   "title": "File:Train near Nagasaki station (15481026422).jpg",
    "gate": "title_non_station_scene"
   },
   {
-   "slug": "st00176",
-   "title": "File:2014-09-02 Hiroden 650 series on Hiroden Ujina Line near Senda Tram Depot 01.jpg",
+   "slug": "st03004",
+   "title": "File:Katada no Rakugan-近江八景之内 堅田落雁-Returning Geese at Katada MET DP122156.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL-DC 1303461-Utagawa Hiroshige-近江八景 堅田落雁-安政4.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL-DC 1303472-Utagawa Hiroshige-近江八景 堅田落雁-crd.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL-DC 1303472-Utagawa Hiroshige-近江八景 堅田落雁.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL-DC 1311075 Utagawa Kunisada 堅田落雁 平将門.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL-DC 1311075 Utagawa Kunisada 堅田落雁 平将門 crd.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL-DC 1311076 Utagawa Kunisada 堅田落雁 滝夜叉.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL-DC 1311076 Utagawa Kunisada 堅田落雁 滝夜叉 crd.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL1303461 近江八景 堅田落雁.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL1303472 近江八景 堅田落雁.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL1306402 月百姿 堅田浦の月 斎藤内蔵介.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL1306912 堅田落雁.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL1310824 濡衣女鳴神 近江八勇の内堅田.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL1311075 近江八景之内 堅田落雁 平将門.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL1311076 近江八景之内 堅田落雁 滝夜叉.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL1311527 月百姿 堅田浦の月 斎藤内蔵介.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL818400 堅田漁夫源右衛門父子伝.pdf",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL8929433 堅田の亀.pdf",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL905115 木村長門守 堅田の巻 part1.pdf",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:NDL905115 木村長門守 堅田の巻 part2.pdf",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:WUL-he05 06676 堅田記.pdf",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:WUL-ri05 15571 0029 堅田元慶書状.pdf",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:堅田雄琴湖岸公園 - panoramio.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:近江八景 堅田落雁-Returning Geese at Katata MET DP122146.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:近江八景之内 堅田落雁-Geese Flying Down to Katada MET DP121557.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03004",
+   "title": "File:近江八景之内 堅田落雁-Returning Geese at Katada MET DP122126.jpg",
+   "named": "堅田",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03780",
+   "title": "File:Ino(Chiba) station platform.jpg",
+   "named": "chiba",
+   "gate": "title_names_other_station"
+  },
+  {
+   "slug": "st03780",
+   "title": "File:Ino garage detention Line terminus.jpg",
    "gate": "title_non_station_scene"
   },
   {
-   "slug": "st00176",
-   "title": "File:千田町1丁目交差点 Senda-machi-1 - panoramio.jpg",
-   "named": "田町",
+   "slug": "st03780",
+   "title": "File:Suzuka circuit ino station 2026.jpg",
+   "named": "suzuka circuit-ino",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st00176",
-   "title": "File:鷹野橋交差点 Takanobashi - panoramio.jpg",
-   "named": "鷹野橋",
+   "slug": "st03780",
+   "title": "File:Akebonocho-eki.jpg",
+   "named": "akebonocho",
    "gate": "title_names_other_station"
   },
   {
-   "slug": "st00189",
-   "title": "File:サウスゲートタワー川口.JPG",
-   "named": "川口",
+   "slug": "st00355",
+   "title": "File:Entrance No.5 of Nakasu-Kawabata Station in Hakata Kawabata-dori Shopping Street.jpg",
+   "named": "nakasu-kawabata",
    "gate": "title_names_other_station"
   }
  ]
