@@ -2398,3 +2398,9 @@
 - queue: 24 站（review/below_spec 高分替换）
 - replaced=1 staged=18 confirmed=5 skipped=0
 - reject_dist={"mime_unsupported": 81, "same_as_current": 24, "resolution_low_lt_1600": 83, "resolution_not_upgrade": 30, "hard_excluded": 24, "duplicate_title": 11, "title_names_other_station": 108, "quality_reject_low_color": 6, "title_non_station_scene": 4, "license_unclear": 3, "no_author_metadata": 2}
+
+
+## ws17 below-spec replace WS17-B49r — 2026-11-12T01:50:19Z
+- queue: 23 站（review/below_spec 高分替换）
+- replaced=0 staged=17 confirmed=6 skipped=0
+- reject_dist={"mime_unsupported": 28, "title_names_other_station": 26, "duplicate_title": 13, "same_as_current": 23, "title_non_station_scene": 6, "hard_excluded": 4, "resolution_low_lt_1600": 47, "oversize_gt_25mb": 4, "quality_reject_low_color": 2, "resolution_not_upgrade": 5}
